@@ -1,0 +1,19 @@
+{
+  "slug": "fair-embodied-navigation",
+  "company": "meta-fair",
+  "title": "Embodied Navigation & Object Interaction",
+  "description": "Annotate first-person video of agents navigating indoor environments and interacting with objects. Data trains embodied AI models for Habitat and similar simulation-to-real transfer pipelines. Contributors label spatial relations, navigation actions, and object states.",
+  "frontier": "Embodied AI",
+  "compensation": { "model": "fixed", "supply_rate": 2.00, "labeling_rate": 1.75, "currency": "USD" },
+  "privacy_tier": "open",
+  "target_instances": 800,
+  "estimated_time_min": 30,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Record indoor walkthrough", "description": "Record a first-person walkthrough of an indoor space (home, office, store) lasting 2–5 minutes. Include object interactions: open doors, pick up items, move furniture." },
+    { "type": "vision_processing", "executor": "agent", "title": "Depth & object detection", "description": "Monocular depth estimation, object detection and tracking, room boundary segmentation." },
+    { "type": "labeling", "executor": "human", "title": "Navigation + interaction annotation", "description": "Label navigation actions (move_forward, turn_left, turn_right, stop), object interactions (pick_up, put_down, open, close), and spatial relations (near, on, inside, next_to)." },
+    { "type": "validation", "executor": "agent", "title": "Trajectory consistency check", "description": "Action sequence plausibility, object state transition validity, spatial relation consistency." }
+  ],
+  "action_vocabulary": ["move_forward", "turn_left", "turn_right", "stop", "pick_up", "put_down", "open", "close"],
+  "tags": ["Embodied AI", "Navigation", "Indoor", "Object Interaction"]
+}

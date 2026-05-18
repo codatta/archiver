@@ -1,0 +1,52 @@
+name: Deploy Docs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, staging, "release/**"]
+    paths:
+      - "packages/docs/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref == 'refs/heads/staging' && 'staging' || 'production' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+        working-directory: packages/docs
+
+      - name: Build
+        run: bun run build
+        working-directory: packages/docs
+
+      # --- Production (main / release/**) ---
+      - name: Deploy to Vercel (production)
+        if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/')
+        run: |
+          bunx vercel pull --yes --environment=production --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+          bunx vercel build --prod --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+          bunx vercel deploy --prebuilt --prod --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: packages/docs
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_DOCS_PROJECT_ID }}
+
+      # --- Staging ---
+      - name: Deploy to Vercel (staging)
+        if: github.ref == 'refs/heads/staging'
+        run: |
+          bunx vercel pull --yes --environment=preview --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+          bunx vercel build --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+          DEPLOYMENT_URL=$(bunx vercel deploy --prebuilt --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }})
+          bunx vercel alias set "$DEPLOYMENT_URL" staging.docs.humanbased.ai --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: packages/docs
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_DOCS_PROJECT_ID }}

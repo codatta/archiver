@@ -1,0 +1,18 @@
+{
+  "slug": "elevenlabs-expressive-speech",
+  "company": "eleven-labs",
+  "title": "Expressive Speech Corpus",
+  "description": "Record and annotate expressive speech across emotions, speaking styles, and accents. Data trains next-generation TTS models that capture nuance beyond neutral read speech — emphasis, hesitation, excitement, whisper, and conversational cadence.",
+  "frontier": "Speech",
+  "compensation": { "model": "hybrid", "base_rate": 0.50, "royalty_per_minute_used": 0.002, "currency": "USD" },
+  "privacy_tier": "shielded",
+  "target_instances": 5000,
+  "estimated_time_min": 10,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Record speech sample", "description": "Read the given script in the specified emotion/style. 30–90 seconds per sample. Quiet environment, consistent mic distance." },
+    { "type": "labeling", "executor": "human", "title": "Emotion & style annotation", "description": "Listen to the recording, label primary emotion (happy/sad/angry/neutral/excited/whisper), speaking rate (slow/normal/fast), mark emphasis words, flag pronunciation issues." },
+    { "type": "validation", "executor": "agent", "title": "Audio quality check", "description": "SNR threshold, clipping detection, silence ratio, pronunciation alignment score." }
+  ],
+  "action_vocabulary": ["happy", "sad", "angry", "neutral", "excited", "whisper", "sarcastic"],
+  "tags": ["Speech", "TTS", "Emotion", "Audio"]
+}

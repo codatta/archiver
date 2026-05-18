@@ -1,0 +1,18 @@
+{
+  "slug": "deepmind-instruction-following",
+  "company": "google-deepmind",
+  "title": "Multi-Modal Instruction Following",
+  "description": "Create and verify image-grounded instruction-response pairs for training multi-modal models. Contributors write step-by-step instructions for tasks visible in an image, then a second contributor verifies that the instructions are followable and complete.",
+  "frontier": "Vision + Language",
+  "compensation": { "model": "fixed", "supply_rate": 1.00, "labeling_rate": 0.75, "currency": "USD" },
+  "privacy_tier": "open",
+  "target_instances": 2000,
+  "estimated_time_min": 15,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Capture task scene", "description": "Photograph a task setup (cooking, assembly, repair, crafting) before starting. Include visible objects and workspace." },
+    { "type": "labeling", "executor": "human", "title": "Write step-by-step instructions", "description": "Given the image, write a clear, numbered instruction sequence (5–15 steps) that another person could follow to complete the visible task." },
+    { "type": "validation", "executor": "human", "title": "Verify instructions", "description": "Given the image and instructions, rate: completeness (all steps present?), clarity (unambiguous?), groundedness (references visible objects?). Flag errors." }
+  ],
+  "action_vocabulary": [],
+  "tags": ["Vision", "Language", "Instructions", "Multi-Modal"]
+}

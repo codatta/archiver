@@ -1,0 +1,100 @@
+name: Deploy API to staging
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "packages/api/**"
+      - ".github/workflows/deploy-staging-api.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-staging-api
+  cancel-in-progress: false
+
+env:
+  GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+  GCP_REGION: asia-northeast1
+  GAR_REPO: humanbased-api
+  SERVICE_NAME: contributor-api-staging
+  IMAGE_NAME: contributor-api
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: Staging
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WIF_PROVIDER }}
+          service_account: ${{ secrets.GCP_DEPLOY_SA }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker ${{ env.GCP_REGION }}-docker.pkg.dev --quiet
+
+      - name: Build and push image
+        run: |
+          IMAGE="${GCP_REGION}-docker.pkg.dev/${GCP_PROJECT_ID}/${GAR_REPO}/${IMAGE_NAME}:${GITHUB_SHA}"
+          docker build -t "$IMAGE" -f packages/api/Dockerfile .
+          docker push "$IMAGE"
+          echo "IMAGE=$IMAGE" >> "$GITHUB_ENV"
+
+      - name: Write env vars file
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: |
+          cat > /tmp/env.yaml <<EOF
+          ENV: staging
+          CAMPAIGN_SOURCE: supabase
+          ATTEMPT_INDEX_BACKEND: postgres
+          LINEAGE_BACKEND: staging
+          WEBAPP_URL: https://staging.contributor.humanbased.ai
+          STORAGE_BUCKET: contribution-uploads
+          VISION_ENGINE_URL: http://47.84.74.124:8001
+          SUPABASE_URL: "${SUPABASE_URL}"
+          SUPABASE_PUBLISHABLE_KEY: "${SUPABASE_PUBLISHABLE_KEY}"
+          SUPABASE_SECRET_KEY: "${SUPABASE_SECRET_KEY}"
+          EOF
+
+      - name: Deploy to Cloud Run (staging)
+        run: |
+          gcloud run deploy "$SERVICE_NAME" \
+            --image "$IMAGE" \
+            --region "$GCP_REGION" \
+            --platform managed \
+            --allow-unauthenticated \
+            --port 8080 \
+            --min-instances 0 \
+            --max-instances 3 \
+            --cpu 1 \
+            --memory 512Mi \
+            --timeout 300 \
+            --env-vars-file /tmp/env.yaml \
+            --revision-suffix "${GITHUB_SHA::7}"
+          rm -f /tmp/env.yaml
+
+      - name: Smoke test health endpoint
+        run: |
+          URL=$(gcloud run services describe "$SERVICE_NAME" --region "$GCP_REGION" --format 'value(status.url)')
+          echo "Service URL: $URL"
+          for i in 1 2 3 4 5; do
+            if curl -fsS "$URL/v1/health" > /dev/null; then
+              echo "Health OK"
+              exit 0
+            fi
+            echo "Retry $i..."
+            sleep 5
+          done
+          echo "Health check failed"
+          exit 1

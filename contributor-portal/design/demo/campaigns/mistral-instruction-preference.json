@@ -1,0 +1,17 @@
+{
+  "slug": "mistral-instruction-preference",
+  "company": "mistral-ai",
+  "title": "Instruction Preference Pairs",
+  "description": "Create side-by-side preference judgments on instruction-following responses. Contributors read a prompt and two model outputs, then choose which response is better and explain why — training RLHF reward models for frontier language models.",
+  "frontier": "Language",
+  "compensation": { "model": "fixed", "supply_rate": null, "labeling_rate": 1.25, "currency": "USD" },
+  "privacy_tier": "open",
+  "target_instances": 10000,
+  "estimated_time_min": 8,
+  "tasks": [
+    { "type": "labeling", "executor": "human", "title": "Side-by-side preference judgment", "description": "Read the instruction prompt and two candidate responses. Choose the better response (A or B or Tie). Write 1–2 sentences explaining your reasoning. Rate on: accuracy, helpfulness, safety, and style." },
+    { "type": "validation", "executor": "agent", "title": "Agreement scoring", "description": "Cross-check against other annotators' judgments. Flag low-agreement items for adjudication. Compute inter-annotator Cohen's kappa." }
+  ],
+  "action_vocabulary": ["response_a_better", "response_b_better", "tie", "both_bad"],
+  "tags": ["Language", "RLHF", "Preference", "Alignment"]
+}

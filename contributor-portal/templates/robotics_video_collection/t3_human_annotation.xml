@@ -1,0 +1,32 @@
+<View>
+  <Header value="Embodiment-X: Robotics Action Annotation"/>
+
+  <!-- Temporal: Video playback with timeline labels -->
+  <Video name="vid" value="$video_url"/>
+  <TimelineLabels name="action" toName="vid">
+    <Label value="fold_box" background="#FF6B6B"/>
+    <Label value="fold_textile" background="#4ECDC4"/>
+    <Label value="packing" background="#45B7D1"/>
+    <Label value="pick_place" background="#96CEB4"/>
+    <Label value="other_valid" background="#FFEAA7"/>
+  </TimelineLabels>
+
+  <!-- Spatial: Bounding boxes + keypoints (pre-filled from ML Backend) -->
+  <Rectangle name="bbox" toName="vid" strokeWidth="2"/>
+  <KeyPointLabels name="arm_kp" toName="vid">
+    <Label value="left_shoulder"/>
+    <Label value="left_elbow"/>
+    <Label value="left_wrist"/>
+    <Label value="right_shoulder"/>
+    <Label value="right_elbow"/>
+    <Label value="right_wrist"/>
+  </KeyPointLabels>
+
+  <!-- Semantic: Language instruction + task plan -->
+  <TextArea name="language_instruction" toName="vid"
+            placeholder="Describe what the person is doing in natural language..."
+            rows="2" maxSubmissions="1"/>
+  <TextArea name="task_plan" toName="vid"
+            placeholder="High-level steps: 1) pick up towel 2) fold in half 3) place on shelf"
+            rows="3" maxSubmissions="1"/>
+</View>

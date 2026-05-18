@@ -1,0 +1,19 @@
+{
+  "slug": "figure-humanoid-locomotion",
+  "company": "figure-ai",
+  "title": "Humanoid Locomotion & Navigation",
+  "description": "Annotate bipedal locomotion data from Figure 02 deployment recordings. Contributors label gait phases, surface transitions, obstacle interactions, and recovery behaviors to train stable whole-body locomotion policies.",
+  "frontier": "Robotics",
+  "compensation": { "model": "fixed", "supply_rate": 3.00, "labeling_rate": 2.00, "currency": "USD" },
+  "privacy_tier": "guarded",
+  "target_instances": 300,
+  "estimated_time_min": 40,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Upload locomotion recording", "description": "Provide a walking/navigation video in a warehouse or indoor environment (1–5 minutes)." },
+    { "type": "vision_processing", "executor": "agent", "title": "Pose & gait detection", "description": "Full-body pose estimation, gait phase detection, floor surface classification." },
+    { "type": "labeling", "executor": "human", "title": "Locomotion annotation", "description": "Label gait phases (stance/swing/double-support), surface type (concrete/carpet/ramp), and flag recovery events (stumble, pause, rebalance)." },
+    { "type": "validation", "executor": "agent", "title": "Gait consistency check", "description": "Phase duration distributions, pose skeleton completeness, surface label coverage." }
+  ],
+  "action_vocabulary": ["stance_phase", "swing_phase", "double_support", "stair_ascent", "stair_descent", "recovery"],
+  "tags": ["Robotics", "Humanoid", "Locomotion", "Navigation"]
+}

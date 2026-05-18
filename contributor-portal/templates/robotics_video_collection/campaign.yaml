@@ -1,0 +1,122 @@
+# Campaign Template: Robotics Video Collection (Embodiment-X)
+#
+# Based on huge_leap's Nvidia housekeeping example.
+# Task DAG: T1 (data supply) → T2 (vision processing) → T3 (human annotation) → T4 (validation)
+
+template_id: robotics_video_collection
+frontier_id: robotics
+name: "Robotics Video Collection"
+
+defaults:
+  scenario_code: SCENE_01
+  quality_threshold: B  # minimum grade to pass validation
+  target_quantity: 1000
+
+detection_presets:
+  universal:
+    filter_humans: false
+    detector: null
+    motion_threshold: 0.02
+    low_action_threshold: 0.15
+    smooth_window: 5
+    frame_sample_step: 1
+    continuity_gap_frames: 10
+    compress_px: 0
+  yolo_human_filter:
+    filter_humans: true
+    detector: yolo
+    yolo_model: yolov8m
+    detection_strategy: single
+    require_center: false
+    motion_threshold: 0.02
+    low_action_threshold: 0.15
+    hand_activity_threshold: 0.0
+    smooth_window: 5
+    frame_sample_step: 3
+    continuity_gap_frames: 10
+    compress_px: 0
+  workstation:
+    filter_humans: true
+    detector: yolo
+    yolo_model: yolov8m
+    detection_strategy: single
+    require_center: true
+    center_margin: 0.3
+    motion_threshold: 0.02
+    low_action_threshold: 0.15
+    hand_activity_threshold: 0.3
+    smooth_window: 5
+    frame_sample_step: 3
+    continuity_gap_frames: 10
+    compress_px: 0
+  workstation_pose:
+    filter_humans: true
+    detector: pose
+    yolo_model: yolov8m
+    detection_strategy: cascade
+    require_center: true
+    center_margin: 0.3
+    require_arms: true
+    arm_conf_threshold: 0.3
+    motion_threshold: 0.02
+    low_action_threshold: 0.15
+    hand_activity_threshold: 0.3
+    smooth_window: 5
+    frame_sample_step: 3
+    continuity_gap_frames: 10
+    compress_px: 0
+
+action_vocabulary:
+  - key: "1"
+    label: "Fold cardboard box"
+    value: fold_box
+    color: "#FF6B6B"
+  - key: "2"
+    label: "Fold towel/textile"
+    value: fold_textile
+    color: "#4ECDC4"
+  - key: "3"
+    label: "Bagging/packing"
+    value: packing
+    color: "#45B7D1"
+  - key: "4"
+    label: "Pick and place"
+    value: pick_place
+    color: "#96CEB4"
+  - key: "5"
+    label: "Other valid action"
+    value: other_valid
+    color: "#FFEAA7"
+
+tasks:
+  - task_key: data_supply
+    name: "Data Supply"
+    origin: manual
+    execution: human
+    position: 0
+    annotation_config_file: t1_data_supply.xml
+    depends_on: []
+
+  - task_key: vision_processing
+    name: "Vision Processing"
+    origin: manual
+    execution: agent
+    position: 1
+    annotation_config_file: t2_vision_processing.xml
+    depends_on: [data_supply]
+
+  - task_key: human_annotation
+    name: "Human Annotation"
+    origin: manual
+    execution: human
+    position: 2
+    annotation_config_file: t3_human_annotation.xml
+    depends_on: [vision_processing]
+
+  - task_key: validation
+    name: "Validation"
+    origin: auto_generated
+    execution: agent
+    position: 3
+    annotation_config_file: t4_validation.xml
+    depends_on: [human_annotation]

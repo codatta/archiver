@@ -1,0 +1,260 @@
+---
+title: Getting Started
+description: Start consuming Humanbased data in minutes.
+---
+
+## Overview
+
+The Humanbased Data API lets you access high-quality, human-validated data across live production frontiers (crypto wallets, food science, fashion, robotics, and more).
+
+**Base URL:** `https://api.humanbased.ai/v1`
+
+**Dashboard:** [developer.humanbased.ai](https://developer.humanbased.ai)
+
+> New to Humanbased? Follow the [Onboarding Guide](/docs/onboarding) for a detailed walkthrough with screenshots.
+
+---
+
+## Quickstart
+
+### Step 1 — Create an account
+
+Go to [developer.humanbased.ai](https://developer.humanbased.ai) and click **Get Started**.
+
+![Landing page](/images/getting-started/01-landing.png)
+
+Sign up with **GitHub** or **HuggingFace** OAuth for one-click access, or enter your email and click **Send verification code**. You'll receive a 6-digit OTP from `noreply@humanbased.ai` — enter it, then set your display name and password.
+
+![Sign up form](/images/getting-started/02-signup.png)
+
+> Already have an account? Click **Sign in** on the landing page instead.
+
+### Step 2 — Set up your organization
+
+After signing up you'll be guided through a 3-step onboarding wizard:
+
+1. **Create your organization** — enter a name and slug (e.g. `acme-labs`). The slug is auto-generated and checked for availability in real time. You can **Skip** this step and create an org later from Settings.
+2. **Invite team members** (optional) — add colleagues by email, or click **Do this later** to skip.
+3. **Get started** — choose your next step: browse datasets or create your first API key.
+
+No API key is created automatically during onboarding. You create keys from the **API Keys** page with full control over naming, expiry, and scoped subscriptions.
+
+### Step 3 — Explore the dashboard
+
+Once onboarding is complete you land on the **Dashboard Overview**. This is your control center for monitoring data arrivals, reviewing submissions, and managing your account.
+
+![Dashboard overview](/images/getting-started/03-dashboard-overview.png)
+
+The sidebar gives you access to:
+
+| Section | What it does |
+|---------|-------------|
+| **Dashboard** | Live data stream, adoption/dispute actions, stat cards |
+| **Subscriptions** | Browse and subscribe to data sources |
+| **API Keys** | Create, rotate, and revoke keys |
+| **Team** | Invite members, manage roles and permissions |
+| **Organization** | Logo, name, domain settings |
+| **Billing** | Add funds, view balance and transaction history |
+| **Account** | Edit your profile |
+
+Use the **Sandbox / Production** toggle in the top-right to switch between test data and live data.
+
+### Step 4 — Subscribe to a data source
+
+Navigate to the **Subscriptions** page to browse available frontiers.
+
+![Subscriptions — active subscriptions](/images/getting-started/05-subscriptions.png)
+
+Switch to **Production** mode and browse available data frontiers. Each card shows the frontier name, description, tags, task count, and total submissions.
+
+![Browse datasets](/images/getting-started/06-browse-datasets.png)
+
+Use the **Live** / **Historical** toggle and category tags to filter. Click **Subscribe** on a frontier and accept the data usage agreement to activate it. Once subscribed, you'll receive a `subscription_id` needed for API pulls.
+
+### Step 5 — Create an API key
+
+Go to the **API Keys** page and click **+ Create API Key**.
+
+![API Keys page](/images/getting-started/04-api-keys.png)
+
+Choose a name, select which subscriptions the key can access, and set an expiration (7 days, 30 days, 90 days, 1 year, or never). Copy the key immediately — it won't be shown again.
+
+Your API key looks like this:
+
+```
+hb_live_sk_aAIN6Xw-VdPiwW2wX-I2DBaMs31gBjpk
+```
+
+> **Important:** The full key is only shown once. Store it in a secrets manager or `.env` file.
+
+You can create multiple keys for different environments and revoke any key at any time from this page.
+
+### Step 6 — Pull data via API
+
+With your `subscription_id` and API key, you can now pull live data:
+
+```bash
+curl -s "https://api.humanbased.ai/v1/live/pull?subscription_id=YOUR_SUB_ID&limit=10" \
+  -H "Authorization: Bearer hb_live_sk_your_key_here"
+```
+
+Response:
+
+```json
+{
+  "data": [
+    {
+      "submission_id": "2025072807585000100824",
+      "task_id": "8114279515800107934",
+      "frontier_id": "8114254168500106625",
+      "data": {
+        "type": "withdraw",
+        "images": [{ "url": "https://file.b18a.io/...", "hash": "57aa81..." }],
+        "source": "binance",
+        "network": "bsc",
+        "currency": "bnb",
+        "exchange": "okx"
+      },
+      "quality_score": 0.97,
+      "quality_grade": "S",
+      "created_at": "2025-07-28T07:58:51"
+    }
+  ],
+  "next_cursor": "2025072807585000100824",
+  "has_more": true,
+  "count": 10
+}
+```
+
+Use `cursor` for pagination — pass the `next_cursor` value to resume from where you left off:
+
+```bash
+curl -s "https://api.humanbased.ai/v1/live/pull?subscription_id=YOUR_SUB_ID&limit=50&cursor=2025072807585000100824" \
+  -H "Authorization: Bearer hb_live_sk_your_key_here"
+```
+
+### Step 7 — Review submissions
+
+After pulling data, you can provide feedback on each submission:
+
+**Accept a submission (adopt):**
+
+```bash
+curl -X POST "https://api.humanbased.ai/v1/live/items/SUBMISSION_ID/adopt" \
+  -H "Authorization: Bearer hb_live_sk_your_key_here" \
+  -H "Content-Type: application/json" \
+  -d '{"subscription_id": "YOUR_SUB_ID"}'
+```
+
+**Flag for re-review (dispute):**
+
+```bash
+curl -X POST "https://api.humanbased.ai/v1/live/items/SUBMISSION_ID/dispute" \
+  -H "Authorization: Bearer hb_live_sk_your_key_here" \
+  -H "Content-Type: application/json" \
+  -d '{"subscription_id": "YOUR_SUB_ID", "reason": "Incorrect label"}'
+```
+
+You can also adopt and dispute directly from the **Dashboard Overview** live stream in the UI.
+
+### Step 8 — Add funds (optional)
+
+Go to the **Billing** page to add credits to your account.
+
+![Billing page](/images/getting-started/07-billing.png)
+
+Pick a preset amount ($100, $500, $1,000, $5,000) or enter a custom value, then click **Pay with Stripe**. Your balance updates instantly after payment. The **Transactions** table shows a full ledger of top-ups, freezes, settlements, and refunds.
+
+---
+
+## Settings
+
+### Organization
+
+Update your org name, URL slug, billing email, and logo from **Settings → Organization**.
+
+![Organization settings](/images/getting-started/08-org-settings.png)
+
+### Team Members
+
+Invite colleagues from **Settings → Team**. Assign each member a role and fine-grained permissions:
+
+| Permission | What it allows |
+|-----------|---------------|
+| `data.read` | Pull and view data items |
+| `subscriptions.manage` | Subscribe and unsubscribe from frontiers |
+| `members.invite` | Send team invitations |
+| `keys.manage` | Create and revoke API keys |
+| `billing.manage` | Add funds and view billing history |
+
+![Team members](/images/getting-started/09-team-members.png)
+
+### Account
+
+Update your display name and email, or delete your account from **Settings → Account**.
+
+![Account settings](/images/getting-started/10-account-settings.png)
+
+---
+
+## Using the CLI
+
+As an alternative to `curl`, install the Humanbased CLI:
+
+```bash
+npm install -g @humanbased/cli
+hb auth set-key hb_live_sk_your_key_here
+hb auth whoami
+```
+
+### 4. Browse live data sources
+
+```bash
+hb frontiers list
+```
+
+Or via API:
+
+```bash
+curl https://api.humanbased.ai/v1/frontiers
+```
+
+### 5. Subscribe & pull data
+
+Subscribe to a frontier in the dashboard (Subscriptions tab), then pull live production data:
+
+```bash
+# Pull with cursor-based pagination
+hb live pull <subscription-id> --limit 100
+
+# Incremental pull (resume from last position)
+hb live pull <subscription-id> --cursor <next_cursor>
+```
+
+Or via API:
+
+```bash
+curl -s "https://api.humanbased.ai/v1/live/pull?subscription_id=<id>&limit=50" \
+  -H "Authorization: Bearer hb_live_sk_your_key_here"
+```
+
+### 6. Review submissions
+
+```bash
+# Accept a submission
+hb live adopt <subscription-id> <submission-id>
+
+# Flag for re-review
+hb live dispute <subscription-id> <submission-id>
+```
+
+---
+
+## Two data modes
+
+The platform supports two data modes:
+
+- **Production** — Live data from real frontiers (CEX Hot Wallet, Food Science, Robotics, etc.). Uses `hb frontiers` and `hb live` commands.
+- **Simulation** — Sandboxed test data from simulated verticals. Uses `hb verticals` and `hb data` commands.
+
+Switch between modes in the dashboard using the Production/Sandbox toggle.

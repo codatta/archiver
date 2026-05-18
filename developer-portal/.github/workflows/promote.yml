@@ -1,0 +1,124 @@
+name: Promote Staging to Production
+
+# Creates a PR from staging → main with a changelog summary.
+# Triggered manually when staging is stable and QA'd.
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: "Version bump (determines release scope)"
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+      summary:
+        description: "One-line release summary (optional — auto-generated if blank)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Calculate version
+        id: version
+        run: |
+          CURRENT=$(cat VERSION | tr -d '[:space:]')
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
+
+          case "${{ inputs.bump }}" in
+            major) MAJOR=$((MAJOR + 1)); MINOR=0; PATCH=0 ;;
+            minor) MINOR=$((MINOR + 1)); PATCH=0 ;;
+            patch) PATCH=$((PATCH + 1)) ;;
+          esac
+
+          NEW="${MAJOR}.${MINOR}.${PATCH}"
+          echo "current=$CURRENT" >> "$GITHUB_OUTPUT"
+          echo "new=$NEW" >> "$GITHUB_OUTPUT"
+          echo "Promoting: $CURRENT → $NEW (${{ inputs.bump }})"
+
+      - name: Generate changelog diff
+        id: changelog
+        run: |
+          # Find the merge base between staging and main
+          MAIN_SHA=$(git rev-parse origin/main)
+          STAGING_SHA=$(git rev-parse origin/staging)
+
+          # Collect conventional commit summaries since last promotion
+          FEATURES=$(git log "${MAIN_SHA}..${STAGING_SHA}" --pretty=format:"- %s" --grep="^feat:" --no-merges 2>/dev/null || true)
+          FIXES=$(git log "${MAIN_SHA}..${STAGING_SHA}" --pretty=format:"- %s" --grep="^fix:" --no-merges 2>/dev/null || true)
+          OTHER=$(git log "${MAIN_SHA}..${STAGING_SHA}" --pretty=format:"- %s" --grep="^docs:\|^chore:\|^refactor:" --no-merges 2>/dev/null || true)
+
+          BODY=""
+          if [ -n "$FEATURES" ]; then
+            BODY="${BODY}### Features\n${FEATURES}\n\n"
+          fi
+          if [ -n "$FIXES" ]; then
+            BODY="${BODY}### Fixes\n${FIXES}\n\n"
+          fi
+          if [ -n "$OTHER" ]; then
+            BODY="${BODY}### Other\n${OTHER}\n\n"
+          fi
+
+          if [ -z "$BODY" ]; then
+            BODY="No categorized commits found. Check staging branch for details."
+          fi
+
+          # Write to file for the PR body (avoids shell escaping issues)
+          {
+            echo "## Release v${{ steps.version.outputs.new }} (${{ inputs.bump }})"
+            echo ""
+            if [ -n "${{ inputs.summary }}" ]; then
+              echo "> ${{ inputs.summary }}"
+              echo ""
+            fi
+            echo -e "$BODY"
+            echo "---"
+            echo ""
+            echo "**After merging:** run the [Release workflow](../actions/workflows/release.yml) with bump type \`${{ inputs.bump }}\` to tag, version, and publish the GitHub Release."
+          } > /tmp/pr-body.md
+
+          # Count commits for the title
+          COMMIT_COUNT=$(git rev-list --count "${MAIN_SHA}..${STAGING_SHA}")
+          echo "commit_count=$COMMIT_COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Create promotion PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="${{ steps.version.outputs.new }}"
+          BUMP="${{ inputs.bump }}"
+          COUNT="${{ steps.changelog.outputs.commit_count }}"
+          SUMMARY="${{ inputs.summary }}"
+
+          TITLE="release: v${VERSION}"
+          if [ -n "$SUMMARY" ]; then
+            TITLE="release: v${VERSION} — ${SUMMARY}"
+          fi
+
+          # Check if an open promotion PR already exists
+          EXISTING=$(gh pr list --base main --head staging --state open --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            echo "Promotion PR already exists: #$EXISTING — updating body."
+            gh pr edit "$EXISTING" --title "$TITLE" --body-file /tmp/pr-body.md
+            echo "Updated PR #$EXISTING"
+          else
+            gh pr create \
+              --base main \
+              --head staging \
+              --title "$TITLE" \
+              --body-file /tmp/pr-body.md \
+              --label "release"
+            echo "Promotion PR created."
+          fi

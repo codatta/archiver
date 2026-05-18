@@ -1,0 +1,15 @@
+{
+  "slug": "meta-fair",
+  "name": "Meta FAIR",
+  "tagline": "AI at Meta — Fundamental AI Research",
+  "description": "Meta's Fundamental AI Research (FAIR) lab advances the state of the art in AI through open science. Its embodied AI division trains agents that navigate, manipulate, and reason in 3D environments — producing open models like LLaMA, SAM, and Habitat that power both research and products at scale.",
+  "tier": "big_tech",
+  "frontier": "Embodied AI + Language",
+  "website": "https://ai.meta.com/",
+  "github_url": "https://github.com/facebookresearch",
+  "hf_url": "https://huggingface.co/facebook",
+  "hf_org": "facebook",
+  "hf_stats": { "models": 2314, "datasets": 111, "followers": 12286 },
+  "industry": "Social Technology + AI Research",
+  "verified": true
+}

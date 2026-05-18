@@ -1,0 +1,29 @@
+{
+  "name": "@humanbased/webapp",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "css": "bunx @tailwindcss/cli -i ./src/styles.css -o ./src/tailwind.out.css --watch",
+    "dev": "bun run css & bun --hot ./src/server.ts",
+    "dev:local-api": "bun run css & API_URL=http://localhost:8001 bun --hot ./src/server.ts",
+    "build:css": "bunx @tailwindcss/cli -i ./src/styles.css -o ./src/tailwind.out.css --minify",
+    "build": "bunx @tailwindcss/cli -i ./src/styles.css -o ./src/tailwind.out.css --minify && bun build ./src/index.html --outdir=dist && node -e \"require('fs').cpSync('public', 'dist', {recursive: true})\" && bun ./scripts/inject-env.ts",
+    "test": "bun test",
+    "test:ui": "bun ../../tests/ui-tests/runner.mjs"
+  },
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1",
+    "@supabase/supabase-js": "^2.100.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "@types/bun": "latest",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "puppeteer": "^24.40.0",
+    "tailwindcss": "^4.1.0"
+  }
+}

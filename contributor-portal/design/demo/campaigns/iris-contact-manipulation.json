@@ -1,0 +1,18 @@
+{
+  "slug": "iris-contact-manipulation",
+  "company": "stanford-iris",
+  "title": "Contact-Rich Manipulation",
+  "description": "Annotate robotic manipulation videos that involve sustained contact — wiping, pushing, scooping, inserting. These tasks are harder for vision-only models because success depends on force and compliance, not just position. Contributors label contact phases, tool-surface interactions, and task completion criteria.",
+  "frontier": "Robotics",
+  "compensation": { "model": "bounty", "bounty_total": 5000, "bounty_target_instances": 500, "currency": "USD" },
+  "privacy_tier": "open",
+  "target_instances": 500,
+  "estimated_time_min": 20,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Record contact-rich task", "description": "Record a manipulation task involving sustained surface contact: wiping a table, scooping into a container, inserting a plug, pushing an object along a surface." },
+    { "type": "labeling", "executor": "human", "title": "Contact phase annotation", "description": "Segment into free-space/approach/contact/sustained-contact/release phases. Label tool and surface types. Describe the force intent (push, slide, press, scoop)." },
+    { "type": "validation", "executor": "human", "title": "Peer review", "description": "Another qualified contributor reviews phase boundaries and force-intent labels. Disputes resolved by quorum." }
+  ],
+  "action_vocabulary": ["free_space", "approach", "contact", "sustained_contact", "release", "push", "slide", "press", "scoop"],
+  "tags": ["Robotics", "Contact", "Manipulation", "Force"]
+}

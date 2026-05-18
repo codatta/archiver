@@ -1,0 +1,13 @@
+{
+  "title": "Humanbased Docs",
+  "pages": [
+    "index",
+    "onboarding",
+    "authentication",
+    "api-reference",
+    "cli",
+    "data-schema",
+    "billing",
+    "rate-limits"
+  ]
+}

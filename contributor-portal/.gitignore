@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Build
+.next/
+out/
+dist/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Python
+*.egg-info/
+
+# Cache
+.pytest_cache/
+.ruff_cache/
+.turbo/
+tsconfig.tsbuildinfo
+
+# Misc
+.vercel/
+coverage/

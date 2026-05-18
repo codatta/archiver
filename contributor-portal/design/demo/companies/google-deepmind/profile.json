@@ -1,0 +1,15 @@
+{
+  "slug": "google-deepmind",
+  "name": "Google DeepMind",
+  "tagline": "Google ❤️ Open Source AI",
+  "description": "Google DeepMind builds AI systems that learn to solve complex problems. Its robotics research focuses on general-purpose manipulation, instruction following, and multi-modal reasoning — producing open models like Gemma, RT-2, and PaLM-E that bridge language understanding with physical action.",
+  "tier": "big_tech",
+  "frontier": "Robotics + Language",
+  "website": "https://deepmind.google/",
+  "github_url": "https://github.com/google-deepmind",
+  "hf_url": "https://huggingface.co/google",
+  "hf_org": "google",
+  "hf_stats": { "models": 1092, "datasets": 68, "followers": 0 },
+  "industry": "AI Research",
+  "verified": true
+}

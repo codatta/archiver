@@ -1,0 +1,16 @@
+{
+  "name": "@humanbased/cli",
+  "version": "0.2.0",
+  "type": "module",
+  "bin": {
+    "hb": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "test": "bun test",
+    "build": "bun build src/index.ts --outdir=dist --target=node"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

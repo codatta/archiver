@@ -1,0 +1,18 @@
+{
+  "slug": "pi-dexterous-grasping",
+  "company": "physical-intelligence",
+  "title": "Dexterous Grasping Trajectories",
+  "description": "Collect and annotate multi-fingered grasping demonstrations across diverse household objects. Data trains π0-class vision-language-action models for contact-rich manipulation. Contributors record grasping sequences and label grasp type, contact points, and success criteria.",
+  "frontier": "Robotics",
+  "compensation": { "model": "royalty", "royalty_basis": "per_model_training_run", "currency": "USD" },
+  "privacy_tier": "shielded",
+  "target_instances": 500,
+  "estimated_time_min": 25,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Record grasping demonstration", "description": "Capture a multi-angle video of grasping a household object (mug, bottle, tool, fabric). Include approach, grasp, lift, and place phases." },
+    { "type": "labeling", "executor": "human", "title": "Grasp annotation", "description": "Segment into approach/grasp/lift/place phases, label grasp type (power/precision/pinch), mark contact keypoints, describe the object and grasp strategy." },
+    { "type": "validation", "executor": "agent", "title": "Trajectory validation", "description": "Phase boundary consistency, keypoint coverage, grasp type distribution balance." }
+  ],
+  "action_vocabulary": ["power_grasp", "precision_grasp", "pinch_grasp", "lateral_grasp", "tool_use"],
+  "tags": ["Robotics", "Dexterous", "Grasping", "Manipulation"]
+}

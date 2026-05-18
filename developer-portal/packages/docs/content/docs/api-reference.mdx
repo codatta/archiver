@@ -1,0 +1,264 @@
+---
+title: API Reference
+description: Full reference for all Humanbased API endpoints.
+---
+
+## Public Endpoints
+
+No authentication required.
+
+### List Frontiers
+
+```
+GET /v1/frontiers?status=online
+```
+
+Browse available data sources from production. Returns frontiers with task and submission counts.
+
+| Param | Type | Required | Default | Description |
+|-------|------|----------|---------|-------------|
+| `status` | string | no | `online` | `online` for live sources, `all` to include historical |
+
+```json
+{
+  "data": [
+    {
+      "frontier_id": "8114254168500106625",
+      "title": "CEX Hot Wallet",
+      "status": "ONLINE",
+      "task_count": 30,
+      "total_submissions": 812781
+    }
+  ]
+}
+```
+
+### List Frontier Tasks
+
+```
+GET /v1/frontiers/<frontier-id>/tasks
+```
+
+List tasks under a frontier with submission counts.
+
+```json
+{
+  "data": [
+    {
+      "task_id": "123456",
+      "frontier_id": "8114254168500106625",
+      "name": "Binance Hot Wallet",
+      "task_type": "IMAGE_ANNOTATION",
+      "status": "COLLECTING",
+      "submission_count": 45000
+    }
+  ]
+}
+```
+
+### List Verticals (Simulated)
+
+```
+GET /v1/data/verticals
+```
+
+Returns all available simulated data verticals.
+
+```json
+{
+  "data": [
+    {
+      "id": "uuid",
+      "slug": "crypto_account_annotation",
+      "name": "Crypto Account Annotation",
+      "description": "Blockchain address entity classification...",
+      "base_price_usd": 0.03
+    }
+  ]
+}
+```
+
+---
+
+## Authenticated Endpoints
+
+### Preview Task Submissions
+
+```
+GET /v1/frontiers/<frontier-id>/tasks/<task-id>/preview?limit=5
+```
+
+Preview sample adopted submissions for a task. Requires JWT authentication (dashboard).
+
+| Param | Type | Required | Default | Description |
+|-------|------|----------|---------|-------------|
+| `limit` | int | no | 5 | Max items (max 20) |
+
+```json
+{
+  "data": [
+    {
+      "submission_id": "123456789",
+      "data": { "address": "0x...", "chain": "ethereum" },
+      "quality_score": 0.97,
+      "quality_grade": "S",
+      "source": "codatta-app",
+      "created_at": "2026-03-28T10:00:00",
+      "audit_rating": 5,
+      "audit_reason": null
+    }
+  ]
+}
+```
+
+---
+
+## Live Data Endpoints (Production)
+
+All require `Authorization: Bearer hb_live_sk_...` header. These endpoints read from the production database via frontier-based subscriptions.
+
+### Pull Live Data
+
+```
+GET /v1/live/pull?subscription_id=<id>&limit=50&cursor=<cursor>
+```
+
+Pull adopted submissions with cursor-based pagination. Supports historical backfill (start with no cursor) and incremental pulls.
+
+| Param | Type | Required | Default | Description |
+|-------|------|----------|---------|-------------|
+| `subscription_id` | string | yes | — | Frontier subscription ID |
+| `limit` | int | no | 50 | Max items per page (max 200) |
+| `cursor` | string | no | — | Resume from this position (returned as `next_cursor`) |
+
+```json
+{
+  "data": [
+    {
+      "submission_id": "123456789",
+      "task_id": "987654321",
+      "frontier_id": "8114254168500106625",
+      "data": { "address": "0x...", "chain": "ethereum", "label": "Binance" },
+      "quality_score": 0.97,
+      "quality_grade": "S",
+      "source": "codatta-app",
+      "created_at": "2026-03-28T10:00:00",
+      "consumer_feedback": null
+    }
+  ],
+  "next_cursor": "123456789",
+  "has_more": true,
+  "count": 50
+}
+```
+
+### Adopt Live Submission
+
+```
+POST /v1/live/items/<submission-id>/adopt
+```
+
+Record adopt feedback for a production submission.
+
+```json
+// Request body
+{ "subscription_id": "uuid" }
+
+// Response
+{ "ok": true, "submission_id": "123456789", "feedback": "adopt" }
+```
+
+### Dispute Live Submission
+
+```
+POST /v1/live/items/<submission-id>/dispute
+```
+
+Record dispute feedback with optional reason.
+
+```json
+// Request body
+{ "subscription_id": "uuid", "reason": "Incorrect label" }
+
+// Response
+{ "ok": true, "submission_id": "123456789", "feedback": "dispute" }
+```
+
+---
+
+## Simulated Data Endpoints
+
+All require `Authorization: Bearer hb_live_sk_...` header. These endpoints work with simulated vertical-based subscriptions.
+
+### Pull Data
+
+```
+GET /v1/data/pull?subscription_id=<id>&limit=50
+```
+
+Pull pending delivery items for a simulated subscription.
+
+| Param | Type | Required | Default | Description |
+|-------|------|----------|---------|-------------|
+| `subscription_id` | string | yes | — | The subscription to pull from |
+| `limit` | int | no | 50 | Max items (max 200) |
+
+```json
+{
+  "data": [
+    {
+      "id": "uuid",
+      "vertical_id": "uuid",
+      "topic_id": "uuid",
+      "payload": { "address": "0x...", "chain": "ethereum", "label": "Uniswap V3" },
+      "quality_score": 0.94,
+      "quality_method": "consensus",
+      "validator_count": 5,
+      "consensus_ratio": 0.92,
+      "unit_price_usd": 0.032,
+      "created_at": "2026-03-25T10:00:00Z"
+    }
+  ],
+  "count": 1
+}
+```
+
+### Adopt Item
+
+```
+POST /v1/data/items/<item-id>/adopt
+```
+
+Mark a delivery item as adopted (accepted). You are charged `unit_price_usd`.
+
+```json
+{ "ok": true, "item_id": "uuid", "status": "adopted" }
+```
+
+### Dispute Item
+
+```
+POST /v1/data/items/<item-id>/dispute
+```
+
+Mark a delivery item as disputed (rejected). No charge — item is re-reviewed.
+
+```json
+{ "ok": true, "item_id": "uuid", "status": "disputed" }
+```
+
+### List Deliveries
+
+```
+GET /v1/data/deliveries?limit=50
+```
+
+List all deliveries for your organization.
+
+### Delivery Items
+
+```
+GET /v1/data/deliveries/<delivery-id>/items
+```
+
+Get all items in a specific delivery.

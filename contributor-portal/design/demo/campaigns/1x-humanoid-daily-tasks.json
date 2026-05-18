@@ -1,0 +1,19 @@
+{
+  "slug": "1x-humanoid-daily-tasks",
+  "company": "1x-technologies",
+  "title": "Humanoid Daily Task Demonstrations",
+  "description": "Collect and annotate full-body demonstrations of daily household tasks for training NEO-class humanoid robots. Contributors perform and narrate everyday activities — tidying, cooking, laundry, cleaning — producing the multi-modal data (video + language + task plan) needed for generalist home robot policies.",
+  "frontier": "Robotics",
+  "compensation": { "model": "hybrid", "base_rate": 1.50, "royalty_per_model_training_run": 0.10, "currency": "USD" },
+  "privacy_tier": "shielded",
+  "target_instances": 1000,
+  "estimated_time_min": 45,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Record daily task demonstration", "description": "Record yourself performing a household task (5–15 minutes). Include narration: describe what you're doing and why. Multiple camera angles encouraged." },
+    { "type": "vision_processing", "executor": "agent", "title": "Full Embodiment-X processing", "description": "Person detection, pose estimation (full body + hands), temporal segmentation, motion scoring, object tracking." },
+    { "type": "labeling", "executor": "human", "title": "Full Embodiment-X annotation", "description": "Cull uninformative segments, fine-cut action boundaries, assign action labels, edit bounding boxes, write language instructions per segment, compose high-level task plan." },
+    { "type": "validation", "executor": "agent", "title": "Embodiment-X quality gate", "description": "Temporal completeness, spatial coverage, language quality, action label consistency, task plan coherence scoring." }
+  ],
+  "action_vocabulary": ["pick_up", "put_down", "fold", "wipe", "pour", "stir", "open", "close", "carry", "other_valid"],
+  "tags": ["Robotics", "Humanoid", "Household", "Multi-Modal"]
+}

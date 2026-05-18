@@ -1,0 +1,113 @@
+---
+title: CLI Reference
+description: Command-line interface for the Humanbased API.
+---
+
+## Installation
+
+```bash
+npm install -g @humanbased/cli
+```
+
+## Commands
+
+### Auth
+
+| Command | Description |
+|---------|-------------|
+| `hb auth set-key <key>` | Save your API key |
+| `hb auth whoami` | Verify key and show org info |
+
+### Frontiers (Live Production Data)
+
+| Command | Description |
+|---------|-------------|
+| `hb frontiers list` | List live data sources (online frontiers) |
+| `hb frontiers list --all` | Include historical/offline frontiers |
+| `hb frontiers tasks <frontier-id>` | List tasks in a frontier |
+
+### Live Data (Production — Frontier Subscriptions)
+
+| Command | Description |
+|---------|-------------|
+| `hb live pull <sub-id> [--limit N] [--cursor C]` | Pull submissions with cursor-based pagination |
+| `hb live adopt <sub-id> <submission-id>` | Adopt a live submission |
+| `hb live dispute <sub-id> <submission-id>` | Dispute a live submission |
+
+### Verticals (Simulated Data)
+
+| Command | Description |
+|---------|-------------|
+| `hb verticals list` | List available data verticals |
+| `hb verticals topics <slug>` | List topics in a vertical |
+
+### Subscriptions
+
+| Command | Description |
+|---------|-------------|
+| `hb subscriptions list` | List deliveries |
+
+### Data (Simulated — Vertical Subscriptions)
+
+| Command | Description |
+|---------|-------------|
+| `hb data pull <sub-id> [--limit N]` | Pull pending items (default: 50) |
+| `hb data adopt <item-id>` | Adopt a data item |
+| `hb data dispute <item-id>` | Dispute a data item |
+
+### Billing
+
+| Command | Description |
+|---------|-------------|
+| `hb billing balance` | Check account balance |
+
+## Examples
+
+### Browse and subscribe to live data
+
+```bash
+# List available frontiers
+hb frontiers list
+
+# See tasks in a frontier
+hb frontiers tasks 8114254168500106625
+
+# After subscribing in the dashboard, pull data
+hb live pull <subscription-id> --limit 100
+
+# Incremental pull with cursor
+hb live pull <subscription-id> --cursor 123456789
+
+# Review submissions
+hb live adopt <subscription-id> <submission-id>
+hb live dispute <subscription-id> <submission-id>
+```
+
+### Work with simulated data
+
+```bash
+# Browse simulated verticals
+hb verticals list
+hb verticals topics crypto_account_annotation
+
+# Pull and review
+hb data pull <subscription-id> --limit 50
+hb data adopt <item-id>
+```
+
+## Configuration
+
+Config is stored at `~/.humanbased/config.json`:
+
+```json
+{
+  "api_key": "hb_live_sk_...",
+  "api_url": "https://api.humanbased.ai"
+}
+```
+
+Override the API URL with the `HB_API_URL` environment variable for local development:
+
+```bash
+HB_API_URL=http://localhost:8001 hb frontiers list
+```

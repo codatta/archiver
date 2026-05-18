@@ -1,0 +1,15 @@
+{
+  "slug": "nvidia-physicalai",
+  "name": "NVIDIA",
+  "tagline": "Pioneering accelerated computing and AI",
+  "description": "NVIDIA is the world leader in accelerated computing and AI. Its PhysicalAI division builds foundation models for robotics and embodied intelligence — training autonomous systems to understand and interact with the physical world through simulation and real-world data.",
+  "tier": "big_tech",
+  "frontier": "Robotics",
+  "website": "https://www.nvidia.com/",
+  "github_url": "https://github.com/nvidia",
+  "hf_url": "https://huggingface.co/nvidia",
+  "hf_org": "nvidia",
+  "hf_stats": { "models": 755, "datasets": 221, "followers": 54973 },
+  "industry": "AI & Accelerated Computing",
+  "verified": true
+}

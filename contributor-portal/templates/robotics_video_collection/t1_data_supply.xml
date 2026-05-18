@@ -1,0 +1,10 @@
+<View>
+  <Header value="Upload Robotics Video"/>
+  <TextArea name="device" placeholder="Recording device (e.g. GoPro Hero 12, iPhone 15 Pro)..." rows="1" maxSubmissions="1"/>
+  <TextArea name="environment" placeholder="Environment description (e.g. hotel room, kitchen, warehouse)..." rows="1" maxSubmissions="1"/>
+  <Choices name="camera_setup" choice="single">
+    <Choice value="single_camera"/>
+    <Choice value="dual_camera"/>
+    <Choice value="multi_view"/>
+  </Choices>
+</View>

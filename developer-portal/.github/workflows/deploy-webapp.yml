@@ -1,0 +1,60 @@
+name: Deploy Webapp
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, staging, "release/**"]
+    paths:
+      - "packages/webapp/**"
+      - "shared/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref == 'refs/heads/staging' && 'staging' || 'production' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+        working-directory: packages/webapp
+
+      - name: Build
+        run: bun run build
+        working-directory: packages/webapp
+        env:
+          API_URL: ${{ github.ref == 'refs/heads/staging' && 'https://staging.api.humanbased.ai' || 'https://api.humanbased.ai' }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+
+      - name: Prepare Vercel output
+        # Create at repo root so the Deploy step (also at repo root) finds it.
+        run: |
+          mkdir -p .vercel/output/static
+          cp -r packages/webapp/dist/. .vercel/output/static/
+          echo '{"version":3,"routes":[{"handle":"filesystem"},{"src":"/(.*)","dest":"/index.html"}]}' > .vercel/output/config.json
+
+      # --- Production (main / release/**) ---
+      - name: Deploy to Vercel (production)
+        if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/')
+        run: |
+          bunx vercel pull --yes --environment=production --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+          bunx vercel deploy --prebuilt --prod --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_WEBAPP_PROJECT_ID }}
+
+      # --- Staging ---
+      - name: Deploy to Vercel (staging)
+        if: github.ref == 'refs/heads/staging'
+        run: |
+          bunx vercel pull --yes --environment=preview --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+          DEPLOYMENT_URL=$(bunx vercel deploy --prebuilt --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }})
+          bunx vercel alias set "$DEPLOYMENT_URL" staging.developer.humanbased.ai --scope=inductive-network --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_WEBAPP_PROJECT_ID }}

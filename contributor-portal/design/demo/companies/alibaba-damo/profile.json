@@ -1,0 +1,15 @@
+{
+  "slug": "alibaba-damo",
+  "name": "Alibaba DAMO Academy",
+  "tagline": "Language Technology Lab at Alibaba DAMO Academy",
+  "description": "DAMO Academy is Alibaba Group's global research initiative, spanning AI, quantum computing, and autonomous systems. Its NLP-SG lab produces state-of-the-art multi-modal foundation models including VideoLLaMA, and leads research in video understanding, visual question answering, and e-commerce AI.",
+  "tier": "big_tech",
+  "frontier": "Vision + Language",
+  "website": "https://damo.alibaba.com/",
+  "github_url": "https://github.com/DAMO-NLP-SG",
+  "hf_url": "https://huggingface.co/DAMO-NLP-SG",
+  "hf_org": "DAMO-NLP-SG",
+  "hf_stats": { "models": 55, "datasets": 15, "followers": 0 },
+  "industry": "E-commerce + AI Research",
+  "verified": true
+}

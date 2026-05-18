@@ -1,0 +1,15 @@
+{
+  "slug": "1x-technologies",
+  "name": "1X Technologies",
+  "tagline": "Home robots that work alongside people",
+  "description": "1X Technologies builds general-purpose humanoid robots for home environments. Its NEO bipedal robot is designed for unstructured household tasks, while EVE (wheeled) serves industrial and institutional settings. The company publishes large-scale teleoperation datasets and world-model challenges to advance embodied AI.",
+  "tier": "small",
+  "frontier": "Robotics",
+  "website": "https://www.1x.tech/",
+  "github_url": "https://github.com/1x-technologies",
+  "hf_url": null,
+  "hf_org": null,
+  "hf_stats": null,
+  "industry": "Humanoid Robotics",
+  "verified": false
+}

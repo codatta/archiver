@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="460" viewBox="0 0 680 460">
+  <defs>
+    <style>text { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }</style>
+  </defs>
+
+  <!-- White base -->
+  <rect width="680" height="460" fill="#ffffff"/>
+
+  <!-- ── HERO (0..200) gray background ── -->
+  <rect x="0" y="0" width="680" height="200" fill="#f5f5f5"/>
+
+  <!-- Frontier label -->
+  <text x="24" y="28" font-size="11" fill="#999999">frontier: Robotics</text>
+  <!-- Enroll link -->
+  <text x="656" y="28" font-size="11" font-weight="600" fill="#000000" text-anchor="end">Enroll &#8594;</text>
+
+  <!-- Campaign name (2 lines, large centered) -->
+  <text x="340" y="88"  font-size="36" font-weight="700" fill="#000000" text-anchor="middle">Embodiment-X</text>
+  <text x="340" y="132" font-size="36" font-weight="700" fill="#000000" text-anchor="middle">Data Collection</text>
+
+  <!-- Timeline: date labels + phase marker -->
+  <!-- inner content x=24..656 width=632; 49% => 24 + 0.49*632 = 333.7 -->
+  <text x="24"  y="161" font-size="11" fill="#555555">first day: 2026/03/01</text>
+  <text x="334" y="161" font-size="11" font-weight="600" fill="#000000" text-anchor="middle">Phase-1</text>
+  <text x="656" y="161" font-size="11" fill="#555555" text-anchor="end">last day: 2026/06/01</text>
+
+  <!-- Progress bar track -->
+  <rect x="24"  y="169" width="632" height="5" fill="#d1d5db"/>
+  <!-- Progress fill (49%) -->
+  <rect x="24"  y="169" width="310" height="5" fill="#22c55e"/>
+  <!-- Phase tick mark -->
+  <rect x="333" y="165" width="2"   height="13" fill="#000000"/>
+
+  <!-- Section divider: hero → body -->
+  <line x1="0" y1="200" x2="680" y2="200" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- ── BODY (200..390) ── -->
+
+  <!-- Stats -->
+  <text x="24" y="227" font-size="12" font-weight="600" fill="#000000">Stats:</text>
+  <text x="24" y="245" font-size="12" fill="#555555">Enrolled by 12,000 persons</text>
+  <text x="24" y="261" font-size="12" fill="#555555">15,723 submissions, 7,800 completions</text>
+
+  <!-- Org section (right) -->
+  <text x="656" y="219" font-size="11" fill="#999999" text-anchor="end">launched by</text>
+  <!-- Org name; ends 8px before avatar left edge (638-18-8=612) -->
+  <text x="612" y="248" font-size="14" font-weight="600" fill="#000000" text-anchor="end">LeRobot</text>
+  <!-- Avatar circle -->
+  <circle cx="638" cy="243" r="18" fill="#e07b00"/>
+  <text x="638" y="243" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">L</text>
+
+  <!-- Task pipeline boxes: 4 boxes, w=152 each, gap=8 -->
+  <!-- Box 1: x=24, cx=100 -->
+  <rect x="24"  y="277" width="152" height="56" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+  <text x="100" y="302" font-size="11" font-weight="500" fill="#000000" text-anchor="middle">Data</text>
+  <text x="100" y="318" font-size="11" font-weight="500" fill="#000000" text-anchor="middle">Sourcing</text>
+
+  <!-- Box 2: x=184, cx=260 -->
+  <rect x="184" y="277" width="152" height="56" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+  <text x="260" y="302" font-size="11" font-weight="500" fill="#000000" text-anchor="middle">Vision</text>
+  <text x="260" y="318" font-size="11" font-weight="500" fill="#000000" text-anchor="middle">Processing</text>
+
+  <!-- Box 3: x=344, cx=420 -->
+  <rect x="344" y="277" width="152" height="56" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+  <text x="420" y="309" font-size="11" font-weight="500" fill="#000000" text-anchor="middle">Labeling</text>
+
+  <!-- Box 4: x=504, cx=580 -->
+  <rect x="504" y="277" width="152" height="56" fill="#ffffff" stroke="#cccccc" stroke-width="1.5"/>
+  <text x="580" y="302" font-size="11" font-weight="500" fill="#000000" text-anchor="middle">Label</text>
+  <text x="580" y="318" font-size="11" font-weight="500" fill="#000000" text-anchor="middle">Validation</text>
+
+  <!-- Connecting pipeline line (20px below box bottom: 277+56+18=351) -->
+  <line x1="24" y1="351" x2="656" y2="351" stroke="#000000" stroke-width="1"/>
+
+  <!-- Pipeline dots at each task center -->
+  <circle cx="100" cy="351" r="6" fill="#000000"/>
+  <circle cx="260" cy="351" r="6" fill="#000000"/>
+  <circle cx="420" cy="351" r="6" fill="#000000"/>
+  <circle cx="580" cy="351" r="6" fill="#000000"/>
+
+  <!-- Section divider: body → footer -->
+  <line x1="0" y1="390" x2="680" y2="390" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- ── FOOTER (390..460) ── -->
+  <text x="400" y="430" font-size="12" fill="#555555">reward type:</text>
+
+  <!-- Token: blue circle with $ -->
+  <circle cx="507" cy="425" r="16" fill="#3b82f6"/>
+  <text x="507" y="425" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">$</text>
+
+  <!-- Separator -->
+  <text x="529" y="430" font-size="14" fill="#999999" text-anchor="middle">/</text>
+
+  <!-- NFT: outlined circle with N -->
+  <circle cx="552" cy="425" r="16" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+  <text x="552" y="425" font-size="13" font-weight="700" fill="#000000" text-anchor="middle" dominant-baseline="central">N</text>
+
+  <!-- Card outer border (drawn last) -->
+  <rect x="0.75" y="0.75" width="678.5" height="458.5" fill="none" stroke="#000000" stroke-width="1.5"/>
+</svg>

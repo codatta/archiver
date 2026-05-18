@@ -1,0 +1,15 @@
+{
+  "slug": "mistral-ai",
+  "name": "Mistral AI",
+  "tagline": "Frontier AI. In Your Hands.",
+  "description": "Mistral AI builds open and portable frontier language models. Its models — Mistral, Mixtral, and Mistral Small — pioneer the Mixture-of-Experts architecture for efficient, high-quality inference. The company believes AI should be abundant and accessible, releasing open-weight models alongside commercial API services.",
+  "tier": "emerging",
+  "frontier": "Language",
+  "website": "https://mistral.ai/",
+  "github_url": "https://github.com/mistralai",
+  "hf_url": "https://huggingface.co/mistralai",
+  "hf_org": "mistralai",
+  "hf_stats": { "models": 71, "datasets": 4, "followers": 0 },
+  "industry": "Language Models",
+  "verified": true
+}

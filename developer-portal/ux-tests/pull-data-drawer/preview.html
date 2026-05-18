@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Pull Data Drawer — 3 key states</title>
+<style>
+  /* Design system tokens */
+  :root {
+    --bg: #E8E0F0;
+    --cardBg: #FFFFFF;
+    --textPrimary: #1B1034;
+    --textSecondary: #5C5470;
+    --textMuted: #9890A8;
+    --accent: #834DFB;
+    --border: #1B1034;
+    --btnBg: #1B1034;
+    --danger: #EF4444;
+    --codeBg: #1B1034;
+    --codeText: #C4B8E0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    padding: 40px 20px;
+    color: var(--textPrimary);
+    -webkit-font-smoothing: antialiased;
+  }
+  .page-title { font-size: 20px; font-weight: 600; margin-bottom: 32px; text-align: center; }
+
+  /* Drawer panel (simulated) */
+  .drawer {
+    max-width: 520px;
+    margin: 0 auto 48px;
+    background: var(--cardBg);
+    border: 1.5px solid var(--border);
+  }
+  .drawer-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1.5px solid var(--border);
+  }
+  .drawer-header .left { display: flex; align-items: center; gap: 8px; }
+  .drawer-header .icon { font-size: 18px; }
+  .drawer-header h2 { font-size: 16px; font-weight: 600; }
+  .drawer-header .subtitle { font-size: 12px; color: var(--textMuted); margin-top: 2px; }
+  .drawer-header .close { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--textSecondary); background: none; border: none; cursor: pointer; }
+
+  .drawer-body { padding: 20px 24px; }
+  .drawer-body > * + * { margin-top: 20px; }
+
+  /* Meta grid */
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .meta-cell { border: 1.5px solid var(--border); padding: 8px 12px; }
+  .meta-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--textMuted); }
+  .meta-value { font-size: 12px; font-family: ui-monospace, SFMono-Regular, monospace; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* State label */
+  .state-label {
+    font-size: 14px; font-weight: 600; color: var(--accent);
+    margin-bottom: 16px; padding: 8px 0; text-align: center;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    background: var(--btnBg); color: #fff; border: none;
+    padding: 10px 16px; font-size: 14px; font-weight: 500; cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-secondary {
+    background: none; border: 1.5px solid var(--border); color: var(--textSecondary);
+    padding: 10px 16px; font-size: 12px; cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-row { display: flex; gap: 8px; }
+  .btn-row .btn-primary { flex: 1; }
+
+  /* Gate (State 1) */
+  .gate {
+    border: 1.5px dashed var(--border);
+    padding: 24px 20px; text-align: center;
+  }
+  .gate p.title { font-size: 14px; font-weight: 500; }
+  .gate p.desc { font-size: 12px; color: var(--textSecondary); margin-top: 8px; }
+  .gate .btn-primary { margin-top: 16px; font-size: 12px; }
+
+  /* Warning banner (State 2) */
+  .warning-banner {
+    border: 1.5px solid var(--danger);
+    padding: 12px;
+  }
+  .warning-banner .warn-title { font-size: 12px; font-weight: 500; color: var(--danger); }
+  .warning-banner .warn-desc { font-size: 11px; color: var(--textSecondary); margin-top: 8px; }
+  .warning-banner .warn-link { font-size: 11px; color: var(--danger); text-decoration: underline; margin-top: 8px; display: inline-block; }
+
+  /* Status bar */
+  .status-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    border: 1.5px solid var(--border); padding: 8px 12px;
+  }
+  .status-bar .status-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--textMuted); margin-bottom: 2px; }
+  .status-bar .status-value { font-size: 12px; font-family: ui-monospace, SFMono-Regular, monospace; }
+
+  /* Result preview */
+  .result-preview-label { font-size: 12px; font-weight: 500; color: var(--textSecondary); margin-bottom: 8px; }
+  pre.result-preview {
+    font-size: 10px; font-family: ui-monospace, SFMono-Regular, monospace;
+    background: var(--codeBg); color: var(--codeText);
+    padding: 12px; overflow-x: auto; max-height: 192px; line-height: 1.625;
+  }
+
+  /* Curl snippet */
+  .curl-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .curl-header span { font-size: 12px; font-weight: 500; color: var(--textSecondary); }
+  .curl-header button {
+    font-size: 12px; padding: 2px 8px; border: 1.5px solid var(--border);
+    color: var(--textMuted); background: none; cursor: pointer; font-family: inherit;
+  }
+  pre.curl {
+    font-size: 11px; font-family: ui-monospace, SFMono-Regular, monospace;
+    background: var(--codeBg); color: var(--codeText);
+    padding: 12px; overflow-x: auto; line-height: 1.625;
+  }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Pull Data Drawer — Key States</h1>
+
+<!-- ═══ STATE 1: No API keys ═══ -->
+<div class="drawer" id="state-1">
+  <div class="state-label">State 1 — No API key (full gate)</div>
+  <div class="drawer-header">
+    <div>
+      <div class="left">
+        <span class="icon">🏦</span>
+        <h2>Pull Data</h2>
+      </div>
+      <p class="subtitle">Crypto Account Annotation</p>
+    </div>
+    <button class="close">×</button>
+  </div>
+  <div class="drawer-body">
+    <div class="meta-grid">
+      <div class="meta-cell">
+        <p class="meta-label">Subscription ID</p>
+        <p class="meta-value">a1b2c3d4e5f6g7h8…</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Mode</p>
+        <p class="meta-value">production</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Status</p>
+        <p class="meta-value">active</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Since</p>
+        <p class="meta-value">Apr 10, 2026</p>
+      </div>
+    </div>
+    <div class="gate">
+      <p class="title">No API key found</p>
+      <p class="desc">You need an API key before pulling data in production.</p>
+      <button class="btn-primary">Go to API Keys →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ STATE 2: Keys exist but none scoped ═══ -->
+<div class="drawer" id="state-2">
+  <div class="state-label">State 2 — Keys exist, none scoped to subscription (warning)</div>
+  <div class="drawer-header">
+    <div>
+      <div class="left">
+        <span class="icon">🏦</span>
+        <h2>Pull Data</h2>
+      </div>
+      <p class="subtitle">Crypto Account Annotation</p>
+    </div>
+    <button class="close">×</button>
+  </div>
+  <div class="drawer-body">
+    <div class="meta-grid">
+      <div class="meta-cell">
+        <p class="meta-label">Subscription ID</p>
+        <p class="meta-value">a1b2c3d4e5f6g7h8…</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Mode</p>
+        <p class="meta-value">production</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Status</p>
+        <p class="meta-value">active</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Since</p>
+        <p class="meta-value">Apr 10, 2026</p>
+      </div>
+    </div>
+
+    <div class="warning-banner">
+      <p class="warn-title">No key has access to this subscription</p>
+      <p class="warn-desc">
+        You have 2 keys, but none are scoped to this subscription.
+        The <strong>Run</strong> button still works (it uses your dashboard session).
+        To use this subscription via API key, create a new key and include this subscription in its scope.
+      </p>
+      <a class="warn-link" href="#">Manage API Keys →</a>
+    </div>
+
+    <div class="status-bar">
+      <div>
+        <p class="status-label">Cursor position</p>
+        <p class="status-value">auto-tracked</p>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-primary">▶ Run</button>
+      <button class="btn-secondary">Pull from beginning</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ STATE 3: Accessible key + result ═══ -->
+<div class="drawer" id="state-3">
+  <div class="state-label">State 3 — Accessible key (Run + curl + result preview)</div>
+  <div class="drawer-header">
+    <div>
+      <div class="left">
+        <span class="icon">🏦</span>
+        <h2>Pull Data</h2>
+      </div>
+      <p class="subtitle">Crypto Account Annotation</p>
+    </div>
+    <button class="close">×</button>
+  </div>
+  <div class="drawer-body">
+    <div class="meta-grid">
+      <div class="meta-cell">
+        <p class="meta-label">Subscription ID</p>
+        <p class="meta-value">a1b2c3d4e5f6g7h8…</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Mode</p>
+        <p class="meta-value">production</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Status</p>
+        <p class="meta-value">active</p>
+      </div>
+      <div class="meta-cell">
+        <p class="meta-label">Since</p>
+        <p class="meta-value">Apr 10, 2026</p>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <div>
+        <p class="status-label">Cursor position</p>
+        <p class="status-value">103847</p>
+      </div>
+      <div style="text-align: right;">
+        <p class="status-label">Last pull</p>
+        <p class="status-value">50 items · more available</p>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-primary">▶ Run</button>
+      <button class="btn-secondary">Pull from beginning</button>
+    </div>
+
+    <div>
+      <p class="result-preview-label">Result preview</p>
+      <pre class="result-preview">[
+  {
+    "submission_id": "389201",
+    "address": "0x742d35Cc6634C0532925a3b844Bc9e7595f2bD88",
+    "chain": "ethereum",
+    "category": "exchange_hot_wallet",
+    "quality_grade": "A",
+    "source": "community"
+  },
+  {
+    "submission_id": "389202",
+    "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "chain": "ethereum",
+    "category": "defi_protocol",
+    "quality_grade": "A",
+    "source": "automated"
+  },
+  {
+    "submission_id": "389203",
+    "address": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+    "chain": "tron",
+    "category": "cex_deposit",
+    "quality_grade": "B",
+    "source": "community"
+  }
+]
+… and 47 more</pre>
+    </div>
+
+    <div>
+      <div class="curl-header">
+        <span>Production usage</span>
+        <button>Copy</button>
+      </div>
+      <pre class="curl"># Omit cursor — the server tracks your position automatically.
+# Pass cursor=0 to pull from the beginning.
+curl -s "https://api.humanbased.ai/v1/live/pull?subscription_id=a1b2c3d4-e5f6-g7h8&limit=50" \
+  -H "Authorization: Bearer YOUR_API_KEY"</pre>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

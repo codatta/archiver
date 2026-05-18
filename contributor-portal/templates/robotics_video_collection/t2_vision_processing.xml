@@ -1,0 +1,22 @@
+<View>
+  <Header value="Automated Vision Processing"/>
+  <!-- Agent task: served by ML Backend, not rendered to humans.
+       Config defines expected output schema. -->
+  <Video name="vid" value="$video_url"/>
+  <Rectangle name="person_bbox" toName="vid"/>
+  <KeyPointLabels name="pose" toName="vid">
+    <Label value="left_shoulder"/>
+    <Label value="left_elbow"/>
+    <Label value="left_wrist"/>
+    <Label value="right_shoulder"/>
+    <Label value="right_elbow"/>
+    <Label value="right_wrist"/>
+  </KeyPointLabels>
+  <TimelineLabels name="motion_segment" toName="vid">
+    <Label value="keep"/>
+    <Label value="review"/>
+    <Label value="culled_motion"/>
+    <Label value="culled_low_action"/>
+    <Label value="culled_person"/>
+  </TimelineLabels>
+</View>

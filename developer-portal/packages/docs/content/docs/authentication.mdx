@@ -1,0 +1,45 @@
+---
+title: Authentication
+description: How to authenticate with the Humanbased API.
+---
+
+## API Key Auth
+
+All consumer API endpoints require an API key in the `Authorization` header:
+
+```
+Authorization: Bearer hb_live_sk_your_key_here
+```
+
+### Key format
+
+Keys start with `hb_live_sk_` followed by 32 URL-safe characters.
+
+### Key management
+
+API keys are created manually from the dashboard — no keys are auto-generated during signup.
+
+| Action | How |
+|--------|-----|
+| **Create** | Dashboard → API Keys → + Create API Key |
+| **Revoke** | Instant — all requests with that key fail immediately |
+| **Expiry** | 7d, 30d, 90d, 1y, or never |
+| **Scope** | Each key is scoped to specific subscriptions |
+| **Multiple keys** | Separate keys for prod, staging, CI/CD |
+
+### Verify your key
+
+```bash
+curl -X POST https://api.humanbased.ai/v1/auth/verify-key \
+  -H "Authorization: Bearer hb_live_sk_your_key"
+```
+
+Response:
+
+```json
+{
+  "org_id": "abc-123",
+  "key_id": "key-456",
+  "key_name": "Production"
+}
+```

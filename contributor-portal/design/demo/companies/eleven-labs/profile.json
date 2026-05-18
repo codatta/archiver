@@ -1,0 +1,15 @@
+{
+  "slug": "eleven-labs",
+  "name": "ElevenLabs",
+  "tagline": "The most realistic AI voice platform",
+  "description": "ElevenLabs builds AI voice technology for text-to-speech, voice cloning, dubbing, and real-time conversation. Its models produce human-quality speech in 32 languages. The platform serves creators, publishers, and enterprises who need expressive, natural-sounding audio at scale.",
+  "tier": "emerging",
+  "frontier": "Speech",
+  "website": "https://elevenlabs.io/",
+  "github_url": "https://github.com/elevenlabs",
+  "hf_url": "https://huggingface.co/elevenlabs",
+  "hf_org": "elevenlabs",
+  "hf_stats": { "models": 1, "datasets": 0, "followers": 0 },
+  "industry": "Voice AI",
+  "verified": true
+}

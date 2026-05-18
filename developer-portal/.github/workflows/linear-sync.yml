@@ -1,0 +1,96 @@
+name: Sync Linear Tickets
+
+# Updates Linear tickets when PRs are merged to staging or main.
+# Parses "IN-<number>" references from PR title, body, and commit messages.
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [staging, main]
+
+jobs:
+  sync-linear:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract Linear ticket IDs
+        id: tickets
+        run: |
+          # Collect ticket refs from PR title, body, and merge commit message
+          TITLE="${{ github.event.pull_request.title }}"
+          BODY=$(cat <<'BODYEOF'
+          ${{ github.event.pull_request.body }}
+          BODYEOF
+          )
+
+          # Extract all IN-<number> references, deduplicate
+          TICKET_IDS=$(echo "$TITLE $BODY" | grep -oE 'IN-[0-9]+' | sort -u | tr '\n' ' ')
+          echo "ids=$TICKET_IDS" >> "$GITHUB_OUTPUT"
+          echo "Found ticket IDs: $TICKET_IDS"
+
+          if [ -z "$TICKET_IDS" ]; then
+            echo "No Linear ticket references found — skipping."
+          fi
+
+      - name: Determine target status
+        id: status
+        run: |
+          BRANCH="${{ github.event.pull_request.base.ref }}"
+          if [ "$BRANCH" = "main" ]; then
+            echo "status=Done" >> "$GITHUB_OUTPUT"
+            echo "comment=Deployed to production via PR #${{ github.event.pull_request.number }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "status=In Review" >> "$GITHUB_OUTPUT"
+            echo "comment=Merged to staging via PR #${{ github.event.pull_request.number }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update Linear tickets
+        if: steps.tickets.outputs.ids != ''
+        env:
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+        run: |
+          if [ -z "$LINEAR_API_KEY" ]; then
+            echo "LINEAR_API_KEY not set — skipping Linear sync."
+            echo "To enable: add a Linear API key as a repository secret named LINEAR_API_KEY."
+            exit 0
+          fi
+
+          TARGET_STATUS="${{ steps.status.outputs.status }}"
+          COMMENT="${{ steps.status.outputs.comment }}"
+          PR_URL="${{ github.event.pull_request.html_url }}"
+
+          for TICKET in ${{ steps.tickets.outputs.ids }}; do
+            echo "Updating $TICKET → $TARGET_STATUS"
+
+            # Get the ticket ID and team workflow states
+            ISSUE_DATA=$(curl -s -X POST https://api.linear.app/graphql \
+              -H "Authorization: $LINEAR_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{\"query\": \"{ issueSearch(filter: { identifier: { eq: \\\"$TICKET\\\" } }) { nodes { id team { states { nodes { id name } } } } } }\"}")
+
+            ISSUE_ID=$(echo "$ISSUE_DATA" | jq -r '.data.issueSearch.nodes[0].id // empty')
+            if [ -z "$ISSUE_ID" ]; then
+              echo "  Could not find $TICKET — skipping."
+              continue
+            fi
+
+            STATE_ID=$(echo "$ISSUE_DATA" | jq -r ".data.issueSearch.nodes[0].team.states.nodes[] | select(.name == \"$TARGET_STATUS\") | .id")
+            if [ -z "$STATE_ID" ]; then
+              echo "  Could not find state '$TARGET_STATUS' for $TICKET — skipping status update."
+              continue
+            fi
+
+            # Update the issue state
+            curl -s -X POST https://api.linear.app/graphql \
+              -H "Authorization: $LINEAR_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{\"query\": \"mutation { issueUpdate(id: \\\"$ISSUE_ID\\\", input: { stateId: \\\"$STATE_ID\\\" }) { success } }\"}" > /dev/null
+
+            # Add a comment with PR link
+            curl -s -X POST https://api.linear.app/graphql \
+              -H "Authorization: $LINEAR_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{\"query\": \"mutation { commentCreate(input: { issueId: \\\"$ISSUE_ID\\\", body: \\\"$COMMENT\\\\n\\\\n$PR_URL\\\" }) { success } }\"}" > /dev/null
+
+            echo "  $TICKET updated to $TARGET_STATUS with PR link."
+          done

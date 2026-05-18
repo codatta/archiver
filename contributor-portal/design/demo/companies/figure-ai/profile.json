@@ -1,0 +1,15 @@
+{
+  "slug": "figure-ai",
+  "name": "Figure AI",
+  "tagline": "Developing autonomous humanoid robots",
+  "description": "Figure AI builds general-purpose humanoid robots designed to work alongside humans. Its Figure 02 robot combines full-body locomotion with dexterous manipulation, trained on real-world task demonstrations. The company focuses on warehouse logistics, manufacturing, and household applications.",
+  "tier": "emerging",
+  "frontier": "Robotics",
+  "website": "https://figure.ai/",
+  "github_url": "https://github.com/figure-ai",
+  "hf_url": "https://huggingface.co/FigureAI",
+  "hf_org": "FigureAI",
+  "hf_stats": { "models": 0, "datasets": 0, "followers": 0 },
+  "industry": "Humanoid Robotics",
+  "verified": true
+}

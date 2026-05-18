@@ -1,0 +1,61 @@
+name: Deploy API
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, staging, "release/**"]
+    paths:
+      - "packages/api/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref == 'refs/heads/staging' && 'staging' || 'production' }}
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set deployment target
+        id: target
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/staging" ]]; then
+            echo "service=humanbased-api-staging" >> "$GITHUB_OUTPUT"
+            echo "tag=staging-${{ github.sha }}" >> "$GITHUB_OUTPUT"
+            echo "environment=staging" >> "$GITHUB_OUTPUT"
+          else
+            echo "service=humanbased-api" >> "$GITHUB_OUTPUT"
+            echo "tag=${{ github.sha }}" >> "$GITHUB_OUTPUT"
+            echo "environment=production" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker ${{ secrets.GCP_REGION }}-docker.pkg.dev --quiet
+
+      - name: Build and push Docker image
+        run: |
+          IMAGE="${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_AR_REPO }}/api:${{ steps.target.outputs.tag }}"
+          docker build -t "$IMAGE" .
+          docker push "$IMAGE"
+        working-directory: packages/api
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy ${{ steps.target.outputs.service }} \
+            --image="${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_AR_REPO }}/api:${{ steps.target.outputs.tag }}" \
+            --region=${{ secrets.GCP_REGION }} \
+            --platform=managed \
+            --allow-unauthenticated \
+            --update-env-vars="SUPABASE_URL=${{ secrets.SUPABASE_URL }},SUPABASE_PUBLISHABLE_KEY=${{ secrets.SUPABASE_PUBLISHABLE_KEY }},SUPABASE_SECRET_KEY=${{ secrets.SUPABASE_SECRET_KEY }}" \
+            --quiet

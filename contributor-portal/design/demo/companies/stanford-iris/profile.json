@@ -1,0 +1,15 @@
+{
+  "slug": "stanford-iris",
+  "name": "Stanford IRIS Lab",
+  "tagline": "Intelligence through Robotic Interaction at Scale",
+  "description": "The Stanford IRIS Lab studies how robots develop broadly intelligent behavior through learning and interaction. Research areas include contact-rich manipulation, scalable robotic reinforcement learning, and batch exploration. The lab publishes open datasets and code to accelerate reproducible robotics research.",
+  "tier": "academic",
+  "frontier": "Robotics",
+  "website": "https://irislab.stanford.edu/",
+  "github_url": "https://github.com/stanford-iris-lab",
+  "hf_url": null,
+  "hf_org": null,
+  "hf_stats": null,
+  "industry": "Academic Research — Robotics",
+  "verified": false
+}

@@ -1,0 +1,13 @@
+<View>
+  <Header value="Validation Review"/>
+  <Video name="vid" value="$video_url"/>
+  <Choices name="quality_decision" choice="single">
+    <Choice value="approve"/>
+    <Choice value="reject"/>
+    <Choice value="needs_revision"/>
+  </Choices>
+  <Rating name="quality_score" toName="vid" maxRating="5"/>
+  <TextArea name="rejection_reason" toName="vid"
+            placeholder="If rejecting, explain why..."
+            rows="2" maxSubmissions="1"/>
+</View>

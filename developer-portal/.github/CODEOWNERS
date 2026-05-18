@@ -1,0 +1,5 @@
+# CODEOWNERS
+# Every PR targeting main requires approval from one of the code owners.
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+* @beingzy @markof @zouqone

@@ -1,0 +1,19 @@
+{
+  "slug": "nvidia-kitchen-manipulation",
+  "company": "nvidia-physicalai",
+  "title": "Kitchen Manipulation",
+  "description": "Record and annotate robotics manipulation video data for training embodied AI agents. Contributors upload kitchen task demonstration videos, which are processed by our Vision Engine for pre-labeling, then reviewed and annotated by human contributors.",
+  "frontier": "Robotics",
+  "compensation": { "model": "fixed", "supply_rate": 2.50, "labeling_rate": 1.50, "currency": "USD" },
+  "privacy_tier": "open",
+  "target_instances": 1000,
+  "estimated_time_min": 35,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Upload kitchen task video", "description": "Record a 30–120s video of kitchen manipulation (folding, packing, pick-and-place) and upload with detection preset." },
+    { "type": "vision_processing", "executor": "agent", "title": "Vision Engine pre-labeling", "description": "YOLO person detection, optical flow, pose estimation, temporal segmentation." },
+    { "type": "labeling", "executor": "human", "title": "Cull review + action annotation", "description": "Review Vision Engine segments (keep/cull), fine-cut action boundaries, assign labels (fold_box, fold_textile, packing, pick_place), write language instructions." },
+    { "type": "validation", "executor": "agent", "title": "Quality validation", "description": "Annotation completeness, spatial coverage, language quality, label consistency scoring." }
+  ],
+  "action_vocabulary": ["fold_box", "fold_textile", "packing", "pick_place", "other_valid"],
+  "tags": ["Robotics", "Video", "Manipulation", "Kitchen"]
+}

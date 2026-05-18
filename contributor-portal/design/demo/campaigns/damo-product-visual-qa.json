@@ -1,0 +1,18 @@
+{
+  "slug": "damo-product-visual-qa",
+  "company": "alibaba-damo",
+  "title": "Product Visual QA",
+  "description": "Annotate product images with bounding boxes, attribute labels, and natural-language question-answer pairs. Data trains multi-modal models for visual search, product understanding, and conversational commerce across e-commerce platforms.",
+  "frontier": "Vision + Language",
+  "compensation": { "model": "fixed", "supply_rate": 0.80, "labeling_rate": 0.60, "currency": "USD" },
+  "privacy_tier": "open",
+  "target_instances": 3000,
+  "estimated_time_min": 12,
+  "tasks": [
+    { "type": "supply", "executor": "human", "title": "Upload product image", "description": "Photograph a consumer product (electronics, clothing, food, furniture) on a clean background. Multiple angles encouraged." },
+    { "type": "labeling", "executor": "human", "title": "Bbox + attribute + QA annotation", "description": "Draw bounding boxes around each product region, label attributes (color, material, size, brand), write 3 question-answer pairs that require visual understanding." },
+    { "type": "validation", "executor": "agent", "title": "Annotation quality check", "description": "Bbox IoU against auto-detection, attribute consistency, QA groundedness score." }
+  ],
+  "action_vocabulary": [],
+  "tags": ["Vision", "E-Commerce", "VQA", "Product"]
+}

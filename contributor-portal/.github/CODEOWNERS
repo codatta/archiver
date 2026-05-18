@@ -1,0 +1,8 @@
+# Code owners for codatta/contributor-portal
+#
+# Every PR requires review from at least one listed owner. Later entries
+# override earlier ones, so put broader patterns first and more specific
+# overrides below. See: https://docs.github.com/en/repositories/managing-your-repositories-settings-and-security/customizing-your-repository/about-code-owners
+
+# Default owners — all paths not matched by a more specific rule below
+*                   @markof @beingzy @zouqone

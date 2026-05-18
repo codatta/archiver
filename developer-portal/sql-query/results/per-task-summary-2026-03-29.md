@@ -1,0 +1,5708 @@
+# Per-Task Summary — 2026-03-29
+
+**Total tasks:** 5640  
+**Tasks with submissions:** 2291  
+**Total submissions:** 4,039,462  
+
+## Column Definitions
+
+| Column | Description |
+|---|---|
+| task_id | Unique task identifier in cfp_metacore |
+| task_name | Human-readable task name |
+| frontier | Parent frontier (≈ vertical/campaign) |
+| frontier_status | ONLINE / PREPARING / OFFLINE |
+| task_status | COLLECTING / FINISHED / PAUSE / STOP |
+| start | First submission or configured start_time |
+| end | Last submission or configured end_time |
+| users_total | Unique users who submitted anything |
+| users_data | Users with task_type='submission' (contributing raw data) |
+| users_label | Users whose submissions were ADOPT'd (accepted labels) |
+| users_validating | Users with task_type='validation' (reviewers) |
+| samples | Total submission count |
+| adopted / refused / pending / submitted | Breakdown by status |
+
+## All Tasks (sorted by sample count)
+
+| task_id | task_name | frontier | f_status | t_status | start | end | users_total | users_data | users_label | users_valid | samples | adopted | refused | pending | submitted |
+|---|---|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 7789596241600103173 | Collecting food images and descriptions to po | Food Science - depreted | PREPARING | COLLECTING | 1753-11-16 16:00 | 6825-08-30 16:00 | 55673 | 55673 | 55428 | 0 | 296503 | 285297 | 11206 | 0 | 0 |
+| 7995430377900109180 | Robotics image label for week5 | Robotics for binance | PREPARING | COLLECTING | 2025-07-01 04:09 | 2025-11-05 19:20 | 48981 | 48981 | 48981 | 0 | 282467 | 282467 | 0 | 0 | 0 |
+| 7874465013700103498 | Collecting food images and descriptions for A | Food Science - depreted | PREPARING | COLLECTING | 2025-05-13 16:11 | 2025-11-09 12:26 | 48182 | 48182 | 48182 | 0 | 277326 | 277323 | 3 | 0 | 0 |
+| 7874487109100104073 | Collecting global food images and description | Food Science - depreted | PREPARING | COLLECTING | 2025-07-04 09:10 | 2025-10-10 18:26 | 45541 | 45541 | 45463 | 0 | 270515 | 261123 | 9392 | 0 | 0 |
+| 7874487109100104085 | Collecting global food images and description | Food Science - depreted | PREPARING | COLLECTING | 2025-07-04 09:18 | 2025-10-19 11:39 | 45461 | 45461 | 45339 | 0 | 269231 | 260629 | 8602 | 0 | 0 |
+| 8780705631500101310 | Food Image Annotation | Food Science | ONLINE | COLLECTING | 2025-10-13 06:58 | 2026-03-27 01:00 | 7991 | 7991 | 474 | 0 | 92831 | 43651 | 49180 | 0 | 0 |
+| 8426603122700100116 | Use an exam to assess users’ skill levels. | User Skill Profiling | ONLINE | COLLECTING | 2025-09-02 08:44 | 2026-03-28 10:22 | 80736 | 80736 | 80635 | 0 | 81652 | 81200 | 452 | 0 | 0 |
+| 8426531892500109980 | Collecting global food images and description | Food Science - depreted | PREPARING | COLLECTING | 2025-09-02 08:43 | 2025-09-28 16:32 | 75630 | 75630 | 75408 | 0 | 77554 | 75558 | 1996 | 0 | 0 |
+| 8565035518300104449 | Collecting global food images and description | Food Science - depreted | PREPARING | COLLECTING | 2025-09-18 09:52 | 2025-10-09 20:27 | 73320 | 73320 | 73043 | 0 | 75941 | 73187 | 2754 | 0 | 0 |
+| 8426526409300109973 | Robotics image label for week10. | Robotics for binance | PREPARING | COLLECTING | 2025-09-02 09:11 | 2025-11-03 11:08 | 75175 | 75175 | 75175 | 0 | 75311 | 75311 | 0 | 0 | 0 |
+| 8565045466600104490 | Collect deposit address images from exchanges | CEX Hot Wallet | ONLINE | PAUSE | 2025-09-18 09:55 | 2025-10-14 09:31 | 70285 | 70285 | 69574 | 0 | 74712 | 70206 | 4506 | 0 | 0 |
+| 8426510893000109943 | Submit images of kitchen appliance knobs and  | Kitchen Appliances | PREPARING | COLLECTING | 2025-09-02 09:20 | 2025-09-28 16:45 | 71952 | 71952 | 71667 | 0 | 74682 | 71978 | 2704 | 0 | 0 |
+| 8426521551800109963 | Collect deposit address images from exchanges | CEX Hot Wallet | ONLINE | PAUSE | 2025-09-02 09:13 | 2025-09-28 16:47 | 70808 | 70808 | 70346 | 0 | 74062 | 70789 | 3273 | 0 | 0 |
+| 8565038901700104462 | Robotics image label for week12. | Robotics for binance | PREPARING | COLLECTING | 2025-09-18 09:54 | 2025-10-24 11:56 | 73712 | 73712 | 73712 | 0 | 73891 | 73891 | 0 | 0 | 0 |
+| 8495400486800109431 | Submit images of kitchen appliance knobs and  | Kitchen Appliances | PREPARING | COLLECTING | 2025-09-10 12:53 | 2025-10-01 19:59 | 71284 | 71284 | 71011 | 0 | 73822 | 71400 | 2422 | 0 | 0 |
+| 8495378046300104551 | Collecting global food images and description | Food Science - depreted | PREPARING | COLLECTING | 2025-09-10 09:11 | 2025-10-05 13:50 | 71001 | 71001 | 70849 | 0 | 73003 | 70987 | 2016 | 0 | 0 |
+| 8495394906500108169 | Collect deposit address images from exchanges | CEX Hot Wallet | ONLINE | PAUSE | 2025-09-10 09:40 | 2025-09-28 17:16 | 68832 | 68832 | 68642 | 0 | 72353 | 70944 | 1409 | 0 | 0 |
+| 8565046962100104494 | Collect withdraw address images from exchange | CEX Hot Wallet | ONLINE | PAUSE | 2025-09-18 09:57 | 2025-10-03 13:37 | 69287 | 69287 | 69106 | 0 | 71986 | 70617 | 1369 | 0 | 0 |
+| 8426519497100109959 | Collect withdraw address images from exchange | CEX Hot Wallet | ONLINE | PAUSE | 2025-09-02 09:19 | 2025-09-21 08:40 | 69437 | 69437 | 69243 | 0 | 71403 | 69604 | 1799 | 0 | 0 |
+| 8495383609200105765 | Robotics image label for week11. | Robotics for binance | PREPARING | COLLECTING | 2025-09-10 09:28 | 2025-10-05 13:54 | 70955 | 70955 | 70955 | 0 | 71064 | 71064 | 0 | 0 | 0 |
+| 8495393491800107878 | Collect withdraw address images from exchange | CEX Hot Wallet | ONLINE | PAUSE | 2025-09-10 10:48 | 2025-09-27 15:20 | 67528 | 67528 | 67461 | 0 | 69634 | 68944 | 690 | 0 | 0 |
+| 8565022909700104359 | Collect questions with error answers from LLM | User Skill Profiling | ONLINE | COLLECTING | 2025-09-18 09:51 | 2026-01-31 11:31 | 68876 | 68876 | 68876 | 0 | 68901 | 68900 | 1 | 0 | 0 |
+| 8297724949300100555 | Use a survey to assess users’ skill levels. | User Skill Profiling | ONLINE | COLLECTING | 2025-08-18 10:13 | 2026-03-27 18:44 | 61625 | 61625 | 61625 | 0 | 64927 | 64927 | 0 | 0 | 0 |
+| 8296093913900103595 | Collecting global food images and description | Food Science - depreted | PREPARING | COLLECTING | 2025-08-18 08:44 | 2025-10-23 19:11 | 60152 | 60152 | 59982 | 0 | 63010 | 60634 | 2376 | 0 | 0 |
+| 8296074643200103300 | Collect depoist address images from exchanges | CEX Hot Wallet | ONLINE | PAUSE | 2025-08-18 04:43 | 2025-10-23 19:41 | 57153 | 57153 | 56773 | 0 | 61315 | 58305 | 3010 | 0 | 0 |
+| 8296083646800103469 | Robotics image label for week9. | Robotics for binance | PREPARING | COLLECTING | 2025-08-18 09:10 | 2025-10-23 19:14 | 60451 | 60451 | 60451 | 0 | 60961 | 60961 | 0 | 0 | 0 |
+| 8297671429100109809 | Submit images of kitchen appliance knobs and  | Kitchen Appliances | PREPARING | COLLECTING | 2025-08-19 03:31 | 2025-10-23 19:31 | 56214 | 56214 | 55874 | 0 | 59658 | 56200 | 3458 | 0 | 0 |
+| 8495366350500102069 | Collect questions with inconsistent answers f | User Skill Profiling | ONLINE | COLLECTING | 2025-09-10 12:55 | 2025-10-27 09:22 | 46631 | 46631 | 45320 | 0 | 59190 | 48754 | 10436 | 0 | 0 |
+| 8296072191000103272 | Collect withdraw address images from exchange | CEX Hot Wallet | ONLINE | PAUSE | 2025-08-18 04:47 | 2025-10-23 19:51 | 55644 | 55644 | 55558 | 0 | 57948 | 57020 | 928 | 0 | 0 |
+| 8245449210100108018 | Collect deposit address images from exchanges | CEX Hot Wallet | ONLINE | PAUSE | 2025-08-12 08:51 | 2025-10-01 19:40 | 53164 | 53164 | 52300 | 0 | 57802 | 52477 | 5325 | 0 | 0 |
+| 7994748566700100669 | Arena food image and description for week8 | Food Science - depreted | PREPARING | COLLECTING | 2025-08-12 08:20 | 2025-10-06 18:21 | 56328 | 56328 | 56328 | 0 | 57378 | 57378 | 0 | 0 | 0 |
+| 8114273779900107583 | Collect deposit address images from exchanges | CEX Hot Wallet | ONLINE | PAUSE | 2025-07-28 04:13 | 2026-01-12 03:44 | 42473 | 42473 | 40646 | 0 | 56993 | 41884 | 15109 | 0 | 0 |
+| 7995435909500109386 | Robotics image label for week8 | Robotics for binance | PREPARING | COLLECTING | 2025-08-12 08:32 | 2025-10-06 18:22 | 56076 | 56076 | 56076 | 0 | 56759 | 56759 | 0 | 0 | 0 |
+| 8245452130200108035 | Collect withdraw address images from exchange | CEX Hot Wallet | ONLINE | PAUSE | 2025-08-12 09:07 | 2025-11-03 05:11 | 52466 | 52466 | 51828 | 0 | 56321 | 52015 | 4306 | 0 | 0 |
+| 8194407896000103686 | Collect deposit address images from exchanges | CEX Hot Wallet | ONLINE | PAUSE | 2025-08-06 11:01 | 2025-09-30 17:45 | 45111 | 45111 | 44140 | 0 | 51460 | 44275 | 7185 | 0 | 0 |
+| 8114279515800107934 | Collect withdraw address images from exchange | CEX Hot Wallet | ONLINE | PAUSE | 2025-07-28 07:55 | 2026-01-11 18:57 | 41262 | 41262 | 39957 | 0 | 51425 | 41805 | 9620 | 0 | 0 |
+| 7994740912300100520 | Arena food image and description for week7 | Food Science - depreted | PREPARING | COLLECTING | 2025-07-21 02:17 | 2025-10-05 19:27 | 49223 | 49223 | 49223 | 0 | 50457 | 50457 | 0 | 0 | 0 |
+| 7994720808500109982 | Human evaluate food image and description for | Food Science - depreted | PREPARING | COLLECTING | 2025-07-17 09:40 | 2025-09-28 17:30 | 49282 | 49282 | 49282 | 0 | 49931 | 49931 | 0 | 0 | 0 |
+| 7995668964900100987 | Robotics image label for week7 | Robotics for binance | PREPARING | COLLECTING | 2025-08-06 11:04 | 2025-10-14 19:16 | 49043 | 49043 | 49043 | 0 | 49671 | 49671 | 0 | 0 | 0 |
+| 8194411415800103734 | Collect withdraw address images from exchange | CEX Hot Wallet | ONLINE | PAUSE | 2025-08-06 11:05 | 2025-10-14 19:17 | 44365 | 44365 | 43703 | 0 | 49503 | 43856 | 5647 | 0 | 0 |
+| 7994738248300100441 | Arena food image and description for week6 | Food Science - depreted | PREPARING | COLLECTING | 2025-07-21 02:16 | 2025-09-28 17:33 | 47175 | 47175 | 47175 | 0 | 48138 | 48138 | 0 | 0 | 0 |
+| 7995432727700109275 | Robotics image label for week6 | Robotics for binance | PREPARING | COLLECTING | 2025-07-28 04:11 | 2025-09-28 17:34 | 47058 | 47058 | 47058 | 0 | 47610 | 47610 | 0 | 0 | 0 |
+| 8780679023800101152 | Provide the correct answer to expose LLM fail | Correct LLM's Mistakes | ONLINE | COLLECTING | 2025-10-13 06:57 | 2026-03-07 10:35 | 8497 | 8497 | 218 | 0 | 39781 | 948 | 38833 | 0 | 0 |
+| 8780653218600101100 | Spot LLM's Mistakes | Spot LLM's Mistakes | ONLINE | COLLECTING | 2025-10-13 06:57 | 2026-03-29 03:51 | 1232 | 1232 | 270 | 0 | 17471 | 1188 | 16283 | 0 | 0 |
+| 8780546754700100781 | Objectively compare AI models based on set cr | Model Comparison | ONLINE | COLLECTING | 2025-10-13 06:58 | 2026-01-27 14:56 | 1933 | 1933 | 363 | 0 | 13792 | 1178 | 12614 | 0 | 0 |
+| 9142643567600105187 | Collect Crypto & Stock Information | Crypto & Stock Informatio | ONLINE | COLLECTING | 2025-11-24 04:15 | 2026-03-27 23:14 | 174 | 174 | 138 | 0 | 13028 | 3516 | 9512 | 0 | 0 |
+| 7528474065300103578 | NFT Image Annotation | NFT | ONLINE | PAUSE | 2025-05-21 08:49 | 2025-07-23 04:00 | 136 | 136 | 10 | 0 | 12886 | 30 | 12856 | 0 | 0 |
+| 7528465136400103577 | Outfit Photo Collection | Outfit of the Day | ONLINE | PAUSE | 2025-05-21 16:25 | 2025-07-23 04:28 | 166 | 166 | 3 | 0 | 9878 | 31 | 9847 | 0 | 0 |
+| 6155757553400100867 | L3 ucsd_kitchen_dataset_ep000146 | Robotics | ONLINE | COLLECTING | 2024-12-14 12:59 | 2025-10-24 03:04 | 5985 | 5985 | 123 | 0 | 8364 | 127 | 6303 | 0 | 1934 |
+| 7528449925900103576 | Voice Recording | Speech | ONLINE | PAUSE | 2025-05-21 10:06 | 2025-07-25 14:13 | 118 | 118 | 85 | 0 | 7716 | 810 | 6906 | 0 | 0 |
+| 6459383089000101956 | L1 task-pick_water_50_4_7th-44 | Robotics | ONLINE | COLLECTING | 2025-01-17 08:30 | 2026-03-24 14:08 | 6385 | 6385 | 278 | 0 | 6386 | 278 | 6095 | 13 | 0 |
+| 7528085182000103499 | Food Image and Description Collection | Food Science | ONLINE | PAUSE | 2025-05-21 07:30 | 2025-10-12 18:49 | 276 | 276 | 3 | 0 | 6164 | 10 | 6154 | 0 | 0 |
+| 9766459299500100033 | Label fashion data | Fashion | ONLINE | COLLECTING | 2026-02-04 09:04 | 2026-03-28 22:29 | 44 | 0 | 0 | 44 | 5175 | 3984 | 1091 | 100 | 0 |
+| 6155757556900100870 | L3 ucsd_kitchen_dataset_ep000147 | Robotics | ONLINE | COLLECTING | 2024-12-16 22:48 | 2025-10-25 03:19 | 4383 | 4383 | 67 | 0 | 4734 | 69 | 3051 | 1 | 1613 |
+| 6459383091600101958 | L3 task-pick_water_50_4_7th-44 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:11 | 2026-03-24 14:21 | 4603 | 4603 | 103 | 0 | 4608 | 103 | 4492 | 13 | 0 |
+| 9142663913300108352 | Collect Real‑world Photo | Real‑world Photo | ONLINE | COLLECTING | 2025-11-24 04:19 | 2026-03-26 22:04 | 165 | 165 | 148 | 0 | 4430 | 1232 | 3198 | 0 | 0 |
+| 6155757560600100873 | L3 ucsd_kitchen_dataset_ep000148 | Robotics | ONLINE | COLLECTING | 2024-12-14 13:00 | 2025-10-25 03:33 | 3893 | 3893 | 47 | 0 | 4367 | 48 | 2832 | 2 | 1485 |
+| 6155757508600100829 | L1 ucsd_kitchen_dataset_ep000134 | Robotics | ONLINE | COLLECTING | 2024-12-25 17:23 | 2025-10-30 03:01 | 283 | 283 | 2 | 0 | 3904 | 2 | 3219 | 2 | 681 |
+| 9464652158900101893 | Appliance Knob Collection & Annotation | Appliance Knob | ONLINE | COLLECTING | 1767-08-05 16:00 | 2026-03-25 11:46 | 256 | 256 | 106 | 0 | 3886 | 3164 | 660 | 62 | 0 |
+| 6155757554600100868 | L1 ucsd_kitchen_dataset_ep000147 | Robotics | ONLINE | COLLECTING | 2024-12-14 09:26 | 2025-10-24 03:05 | 3485 | 3485 | 48 | 0 | 3838 | 50 | 2605 | 0 | 1183 |
+| 6155757564200100876 | L3 ucsd_kitchen_dataset_ep000149 | Robotics | ONLINE | COLLECTING | 2024-12-19 07:45 | 2025-10-25 03:34 | 3261 | 3261 | 34 | 0 | 3664 | 35 | 2401 | 2 | 1226 |
+| 6155757558100100871 | L1 ucsd_kitchen_dataset_ep000148 | Robotics | ONLINE | COLLECTING | 2024-12-14 10:42 | 2025-10-25 03:19 | 2674 | 2674 | 30 | 0 | 2994 | 30 | 2062 | 1 | 901 |
+| 6155757468800100795 | L3 ucsd_kitchen_dataset_ep000122 | Robotics | ONLINE | COLLECTING | 2024-12-19 07:46 | 2025-10-25 03:34 | 2687 | 2687 | 21 | 0 | 2829 | 21 | 1795 | 2 | 1011 |
+| 6155757561800100874 | L1 ucsd_kitchen_dataset_ep000149 | Robotics | ONLINE | COLLECTING | 2024-12-17 01:46 | 2025-10-25 03:20 | 2232 | 2232 | 17 | 0 | 2501 | 17 | 1676 | 1 | 807 |
+| 6155757472200100798 | L3 ucsd_kitchen_dataset_ep000123 | Robotics | ONLINE | COLLECTING | 2024-12-19 07:46 | 2025-10-26 02:52 | 1682 | 1682 | 14 | 0 | 1789 | 14 | 1200 | 2 | 573 |
+| 6459383092800101959 | L1 task-pick_water_50_4_7th-45 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:11 | 2026-03-24 14:25 | 1723 | 1723 | 92 | 0 | 1723 | 92 | 1622 | 9 | 0 |
+| 6155757470000100796 | L1 ucsd_kitchen_dataset_ep000123 | Robotics | ONLINE | COLLECTING | 2024-12-19 07:47 | 2025-10-25 03:34 | 1499 | 1499 | 10 | 0 | 1605 | 10 | 1092 | 2 | 501 |
+| 6459383095500101961 | L3 task-pick_water_50_4_7th-45 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:39 | 2026-03-24 14:48 | 1285 | 1285 | 39 | 0 | 1285 | 39 | 1226 | 20 | 0 |
+| 6155757475600100801 | L3 ucsd_kitchen_dataset_ep000124 | Robotics | ONLINE | COLLECTING | 2024-12-19 07:48 | 2025-10-26 03:07 | 1162 | 1162 | 11 | 0 | 1222 | 11 | 814 | 2 | 395 |
+| 6155757473200100799 | L1 ucsd_kitchen_dataset_ep000124 | Robotics | ONLINE | COLLECTING | 2024-12-19 07:47 | 2025-10-26 02:53 | 1116 | 1116 | 4 | 0 | 1165 | 4 | 756 | 2 | 403 |
+| 6459383096800101962 | L1 task-pick_water_50_4_7th-46 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:39 | 2026-03-24 15:00 | 1045 | 1045 | 48 | 0 | 1050 | 48 | 987 | 15 | 0 |
+| 6155757479200100804 | L3 ucsd_kitchen_dataset_ep000125 | Robotics | ONLINE | COLLECTING | 2024-12-19 07:48 | 2025-10-27 02:55 | 983 | 983 | 5 | 0 | 1006 | 5 | 630 | 2 | 369 |
+| 6155757482500100807 | L3 ucsd_kitchen_dataset_ep000126 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:03 | 2025-10-27 02:58 | 859 | 859 | 7 | 0 | 895 | 7 | 541 | 2 | 345 |
+| 6459383099500101964 | L3 task-pick_water_50_4_7th-46 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:39 | 2026-03-24 15:05 | 852 | 852 | 29 | 0 | 852 | 29 | 809 | 14 | 0 |
+| 6155757476800100802 | L1 ucsd_kitchen_dataset_ep000125 | Robotics | ONLINE | COLLECTING | 2024-12-19 07:48 | 2025-10-26 02:54 | 800 | 800 | 2 | 0 | 844 | 2 | 552 | 2 | 288 |
+| 6155757505000100826 | L1 ucsd_kitchen_dataset_ep000133 | Robotics | ONLINE | COLLECTING | 2024-12-25 17:23 | 2025-10-29 02:50 | 192 | 192 | 4 | 0 | 828 | 4 | 126 | 2 | 696 |
+| 6155757480300100805 | L1 ucsd_kitchen_dataset_ep000126 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:02 | 2025-10-27 02:56 | 698 | 698 | 4 | 0 | 808 | 4 | 525 | 2 | 277 |
+| 6459383100700101965 | L1 task-pick_water_50_4_7th-47 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:40 | 2026-03-24 15:10 | 773 | 773 | 37 | 0 | 773 | 37 | 720 | 16 | 0 |
+| 8003703582800106601 | Share your important life events with us! | Lifelog Canvas | ONLINE | COLLECTING | 2025-07-15 08:31 | 2026-03-26 17:51 | 752 | 752 | 300 | 0 | 753 | 301 | 412 | 40 | 0 |
+| 6155757486000100810 | L3 ucsd_kitchen_dataset_ep000127 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:04 | 2025-10-27 03:04 | 648 | 648 | 3 | 0 | 671 | 3 | 436 | 2 | 230 |
+| 9142619218600104184 | Bind Discord Account | Discord | PREPARING | COLLECTING | 2025-11-24 05:53 | 2025-12-08 06:17 | 663 | 663 | 663 | 0 | 664 | 664 | 0 | 0 | 0 |
+| 6459383104500101968 | L1 task-pick_water_50_4_7th-48 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:40 | 2026-03-24 15:16 | 593 | 593 | 32 | 0 | 593 | 32 | 542 | 19 | 0 |
+| 6155757489700100813 | L3 ucsd_kitchen_dataset_ep000128 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:05 | 2025-10-28 03:01 | 583 | 583 | 3 | 0 | 583 | 3 | 381 | 2 | 197 |
+| 9142620247300104296 | Join Discord Community | Discord | PREPARING | COLLECTING | 2025-11-24 05:53 | 2025-12-08 06:17 | 577 | 577 | 577 | 0 | 577 | 577 | 0 | 0 | 0 |
+| 6459383103200101967 | L3 task-pick_water_50_4_7th-47 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:40 | 2026-03-24 15:12 | 555 | 555 | 25 | 0 | 555 | 25 | 514 | 16 | 0 |
+| 6155757483600100808 | L1 ucsd_kitchen_dataset_ep000127 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:04 | 2025-10-27 02:58 | 525 | 525 | 4 | 0 | 549 | 5 | 389 | 2 | 153 |
+| 6459383108700101971 | L1 task-pick_water_50_4_7th-49 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:40 | 2026-03-24 16:00 | 501 | 501 | 27 | 0 | 501 | 27 | 453 | 21 | 0 |
+| 9142603704300104066 | Bind Telegram Account | Telegram | PREPARING | COLLECTING | 2025-11-24 05:59 | 2025-12-08 07:37 | 470 | 470 | 470 | 0 | 472 | 472 | 0 | 0 | 0 |
+| 6155757493100100816 | L3 ucsd_kitchen_dataset_ep000129 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:06 | 2025-10-28 03:02 | 457 | 457 | 4 | 0 | 470 | 4 | 327 | 2 | 137 |
+| 9142603893300104067 | Join Telegram Community | Telegram | PREPARING | COLLECTING | 2025-11-24 05:52 | 2025-12-08 07:37 | 454 | 454 | 454 | 0 | 454 | 454 | 0 | 0 | 0 |
+| 9142586063500104041 | Follow X Account | X | PREPARING | COLLECTING | 2025-11-24 06:03 | 2025-12-07 07:39 | 431 | 431 | 428 | 0 | 454 | 428 | 26 | 0 | 0 |
+| 6459383107200101970 | L3 task-pick_water_50_4_7th-48 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:40 | 2026-03-24 15:20 | 452 | 452 | 23 | 0 | 452 | 23 | 404 | 25 | 0 |
+| 6155757487200100811 | L1 ucsd_kitchen_dataset_ep000128 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:05 | 2025-10-27 03:05 | 404 | 404 | 4 | 0 | 439 | 4 | 371 | 2 | 62 |
+| 9142579737400104034 | Bind X Account | X | PREPARING | COLLECTING | 2025-11-24 06:02 | 2025-12-07 07:38 | 438 | 438 | 438 | 0 | 438 | 438 | 0 | 0 | 0 |
+| 6155757496600100819 | L3 ucsd_kitchen_dataset_ep000130 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:07 | 2025-10-28 03:12 | 410 | 410 | 5 | 0 | 420 | 5 | 276 | 2 | 137 |
+| 9142588971900104045 | Retweet X Post | X | PREPARING | COLLECTING | 2025-11-24 05:55 | 2025-12-07 07:39 | 416 | 416 | 396 | 0 | 420 | 396 | 24 | 0 | 0 |
+| 7468790887100109122 | Evaluate videos, shape AI's future | Video Evaluation | PREPARING | COLLECTING | 2025-05-14 10:44 | 2025-05-20 15:48 | 42 | 42 | 14 | 0 | 418 | 94 | 324 | 0 | 0 |
+| 6459383111200101973 | L3 task-pick_water_50_4_7th-49 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:41 | 2026-03-24 16:02 | 395 | 395 | 21 | 0 | 395 | 21 | 365 | 9 | 0 |
+| 6155757490800100814 | L1 ucsd_kitchen_dataset_ep000129 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:05 | 2025-10-28 03:02 | 336 | 336 | 3 | 0 | 342 | 3 | 289 | 2 | 48 |
+| 6459383112500101974 | L1 task-pick_water_50_4_7th-5 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:41 | 2026-03-24 16:05 | 338 | 338 | 24 | 0 | 338 | 24 | 308 | 6 | 0 |
+| 6459383115200101976 | L3 task-pick_water_50_4_7th-5 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:41 | 2026-03-24 16:08 | 335 | 335 | 19 | 0 | 335 | 19 | 314 | 2 | 0 |
+| 6155757500300100822 | L3 ucsd_kitchen_dataset_ep000131 | Robotics | ONLINE | COLLECTING | 2024-12-25 17:22 | 2025-10-29 02:47 | 325 | 325 | 4 | 0 | 327 | 4 | 214 | 2 | 107 |
+| 6459383118700101979 | L3 task-pick_water_50_4_7th-50 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:42 | 2026-03-24 16:13 | 315 | 315 | 15 | 0 | 315 | 15 | 297 | 3 | 0 |
+| 6459383116300101977 | L1 task-pick_water_50_4_7th-50 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:41 | 2026-03-24 16:11 | 314 | 314 | 23 | 0 | 314 | 23 | 289 | 2 | 0 |
+| 6459383120000101980 | L1 task-pick_water_50_4_7th-6 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:42 | 2026-03-25 05:57 | 306 | 306 | 22 | 0 | 306 | 22 | 283 | 1 | 0 |
+| 6459383122500101982 | L3 task-pick_water_50_4_7th-6 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:42 | 2026-03-25 06:00 | 297 | 297 | 13 | 0 | 298 | 13 | 283 | 2 | 0 |
+| 6459383123700101983 | L1 task-pick_water_50_4_7th-7 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:42 | 2026-03-25 06:44 | 293 | 293 | 20 | 0 | 293 | 20 | 272 | 1 | 0 |
+| 6459383126200101985 | L3 task-pick_water_50_4_7th-7 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:42 | 2026-03-25 06:47 | 290 | 290 | 13 | 0 | 290 | 13 | 275 | 2 | 0 |
+| 6459383130000101988 | L3 task-pick_water_50_4_7th-8 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:43 | 2026-03-25 06:54 | 288 | 288 | 13 | 0 | 288 | 13 | 273 | 2 | 0 |
+| 6459383127300101986 | L1 task-pick_water_50_4_7th-8 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:43 | 2026-03-25 06:52 | 283 | 283 | 16 | 0 | 283 | 16 | 266 | 1 | 0 |
+| 6155757494300100817 | L1 ucsd_kitchen_dataset_ep000130 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:06 | 2025-10-28 03:02 | 267 | 267 | 3 | 0 | 278 | 3 | 246 | 2 | 27 |
+| 6459383134000101991 | L3 task-pick_water_50_4_7th-9 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:43 | 2026-03-25 07:24 | 275 | 275 | 13 | 0 | 275 | 13 | 260 | 2 | 0 |
+| 6459383131300101989 | L1 task-pick_water_50_4_7th-9 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:43 | 2026-03-25 07:21 | 274 | 274 | 14 | 0 | 274 | 14 | 259 | 1 | 0 |
+| 6459382990600101887 | L1 task-pick_water_50_4_7th-23 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:11 | 2026-03-25 07:56 | 273 | 273 | 14 | 0 | 273 | 14 | 257 | 2 | 0 |
+| 6459382993400101889 | L3 task-pick_water_50_4_7th-23 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:44 | 2026-03-25 08:40 | 268 | 268 | 11 | 0 | 268 | 11 | 255 | 2 | 0 |
+| 6459382989000101886 | L3 task-pick_water_50_4_7th-22 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:44 | 2026-03-25 07:48 | 266 | 266 | 11 | 0 | 266 | 11 | 253 | 2 | 0 |
+| 6459382995000101890 | L1 task-pick_water_50_4_7th-24 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:44 | 2026-03-25 09:00 | 266 | 266 | 14 | 0 | 266 | 14 | 251 | 1 | 0 |
+| 6459382997900101892 | L3 task-pick_water_50_4_7th-24 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:45 | 2026-03-25 09:02 | 262 | 262 | 9 | 0 | 262 | 9 | 252 | 1 | 0 |
+| 6459382999500101893 | L1 task-pick_water_50_4_7th-25 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:45 | 2026-03-25 09:18 | 259 | 259 | 13 | 0 | 259 | 13 | 245 | 1 | 0 |
+| 6155757497800100820 | L1 ucsd_kitchen_dataset_ep000131 | Robotics | ONLINE | COLLECTING | 2024-12-19 08:07 | 2025-10-28 03:12 | 239 | 239 | 1 | 0 | 256 | 1 | 183 | 2 | 70 |
+| 6459383002500101895 | L3 task-pick_water_50_4_7th-25 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:45 | 2026-03-25 09:19 | 256 | 256 | 9 | 0 | 256 | 9 | 246 | 1 | 0 |
+| 6459383004000101896 | L1 task-pick_water_50_4_7th-26 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:45 | 2026-03-25 09:22 | 256 | 256 | 12 | 0 | 256 | 12 | 243 | 1 | 0 |
+| 6459383007200101898 | L3 task-pick_water_50_4_7th-26 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:45 | 2026-03-25 09:23 | 253 | 253 | 8 | 0 | 254 | 8 | 244 | 2 | 0 |
+| 6459383012400101901 | L3 task-pick_water_50_4_7th-27 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:46 | 2026-03-25 09:28 | 248 | 248 | 7 | 0 | 249 | 7 | 241 | 1 | 0 |
+| 6459383009000101899 | L1 task-pick_water_50_4_7th-27 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:45 | 2026-03-25 09:26 | 249 | 249 | 9 | 0 | 249 | 9 | 236 | 4 | 0 |
+| 6459383017300101904 | L3 task-pick_water_50_4_7th-28 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:46 | 2026-03-25 09:31 | 245 | 245 | 8 | 0 | 245 | 8 | 236 | 1 | 0 |
+| 6459383025700101910 | L3 task-pick_water_50_4_7th-3 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:47 | 2026-03-25 09:53 | 242 | 242 | 8 | 0 | 242 | 8 | 233 | 1 | 0 |
+| 6459383014300101902 | L1 task-pick_water_50_4_7th-28 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:46 | 2026-03-25 09:30 | 241 | 241 | 8 | 0 | 241 | 8 | 226 | 7 | 0 |
+| 6459383030300101913 | L3 task-pick_water_50_4_7th-30 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:48 | 2026-03-25 09:55 | 237 | 237 | 6 | 0 | 237 | 6 | 230 | 1 | 0 |
+| 6459383021500101907 | L3 task-pick_water_50_4_7th-29 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:46 | 2026-03-25 09:44 | 237 | 237 | 7 | 0 | 237 | 7 | 229 | 1 | 0 |
+| 6459383018800101905 | L1 task-pick_water_50_4_7th-29 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:46 | 2026-03-25 09:43 | 235 | 235 | 8 | 0 | 235 | 8 | 221 | 6 | 0 |
+| 6459383034400101916 | L3 task-pick_water_50_4_7th-31 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:48 | 2026-03-25 09:59 | 233 | 233 | 6 | 0 | 233 | 6 | 223 | 4 | 0 |
+| 9766438906000100008 | Collect fashion data | Fashion | ONLINE | COLLECTING | 2026-02-05 01:00 | 2026-03-29 00:00 | 44 | 44 | 44 | 0 | 231 | 231 | 0 | 0 | 0 |
+| 6459383023000101908 | L1 task-pick_water_50_4_7th-3 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:47 | 2026-03-25 09:48 | 229 | 229 | 8 | 0 | 230 | 8 | 218 | 4 | 0 |
+| 6155757503800100825 | L3 ucsd_kitchen_dataset_ep000132 | Robotics | ONLINE | COLLECTING | 2024-12-27 09:22 | 2025-10-29 02:48 | 225 | 225 | 3 | 0 | 228 | 3 | 194 | 2 | 29 |
+| 6459383052000101928 | L3 task-pick_water_50_4_7th-35 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:52 | 2026-03-25 13:48 | 225 | 225 | 4 | 0 | 225 | 4 | 218 | 3 | 0 |
+| 6459383043200101922 | L3 task-pick_water_50_4_7th-33 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:50 | 2026-03-25 12:41 | 225 | 225 | 3 | 0 | 225 | 3 | 221 | 1 | 0 |
+| 6459383047700101925 | L3 task-pick_water_50_4_7th-34 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:51 | 2026-03-25 13:30 | 223 | 223 | 3 | 0 | 223 | 3 | 219 | 1 | 0 |
+| 6459383027400101911 | L1 task-pick_water_50_4_7th-30 | Robotics | ONLINE | PAUSE | 2025-01-17 09:47 | 2025-09-18 08:35 | 222 | 222 | 15 | 0 | 223 | 15 | 208 | 0 | 0 |
+| 6459383038900101919 | L3 task-pick_water_50_4_7th-32 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:48 | 2026-03-25 10:26 | 223 | 223 | 5 | 0 | 223 | 5 | 216 | 2 | 0 |
+| 6459383055900101931 | L3 task-pick_water_50_4_7th-36 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:53 | 2026-03-25 13:55 | 223 | 223 | 4 | 0 | 223 | 4 | 215 | 4 | 0 |
+| 6155757507400100828 | L3 ucsd_kitchen_dataset_ep000133 | Robotics | ONLINE | COLLECTING | 2024-12-26 04:14 | 2025-10-30 02:59 | 216 | 216 | 3 | 0 | 216 | 3 | 185 | 2 | 26 |
+| 6155757530000100847 | L1 ucsd_kitchen_dataset_ep000140 | Robotics | ONLINE | COLLECTING | 2024-12-27 09:00 | 2025-11-01 02:21 | 169 | 169 | 3 | 0 | 213 | 3 | 119 | 2 | 89 |
+| 6459383031600101914 | L1 task-pick_water_50_4_7th-31 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:48 | 2026-03-25 09:58 | 211 | 211 | 13 | 0 | 211 | 13 | 185 | 13 | 0 |
+| 6459383059900101934 | L3 task-pick_water_50_4_7th-37 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:53 | 2026-03-25 14:00 | 208 | 208 | 4 | 0 | 208 | 4 | 201 | 3 | 0 |
+| 6459383072000101943 | L3 task-pick_water_50_4_7th-4 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:54 | 2026-03-25 14:37 | 208 | 208 | 3 | 0 | 208 | 3 | 203 | 2 | 0 |
+| 6459383064100101937 | L3 task-pick_water_50_4_7th-38 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:53 | 2026-03-25 14:20 | 207 | 207 | 3 | 0 | 207 | 3 | 203 | 1 | 0 |
+| 6459383076100101946 | L3 task-pick_water_50_4_7th-40 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:55 | 2026-03-26 16:27 | 207 | 207 | 3 | 0 | 207 | 3 | 203 | 1 | 0 |
+| 6459383068200101940 | L3 task-pick_water_50_4_7th-39 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:54 | 2026-03-25 14:33 | 206 | 206 | 4 | 0 | 206 | 4 | 201 | 1 | 0 |
+| 6155757510900100831 | L3 ucsd_kitchen_dataset_ep000134 | Robotics | ONLINE | COLLECTING | 2024-12-27 16:42 | 2025-10-30 03:02 | 179 | 179 | 3 | 0 | 203 | 3 | 173 | 2 | 25 |
+| 6459383035800101917 | L1 task-pick_water_50_4_7th-32 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:48 | 2026-03-25 10:24 | 200 | 200 | 15 | 0 | 200 | 15 | 180 | 5 | 0 |
+| 6459383087600101955 | L3 task-pick_water_50_4_7th-43 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:56 | 2026-03-26 16:51 | 200 | 200 | 3 | 0 | 200 | 3 | 183 | 14 | 0 |
+| 6459383083700101952 | L3 task-pick_water_50_4_7th-42 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:56 | 2026-03-26 16:42 | 199 | 199 | 3 | 0 | 199 | 3 | 184 | 12 | 0 |
+| 6459383079900101949 | L3 task-pick_water_50_4_7th-41 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:55 | 2026-03-26 16:32 | 198 | 198 | 3 | 0 | 198 | 3 | 186 | 9 | 0 |
+| 6459382923200101844 | L3 task-pick_water_50_4_7th-1 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:57 | 2026-03-26 17:01 | 197 | 197 | 3 | 0 | 197 | 3 | 181 | 13 | 0 |
+| 6459383040400101920 | L1 task-pick_water_50_4_7th-33 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:49 | 2026-03-25 12:39 | 197 | 197 | 13 | 0 | 197 | 13 | 177 | 7 | 0 |
+| 6155757512100100832 | L1 ucsd_kitchen_dataset_ep000135 | Robotics | ONLINE | COLLECTING | 2024-12-25 19:04 | 2025-10-31 03:14 | 187 | 187 | 3 | 0 | 196 | 3 | 136 | 2 | 55 |
+| 6459382928200101847 | L3 task-pick_water_50_4_7th-10 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:58 | 2026-03-26 17:11 | 191 | 191 | 3 | 0 | 191 | 3 | 177 | 11 | 0 |
+| 6459382932600101850 | L3 task-pick_water_50_4_7th-11 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:58 | 2026-03-27 09:41 | 190 | 190 | 3 | 0 | 190 | 3 | 180 | 7 | 0 |
+| 6459383044600101923 | L1 task-pick_water_50_4_7th-34 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:51 | 2026-03-25 13:28 | 188 | 188 | 13 | 0 | 188 | 13 | 171 | 4 | 0 |
+| 6155757519100100838 | L1 ucsd_kitchen_dataset_ep000137 | Robotics | ONLINE | COLLECTING | 2024-12-27 13:27 | 2025-10-31 03:15 | 183 | 183 | 4 | 0 | 184 | 4 | 126 | 2 | 52 |
+| 6459382937200101853 | L3 task-pick_water_50_4_7th-12 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:59 | 2026-03-27 09:48 | 182 | 182 | 3 | 0 | 182 | 3 | 173 | 6 | 0 |
+| 6459383049300101926 | L1 task-pick_water_50_4_7th-35 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:52 | 2026-03-25 13:45 | 182 | 182 | 12 | 0 | 182 | 12 | 167 | 3 | 0 |
+| 6459382942000101856 | L3 task-pick_water_50_4_7th-13 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:59 | 2026-03-27 12:52 | 181 | 181 | 3 | 0 | 181 | 3 | 168 | 10 | 0 |
+| 6459383053300101929 | L1 task-pick_water_50_4_7th-36 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:52 | 2026-03-25 13:51 | 180 | 180 | 14 | 0 | 180 | 14 | 165 | 1 | 0 |
+| 6459383065500101938 | L1 task-pick_water_50_4_7th-39 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:54 | 2026-03-25 14:31 | 177 | 177 | 12 | 0 | 177 | 12 | 159 | 6 | 0 |
+| 6459382946600101859 | L3 task-pick_water_50_4_7th-14 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:00 | 2026-03-27 12:56 | 177 | 177 | 3 | 0 | 177 | 3 | 158 | 16 | 0 |
+| 6459383061500101935 | L1 task-pick_water_50_4_7th-38 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:53 | 2026-03-25 14:12 | 174 | 174 | 12 | 0 | 174 | 12 | 160 | 2 | 0 |
+| 6459383057100101932 | L1 task-pick_water_50_4_7th-37 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:53 | 2026-03-25 13:59 | 172 | 172 | 13 | 0 | 172 | 13 | 158 | 1 | 0 |
+| 6155757514400100834 | L3 ucsd_kitchen_dataset_ep000135 | Robotics | ONLINE | COLLECTING | 2024-12-25 17:24 | 2025-10-31 03:14 | 172 | 172 | 3 | 0 | 172 | 3 | 118 | 2 | 49 |
+| 6155757501500100823 | L1 ucsd_kitchen_dataset_ep000132 | Robotics | ONLINE | COLLECTING | 2024-12-25 18:21 | 2025-10-29 02:47 | 158 | 158 | 3 | 0 | 170 | 3 | 153 | 2 | 12 |
+| 6459383069400101941 | L1 task-pick_water_50_4_7th-4 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:54 | 2026-03-25 14:36 | 166 | 166 | 12 | 0 | 167 | 13 | 152 | 2 | 0 |
+| 6459382960900101868 | L3 task-pick_water_50_4_7th-17 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:02 | 2026-03-27 13:36 | 166 | 166 | 3 | 0 | 166 | 3 | 142 | 21 | 0 |
+| 6459382975000101877 | L3 task-pick_water_50_4_7th-2 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:03 | 2026-03-27 13:57 | 166 | 166 | 3 | 0 | 166 | 3 | 139 | 24 | 0 |
+| 6459382984300101883 | L3 task-pick_water_50_4_7th-21 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:04 | 2026-03-27 14:05 | 166 | 166 | 4 | 0 | 166 | 4 | 117 | 45 | 0 |
+| 6459382979400101880 | L3 task-pick_water_50_4_7th-20 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:03 | 2026-03-27 14:00 | 165 | 165 | 3 | 0 | 165 | 3 | 142 | 20 | 0 |
+| 6459382965600101871 | L3 task-pick_water_50_4_7th-18 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:02 | 2026-03-27 13:42 | 164 | 164 | 3 | 0 | 164 | 3 | 147 | 14 | 0 |
+| 6459382955800101865 | L3 task-pick_water_50_4_7th-16 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:01 | 2026-03-27 13:26 | 162 | 162 | 3 | 0 | 162 | 3 | 145 | 14 | 0 |
+| 6459382950900101862 | L3 task-pick_water_50_4_7th-15 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:00 | 2026-03-27 13:21 | 161 | 161 | 3 | 0 | 161 | 3 | 142 | 16 | 0 |
+| 6459382970600101874 | L3 task-pick_water_50_4_7th-19 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:02 | 2026-03-27 13:49 | 159 | 159 | 3 | 0 | 159 | 3 | 143 | 13 | 0 |
+| 6459383073400101944 | L1 task-pick_water_50_4_7th-40 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:54 | 2026-03-26 16:26 | 150 | 150 | 12 | 0 | 150 | 12 | 133 | 5 | 0 |
+| 6459372292300101802 | L3 task-pick_U_driver_20_4_7th_PCL-15 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:04 | 2025-10-29 07:33 | 150 | 150 | 3 | 0 | 150 | 3 | 87 | 60 | 0 |
+| 6459382925100101845 | L1 task-pick_water_50_4_7th-10 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:57 | 2026-03-26 17:09 | 146 | 146 | 12 | 0 | 146 | 12 | 114 | 20 | 0 |
+| 8453821981000103137 | Download the Gensmo app, explore its AI fashi | Gensmo | ONLINE | PAUSE | 2025-09-05 11:50 | 2025-10-09 13:30 | 146 | 146 | 4 | 0 | 146 | 4 | 0 | 142 | 0 |
+| 6155757397800100735 | L3 ucsd_kitchen_dataset_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:15 | 2025-11-03 03:03 | 110 | 110 | 2 | 0 | 146 | 2 | 143 | 1 | 0 |
+| 6459383085000101953 | L1 task-pick_water_50_4_7th-43 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:56 | 2026-03-26 16:49 | 145 | 145 | 12 | 0 | 145 | 12 | 122 | 11 | 0 |
+| 6459383077300101947 | L1 task-pick_water_50_4_7th-41 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:55 | 2026-03-26 16:30 | 143 | 143 | 12 | 0 | 143 | 12 | 126 | 5 | 0 |
+| 6459372297400101805 | L3 task-pick_U_driver_20_4_7th_PCL-16 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:06 | 2025-10-29 11:06 | 142 | 142 | 2 | 0 | 142 | 2 | 88 | 52 | 0 |
+| 6459383081300101950 | L1 task-pick_water_50_4_7th-42 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:55 | 2026-03-26 16:38 | 142 | 142 | 11 | 0 | 142 | 11 | 119 | 12 | 0 |
+| 6459372302100101808 | L3 task-pick_U_driver_20_4_7th_PCL-17 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:07 | 2025-10-29 11:06 | 138 | 138 | 2 | 0 | 138 | 2 | 90 | 46 | 0 |
+| 6155757515600100835 | L1 ucsd_kitchen_dataset_ep000136 | Robotics | ONLINE | COLLECTING | 2024-12-25 19:05 | 2025-10-31 03:15 | 137 | 137 | 3 | 0 | 137 | 3 | 127 | 2 | 5 |
+| 6459382919000101842 | L1 task-pick_water_50_4_7th-1 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:56 | 2026-03-26 16:58 | 137 | 137 | 11 | 0 | 137 | 11 | 120 | 6 | 0 |
+| 6459372306700101811 | L3 task-pick_U_driver_20_4_7th_PCL-18 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:07 | 2025-10-29 11:06 | 135 | 135 | 2 | 0 | 135 | 2 | 85 | 48 | 0 |
+| 6155757537300100853 | L1 ucsd_kitchen_dataset_ep000142 | Robotics | ONLINE | COLLECTING | 2024-12-27 13:30 | 2025-11-01 02:23 | 129 | 129 | 3 | 0 | 131 | 3 | 120 | 2 | 6 |
+| 6459382929700101848 | L1 task-pick_water_50_4_7th-11 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:58 | 2026-03-27 09:39 | 131 | 131 | 12 | 0 | 131 | 12 | 107 | 12 | 0 |
+| 6155757522600100841 | L1 ucsd_kitchen_dataset_ep000138 | Robotics | ONLINE | COLLECTING | 2024-12-25 19:04 | 2025-10-31 03:16 | 130 | 130 | 2 | 0 | 131 | 2 | 122 | 2 | 5 |
+| 6459382943600101857 | L1 task-pick_water_50_4_7th-14 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:00 | 2026-03-27 12:55 | 130 | 130 | 11 | 0 | 130 | 11 | 107 | 12 | 0 |
+| 6155757526400100844 | L1 ucsd_kitchen_dataset_ep000139 | Robotics | ONLINE | COLLECTING | 2024-12-25 19:05 | 2025-10-31 03:17 | 127 | 127 | 2 | 0 | 127 | 2 | 120 | 2 | 3 |
+| 6155757533500100850 | L1 ucsd_kitchen_dataset_ep000141 | Robotics | ONLINE | COLLECTING | 2024-12-27 13:30 | 2025-11-01 02:22 | 127 | 127 | 4 | 0 | 127 | 4 | 120 | 2 | 1 |
+| 6459382948000101860 | L1 task-pick_water_50_4_7th-15 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:00 | 2026-03-27 12:59 | 126 | 126 | 10 | 0 | 126 | 10 | 110 | 6 | 0 |
+| 6155757518000100837 | L3 ucsd_kitchen_dataset_ep000136 | Robotics | ONLINE | COLLECTING | 2024-12-25 17:24 | 2025-10-31 03:15 | 125 | 125 | 2 | 0 | 125 | 2 | 117 | 2 | 4 |
+| 6459372311400101814 | L3 task-pick_U_driver_20_4_7th_PCL-19 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:08 | 2025-10-29 11:06 | 125 | 125 | 2 | 0 | 125 | 2 | 80 | 43 | 0 |
+| 6155757540700100856 | L1 ucsd_kitchen_dataset_ep000143 | Robotics | ONLINE | COLLECTING | 2024-12-29 08:00 | 2025-11-01 02:23 | 123 | 123 | 3 | 0 | 124 | 3 | 117 | 2 | 2 |
+| 6459382934100101851 | L1 task-pick_water_50_4_7th-12 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:59 | 2026-03-27 09:44 | 124 | 124 | 11 | 0 | 124 | 11 | 108 | 5 | 0 |
+| 6155757373300100715 | L1 ucsd_kitchen_dataset_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:48 | 2025-11-03 02:59 | 121 | 121 | 3 | 0 | 121 | 3 | 116 | 2 | 0 |
+| 6155757525200100843 | L3 ucsd_kitchen_dataset_ep000138 | Robotics | ONLINE | COLLECTING | 2024-12-28 17:19 | 2025-10-31 03:17 | 119 | 119 | 2 | 0 | 119 | 2 | 112 | 2 | 3 |
+| 6155757369500100712 | L1 ucsd_kitchen_dataset_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:48 | 2025-11-03 02:58 | 119 | 119 | 2 | 0 | 119 | 2 | 115 | 2 | 0 |
+| 6155757544100100859 | L1 ucsd_kitchen_dataset_ep000144 | Robotics | ONLINE | COLLECTING | 2025-01-01 05:45 | 2025-11-01 02:24 | 118 | 118 | 2 | 0 | 118 | 2 | 113 | 2 | 1 |
+| 6459382938800101854 | L1 task-pick_water_50_4_7th-13 | Robotics | ONLINE | COLLECTING | 2025-01-17 09:59 | 2026-03-27 12:49 | 118 | 118 | 11 | 0 | 118 | 11 | 103 | 4 | 0 |
+| 6459382952600101863 | L1 task-pick_water_50_4_7th-16 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:00 | 2026-03-27 13:23 | 118 | 118 | 10 | 0 | 118 | 10 | 106 | 2 | 0 |
+| 6155757532300100849 | L3 ucsd_kitchen_dataset_ep000140 | Robotics | ONLINE | COLLECTING | 2025-01-01 05:41 | 2025-11-01 02:22 | 118 | 118 | 3 | 0 | 118 | 3 | 112 | 2 | 1 |
+| 6155757547600100862 | L1 ucsd_kitchen_dataset_ep000145 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:02 | 2025-11-03 02:56 | 117 | 117 | 3 | 0 | 117 | 3 | 112 | 2 | 0 |
+| 6155757521500100840 | L3 ucsd_kitchen_dataset_ep000137 | Robotics | ONLINE | COLLECTING | 2024-12-29 11:48 | 2025-10-31 03:16 | 117 | 117 | 2 | 0 | 117 | 2 | 111 | 2 | 2 |
+| 6155757380600100721 | L1 ucsd_kitchen_dataset_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:48 | 2025-11-01 02:52 | 112 | 112 | 1 | 0 | 117 | 1 | 115 | 1 | 0 |
+| 6155757535900100852 | L3 ucsd_kitchen_dataset_ep000141 | Robotics | ONLINE | COLLECTING | 2025-01-04 18:31 | 2025-11-01 02:22 | 116 | 116 | 2 | 0 | 116 | 2 | 112 | 2 | 0 |
+| 6155757539500100855 | L3 ucsd_kitchen_dataset_ep000142 | Robotics | ONLINE | COLLECTING | 2024-12-30 12:28 | 2025-11-01 02:23 | 116 | 116 | 2 | 0 | 116 | 2 | 111 | 2 | 1 |
+| 6155757543000100858 | L3 ucsd_kitchen_dataset_ep000143 | Robotics | ONLINE | COLLECTING | 2024-12-27 10:25 | 2025-11-01 02:24 | 116 | 116 | 2 | 0 | 116 | 2 | 110 | 2 | 2 |
+| 6155757551000100865 | L1 ucsd_kitchen_dataset_ep000146 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:48 | 2025-11-03 02:57 | 114 | 114 | 2 | 0 | 115 | 2 | 110 | 2 | 1 |
+| 6459382957400101866 | L1 task-pick_water_50_4_7th-17 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:01 | 2026-03-27 13:34 | 115 | 115 | 10 | 0 | 115 | 10 | 104 | 1 | 0 |
+| 6155757371900100714 | L3 ucsd_kitchen_dataset_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-01 05:47 | 2025-11-03 02:59 | 115 | 115 | 2 | 0 | 115 | 2 | 110 | 2 | 1 |
+| 6155757546400100861 | L3 ucsd_kitchen_dataset_ep000144 | Robotics | ONLINE | COLLECTING | 2025-01-05 12:42 | 2025-11-03 02:56 | 114 | 114 | 2 | 0 | 114 | 2 | 110 | 2 | 0 |
+| 6155757528800100846 | L3 ucsd_kitchen_dataset_ep000139 | Robotics | ONLINE | COLLECTING | 2025-01-05 08:10 | 2025-10-31 03:18 | 114 | 114 | 2 | 0 | 114 | 2 | 110 | 2 | 0 |
+| 6155757368100100711 | L3 ucsd_kitchen_dataset_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-05 12:59 | 2025-11-03 02:58 | 114 | 114 | 2 | 0 | 114 | 2 | 110 | 2 | 0 |
+| 6155757549900100864 | L3 ucsd_kitchen_dataset_ep000145 | Robotics | ONLINE | COLLECTING | 2025-01-05 12:56 | 2025-11-03 02:57 | 114 | 114 | 2 | 0 | 114 | 2 | 110 | 2 | 0 |
+| 6155757377000100718 | L1 ucsd_kitchen_dataset_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:48 | 2025-11-01 02:52 | 112 | 112 | 2 | 0 | 113 | 2 | 110 | 1 | 0 |
+| 6155757384400100724 | L1 ucsd_kitchen_dataset_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:48 | 2025-11-01 02:53 | 112 | 112 | 2 | 0 | 112 | 2 | 109 | 1 | 0 |
+| 6155757375800100717 | L3 ucsd_kitchen_dataset_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:01 | 2025-11-01 02:51 | 112 | 112 | 2 | 0 | 112 | 2 | 109 | 1 | 0 |
+| 6155757395400100733 | L1 ucsd_kitchen_dataset_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:49 | 2025-11-03 03:02 | 112 | 112 | 2 | 0 | 112 | 2 | 109 | 1 | 0 |
+| 6155757388100100727 | L1 ucsd_kitchen_dataset_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:49 | 2025-11-01 02:54 | 112 | 112 | 2 | 0 | 112 | 2 | 109 | 1 | 0 |
+| 6155757379500100720 | L3 ucsd_kitchen_dataset_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:04 | 2025-11-01 02:52 | 112 | 112 | 2 | 0 | 112 | 2 | 109 | 1 | 0 |
+| 6155757399100100736 | L1 ucsd_kitchen_dataset_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:49 | 2025-11-03 03:03 | 112 | 112 | 2 | 0 | 112 | 2 | 109 | 1 | 0 |
+| 6155757390500100729 | L3 ucsd_kitchen_dataset_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:10 | 2025-11-03 03:01 | 112 | 112 | 2 | 0 | 112 | 2 | 109 | 1 | 0 |
+| 6155757391700100730 | L1 ucsd_kitchen_dataset_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:49 | 2025-11-03 03:01 | 112 | 112 | 2 | 0 | 112 | 2 | 109 | 1 | 0 |
+| 6155757383100100723 | L3 ucsd_kitchen_dataset_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:06 | 2025-11-01 02:53 | 111 | 111 | 1 | 0 | 111 | 1 | 109 | 1 | 0 |
+| 6155757394200100732 | L3 ucsd_kitchen_dataset_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:12 | 2025-11-03 03:02 | 111 | 111 | 2 | 0 | 111 | 2 | 108 | 1 | 0 |
+| 6155757386900100726 | L3 ucsd_kitchen_dataset_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:08 | 2025-11-01 02:54 | 111 | 111 | 1 | 0 | 111 | 1 | 109 | 1 | 0 |
+| 6459382962300101869 | L1 task-pick_water_50_4_7th-18 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:02 | 2026-03-27 13:39 | 110 | 110 | 10 | 0 | 110 | 10 | 99 | 1 | 0 |
+| 6155757401500100738 | L3 ucsd_kitchen_dataset_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:19 | 2025-11-03 03:03 | 110 | 110 | 2 | 0 | 110 | 2 | 107 | 1 | 0 |
+| 6459382981000101881 | L1 task-pick_water_50_4_7th-21 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:04 | 2026-03-27 14:03 | 109 | 109 | 10 | 0 | 109 | 10 | 96 | 3 | 0 |
+| 6459382967300101872 | L1 task-pick_water_50_4_7th-19 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:02 | 2026-03-27 13:47 | 107 | 107 | 10 | 0 | 108 | 10 | 97 | 1 | 0 |
+| 6459382972100101875 | L1 task-pick_water_50_4_7th-2 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:03 | 2026-03-27 13:54 | 105 | 105 | 11 | 0 | 105 | 11 | 93 | 1 | 0 |
+| 6459382976500101878 | L1 task-pick_water_50_4_7th-20 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:03 | 2026-03-27 13:59 | 104 | 104 | 10 | 0 | 104 | 10 | 93 | 1 | 0 |
+| 6459382986100101884 | L1 task-pick_water_50_4_7th-22 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:04 | 2026-03-27 14:08 | 101 | 101 | 10 | 0 | 101 | 10 | 90 | 1 | 0 |
+| 6459372316100101817 | L3 task-pick_U_driver_20_4_7th_PCL-2 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:08 | 2025-10-28 07:20 | 101 | 101 | 2 | 0 | 101 | 2 | 80 | 19 | 0 |
+| 6155757416700100751 | L1 ucsd_kitchen_dataset_ep000108 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:58 | 2025-08-13 05:41 | 94 | 94 | 2 | 0 | 94 | 2 | 91 | 0 | 1 |
+| 6155757402700100739 | L1 ucsd_kitchen_dataset_ep000104 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:49 | 2025-11-03 03:04 | 93 | 93 | 2 | 0 | 93 | 2 | 90 | 1 | 0 |
+| 6155757430700100763 | L1 ucsd_kitchen_dataset_ep000112 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:53 | 2025-08-13 05:47 | 93 | 93 | 2 | 0 | 93 | 2 | 91 | 0 | 0 |
+| 6155757422400100756 | L3 ucsd_kitchen_dataset_ep000109 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:51 | 2025-08-13 05:45 | 91 | 91 | 2 | 0 | 93 | 2 | 91 | 0 | 0 |
+| 6155757406400100742 | L1 ucsd_kitchen_dataset_ep000105 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:49 | 2025-11-03 03:04 | 93 | 93 | 2 | 0 | 93 | 2 | 90 | 1 | 0 |
+| 6155757434300100766 | L1 ucsd_kitchen_dataset_ep000113 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:54 | 2025-08-18 23:39 | 93 | 93 | 2 | 0 | 93 | 2 | 91 | 0 | 0 |
+| 6155757408700100744 | L3 ucsd_kitchen_dataset_ep000105 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:24 | 2025-11-03 03:05 | 92 | 92 | 2 | 0 | 93 | 2 | 90 | 1 | 0 |
+| 6155757427200100760 | L1 ucsd_kitchen_dataset_ep000111 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:54 | 2025-08-13 05:46 | 93 | 93 | 2 | 0 | 93 | 2 | 90 | 0 | 1 |
+| 6155757438200100769 | L1 ucsd_kitchen_dataset_ep000114 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:55 | 2025-08-18 23:39 | 93 | 93 | 2 | 0 | 93 | 2 | 91 | 0 | 0 |
+| 6155757412200100747 | L3 ucsd_kitchen_dataset_ep000106 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:50 | 2025-08-13 05:40 | 91 | 91 | 2 | 0 | 92 | 2 | 90 | 0 | 0 |
+| 6155757413300100748 | L1 ucsd_kitchen_dataset_ep000107 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:50 | 2025-08-13 05:40 | 92 | 92 | 2 | 0 | 92 | 2 | 90 | 0 | 0 |
+| 6155757405200100741 | L3 ucsd_kitchen_dataset_ep000104 | Robotics | ONLINE | COLLECTING | 2025-01-05 13:21 | 2025-11-03 03:04 | 92 | 92 | 2 | 0 | 92 | 2 | 89 | 1 | 0 |
+| 6155757423600100757 | L1 ucsd_kitchen_dataset_ep000110 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:52 | 2025-08-13 05:45 | 92 | 92 | 2 | 0 | 92 | 2 | 90 | 0 | 0 |
+| 6155757409900100745 | L1 ucsd_kitchen_dataset_ep000106 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:49 | 2025-08-13 05:40 | 92 | 92 | 2 | 0 | 92 | 2 | 90 | 0 | 0 |
+| 6155757420100100754 | L1 ucsd_kitchen_dataset_ep000109 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:51 | 2025-08-13 05:45 | 92 | 92 | 2 | 0 | 92 | 2 | 90 | 0 | 0 |
+| 6155757448600100778 | L1 ucsd_kitchen_dataset_ep000117 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:56 | 2025-08-18 23:41 | 92 | 92 | 2 | 0 | 92 | 2 | 90 | 0 | 0 |
+| 6155757441700100772 | L1 ucsd_kitchen_dataset_ep000115 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:55 | 2025-08-18 23:40 | 91 | 91 | 2 | 0 | 91 | 2 | 89 | 0 | 0 |
+| 6155757452300100781 | L1 ucsd_kitchen_dataset_ep000118 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:57 | 2025-08-18 23:41 | 91 | 91 | 2 | 0 | 91 | 2 | 89 | 0 | 0 |
+| 6155757415600100750 | L3 ucsd_kitchen_dataset_ep000107 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:50 | 2025-08-11 09:51 | 91 | 91 | 2 | 0 | 91 | 2 | 89 | 0 | 0 |
+| 6155757425900100759 | L3 ucsd_kitchen_dataset_ep000110 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:52 | 2025-08-13 05:46 | 91 | 91 | 2 | 0 | 91 | 2 | 89 | 0 | 0 |
+| 6155757445100100775 | L1 ucsd_kitchen_dataset_ep000116 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:56 | 2025-08-18 23:40 | 91 | 91 | 2 | 0 | 91 | 2 | 89 | 0 | 0 |
+| 6155757419100100753 | L3 ucsd_kitchen_dataset_ep000108 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:51 | 2025-08-13 05:41 | 91 | 91 | 2 | 0 | 91 | 2 | 89 | 0 | 0 |
+| 6155757429500100762 | L3 ucsd_kitchen_dataset_ep000111 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:53 | 2025-08-13 05:47 | 91 | 91 | 2 | 0 | 91 | 2 | 89 | 0 | 0 |
+| 6155757440600100771 | L3 ucsd_kitchen_dataset_ep000114 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:55 | 2025-08-13 05:48 | 90 | 90 | 2 | 0 | 90 | 2 | 88 | 0 | 0 |
+| 6155757451100100780 | L3 ucsd_kitchen_dataset_ep000117 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:57 | 2025-08-13 12:38 | 90 | 90 | 2 | 0 | 90 | 2 | 88 | 0 | 0 |
+| 6155757433100100765 | L3 ucsd_kitchen_dataset_ep000112 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:53 | 2025-08-13 05:47 | 90 | 90 | 2 | 0 | 90 | 2 | 88 | 0 | 0 |
+| 6155757444000100774 | L3 ucsd_kitchen_dataset_ep000115 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:55 | 2025-08-13 05:49 | 90 | 90 | 2 | 0 | 90 | 2 | 88 | 0 | 0 |
+| 6155757436900100768 | L3 ucsd_kitchen_dataset_ep000113 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:54 | 2025-08-13 05:48 | 90 | 90 | 2 | 0 | 90 | 2 | 88 | 0 | 0 |
+| 6155757447400100777 | L3 ucsd_kitchen_dataset_ep000116 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:56 | 2025-08-13 05:50 | 90 | 90 | 2 | 0 | 90 | 2 | 88 | 0 | 0 |
+| 6459372320800101820 | L3 task-pick_U_driver_20_4_7th_PCL-20 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:09 | 2025-10-28 05:35 | 89 | 89 | 2 | 0 | 89 | 2 | 80 | 7 | 0 |
+| 6459372289000101800 | L1 task-pick_U_driver_20_4_7th_PCL-15 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:04 | 2025-10-14 14:00 | 88 | 88 | 5 | 0 | 88 | 5 | 83 | 0 | 0 |
+| 6459372335200101829 | L3 task-pick_U_driver_20_4_7th_PCL-5 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:10 | 2025-10-29 09:19 | 86 | 86 | 2 | 0 | 86 | 2 | 77 | 7 | 0 |
+| 6459372330500101826 | L3 task-pick_U_driver_20_4_7th_PCL-4 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:10 | 2025-10-29 09:19 | 85 | 85 | 3 | 0 | 85 | 3 | 78 | 4 | 0 |
+| 6459372303600101809 | L1 task-pick_U_driver_20_4_7th_PCL-18 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:07 | 2025-10-16 09:01 | 84 | 84 | 4 | 0 | 84 | 4 | 80 | 0 | 0 |
+| 6459372294100101803 | L1 task-pick_U_driver_20_4_7th_PCL-16 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:05 | 2025-10-16 09:00 | 84 | 84 | 4 | 0 | 84 | 4 | 80 | 0 | 0 |
+| 6459372308400101812 | L1 task-pick_U_driver_20_4_7th_PCL-19 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:07 | 2025-10-16 09:01 | 83 | 83 | 4 | 0 | 83 | 4 | 79 | 0 | 0 |
+| 6459372299000101806 | L1 task-pick_U_driver_20_4_7th_PCL-17 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:06 | 2025-10-16 09:01 | 83 | 83 | 4 | 0 | 83 | 4 | 79 | 0 | 0 |
+| 6459372313100101815 | L1 task-pick_U_driver_20_4_7th_PCL-2 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:08 | 2025-10-16 09:02 | 83 | 83 | 4 | 0 | 83 | 4 | 79 | 0 | 0 |
+| 6459372317500101818 | L1 task-pick_U_driver_20_4_7th_PCL-20 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:08 | 2025-10-16 09:02 | 83 | 83 | 4 | 0 | 83 | 4 | 79 | 0 | 0 |
+| 6459372325900101823 | L3 task-pick_U_driver_20_4_7th_PCL-3 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:09 | 2025-10-29 09:19 | 82 | 82 | 2 | 0 | 82 | 2 | 78 | 2 | 0 |
+| 6459372341600101833 | L1 task-pick_U_driver_20_4_7th_PCL-7 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:11 | 2025-10-21 02:30 | 82 | 82 | 5 | 0 | 82 | 5 | 77 | 0 | 0 |
+| 6459372327400101824 | L1 task-pick_U_driver_20_4_7th_PCL-4 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:09 | 2025-10-16 09:02 | 81 | 81 | 4 | 0 | 81 | 4 | 77 | 0 | 0 |
+| 6459372332000101827 | L1 task-pick_U_driver_20_4_7th_PCL-5 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:10 | 2025-10-16 09:03 | 81 | 81 | 4 | 0 | 81 | 4 | 77 | 0 | 0 |
+| 6459372322600101821 | L1 task-pick_U_driver_20_4_7th_PCL-3 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:09 | 2025-10-16 09:02 | 80 | 80 | 4 | 0 | 80 | 4 | 76 | 0 | 0 |
+| 6459372336800101830 | L1 task-pick_U_driver_20_4_7th_PCL-6 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:10 | 2025-10-21 02:28 | 80 | 80 | 4 | 0 | 80 | 4 | 76 | 0 | 0 |
+| 6459372351000101839 | L1 task-pick_U_driver_20_4_7th_PCL-9 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:12 | 2025-10-21 02:10 | 80 | 80 | 4 | 0 | 80 | 4 | 76 | 0 | 0 |
+| 6459372340100101832 | L3 task-pick_U_driver_20_4_7th_PCL-6 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:11 | 2025-10-29 09:19 | 80 | 80 | 2 | 0 | 80 | 2 | 77 | 1 | 0 |
+| 6459372346400101836 | L1 task-pick_U_driver_20_4_7th_PCL-8 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:12 | 2025-10-21 02:33 | 79 | 79 | 4 | 0 | 79 | 4 | 75 | 0 | 0 |
+| 6459372344700101835 | L3 task-pick_U_driver_20_4_7th_PCL-7 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:11 | 2025-10-21 02:32 | 79 | 79 | 2 | 0 | 79 | 2 | 77 | 0 | 0 |
+| 6459372268500101788 | L1 task-pick_U_driver_20_4_7th_PCL-11 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:14 | 2025-10-22 02:51 | 78 | 78 | 4 | 0 | 78 | 4 | 74 | 0 | 0 |
+| 6459372253200101782 | L1 task-pick_U_driver_20_4_7th_PCL-1 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:13 | 2025-10-22 02:43 | 78 | 78 | 4 | 0 | 78 | 4 | 74 | 0 | 0 |
+| 6459372349400101838 | L3 task-pick_U_driver_20_4_7th_PCL-8 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:12 | 2025-10-22 02:49 | 78 | 78 | 2 | 0 | 78 | 2 | 76 | 0 | 0 |
+| 6459372260900101784 | L3 task-pick_U_driver_20_4_7th_PCL-1 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:13 | 2025-10-22 02:50 | 78 | 78 | 2 | 0 | 78 | 2 | 76 | 0 | 0 |
+| 6459372262800101785 | L1 task-pick_U_driver_20_4_7th_PCL-10 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:13 | 2025-10-22 02:50 | 78 | 78 | 4 | 0 | 78 | 4 | 74 | 0 | 0 |
+| 6459372353800101841 | L3 task-pick_U_driver_20_4_7th_PCL-9 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:13 | 2025-10-22 02:49 | 78 | 78 | 2 | 0 | 78 | 2 | 76 | 0 | 0 |
+| 6459372279300101794 | L1 task-pick_U_driver_20_4_7th_PCL-13 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:16 | 2025-10-23 03:31 | 78 | 78 | 4 | 0 | 78 | 4 | 74 | 0 | 0 |
+| 6459372284200101797 | L1 task-pick_U_driver_20_4_7th_PCL-14 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:16 | 2025-10-24 02:53 | 77 | 77 | 4 | 0 | 77 | 4 | 73 | 0 | 0 |
+| 6459372274000101791 | L1 task-pick_U_driver_20_4_7th_PCL-12 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:14 | 2025-10-23 03:30 | 77 | 77 | 4 | 0 | 77 | 4 | 73 | 0 | 0 |
+| 6155750665400105641 | L3 berkeley_rpt_ep000023 | Robotics | ONLINE | COLLECTING | 2024-12-26 13:15 | 2025-11-02 07:28 | 77 | 77 | 7 | 0 | 77 | 7 | 21 | 39 | 10 |
+| 6459372277400101793 | L3 task-pick_U_driver_20_4_7th_PCL-12 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:15 | 2025-10-23 03:31 | 76 | 76 | 2 | 0 | 77 | 2 | 75 | 0 | 0 |
+| 6459372266800101787 | L3 task-pick_U_driver_20_4_7th_PCL-10 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:14 | 2025-10-22 02:51 | 77 | 77 | 2 | 0 | 77 | 2 | 75 | 0 | 0 |
+| 6459372282700101796 | L3 task-pick_U_driver_20_4_7th_PCL-13 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:16 | 2025-10-23 03:32 | 76 | 76 | 2 | 0 | 76 | 2 | 74 | 0 | 0 |
+| 6459372272100101790 | L3 task-pick_U_driver_20_4_7th_PCL-11 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:14 | 2025-10-23 03:17 | 76 | 76 | 2 | 0 | 76 | 2 | 74 | 0 | 0 |
+| 6459372287500101799 | L3 task-pick_U_driver_20_4_7th_PCL-14 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:16 | 2025-10-24 03:04 | 76 | 76 | 2 | 0 | 76 | 2 | 74 | 0 | 0 |
+| 6155757291100100646 | L1 ucsd_kitchen_dataset_ep000073 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:50 | 2025-08-18 23:47 | 72 | 72 | 2 | 0 | 72 | 2 | 69 | 0 | 1 |
+| 6155757456000100784 | L1 ucsd_kitchen_dataset_ep000119 | Robotics | ONLINE | COLLECTING | 2024-12-28 04:01 | 2025-08-18 23:41 | 72 | 72 | 1 | 0 | 72 | 1 | 70 | 0 | 1 |
+| 6155757294600100649 | L1 ucsd_kitchen_dataset_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:04 | 2025-08-18 23:47 | 71 | 71 | 1 | 0 | 72 | 1 | 71 | 0 | 0 |
+| 6155757287500100643 | L1 ucsd_kitchen_dataset_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:03 | 2025-08-18 23:46 | 71 | 71 | 1 | 0 | 71 | 1 | 70 | 0 | 0 |
+| 6155757459500100787 | L1 ucsd_kitchen_dataset_ep000120 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:58 | 2025-08-18 23:42 | 71 | 71 | 2 | 0 | 71 | 2 | 69 | 0 | 0 |
+| 6155757270200100628 | L1 ucsd_kitchen_dataset_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:00 | 2025-08-18 23:44 | 71 | 71 | 2 | 0 | 71 | 2 | 69 | 0 | 0 |
+| 6155757298100100652 | L1 ucsd_kitchen_dataset_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:06 | 2025-08-18 23:47 | 71 | 71 | 1 | 0 | 71 | 1 | 70 | 0 | 0 |
+| 6155757463000100790 | L1 ucsd_kitchen_dataset_ep000121 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:58 | 2025-08-18 23:42 | 71 | 71 | 2 | 0 | 71 | 2 | 69 | 0 | 0 |
+| 6155757323500100673 | L1 ucsd_kitchen_dataset_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:15 | 2025-08-18 23:50 | 71 | 71 | 1 | 0 | 71 | 1 | 70 | 0 | 0 |
+| 6155757466600100793 | L1 ucsd_kitchen_dataset_ep000122 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:59 | 2025-08-18 23:42 | 71 | 71 | 1 | 0 | 71 | 1 | 70 | 0 | 0 |
+| 6155757304800100658 | L1 ucsd_kitchen_dataset_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:10 | 2025-08-18 23:48 | 71 | 71 | 1 | 0 | 71 | 1 | 70 | 0 | 0 |
+| 6155757334000100682 | L1 ucsd_kitchen_dataset_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:18 | 2025-08-18 23:50 | 71 | 71 | 1 | 0 | 71 | 1 | 70 | 0 | 0 |
+| 6155757269000100627 | L3 ucsd_kitchen_dataset_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:00 | 2025-08-14 11:06 | 70 | 70 | 2 | 0 | 70 | 2 | 68 | 0 | 0 |
+| 6155757316300100667 | L1 ucsd_kitchen_dataset_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:12 | 2025-08-18 23:49 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757327100100676 | L1 ucsd_kitchen_dataset_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:15 | 2025-08-18 23:50 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757280600100637 | L1 ucsd_kitchen_dataset_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:01 | 2025-08-18 23:46 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757308800100661 | L1 ucsd_kitchen_dataset_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:11 | 2025-08-18 23:49 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757337700100685 | L1 ucsd_kitchen_dataset_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:19 | 2025-08-18 23:51 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757461800100789 | L3 ucsd_kitchen_dataset_ep000120 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:58 | 2025-08-14 11:01 | 70 | 70 | 2 | 0 | 70 | 2 | 68 | 0 | 0 |
+| 6155757272400100630 | L3 ucsd_kitchen_dataset_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:00 | 2025-08-15 10:26 | 70 | 70 | 2 | 0 | 70 | 2 | 68 | 0 | 0 |
+| 6155757319900100670 | L1 ucsd_kitchen_dataset_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:14 | 2025-08-18 23:49 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757348600100694 | L1 ucsd_kitchen_dataset_ep000089 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:51 | 2025-08-19 09:34 | 70 | 70 | 1 | 0 | 70 | 1 | 68 | 0 | 1 |
+| 6155757273500100631 | L1 ucsd_kitchen_dataset_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:00 | 2025-08-18 23:45 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757301400100655 | L1 ucsd_kitchen_dataset_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:07 | 2025-08-18 23:47 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757454700100783 | L3 ucsd_kitchen_dataset_ep000118 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:57 | 2025-08-14 10:56 | 70 | 70 | 2 | 0 | 70 | 2 | 68 | 0 | 0 |
+| 6155757284000100640 | L1 ucsd_kitchen_dataset_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:03 | 2025-08-18 23:46 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757312400100664 | L1 ucsd_kitchen_dataset_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:11 | 2025-08-18 23:49 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757341300100688 | L1 ucsd_kitchen_dataset_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:20 | 2025-08-19 09:31 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757465400100792 | L3 ucsd_kitchen_dataset_ep000121 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:59 | 2025-08-14 11:03 | 70 | 70 | 2 | 0 | 70 | 2 | 68 | 0 | 0 |
+| 6155757275900100633 | L3 ucsd_kitchen_dataset_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:01 | 2025-08-15 10:27 | 69 | 69 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757352200100697 | L1 ucsd_kitchen_dataset_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:22 | 2025-08-19 09:35 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757248900100610 | L1 ucsd_kitchen_dataset_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:30 | 2025-08-20 13:53 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757277000100634 | L1 ucsd_kitchen_dataset_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:01 | 2025-08-18 23:45 | 70 | 70 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757362300100706 | L1 ucsd_kitchen_dataset_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:27 | 2025-08-20 13:50 | 69 | 69 | 1 | 0 | 70 | 1 | 69 | 0 | 0 |
+| 6155757458400100786 | L3 ucsd_kitchen_dataset_ep000119 | Robotics | ONLINE | COLLECTING | 2025-01-06 04:58 | 2025-08-14 10:57 | 70 | 70 | 2 | 0 | 70 | 2 | 68 | 0 | 0 |
+| 6155757259900100619 | L1 ucsd_kitchen_dataset_ep000064 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:52 | 2025-08-21 13:59 | 69 | 69 | 1 | 0 | 69 | 1 | 67 | 0 | 1 |
+| 6155757296900100651 | L3 ucsd_kitchen_dataset_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:06 | 2025-08-16 11:38 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757326000100675 | L3 ucsd_kitchen_dataset_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:15 | 2025-08-18 15:18 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757345000100691 | L1 ucsd_kitchen_dataset_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:20 | 2025-08-19 09:32 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757279400100636 | L3 ucsd_kitchen_dataset_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:01 | 2025-08-15 10:29 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757307500100660 | L3 ucsd_kitchen_dataset_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:11 | 2025-08-17 09:09 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757336400100684 | L3 ucsd_kitchen_dataset_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:19 | 2025-08-18 15:22 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757355500100700 | L1 ucsd_kitchen_dataset_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:23 | 2025-08-19 09:37 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757252600100613 | L1 ucsd_kitchen_dataset_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:30 | 2025-08-20 13:47 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757289900100645 | L3 ucsd_kitchen_dataset_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:04 | 2025-08-16 11:36 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757318800100669 | L3 ucsd_kitchen_dataset_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:13 | 2025-08-17 09:15 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757347400100693 | L3 ucsd_kitchen_dataset_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:21 | 2025-08-19 09:33 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757365900100709 | L1 ucsd_kitchen_dataset_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:29 | 2025-08-20 13:53 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757300300100654 | L3 ucsd_kitchen_dataset_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:06 | 2025-08-16 11:39 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757329300100678 | L3 ucsd_kitchen_dataset_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:16 | 2025-08-18 15:19 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757282700100639 | L3 ucsd_kitchen_dataset_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:02 | 2025-08-15 10:31 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757330400100679 | L1 ucsd_kitchen_dataset_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:17 | 2025-08-18 23:50 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757340100100687 | L3 ucsd_kitchen_dataset_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:19 | 2025-08-18 15:23 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757358600100703 | L1 ucsd_kitchen_dataset_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:24 | 2025-08-20 13:46 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757256300100616 | L1 ucsd_kitchen_dataset_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:31 | 2025-08-21 13:57 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757293400100648 | L3 ucsd_kitchen_dataset_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:04 | 2025-08-16 11:37 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757351000100696 | L3 ucsd_kitchen_dataset_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:21 | 2025-08-19 09:35 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757071100100465 | L3 ucsd_kitchen_dataset_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:40 | 2025-08-27 06:47 | 68 | 68 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757303700100657 | L3 ucsd_kitchen_dataset_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:08 | 2025-08-16 11:41 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757332800100681 | L3 ucsd_kitchen_dataset_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:18 | 2025-08-18 15:21 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757286300100642 | L3 ucsd_kitchen_dataset_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:03 | 2025-08-19 02:23 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155757343700100690 | L3 ucsd_kitchen_dataset_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:20 | 2025-08-19 09:32 | 69 | 69 | 1 | 0 | 69 | 1 | 68 | 0 | 0 |
+| 6155756967800100387 | L3 kaist_nonprehensile_ep000187 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:05 | 2025-09-01 06:53 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757171100100547 | L1 ucsd_kitchen_dataset_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:21 | 2025-08-22 08:51 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757181600100555 | L3 ucsd_kitchen_dataset_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:24 | 2025-08-22 08:55 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757211100100579 | L3 ucsd_kitchen_dataset_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:33 | 2025-08-23 10:40 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757240100100603 | L3 ucsd_kitchen_dataset_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:39 | 2025-08-25 13:26 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757354400100699 | L3 ucsd_kitchen_dataset_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:23 | 2025-08-19 09:36 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155756978400100396 | L3 kaist_nonprehensile_ep000190 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:11 | 2025-09-23 01:00 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757074800100468 | L3 ucsd_kitchen_dataset_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:41 | 2025-08-27 06:48 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757104200100492 | L3 ucsd_kitchen_dataset_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:49 | 2025-08-28 06:30 | 68 | 68 | 2 | 0 | 68 | 2 | 66 | 0 | 0 |
+| 6155757162900100540 | L3 ucsd_kitchen_dataset_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:00 | 2025-09-01 06:50 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757182800100556 | L1 ucsd_kitchen_dataset_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:24 | 2025-08-22 08:55 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757192600100564 | L3 ucsd_kitchen_dataset_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:26 | 2025-08-22 08:59 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757221700100588 | L3 ucsd_kitchen_dataset_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:35 | 2025-08-25 13:20 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757251300100612 | L3 ucsd_kitchen_dataset_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:30 | 2025-08-20 13:59 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757364700100708 | L3 ucsd_kitchen_dataset_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:29 | 2025-08-20 13:52 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757145300100525 | L3 ucsd_kitchen_dataset_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:56 | 2025-08-30 10:43 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757173700100549 | L3 ucsd_kitchen_dataset_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:22 | 2025-08-22 08:52 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757194000100565 | L1 ucsd_kitchen_dataset_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:26 | 2025-08-22 08:59 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757203400100573 | L3 ucsd_kitchen_dataset_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:31 | 2025-08-23 10:37 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757232700100597 | L3 ucsd_kitchen_dataset_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:38 | 2025-08-25 13:24 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757262200100621 | L3 ucsd_kitchen_dataset_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:16 | 2025-08-21 14:04 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155756971300100390 | L3 kaist_nonprehensile_ep000188 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:07 | 2025-09-01 06:55 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757067400100462 | L3 ucsd_kitchen_dataset_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:40 | 2025-08-26 07:07 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757155800100534 | L3 ucsd_kitchen_dataset_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:57 | 2025-08-31 10:41 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757175000100550 | L1 ucsd_kitchen_dataset_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:22 | 2025-08-22 08:52 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757185200100558 | L3 ucsd_kitchen_dataset_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:25 | 2025-08-22 08:56 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757214700100582 | L3 ucsd_kitchen_dataset_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:33 | 2025-08-23 10:41 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757243900100606 | L3 ucsd_kitchen_dataset_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:39 | 2025-08-25 13:27 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757263300100622 | L1 ucsd_kitchen_dataset_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:17 | 2025-08-21 14:05 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757357600100702 | L3 ucsd_kitchen_dataset_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:24 | 2025-08-19 09:38 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155756982200100399 | L3 kaist_nonprehensile_ep000191 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:14 | 2025-09-02 13:51 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757068600100463 | L1 ucsd_kitchen_dataset_ep000012 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:56 | 2025-08-26 07:07 | 68 | 68 | 1 | 0 | 68 | 1 | 66 | 0 | 1 |
+| 6155757078500100471 | L3 ucsd_kitchen_dataset_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:41 | 2025-08-27 06:49 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757166300100543 | L3 ucsd_kitchen_dataset_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:02 | 2025-09-01 06:51 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757186300100559 | L1 ucsd_kitchen_dataset_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:25 | 2025-08-22 08:57 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757196300100567 | L3 ucsd_kitchen_dataset_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:27 | 2025-08-22 09:00 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757225600100591 | L3 ucsd_kitchen_dataset_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:36 | 2025-08-25 13:21 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757255100100615 | L3 ucsd_kitchen_dataset_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:31 | 2025-08-20 14:03 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757311200100663 | L3 ucsd_kitchen_dataset_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:11 | 2025-08-17 09:10 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757079800100472 | L1 ucsd_kitchen_dataset_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:42 | 2025-08-27 06:50 | 68 | 68 | 2 | 0 | 68 | 2 | 66 | 0 | 0 |
+| 6155757148800100528 | L3 ucsd_kitchen_dataset_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:56 | 2025-08-31 10:36 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757167500100544 | L1 ucsd_kitchen_dataset_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:19 | 2025-08-21 14:07 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757177600100552 | L3 ucsd_kitchen_dataset_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:23 | 2025-08-22 08:54 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757197400100568 | L1 ucsd_kitchen_dataset_ep000047 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:57 | 2025-08-23 10:35 | 68 | 68 | 1 | 0 | 68 | 1 | 66 | 0 | 1 |
+| 6155757207600100576 | L3 ucsd_kitchen_dataset_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:32 | 2025-08-23 10:39 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757236300100600 | L3 ucsd_kitchen_dataset_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:38 | 2025-08-25 13:25 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757265600100624 | L3 ucsd_kitchen_dataset_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:17 | 2025-08-21 14:05 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757322200100672 | L3 ucsd_kitchen_dataset_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:14 | 2025-08-17 09:18 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155756974700100393 | L3 kaist_nonprehensile_ep000189 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:09 | 2025-09-16 00:56 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757159400100537 | L3 ucsd_kitchen_dataset_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:58 | 2025-09-01 06:48 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757178900100553 | L1 ucsd_kitchen_dataset_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:24 | 2025-08-21 14:06 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757188800100561 | L3 ucsd_kitchen_dataset_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:25 | 2025-08-22 08:58 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757218200100585 | L3 ucsd_kitchen_dataset_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:35 | 2025-08-24 05:23 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757247700100609 | L3 ucsd_kitchen_dataset_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:40 | 2025-08-26 07:06 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757266900100625 | L1 ucsd_kitchen_dataset_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:18 | 2025-08-21 14:06 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757361000100705 | L3 ucsd_kitchen_dataset_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:26 | 2025-08-20 13:48 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757072400100466 | L1 ucsd_kitchen_dataset_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:41 | 2025-08-27 06:47 | 68 | 68 | 2 | 0 | 68 | 2 | 66 | 0 | 0 |
+| 6155757082100100474 | L3 ucsd_kitchen_dataset_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:42 | 2025-08-27 06:51 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757169900100546 | L3 ucsd_kitchen_dataset_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:19 | 2025-08-22 08:50 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757190000100562 | L1 ucsd_kitchen_dataset_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:26 | 2025-08-22 08:58 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757199900100570 | L3 ucsd_kitchen_dataset_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:31 | 2025-08-23 10:36 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757229000100594 | L3 ucsd_kitchen_dataset_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:36 | 2025-08-25 13:22 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757258700100618 | L3 ucsd_kitchen_dataset_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:32 | 2025-08-21 14:00 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757315000100666 | L3 ucsd_kitchen_dataset_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-06 05:12 | 2025-08-17 09:12 | 68 | 68 | 1 | 0 | 68 | 1 | 67 | 0 | 0 |
+| 6155757092900100483 | L3 ucsd_kitchen_dataset_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:47 | 2025-08-27 06:55 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757122700100507 | L3 ucsd_kitchen_dataset_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:52 | 2025-08-30 10:36 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757152300100531 | L3 ucsd_kitchen_dataset_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:57 | 2025-08-31 10:37 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757201100100571 | L1 ucsd_kitchen_dataset_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:31 | 2025-08-23 10:37 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757230200100595 | L1 ucsd_kitchen_dataset_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:37 | 2025-08-25 13:23 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757153500100532 | L1 ucsd_kitchen_dataset_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:57 | 2025-08-31 10:38 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757212400100580 | L1 ucsd_kitchen_dataset_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:33 | 2025-08-23 10:41 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757241300100604 | L1 ucsd_kitchen_dataset_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:39 | 2025-08-25 13:27 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155756989200100405 | L3 kaist_nonprehensile_ep000193 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:16 | 2025-09-02 13:55 | 67 | 67 | 0 | 0 | 67 | 0 | 67 | 0 | 0 |
+| 6155757076000100469 | L1 ucsd_kitchen_dataset_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:41 | 2025-08-27 06:48 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757085600100477 | L3 ucsd_kitchen_dataset_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:45 | 2025-08-27 06:52 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757115000100501 | L3 ucsd_kitchen_dataset_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:51 | 2025-08-29 09:26 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757164100100541 | L1 ucsd_kitchen_dataset_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:01 | 2025-09-01 06:50 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757223100100589 | L1 ucsd_kitchen_dataset_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:36 | 2025-08-25 13:20 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757096600100486 | L3 ucsd_kitchen_dataset_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:48 | 2025-08-27 06:56 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757146400100526 | L1 ucsd_kitchen_dataset_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:56 | 2025-08-31 10:36 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757205000100574 | L1 ucsd_kitchen_dataset_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:31 | 2025-08-23 10:38 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757233900100598 | L1 ucsd_kitchen_dataset_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:38 | 2025-08-25 13:24 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757107700100495 | L3 ucsd_kitchen_dataset_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:49 | 2025-08-28 06:33 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757127700100511 | L1 ucsd_kitchen_dataset_ep000028 | Robotics | ONLINE | COLLECTING | 2024-12-28 03:59 | 2025-08-30 10:40 | 67 | 67 | 0 | 0 | 67 | 0 | 66 | 0 | 1 |
+| 6155757137700100519 | L3 ucsd_kitchen_dataset_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:54 | 2025-08-30 10:45 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757215800100583 | L1 ucsd_kitchen_dataset_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:35 | 2025-08-24 05:22 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757245200100607 | L1 ucsd_kitchen_dataset_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:39 | 2025-08-25 13:28 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155756983300100400 | L1 kaist_nonprehensile_ep000192 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:14 | 2025-09-02 13:52 | 67 | 67 | 2 | 0 | 67 | 2 | 65 | 0 | 0 |
+| 6155757089200100480 | L3 ucsd_kitchen_dataset_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:46 | 2025-08-27 06:53 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757119000100504 | L3 ucsd_kitchen_dataset_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:51 | 2025-08-30 10:34 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757226800100592 | L1 ucsd_kitchen_dataset_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:36 | 2025-08-25 13:21 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757100400100489 | L3 ucsd_kitchen_dataset_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:48 | 2025-08-27 06:57 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757130200100513 | L3 ucsd_kitchen_dataset_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:53 | 2025-08-30 10:41 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757150000100529 | L1 ucsd_kitchen_dataset_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:56 | 2025-08-31 10:37 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757208700100577 | L1 ucsd_kitchen_dataset_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:32 | 2025-08-23 10:39 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757237600100601 | L1 ucsd_kitchen_dataset_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:38 | 2025-08-25 13:26 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155756975900100394 | L1 kaist_nonprehensile_ep000190 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:10 | 2025-09-01 06:59 | 67 | 67 | 2 | 0 | 67 | 2 | 65 | 0 | 0 |
+| 6155757111500100498 | L3 ucsd_kitchen_dataset_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:50 | 2025-08-28 06:35 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757141600100522 | L3 ucsd_kitchen_dataset_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:55 | 2025-08-31 10:35 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757160500100538 | L1 ucsd_kitchen_dataset_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:00 | 2025-09-01 06:49 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155757219300100586 | L1 ucsd_kitchen_dataset_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:35 | 2025-08-24 05:24 | 67 | 67 | 1 | 0 | 67 | 1 | 66 | 0 | 0 |
+| 6155756987000100403 | L1 kaist_nonprehensile_ep000193 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:15 | 2025-09-02 13:54 | 66 | 66 | 1 | 0 | 66 | 1 | 65 | 0 | 0 |
+| 6155756996800100411 | L3 kaist_nonprehensile_ep000195 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:22 | 2025-09-03 07:14 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757083300100475 | L1 ucsd_kitchen_dataset_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:43 | 2025-08-27 06:51 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757112700100499 | L1 ucsd_kitchen_dataset_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:50 | 2025-08-29 09:21 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757142800100523 | L1 ucsd_kitchen_dataset_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:55 | 2025-08-31 10:35 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155756969000100388 | L1 kaist_nonprehensile_ep000188 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:07 | 2025-09-01 06:54 | 66 | 66 | 1 | 0 | 66 | 1 | 65 | 0 | 0 |
+| 6155757094000100484 | L1 ucsd_kitchen_dataset_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:47 | 2025-08-27 06:55 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757124000100508 | L1 ucsd_kitchen_dataset_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:52 | 2025-08-30 10:37 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757133800100516 | L3 ucsd_kitchen_dataset_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:54 | 2025-08-30 10:42 | 66 | 66 | 1 | 0 | 66 | 1 | 65 | 0 | 0 |
+| 6155756979700100397 | L1 kaist_nonprehensile_ep000191 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:13 | 2025-09-02 13:50 | 66 | 66 | 1 | 0 | 66 | 1 | 65 | 0 | 0 |
+| 6155757105300100493 | L1 ucsd_kitchen_dataset_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:49 | 2025-08-28 06:32 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757135100100517 | L1 ucsd_kitchen_dataset_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:54 | 2025-08-30 10:44 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757086800100478 | L1 ucsd_kitchen_dataset_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:45 | 2025-08-27 06:53 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757116200100502 | L1 ucsd_kitchen_dataset_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:51 | 2025-08-29 09:27 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757126500100510 | L3 ucsd_kitchen_dataset_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:53 | 2025-08-30 10:39 | 66 | 66 | 1 | 0 | 66 | 1 | 65 | 0 | 0 |
+| 6155756972400100391 | L1 kaist_nonprehensile_ep000189 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:09 | 2025-09-01 06:57 | 66 | 66 | 1 | 0 | 66 | 1 | 65 | 0 | 0 |
+| 6155757012800100423 | L3 kaist_nonprehensile_ep000199 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:27 | 2025-09-03 07:20 | 65 | 65 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757098000100487 | L1 ucsd_kitchen_dataset_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:48 | 2025-08-27 06:57 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757157100100535 | L1 ucsd_kitchen_dataset_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:58 | 2025-09-01 06:47 | 66 | 66 | 1 | 0 | 66 | 1 | 65 | 0 | 0 |
+| 6155756992900100408 | L3 kaist_nonprehensile_ep000194 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:18 | 2025-09-03 07:13 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757108900100496 | L1 ucsd_kitchen_dataset_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:49 | 2025-08-28 06:34 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757139000100520 | L1 ucsd_kitchen_dataset_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:55 | 2025-08-31 10:34 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757090400100481 | L1 ucsd_kitchen_dataset_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:47 | 2025-08-27 06:54 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757120200100505 | L1 ucsd_kitchen_dataset_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:51 | 2025-08-30 10:35 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757101700100490 | L1 ucsd_kitchen_dataset_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:48 | 2025-08-28 06:28 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757131300100514 | L1 ucsd_kitchen_dataset_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-06 11:54 | 2025-08-30 10:42 | 66 | 66 | 0 | 0 | 66 | 0 | 66 | 0 | 0 |
+| 6155757008800100420 | L3 kaist_nonprehensile_ep000198 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:25 | 2025-09-03 07:18 | 65 | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 |
+| 6155757044600100444 | L3 ucsd_kitchen_dataset_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:11 | 2025-09-04 06:39 | 65 | 65 | 1 | 0 | 65 | 1 | 64 | 0 | 0 |
+| 6155757020900100429 | L3 ucsd_kitchen_dataset_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:31 | 2025-09-04 06:32 | 65 | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 |
+| 6155756990400100406 | L1 kaist_nonprehensile_ep000194 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:17 | 2025-09-02 13:57 | 65 | 65 | 1 | 0 | 65 | 1 | 64 | 0 | 0 |
+| 6155757000600100414 | L3 kaist_nonprehensile_ep000196 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:22 | 2025-09-03 07:16 | 65 | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 |
+| 6155757048400100447 | L3 ucsd_kitchen_dataset_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:11 | 2025-09-06 10:25 | 65 | 65 | 1 | 0 | 65 | 1 | 64 | 0 | 0 |
+| 6155757060400100456 | L3 ucsd_kitchen_dataset_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:15 | 2025-09-06 10:28 | 65 | 65 | 1 | 0 | 65 | 1 | 64 | 0 | 0 |
+| 6155756994200100409 | L1 kaist_nonprehensile_ep000195 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:19 | 2025-09-03 07:14 | 65 | 65 | 1 | 0 | 65 | 1 | 64 | 0 | 0 |
+| 6155757004900100417 | L3 kaist_nonprehensile_ep000197 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:23 | 2025-09-03 07:17 | 65 | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 |
+| 6155757040700100441 | L3 ucsd_kitchen_dataset_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:10 | 2025-09-04 06:38 | 65 | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 |
+| 6155756985800100402 | L3 kaist_nonprehensile_ep000192 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:14 | 2025-09-02 13:53 | 65 | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 |
+| 6155757016500100426 | L3 kaist_nonprehensile_ep000200 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:30 | 2025-09-03 07:22 | 65 | 65 | 0 | 0 | 65 | 0 | 65 | 0 | 0 |
+| 6155757052400100450 | L3 ucsd_kitchen_dataset_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:12 | 2025-09-06 10:26 | 65 | 65 | 1 | 0 | 65 | 1 | 64 | 0 | 0 |
+| 6155756939100100363 | L3 kaist_nonprehensile_ep000179 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:21 | 2025-09-13 00:45 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757018100100427 | L1 ucsd_kitchen_dataset_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:30 | 2025-09-04 06:30 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757033100100435 | L3 ucsd_kitchen_dataset_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:36 | 2025-09-05 01:02 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757063800100459 | L3 ucsd_kitchen_dataset_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:17 | 2025-09-06 10:29 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155756998000100412 | L1 kaist_nonprehensile_ep000196 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:22 | 2025-09-03 07:15 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757034500100436 | L1 ucsd_kitchen_dataset_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:09 | 2025-09-04 06:35 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155756932400100357 | L3 kaist_nonprehensile_ep000177 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:20 | 2025-09-09 00:37 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757010100100421 | L1 kaist_nonprehensile_ep000199 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:26 | 2025-09-03 07:19 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757056400100453 | L3 ucsd_kitchen_dataset_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:13 | 2025-09-06 10:27 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757022200100430 | L1 ucsd_kitchen_dataset_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:34 | 2025-09-04 06:32 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757036900100438 | L3 ucsd_kitchen_dataset_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:10 | 2025-09-04 06:36 | 64 | 64 | 0 | 0 | 64 | 0 | 64 | 0 | 0 |
+| 6155757001800100415 | L1 kaist_nonprehensile_ep000197 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:23 | 2025-09-03 07:16 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757038200100439 | L1 ucsd_kitchen_dataset_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:10 | 2025-09-04 06:37 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155756935700100360 | L3 kaist_nonprehensile_ep000178 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:21 | 2025-09-11 00:12 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757014000100424 | L1 kaist_nonprehensile_ep000200 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:29 | 2025-09-03 07:21 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757024900100432 | L3 ucsd_kitchen_dataset_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:34 | 2025-09-04 06:33 | 64 | 64 | 0 | 0 | 64 | 0 | 64 | 0 | 0 |
+| 6155757026200100433 | L1 ucsd_kitchen_dataset_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:35 | 2025-09-04 06:34 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155756929100100354 | L3 kaist_nonprehensile_ep000176 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:18 | 2025-09-07 07:52 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155757006200100418 | L1 kaist_nonprehensile_ep000198 | Robotics | ONLINE | COLLECTING | 2025-01-06 12:24 | 2025-09-03 07:18 | 64 | 64 | 1 | 0 | 64 | 1 | 63 | 0 | 0 |
+| 6155756942900100366 | L3 kaist_nonprehensile_ep000180 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:26 | 2025-09-17 01:24 | 63 | 63 | 1 | 0 | 63 | 1 | 62 | 0 | 0 |
+| 6155756946300100369 | L3 kaist_nonprehensile_ep000181 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:26 | 2025-09-24 01:17 | 63 | 63 | 1 | 0 | 63 | 1 | 62 | 0 | 0 |
+| 6155757041900100442 | L1 ucsd_kitchen_dataset_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:10 | 2025-09-04 06:38 | 63 | 63 | 1 | 0 | 63 | 1 | 62 | 0 | 0 |
+| 6155756930100100355 | L1 kaist_nonprehensile_ep000177 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:20 | 2025-09-08 00:32 | 62 | 62 | 1 | 0 | 62 | 1 | 61 | 0 | 0 |
+| 6155757053800100451 | L1 ucsd_kitchen_dataset_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:12 | 2025-09-06 10:26 | 62 | 62 | 1 | 0 | 62 | 1 | 61 | 0 | 0 |
+| 6155757045800100445 | L1 ucsd_kitchen_dataset_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:11 | 2025-09-06 10:24 | 62 | 62 | 1 | 0 | 62 | 1 | 61 | 0 | 0 |
+| 6155756933400100358 | L1 kaist_nonprehensile_ep000178 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:21 | 2025-09-10 00:20 | 62 | 62 | 1 | 0 | 62 | 1 | 61 | 0 | 0 |
+| 6155757049700100448 | L1 ucsd_kitchen_dataset_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:11 | 2025-09-06 10:25 | 62 | 62 | 1 | 0 | 62 | 1 | 61 | 0 | 0 |
+| 6155756936900100361 | L1 kaist_nonprehensile_ep000179 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:21 | 2025-09-12 13:22 | 62 | 62 | 1 | 0 | 62 | 1 | 61 | 0 | 0 |
+| 6155756957200100378 | L3 kaist_nonprehensile_ep000184 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:29 | 2025-10-28 00:32 | 62 | 62 | 0 | 0 | 62 | 0 | 61 | 1 | 0 |
+| 6155756940400100364 | L1 kaist_nonprehensile_ep000180 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:25 | 2025-09-14 03:57 | 61 | 61 | 1 | 0 | 61 | 1 | 60 | 0 | 0 |
+| 6155756949700100372 | L3 kaist_nonprehensile_ep000182 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:27 | 2025-09-08 04:55 | 61 | 61 | 0 | 0 | 61 | 0 | 61 | 0 | 0 |
+| 6155757065000100460 | L1 ucsd_kitchen_dataset_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:17 | 2025-09-06 10:30 | 61 | 61 | 1 | 0 | 61 | 1 | 60 | 0 | 0 |
+| 6155756960600100381 | L3 kaist_nonprehensile_ep000185 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:30 | 2025-09-08 05:02 | 61 | 61 | 0 | 0 | 61 | 0 | 61 | 0 | 0 |
+| 6155757057800100454 | L1 ucsd_kitchen_dataset_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:13 | 2025-09-06 10:27 | 61 | 61 | 1 | 0 | 61 | 1 | 60 | 0 | 0 |
+| 6155756869400100303 | L3 kaist_nonprehensile_ep000159 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:32 | 2025-09-09 06:32 | 61 | 61 | 0 | 0 | 61 | 0 | 61 | 0 | 0 |
+| 6155756944100100367 | L1 kaist_nonprehensile_ep000181 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:26 | 2025-09-16 00:57 | 61 | 61 | 1 | 0 | 61 | 1 | 60 | 0 | 0 |
+| 6155756953500100375 | L3 kaist_nonprehensile_ep000183 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:28 | 2025-09-08 04:56 | 61 | 61 | 0 | 0 | 61 | 0 | 61 | 0 | 0 |
+| 6155756964100100384 | L3 kaist_nonprehensile_ep000186 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:31 | 2025-09-09 06:26 | 61 | 61 | 0 | 0 | 61 | 0 | 61 | 0 | 0 |
+| 6155757061500100457 | L1 ucsd_kitchen_dataset_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:15 | 2025-09-06 10:28 | 61 | 61 | 1 | 0 | 61 | 1 | 60 | 0 | 0 |
+| 6155756947400100370 | L1 kaist_nonprehensile_ep000182 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:27 | 2025-09-20 01:09 | 61 | 61 | 1 | 0 | 61 | 1 | 60 | 0 | 0 |
+| 6155756958300100379 | L1 kaist_nonprehensile_ep000185 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:30 | 2025-09-08 04:59 | 60 | 60 | 1 | 0 | 60 | 1 | 59 | 0 | 0 |
+| 6155756867200100301 | L1 kaist_nonprehensile_ep000159 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:32 | 2025-09-09 06:30 | 60 | 60 | 1 | 0 | 60 | 1 | 59 | 0 | 0 |
+| 6155756950900100373 | L1 kaist_nonprehensile_ep000183 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:28 | 2025-09-08 04:56 | 60 | 60 | 1 | 0 | 60 | 1 | 59 | 0 | 0 |
+| 6155756961800100382 | L1 kaist_nonprehensile_ep000186 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:31 | 2025-09-09 06:25 | 60 | 60 | 1 | 0 | 60 | 1 | 59 | 0 | 0 |
+| 6155756954700100376 | L1 kaist_nonprehensile_ep000184 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:29 | 2025-09-08 04:57 | 60 | 60 | 1 | 0 | 60 | 1 | 59 | 0 | 0 |
+| 6155756965300100385 | L1 kaist_nonprehensile_ep000187 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:31 | 2025-09-09 06:27 | 60 | 60 | 1 | 0 | 60 | 1 | 59 | 0 | 0 |
+| 6155756873000100306 | L3 kaist_nonprehensile_ep000160 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:33 | 2025-09-09 06:36 | 60 | 60 | 0 | 0 | 60 | 0 | 60 | 0 | 0 |
+| 6155756870600100304 | L1 kaist_nonprehensile_ep000160 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:33 | 2025-09-09 06:34 | 59 | 59 | 1 | 0 | 59 | 1 | 58 | 0 | 0 |
+| 8384552271200101484 | Submit images of kitchen appliance knobs and  | Kitchen Appliances | PREPARING | COLLECTING | 2025-08-28 10:29 | 2025-09-08 07:54 | 17 | 17 | 6 | 0 | 56 | 8 | 48 | 0 | 0 |
+| 6155750666600105642 | L1 berkeley_rpt_ep000024 | Robotics | ONLINE | COLLECTING | 2024-12-14 09:53 | 2025-10-14 18:16 | 43 | 43 | 6 | 0 | 45 | 6 | 33 | 0 | 6 |
+| 9343758907400109054 | Share your important life events with us! | Lifelog Cnavas | ONLINE | COLLECTING | 2025-12-22 08:36 | 2026-03-16 13:37 | 29 | 29 | 0 | 0 | 31 | 0 | 0 | 31 | 0 |
+| 9574030745800106492 | Label Deposits: OKX, HTX, OrangeX, CoinEx, By | CEX Hot Wallet | ONLINE | COLLECTING | 2026-01-13 02:55 | 2026-01-30 03:33 | 8 | 8 | 3 | 0 | 27 | 8 | 19 | 0 | 0 |
+| 6155750662900105639 | L1 berkeley_rpt_ep000023 | Robotics | ONLINE | COLLECTING | 2024-12-25 19:06 | 2025-10-14 18:13 | 22 | 22 | 3 | 0 | 22 | 3 | 17 | 0 | 2 |
+| 9574000108400106112 | Label Deposits: Binance, IndoEx, Tokocrypto,  | CEX Hot Wallet | ONLINE | COLLECTING | 2026-01-15 04:08 | 2026-02-12 06:27 | 16 | 16 | 8 | 0 | 19 | 8 | 11 | 0 | 0 |
+| 9573999127600106018 | Label Withdrawals: Binance, IndoEx, Tokocrypt | CEX Hot Wallet | ONLINE | COLLECTING | 2026-01-21 01:31 | 2026-02-18 15:50 | 10 | 10 | 7 | 0 | 15 | 10 | 5 | 0 | 0 |
+| 9574092777700106569 | Label Withdraws: Zoomex, Phemex, Tapbit, Bitf | CEX Hot Wallet | ONLINE | COLLECTING | 2026-01-21 14:55 | 2026-02-13 02:42 | 7 | 7 | 5 | 0 | 14 | 9 | 5 | 0 | 0 |
+| 6155750659200105636 | L1 berkeley_rpt_ep000022 | Robotics | ONLINE | COLLECTING | 2024-12-31 23:59 | 2025-08-20 20:04 | 14 | 14 | 2 | 0 | 14 | 2 | 11 | 0 | 1 |
+| 6155756806600100252 | L3 kaist_nonprehensile_ep000142 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:24 | 2025-07-25 11:53 | 5 | 5 | 0 | 0 | 13 | 0 | 13 | 0 | 0 |
+| 6155750661500105638 | L3 berkeley_rpt_ep000022 | Robotics | ONLINE | COLLECTING | 2025-02-13 15:04 | 2025-10-21 07:43 | 10 | 10 | 6 | 0 | 10 | 6 | 4 | 0 | 0 |
+| 6155750647100105627 | L1 berkeley_rpt_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:50 | 2025-08-04 02:58 | 10 | 10 | 2 | 0 | 10 | 2 | 8 | 0 | 0 |
+| 9343814369700109090 | Food Image Annotation | Food Annotation | ONLINE | COLLECTING | 2025-12-17 11:08 | 2026-03-05 07:16 | 6 | 6 | 1 | 0 | 9 | 1 | 1 | 7 | 0 |
+| 6155750651100105630 | L1 berkeley_rpt_ep000020 | Robotics | ONLINE | COLLECTING | 2024-12-31 23:59 | 2025-08-02 09:53 | 9 | 9 | 2 | 0 | 9 | 2 | 6 | 0 | 1 |
+| 6155750653800105632 | L3 berkeley_rpt_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:55 | 2025-11-02 07:28 | 9 | 9 | 2 | 0 | 9 | 2 | 6 | 1 | 0 |
+| 6155750643000105624 | L1 berkeley_rpt_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:48 | 2025-10-23 15:47 | 8 | 8 | 0 | 0 | 8 | 0 | 8 | 0 | 0 |
+| 6155756874200100307 | L1 kaist_nonprehensile_ep000161 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:34 | 2025-08-19 05:09 | 7 | 7 | 1 | 0 | 7 | 1 | 6 | 0 | 0 |
+| 6155750607300105597 | L1 berkeley_rpt_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:18 | 2025-10-09 02:27 | 7 | 7 | 0 | 0 | 7 | 0 | 7 | 0 | 0 |
+| 9574020888200106482 | Label Withdrawals: OKX, HTX, OrangeX, CoinEx, | CEX Hot Wallet | ONLINE | COLLECTING | 2026-01-21 16:47 | 2026-01-27 00:51 | 3 | 3 | 3 | 0 | 7 | 5 | 2 | 0 | 0 |
+| 6155750635100105618 | L1 berkeley_rpt_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:43 | 2025-08-03 03:55 | 7 | 7 | 1 | 0 | 7 | 1 | 6 | 0 | 0 |
+| 6155756883600100315 | L3 kaist_nonprehensile_ep000163 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:37 | 2025-07-25 11:49 | 6 | 6 | 0 | 0 | 6 | 0 | 6 | 0 | 0 |
+| 6155750639200105621 | L1 berkeley_rpt_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:46 | 2025-06-29 02:22 | 6 | 6 | 0 | 0 | 6 | 0 | 6 | 0 | 0 |
+| 6155756625600100108 | L3 kaist_nonprehensile_ep000094 | Robotics | ONLINE | COLLECTING | 2024-12-26 04:25 | 2025-10-11 02:13 | 6 | 6 | 1 | 0 | 6 | 1 | 4 | 0 | 1 |
+| 6155756922300100348 | L3 kaist_nonprehensile_ep000174 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:16 | 2025-10-12 02:35 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155750619300105606 | L1 berkeley_rpt_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:34 | 2025-06-29 11:32 | 6 | 6 | 0 | 0 | 6 | 0 | 6 | 0 | 0 |
+| 6155756904700100333 | L3 kaist_nonprehensile_ep000169 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:12 | 2025-09-09 01:20 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155756767700100222 | L3 kaist_nonprehensile_ep000132 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:18 | 2025-10-27 00:25 | 6 | 6 | 0 | 0 | 6 | 0 | 5 | 1 | 0 |
+| 6155756877600100310 | L1 kaist_nonprehensile_ep000162 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:36 | 2025-07-25 11:49 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155756915000100342 | L3 kaist_nonprehensile_ep000172 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:15 | 2025-09-10 01:54 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155756897800100327 | L3 kaist_nonprehensile_ep000167 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:08 | 2025-08-20 01:07 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155756925800100351 | L3 kaist_nonprehensile_ep000175 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:17 | 2025-09-28 02:30 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155750623100105609 | L1 berkeley_rpt_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:39 | 2025-06-29 11:30 | 6 | 6 | 0 | 0 | 6 | 0 | 6 | 0 | 0 |
+| 6155750655200105633 | L1 berkeley_rpt_ep000021 | Robotics | ONLINE | COLLECTING | 2025-03-06 00:59 | 2025-06-28 17:23 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155756879900100312 | L3 kaist_nonprehensile_ep000162 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:36 | 2025-07-25 11:49 | 6 | 6 | 0 | 0 | 6 | 0 | 6 | 0 | 0 |
+| 6155750645700105626 | L3 berkeley_rpt_ep000018 | Robotics | ONLINE | COLLECTING | 2024-12-26 16:52 | 2025-07-22 20:57 | 6 | 6 | 1 | 0 | 6 | 1 | 4 | 0 | 1 |
+| 6155756918800100345 | L3 kaist_nonprehensile_ep000173 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:15 | 2025-10-01 01:12 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155750615400105603 | L1 berkeley_rpt_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:28 | 2025-10-09 02:29 | 6 | 6 | 2 | 0 | 6 | 2 | 4 | 0 | 0 |
+| 6155756844500100282 | L3 kaist_nonprehensile_ep000152 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:33 | 2025-09-20 00:28 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155756901200100330 | L3 kaist_nonprehensile_ep000168 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:11 | 2025-08-31 01:27 | 6 | 6 | 1 | 0 | 6 | 1 | 5 | 0 | 0 |
+| 6155756585900100075 | L3 kaist_nonprehensile_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:33 | 2025-10-14 00:17 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756614300100099 | L3 kaist_nonprehensile_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:58 | 2025-10-21 00:55 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756763700100219 | L3 kaist_nonprehensile_ep000131 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:57 | 2025-10-13 00:18 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756794500100243 | L3 kaist_nonprehensile_ep000139 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:22 | 2025-07-25 11:53 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756825900100267 | L3 kaist_nonprehensile_ep000147 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:28 | 2025-09-11 01:17 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756855500100291 | L3 kaist_nonprehensile_ep000155 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:36 | 2025-09-22 00:30 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756911500100339 | L3 kaist_nonprehensile_ep000171 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:13 | 2025-07-25 11:51 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756596500100084 | L3 kaist_nonprehensile_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:17 | 2025-10-17 00:34 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756744800100204 | L3 kaist_nonprehensile_ep000126 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:54 | 2025-09-30 01:03 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756775300100228 | L3 kaist_nonprehensile_ep000134 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:19 | 2025-07-25 11:52 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756865900100300 | L3 kaist_nonprehensile_ep000158 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:39 | 2025-09-29 03:44 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756884800100316 | L1 kaist_nonprehensile_ep000164 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:05 | 2025-07-25 11:50 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756894400100324 | L3 kaist_nonprehensile_ep000166 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:07 | 2025-07-25 11:50 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756607300100093 | L3 kaist_nonprehensile_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:21 | 2025-10-23 04:01 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756666900100141 | L3 kaist_nonprehensile_ep000105 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:39 | 2025-10-02 01:18 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756756200100213 | L3 kaist_nonprehensile_ep000129 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:56 | 2025-10-07 00:56 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756786400100237 | L3 kaist_nonprehensile_ep000137 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:21 | 2025-07-25 11:52 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756818300100261 | L3 kaist_nonprehensile_ep000145 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:27 | 2025-09-06 04:08 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756848300100285 | L3 kaist_nonprehensile_ep000153 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:35 | 2025-09-18 01:47 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756876400100309 | L3 kaist_nonprehensile_ep000161 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:36 | 2025-07-25 11:49 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 9377278262600103206 | Validate medical image label 142-1 | Vivolight | ONLINE | COLLECTING | 2025-12-21 10:36 | 2026-03-02 07:24 | 5 | 5 | 4 | 0 | 5 | 4 | 0 | 1 | 0 |
+| 6155750599000105591 | L1 berkeley_rpt_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:11 | 2025-06-29 15:32 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756589300100078 | L3 kaist_nonprehensile_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:16 | 2025-10-15 01:20 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756678400100150 | L3 kaist_nonprehensile_ep000108 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:42 | 2025-10-29 00:33 | 5 | 5 | 0 | 0 | 5 | 0 | 4 | 1 | 0 |
+| 6155756737400100198 | L3 kaist_nonprehensile_ep000124 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:53 | 2025-09-27 00:45 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756798300100246 | L3 kaist_nonprehensile_ep000140 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:23 | 2025-07-25 11:53 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756829600100270 | L3 kaist_nonprehensile_ep000148 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:29 | 2025-09-15 00:35 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756887300100318 | L3 kaist_nonprehensile_ep000164 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:06 | 2025-07-25 11:50 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756600100100087 | L3 kaist_nonprehensile_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:19 | 2025-10-18 01:23 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756748500100207 | L3 kaist_nonprehensile_ep000127 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:54 | 2025-10-06 01:47 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756779200100231 | L3 kaist_nonprehensile_ep000135 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:20 | 2025-07-25 11:52 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756468500109976 | L3 kaist_nonprehensile_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:26 | 2025-10-30 01:36 | 5 | 5 | 0 | 0 | 5 | 0 | 4 | 1 | 0 |
+| 6155756582400100072 | L3 kaist_nonprehensile_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:32 | 2025-10-10 01:54 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756610900100096 | L3 kaist_nonprehensile_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:24 | 2025-10-25 02:24 | 5 | 5 | 0 | 0 | 5 | 0 | 4 | 1 | 0 |
+| 6155756670800100144 | L3 kaist_nonprehensile_ep000106 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:40 | 2025-10-04 00:25 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756730000100192 | L3 kaist_nonprehensile_ep000122 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:51 | 2025-09-26 02:14 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756760000100216 | L3 kaist_nonprehensile_ep000130 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:57 | 2025-10-09 01:03 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756790600100240 | L3 kaist_nonprehensile_ep000138 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:22 | 2025-07-25 11:53 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756822200100264 | L3 kaist_nonprehensile_ep000146 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:28 | 2025-09-08 01:12 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756852000100288 | L3 kaist_nonprehensile_ep000154 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:35 | 2025-09-21 01:43 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756908200100336 | L3 kaist_nonprehensile_ep000170 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:13 | 2025-07-25 11:51 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756593000100081 | L3 kaist_nonprehensile_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:16 | 2025-10-16 01:39 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756741100100201 | L3 kaist_nonprehensile_ep000125 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:53 | 2025-10-08 01:14 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756771400100225 | L3 kaist_nonprehensile_ep000133 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:18 | 2025-07-25 11:52 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756802400100249 | L3 kaist_nonprehensile_ep000141 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:24 | 2025-07-25 11:53 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756833500100273 | L3 kaist_nonprehensile_ep000149 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:30 | 2025-09-12 00:40 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756862400100297 | L3 kaist_nonprehensile_ep000157 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:38 | 2025-09-25 01:07 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756881100100313 | L1 kaist_nonprehensile_ep000163 | Robotics | ONLINE | COLLECTING | 2025-01-07 02:37 | 2025-07-25 11:49 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756890900100321 | L3 kaist_nonprehensile_ep000165 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:06 | 2025-07-25 11:50 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155750625700105611 | L3 berkeley_rpt_ep000013 | Robotics | ONLINE | COLLECTING | 2024-12-27 13:12 | 2025-06-29 11:29 | 5 | 5 | 1 | 0 | 5 | 1 | 1 | 0 | 3 |
+| 6155750657900105635 | L3 berkeley_rpt_ep000021 | Robotics | ONLINE | COLLECTING | 2024-12-25 18:59 | 2025-08-20 19:57 | 5 | 5 | 2 | 0 | 5 | 2 | 2 | 0 | 1 |
+| 6155756575300100066 | L3 kaist_nonprehensile_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:30 | 2025-10-05 02:56 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756603700100090 | L3 kaist_nonprehensile_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:20 | 2025-10-22 01:50 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756752400100210 | L3 kaist_nonprehensile_ep000128 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:55 | 2025-10-03 00:27 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155756782900100234 | L3 kaist_nonprehensile_ep000136 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:20 | 2025-07-25 11:52 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756814600100258 | L3 kaist_nonprehensile_ep000144 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:26 | 2025-09-07 01:22 | 5 | 5 | 1 | 0 | 5 | 1 | 4 | 0 | 0 |
+| 6155750627000105612 | L1 berkeley_rpt_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:30 | 2025-06-29 11:26 | 5 | 5 | 0 | 0 | 5 | 0 | 5 | 0 | 0 |
+| 6155756257100109803 | L1 dlr_sara_pour_ep000093 | Robotics | ONLINE | COLLECTING | 2024-12-26 03:54 | 2025-06-26 02:18 | 4 | 4 | 0 | 0 | 4 | 0 | 2 | 0 | 2 |
+| 6155756414700109931 | L3 kaist_nonprehensile_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:58 | 2025-10-26 02:22 | 4 | 4 | 0 | 0 | 4 | 0 | 3 | 1 | 0 |
+| 6155756471800109979 | L3 kaist_nonprehensile_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:26 | 2025-07-25 12:14 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756500700100003 | L3 kaist_nonprehensile_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:36 | 2025-07-25 12:17 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756674600100147 | L3 kaist_nonprehensile_ep000107 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:41 | 2025-07-25 11:58 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756733500100195 | L3 kaist_nonprehensile_ep000123 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:52 | 2025-07-25 12:02 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756784000100235 | L1 kaist_nonprehensile_ep000137 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:21 | 2025-07-25 11:52 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756815800100259 | L1 kaist_nonprehensile_ep000145 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:27 | 2025-07-25 11:54 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756902400100331 | L1 kaist_nonprehensile_ep000169 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:11 | 2025-07-25 11:50 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155750649800105629 | L3 berkeley_rpt_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:52 | 2025-07-08 05:11 | 4 | 4 | 2 | 0 | 4 | 2 | 2 | 0 | 0 |
+| 6155756482700109988 | L3 kaist_nonprehensile_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:29 | 2025-07-25 12:15 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756539500100036 | L3 kaist_nonprehensile_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:42 | 2025-10-31 00:37 | 4 | 4 | 0 | 0 | 4 | 0 | 3 | 1 | 0 |
+| 6155756568500100060 | L3 kaist_nonprehensile_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:29 | 2025-07-25 12:09 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756656200100132 | L3 kaist_nonprehensile_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:05 | 2025-07-25 12:08 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756685900100156 | L3 kaist_nonprehensile_ep000110 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:44 | 2025-07-25 11:58 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756715100100180 | L3 kaist_nonprehensile_ep000118 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:49 | 2025-07-25 12:00 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756795800100244 | L1 kaist_nonprehensile_ep000140 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:23 | 2025-07-25 11:53 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756827100100268 | L1 kaist_nonprehensile_ep000148 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:29 | 2025-07-25 13:19 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756837200100276 | L3 kaist_nonprehensile_ep000150 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:31 | 2025-09-19 00:20 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756912600100340 | L1 kaist_nonprehensile_ep000172 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:14 | 2025-07-25 11:51 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756493400109997 | L3 kaist_nonprehensile_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:35 | 2025-07-25 12:16 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756579000100069 | L3 kaist_nonprehensile_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:31 | 2025-07-25 12:10 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756696600100165 | L3 kaist_nonprehensile_ep000113 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:46 | 2025-07-25 11:59 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756776500100229 | L1 kaist_nonprehensile_ep000135 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:19 | 2025-07-25 11:52 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756807900100253 | L1 kaist_nonprehensile_ep000143 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:24 | 2025-07-25 11:54 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756838500100277 | L1 kaist_nonprehensile_ep000151 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:31 | 2025-08-02 13:30 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756895600100325 | L1 kaist_nonprehensile_ep000167 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:07 | 2025-07-25 11:50 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756923500100349 | L1 kaist_nonprehensile_ep000175 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:17 | 2025-07-25 11:51 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155750610000105599 | L3 berkeley_rpt_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:20 | 2025-10-09 02:27 | 4 | 4 | 2 | 0 | 4 | 2 | 2 | 0 | 0 |
+| 6155750641600105623 | L3 berkeley_rpt_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:47 | 2025-06-29 02:20 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756475400109982 | L3 kaist_nonprehensile_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:27 | 2025-07-25 12:14 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756618000100102 | L3 kaist_nonprehensile_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:58 | 2025-07-25 12:05 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756707700100174 | L3 kaist_nonprehensile_ep000116 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:48 | 2025-07-25 12:00 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756787800100238 | L1 kaist_nonprehensile_ep000138 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:21 | 2025-07-25 11:53 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756819600100262 | L1 kaist_nonprehensile_ep000146 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:27 | 2025-07-25 11:54 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756859100100294 | L3 kaist_nonprehensile_ep000156 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:37 | 2025-07-25 11:56 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756905800100334 | L1 kaist_nonprehensile_ep000170 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:12 | 2025-07-25 11:50 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155750611300105600 | L1 berkeley_rpt_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:23 | 2025-10-09 02:28 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155750621800105608 | L3 berkeley_rpt_ep000012 | Robotics | ONLINE | COLLECTING | 2024-12-28 04:35 | 2025-10-13 14:35 | 4 | 4 | 2 | 0 | 4 | 2 | 1 | 0 | 1 |
+| 6155756399600109919 | L3 kaist_nonprehensile_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:55 | 2025-10-20 00:31 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756485900109991 | L3 kaist_nonprehensile_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:30 | 2025-07-25 12:16 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756571900100063 | L3 kaist_nonprehensile_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:29 | 2025-07-25 12:09 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756629500100111 | L3 kaist_nonprehensile_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:00 | 2025-07-25 12:06 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756659800100135 | L3 kaist_nonprehensile_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:06 | 2025-07-25 12:08 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756689500100159 | L3 kaist_nonprehensile_ep000111 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:45 | 2025-07-25 11:59 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756718700100183 | L3 kaist_nonprehensile_ep000119 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:49 | 2025-07-25 12:01 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756769000100223 | L1 kaist_nonprehensile_ep000133 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:18 | 2025-07-25 11:52 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756799700100247 | L1 kaist_nonprehensile_ep000141 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:23 | 2025-07-25 11:53 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756810600100255 | L3 kaist_nonprehensile_ep000143 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:25 | 2025-07-25 11:54 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756831000100271 | L1 kaist_nonprehensile_ep000149 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:30 | 2025-07-28 13:45 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756840900100279 | L3 kaist_nonprehensile_ep000151 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:32 | 2025-09-14 02:24 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756888500100319 | L1 kaist_nonprehensile_ep000165 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:06 | 2025-07-25 11:50 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756916300100343 | L1 kaist_nonprehensile_ep000173 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:15 | 2025-07-25 11:51 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756411100109928 | L3 kaist_nonprehensile_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:57 | 2025-10-24 00:25 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756497000100000 | L3 kaist_nonprehensile_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:35 | 2025-07-25 12:17 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756700000100168 | L3 kaist_nonprehensile_ep000114 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:46 | 2025-09-13 00:46 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756780500100232 | L1 kaist_nonprehensile_ep000136 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:20 | 2025-07-25 11:52 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756811900100256 | L1 kaist_nonprehensile_ep000144 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:26 | 2025-07-25 11:54 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756842200100280 | L1 kaist_nonprehensile_ep000152 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:32 | 2025-08-05 13:25 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756899000100328 | L1 kaist_nonprehensile_ep000168 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:10 | 2025-07-25 11:50 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756926900100352 | L1 kaist_nonprehensile_ep000176 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:17 | 2025-07-25 11:51 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155750603100105594 | L1 berkeley_rpt_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:15 | 2025-10-09 02:26 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155750614100105602 | L3 berkeley_rpt_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:27 | 2025-10-09 02:29 | 4 | 4 | 2 | 0 | 4 | 2 | 2 | 0 | 0 |
+| 6155756479200109985 | L3 kaist_nonprehensile_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:28 | 2025-07-25 12:15 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756621800100105 | L3 kaist_nonprehensile_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:59 | 2025-07-25 12:05 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756642400100121 | L1 kaist_nonprehensile_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:03 | 2025-08-19 07:30 | 4 | 4 | 2 | 0 | 4 | 2 | 2 | 0 | 0 |
+| 6155756652700100129 | L3 kaist_nonprehensile_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:05 | 2025-07-25 12:08 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756682100100153 | L3 kaist_nonprehensile_ep000109 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:42 | 2025-07-25 11:58 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756711400100177 | L3 kaist_nonprehensile_ep000117 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:48 | 2025-07-25 12:00 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756791800100241 | L1 kaist_nonprehensile_ep000139 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:22 | 2025-07-25 11:53 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756823400100265 | L1 kaist_nonprehensile_ep000147 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:28 | 2025-07-25 11:54 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756909300100337 | L1 kaist_nonprehensile_ep000171 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:13 | 2025-07-25 11:51 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756489800109994 | L3 kaist_nonprehensile_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:30 | 2025-07-25 12:16 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756663200100138 | L3 kaist_nonprehensile_ep000104 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:07 | 2025-07-25 12:09 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756693000100162 | L3 kaist_nonprehensile_ep000112 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:45 | 2025-07-25 11:59 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756722200100186 | L3 kaist_nonprehensile_ep000120 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:50 | 2025-07-25 12:01 | 4 | 4 | 0 | 0 | 4 | 0 | 4 | 0 | 0 |
+| 6155756772700100226 | L1 kaist_nonprehensile_ep000134 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:18 | 2025-07-25 11:52 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756803900100250 | L1 kaist_nonprehensile_ep000142 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:24 | 2025-07-25 11:53 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756834600100274 | L1 kaist_nonprehensile_ep000150 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:31 | 2025-08-01 13:46 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756892100100322 | L1 kaist_nonprehensile_ep000166 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:07 | 2025-07-25 11:50 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155756920000100346 | L1 kaist_nonprehensile_ep000174 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:16 | 2025-07-25 11:51 | 4 | 4 | 1 | 0 | 4 | 1 | 3 | 0 | 0 |
+| 6155750605700105596 | L3 berkeley_rpt_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:17 | 2025-10-09 02:26 | 4 | 4 | 2 | 0 | 4 | 2 | 2 | 0 | 0 |
+| 6155750637800105620 | L3 berkeley_rpt_ep000016 | Robotics | ONLINE | COLLECTING | 2024-12-26 14:33 | 2025-06-29 02:34 | 4 | 4 | 1 | 0 | 4 | 1 | 1 | 0 | 2 |
+| 6155756384000109907 | L3 kaist_nonprehensile_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:50 | 2025-05-30 01:58 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756434800109947 | L1 kaist_nonprehensile_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:02 | 2025-08-20 13:42 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756444100109955 | L3 kaist_nonprehensile_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:07 | 2025-06-04 01:02 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756491100109995 | L1 kaist_nonprehensile_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:34 | 2025-07-25 12:16 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756528300100027 | L3 kaist_nonprehensile_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:40 | 2025-05-24 01:47 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756557200100051 | L3 kaist_nonprehensile_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:44 | 2025-05-27 01:55 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756576600100067 | L1 kaist_nonprehensile_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:30 | 2025-07-25 12:10 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756605000100091 | L1 kaist_nonprehensile_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:20 | 2025-07-25 12:13 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756634600100115 | L1 kaist_nonprehensile_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:02 | 2025-07-25 12:06 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756644900100123 | L3 kaist_nonprehensile_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:03 | 2025-07-25 12:07 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756664400100139 | L1 kaist_nonprehensile_ep000105 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:28 | 2025-07-25 12:09 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756694200100163 | L1 kaist_nonprehensile_ep000113 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:45 | 2025-07-25 11:59 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756704000100171 | L3 kaist_nonprehensile_ep000115 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:47 | 2025-07-25 12:00 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756723400100187 | L1 kaist_nonprehensile_ep000121 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:50 | 2025-07-25 12:01 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756753600100211 | L1 kaist_nonprehensile_ep000129 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:56 | 2025-07-25 12:03 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756845600100283 | L1 kaist_nonprehensile_ep000153 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:34 | 2025-07-25 11:56 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155750618000105605 | L3 berkeley_rpt_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:32 | 2025-10-09 02:30 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756305600109844 | L3 kaist_nonprehensile_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:36 | 2025-10-19 00:55 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756395600109916 | L3 kaist_nonprehensile_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:52 | 2025-05-31 01:41 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756426300109940 | L3 kaist_nonprehensile_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:01 | 2025-06-03 01:31 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756473000109980 | L1 kaist_nonprehensile_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:27 | 2025-07-25 12:14 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756511100100012 | L3 kaist_nonprehensile_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:37 | 2025-05-22 02:31 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756587000100076 | L1 kaist_nonprehensile_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:33 | 2025-07-25 12:11 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756615400100100 | L1 kaist_nonprehensile_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:58 | 2025-07-25 12:05 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756646100100124 | L1 kaist_nonprehensile_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:03 | 2025-07-25 12:07 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756676000100148 | L1 kaist_nonprehensile_ep000108 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:41 | 2025-07-25 11:58 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756705300100172 | L1 kaist_nonprehensile_ep000116 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:47 | 2025-07-25 12:00 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756734700100196 | L1 kaist_nonprehensile_ep000124 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:52 | 2025-07-25 12:02 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756765200100220 | L1 kaist_nonprehensile_ep000132 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:58 | 2025-07-25 12:04 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756856800100292 | L1 kaist_nonprehensile_ep000156 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:37 | 2025-07-25 11:56 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155750629600105614 | L3 berkeley_rpt_ep000014 | Robotics | ONLINE | COLLECTING | 2024-12-26 02:17 | 2025-06-29 11:25 | 3 | 3 | 1 | 0 | 3 | 1 | 1 | 0 | 1 |
+| 6155756376200109901 | L3 kaist_nonprehensile_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:48 | 2025-05-29 02:42 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756407200109925 | L3 kaist_nonprehensile_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:57 | 2025-06-01 02:24 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756437200109949 | L3 kaist_nonprehensile_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:03 | 2025-06-04 01:00 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756483700109989 | L1 kaist_nonprehensile_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:29 | 2025-07-25 12:15 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756521500100021 | L3 kaist_nonprehensile_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:39 | 2025-05-23 02:51 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756550000100045 | L3 kaist_nonprehensile_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:43 | 2025-05-26 01:26 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756569700100061 | L1 kaist_nonprehensile_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:29 | 2025-07-25 12:09 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756597600100085 | L1 kaist_nonprehensile_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:18 | 2025-07-25 12:12 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756626800100109 | L1 kaist_nonprehensile_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:00 | 2025-07-25 12:05 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756637100100117 | L3 kaist_nonprehensile_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:02 | 2025-07-25 12:06 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756657500100133 | L1 kaist_nonprehensile_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:05 | 2025-07-25 12:08 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756687100100157 | L1 kaist_nonprehensile_ep000111 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:44 | 2025-07-25 11:58 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756716300100181 | L1 kaist_nonprehensile_ep000119 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:49 | 2025-07-25 12:00 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756726100100189 | L3 kaist_nonprehensile_ep000121 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:50 | 2025-07-25 12:01 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756746000100205 | L1 kaist_nonprehensile_ep000127 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:54 | 2025-07-25 12:03 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155750630800105615 | L1 berkeley_rpt_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:37 | 2025-06-29 11:21 | 2 | 2 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756388000109910 | L3 kaist_nonprehensile_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:51 | 2025-05-30 02:03 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756418500109934 | L3 kaist_nonprehensile_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:59 | 2025-06-02 01:47 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756447700109958 | L3 kaist_nonprehensile_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:07 | 2025-06-05 01:42 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756494500109998 | L1 kaist_nonprehensile_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:35 | 2025-07-25 12:16 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756504100100006 | L3 kaist_nonprehensile_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:36 | 2025-05-19 01:30 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756532100100030 | L3 kaist_nonprehensile_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:40 | 2025-05-24 01:48 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756561000100054 | L3 kaist_nonprehensile_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:45 | 2025-05-27 01:56 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756580200100070 | L1 kaist_nonprehensile_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:31 | 2025-07-25 12:10 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756608600100094 | L1 kaist_nonprehensile_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:22 | 2025-07-25 12:13 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756638400100118 | L1 kaist_nonprehensile_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:02 | 2025-07-25 12:06 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756648900100126 | L3 kaist_nonprehensile_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:04 | 2025-07-25 12:07 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756668200100142 | L1 kaist_nonprehensile_ep000106 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:39 | 2025-07-25 11:57 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756697700100166 | L1 kaist_nonprehensile_ep000114 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:46 | 2025-07-25 11:59 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756727400100190 | L1 kaist_nonprehensile_ep000122 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:51 | 2025-07-25 12:01 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756757500100214 | L1 kaist_nonprehensile_ep000130 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:56 | 2025-07-25 12:04 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756849600100286 | L1 kaist_nonprehensile_ep000154 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:35 | 2025-07-25 11:56 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756368100109895 | L3 kaist_nonprehensile_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:47 | 2025-05-28 02:13 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756430000109943 | L3 kaist_nonprehensile_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:02 | 2025-06-03 01:31 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756476600109983 | L1 kaist_nonprehensile_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:28 | 2025-07-25 12:15 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756514500100015 | L3 kaist_nonprehensile_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:38 | 2025-05-23 02:50 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756543000100039 | L3 kaist_nonprehensile_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:42 | 2025-05-25 01:38 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756590400100079 | L1 kaist_nonprehensile_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:16 | 2025-07-25 12:11 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756619300100103 | L1 kaist_nonprehensile_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:59 | 2025-07-25 12:05 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756650200100127 | L1 kaist_nonprehensile_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:04 | 2025-07-25 12:07 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756679600100151 | L1 kaist_nonprehensile_ep000109 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:42 | 2025-07-25 11:58 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756709000100175 | L1 kaist_nonprehensile_ep000117 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:48 | 2025-07-25 12:00 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756738700100199 | L1 kaist_nonprehensile_ep000125 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:53 | 2025-07-25 12:02 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756860300100295 | L1 kaist_nonprehensile_ep000157 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:38 | 2025-07-25 11:57 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 9142474952700103920 | Collect Advanced Physics Problems: Limited to | Advanced Physics Question | ONLINE | COLLECTING | 2025-11-24 04:16 | 2025-11-24 04:17 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 3 | 0 |
+| 6155750601800105593 | L3 berkeley_rpt_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:13 | 2025-06-29 15:29 | 3 | 3 | 2 | 0 | 3 | 2 | 1 | 0 | 0 |
+| 6155756379900109904 | L3 kaist_nonprehensile_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:50 | 2025-05-29 02:42 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756440600109952 | L3 kaist_nonprehensile_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:04 | 2025-06-04 01:01 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756487200109992 | L1 kaist_nonprehensile_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:30 | 2025-07-25 12:16 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756525000100024 | L3 kaist_nonprehensile_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:39 | 2025-05-24 01:46 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756553600100048 | L3 kaist_nonprehensile_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:44 | 2025-05-27 01:55 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756573100100064 | L1 kaist_nonprehensile_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:29 | 2025-07-25 12:09 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756601400100088 | L1 kaist_nonprehensile_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:19 | 2025-07-25 12:12 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756630800100112 | L1 kaist_nonprehensile_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:01 | 2025-07-25 12:06 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756640900100120 | L3 kaist_nonprehensile_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:02 | 2025-07-25 12:07 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756661000100136 | L1 kaist_nonprehensile_ep000104 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:06 | 2025-07-25 12:08 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756690600100160 | L1 kaist_nonprehensile_ep000112 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:45 | 2025-07-25 11:59 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756719900100184 | L1 kaist_nonprehensile_ep000120 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:50 | 2025-07-25 12:01 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756749800100208 | L1 kaist_nonprehensile_ep000128 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:55 | 2025-07-25 12:03 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756391700109913 | L3 kaist_nonprehensile_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:51 | 2025-05-30 02:05 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756422300109937 | L3 kaist_nonprehensile_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:00 | 2025-06-02 01:48 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756469700109977 | L1 kaist_nonprehensile_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:26 | 2025-07-25 12:14 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756498300100001 | L1 kaist_nonprehensile_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:36 | 2025-07-25 12:17 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756507500100009 | L3 kaist_nonprehensile_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:37 | 2025-05-22 02:30 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756535900100033 | L3 kaist_nonprehensile_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:41 | 2025-05-25 01:37 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756564700100057 | L3 kaist_nonprehensile_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:46 | 2025-05-28 02:12 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756583500100073 | L1 kaist_nonprehensile_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:33 | 2025-07-25 12:10 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756612100100097 | L1 kaist_nonprehensile_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:24 | 2025-07-25 12:13 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756672100100145 | L1 kaist_nonprehensile_ep000107 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:40 | 2025-07-25 11:57 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756701300100169 | L1 kaist_nonprehensile_ep000115 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:47 | 2025-07-25 11:59 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756731200100193 | L1 kaist_nonprehensile_ep000123 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:51 | 2025-07-25 12:02 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756761300100217 | L1 kaist_nonprehensile_ep000131 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:57 | 2025-07-25 12:04 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756853100100289 | L1 kaist_nonprehensile_ep000155 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:35 | 2025-07-25 11:56 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756372200109898 | L3 kaist_nonprehensile_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:47 | 2025-05-28 02:14 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756403600109922 | L3 kaist_nonprehensile_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:56 | 2025-06-01 02:24 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756433600109946 | L3 kaist_nonprehensile_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:02 | 2025-06-04 00:59 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756480400109986 | L1 kaist_nonprehensile_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:28 | 2025-07-25 12:15 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756518100100018 | L3 kaist_nonprehensile_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:38 | 2025-05-23 02:50 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756546400100042 | L3 kaist_nonprehensile_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:43 | 2025-05-26 01:25 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756594200100082 | L1 kaist_nonprehensile_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:17 | 2025-07-25 12:12 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756623100100106 | L1 kaist_nonprehensile_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:59 | 2025-07-25 12:05 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756633400100114 | L3 kaist_nonprehensile_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:01 | 2025-07-25 12:06 | 3 | 3 | 0 | 0 | 3 | 0 | 3 | 0 | 0 |
+| 6155756653800100130 | L1 kaist_nonprehensile_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-07 05:05 | 2025-07-25 12:08 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756683400100154 | L1 kaist_nonprehensile_ep000110 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:43 | 2025-07-25 11:58 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756712600100178 | L1 kaist_nonprehensile_ep000118 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:48 | 2025-07-25 12:00 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756742400100202 | L1 kaist_nonprehensile_ep000126 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:53 | 2025-07-25 12:02 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756863600100298 | L1 kaist_nonprehensile_ep000158 | Robotics | ONLINE | COLLECTING | 2025-01-07 04:38 | 2025-07-25 11:57 | 3 | 3 | 1 | 0 | 3 | 1 | 2 | 0 | 0 |
+| 6155756266000109811 | L3 dlr_sara_pour_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:11 | 2025-06-28 01:22 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756284500109827 | L1 kaist_nonprehensile_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:52 | 2025-06-16 00:41 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756293800109835 | L3 kaist_nonprehensile_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:55 | 2025-06-17 01:20 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756314300109851 | L1 kaist_nonprehensile_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:38 | 2025-06-08 01:07 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756323600109859 | L3 kaist_nonprehensile_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:40 | 2025-06-09 00:55 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756342900109875 | L1 kaist_nonprehensile_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:44 | 2025-06-11 00:58 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756352500109883 | L3 kaist_nonprehensile_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:46 | 2025-06-13 01:26 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756373500109899 | L1 kaist_nonprehensile_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:47 | 2025-05-29 02:41 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756404800109923 | L1 kaist_nonprehensile_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:56 | 2025-06-01 02:24 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756463000109971 | L1 kaist_nonprehensile_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:34 | 2025-06-06 01:44 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756519200100019 | L1 kaist_nonprehensile_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:39 | 2025-05-23 02:50 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756547500100043 | L1 kaist_nonprehensile_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:43 | 2025-05-26 01:25 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756075700109659 | L1 dlr_sara_pour_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:12 | 2025-06-29 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756086100109667 | L3 dlr_sara_pour_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:14 | 2025-06-30 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756177100109739 | L3 dlr_sara_pour_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:57 | 2025-06-18 01:24 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756197400109755 | L1 dlr_sara_pour_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:01 | 2025-06-20 01:25 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756207800109763 | L3 dlr_sara_pour_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:03 | 2025-06-21 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756227800109779 | L1 dlr_sara_pour_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:05 | 2025-06-23 01:09 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756237400109787 | L3 dlr_sara_pour_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:07 | 2025-06-24 01:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750572800105573 | L1 berkeley_rpt_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-14 10:17 | 2025-06-29 16:23 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750584500105581 | L3 berkeley_rpt_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-14 10:24 | 2025-06-29 16:05 | 2 | 2 | 1 | 0 | 2 | 1 | 1 | 0 | 0 |
+| 6155756067700109653 | L1 dlr_sara_pour_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:11 | 2025-06-28 01:23 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756267200109812 | L1 dlr_sara_pour_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:48 | 2025-06-14 01:49 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756276200109820 | L3 dlr_sara_pour_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:50 | 2025-06-15 01:11 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756295100109836 | L1 kaist_nonprehensile_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:55 | 2025-06-17 01:21 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756324800109860 | L1 kaist_nonprehensile_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:40 | 2025-06-09 00:55 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756334500109868 | L3 kaist_nonprehensile_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:42 | 2025-06-10 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756353700109884 | L1 kaist_nonprehensile_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:46 | 2025-06-13 01:26 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756364200109892 | L3 kaist_nonprehensile_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:47 | 2025-06-14 01:48 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756385300109908 | L1 kaist_nonprehensile_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:50 | 2025-05-30 02:00 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756416000109932 | L1 kaist_nonprehensile_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:58 | 2025-06-02 01:47 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756445400109956 | L1 kaist_nonprehensile_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:07 | 2025-06-05 01:42 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756455000109964 | L3 kaist_nonprehensile_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:09 | 2025-06-05 01:43 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756501900100004 | L1 kaist_nonprehensile_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:36 | 2025-05-19 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756529500100028 | L1 kaist_nonprehensile_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:40 | 2025-05-24 01:47 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756558500100052 | L1 kaist_nonprehensile_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:44 | 2025-05-27 01:56 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 9377273876500103202 | Validate medical image label 142-2 | Vivolight | ONLINE | COLLECTING | 2026-03-02 07:26 | 2026-03-11 13:08 | 2 | 2 | 0 | 0 | 2 | 0 | 0 | 2 | 0 |
+| 6155756087400109668 | L1 dlr_sara_pour_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:14 | 2025-06-30 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756097900109676 | L3 dlr_sara_pour_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:15 | 2025-07-01 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756178400109740 | L1 dlr_sara_pour_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:58 | 2025-06-18 01:24 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756188500109748 | L3 dlr_sara_pour_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:59 | 2025-06-19 01:18 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756209000109764 | L1 dlr_sara_pour_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:03 | 2025-06-21 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756219300109772 | L3 dlr_sara_pour_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:04 | 2025-06-22 00:49 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756238700109788 | L1 dlr_sara_pour_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:07 | 2025-06-24 01:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756248600109796 | L3 dlr_sara_pour_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:08 | 2025-06-25 02:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750586000105582 | L1 berkeley_rpt_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:04 | 2025-06-29 16:02 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750597500105590 | L3 berkeley_rpt_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:09 | 2025-06-29 15:35 | 2 | 2 | 1 | 0 | 2 | 1 | 1 | 0 | 0 |
+| 6155756259300109805 | L3 dlr_sara_pour_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:10 | 2025-06-26 02:19 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756277400109821 | L1 dlr_sara_pour_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:51 | 2025-06-15 01:14 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756286700109829 | L3 kaist_nonprehensile_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:53 | 2025-06-16 00:43 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756306700109845 | L1 kaist_nonprehensile_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:36 | 2025-06-07 01:16 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756316800109853 | L3 kaist_nonprehensile_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:38 | 2025-06-08 01:07 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756335800109869 | L1 kaist_nonprehensile_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:42 | 2025-06-10 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756345300109877 | L3 kaist_nonprehensile_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:45 | 2025-06-11 00:59 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756365500109893 | L1 kaist_nonprehensile_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:48 | 2025-06-14 01:48 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756396900109917 | L1 kaist_nonprehensile_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:55 | 2025-05-31 01:41 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756427500109941 | L1 kaist_nonprehensile_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:01 | 2025-06-03 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756456200109965 | L1 kaist_nonprehensile_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:09 | 2025-06-06 01:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756465300109973 | L3 kaist_nonprehensile_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:35 | 2025-06-06 01:45 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756512200100013 | L1 kaist_nonprehensile_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:37 | 2025-05-22 02:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756540700100037 | L1 kaist_nonprehensile_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:42 | 2025-05-25 01:38 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 9142471666500103918 | Collect Advanced Physics Problems: Limited to | Advanced Physics Question | ONLINE | COLLECTING | 2025-11-24 04:00 | 2025-11-24 04:18 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 2 | 0 |
+| 6155756078300109661 | L3 dlr_sara_pour_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:13 | 2025-06-29 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756099100109677 | L1 dlr_sara_pour_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:15 | 2025-07-01 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756169200109733 | L3 dlr_sara_pour_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:57 | 2025-06-17 01:22 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756189800109749 | L1 dlr_sara_pour_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:59 | 2025-06-19 01:18 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756199900109757 | L3 dlr_sara_pour_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:02 | 2025-06-20 01:26 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756220500109773 | L1 dlr_sara_pour_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:04 | 2025-06-22 00:49 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756230100109781 | L3 dlr_sara_pour_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:06 | 2025-06-23 01:09 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756249800109797 | L1 dlr_sara_pour_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:08 | 2025-06-25 02:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750575500105575 | L3 berkeley_rpt_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-14 10:19 | 2025-06-29 16:23 | 2 | 2 | 1 | 0 | 2 | 1 | 1 | 0 | 0 |
+| 6155756070400109655 | L3 dlr_sara_pour_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:12 | 2025-06-28 01:23 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756260500109806 | L1 dlr_sara_pour_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:10 | 2025-06-26 02:19 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756269500109814 | L3 dlr_sara_pour_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:49 | 2025-06-14 01:49 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756287900109830 | L1 kaist_nonprehensile_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:53 | 2025-06-16 00:44 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756297700109838 | L3 kaist_nonprehensile_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:56 | 2025-06-17 01:21 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756318000109854 | L1 kaist_nonprehensile_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:39 | 2025-06-08 01:08 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756327300109862 | L3 kaist_nonprehensile_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:40 | 2025-06-09 00:56 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756346500109878 | L1 kaist_nonprehensile_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:45 | 2025-06-12 01:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756356400109886 | L3 kaist_nonprehensile_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:46 | 2025-06-13 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756377400109902 | L1 kaist_nonprehensile_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:49 | 2025-05-29 02:42 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756408600109926 | L1 kaist_nonprehensile_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:57 | 2025-06-01 02:25 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756438400109950 | L1 kaist_nonprehensile_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:03 | 2025-06-04 01:00 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756466400109974 | L1 kaist_nonprehensile_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:35 | 2025-06-07 01:14 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756522600100022 | L1 kaist_nonprehensile_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:39 | 2025-05-23 02:51 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756551200100046 | L1 kaist_nonprehensile_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:44 | 2025-05-26 01:26 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756079700109662 | L1 dlr_sara_pour_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:13 | 2025-06-29 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756090000109670 | L3 dlr_sara_pour_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:14 | 2025-06-30 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756170400109734 | L1 dlr_sara_pour_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:57 | 2025-06-17 01:23 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756180900109742 | L3 dlr_sara_pour_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:58 | 2025-06-18 01:25 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756201300109758 | L1 dlr_sara_pour_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:02 | 2025-06-21 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756211500109766 | L3 dlr_sara_pour_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:03 | 2025-06-21 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756231400109782 | L1 dlr_sara_pour_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:06 | 2025-06-23 01:10 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756241200109790 | L3 dlr_sara_pour_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:07 | 2025-06-24 01:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750576900105576 | L1 berkeley_rpt_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-14 10:20 | 2025-06-29 16:20 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750589000105584 | L3 berkeley_rpt_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:05 | 2025-06-29 16:01 | 2 | 2 | 1 | 0 | 2 | 1 | 1 | 0 | 0 |
+| 6155756071800109656 | L1 dlr_sara_pour_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:12 | 2025-06-28 01:24 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756270600109815 | L1 dlr_sara_pour_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:49 | 2025-06-14 01:50 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756279700109823 | L3 dlr_sara_pour_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:51 | 2025-06-15 01:14 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756299000109839 | L1 kaist_nonprehensile_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:56 | 2025-06-17 01:22 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756309300109847 | L3 kaist_nonprehensile_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:37 | 2025-06-07 01:17 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756328500109863 | L1 kaist_nonprehensile_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:41 | 2025-06-09 00:56 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756338100109871 | L3 kaist_nonprehensile_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:43 | 2025-06-10 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756357700109887 | L1 kaist_nonprehensile_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:46 | 2025-06-13 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756389300109911 | L1 kaist_nonprehensile_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:51 | 2025-05-30 02:04 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756419700109935 | L1 kaist_nonprehensile_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:00 | 2025-06-02 01:48 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756449000109959 | L1 kaist_nonprehensile_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:07 | 2025-06-05 01:42 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756458500109967 | L3 kaist_nonprehensile_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:33 | 2025-06-06 01:42 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756505200100007 | L1 kaist_nonprehensile_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:37 | 2025-05-22 02:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756533300100031 | L1 kaist_nonprehensile_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:40 | 2025-05-24 01:48 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756562200100055 | L1 kaist_nonprehensile_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:45 | 2025-05-28 02:12 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 9574091928800106568 | Label Deposits: Zoomex, Phemex, Tapbit, Bitfi | CEX Hot Wallet | ONLINE | COLLECTING | 2026-01-21 17:32 | 2026-01-22 21:10 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756091200109671 | L1 dlr_sara_pour_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:15 | 2025-06-30 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756182100109743 | L1 dlr_sara_pour_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:58 | 2025-06-18 01:25 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756192500109751 | L3 dlr_sara_pour_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:59 | 2025-06-19 01:19 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756212900109767 | L1 dlr_sara_pour_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:03 | 2025-06-22 00:48 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756222900109775 | L3 dlr_sara_pour_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:05 | 2025-06-22 00:49 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756242400109791 | L1 dlr_sara_pour_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:07 | 2025-06-25 02:38 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756252300109799 | L3 dlr_sara_pour_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:09 | 2025-06-25 02:40 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750590600105585 | L1 berkeley_rpt_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:06 | 2025-06-29 15:51 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750633800105617 | L3 berkeley_rpt_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-14 13:42 | 2025-06-29 11:20 | 2 | 2 | 1 | 0 | 2 | 1 | 1 | 0 | 0 |
+| 6155756262700109808 | L3 dlr_sara_pour_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:10 | 2025-06-26 02:19 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756281000109824 | L1 kaist_nonprehensile_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:51 | 2025-06-15 01:15 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756290300109832 | L3 kaist_nonprehensile_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:54 | 2025-06-16 00:44 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756310600109848 | L1 kaist_nonprehensile_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:37 | 2025-06-08 01:06 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756320200109856 | L3 kaist_nonprehensile_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:39 | 2025-06-09 00:54 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756339300109872 | L1 kaist_nonprehensile_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:43 | 2025-06-10 01:29 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756348800109880 | L3 kaist_nonprehensile_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:45 | 2025-06-12 01:40 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756369400109896 | L1 kaist_nonprehensile_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:47 | 2025-05-28 02:13 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756400900109920 | L1 kaist_nonprehensile_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:56 | 2025-05-31 01:42 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756431200109944 | L1 kaist_nonprehensile_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:02 | 2025-06-03 01:31 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756459600109968 | L1 kaist_nonprehensile_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:33 | 2025-06-06 01:44 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756515600100016 | L1 kaist_nonprehensile_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:38 | 2025-05-23 02:50 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756544000100040 | L1 kaist_nonprehensile_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:42 | 2025-05-26 01:23 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756082400109664 | L3 dlr_sara_pour_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:13 | 2025-06-29 01:32 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756172900109736 | L3 dlr_sara_pour_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:57 | 2025-06-17 01:23 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756193700109752 | L1 dlr_sara_pour_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:01 | 2025-06-20 01:24 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756204000109760 | L3 dlr_sara_pour_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:02 | 2025-06-21 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756224100109776 | L1 dlr_sara_pour_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:05 | 2025-06-23 01:08 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756233900109784 | L3 dlr_sara_pour_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:06 | 2025-06-24 01:38 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756253600109800 | L1 dlr_sara_pour_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:09 | 2025-06-25 02:40 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750580000105578 | L3 berkeley_rpt_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-14 10:22 | 2025-06-29 16:18 | 2 | 2 | 1 | 0 | 2 | 1 | 1 | 0 | 0 |
+| 6155756263900109809 | L1 dlr_sara_pour_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:11 | 2025-06-28 01:22 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756272800109817 | L3 dlr_sara_pour_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:50 | 2025-06-15 01:10 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756291500109833 | L1 kaist_nonprehensile_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:54 | 2025-06-17 01:19 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756301600109841 | L3 kaist_nonprehensile_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:56 | 2025-06-17 01:22 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756321300109857 | L1 kaist_nonprehensile_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:40 | 2025-06-09 00:54 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756330800109865 | L3 kaist_nonprehensile_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:42 | 2025-06-10 01:27 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756350100109881 | L1 kaist_nonprehensile_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:45 | 2025-06-12 01:40 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756360300109889 | L3 kaist_nonprehensile_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:47 | 2025-06-13 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756381300109905 | L1 kaist_nonprehensile_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:50 | 2025-05-29 02:43 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756412300109929 | L1 kaist_nonprehensile_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:58 | 2025-06-02 01:46 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756441800109953 | L1 kaist_nonprehensile_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:04 | 2025-06-04 01:02 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756451500109961 | L3 kaist_nonprehensile_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:08 | 2025-06-05 01:43 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756526100100025 | L1 kaist_nonprehensile_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:40 | 2025-05-24 01:47 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756554800100049 | L1 kaist_nonprehensile_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:44 | 2025-05-27 01:55 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756083600109665 | L1 dlr_sara_pour_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:13 | 2025-06-30 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756093800109673 | L3 dlr_sara_pour_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:15 | 2025-07-01 01:28 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756174200109737 | L1 dlr_sara_pour_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:57 | 2025-06-18 01:24 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756184600109745 | L3 dlr_sara_pour_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:59 | 2025-06-19 01:17 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756205300109761 | L1 dlr_sara_pour_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:02 | 2025-06-21 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756215500109769 | L3 dlr_sara_pour_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:04 | 2025-06-22 00:48 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756235100109785 | L1 dlr_sara_pour_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:06 | 2025-06-24 01:38 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756244800109793 | L3 dlr_sara_pour_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:08 | 2025-06-25 02:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750581500105579 | L1 berkeley_rpt_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-14 10:23 | 2025-06-29 16:06 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750593200105587 | L3 berkeley_rpt_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:07 | 2025-06-29 15:46 | 2 | 2 | 1 | 0 | 2 | 1 | 1 | 0 | 0 |
+| 6155756273900109818 | L1 dlr_sara_pour_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:50 | 2025-06-15 01:11 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756283200109826 | L3 kaist_nonprehensile_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:51 | 2025-06-16 00:41 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756302900109842 | L1 kaist_nonprehensile_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:36 | 2025-06-07 01:15 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756313100109850 | L3 kaist_nonprehensile_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:37 | 2025-06-08 01:07 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756332300109866 | L1 kaist_nonprehensile_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:42 | 2025-06-10 01:28 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756341700109874 | L3 kaist_nonprehensile_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:44 | 2025-06-10 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756361600109890 | L1 kaist_nonprehensile_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:47 | 2025-06-14 01:48 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756393100109914 | L1 kaist_nonprehensile_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:52 | 2025-05-31 01:40 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756423700109938 | L1 kaist_nonprehensile_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:00 | 2025-06-03 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756452700109962 | L1 kaist_nonprehensile_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:08 | 2025-06-05 01:43 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756461800109970 | L3 kaist_nonprehensile_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:34 | 2025-06-06 01:44 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756508800100010 | L1 kaist_nonprehensile_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:37 | 2025-05-22 02:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756537100100034 | L1 kaist_nonprehensile_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:41 | 2025-05-25 01:37 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756566000100058 | L1 kaist_nonprehensile_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-09 08:46 | 2025-05-28 02:13 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756074500109658 | L3 dlr_sara_pour_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:12 | 2025-06-29 01:30 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756095000109674 | L1 dlr_sara_pour_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:15 | 2025-07-01 01:28 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756185900109746 | L1 dlr_sara_pour_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-09 09:59 | 2025-06-19 01:18 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756196200109754 | L3 dlr_sara_pour_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:01 | 2025-06-20 01:24 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756216700109770 | L1 dlr_sara_pour_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:04 | 2025-06-22 00:48 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756226500109778 | L3 dlr_sara_pour_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:05 | 2025-06-23 01:08 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756246100109794 | L1 dlr_sara_pour_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:08 | 2025-06-25 02:39 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155756256000109802 | L3 dlr_sara_pour_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:09 | 2025-06-26 02:17 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750571100105572 | L3 berkeley_rpt_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-14 10:16 | 2025-06-29 16:26 | 2 | 2 | 1 | 0 | 2 | 1 | 1 | 0 | 0 |
+| 6155750594500105588 | L1 berkeley_rpt_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-14 12:08 | 2025-06-29 15:37 | 2 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 |
+| 6155750810700105756 | L1 berkeley_rpt_ep000062 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:45 | 2025-08-14 16:49 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 0 | 0 |
+| 6155754853200108708 | L1 cmu_franka_exploration_dataset_ep000138 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:33 | 2025-01-17 11:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754862900108716 | L3 cmu_franka_exploration_dataset_ep000140 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:33 | 2025-01-17 11:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754882700108732 | L1 cmu_franka_exploration_dataset_ep000146 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:17 | 2025-01-17 11:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754893000108740 | L3 cmu_franka_exploration_dataset_ep000148 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:18 | 2025-01-17 11:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754913700108756 | L1 cmu_franka_exploration_dataset_ep000154 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:19 | 2025-01-17 11:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754924300108764 | L3 cmu_franka_exploration_dataset_ep000156 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:20 | 2025-01-17 11:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754943800108780 | L1 cmu_franka_exploration_dataset_ep000162 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:22 | 2025-01-17 11:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754953800108788 | L3 cmu_franka_exploration_dataset_ep000164 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:23 | 2025-01-17 11:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754974200108804 | L1 cmu_franka_exploration_dataset_ep000170 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:14 | 2025-01-17 11:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754984000108812 | L3 cmu_franka_exploration_dataset_ep000172 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:15 | 2025-01-17 11:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755004500108828 | L1 cmu_franka_exploration_dataset_ep000178 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:09 | 2025-01-17 11:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755014800108836 | L3 cmu_franka_exploration_dataset_ep000180 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:10 | 2025-01-17 11:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755035400108852 | L1 cmu_franka_exploration_dataset_ep000186 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:12 | 2025-01-17 11:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755078000108860 | L3 cmu_franka_exploration_dataset_ep000188 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:59 | 2025-01-17 10:59 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755100300108876 | L1 cmu_franka_exploration_dataset_ep000194 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:01 | 2025-01-17 11:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755110700108884 | L3 cmu_franka_exploration_dataset_ep000196 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:02 | 2025-01-17 11:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755132400108900 | L1 dlr_edan_shared_control_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:04 | 2025-01-17 11:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755142600108908 | L3 dlr_edan_shared_control_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:05 | 2025-01-17 11:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755163700108924 | L1 dlr_edan_shared_control_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:08 | 2025-01-17 11:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755173800108932 | L3 dlr_edan_shared_control_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:48 | 2025-01-17 10:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755195700108948 | L1 dlr_edan_shared_control_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:50 | 2025-01-17 10:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755206500108956 | L3 dlr_edan_shared_control_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:51 | 2025-01-17 10:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755228300108972 | L1 dlr_edan_shared_control_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:54 | 2025-01-17 10:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755238600108980 | L3 dlr_edan_shared_control_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:55 | 2025-01-17 10:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755258600108996 | L1 dlr_edan_shared_control_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:58 | 2025-01-17 10:58 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755268500109004 | L3 dlr_edan_shared_control_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:31 | 2025-01-17 10:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755289000109020 | L1 dlr_edan_shared_control_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:34 | 2025-01-17 10:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755299300109028 | L3 dlr_edan_shared_control_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:35 | 2025-01-17 10:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755318800109044 | L1 dlr_edan_shared_control_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:38 | 2025-01-17 10:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755329100109052 | L3 dlr_edan_shared_control_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:40 | 2025-01-17 10:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755349800109068 | L1 dlr_edan_shared_control_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:42 | 2025-01-17 10:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755359700109076 | L3 dlr_edan_shared_control_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:30 | 2025-01-17 10:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755380800109092 | L1 dlr_edan_shared_control_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:45 | 2025-01-16 06:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755391700109100 | L3 dlr_edan_shared_control_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:47 | 2025-01-16 06:47 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755411200109116 | L1 dlr_edan_shared_control_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:50 | 2025-01-16 06:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755420600109124 | L3 dlr_edan_shared_control_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:51 | 2025-01-16 06:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755439900109140 | L1 dlr_edan_shared_control_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:21 | 2025-01-17 10:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755449700109148 | L3 dlr_edan_shared_control_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:24 | 2025-01-17 10:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755469600109164 | L1 dlr_edan_shared_control_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:30 | 2025-01-16 06:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755478800109172 | L3 dlr_edan_shared_control_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:31 | 2025-01-16 06:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755497600109188 | L1 dlr_edan_shared_control_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:34 | 2025-01-16 06:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755507100109196 | L3 dlr_edan_shared_control_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:35 | 2025-01-16 06:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755526000109212 | L1 dlr_sara_grid_clamp_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:38 | 2025-01-16 06:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755535400109220 | L3 dlr_sara_grid_clamp_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:39 | 2025-01-16 06:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755554600109236 | L1 dlr_sara_grid_clamp_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:41 | 2025-01-16 06:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755564400109244 | L3 dlr_sara_grid_clamp_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:42 | 2025-01-16 06:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755583500109260 | L1 dlr_sara_grid_clamp_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:17 | 2025-01-16 06:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755593300109268 | L3 dlr_sara_grid_clamp_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:18 | 2025-01-16 06:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755612400109284 | L1 dlr_sara_grid_clamp_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:21 | 2025-01-16 06:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755621600109292 | L3 dlr_sara_grid_clamp_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:23 | 2025-01-16 06:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755640700109308 | L1 dlr_sara_grid_clamp_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:26 | 2025-01-16 06:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755650000109316 | L3 dlr_sara_grid_clamp_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:27 | 2025-01-16 06:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755669500109332 | L1 dlr_sara_grid_clamp_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:33 | 2025-01-15 14:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755679200109340 | L3 dlr_sara_grid_clamp_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:35 | 2025-01-15 14:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755699300109356 | L1 dlr_sara_grid_clamp_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:06 | 2025-01-16 06:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755709200109364 | L3 dlr_sara_grid_clamp_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:07 | 2025-01-16 06:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755728800109380 | L1 dlr_sara_grid_clamp_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:10 | 2025-01-16 06:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755738600109388 | L3 dlr_sara_grid_clamp_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:11 | 2025-01-16 06:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755757800109404 | L1 dlr_sara_grid_clamp_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:14 | 2025-01-16 06:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755767700109412 | L3 dlr_sara_grid_clamp_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:16 | 2025-01-15 14:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755787000109428 | L1 dlr_sara_grid_clamp_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:19 | 2025-01-15 14:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755797500109436 | L3 dlr_sara_grid_clamp_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:20 | 2025-01-15 14:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755817100109452 | L1 dlr_sara_grid_clamp_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:22 | 2025-01-15 14:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755827600109460 | L3 dlr_sara_grid_clamp_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:24 | 2025-01-15 14:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755847700109476 | L1 dlr_sara_grid_clamp_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:26 | 2025-01-15 14:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755857300109484 | L3 dlr_sara_grid_clamp_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:27 | 2025-01-15 14:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755878200109500 | L1 dlr_sara_grid_clamp_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:03 | 2025-01-15 14:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755887700109508 | L3 dlr_sara_grid_clamp_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:04 | 2025-01-15 14:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755907300109524 | L1 dlr_sara_pour_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:07 | 2025-01-15 14:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755917300109532 | L3 dlr_sara_pour_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:09 | 2025-01-15 14:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755937800109548 | L1 dlr_sara_pour_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:11 | 2025-01-15 14:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755947500109556 | L3 dlr_sara_pour_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:13 | 2025-01-15 14:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755966900109572 | L1 dlr_sara_pour_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:54 | 2025-01-15 13:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755976400109580 | L3 dlr_sara_pour_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:55 | 2025-01-15 13:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755995600109596 | L1 dlr_sara_pour_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:02 | 2025-01-15 03:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756004900109604 | L3 dlr_sara_pour_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:35 | 2025-01-15 13:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756024900109620 | L1 dlr_sara_pour_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:44 | 2025-01-15 13:44 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756035400109628 | L3 dlr_sara_pour_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:46 | 2025-01-15 13:46 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756056100109644 | L1 dlr_sara_pour_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:52 | 2025-01-15 13:52 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756066400109652 | L3 dlr_sara_pour_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:54 | 2025-01-15 13:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754674200108564 | L1 cmu_franka_exploration_dataset_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:34 | 2025-01-17 11:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754684400108572 | L3 cmu_franka_exploration_dataset_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:35 | 2025-01-17 11:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754704800108588 | L1 cmu_franka_exploration_dataset_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:37 | 2025-01-17 11:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754715300108596 | L3 cmu_franka_exploration_dataset_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:38 | 2025-01-17 11:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754736100108612 | L1 cmu_franka_exploration_dataset_ep000106 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:40 | 2025-01-17 11:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754745900108620 | L3 cmu_franka_exploration_dataset_ep000108 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:41 | 2025-01-17 11:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754765200108636 | L1 cmu_franka_exploration_dataset_ep000114 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:43 | 2025-01-17 11:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754774400108644 | L3 cmu_franka_exploration_dataset_ep000116 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:25 | 2025-01-17 11:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754794300108660 | L1 cmu_franka_exploration_dataset_ep000122 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:27 | 2025-01-17 11:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754804200108668 | L3 cmu_franka_exploration_dataset_ep000124 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:28 | 2025-01-17 11:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754824300108684 | L1 cmu_franka_exploration_dataset_ep000130 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:30 | 2025-01-17 11:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754833800108692 | L3 cmu_franka_exploration_dataset_ep000132 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:31 | 2025-01-17 11:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756106700109683 | L1 dlr_sara_pour_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:17 | 2025-01-09 10:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756117000109691 | L3 dlr_sara_pour_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:18 | 2025-01-09 10:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756137300109707 | L1 dlr_sara_pour_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:21 | 2025-01-09 10:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756146900109715 | L3 dlr_sara_pour_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:23 | 2025-01-09 10:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756166600109731 | L1 dlr_sara_pour_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:55 | 2025-01-15 02:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750670000105645 | L1 berkeley_rpt_ep000025 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:52 | 2025-07-08 15:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750679500105653 | L3 berkeley_rpt_ep000027 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:43 | 2025-07-08 15:43 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750699400105669 | L1 berkeley_rpt_ep000033 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:16 | 2025-07-08 15:16 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750709300105677 | L3 berkeley_rpt_ep000035 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:10 | 2025-07-08 15:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750729500105693 | L1 berkeley_rpt_ep000041 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:10 | 2025-06-30 15:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750740400105701 | L3 berkeley_rpt_ep000043 | Robotics | ONLINE | COLLECTING | 2025-06-30 14:56 | 2025-06-30 14:56 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750761700105717 | L1 berkeley_rpt_ep000049 | Robotics | ONLINE | COLLECTING | 2025-06-30 08:33 | 2025-06-30 08:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750771700105725 | L3 berkeley_rpt_ep000051 | Robotics | ONLINE | COLLECTING | 2025-07-09 14:34 | 2025-07-09 14:34 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750792200105741 | L1 berkeley_rpt_ep000057 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:10 | 2025-07-08 16:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750802000105749 | L3 berkeley_rpt_ep000059 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:57 | 2025-07-17 05:57 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750822800105765 | L1 berkeley_rpt_ep000065 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:28 | 2025-07-17 01:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750833000105773 | L3 berkeley_rpt_ep000067 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:23 | 2025-07-17 01:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750853300105789 | L1 berkeley_rpt_ep000073 | Robotics | ONLINE | COLLECTING | 2025-07-10 11:02 | 2025-07-10 11:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750863500105797 | L3 berkeley_rpt_ep000075 | Robotics | ONLINE | COLLECTING | 2025-07-09 15:12 | 2025-07-09 15:12 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750884700105813 | L1 berkeley_rpt_ep000081 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:11 | 2025-07-18 17:11 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750894700105821 | L3 berkeley_rpt_ep000083 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:00 | 2025-07-18 17:00 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750914400105837 | L1 berkeley_rpt_ep000089 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:39 | 2025-07-18 11:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750924700105845 | L3 berkeley_rpt_ep000091 | Robotics | ONLINE | COLLECTING | 2025-07-18 07:05 | 2025-07-18 07:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750945700105861 | L1 berkeley_rpt_ep000097 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:50 | 2025-07-18 06:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750956600105869 | L3 berkeley_rpt_ep000099 | Robotics | ONLINE | COLLECTING | 2025-07-17 17:09 | 2025-07-17 17:09 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750977100105885 | L1 berkeley_rpt_ep000105 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:57 | 2025-07-20 14:57 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750986900105893 | L3 berkeley_rpt_ep000107 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:37 | 2025-07-20 14:37 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751007500105909 | L1 berkeley_rpt_ep000113 | Robotics | ONLINE | COLLECTING | 2025-07-19 12:55 | 2025-07-19 12:55 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751017900105917 | L3 berkeley_rpt_ep000115 | Robotics | ONLINE | COLLECTING | 2025-07-19 11:37 | 2025-07-19 11:37 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751144400105933 | L1 berkeley_rpt_ep000121 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:16 | 2025-07-21 16:16 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751156800105941 | L3 berkeley_rpt_ep000123 | Robotics | ONLINE | COLLECTING | 2025-07-21 15:08 | 2025-07-21 15:08 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751180000105957 | L1 berkeley_rpt_ep000129 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:28 | 2025-07-24 06:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751190600105965 | L3 berkeley_rpt_ep000131 | Robotics | ONLINE | COLLECTING | 2025-07-24 01:32 | 2025-07-24 01:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751213200105981 | L1 berkeley_rpt_ep000137 | Robotics | ONLINE | COLLECTING | 2025-07-22 05:48 | 2025-07-22 05:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751225800105989 | L3 berkeley_rpt_ep000139 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:31 | 2025-07-21 16:31 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751250700106005 | L1 berkeley_rpt_ep000145 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:51 | 2025-07-24 06:51 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751261200106013 | L3 berkeley_rpt_ep000147 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:47 | 2025-07-24 06:47 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751281400106029 | L1 berkeley_rpt_ep000153 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:01 | 2025-07-26 03:01 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751291300106037 | L3 berkeley_rpt_ep000155 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:41 | 2025-07-25 17:41 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751312600106053 | L1 berkeley_rpt_ep000161 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:15 | 2025-07-24 17:15 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751323500106061 | L3 berkeley_rpt_ep000163 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:11 | 2025-07-24 17:11 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751343600106077 | L1 berkeley_rpt_ep000169 | Robotics | ONLINE | COLLECTING | 2025-07-24 13:30 | 2025-07-24 13:30 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751353900106085 | L3 berkeley_rpt_ep000171 | Robotics | ONLINE | COLLECTING | 2025-07-24 07:05 | 2025-07-24 07:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751375500106101 | L1 berkeley_rpt_ep000177 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:27 | 2025-07-29 08:27 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751386200106109 | L3 berkeley_rpt_ep000179 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:23 | 2025-07-29 08:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751407900106125 | L1 berkeley_rpt_ep000185 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:08 | 2025-07-28 17:08 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751418000106133 | L3 berkeley_rpt_ep000187 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:01 | 2025-07-28 17:01 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751439000106149 | L1 berkeley_rpt_ep000193 | Robotics | ONLINE | COLLECTING | 2025-07-27 15:59 | 2025-07-27 15:59 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751449700106157 | L3 berkeley_rpt_ep000195 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:14 | 2025-07-26 12:14 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751470600106173 | L1 berkeley_rpt_ep000201 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:49 | 2025-07-29 11:49 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751481000106181 | L3 berkeley_rpt_ep000203 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:44 | 2025-07-29 11:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751500500106197 | L1 berkeley_rpt_ep000209 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:42 | 2025-07-29 09:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751510600106205 | L3 berkeley_rpt_ep000211 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:37 | 2025-07-29 09:37 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751530800106221 | L1 berkeley_rpt_ep000217 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:29 | 2025-07-29 09:29 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751541000106229 | L3 berkeley_rpt_ep000219 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:43 | 2025-07-29 08:43 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751561600106245 | L1 berkeley_rpt_ep000225 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:32 | 2025-07-29 08:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751571800106253 | L3 berkeley_rpt_ep000227 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:54 | 2025-07-29 11:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751591400106269 | L1 berkeley_rpt_ep000233 | Robotics | ONLINE | COLLECTING | 2025-08-03 12:28 | 2025-08-03 12:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751601500106277 | L3 berkeley_rpt_ep000235 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:50 | 2025-08-01 17:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751621300106293 | L1 berkeley_rpt_ep000241 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:06 | 2025-07-30 17:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751631700106301 | L3 berkeley_rpt_ep000243 | Robotics | ONLINE | COLLECTING | 2025-07-30 13:55 | 2025-07-30 13:55 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751651800106317 | L1 berkeley_rpt_ep000249 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:47 | 2025-07-30 11:47 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751661700106325 | L3 berkeley_rpt_ep000251 | Robotics | ONLINE | COLLECTING | 2025-07-29 17:16 | 2025-07-29 17:16 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751745200106389 | L1 berkeley_rpt_ep000273 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:47 | 2025-08-22 06:47 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751755900106397 | L3 berkeley_rpt_ep000275 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:44 | 2025-08-22 06:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155754864200108717 | L1 cmu_franka_exploration_dataset_ep000141 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:34 | 2025-01-17 11:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754873900108725 | L3 cmu_franka_exploration_dataset_ep000143 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:16 | 2025-01-17 11:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754894300108741 | L1 cmu_franka_exploration_dataset_ep000149 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:18 | 2025-01-17 11:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754904900108749 | L3 cmu_franka_exploration_dataset_ep000151 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:19 | 2025-01-17 11:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754925600108765 | L1 cmu_franka_exploration_dataset_ep000157 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:20 | 2025-01-17 11:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754935200108773 | L3 cmu_franka_exploration_dataset_ep000159 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:21 | 2025-01-17 11:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754955000108789 | L1 cmu_franka_exploration_dataset_ep000165 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:23 | 2025-01-17 11:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754965400108797 | L3 cmu_franka_exploration_dataset_ep000167 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:24 | 2025-01-17 11:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754985300108813 | L1 cmu_franka_exploration_dataset_ep000173 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:15 | 2025-01-17 11:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754995800108821 | L3 cmu_franka_exploration_dataset_ep000175 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:09 | 2025-01-17 11:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755016000108837 | L1 cmu_franka_exploration_dataset_ep000181 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:10 | 2025-01-17 11:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755026100108845 | L3 cmu_franka_exploration_dataset_ep000183 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:11 | 2025-01-17 11:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755079600108861 | L1 cmu_franka_exploration_dataset_ep000189 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:00 | 2025-01-17 11:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755090800108869 | L3 cmu_franka_exploration_dataset_ep000191 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:01 | 2025-01-17 11:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755111900108885 | L1 cmu_franka_exploration_dataset_ep000197 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:02 | 2025-01-17 11:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755123500108893 | L3 dlr_edan_shared_control_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:03 | 2025-01-17 11:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755143900108909 | L1 dlr_edan_shared_control_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:06 | 2025-01-17 11:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755154300108917 | L3 dlr_edan_shared_control_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:07 | 2025-01-17 11:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755175200108933 | L1 dlr_edan_shared_control_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:48 | 2025-01-17 10:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755185900108941 | L3 dlr_edan_shared_control_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:49 | 2025-01-17 10:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755207900108957 | L1 dlr_edan_shared_control_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:52 | 2025-01-17 10:52 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755218800108965 | L3 dlr_edan_shared_control_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:53 | 2025-01-17 10:53 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755239900108981 | L1 dlr_edan_shared_control_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:55 | 2025-01-17 10:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755249600108989 | L3 dlr_edan_shared_control_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:57 | 2025-01-17 10:57 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755269700109005 | L1 dlr_edan_shared_control_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:31 | 2025-01-17 10:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755279600109013 | L3 dlr_edan_shared_control_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:33 | 2025-01-17 10:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755300500109029 | L1 dlr_edan_shared_control_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:36 | 2025-01-17 10:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755310000109037 | L3 dlr_edan_shared_control_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:37 | 2025-01-17 10:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755330400109053 | L1 dlr_edan_shared_control_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:40 | 2025-01-17 10:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755340300109061 | L3 dlr_edan_shared_control_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:41 | 2025-01-17 10:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755360900109077 | L1 dlr_edan_shared_control_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:30 | 2025-01-17 10:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755371800109085 | L3 dlr_edan_shared_control_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:44 | 2025-01-16 06:44 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755393100109101 | L1 dlr_edan_shared_control_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:47 | 2025-01-16 06:47 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755402800109109 | L3 dlr_edan_shared_control_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:48 | 2025-01-16 06:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755421800109125 | L1 dlr_edan_shared_control_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:51 | 2025-01-16 06:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755431400109133 | L3 dlr_edan_shared_control_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:20 | 2025-01-17 10:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755450900109149 | L1 dlr_edan_shared_control_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:25 | 2025-01-17 10:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755461100109157 | L3 dlr_edan_shared_control_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:28 | 2025-01-17 10:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755480100109173 | L1 dlr_edan_shared_control_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:31 | 2025-01-16 06:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755489300109181 | L3 dlr_edan_shared_control_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:32 | 2025-01-16 06:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755508200109197 | L1 dlr_edan_shared_control_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:35 | 2025-01-16 06:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755517500109205 | L3 dlr_sara_grid_clamp_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:36 | 2025-01-16 06:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755536600109221 | L1 dlr_sara_grid_clamp_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:39 | 2025-01-16 06:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755545900109229 | L3 dlr_sara_grid_clamp_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:40 | 2025-01-16 06:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755565500109245 | L1 dlr_sara_grid_clamp_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:43 | 2025-01-16 06:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755574700109253 | L3 dlr_sara_grid_clamp_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:16 | 2025-01-16 06:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755594500109269 | L1 dlr_sara_grid_clamp_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:19 | 2025-01-16 06:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755604300109277 | L3 dlr_sara_grid_clamp_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:20 | 2025-01-16 06:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755622700109293 | L1 dlr_sara_grid_clamp_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:23 | 2025-01-16 06:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755632400109301 | L3 dlr_sara_grid_clamp_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:24 | 2025-01-16 06:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755651200109317 | L1 dlr_sara_grid_clamp_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:28 | 2025-01-16 06:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755660900109325 | L3 dlr_sara_grid_clamp_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:29 | 2025-01-16 06:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755680400109341 | L1 dlr_sara_grid_clamp_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:35 | 2025-01-15 14:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755690200109349 | L3 dlr_sara_grid_clamp_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:38 | 2025-01-15 14:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755710300109365 | L1 dlr_sara_grid_clamp_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:07 | 2025-01-16 06:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755720300109373 | L3 dlr_sara_grid_clamp_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:09 | 2025-01-16 06:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755739800109389 | L1 dlr_sara_grid_clamp_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:11 | 2025-01-16 06:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755749600109397 | L3 dlr_sara_grid_clamp_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:13 | 2025-01-16 06:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755768900109413 | L1 dlr_sara_grid_clamp_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:17 | 2025-01-15 14:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755778600109421 | L3 dlr_sara_grid_clamp_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:18 | 2025-01-15 14:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755798800109437 | L1 dlr_sara_grid_clamp_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:20 | 2025-01-15 14:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755808600109445 | L3 dlr_sara_grid_clamp_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:21 | 2025-01-15 14:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755828900109461 | L1 dlr_sara_grid_clamp_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:24 | 2025-01-15 14:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755839000109469 | L3 dlr_sara_grid_clamp_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:25 | 2025-01-15 14:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755858700109485 | L1 dlr_sara_grid_clamp_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:27 | 2025-01-15 14:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755869000109493 | L3 dlr_sara_grid_clamp_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:00 | 2025-01-15 14:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755888900109509 | L1 dlr_sara_grid_clamp_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:04 | 2025-01-15 14:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755898800109517 | L3 dlr_sara_grid_clamp_ep000104 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:06 | 2025-01-15 14:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755918700109533 | L1 dlr_sara_pour_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:09 | 2025-01-15 14:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755929000109541 | L3 dlr_sara_pour_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:10 | 2025-01-15 14:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755948700109557 | L1 dlr_sara_pour_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:13 | 2025-01-15 14:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755958700109565 | L3 dlr_sara_pour_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:15 | 2025-01-15 14:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755977700109581 | L1 dlr_sara_pour_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:56 | 2025-01-15 13:56 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755987300109589 | L3 dlr_sara_pour_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:00 | 2025-01-15 03:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756006200109605 | L1 dlr_sara_pour_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:35 | 2025-01-15 13:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756015700109613 | L3 dlr_sara_pour_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:38 | 2025-01-15 13:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756036600109629 | L1 dlr_sara_pour_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:46 | 2025-01-15 13:46 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756047100109637 | L3 dlr_sara_pour_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:49 | 2025-01-15 13:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754685700108573 | L1 cmu_franka_exploration_dataset_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:35 | 2025-01-17 11:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754696000108581 | L3 cmu_franka_exploration_dataset_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:36 | 2025-01-17 11:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754716600108597 | L1 cmu_franka_exploration_dataset_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:38 | 2025-01-17 11:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754727300108605 | L3 cmu_franka_exploration_dataset_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:39 | 2025-01-17 11:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754747200108621 | L1 cmu_franka_exploration_dataset_ep000109 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:41 | 2025-01-17 11:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754757000108629 | L3 cmu_franka_exploration_dataset_ep000111 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:42 | 2025-01-17 11:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754775600108645 | L1 cmu_franka_exploration_dataset_ep000117 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:25 | 2025-01-17 11:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754785600108653 | L3 cmu_franka_exploration_dataset_ep000119 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:26 | 2025-01-17 11:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754805400108669 | L1 cmu_franka_exploration_dataset_ep000125 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:28 | 2025-01-17 11:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754815500108677 | L3 cmu_franka_exploration_dataset_ep000127 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:29 | 2025-01-17 11:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754835000108693 | L1 cmu_franka_exploration_dataset_ep000133 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:31 | 2025-01-17 11:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754844500108701 | L3 cmu_franka_exploration_dataset_ep000135 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:32 | 2025-01-17 11:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 9142470035900103917 | Collect Advanced Physics Problems: Limited to | Advanced Physics Question | ONLINE | COLLECTING | 2025-12-04 07:06 | 2025-12-04 07:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756118300109692 | L1 dlr_sara_pour_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:18 | 2025-01-09 10:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756128100109700 | L3 dlr_sara_pour_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:19 | 2025-01-09 10:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756148200109716 | L1 dlr_sara_pour_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-14 08:40 | 2025-01-14 08:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756157900109724 | L3 dlr_sara_pour_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:52 | 2025-01-15 02:52 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750680700105654 | L1 berkeley_rpt_ep000028 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:40 | 2025-07-08 15:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750690200105662 | L3 berkeley_rpt_ep000030 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:29 | 2025-07-08 15:29 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750710500105678 | L1 berkeley_rpt_ep000036 | Robotics | ONLINE | COLLECTING | 2025-07-07 04:00 | 2025-07-07 04:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750720000105686 | L3 berkeley_rpt_ep000038 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:39 | 2025-06-30 15:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750741800105702 | L1 berkeley_rpt_ep000044 | Robotics | ONLINE | COLLECTING | 2025-06-30 14:50 | 2025-06-30 14:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750752300105710 | L3 berkeley_rpt_ep000046 | Robotics | ONLINE | COLLECTING | 2025-06-30 11:32 | 2025-06-30 11:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750773000105726 | L1 berkeley_rpt_ep000052 | Robotics | ONLINE | COLLECTING | 2025-07-09 14:28 | 2025-07-09 14:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750783200105734 | L3 berkeley_rpt_ep000054 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:23 | 2025-07-08 16:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750803200105750 | L1 berkeley_rpt_ep000060 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:55 | 2025-07-17 05:55 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750813500105758 | L3 berkeley_rpt_ep000062 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:45 | 2025-07-17 05:45 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750834300105774 | L1 berkeley_rpt_ep000068 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:22 | 2025-07-17 01:22 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750844300105782 | L3 berkeley_rpt_ep000070 | Robotics | ONLINE | COLLECTING | 2025-07-14 12:51 | 2025-07-14 12:51 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750864900105798 | L1 berkeley_rpt_ep000076 | Robotics | ONLINE | COLLECTING | 2025-07-09 15:02 | 2025-07-09 15:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750875200105806 | L3 berkeley_rpt_ep000078 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:25 | 2025-07-18 17:25 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750896100105822 | L1 berkeley_rpt_ep000084 | Robotics | ONLINE | COLLECTING | 2025-07-18 16:52 | 2025-07-18 16:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750905600105830 | L3 berkeley_rpt_ep000086 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:45 | 2025-07-18 11:45 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750926000105846 | L1 berkeley_rpt_ep000092 | Robotics | ONLINE | COLLECTING | 2025-07-18 07:04 | 2025-07-18 07:04 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750936600105854 | L3 berkeley_rpt_ep000094 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:57 | 2025-07-18 06:57 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750958000105870 | L1 berkeley_rpt_ep000100 | Robotics | ONLINE | COLLECTING | 2025-07-17 11:18 | 2025-07-17 11:18 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750967900105878 | L3 berkeley_rpt_ep000102 | Robotics | ONLINE | COLLECTING | 2025-07-21 14:55 | 2025-07-21 14:55 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750988300105894 | L1 berkeley_rpt_ep000108 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:36 | 2025-07-20 14:36 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750998800105902 | L3 berkeley_rpt_ep000110 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:33 | 2025-07-20 14:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751019400105918 | L1 berkeley_rpt_ep000116 | Robotics | ONLINE | COLLECTING | 2025-07-19 11:32 | 2025-07-19 11:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751029600105926 | L3 berkeley_rpt_ep000118 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:22 | 2025-07-21 16:22 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751158300105942 | L1 berkeley_rpt_ep000124 | Robotics | ONLINE | COLLECTING | 2025-07-21 15:07 | 2025-07-21 15:07 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751170100105950 | L3 berkeley_rpt_ep000126 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:39 | 2025-07-24 06:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751192100105966 | L1 berkeley_rpt_ep000132 | Robotics | ONLINE | COLLECTING | 2025-07-22 15:28 | 2025-07-22 15:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751203400105974 | L3 berkeley_rpt_ep000134 | Robotics | ONLINE | COLLECTING | 2025-07-22 05:54 | 2025-07-22 05:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751227200105990 | L1 berkeley_rpt_ep000140 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:30 | 2025-07-21 16:30 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751239500105998 | L3 berkeley_rpt_ep000142 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:26 | 2025-07-21 16:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751262500106014 | L1 berkeley_rpt_ep000148 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:43 | 2025-07-24 06:43 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751272400106022 | L3 berkeley_rpt_ep000150 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:06 | 2025-07-26 03:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751292600106038 | L1 berkeley_rpt_ep000156 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:40 | 2025-07-25 17:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751303100106046 | L3 berkeley_rpt_ep000158 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:37 | 2025-07-25 17:37 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751324800106062 | L1 berkeley_rpt_ep000164 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:10 | 2025-07-24 17:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751335300106070 | L3 berkeley_rpt_ep000166 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:06 | 2025-07-24 17:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751355200106086 | L1 berkeley_rpt_ep000172 | Robotics | ONLINE | COLLECTING | 2025-07-24 07:01 | 2025-07-24 07:01 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751366300106094 | L3 berkeley_rpt_ep000174 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:58 | 2025-07-24 06:58 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751387600106110 | L1 berkeley_rpt_ep000180 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:17 | 2025-07-28 17:17 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751398200106118 | L3 berkeley_rpt_ep000182 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:13 | 2025-07-28 17:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751419200106134 | L1 berkeley_rpt_ep000188 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:00 | 2025-07-28 17:00 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751430300106142 | L3 berkeley_rpt_ep000190 | Robotics | ONLINE | COLLECTING | 2025-07-28 16:53 | 2025-07-28 16:53 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751451100106158 | L1 berkeley_rpt_ep000196 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:13 | 2025-07-26 12:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751461700106166 | L3 berkeley_rpt_ep000198 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:02 | 2025-07-26 12:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751482300106182 | L1 berkeley_rpt_ep000204 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:41 | 2025-07-29 11:41 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751492100106190 | L3 berkeley_rpt_ep000206 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:36 | 2025-07-29 11:36 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751511900106206 | L1 berkeley_rpt_ep000212 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:37 | 2025-07-29 09:37 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751521700106214 | L3 berkeley_rpt_ep000214 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:33 | 2025-07-29 09:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751542200106230 | L1 berkeley_rpt_ep000220 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:42 | 2025-07-29 08:42 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751552700106238 | L3 berkeley_rpt_ep000222 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:39 | 2025-07-29 08:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751573000106254 | L1 berkeley_rpt_ep000228 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:53 | 2025-07-29 11:53 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751582700106262 | L3 berkeley_rpt_ep000230 | Robotics | ONLINE | COLLECTING | 2025-08-04 11:43 | 2025-08-04 11:43 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751602700106278 | L1 berkeley_rpt_ep000236 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:48 | 2025-08-01 17:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751612900106286 | L3 berkeley_rpt_ep000238 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:19 | 2025-07-30 17:19 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751633000106302 | L1 berkeley_rpt_ep000244 | Robotics | ONLINE | COLLECTING | 2025-07-30 13:54 | 2025-07-30 13:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751643200106310 | L3 berkeley_rpt_ep000246 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:53 | 2025-07-30 11:53 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751662900106326 | L1 berkeley_rpt_ep000252 | Robotics | ONLINE | COLLECTING | 2025-07-29 17:15 | 2025-07-29 17:15 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751736000106382 | L3 berkeley_rpt_ep000270 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:53 | 2025-08-22 06:53 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751757200106398 | L1 berkeley_rpt_ep000276 | Robotics | ONLINE | COLLECTING | 2025-08-04 11:51 | 2025-08-04 11:51 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155754855700108710 | L3 cmu_franka_exploration_dataset_ep000138 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:33 | 2025-01-17 11:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754875100108726 | L1 cmu_franka_exploration_dataset_ep000144 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:16 | 2025-01-17 11:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754885400108734 | L3 cmu_franka_exploration_dataset_ep000146 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:17 | 2025-01-17 11:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754906200108750 | L1 cmu_franka_exploration_dataset_ep000152 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:19 | 2025-01-17 11:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754916200108758 | L3 cmu_franka_exploration_dataset_ep000154 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:20 | 2025-01-17 11:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754936400108774 | L1 cmu_franka_exploration_dataset_ep000160 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:21 | 2025-01-17 11:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754946400108782 | L3 cmu_franka_exploration_dataset_ep000162 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:22 | 2025-01-17 11:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754966700108798 | L1 cmu_franka_exploration_dataset_ep000168 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:24 | 2025-01-17 11:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754976700108806 | L3 cmu_franka_exploration_dataset_ep000170 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:14 | 2025-01-17 11:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754997000108822 | L1 cmu_franka_exploration_dataset_ep000176 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:09 | 2025-01-17 11:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755007100108830 | L3 cmu_franka_exploration_dataset_ep000178 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:10 | 2025-01-17 11:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755027300108846 | L1 cmu_franka_exploration_dataset_ep000184 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:11 | 2025-01-17 11:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755038000108854 | L3 cmu_franka_exploration_dataset_ep000186 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:12 | 2025-01-17 11:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755092200108870 | L1 cmu_franka_exploration_dataset_ep000192 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:01 | 2025-01-17 11:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755102900108878 | L3 cmu_franka_exploration_dataset_ep000194 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:01 | 2025-01-17 11:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755124700108894 | L1 dlr_edan_shared_control_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:04 | 2025-01-17 11:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755135100108902 | L3 dlr_edan_shared_control_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:05 | 2025-01-17 11:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755155600108918 | L1 dlr_edan_shared_control_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:07 | 2025-01-17 11:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755166300108926 | L3 dlr_edan_shared_control_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:08 | 2025-01-17 11:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755187800108942 | L1 dlr_edan_shared_control_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:50 | 2025-01-17 10:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755198300108950 | L3 dlr_edan_shared_control_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:51 | 2025-01-17 10:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755220100108966 | L1 dlr_edan_shared_control_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:53 | 2025-01-17 10:53 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755231000108974 | L3 dlr_edan_shared_control_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:55 | 2025-01-17 10:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755251000108990 | L1 dlr_edan_shared_control_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:57 | 2025-01-17 10:57 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755261100108998 | L3 dlr_edan_shared_control_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:58 | 2025-01-17 10:58 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755281000109014 | L1 dlr_edan_shared_control_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:33 | 2025-01-17 10:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755291500109022 | L3 dlr_edan_shared_control_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:35 | 2025-01-17 10:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755311200109038 | L1 dlr_edan_shared_control_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:37 | 2025-01-17 10:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755321500109046 | L3 dlr_edan_shared_control_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:39 | 2025-01-17 10:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755341600109062 | L1 dlr_edan_shared_control_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:41 | 2025-01-17 10:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755352100109070 | L3 dlr_edan_shared_control_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:42 | 2025-01-17 10:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755373000109086 | L1 dlr_edan_shared_control_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:44 | 2025-01-16 06:44 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755383500109094 | L3 dlr_edan_shared_control_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:45 | 2025-01-16 06:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755404100109110 | L1 dlr_edan_shared_control_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:49 | 2025-01-16 06:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755413600109118 | L3 dlr_edan_shared_control_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:50 | 2025-01-16 06:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755432700109134 | L1 dlr_edan_shared_control_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:20 | 2025-01-17 10:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755442300109142 | L3 dlr_edan_shared_control_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:22 | 2025-01-17 10:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755462400109158 | L1 dlr_edan_shared_control_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:29 | 2025-01-17 10:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755471800109166 | L3 dlr_edan_shared_control_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:30 | 2025-01-16 06:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755490500109182 | L1 dlr_edan_shared_control_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:33 | 2025-01-16 06:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755500100109190 | L3 dlr_edan_shared_control_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:34 | 2025-01-16 06:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755518600109206 | L1 dlr_sara_grid_clamp_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:36 | 2025-01-16 06:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755528300109214 | L3 dlr_sara_grid_clamp_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:38 | 2025-01-16 06:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755547100109230 | L1 dlr_sara_grid_clamp_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:40 | 2025-01-16 06:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755556900109238 | L3 dlr_sara_grid_clamp_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:42 | 2025-01-16 06:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755575900109254 | L1 dlr_sara_grid_clamp_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:16 | 2025-01-16 06:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755586000109262 | L3 dlr_sara_grid_clamp_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:17 | 2025-01-16 06:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755605600109278 | L1 dlr_sara_grid_clamp_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:21 | 2025-01-16 06:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755614500109286 | L3 dlr_sara_grid_clamp_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:21 | 2025-01-16 06:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755633600109302 | L1 dlr_sara_grid_clamp_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:24 | 2025-01-16 06:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755643200109310 | L3 dlr_sara_grid_clamp_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:27 | 2025-01-16 06:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755662200109326 | L1 dlr_sara_grid_clamp_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:29 | 2025-01-16 06:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755672000109334 | L3 dlr_sara_grid_clamp_ep000043 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:34 | 2025-01-15 14:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755691500109350 | L1 dlr_sara_grid_clamp_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:39 | 2025-01-15 14:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755701800109358 | L3 dlr_sara_grid_clamp_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:06 | 2025-01-16 06:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755721500109374 | L1 dlr_sara_grid_clamp_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:09 | 2025-01-16 06:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755731300109382 | L3 dlr_sara_grid_clamp_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:10 | 2025-01-16 06:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755750900109398 | L1 dlr_sara_grid_clamp_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:13 | 2025-01-16 06:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755760100109406 | L3 dlr_sara_grid_clamp_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:14 | 2025-01-16 06:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755779900109422 | L1 dlr_sara_grid_clamp_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:18 | 2025-01-15 14:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755789500109430 | L3 dlr_sara_grid_clamp_ep000075 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:19 | 2025-01-15 14:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755809900109446 | L1 dlr_sara_grid_clamp_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:21 | 2025-01-15 14:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755819800109454 | L3 dlr_sara_grid_clamp_ep000083 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:23 | 2025-01-15 14:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755840300109470 | L1 dlr_sara_grid_clamp_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:25 | 2025-01-15 14:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755850100109478 | L3 dlr_sara_grid_clamp_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:27 | 2025-01-15 14:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755870300109494 | L1 dlr_sara_grid_clamp_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:01 | 2025-01-15 14:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755880400109502 | L3 dlr_sara_grid_clamp_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:03 | 2025-01-15 14:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755899900109518 | L1 dlr_sara_grid_clamp_ep000105 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:06 | 2025-01-15 14:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755909700109526 | L3 dlr_sara_pour_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:07 | 2025-01-15 14:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755930400109542 | L1 dlr_sara_pour_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:10 | 2025-01-15 14:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755940300109550 | L3 dlr_sara_pour_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:12 | 2025-01-15 14:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755959700109566 | L1 dlr_sara_pour_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:15 | 2025-01-15 14:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755969200109574 | L3 dlr_sara_pour_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:55 | 2025-01-15 13:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755988400109590 | L1 dlr_sara_pour_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:00 | 2025-01-15 03:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755997800109598 | L3 dlr_sara_pour_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:03 | 2025-01-15 03:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756016900109614 | L1 dlr_sara_pour_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:39 | 2025-01-15 13:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756027500109622 | L3 dlr_sara_pour_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:45 | 2025-01-15 13:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756048600109638 | L1 dlr_sara_pour_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:50 | 2025-01-15 13:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756058500109646 | L3 dlr_sara_pour_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:52 | 2025-01-15 13:52 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754676900108566 | L3 cmu_franka_exploration_dataset_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:34 | 2025-01-17 11:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754697500108582 | L1 cmu_franka_exploration_dataset_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:36 | 2025-01-17 11:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754707400108590 | L3 cmu_franka_exploration_dataset_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:37 | 2025-01-17 11:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754728500108606 | L1 cmu_franka_exploration_dataset_ep000104 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:39 | 2025-01-17 11:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754738400108614 | L3 cmu_franka_exploration_dataset_ep000106 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:40 | 2025-01-17 11:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754758100108630 | L1 cmu_franka_exploration_dataset_ep000112 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:42 | 2025-01-17 11:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754767400108638 | L3 cmu_franka_exploration_dataset_ep000114 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:24 | 2025-01-17 11:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754786900108654 | L1 cmu_franka_exploration_dataset_ep000120 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:26 | 2025-01-17 11:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754796800108662 | L3 cmu_franka_exploration_dataset_ep000122 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:27 | 2025-01-17 11:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754816800108678 | L1 cmu_franka_exploration_dataset_ep000128 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:29 | 2025-01-17 11:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754826600108686 | L3 cmu_franka_exploration_dataset_ep000130 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:30 | 2025-01-17 11:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754845700108702 | L1 cmu_franka_exploration_dataset_ep000136 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:32 | 2025-01-17 11:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756109300109685 | L3 dlr_sara_pour_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:17 | 2025-01-09 10:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756129300109701 | L1 dlr_sara_pour_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:20 | 2025-01-09 10:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756139700109709 | L3 dlr_sara_pour_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:21 | 2025-01-09 10:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756159200109725 | L1 dlr_sara_pour_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:52 | 2025-01-15 02:52 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750672200105647 | L3 berkeley_rpt_ep000025 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:51 | 2025-07-08 15:51 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750691400105663 | L1 berkeley_rpt_ep000031 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:26 | 2025-07-08 15:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750701900105671 | L3 berkeley_rpt_ep000033 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:15 | 2025-07-08 15:15 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750721200105687 | L1 berkeley_rpt_ep000039 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:28 | 2025-06-30 15:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750732400105695 | L3 berkeley_rpt_ep000041 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:10 | 2025-06-30 15:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750753700105711 | L1 berkeley_rpt_ep000047 | Robotics | ONLINE | COLLECTING | 2025-06-30 11:30 | 2025-06-30 11:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750764100105719 | L3 berkeley_rpt_ep000049 | Robotics | ONLINE | COLLECTING | 2025-06-30 08:33 | 2025-06-30 08:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750784300105735 | L1 berkeley_rpt_ep000055 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:20 | 2025-07-08 16:20 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750794700105743 | L3 berkeley_rpt_ep000057 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:09 | 2025-07-08 16:09 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750814700105759 | L1 berkeley_rpt_ep000063 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:43 | 2025-07-17 05:43 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750825400105767 | L3 berkeley_rpt_ep000065 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:27 | 2025-07-17 01:27 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750845600105783 | L1 berkeley_rpt_ep000071 | Robotics | ONLINE | COLLECTING | 2025-07-10 12:09 | 2025-07-10 12:09 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750855800105791 | L3 berkeley_rpt_ep000073 | Robotics | ONLINE | COLLECTING | 2025-07-10 11:01 | 2025-07-10 11:01 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750876600105807 | L1 berkeley_rpt_ep000079 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:23 | 2025-07-18 17:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750887300105815 | L3 berkeley_rpt_ep000081 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:10 | 2025-07-18 17:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750906900105831 | L1 berkeley_rpt_ep000087 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:44 | 2025-07-18 11:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750917000105839 | L3 berkeley_rpt_ep000089 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:38 | 2025-07-18 11:38 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750937800105855 | L1 berkeley_rpt_ep000095 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:56 | 2025-07-18 06:56 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750948300105863 | L3 berkeley_rpt_ep000097 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:50 | 2025-07-18 06:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750969300105879 | L1 berkeley_rpt_ep000103 | Robotics | ONLINE | COLLECTING | 2025-07-21 14:54 | 2025-07-21 14:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750979600105887 | L3 berkeley_rpt_ep000105 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:41 | 2025-07-20 14:41 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751000200105903 | L1 berkeley_rpt_ep000111 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:32 | 2025-07-20 14:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751010000105911 | L3 berkeley_rpt_ep000113 | Robotics | ONLINE | COLLECTING | 2025-07-19 12:54 | 2025-07-19 12:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751134800105927 | L1 berkeley_rpt_ep000119 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:20 | 2025-07-21 16:20 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751147700105935 | L3 berkeley_rpt_ep000121 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:13 | 2025-07-21 16:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751171600105951 | L1 berkeley_rpt_ep000127 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:33 | 2025-07-24 06:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751182700105959 | L3 berkeley_rpt_ep000129 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:28 | 2025-07-24 06:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751204800105975 | L1 berkeley_rpt_ep000135 | Robotics | ONLINE | COLLECTING | 2025-07-22 05:53 | 2025-07-22 05:53 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751216400105983 | L3 berkeley_rpt_ep000137 | Robotics | ONLINE | COLLECTING | 2025-07-22 05:47 | 2025-07-22 05:47 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751241600105999 | L1 berkeley_rpt_ep000143 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:25 | 2025-07-21 16:25 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751253600106007 | L3 berkeley_rpt_ep000145 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:50 | 2025-07-24 06:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751273700106023 | L1 berkeley_rpt_ep000151 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:04 | 2025-07-26 03:04 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751283700106031 | L3 berkeley_rpt_ep000153 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:00 | 2025-07-26 03:00 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751304500106047 | L1 berkeley_rpt_ep000159 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:24 | 2025-07-24 17:24 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751315400106055 | L3 berkeley_rpt_ep000161 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:14 | 2025-07-24 17:14 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751336500106071 | L1 berkeley_rpt_ep000167 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:05 | 2025-07-24 17:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751346100106079 | L3 berkeley_rpt_ep000169 | Robotics | ONLINE | COLLECTING | 2025-07-24 13:29 | 2025-07-24 13:29 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751367500106095 | L1 berkeley_rpt_ep000175 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:30 | 2025-07-29 08:30 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751378100106103 | L3 berkeley_rpt_ep000177 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:26 | 2025-07-29 08:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751399600106119 | L1 berkeley_rpt_ep000183 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:12 | 2025-07-28 17:12 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751410400106127 | L3 berkeley_rpt_ep000185 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:07 | 2025-07-28 17:07 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751431500106143 | L1 berkeley_rpt_ep000191 | Robotics | ONLINE | COLLECTING | 2025-07-28 16:51 | 2025-07-28 16:51 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751441700106151 | L3 berkeley_rpt_ep000193 | Robotics | ONLINE | COLLECTING | 2025-07-27 15:59 | 2025-07-27 15:59 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751463000106167 | L1 berkeley_rpt_ep000199 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:20 | 2025-07-26 03:20 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751473100106175 | L3 berkeley_rpt_ep000201 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:49 | 2025-07-29 11:49 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751493400106191 | L1 berkeley_rpt_ep000207 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:34 | 2025-07-29 11:34 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751503100106199 | L3 berkeley_rpt_ep000209 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:42 | 2025-07-29 09:42 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751523000106215 | L1 berkeley_rpt_ep000215 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:33 | 2025-07-29 09:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751533400106223 | L3 berkeley_rpt_ep000217 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:28 | 2025-07-29 09:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751554100106239 | L1 berkeley_rpt_ep000223 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:35 | 2025-07-29 08:35 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751564200106247 | L3 berkeley_rpt_ep000225 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:32 | 2025-07-29 08:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751584000106263 | L1 berkeley_rpt_ep000231 | Robotics | ONLINE | COLLECTING | 2025-08-03 12:33 | 2025-08-03 12:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751593900106271 | L3 berkeley_rpt_ep000233 | Robotics | ONLINE | COLLECTING | 2025-08-03 12:28 | 2025-08-03 12:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751614100106287 | L1 berkeley_rpt_ep000239 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:18 | 2025-07-30 17:18 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751623800106295 | L3 berkeley_rpt_ep000241 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:05 | 2025-07-30 17:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751644400106311 | L1 berkeley_rpt_ep000247 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:52 | 2025-07-30 11:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751654100106319 | L3 berkeley_rpt_ep000249 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:46 | 2025-07-30 11:46 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751737300106383 | L1 berkeley_rpt_ep000271 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:52 | 2025-08-22 06:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751748000106391 | L3 berkeley_rpt_ep000273 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:46 | 2025-08-22 06:46 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155754856800108711 | L1 cmu_franka_exploration_dataset_ep000139 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:33 | 2025-01-17 11:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754866500108719 | L3 cmu_franka_exploration_dataset_ep000141 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:34 | 2025-01-17 11:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754886600108735 | L1 cmu_franka_exploration_dataset_ep000147 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:17 | 2025-01-17 11:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754897000108743 | L3 cmu_franka_exploration_dataset_ep000149 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:18 | 2025-01-17 11:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754917500108759 | L1 cmu_franka_exploration_dataset_ep000155 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:20 | 2025-01-17 11:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754928000108767 | L3 cmu_franka_exploration_dataset_ep000157 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:20 | 2025-01-17 11:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754947600108783 | L1 cmu_franka_exploration_dataset_ep000163 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:22 | 2025-01-17 11:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754957500108791 | L3 cmu_franka_exploration_dataset_ep000165 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:23 | 2025-01-17 11:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754977900108807 | L1 cmu_franka_exploration_dataset_ep000171 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:14 | 2025-01-17 11:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754987900108815 | L3 cmu_franka_exploration_dataset_ep000173 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:15 | 2025-01-17 11:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755008400108831 | L1 cmu_franka_exploration_dataset_ep000179 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:10 | 2025-01-17 11:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755018600108839 | L3 cmu_franka_exploration_dataset_ep000181 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:11 | 2025-01-17 11:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755039400108855 | L1 cmu_franka_exploration_dataset_ep000187 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:13 | 2025-01-17 11:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755082500108863 | L3 cmu_franka_exploration_dataset_ep000189 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:00 | 2025-01-17 11:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755104300108879 | L1 cmu_franka_exploration_dataset_ep000195 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:02 | 2025-01-17 11:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755114600108887 | L3 cmu_franka_exploration_dataset_ep000197 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:02 | 2025-01-17 11:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755136300108903 | L1 dlr_edan_shared_control_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:05 | 2025-01-17 11:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755146600108911 | L3 dlr_edan_shared_control_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:06 | 2025-01-17 11:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755167600108927 | L1 dlr_edan_shared_control_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:46 | 2025-01-17 10:46 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755177800108935 | L3 dlr_edan_shared_control_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:49 | 2025-01-17 10:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755199700108951 | L1 dlr_edan_shared_control_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:51 | 2025-01-17 10:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755210600108959 | L3 dlr_edan_shared_control_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:52 | 2025-01-17 10:52 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755232300108975 | L1 dlr_edan_shared_control_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:55 | 2025-01-17 10:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755242200108983 | L3 dlr_edan_shared_control_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:56 | 2025-01-17 10:56 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755262300108999 | L1 dlr_edan_shared_control_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:58 | 2025-01-17 10:58 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755272200109007 | L3 dlr_edan_shared_control_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:31 | 2025-01-17 10:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755292900109023 | L1 dlr_edan_shared_control_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:35 | 2025-01-17 10:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755302900109031 | L3 dlr_edan_shared_control_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:36 | 2025-01-17 10:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755322900109047 | L1 dlr_edan_shared_control_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:39 | 2025-01-17 10:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755332800109055 | L3 dlr_edan_shared_control_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:40 | 2025-01-17 10:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755353400109071 | L1 dlr_edan_shared_control_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:43 | 2025-01-17 10:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755363300109079 | L3 dlr_edan_shared_control_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:30 | 2025-01-17 10:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755384900109095 | L1 dlr_edan_shared_control_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:46 | 2025-01-16 06:46 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755395500109103 | L3 dlr_edan_shared_control_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:47 | 2025-01-16 06:47 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755414700109119 | L1 dlr_edan_shared_control_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:50 | 2025-01-16 06:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755424200109127 | L3 dlr_edan_shared_control_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:51 | 2025-01-16 06:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755443400109143 | L1 dlr_edan_shared_control_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:22 | 2025-01-17 10:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755453400109151 | L3 dlr_edan_shared_control_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:26 | 2025-01-17 10:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755473000109167 | L1 dlr_edan_shared_control_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:30 | 2025-01-16 06:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755482300109175 | L3 dlr_edan_shared_control_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:31 | 2025-01-16 06:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755501300109191 | L1 dlr_edan_shared_control_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:34 | 2025-01-16 06:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755510600109199 | L3 dlr_edan_shared_control_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:35 | 2025-01-16 06:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755529500109215 | L1 dlr_sara_grid_clamp_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:38 | 2025-01-16 06:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755538900109223 | L3 dlr_sara_grid_clamp_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:39 | 2025-01-16 06:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755558100109239 | L1 dlr_sara_grid_clamp_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:42 | 2025-01-16 06:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755567800109247 | L3 dlr_sara_grid_clamp_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:15 | 2025-01-16 06:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755587100109263 | L1 dlr_sara_grid_clamp_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:17 | 2025-01-16 06:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755597100109271 | L3 dlr_sara_grid_clamp_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:19 | 2025-01-16 06:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755615700109287 | L1 dlr_sara_grid_clamp_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:22 | 2025-01-16 06:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755625100109295 | L3 dlr_sara_grid_clamp_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:23 | 2025-01-16 06:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755644300109311 | L1 dlr_sara_grid_clamp_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:27 | 2025-01-16 06:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755653600109319 | L3 dlr_sara_grid_clamp_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:28 | 2025-01-16 06:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755673100109335 | L1 dlr_sara_grid_clamp_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:34 | 2025-01-15 14:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755682800109343 | L3 dlr_sara_grid_clamp_ep000046 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:36 | 2025-01-15 14:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755703000109359 | L1 dlr_sara_grid_clamp_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:06 | 2025-01-16 06:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755712700109367 | L3 dlr_sara_grid_clamp_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:07 | 2025-01-16 06:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755732500109383 | L1 dlr_sara_grid_clamp_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:10 | 2025-01-16 06:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755742200109391 | L3 dlr_sara_grid_clamp_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:12 | 2025-01-16 06:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755761400109407 | L1 dlr_sara_grid_clamp_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:14 | 2025-01-16 06:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755771400109415 | L3 dlr_sara_grid_clamp_ep000070 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:17 | 2025-01-15 14:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755790900109431 | L1 dlr_sara_grid_clamp_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:19 | 2025-01-15 14:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755801400109439 | L3 dlr_sara_grid_clamp_ep000078 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:21 | 2025-01-15 14:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755821100109455 | L1 dlr_sara_grid_clamp_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:23 | 2025-01-15 14:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755831400109463 | L3 dlr_sara_grid_clamp_ep000086 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:24 | 2025-01-15 14:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755851300109479 | L1 dlr_sara_grid_clamp_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:27 | 2025-01-15 14:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755861200109487 | L3 dlr_sara_grid_clamp_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:28 | 2025-01-15 14:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755881700109503 | L1 dlr_sara_grid_clamp_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:03 | 2025-01-15 14:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755891300109511 | L3 dlr_sara_grid_clamp_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:04 | 2025-01-15 14:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755910900109527 | L1 dlr_sara_pour_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:08 | 2025-01-15 14:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755921200109535 | L3 dlr_sara_pour_ep000003 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:09 | 2025-01-15 14:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755941600109551 | L1 dlr_sara_pour_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:12 | 2025-01-15 14:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755951000109559 | L3 dlr_sara_pour_ep000011 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:13 | 2025-01-15 14:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755970400109575 | L1 dlr_sara_pour_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:55 | 2025-01-15 13:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755980100109583 | L3 dlr_sara_pour_ep000019 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:59 | 2025-01-15 13:59 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755999000109599 | L1 dlr_sara_pour_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:04 | 2025-01-15 03:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756008500109607 | L3 dlr_sara_pour_ep000027 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:36 | 2025-01-15 13:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756028800109623 | L1 dlr_sara_pour_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:45 | 2025-01-15 13:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756039200109631 | L3 dlr_sara_pour_ep000035 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:46 | 2025-01-15 13:46 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756059700109647 | L1 dlr_sara_pour_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:53 | 2025-01-15 13:53 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754678200108567 | L1 cmu_franka_exploration_dataset_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:35 | 2025-01-17 11:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754688200108575 | L3 cmu_franka_exploration_dataset_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:35 | 2025-01-17 11:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754708700108591 | L1 cmu_franka_exploration_dataset_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:37 | 2025-01-17 11:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754719300108599 | L3 cmu_franka_exploration_dataset_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:38 | 2025-01-17 11:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754739600108615 | L1 cmu_franka_exploration_dataset_ep000107 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:40 | 2025-01-17 11:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754749600108623 | L3 cmu_franka_exploration_dataset_ep000109 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:41 | 2025-01-17 11:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754768600108639 | L1 cmu_franka_exploration_dataset_ep000115 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:25 | 2025-01-17 11:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754778000108647 | L3 cmu_franka_exploration_dataset_ep000117 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:25 | 2025-01-17 11:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754798200108663 | L1 cmu_franka_exploration_dataset_ep000123 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:27 | 2025-01-17 11:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754807900108671 | L3 cmu_franka_exploration_dataset_ep000125 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:28 | 2025-01-17 11:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754827800108687 | L1 cmu_franka_exploration_dataset_ep000131 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:30 | 2025-01-17 11:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754837300108695 | L3 cmu_franka_exploration_dataset_ep000133 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:31 | 2025-01-17 11:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756110700109686 | L1 dlr_sara_pour_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:17 | 2025-01-09 10:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756120700109694 | L3 dlr_sara_pour_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:19 | 2025-01-09 10:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756141000109710 | L1 dlr_sara_pour_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:21 | 2025-01-09 10:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756150600109718 | L3 dlr_sara_pour_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-14 08:40 | 2025-01-14 08:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750673400105648 | L1 berkeley_rpt_ep000026 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:48 | 2025-07-08 15:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750683000105656 | L3 berkeley_rpt_ep000028 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:38 | 2025-07-08 15:38 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750703600105672 | L1 berkeley_rpt_ep000034 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:13 | 2025-07-08 15:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750712900105680 | L3 berkeley_rpt_ep000036 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:08 | 2025-07-08 15:08 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750733700105696 | L1 berkeley_rpt_ep000042 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:00 | 2025-06-30 15:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750744500105704 | L3 berkeley_rpt_ep000044 | Robotics | ONLINE | COLLECTING | 2025-06-30 14:37 | 2025-06-30 14:37 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750765400105720 | L1 berkeley_rpt_ep000050 | Robotics | ONLINE | COLLECTING | 2025-06-30 08:30 | 2025-06-30 08:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750775600105728 | L3 berkeley_rpt_ep000052 | Robotics | ONLINE | COLLECTING | 2025-07-09 14:27 | 2025-07-09 14:27 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750795900105744 | L1 berkeley_rpt_ep000058 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:07 | 2025-07-08 16:07 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750805700105752 | L3 berkeley_rpt_ep000060 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:54 | 2025-07-17 05:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750826900105768 | L1 berkeley_rpt_ep000066 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:26 | 2025-07-17 01:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750836800105776 | L3 berkeley_rpt_ep000068 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:22 | 2025-07-17 01:22 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750856900105792 | L1 berkeley_rpt_ep000074 | Robotics | ONLINE | COLLECTING | 2025-07-10 06:25 | 2025-07-10 06:25 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750867400105800 | L3 berkeley_rpt_ep000076 | Robotics | ONLINE | COLLECTING | 2025-07-19 05:59 | 2025-07-19 05:59 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750888500105816 | L1 berkeley_rpt_ep000082 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:07 | 2025-07-18 17:07 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750898400105824 | L3 berkeley_rpt_ep000084 | Robotics | ONLINE | COLLECTING | 2025-07-18 16:52 | 2025-07-18 16:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750918300105840 | L1 berkeley_rpt_ep000090 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:36 | 2025-07-18 11:36 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750928600105848 | L3 berkeley_rpt_ep000092 | Robotics | ONLINE | COLLECTING | 2025-07-18 07:03 | 2025-07-18 07:03 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750949700105864 | L1 berkeley_rpt_ep000098 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:49 | 2025-07-18 06:49 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750960400105872 | L3 berkeley_rpt_ep000100 | Robotics | ONLINE | COLLECTING | 2025-07-17 11:17 | 2025-07-17 11:17 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750980900105888 | L1 berkeley_rpt_ep000106 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:40 | 2025-07-20 14:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750990900105896 | L3 berkeley_rpt_ep000108 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:36 | 2025-07-20 14:36 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751011300105912 | L1 berkeley_rpt_ep000114 | Robotics | ONLINE | COLLECTING | 2025-07-19 12:05 | 2025-07-19 12:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751022200105920 | L3 berkeley_rpt_ep000116 | Robotics | ONLINE | COLLECTING | 2025-07-19 11:31 | 2025-07-19 11:31 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751149200105936 | L1 berkeley_rpt_ep000122 | Robotics | ONLINE | COLLECTING | 2025-07-21 15:14 | 2025-07-21 15:14 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751161400105944 | L3 berkeley_rpt_ep000124 | Robotics | ONLINE | COLLECTING | 2025-07-21 15:06 | 2025-07-21 15:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751184000105960 | L1 berkeley_rpt_ep000130 | Robotics | ONLINE | COLLECTING | 2025-07-24 01:35 | 2025-07-24 01:35 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751194900105968 | L3 berkeley_rpt_ep000132 | Robotics | ONLINE | COLLECTING | 2025-07-22 15:28 | 2025-07-22 15:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751218100105984 | L1 berkeley_rpt_ep000138 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:38 | 2025-07-21 16:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751230200105992 | L3 berkeley_rpt_ep000140 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:30 | 2025-07-21 16:30 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751254900106008 | L1 berkeley_rpt_ep000146 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:49 | 2025-07-24 06:49 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751265000106016 | L3 berkeley_rpt_ep000148 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:43 | 2025-07-24 06:43 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751285000106032 | L1 berkeley_rpt_ep000154 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:44 | 2025-07-25 17:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751295000106040 | L3 berkeley_rpt_ep000156 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:40 | 2025-07-25 17:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751316700106056 | L1 berkeley_rpt_ep000162 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:13 | 2025-07-24 17:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751327600106064 | L3 berkeley_rpt_ep000164 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:10 | 2025-07-24 17:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751347300106080 | L1 berkeley_rpt_ep000170 | Robotics | ONLINE | COLLECTING | 2025-07-24 13:15 | 2025-07-24 13:15 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751358000106088 | L3 berkeley_rpt_ep000172 | Robotics | ONLINE | COLLECTING | 2025-07-24 07:01 | 2025-07-24 07:01 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751379500106104 | L1 berkeley_rpt_ep000178 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:25 | 2025-07-29 08:25 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751390300106112 | L3 berkeley_rpt_ep000180 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:16 | 2025-07-28 17:16 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751411700106128 | L1 berkeley_rpt_ep000186 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:06 | 2025-07-28 17:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751422100106136 | L3 berkeley_rpt_ep000188 | Robotics | ONLINE | COLLECTING | 2025-07-28 16:59 | 2025-07-28 16:59 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751443000106152 | L1 berkeley_rpt_ep000194 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:23 | 2025-07-26 12:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751453800106160 | L3 berkeley_rpt_ep000196 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:12 | 2025-07-26 12:12 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751474300106176 | L1 berkeley_rpt_ep000202 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:48 | 2025-07-29 11:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751484700106184 | L3 berkeley_rpt_ep000204 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:40 | 2025-07-29 11:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751504400106200 | L1 berkeley_rpt_ep000210 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:38 | 2025-07-29 09:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751514500106208 | L3 berkeley_rpt_ep000212 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:36 | 2025-07-29 09:36 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751534700106224 | L1 berkeley_rpt_ep000218 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:27 | 2025-07-29 09:27 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751545100106232 | L3 berkeley_rpt_ep000220 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:42 | 2025-07-29 08:42 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751565600106248 | L1 berkeley_rpt_ep000226 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:30 | 2025-07-29 08:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751575400106256 | L3 berkeley_rpt_ep000228 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:53 | 2025-07-29 11:53 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751595200106272 | L1 berkeley_rpt_ep000234 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:56 | 2025-08-01 17:56 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751605000106280 | L3 berkeley_rpt_ep000236 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:48 | 2025-08-01 17:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751625200106296 | L1 berkeley_rpt_ep000242 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:04 | 2025-07-30 17:04 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751635600106304 | L3 berkeley_rpt_ep000244 | Robotics | ONLINE | COLLECTING | 2025-07-30 13:52 | 2025-07-30 13:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751655400106320 | L1 berkeley_rpt_ep000250 | Robotics | ONLINE | COLLECTING | 2025-07-29 17:19 | 2025-07-29 17:19 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751665400106328 | L3 berkeley_rpt_ep000252 | Robotics | ONLINE | COLLECTING | 2025-07-29 17:14 | 2025-07-29 17:14 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751749200106392 | L1 berkeley_rpt_ep000274 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:46 | 2025-08-22 06:46 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751759700106400 | L3 berkeley_rpt_ep000276 | Robotics | ONLINE | COLLECTING | 2025-08-04 11:50 | 2025-08-04 11:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155754867800108720 | L1 cmu_franka_exploration_dataset_ep000142 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:15 | 2025-01-17 11:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754877500108728 | L3 cmu_franka_exploration_dataset_ep000144 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:16 | 2025-01-17 11:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754898300108744 | L1 cmu_franka_exploration_dataset_ep000150 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:18 | 2025-01-17 11:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754908600108752 | L3 cmu_franka_exploration_dataset_ep000152 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:19 | 2025-01-17 11:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754929200108768 | L1 cmu_franka_exploration_dataset_ep000158 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:21 | 2025-01-17 11:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754938900108776 | L3 cmu_franka_exploration_dataset_ep000160 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:21 | 2025-01-17 11:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754958900108792 | L1 cmu_franka_exploration_dataset_ep000166 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:23 | 2025-01-17 11:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754969200108800 | L3 cmu_franka_exploration_dataset_ep000168 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:13 | 2025-01-17 11:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754989300108816 | L1 cmu_franka_exploration_dataset_ep000174 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:15 | 2025-01-17 11:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754999400108824 | L3 cmu_franka_exploration_dataset_ep000176 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:09 | 2025-01-17 11:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755019800108840 | L1 cmu_franka_exploration_dataset_ep000182 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:11 | 2025-01-17 11:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755030000108848 | L3 cmu_franka_exploration_dataset_ep000184 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:11 | 2025-01-17 11:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755083900108864 | L1 cmu_franka_exploration_dataset_ep000190 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:00 | 2025-01-17 11:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755095100108872 | L3 cmu_franka_exploration_dataset_ep000192 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:01 | 2025-01-17 11:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755116000108888 | L1 cmu_franka_exploration_dataset_ep000198 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:03 | 2025-01-17 11:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755127200108896 | L3 dlr_edan_shared_control_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:04 | 2025-01-17 11:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755148000108912 | L1 dlr_edan_shared_control_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:06 | 2025-01-17 11:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755158200108920 | L3 dlr_edan_shared_control_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:07 | 2025-01-17 11:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755179200108936 | L1 dlr_edan_shared_control_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:49 | 2025-01-17 10:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755190500108944 | L3 dlr_edan_shared_control_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:50 | 2025-01-17 10:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755212000108960 | L1 dlr_edan_shared_control_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:52 | 2025-01-17 10:52 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755222800108968 | L3 dlr_edan_shared_control_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:54 | 2025-01-17 10:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755243400108984 | L1 dlr_edan_shared_control_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:56 | 2025-01-17 10:56 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755253400108992 | L3 dlr_edan_shared_control_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:57 | 2025-01-17 10:57 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755273400109008 | L1 dlr_edan_shared_control_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:32 | 2025-01-17 10:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755283500109016 | L3 dlr_edan_shared_control_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:34 | 2025-01-17 10:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755304100109032 | L1 dlr_edan_shared_control_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:36 | 2025-01-17 10:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755313700109040 | L3 dlr_edan_shared_control_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:38 | 2025-01-17 10:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755334000109056 | L1 dlr_edan_shared_control_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:40 | 2025-01-17 10:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755344000109064 | L3 dlr_edan_shared_control_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:41 | 2025-01-17 10:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755364600109080 | L1 dlr_edan_shared_control_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:30 | 2025-01-17 10:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755375500109088 | L3 dlr_edan_shared_control_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:44 | 2025-01-16 06:44 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755396800109104 | L1 dlr_edan_shared_control_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:47 | 2025-01-16 06:47 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755406500109112 | L3 dlr_edan_shared_control_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:49 | 2025-01-16 06:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755425500109128 | L1 dlr_edan_shared_control_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:16 | 2025-01-17 10:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755435100109136 | L3 dlr_edan_shared_control_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:21 | 2025-01-17 10:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755454700109152 | L1 dlr_edan_shared_control_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:26 | 2025-01-17 10:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755464800109160 | L3 dlr_edan_shared_control_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:29 | 2025-01-17 10:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755483400109176 | L1 dlr_edan_shared_control_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:32 | 2025-01-16 06:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755493000109184 | L3 dlr_edan_shared_control_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:33 | 2025-01-16 06:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755511700109200 | L1 dlr_edan_shared_control_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:35 | 2025-01-16 06:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755521000109208 | L3 dlr_sara_grid_clamp_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:37 | 2025-01-16 06:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755540100109224 | L1 dlr_sara_grid_clamp_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:40 | 2025-01-16 06:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755549600109232 | L3 dlr_sara_grid_clamp_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:41 | 2025-01-16 06:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755568900109248 | L1 dlr_sara_grid_clamp_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:15 | 2025-01-16 06:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755578500109256 | L3 dlr_sara_grid_clamp_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:16 | 2025-01-16 06:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755598300109272 | L1 dlr_sara_grid_clamp_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:19 | 2025-01-16 06:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755607800109280 | L3 dlr_sara_grid_clamp_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:21 | 2025-01-16 06:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755626300109296 | L1 dlr_sara_grid_clamp_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:24 | 2025-01-16 06:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755636000109304 | L3 dlr_sara_grid_clamp_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:25 | 2025-01-16 06:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755654800109320 | L1 dlr_sara_grid_clamp_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:28 | 2025-01-16 06:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755664600109328 | L3 dlr_sara_grid_clamp_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:29 | 2025-01-16 06:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755683900109344 | L1 dlr_sara_grid_clamp_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:36 | 2025-01-15 14:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755694200109352 | L3 dlr_sara_grid_clamp_ep000049 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:39 | 2025-01-15 14:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755713900109368 | L1 dlr_sara_grid_clamp_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:08 | 2025-01-16 06:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755723900109376 | L3 dlr_sara_grid_clamp_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:09 | 2025-01-16 06:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755743400109392 | L1 dlr_sara_grid_clamp_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:12 | 2025-01-16 06:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755753200109400 | L3 dlr_sara_grid_clamp_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:13 | 2025-01-16 06:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755772600109416 | L1 dlr_sara_grid_clamp_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:17 | 2025-01-15 14:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755782100109424 | L3 dlr_sara_grid_clamp_ep000073 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:18 | 2025-01-15 14:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755802700109440 | L1 dlr_sara_grid_clamp_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:21 | 2025-01-15 14:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755812300109448 | L3 dlr_sara_grid_clamp_ep000081 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:22 | 2025-01-15 14:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755832600109464 | L1 dlr_sara_grid_clamp_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:24 | 2025-01-15 14:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755842700109472 | L3 dlr_sara_grid_clamp_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:26 | 2025-01-15 14:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755862400109488 | L1 dlr_sara_grid_clamp_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:30 | 2025-01-15 14:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755872800109496 | L3 dlr_sara_grid_clamp_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:02 | 2025-01-15 14:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755892600109512 | L1 dlr_sara_grid_clamp_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:05 | 2025-01-15 14:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755902400109520 | L3 dlr_sara_grid_clamp_ep000105 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:06 | 2025-01-15 14:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755922500109536 | L1 dlr_sara_pour_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:09 | 2025-01-15 14:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755932800109544 | L3 dlr_sara_pour_ep000006 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:11 | 2025-01-15 14:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755952300109560 | L1 dlr_sara_pour_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:14 | 2025-01-15 14:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755962100109568 | L3 dlr_sara_pour_ep000014 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:15 | 2025-01-15 14:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755981200109584 | L1 dlr_sara_pour_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:00 | 2025-01-15 14:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755990700109592 | L3 dlr_sara_pour_ep000022 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:01 | 2025-01-15 03:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756009700109608 | L1 dlr_sara_pour_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:36 | 2025-01-15 13:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756019400109616 | L3 dlr_sara_pour_ep000030 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:39 | 2025-01-15 13:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756040500109632 | L1 dlr_sara_pour_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:47 | 2025-01-15 13:47 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756051200109640 | L3 dlr_sara_pour_ep000038 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:50 | 2025-01-15 13:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754669000108560 | L3 cmu_franka_exploration_dataset_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:43 | 2025-01-17 11:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754689500108576 | L1 cmu_franka_exploration_dataset_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:36 | 2025-01-17 11:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754700000108584 | L3 cmu_franka_exploration_dataset_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:36 | 2025-01-17 11:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754720700108600 | L1 cmu_franka_exploration_dataset_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:38 | 2025-01-17 11:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754731000108608 | L3 cmu_franka_exploration_dataset_ep000104 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:39 | 2025-01-17 11:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754750900108624 | L1 cmu_franka_exploration_dataset_ep000110 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:41 | 2025-01-17 11:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754760400108632 | L3 cmu_franka_exploration_dataset_ep000112 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:42 | 2025-01-17 11:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754779300108648 | L1 cmu_franka_exploration_dataset_ep000118 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:26 | 2025-01-17 11:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754789400108656 | L3 cmu_franka_exploration_dataset_ep000120 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:27 | 2025-01-17 11:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754809100108672 | L1 cmu_franka_exploration_dataset_ep000126 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:28 | 2025-01-17 11:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754819300108680 | L3 cmu_franka_exploration_dataset_ep000128 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:29 | 2025-01-17 11:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754838500108696 | L1 cmu_franka_exploration_dataset_ep000134 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:31 | 2025-01-17 11:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754848200108704 | L3 cmu_franka_exploration_dataset_ep000136 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:32 | 2025-01-17 11:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 7042553708800103925 | R6D9 Data Collection | R6D9 | PREPARING | COLLECTING | 2025-03-26 02:42 | 2025-03-26 02:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756101500109679 | L3 dlr_sara_pour_ep000051 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:16 | 2025-01-09 10:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756121900109695 | L1 dlr_sara_pour_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:19 | 2025-01-09 10:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756132000109703 | L3 dlr_sara_pour_ep000059 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:20 | 2025-01-09 10:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756151700109719 | L1 dlr_sara_pour_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:48 | 2025-01-15 02:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756161600109727 | L3 dlr_sara_pour_ep000067 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:52 | 2025-01-15 02:52 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750684200105657 | L1 berkeley_rpt_ep000029 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:34 | 2025-07-08 15:34 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750694000105665 | L3 berkeley_rpt_ep000031 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:25 | 2025-07-08 15:25 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750714000105681 | L1 berkeley_rpt_ep000037 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:44 | 2025-06-30 15:44 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750724000105689 | L3 berkeley_rpt_ep000039 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:28 | 2025-06-30 15:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750745800105705 | L1 berkeley_rpt_ep000045 | Robotics | ONLINE | COLLECTING | 2025-06-30 11:35 | 2025-06-30 11:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750756300105713 | L3 berkeley_rpt_ep000047 | Robotics | ONLINE | COLLECTING | 2025-06-30 11:29 | 2025-06-30 11:29 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750777000105729 | L1 berkeley_rpt_ep000053 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:26 | 2025-07-08 16:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750787000105737 | L3 berkeley_rpt_ep000055 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:20 | 2025-07-08 16:20 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750806900105753 | L1 berkeley_rpt_ep000061 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:50 | 2025-07-17 05:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750817400105761 | L3 berkeley_rpt_ep000063 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:42 | 2025-07-17 05:42 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750838200105777 | L1 berkeley_rpt_ep000069 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:20 | 2025-07-17 01:20 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750848100105785 | L3 berkeley_rpt_ep000071 | Robotics | ONLINE | COLLECTING | 2025-07-10 12:06 | 2025-07-10 12:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750868700105801 | L1 berkeley_rpt_ep000077 | Robotics | ONLINE | COLLECTING | 2025-07-19 05:57 | 2025-07-19 05:57 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750879200105809 | L3 berkeley_rpt_ep000079 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:21 | 2025-07-18 17:21 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750899500105825 | L1 berkeley_rpt_ep000085 | Robotics | ONLINE | COLLECTING | 2025-07-18 16:50 | 2025-07-18 16:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750909400105833 | L3 berkeley_rpt_ep000087 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:42 | 2025-07-18 11:42 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750929900105849 | L1 berkeley_rpt_ep000093 | Robotics | ONLINE | COLLECTING | 2025-07-18 07:00 | 2025-07-18 07:00 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750940300105857 | L3 berkeley_rpt_ep000095 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:54 | 2025-07-18 06:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750961600105873 | L1 berkeley_rpt_ep000101 | Robotics | ONLINE | COLLECTING | 2025-07-17 09:22 | 2025-07-17 09:22 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750971900105881 | L3 berkeley_rpt_ep000103 | Robotics | ONLINE | COLLECTING | 2025-07-21 14:52 | 2025-07-21 14:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750992300105897 | L1 berkeley_rpt_ep000109 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:35 | 2025-07-20 14:35 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751002800105905 | L3 berkeley_rpt_ep000111 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:31 | 2025-07-20 14:31 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751023500105921 | L1 berkeley_rpt_ep000117 | Robotics | ONLINE | COLLECTING | 2025-07-19 06:08 | 2025-07-19 06:08 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751138300105929 | L3 berkeley_rpt_ep000119 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:19 | 2025-07-21 16:19 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751162900105945 | L1 berkeley_rpt_ep000125 | Robotics | ONLINE | COLLECTING | 2025-07-21 15:05 | 2025-07-21 15:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751174600105953 | L3 berkeley_rpt_ep000127 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:32 | 2025-07-24 06:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751196300105969 | L1 berkeley_rpt_ep000133 | Robotics | ONLINE | COLLECTING | 2025-07-22 15:27 | 2025-07-22 15:27 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751207600105977 | L3 berkeley_rpt_ep000135 | Robotics | ONLINE | COLLECTING | 2025-07-22 05:53 | 2025-07-22 05:53 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751231800105993 | L1 berkeley_rpt_ep000141 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:28 | 2025-07-21 16:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751244600106001 | L3 berkeley_rpt_ep000143 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:23 | 2025-07-21 16:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751266200106017 | L1 berkeley_rpt_ep000149 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:41 | 2025-07-24 06:41 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751276300106025 | L3 berkeley_rpt_ep000151 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:04 | 2025-07-26 03:04 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751296300106041 | L1 berkeley_rpt_ep000157 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:39 | 2025-07-25 17:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751307200106049 | L3 berkeley_rpt_ep000159 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:17 | 2025-07-24 17:17 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751329000106065 | L1 berkeley_rpt_ep000165 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:09 | 2025-07-24 17:09 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751338800106073 | L3 berkeley_rpt_ep000167 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:05 | 2025-07-24 17:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751359400106089 | L1 berkeley_rpt_ep000173 | Robotics | ONLINE | COLLECTING | 2025-07-24 07:00 | 2025-07-24 07:00 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751370100106097 | L3 berkeley_rpt_ep000175 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:29 | 2025-07-29 08:29 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751391600106113 | L1 berkeley_rpt_ep000181 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:15 | 2025-07-28 17:15 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751402400106121 | L3 berkeley_rpt_ep000183 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:11 | 2025-07-28 17:11 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751423400106137 | L1 berkeley_rpt_ep000189 | Robotics | ONLINE | COLLECTING | 2025-07-28 16:58 | 2025-07-28 16:58 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751434100106145 | L3 berkeley_rpt_ep000191 | Robotics | ONLINE | COLLECTING | 2025-07-27 16:02 | 2025-07-27 16:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751455200106161 | L1 berkeley_rpt_ep000197 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:12 | 2025-07-26 12:12 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751465600106169 | L3 berkeley_rpt_ep000199 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:19 | 2025-07-26 03:19 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751485900106185 | L1 berkeley_rpt_ep000205 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:39 | 2025-07-29 11:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751495600106193 | L3 berkeley_rpt_ep000207 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:33 | 2025-07-29 11:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751515700106209 | L1 berkeley_rpt_ep000213 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:35 | 2025-07-29 09:35 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751525500106217 | L3 berkeley_rpt_ep000215 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:32 | 2025-07-29 09:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751546600106233 | L1 berkeley_rpt_ep000221 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:40 | 2025-07-29 08:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751556500106241 | L3 berkeley_rpt_ep000223 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:34 | 2025-07-29 08:34 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751576600106257 | L1 berkeley_rpt_ep000229 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:51 | 2025-07-29 11:51 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751586400106265 | L3 berkeley_rpt_ep000231 | Robotics | ONLINE | COLLECTING | 2025-08-03 12:32 | 2025-08-03 12:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751606300106281 | L1 berkeley_rpt_ep000237 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:47 | 2025-08-01 17:47 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751616400106289 | L3 berkeley_rpt_ep000239 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:17 | 2025-07-30 17:17 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751637000106305 | L1 berkeley_rpt_ep000245 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:57 | 2025-07-30 11:57 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751646800106313 | L3 berkeley_rpt_ep000247 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:51 | 2025-07-30 11:51 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751666700106329 | L1 berkeley_rpt_ep000253 | Robotics | ONLINE | COLLECTING | 2025-07-29 17:13 | 2025-07-29 17:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751729800106377 | L1 berkeley_rpt_ep000269 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:57 | 2025-08-22 06:57 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751739900106385 | L3 berkeley_rpt_ep000271 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:49 | 2025-08-22 06:49 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751761000106401 | L1 berkeley_rpt_ep000277 | Robotics | ONLINE | COLLECTING | 2025-08-04 11:49 | 2025-08-04 11:49 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155754859100108713 | L3 cmu_franka_exploration_dataset_ep000139 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:33 | 2025-01-17 11:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754878800108729 | L1 cmu_franka_exploration_dataset_ep000145 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:16 | 2025-01-17 11:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754889100108737 | L3 cmu_franka_exploration_dataset_ep000147 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:17 | 2025-01-17 11:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754909900108753 | L1 cmu_franka_exploration_dataset_ep000153 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:19 | 2025-01-17 11:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754920300108761 | L3 cmu_franka_exploration_dataset_ep000155 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:20 | 2025-01-17 11:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754940200108777 | L1 cmu_franka_exploration_dataset_ep000161 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:22 | 2025-01-17 11:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754950200108785 | L3 cmu_franka_exploration_dataset_ep000163 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:23 | 2025-01-17 11:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754970300108801 | L1 cmu_franka_exploration_dataset_ep000169 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:13 | 2025-01-17 11:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754980200108809 | L3 cmu_franka_exploration_dataset_ep000171 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:14 | 2025-01-17 11:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755000500108825 | L1 cmu_franka_exploration_dataset_ep000177 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:09 | 2025-01-17 11:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755010900108833 | L3 cmu_franka_exploration_dataset_ep000179 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:10 | 2025-01-17 11:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755031400108849 | L1 cmu_franka_exploration_dataset_ep000185 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:12 | 2025-01-17 11:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755072800108857 | L3 cmu_franka_exploration_dataset_ep000187 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:59 | 2025-01-17 10:59 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755096300108873 | L1 cmu_franka_exploration_dataset_ep000193 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:01 | 2025-01-17 11:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755106900108881 | L3 cmu_franka_exploration_dataset_ep000195 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:02 | 2025-01-17 11:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755128500108897 | L1 dlr_edan_shared_control_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:04 | 2025-01-17 11:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755138600108905 | L3 dlr_edan_shared_control_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:05 | 2025-01-17 11:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755159600108921 | L1 dlr_edan_shared_control_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:07 | 2025-01-17 11:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755170000108929 | L3 dlr_edan_shared_control_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:46 | 2025-01-17 10:46 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755191800108945 | L1 dlr_edan_shared_control_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:50 | 2025-01-17 10:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755202500108953 | L3 dlr_edan_shared_control_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:51 | 2025-01-17 10:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755224100108969 | L1 dlr_edan_shared_control_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:54 | 2025-01-17 10:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755234700108977 | L3 dlr_edan_shared_control_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:55 | 2025-01-17 10:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755254600108993 | L1 dlr_edan_shared_control_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:57 | 2025-01-17 10:57 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755264800109001 | L3 dlr_edan_shared_control_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:59 | 2025-01-17 10:59 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755284800109017 | L1 dlr_edan_shared_control_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:34 | 2025-01-17 10:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755295600109025 | L3 dlr_edan_shared_control_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:35 | 2025-01-17 10:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755314900109041 | L1 dlr_edan_shared_control_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:38 | 2025-01-17 10:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755325400109049 | L3 dlr_edan_shared_control_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:39 | 2025-01-17 10:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755346300109065 | L1 dlr_edan_shared_control_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:42 | 2025-01-17 10:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755356000109073 | L3 dlr_edan_shared_control_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:43 | 2025-01-17 10:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755376700109089 | L1 dlr_edan_shared_control_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:44 | 2025-01-16 06:44 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755387600109097 | L3 dlr_edan_shared_control_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:46 | 2025-01-16 06:46 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755407700109113 | L1 dlr_edan_shared_control_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:49 | 2025-01-16 06:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755417200109121 | L3 dlr_edan_shared_control_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:50 | 2025-01-16 06:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755436400109137 | L1 dlr_edan_shared_control_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:21 | 2025-01-17 10:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755445900109145 | L3 dlr_edan_shared_control_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:23 | 2025-01-17 10:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755466000109161 | L1 dlr_edan_shared_control_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:29 | 2025-01-17 10:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755475200109169 | L3 dlr_edan_shared_control_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:31 | 2025-01-16 06:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755494100109185 | L1 dlr_edan_shared_control_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:33 | 2025-01-16 06:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755503700109193 | L3 dlr_edan_shared_control_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:34 | 2025-01-16 06:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755522300109209 | L1 dlr_sara_grid_clamp_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:37 | 2025-01-16 06:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755531800109217 | L3 dlr_sara_grid_clamp_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:38 | 2025-01-16 06:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755550800109233 | L1 dlr_sara_grid_clamp_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:41 | 2025-01-16 06:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755560600109241 | L3 dlr_sara_grid_clamp_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:42 | 2025-01-16 06:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755579800109257 | L1 dlr_sara_grid_clamp_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:17 | 2025-01-16 06:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755589500109265 | L3 dlr_sara_grid_clamp_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:18 | 2025-01-16 06:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755608900109281 | L1 dlr_sara_grid_clamp_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:21 | 2025-01-16 06:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755618000109289 | L3 dlr_sara_grid_clamp_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:22 | 2025-01-16 06:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755637100109305 | L1 dlr_sara_grid_clamp_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:26 | 2025-01-16 06:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755646700109313 | L3 dlr_sara_grid_clamp_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:27 | 2025-01-16 06:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755665900109329 | L1 dlr_sara_grid_clamp_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:29 | 2025-01-16 06:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755675800109337 | L3 dlr_sara_grid_clamp_ep000044 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:34 | 2025-01-15 14:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755695600109353 | L1 dlr_sara_grid_clamp_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:40 | 2025-01-15 14:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755705500109361 | L3 dlr_sara_grid_clamp_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:06 | 2025-01-16 06:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755725100109377 | L1 dlr_sara_grid_clamp_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:09 | 2025-01-16 06:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755735000109385 | L3 dlr_sara_grid_clamp_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:11 | 2025-01-16 06:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755754300109401 | L1 dlr_sara_grid_clamp_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:13 | 2025-01-16 06:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755764000109409 | L3 dlr_sara_grid_clamp_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:14 | 2025-01-16 06:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755783400109425 | L1 dlr_sara_grid_clamp_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:18 | 2025-01-15 14:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755793500109433 | L3 dlr_sara_grid_clamp_ep000076 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:20 | 2025-01-15 14:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755813500109449 | L1 dlr_sara_grid_clamp_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:22 | 2025-01-15 14:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755823700109457 | L3 dlr_sara_grid_clamp_ep000084 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:23 | 2025-01-15 14:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755843900109473 | L1 dlr_sara_grid_clamp_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:26 | 2025-01-15 14:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755853600109481 | L3 dlr_sara_grid_clamp_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:27 | 2025-01-15 14:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755874200109497 | L1 dlr_sara_grid_clamp_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:02 | 2025-01-15 14:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755884100109505 | L3 dlr_sara_grid_clamp_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:03 | 2025-01-15 14:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755903600109521 | L1 dlr_sara_grid_clamp_ep000106 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:06 | 2025-01-15 14:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755913400109529 | L3 dlr_sara_pour_ep000001 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:08 | 2025-01-15 14:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755934100109545 | L1 dlr_sara_pour_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:11 | 2025-01-15 14:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755943900109553 | L3 dlr_sara_pour_ep000009 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:12 | 2025-01-15 14:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755963400109569 | L1 dlr_sara_pour_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:15 | 2025-01-15 14:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755972900109577 | L3 dlr_sara_pour_ep000017 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:55 | 2025-01-15 13:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755992000109593 | L1 dlr_sara_pour_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:01 | 2025-01-15 03:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756001400109601 | L3 dlr_sara_pour_ep000025 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:04 | 2025-01-15 03:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756020800109617 | L1 dlr_sara_pour_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:39 | 2025-01-15 13:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756031400109625 | L3 dlr_sara_pour_ep000033 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:45 | 2025-01-15 13:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756052500109641 | L1 dlr_sara_pour_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:51 | 2025-01-15 13:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756062400109649 | L3 dlr_sara_pour_ep000041 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:54 | 2025-01-15 13:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754670300108561 | L1 cmu_franka_exploration_dataset_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:43 | 2025-01-17 11:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754680700108569 | L3 cmu_franka_exploration_dataset_ep000091 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:35 | 2025-01-17 11:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754701100108585 | L1 cmu_franka_exploration_dataset_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:36 | 2025-01-17 11:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754711400108593 | L3 cmu_franka_exploration_dataset_ep000099 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:37 | 2025-01-17 11:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754732300108609 | L1 cmu_franka_exploration_dataset_ep000105 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:39 | 2025-01-17 11:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754741900108617 | L3 cmu_franka_exploration_dataset_ep000107 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:40 | 2025-01-17 11:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754761500108633 | L1 cmu_franka_exploration_dataset_ep000113 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:42 | 2025-01-17 11:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754770900108641 | L3 cmu_franka_exploration_dataset_ep000115 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:25 | 2025-01-17 11:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754790600108657 | L1 cmu_franka_exploration_dataset_ep000121 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:27 | 2025-01-17 11:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754800600108665 | L3 cmu_franka_exploration_dataset_ep000123 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:28 | 2025-01-17 11:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754820600108681 | L1 cmu_franka_exploration_dataset_ep000129 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:29 | 2025-01-17 11:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754830100108689 | L3 cmu_franka_exploration_dataset_ep000131 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:30 | 2025-01-17 11:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754849400108705 | L1 cmu_franka_exploration_dataset_ep000137 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:32 | 2025-01-17 11:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756102800109680 | L1 dlr_sara_pour_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:16 | 2025-01-09 10:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756113400109688 | L3 dlr_sara_pour_ep000054 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:18 | 2025-01-09 10:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756133300109704 | L1 dlr_sara_pour_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:20 | 2025-01-09 10:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756143200109712 | L3 dlr_sara_pour_ep000062 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:22 | 2025-01-09 10:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756162700109728 | L1 dlr_sara_pour_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:53 | 2025-01-15 02:53 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750566400105570 | L1 berkeley_rpt_ep000000 | Robotics | ONLINE | COLLECTING | 2025-06-28 11:18 | 2025-06-29 11:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750675900105650 | L3 berkeley_rpt_ep000026 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:47 | 2025-07-08 15:47 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750695300105666 | L1 berkeley_rpt_ep000032 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:22 | 2025-07-08 15:22 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750705900105674 | L3 berkeley_rpt_ep000034 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:13 | 2025-07-08 15:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750725400105690 | L1 berkeley_rpt_ep000040 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:26 | 2025-06-30 15:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750736500105698 | L3 berkeley_rpt_ep000042 | Robotics | ONLINE | COLLECTING | 2025-06-30 14:59 | 2025-06-30 14:59 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750757800105714 | L1 berkeley_rpt_ep000048 | Robotics | ONLINE | COLLECTING | 2025-06-30 11:20 | 2025-06-30 11:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750767800105722 | L3 berkeley_rpt_ep000050 | Robotics | ONLINE | COLLECTING | 2025-07-09 14:44 | 2025-07-09 14:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750788200105738 | L1 berkeley_rpt_ep000056 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:15 | 2025-07-08 16:15 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750798300105746 | L3 berkeley_rpt_ep000058 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:59 | 2025-07-17 05:59 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750818800105762 | L1 berkeley_rpt_ep000064 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:39 | 2025-07-17 05:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750829400105770 | L3 berkeley_rpt_ep000066 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:26 | 2025-07-17 01:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750849300105786 | L1 berkeley_rpt_ep000072 | Robotics | ONLINE | COLLECTING | 2025-07-10 11:07 | 2025-07-10 11:07 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750859700105794 | L3 berkeley_rpt_ep000074 | Robotics | ONLINE | COLLECTING | 2025-07-10 06:24 | 2025-07-10 06:24 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750880700105810 | L1 berkeley_rpt_ep000080 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:17 | 2025-07-18 17:17 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750890900105818 | L3 berkeley_rpt_ep000082 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:06 | 2025-07-18 17:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750910800105834 | L1 berkeley_rpt_ep000088 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:40 | 2025-07-18 11:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750920800105842 | L3 berkeley_rpt_ep000090 | Robotics | ONLINE | COLLECTING | 2025-07-18 07:10 | 2025-07-18 07:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750941800105858 | L1 berkeley_rpt_ep000096 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:53 | 2025-07-18 06:53 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750952300105866 | L3 berkeley_rpt_ep000098 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:48 | 2025-07-18 06:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750973200105882 | L1 berkeley_rpt_ep000104 | Robotics | ONLINE | COLLECTING | 2025-07-21 14:39 | 2025-07-21 14:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750983300105890 | L3 berkeley_rpt_ep000106 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:40 | 2025-07-20 14:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751004000105906 | L1 berkeley_rpt_ep000112 | Robotics | ONLINE | COLLECTING | 2025-07-19 13:02 | 2025-07-19 13:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751013800105914 | L3 berkeley_rpt_ep000114 | Robotics | ONLINE | COLLECTING | 2025-07-19 11:44 | 2025-07-19 11:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751140000105930 | L1 berkeley_rpt_ep000120 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:18 | 2025-07-21 16:18 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751152300105938 | L3 berkeley_rpt_ep000122 | Robotics | ONLINE | COLLECTING | 2025-07-21 15:13 | 2025-07-21 15:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751175900105954 | L1 berkeley_rpt_ep000128 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:31 | 2025-07-24 06:31 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751186600105962 | L3 berkeley_rpt_ep000130 | Robotics | ONLINE | COLLECTING | 2025-07-24 01:35 | 2025-07-24 01:35 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751209000105978 | L1 berkeley_rpt_ep000136 | Robotics | ONLINE | COLLECTING | 2025-07-22 05:50 | 2025-07-22 05:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751221100105986 | L3 berkeley_rpt_ep000138 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:37 | 2025-07-21 16:37 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751246100106002 | L1 berkeley_rpt_ep000144 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:57 | 2025-07-24 06:57 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751257400106010 | L3 berkeley_rpt_ep000146 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:49 | 2025-07-24 06:49 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751277500106026 | L1 berkeley_rpt_ep000152 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:02 | 2025-07-26 03:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751287600106034 | L3 berkeley_rpt_ep000154 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:43 | 2025-07-25 17:43 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751308700106050 | L1 berkeley_rpt_ep000160 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:16 | 2025-07-24 17:16 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751319300106058 | L3 berkeley_rpt_ep000162 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:13 | 2025-07-24 17:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751340100106074 | L1 berkeley_rpt_ep000168 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:04 | 2025-07-24 17:04 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751349700106082 | L3 berkeley_rpt_ep000170 | Robotics | ONLINE | COLLECTING | 2025-07-24 13:14 | 2025-07-24 13:14 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751371500106098 | L1 berkeley_rpt_ep000176 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:28 | 2025-07-29 08:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751382200106106 | L3 berkeley_rpt_ep000178 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:25 | 2025-07-29 08:25 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751403800106122 | L1 berkeley_rpt_ep000184 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:10 | 2025-07-28 17:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751414300106130 | L3 berkeley_rpt_ep000186 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:05 | 2025-07-28 17:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751435300106146 | L1 berkeley_rpt_ep000192 | Robotics | ONLINE | COLLECTING | 2025-07-27 16:01 | 2025-07-27 16:01 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751445700106154 | L3 berkeley_rpt_ep000194 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:23 | 2025-07-26 12:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751466900106170 | L1 berkeley_rpt_ep000200 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:50 | 2025-07-29 11:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751476900106178 | L3 berkeley_rpt_ep000202 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:45 | 2025-07-29 11:45 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751496800106194 | L1 berkeley_rpt_ep000208 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:32 | 2025-07-29 11:32 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751506900106202 | L3 berkeley_rpt_ep000210 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:38 | 2025-07-29 09:38 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751526900106218 | L1 berkeley_rpt_ep000216 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:31 | 2025-07-29 09:31 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751537100106226 | L3 berkeley_rpt_ep000218 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:27 | 2025-07-29 09:27 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751557600106242 | L1 berkeley_rpt_ep000224 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:33 | 2025-07-29 08:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751568200106250 | L3 berkeley_rpt_ep000226 | Robotics | ONLINE | COLLECTING | 2025-07-29 17:13 | 2025-07-29 17:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751587500106266 | L1 berkeley_rpt_ep000232 | Robotics | ONLINE | COLLECTING | 2025-08-03 12:30 | 2025-08-03 12:30 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751597800106274 | L3 berkeley_rpt_ep000234 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:55 | 2025-08-01 17:55 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751617700106290 | L1 berkeley_rpt_ep000240 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:12 | 2025-07-30 17:12 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751627700106298 | L3 berkeley_rpt_ep000242 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:03 | 2025-07-30 17:03 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751648100106314 | L1 berkeley_rpt_ep000248 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:50 | 2025-07-30 11:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751657900106322 | L3 berkeley_rpt_ep000250 | Robotics | ONLINE | COLLECTING | 2025-07-29 17:18 | 2025-07-29 17:18 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751741200106386 | L1 berkeley_rpt_ep000272 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:48 | 2025-08-22 06:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751752100106394 | L3 berkeley_rpt_ep000274 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:45 | 2025-08-22 06:45 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155754860300108714 | L1 cmu_franka_exploration_dataset_ep000140 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:33 | 2025-01-17 11:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754870300108722 | L3 cmu_franka_exploration_dataset_ep000142 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:16 | 2025-01-17 11:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754890400108738 | L1 cmu_franka_exploration_dataset_ep000148 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:17 | 2025-01-17 11:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754900900108746 | L3 cmu_franka_exploration_dataset_ep000150 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:18 | 2025-01-17 11:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754921500108762 | L1 cmu_franka_exploration_dataset_ep000156 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:20 | 2025-01-17 11:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754931500108770 | L3 cmu_franka_exploration_dataset_ep000158 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:21 | 2025-01-17 11:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754951300108786 | L1 cmu_franka_exploration_dataset_ep000164 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:23 | 2025-01-17 11:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754961400108794 | L3 cmu_franka_exploration_dataset_ep000166 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:24 | 2025-01-17 11:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754981600108810 | L1 cmu_franka_exploration_dataset_ep000172 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:14 | 2025-01-17 11:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754991900108818 | L3 cmu_franka_exploration_dataset_ep000174 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:08 | 2025-01-17 11:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755012200108834 | L1 cmu_franka_exploration_dataset_ep000180 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:10 | 2025-01-17 11:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755022100108842 | L3 cmu_franka_exploration_dataset_ep000182 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:11 | 2025-01-17 11:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755074500108858 | L1 cmu_franka_exploration_dataset_ep000188 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:59 | 2025-01-17 10:59 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755086800108866 | L3 cmu_franka_exploration_dataset_ep000190 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:00 | 2025-01-17 11:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755108100108882 | L1 cmu_franka_exploration_dataset_ep000196 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:02 | 2025-01-17 11:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755119500108890 | L3 cmu_franka_exploration_dataset_ep000198 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:03 | 2025-01-17 11:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755139900108906 | L1 dlr_edan_shared_control_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:05 | 2025-01-17 11:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755150500108914 | L3 dlr_edan_shared_control_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:06 | 2025-01-17 11:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755171300108930 | L1 dlr_edan_shared_control_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:48 | 2025-01-17 10:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755181800108938 | L3 dlr_edan_shared_control_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:49 | 2025-01-17 10:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755203700108954 | L1 dlr_edan_shared_control_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:51 | 2025-01-17 10:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755214700108962 | L3 dlr_edan_shared_control_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:53 | 2025-01-17 10:53 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755236000108978 | L1 dlr_edan_shared_control_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:55 | 2025-01-17 10:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755245800108986 | L3 dlr_edan_shared_control_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:56 | 2025-01-17 10:56 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755266100109002 | L1 dlr_edan_shared_control_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:59 | 2025-01-17 10:59 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755275700109010 | L3 dlr_edan_shared_control_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:32 | 2025-01-17 10:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755296900109026 | L1 dlr_edan_shared_control_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:35 | 2025-01-17 10:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755306600109034 | L3 dlr_edan_shared_control_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:36 | 2025-01-17 10:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755326700109050 | L1 dlr_edan_shared_control_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:39 | 2025-01-17 10:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755336500109058 | L3 dlr_edan_shared_control_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:41 | 2025-01-17 10:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755357300109074 | L1 dlr_edan_shared_control_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:29 | 2025-01-17 10:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755367100109082 | L3 dlr_edan_shared_control_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:43 | 2025-01-16 06:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755389000109098 | L1 dlr_edan_shared_control_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:47 | 2025-01-16 06:47 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755399200109106 | L3 dlr_edan_shared_control_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:48 | 2025-01-16 06:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755418300109122 | L1 dlr_edan_shared_control_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:51 | 2025-01-16 06:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755427800109130 | L3 dlr_edan_shared_control_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:18 | 2025-01-17 10:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755447200109146 | L1 dlr_edan_shared_control_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:24 | 2025-01-17 10:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755457200109154 | L3 dlr_edan_shared_control_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:28 | 2025-01-17 10:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755476300109170 | L1 dlr_edan_shared_control_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:31 | 2025-01-16 06:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755485800109178 | L3 dlr_edan_shared_control_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:32 | 2025-01-16 06:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755504900109194 | L1 dlr_edan_shared_control_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:34 | 2025-01-16 06:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755514000109202 | L3 dlr_edan_shared_control_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:36 | 2025-01-16 06:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755533000109218 | L1 dlr_sara_grid_clamp_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:39 | 2025-01-16 06:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755542400109226 | L3 dlr_sara_grid_clamp_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:40 | 2025-01-16 06:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755561800109242 | L1 dlr_sara_grid_clamp_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:42 | 2025-01-16 06:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755571200109250 | L3 dlr_sara_grid_clamp_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:15 | 2025-01-16 06:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755591000109266 | L1 dlr_sara_grid_clamp_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:18 | 2025-01-16 06:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755600700109274 | L3 dlr_sara_grid_clamp_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:20 | 2025-01-16 06:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755619200109290 | L1 dlr_sara_grid_clamp_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:22 | 2025-01-16 06:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755628700109298 | L3 dlr_sara_grid_clamp_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:24 | 2025-01-16 06:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755647800109314 | L1 dlr_sara_grid_clamp_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:27 | 2025-01-16 06:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755657300109322 | L3 dlr_sara_grid_clamp_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:28 | 2025-01-16 06:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755676900109338 | L1 dlr_sara_grid_clamp_ep000045 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:34 | 2025-01-15 14:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755686300109346 | L3 dlr_sara_grid_clamp_ep000047 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:37 | 2025-01-15 14:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755706700109362 | L1 dlr_sara_grid_clamp_ep000053 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:06 | 2025-01-16 06:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755716300109370 | L3 dlr_sara_grid_clamp_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:08 | 2025-01-16 06:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755736200109386 | L1 dlr_sara_grid_clamp_ep000061 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:11 | 2025-01-16 06:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755745900109394 | L3 dlr_sara_grid_clamp_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:12 | 2025-01-16 06:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755765300109410 | L1 dlr_sara_grid_clamp_ep000069 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:14 | 2025-01-16 06:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755774900109418 | L3 dlr_sara_grid_clamp_ep000071 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:18 | 2025-01-15 14:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755795000109434 | L1 dlr_sara_grid_clamp_ep000077 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:20 | 2025-01-15 14:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755805100109442 | L3 dlr_sara_grid_clamp_ep000079 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:21 | 2025-01-15 14:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755825000109458 | L1 dlr_sara_grid_clamp_ep000085 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:23 | 2025-01-15 14:23 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755835200109466 | L3 dlr_sara_grid_clamp_ep000087 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:25 | 2025-01-15 14:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755854700109482 | L1 dlr_sara_grid_clamp_ep000093 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:27 | 2025-01-15 14:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755865100109490 | L3 dlr_sara_grid_clamp_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:31 | 2025-01-15 14:31 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755885200109506 | L1 dlr_sara_grid_clamp_ep000101 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:04 | 2025-01-15 14:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755895200109514 | L3 dlr_sara_grid_clamp_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:05 | 2025-01-15 14:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755914700109530 | L1 dlr_sara_pour_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:08 | 2025-01-15 14:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755925100109538 | L3 dlr_sara_pour_ep000004 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:10 | 2025-01-15 14:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755945100109554 | L1 dlr_sara_pour_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:13 | 2025-01-15 14:13 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755955100109562 | L3 dlr_sara_pour_ep000012 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:14 | 2025-01-15 14:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755974000109578 | L1 dlr_sara_pour_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:55 | 2025-01-15 13:55 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755983700109586 | L3 dlr_sara_pour_ep000020 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:59 | 2025-01-15 02:59 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756002500109602 | L1 dlr_sara_pour_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:05 | 2025-01-15 03:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756012100109610 | L3 dlr_sara_pour_ep000028 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:36 | 2025-01-15 13:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756032600109626 | L1 dlr_sara_pour_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:45 | 2025-01-15 13:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756043200109634 | L3 dlr_sara_pour_ep000036 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:47 | 2025-01-15 13:47 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756063700109650 | L1 dlr_sara_pour_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:54 | 2025-01-15 13:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754682000108570 | L1 cmu_franka_exploration_dataset_ep000092 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:35 | 2025-01-17 11:35 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754692100108578 | L3 cmu_franka_exploration_dataset_ep000094 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:36 | 2025-01-17 11:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754712700108594 | L1 cmu_franka_exploration_dataset_ep000100 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:38 | 2025-01-17 11:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754723300108602 | L3 cmu_franka_exploration_dataset_ep000102 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:38 | 2025-01-17 11:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754743300108618 | L1 cmu_franka_exploration_dataset_ep000108 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:40 | 2025-01-17 11:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754753200108626 | L3 cmu_franka_exploration_dataset_ep000110 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:41 | 2025-01-17 11:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754772000108642 | L1 cmu_franka_exploration_dataset_ep000116 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:25 | 2025-01-17 11:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754781800108650 | L3 cmu_franka_exploration_dataset_ep000118 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:26 | 2025-01-17 11:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754801800108666 | L1 cmu_franka_exploration_dataset_ep000124 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:28 | 2025-01-17 11:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754811700108674 | L3 cmu_franka_exploration_dataset_ep000126 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:29 | 2025-01-17 11:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754831300108690 | L1 cmu_franka_exploration_dataset_ep000132 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:30 | 2025-01-17 11:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754840800108698 | L3 cmu_franka_exploration_dataset_ep000134 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:32 | 2025-01-17 11:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 8144502502100105058 | 121 | lihao test frontier | PREPARING | STOP | 2025-07-31 15:43 | 2025-07-31 15:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756114600109689 | L1 dlr_sara_pour_ep000055 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:18 | 2025-01-09 10:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756124400109697 | L3 dlr_sara_pour_ep000057 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:19 | 2025-01-09 10:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756144500109713 | L1 dlr_sara_pour_ep000063 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:22 | 2025-01-09 10:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756154200109721 | L3 dlr_sara_pour_ep000065 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:48 | 2025-01-15 02:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750677100105651 | L1 berkeley_rpt_ep000027 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:43 | 2025-07-08 15:43 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750686500105659 | L3 berkeley_rpt_ep000029 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:34 | 2025-07-08 15:34 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750707000105675 | L1 berkeley_rpt_ep000035 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:10 | 2025-07-08 15:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750716400105683 | L3 berkeley_rpt_ep000037 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:44 | 2025-06-30 15:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750737900105699 | L1 berkeley_rpt_ep000043 | Robotics | ONLINE | COLLECTING | 2025-06-30 14:56 | 2025-06-30 14:56 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750748300105707 | L3 berkeley_rpt_ep000045 | Robotics | ONLINE | COLLECTING | 2025-06-30 11:34 | 2025-06-30 11:34 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750769200105723 | L1 berkeley_rpt_ep000051 | Robotics | ONLINE | COLLECTING | 2025-07-09 14:35 | 2025-07-09 14:35 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750779400105731 | L3 berkeley_rpt_ep000053 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:25 | 2025-07-08 16:25 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750799600105747 | L1 berkeley_rpt_ep000059 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:58 | 2025-07-17 05:58 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750809400105755 | L3 berkeley_rpt_ep000061 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:48 | 2025-07-17 05:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750830600105771 | L1 berkeley_rpt_ep000067 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:24 | 2025-07-17 01:24 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750840600105779 | L3 berkeley_rpt_ep000069 | Robotics | ONLINE | COLLECTING | 2025-07-17 01:19 | 2025-07-17 01:19 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750861000105795 | L1 berkeley_rpt_ep000075 | Robotics | ONLINE | COLLECTING | 2025-07-09 15:13 | 2025-07-09 15:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750871400105803 | L3 berkeley_rpt_ep000077 | Robotics | ONLINE | COLLECTING | 2025-07-19 05:56 | 2025-07-19 05:56 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750892200105819 | L1 berkeley_rpt_ep000083 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:05 | 2025-07-18 17:05 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750901900105827 | L3 berkeley_rpt_ep000085 | Robotics | ONLINE | COLLECTING | 2025-07-18 16:48 | 2025-07-18 16:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750922100105843 | L1 berkeley_rpt_ep000091 | Robotics | ONLINE | COLLECTING | 2025-07-18 07:06 | 2025-07-18 07:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750932500105851 | L3 berkeley_rpt_ep000093 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:59 | 2025-07-18 06:59 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750953600105867 | L1 berkeley_rpt_ep000099 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:46 | 2025-07-18 06:46 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750964200105875 | L3 berkeley_rpt_ep000101 | Robotics | ONLINE | COLLECTING | 2025-07-17 09:21 | 2025-07-17 09:21 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750984500105891 | L1 berkeley_rpt_ep000107 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:38 | 2025-07-20 14:38 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750995000105899 | L3 berkeley_rpt_ep000109 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:35 | 2025-07-20 14:35 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751015100105915 | L1 berkeley_rpt_ep000115 | Robotics | ONLINE | COLLECTING | 2025-07-19 11:40 | 2025-07-19 11:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751026100105923 | L3 berkeley_rpt_ep000117 | Robotics | ONLINE | COLLECTING | 2025-07-19 06:07 | 2025-07-19 06:07 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751153900105939 | L1 berkeley_rpt_ep000123 | Robotics | ONLINE | COLLECTING | 2025-07-21 15:09 | 2025-07-21 15:09 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751165900105947 | L3 berkeley_rpt_ep000125 | Robotics | ONLINE | COLLECTING | 2025-07-21 14:57 | 2025-07-21 14:57 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751187900105963 | L1 berkeley_rpt_ep000131 | Robotics | ONLINE | COLLECTING | 2025-07-24 01:33 | 2025-07-24 01:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751199100105971 | L3 berkeley_rpt_ep000133 | Robotics | ONLINE | COLLECTING | 2025-07-22 15:26 | 2025-07-22 15:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751222600105987 | L1 berkeley_rpt_ep000139 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:33 | 2025-07-21 16:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751235000105995 | L3 berkeley_rpt_ep000141 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:27 | 2025-07-21 16:27 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751258700106011 | L1 berkeley_rpt_ep000147 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:47 | 2025-07-24 06:47 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751268700106019 | L3 berkeley_rpt_ep000149 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:14 | 2025-07-26 03:14 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751288900106035 | L1 berkeley_rpt_ep000155 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:42 | 2025-07-25 17:42 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751299000106043 | L3 berkeley_rpt_ep000157 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:38 | 2025-07-25 17:38 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751320600106059 | L1 berkeley_rpt_ep000163 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:12 | 2025-07-24 17:12 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751331500106067 | L3 berkeley_rpt_ep000165 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:08 | 2025-07-24 17:08 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751351000106083 | L1 berkeley_rpt_ep000171 | Robotics | ONLINE | COLLECTING | 2025-07-24 07:06 | 2025-07-24 07:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751362200106091 | L3 berkeley_rpt_ep000173 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:59 | 2025-07-24 06:59 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751383500106107 | L1 berkeley_rpt_ep000179 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:24 | 2025-07-29 08:24 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751394100106115 | L3 berkeley_rpt_ep000181 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:14 | 2025-07-28 17:14 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751415600106131 | L1 berkeley_rpt_ep000187 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:02 | 2025-07-28 17:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751426100106139 | L3 berkeley_rpt_ep000189 | Robotics | ONLINE | COLLECTING | 2025-07-28 16:56 | 2025-07-28 16:56 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751447000106155 | L1 berkeley_rpt_ep000195 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:14 | 2025-07-26 12:14 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751457700106163 | L3 berkeley_rpt_ep000197 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:08 | 2025-07-26 12:08 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751478400106179 | L1 berkeley_rpt_ep000203 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:45 | 2025-07-29 11:45 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751488400106187 | L3 berkeley_rpt_ep000205 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:39 | 2025-07-29 11:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751508200106203 | L1 berkeley_rpt_ep000211 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:38 | 2025-07-29 09:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751518100106211 | L3 berkeley_rpt_ep000213 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:35 | 2025-07-29 09:35 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751538400106227 | L1 berkeley_rpt_ep000219 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:44 | 2025-07-29 08:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751549100106235 | L3 berkeley_rpt_ep000221 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:40 | 2025-07-29 08:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751569300106251 | L1 berkeley_rpt_ep000227 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:54 | 2025-07-29 11:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751579100106259 | L3 berkeley_rpt_ep000229 | Robotics | ONLINE | COLLECTING | 2025-08-04 11:44 | 2025-08-04 11:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751599000106275 | L1 berkeley_rpt_ep000235 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:50 | 2025-08-01 17:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751608900106283 | L3 berkeley_rpt_ep000237 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:46 | 2025-08-01 17:46 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751629100106299 | L1 berkeley_rpt_ep000243 | Robotics | ONLINE | COLLECTING | 2025-07-30 13:55 | 2025-07-30 13:55 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751639600106307 | L3 berkeley_rpt_ep000245 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:55 | 2025-07-30 11:55 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751659100106323 | L1 berkeley_rpt_ep000251 | Robotics | ONLINE | COLLECTING | 2025-07-29 17:17 | 2025-07-29 17:17 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751732200106379 | L3 berkeley_rpt_ep000269 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:57 | 2025-08-22 06:57 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751753500106395 | L1 berkeley_rpt_ep000275 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:44 | 2025-08-22 06:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751763400106403 | L3 berkeley_rpt_ep000277 | Robotics | ONLINE | COLLECTING | 2025-08-04 11:48 | 2025-08-04 11:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155754871500108723 | L1 cmu_franka_exploration_dataset_ep000143 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:16 | 2025-01-17 11:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754881400108731 | L3 cmu_franka_exploration_dataset_ep000145 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:17 | 2025-01-17 11:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754902200108747 | L1 cmu_franka_exploration_dataset_ep000151 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:18 | 2025-01-17 11:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754912500108755 | L3 cmu_franka_exploration_dataset_ep000153 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:19 | 2025-01-17 11:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754932800108771 | L1 cmu_franka_exploration_dataset_ep000159 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:21 | 2025-01-17 11:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754942500108779 | L3 cmu_franka_exploration_dataset_ep000161 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:22 | 2025-01-17 11:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754962800108795 | L1 cmu_franka_exploration_dataset_ep000167 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:24 | 2025-01-17 11:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754972900108803 | L3 cmu_franka_exploration_dataset_ep000169 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:14 | 2025-01-17 11:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754993300108819 | L1 cmu_franka_exploration_dataset_ep000175 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:08 | 2025-01-17 11:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755003100108827 | L3 cmu_franka_exploration_dataset_ep000177 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:09 | 2025-01-17 11:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755023400108843 | L1 cmu_franka_exploration_dataset_ep000183 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:11 | 2025-01-17 11:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755034100108851 | L3 cmu_franka_exploration_dataset_ep000185 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:12 | 2025-01-17 11:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755088100108867 | L1 cmu_franka_exploration_dataset_ep000191 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:00 | 2025-01-17 11:00 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755098900108875 | L3 cmu_franka_exploration_dataset_ep000193 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:01 | 2025-01-17 11:01 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755120900108891 | L1 dlr_edan_shared_control_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:03 | 2025-01-17 11:03 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755131100108899 | L3 dlr_edan_shared_control_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:04 | 2025-01-17 11:04 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755151800108915 | L1 dlr_edan_shared_control_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:06 | 2025-01-17 11:06 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755162400108923 | L3 dlr_edan_shared_control_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:08 | 2025-01-17 11:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755183300108939 | L1 dlr_edan_shared_control_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:49 | 2025-01-17 10:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755194300108947 | L3 dlr_edan_shared_control_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:50 | 2025-01-17 10:50 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755216100108963 | L1 dlr_edan_shared_control_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:53 | 2025-01-17 10:53 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755226900108971 | L3 dlr_edan_shared_control_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:54 | 2025-01-17 10:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755247000108987 | L1 dlr_edan_shared_control_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:56 | 2025-01-17 10:56 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755257300108995 | L3 dlr_edan_shared_control_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:57 | 2025-01-17 10:57 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755277000109011 | L1 dlr_edan_shared_control_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:32 | 2025-01-17 10:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755287600109019 | L3 dlr_edan_shared_control_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:34 | 2025-01-17 10:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755307700109035 | L1 dlr_edan_shared_control_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:37 | 2025-01-17 10:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755317400109043 | L3 dlr_edan_shared_control_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:38 | 2025-01-17 10:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755337800109059 | L1 dlr_edan_shared_control_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:41 | 2025-01-17 10:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755348700109067 | L3 dlr_edan_shared_control_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:42 | 2025-01-17 10:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755369300109083 | L1 dlr_edan_shared_control_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:43 | 2025-01-16 06:43 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755379400109091 | L3 dlr_edan_shared_control_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:45 | 2025-01-16 06:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755400500109107 | L1 dlr_edan_shared_control_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:48 | 2025-01-16 06:48 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755410100109115 | L3 dlr_edan_shared_control_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:49 | 2025-01-16 06:49 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755429100109131 | L1 dlr_edan_shared_control_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:20 | 2025-01-17 10:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755438700109139 | L3 dlr_edan_shared_control_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:21 | 2025-01-17 10:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755458500109155 | L1 dlr_edan_shared_control_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-17 10:28 | 2025-01-17 10:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755468300109163 | L3 dlr_edan_shared_control_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:30 | 2025-01-16 06:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755486900109179 | L1 dlr_edan_shared_control_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:32 | 2025-01-16 06:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755496400109187 | L3 dlr_edan_shared_control_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:33 | 2025-01-16 06:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755515200109203 | L1 dlr_sara_grid_clamp_ep000000 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:36 | 2025-01-16 06:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755524900109211 | L3 dlr_sara_grid_clamp_ep000002 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:37 | 2025-01-16 06:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755543600109227 | L1 dlr_sara_grid_clamp_ep000008 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:40 | 2025-01-16 06:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755553400109235 | L3 dlr_sara_grid_clamp_ep000010 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:41 | 2025-01-16 06:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755572400109251 | L1 dlr_sara_grid_clamp_ep000016 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:15 | 2025-01-16 06:15 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755582200109259 | L3 dlr_sara_grid_clamp_ep000018 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:17 | 2025-01-16 06:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755601900109275 | L1 dlr_sara_grid_clamp_ep000024 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:20 | 2025-01-16 06:20 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755611300109283 | L3 dlr_sara_grid_clamp_ep000026 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:21 | 2025-01-16 06:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755629900109299 | L1 dlr_sara_grid_clamp_ep000032 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:24 | 2025-01-16 06:24 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755639500109307 | L3 dlr_sara_grid_clamp_ep000034 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:26 | 2025-01-16 06:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755658500109323 | L1 dlr_sara_grid_clamp_ep000040 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:28 | 2025-01-16 06:28 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755668400109331 | L3 dlr_sara_grid_clamp_ep000042 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:32 | 2025-01-15 14:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755687500109347 | L1 dlr_sara_grid_clamp_ep000048 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:37 | 2025-01-15 14:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755698100109355 | L3 dlr_sara_grid_clamp_ep000050 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:05 | 2025-01-16 06:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755717600109371 | L1 dlr_sara_grid_clamp_ep000056 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:08 | 2025-01-16 06:08 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755727600109379 | L3 dlr_sara_grid_clamp_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:09 | 2025-01-16 06:09 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755747100109395 | L1 dlr_sara_grid_clamp_ep000064 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:12 | 2025-01-16 06:12 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755756600109403 | L3 dlr_sara_grid_clamp_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-16 06:14 | 2025-01-16 06:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755776200109419 | L1 dlr_sara_grid_clamp_ep000072 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:18 | 2025-01-15 14:18 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755785700109427 | L3 dlr_sara_grid_clamp_ep000074 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:19 | 2025-01-15 14:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755806300109443 | L1 dlr_sara_grid_clamp_ep000080 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:21 | 2025-01-15 14:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755816000109451 | L3 dlr_sara_grid_clamp_ep000082 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:22 | 2025-01-15 14:22 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755836500109467 | L1 dlr_sara_grid_clamp_ep000088 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:25 | 2025-01-15 14:25 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755846500109475 | L3 dlr_sara_grid_clamp_ep000090 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:26 | 2025-01-15 14:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755866500109491 | L1 dlr_sara_grid_clamp_ep000096 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:32 | 2025-01-15 14:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755876800109499 | L3 dlr_sara_grid_clamp_ep000098 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:02 | 2025-01-15 14:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755896400109515 | L1 dlr_sara_grid_clamp_ep000104 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:05 | 2025-01-15 14:05 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755906000109523 | L3 dlr_sara_grid_clamp_ep000106 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:07 | 2025-01-15 14:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755926400109539 | L1 dlr_sara_pour_ep000005 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:10 | 2025-01-15 14:10 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755936500109547 | L3 dlr_sara_pour_ep000007 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:11 | 2025-01-15 14:11 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755956200109563 | L1 dlr_sara_pour_ep000013 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:14 | 2025-01-15 14:14 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755965700109571 | L3 dlr_sara_pour_ep000015 | Robotics | ONLINE | COLLECTING | 2025-01-15 14:16 | 2025-01-15 14:16 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755984900109587 | L1 dlr_sara_pour_ep000021 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:59 | 2025-01-15 02:59 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155755994400109595 | L3 dlr_sara_pour_ep000023 | Robotics | ONLINE | COLLECTING | 2025-01-15 03:02 | 2025-01-15 03:02 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756013300109611 | L1 dlr_sara_pour_ep000029 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:38 | 2025-01-15 13:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756023500109619 | L3 dlr_sara_pour_ep000031 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:41 | 2025-01-15 13:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756044500109635 | L1 dlr_sara_pour_ep000037 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:47 | 2025-01-15 13:47 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756055000109643 | L3 dlr_sara_pour_ep000039 | Robotics | ONLINE | COLLECTING | 2025-01-15 13:51 | 2025-01-15 13:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754672900108563 | L3 cmu_franka_exploration_dataset_ep000089 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:34 | 2025-01-17 11:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754693400108579 | L1 cmu_franka_exploration_dataset_ep000095 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:36 | 2025-01-17 11:36 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754703500108587 | L3 cmu_franka_exploration_dataset_ep000097 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:37 | 2025-01-17 11:37 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754724700108603 | L1 cmu_franka_exploration_dataset_ep000103 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:38 | 2025-01-17 11:38 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754734700108611 | L3 cmu_franka_exploration_dataset_ep000105 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:39 | 2025-01-17 11:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754754500108627 | L1 cmu_franka_exploration_dataset_ep000111 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:41 | 2025-01-17 11:41 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754764000108635 | L3 cmu_franka_exploration_dataset_ep000113 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:42 | 2025-01-17 11:42 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754783100108651 | L1 cmu_franka_exploration_dataset_ep000119 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:26 | 2025-01-17 11:26 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754793100108659 | L3 cmu_franka_exploration_dataset_ep000121 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:27 | 2025-01-17 11:27 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754812900108675 | L1 cmu_franka_exploration_dataset_ep000127 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:29 | 2025-01-17 11:29 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754823000108683 | L3 cmu_franka_exploration_dataset_ep000129 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:30 | 2025-01-17 11:30 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754842000108699 | L1 cmu_franka_exploration_dataset_ep000135 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:32 | 2025-01-17 11:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754851900108707 | L3 cmu_franka_exploration_dataset_ep000137 | Robotics | ONLINE | COLLECTING | 2025-01-17 11:33 | 2025-01-17 11:33 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756105500109682 | L3 dlr_sara_pour_ep000052 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:17 | 2025-01-09 10:17 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756125600109698 | L1 dlr_sara_pour_ep000058 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:19 | 2025-01-09 10:19 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756135900109706 | L3 dlr_sara_pour_ep000060 | Robotics | ONLINE | COLLECTING | 2025-01-09 10:21 | 2025-01-09 10:21 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756155600109722 | L1 dlr_sara_pour_ep000066 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:51 | 2025-01-15 02:51 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155756165300109730 | L3 dlr_sara_pour_ep000068 | Robotics | ONLINE | COLLECTING | 2025-01-15 02:54 | 2025-01-15 02:54 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750668800105644 | L3 berkeley_rpt_ep000024 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:04 | 2025-07-08 16:04 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750687700105660 | L1 berkeley_rpt_ep000030 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:31 | 2025-07-08 15:31 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750698000105668 | L3 berkeley_rpt_ep000032 | Robotics | ONLINE | COLLECTING | 2025-07-08 15:21 | 2025-07-08 15:21 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750717600105684 | L1 berkeley_rpt_ep000038 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:40 | 2025-06-30 15:40 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750728100105692 | L3 berkeley_rpt_ep000040 | Robotics | ONLINE | COLLECTING | 2025-06-30 15:26 | 2025-06-30 15:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750749600105708 | L1 berkeley_rpt_ep000046 | Robotics | ONLINE | COLLECTING | 2025-06-30 11:32 | 2025-06-30 11:32 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750760400105716 | L3 berkeley_rpt_ep000048 | Robotics | ONLINE | COLLECTING | 2025-06-30 11:19 | 2025-06-30 11:19 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750780600105732 | L1 berkeley_rpt_ep000054 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:23 | 2025-07-08 16:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750790900105740 | L3 berkeley_rpt_ep000056 | Robotics | ONLINE | COLLECTING | 2025-07-08 16:15 | 2025-07-08 16:15 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750821500105764 | L3 berkeley_rpt_ep000064 | Robotics | ONLINE | COLLECTING | 2025-07-17 05:38 | 2025-07-17 05:38 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750841700105780 | L1 berkeley_rpt_ep000070 | Robotics | ONLINE | COLLECTING | 2025-07-14 12:52 | 2025-07-14 12:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750851900105788 | L3 berkeley_rpt_ep000072 | Robotics | ONLINE | COLLECTING | 2025-07-10 11:06 | 2025-07-10 11:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750872600105804 | L1 berkeley_rpt_ep000078 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:26 | 2025-07-18 17:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750883400105812 | L3 berkeley_rpt_ep000080 | Robotics | ONLINE | COLLECTING | 2025-07-18 17:15 | 2025-07-18 17:15 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750903100105828 | L1 berkeley_rpt_ep000086 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:45 | 2025-07-18 11:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155750913200105836 | L3 berkeley_rpt_ep000088 | Robotics | ONLINE | COLLECTING | 2025-07-18 11:40 | 2025-07-18 11:40 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750933700105852 | L1 berkeley_rpt_ep000094 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:58 | 2025-07-18 06:58 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750944400105860 | L3 berkeley_rpt_ep000096 | Robotics | ONLINE | COLLECTING | 2025-07-18 06:52 | 2025-07-18 06:52 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750965500105876 | L1 berkeley_rpt_ep000102 | Robotics | ONLINE | COLLECTING | 2025-07-17 06:02 | 2025-07-17 06:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750975700105884 | L3 berkeley_rpt_ep000104 | Robotics | ONLINE | COLLECTING | 2025-07-21 14:38 | 2025-07-21 14:38 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155750996200105900 | L1 berkeley_rpt_ep000110 | Robotics | ONLINE | COLLECTING | 2025-07-20 14:33 | 2025-07-20 14:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751006400105908 | L3 berkeley_rpt_ep000112 | Robotics | ONLINE | COLLECTING | 2025-07-19 13:00 | 2025-07-19 13:00 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751027200105924 | L1 berkeley_rpt_ep000118 | Robotics | ONLINE | COLLECTING | 2025-07-19 06:04 | 2025-07-19 06:04 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751143100105932 | L3 berkeley_rpt_ep000120 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:17 | 2025-07-21 16:17 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751167300105948 | L1 berkeley_rpt_ep000126 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:39 | 2025-07-24 06:39 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751178600105956 | L3 berkeley_rpt_ep000128 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:30 | 2025-07-24 06:30 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751200500105972 | L1 berkeley_rpt_ep000134 | Robotics | ONLINE | COLLECTING | 2025-07-22 15:23 | 2025-07-22 15:23 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751211800105980 | L3 berkeley_rpt_ep000136 | Robotics | ONLINE | COLLECTING | 2025-07-22 05:49 | 2025-07-22 05:49 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751236500105996 | L1 berkeley_rpt_ep000142 | Robotics | ONLINE | COLLECTING | 2025-07-21 16:26 | 2025-07-21 16:26 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751249200106004 | L3 berkeley_rpt_ep000144 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:56 | 2025-07-24 06:56 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751269900106020 | L1 berkeley_rpt_ep000150 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:07 | 2025-07-26 03:07 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751280100106028 | L3 berkeley_rpt_ep000152 | Robotics | ONLINE | COLLECTING | 2025-07-26 03:02 | 2025-07-26 03:02 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751300300106044 | L1 berkeley_rpt_ep000158 | Robotics | ONLINE | COLLECTING | 2025-07-25 17:37 | 2025-07-25 17:37 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751311300106052 | L3 berkeley_rpt_ep000160 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:16 | 2025-07-24 17:16 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751332800106068 | L1 berkeley_rpt_ep000166 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:07 | 2025-07-24 17:07 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751342500106076 | L3 berkeley_rpt_ep000168 | Robotics | ONLINE | COLLECTING | 2025-07-24 17:03 | 2025-07-24 17:03 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751363600106092 | L1 berkeley_rpt_ep000174 | Robotics | ONLINE | COLLECTING | 2025-07-24 06:58 | 2025-07-24 06:58 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751374200106100 | L3 berkeley_rpt_ep000176 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:28 | 2025-07-29 08:28 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751395500106116 | L1 berkeley_rpt_ep000182 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:13 | 2025-07-28 17:13 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751406500106124 | L3 berkeley_rpt_ep000184 | Robotics | ONLINE | COLLECTING | 2025-07-28 17:10 | 2025-07-28 17:10 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751427500106140 | L1 berkeley_rpt_ep000190 | Robotics | ONLINE | COLLECTING | 2025-07-28 16:53 | 2025-07-28 16:53 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751437700106148 | L3 berkeley_rpt_ep000192 | Robotics | ONLINE | COLLECTING | 2025-07-27 16:00 | 2025-07-27 16:00 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751459100106164 | L1 berkeley_rpt_ep000198 | Robotics | ONLINE | COLLECTING | 2025-07-26 12:06 | 2025-07-26 12:06 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751469200106172 | L3 berkeley_rpt_ep000200 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:50 | 2025-07-29 11:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751489600106188 | L1 berkeley_rpt_ep000206 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:36 | 2025-07-29 11:36 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751499300106196 | L3 berkeley_rpt_ep000208 | Robotics | ONLINE | COLLECTING | 2025-07-29 11:31 | 2025-07-29 11:31 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751519200106212 | L1 berkeley_rpt_ep000214 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:34 | 2025-07-29 09:34 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751529500106220 | L3 berkeley_rpt_ep000216 | Robotics | ONLINE | COLLECTING | 2025-07-29 09:30 | 2025-07-29 09:30 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751550300106236 | L1 berkeley_rpt_ep000222 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:39 | 2025-07-29 08:39 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751560200106244 | L3 berkeley_rpt_ep000224 | Robotics | ONLINE | COLLECTING | 2025-07-29 08:33 | 2025-07-29 08:33 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751580500106260 | L1 berkeley_rpt_ep000230 | Robotics | ONLINE | COLLECTING | 2025-08-04 11:44 | 2025-08-04 11:44 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751590000106268 | L3 berkeley_rpt_ep000232 | Robotics | ONLINE | COLLECTING | 2025-08-03 12:29 | 2025-08-03 12:29 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751610200106284 | L1 berkeley_rpt_ep000238 | Robotics | ONLINE | COLLECTING | 2025-08-01 17:45 | 2025-08-01 17:45 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751620200106292 | L3 berkeley_rpt_ep000240 | Robotics | ONLINE | COLLECTING | 2025-07-30 17:11 | 2025-07-30 17:11 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751640800106308 | L1 berkeley_rpt_ep000246 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:54 | 2025-07-30 11:54 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751650600106316 | L3 berkeley_rpt_ep000248 | Robotics | ONLINE | COLLECTING | 2025-07-30 11:50 | 2025-07-30 11:50 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751733500106380 | L1 berkeley_rpt_ep000270 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:56 | 2025-08-22 06:56 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155751743900106388 | L3 berkeley_rpt_ep000272 | Robotics | ONLINE | COLLECTING | 2025-08-22 06:48 | 2025-08-22 06:48 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 6155751764700106404 | L1 berkeley_rpt_ep000278 | Robotics | ONLINE | COLLECTING | 2025-08-04 11:45 | 2025-08-04 11:45 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 6155754872700108724 | L2 cmu_franka_exploration_dataset_ep000143 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754903500108748 | L2 cmu_franka_exploration_dataset_ep000151 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754933900108772 | L2 cmu_franka_exploration_dataset_ep000159 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754964200108796 | L2 cmu_franka_exploration_dataset_ep000167 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754994600108820 | L2 cmu_franka_exploration_dataset_ep000175 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755024700108844 | L2 cmu_franka_exploration_dataset_ep000183 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755089500108868 | L2 cmu_franka_exploration_dataset_ep000191 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755122000108892 | L2 dlr_edan_shared_control_ep000000 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755153100108916 | L2 dlr_edan_shared_control_ep000008 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755184600108940 | L2 dlr_edan_shared_control_ep000016 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755217300108964 | L2 dlr_edan_shared_control_ep000024 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755248400108988 | L2 dlr_edan_shared_control_ep000032 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755278300109012 | L2 dlr_edan_shared_control_ep000040 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755308900109036 | L2 dlr_edan_shared_control_ep000048 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755339000109060 | L2 dlr_edan_shared_control_ep000056 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755370500109084 | L2 dlr_edan_shared_control_ep000064 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755401700109108 | L2 dlr_edan_shared_control_ep000072 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755430300109132 | L2 dlr_edan_shared_control_ep000080 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755459800109156 | L2 dlr_edan_shared_control_ep000088 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755488100109180 | L2 dlr_edan_shared_control_ep000096 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755516400109204 | L2 dlr_sara_grid_clamp_ep000000 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755544700109228 | L2 dlr_sara_grid_clamp_ep000008 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755573600109252 | L2 dlr_sara_grid_clamp_ep000016 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755603100109276 | L2 dlr_sara_grid_clamp_ep000024 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755631200109300 | L2 dlr_sara_grid_clamp_ep000032 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755659700109324 | L2 dlr_sara_grid_clamp_ep000040 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755688900109348 | L2 dlr_sara_grid_clamp_ep000048 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755719000109372 | L2 dlr_sara_grid_clamp_ep000056 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755748400109396 | L2 dlr_sara_grid_clamp_ep000064 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755777500109420 | L2 dlr_sara_grid_clamp_ep000072 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755807500109444 | L2 dlr_sara_grid_clamp_ep000080 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755837800109468 | L2 dlr_sara_grid_clamp_ep000088 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755867800109492 | L2 dlr_sara_grid_clamp_ep000096 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755897600109516 | L2 dlr_sara_grid_clamp_ep000104 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755927700109540 | L2 dlr_sara_pour_ep000005 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755957400109564 | L2 dlr_sara_pour_ep000013 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755986200109588 | L2 dlr_sara_pour_ep000021 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756014500109612 | L2 dlr_sara_pour_ep000029 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756045900109636 | L2 dlr_sara_pour_ep000037 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753280600107612 | L3 berkeley_rpt_ep000680 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753290200107620 | L2 berkeley_rpt_ep000683 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753300300107628 | L1 berkeley_rpt_ep000686 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753310700107636 | L3 berkeley_rpt_ep000688 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753321200107644 | L2 berkeley_rpt_ep000691 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753331500107652 | L1 berkeley_rpt_ep000694 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753341000107660 | L3 berkeley_rpt_ep000696 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753351400107668 | L2 berkeley_rpt_ep000699 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753361200107676 | L1 berkeley_rpt_ep000702 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753371400107684 | L3 berkeley_rpt_ep000704 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753381400107692 | L2 berkeley_rpt_ep000707 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753391600107700 | L1 berkeley_rpt_ep000710 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753402400107708 | L3 berkeley_rpt_ep000712 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753413100107716 | L2 berkeley_rpt_ep000715 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753423800107724 | L1 berkeley_rpt_ep000718 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753434500107732 | L3 berkeley_rpt_ep000720 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753444800107740 | L2 berkeley_rpt_ep000723 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753455400107748 | L1 berkeley_rpt_ep000726 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753466300107756 | L3 berkeley_rpt_ep000728 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753579500107764 | L2 berkeley_rpt_ep000731 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753590700107772 | L1 berkeley_rpt_ep000734 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753602100107780 | L3 berkeley_rpt_ep000736 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753612900107788 | L2 berkeley_rpt_ep000739 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753623100107796 | L1 berkeley_rpt_ep000742 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753633300107804 | L3 berkeley_rpt_ep000744 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753643400107812 | L2 berkeley_rpt_ep000747 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753653700107820 | L1 berkeley_rpt_ep000750 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753663800107828 | L3 berkeley_rpt_ep000752 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753674400107836 | L2 berkeley_rpt_ep000755 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753685300107844 | L1 berkeley_rpt_ep000758 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753695700107852 | L3 berkeley_rpt_ep000760 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753705500107860 | L2 berkeley_rpt_ep000763 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753715800107868 | L1 berkeley_rpt_ep000766 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753725500107876 | L3 berkeley_rpt_ep000768 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753735500107884 | L2 berkeley_rpt_ep000771 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753745400107892 | L1 berkeley_rpt_ep000774 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753755600107900 | L3 berkeley_rpt_ep000776 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753765800107908 | L2 berkeley_rpt_ep000779 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753776600107916 | L1 berkeley_rpt_ep000782 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753787700107924 | L3 berkeley_rpt_ep000784 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753800300107932 | L2 berkeley_rpt_ep000787 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753814500107940 | L1 berkeley_rpt_ep000790 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753830600107948 | L3 berkeley_rpt_ep000792 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753849000107956 | L2 berkeley_rpt_ep000795 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753878600107964 | L1 berkeley_rpt_ep000798 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753893200107972 | L3 berkeley_rpt_ep000800 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753903400107980 | L2 berkeley_rpt_ep000803 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753914100107988 | L1 berkeley_rpt_ep000806 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753925000107996 | L3 berkeley_rpt_ep000808 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753935300108004 | L2 berkeley_rpt_ep000811 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753944600108012 | L1 berkeley_rpt_ep000814 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753954500108020 | L3 berkeley_rpt_ep000816 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753964300108028 | L2 berkeley_rpt_ep000819 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753975000108036 | L1 berkeley_rpt_ep000822 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753985300108044 | L3 berkeley_rpt_ep000824 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753996200108052 | L2 berkeley_rpt_ep000827 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754022900108060 | L1 berkeley_rpt_ep000830 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754047400108068 | L3 berkeley_rpt_ep000832 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754062200108076 | L2 berkeley_rpt_ep000835 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754072900108084 | L1 berkeley_rpt_ep000838 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754083100108092 | L3 berkeley_rpt_ep000840 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754093300108100 | L2 berkeley_rpt_ep000843 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754103100108108 | L1 berkeley_rpt_ep000846 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754113100108116 | L3 berkeley_rpt_ep000848 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754123300108124 | L2 berkeley_rpt_ep000851 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754133200108132 | L1 berkeley_rpt_ep000854 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754143100108140 | L3 berkeley_rpt_ep000856 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754152900108148 | L2 berkeley_rpt_ep000859 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754162500108156 | L1 berkeley_rpt_ep000862 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754172000108164 | L3 berkeley_rpt_ep000864 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754182200108172 | L2 berkeley_rpt_ep000867 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754192600108180 | L1 berkeley_rpt_ep000870 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754202800108188 | L3 berkeley_rpt_ep000872 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754213500108196 | L2 berkeley_rpt_ep000875 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754223000108204 | L1 berkeley_rpt_ep000878 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754233400108212 | L3 berkeley_rpt_ep000880 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754243700108220 | L2 berkeley_rpt_ep000883 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754254200108228 | L1 berkeley_rpt_ep000886 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754264700108236 | L3 berkeley_rpt_ep000888 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754275500108244 | L2 berkeley_rpt_ep000891 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754285600108252 | L1 berkeley_rpt_ep000894 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754296200108260 | L3 berkeley_rpt_ep000896 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754306200108268 | L2 berkeley_rpt_ep000899 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754316400108276 | L1 berkeley_rpt_ep000902 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754326100108284 | L3 berkeley_rpt_ep000904 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754335900108292 | L2 berkeley_rpt_ep000907 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754346300108300 | L1 cmu_franka_exploration_dataset_ep000002 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754356200108308 | L3 cmu_franka_exploration_dataset_ep000004 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754366600108316 | L2 cmu_franka_exploration_dataset_ep000007 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754377100108324 | L1 cmu_franka_exploration_dataset_ep000010 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754387800108332 | L3 cmu_franka_exploration_dataset_ep000012 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754398100108340 | L2 cmu_franka_exploration_dataset_ep000015 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754407800108348 | L1 cmu_franka_exploration_dataset_ep000018 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754417900108356 | L3 cmu_franka_exploration_dataset_ep000020 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754427900108364 | L2 cmu_franka_exploration_dataset_ep000023 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754437300108372 | L1 cmu_franka_exploration_dataset_ep000026 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754446900108380 | L3 cmu_franka_exploration_dataset_ep000028 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754457000108388 | L2 cmu_franka_exploration_dataset_ep000031 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754466700108396 | L1 cmu_franka_exploration_dataset_ep000034 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754477600108404 | L3 cmu_franka_exploration_dataset_ep000036 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754487800108412 | L2 cmu_franka_exploration_dataset_ep000039 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754498100108420 | L1 cmu_franka_exploration_dataset_ep000042 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754508100108428 | L3 cmu_franka_exploration_dataset_ep000044 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754517500108436 | L2 cmu_franka_exploration_dataset_ep000047 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754526800108444 | L1 cmu_franka_exploration_dataset_ep000050 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754535800108452 | L3 cmu_franka_exploration_dataset_ep000052 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754545300108460 | L2 cmu_franka_exploration_dataset_ep000055 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754555400108468 | L1 cmu_franka_exploration_dataset_ep000058 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754565300108476 | L3 cmu_franka_exploration_dataset_ep000060 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754574600108484 | L2 cmu_franka_exploration_dataset_ep000063 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754584000108492 | L1 cmu_franka_exploration_dataset_ep000066 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754594100108500 | L3 cmu_franka_exploration_dataset_ep000068 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754603900108508 | L2 cmu_franka_exploration_dataset_ep000071 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754613900108516 | L1 cmu_franka_exploration_dataset_ep000074 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754624300108524 | L3 cmu_franka_exploration_dataset_ep000076 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754634900108532 | L2 cmu_franka_exploration_dataset_ep000079 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754644500108540 | L1 cmu_franka_exploration_dataset_ep000082 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754654200108548 | L3 cmu_franka_exploration_dataset_ep000084 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754663700108556 | L2 cmu_franka_exploration_dataset_ep000087 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754694700108580 | L2 cmu_franka_exploration_dataset_ep000095 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754726100108604 | L2 cmu_franka_exploration_dataset_ep000103 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754755600108628 | L2 cmu_franka_exploration_dataset_ep000111 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754784300108652 | L2 cmu_franka_exploration_dataset_ep000119 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754814200108676 | L2 cmu_franka_exploration_dataset_ep000127 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754843200108700 | L2 cmu_franka_exploration_dataset_ep000135 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756275100109819 | L2 dlr_sara_pour_ep000098 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756304300109843 | L2 kaist_nonprehensile_ep000006 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756333400109867 | L2 kaist_nonprehensile_ep000014 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756362900109891 | L2 kaist_nonprehensile_ep000022 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756394400109915 | L2 kaist_nonprehensile_ep000030 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756425000109939 | L2 kaist_nonprehensile_ep000038 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756453900109963 | L2 kaist_nonprehensile_ep000046 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756481500109987 | L2 kaist_nonprehensile_ep000054 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756510000100011 | L2 kaist_nonprehensile_ep000062 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756538300100035 | L2 kaist_nonprehensile_ep000070 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756567200100059 | L2 kaist_nonprehensile_ep000078 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756595400100083 | L2 kaist_nonprehensile_ep000086 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756624300100107 | L2 kaist_nonprehensile_ep000094 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756655000100131 | L2 kaist_nonprehensile_ep000102 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756684700100155 | L2 kaist_nonprehensile_ep000110 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756713900100179 | L2 kaist_nonprehensile_ep000118 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756743700100203 | L2 kaist_nonprehensile_ep000126 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756774000100227 | L2 kaist_nonprehensile_ep000134 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756805300100251 | L2 kaist_nonprehensile_ep000142 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756835800100275 | L2 kaist_nonprehensile_ep000150 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756864800100299 | L2 kaist_nonprehensile_ep000158 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756893300100323 | L2 kaist_nonprehensile_ep000166 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756921000100347 | L2 kaist_nonprehensile_ep000174 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756948600100371 | L2 kaist_nonprehensile_ep000182 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756977100100395 | L2 kaist_nonprehensile_ep000190 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757007500100419 | L2 kaist_nonprehensile_ep000198 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757043200100443 | L2 ucsd_kitchen_dataset_ep000005 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757073600100467 | L2 ucsd_kitchen_dataset_ep000013 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757102900100491 | L2 ucsd_kitchen_dataset_ep000021 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757132500100515 | L2 ucsd_kitchen_dataset_ep000029 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757161700100539 | L2 ucsd_kitchen_dataset_ep000037 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757191300100563 | L2 ucsd_kitchen_dataset_ep000045 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757220400100587 | L2 ucsd_kitchen_dataset_ep000053 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757250200100611 | L2 ucsd_kitchen_dataset_ep000061 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757278300100635 | L2 ucsd_kitchen_dataset_ep000069 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757306200100659 | L2 ucsd_kitchen_dataset_ep000077 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757335200100683 | L2 ucsd_kitchen_dataset_ep000085 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757363500100707 | L2 ucsd_kitchen_dataset_ep000093 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757392900100731 | L2 ucsd_kitchen_dataset_ep000101 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757421200100755 | L2 ucsd_kitchen_dataset_ep000109 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757449900100779 | L2 ucsd_kitchen_dataset_ep000117 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757478000100803 | L2 ucsd_kitchen_dataset_ep000125 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757506200100827 | L2 ucsd_kitchen_dataset_ep000133 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757534600100851 | L2 ucsd_kitchen_dataset_ep000141 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757563000100875 | L2 ucsd_kitchen_dataset_ep000149 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372295800101804 | L2 task-pick_U_driver_20_4_7th_PCL-16 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372333400101828 | L2 task-pick_U_driver_20_4_7th_PCL-5 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382935700101852 | L2 task-pick_water_50_4_7th-12 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382973600101876 | L2 task-pick_water_50_4_7th-2 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383010700101900 | L2 task-pick_water_50_4_7th-27 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383046100101924 | L2 task-pick_water_50_4_7th-34 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383078600101948 | L2 task-pick_water_50_4_7th-41 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383109800101972 | L2 task-pick_water_50_4_7th-49 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7528076195900103495 | Food Image and Description Collection | Food Science | ONLINE | DELETE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7994743330600100586 | Robotics image label for week7 | Food Science - depreted | PREPARING | PAUSE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8002001666100102265 | Share your important life events with us! | Lifelog Canvas | ONLINE | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9142465864700103907 | Collect Advanced Physics Problems: Limited to | Advanced Physics Question | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9573985271700104948 | Label Deposits: Binance, IndoEx, Tokocrypto,  | CEX Hot Wallet | ONLINE | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9574065777000106543 | Label Withdraws: Coinone, FameEX, Biconomy, A | CEX Hot Wallet | ONLINE | PAUSE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756096300109675 | L2 dlr_sara_pour_ep000050 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756126800109699 | L2 dlr_sara_pour_ep000058 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756156700109723 | L2 dlr_sara_pour_ep000066 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756187200109747 | L2 dlr_sara_pour_ep000074 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756218000109771 | L2 dlr_sara_pour_ep000082 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756247300109795 | L2 dlr_sara_pour_ep000090 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753109700107477 | L3 berkeley_rpt_ep000635 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753119500107485 | L2 berkeley_rpt_ep000638 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753129800107493 | L1 berkeley_rpt_ep000641 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753140900107501 | L3 berkeley_rpt_ep000643 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753151300107509 | L2 berkeley_rpt_ep000646 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753161500107517 | L1 berkeley_rpt_ep000649 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753171200107525 | L3 berkeley_rpt_ep000651 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753181800107533 | L2 berkeley_rpt_ep000654 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753192400107541 | L1 berkeley_rpt_ep000657 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753202500107549 | L3 berkeley_rpt_ep000659 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753211900107557 | L2 berkeley_rpt_ep000662 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753221100107565 | L1 berkeley_rpt_ep000665 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753231200107573 | L3 berkeley_rpt_ep000667 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753242000107581 | L2 berkeley_rpt_ep000670 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753251600107589 | L1 berkeley_rpt_ep000673 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753261900107597 | L3 berkeley_rpt_ep000675 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753271900107605 | L2 berkeley_rpt_ep000678 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10127526723700105791 | 1111 | lihaoSB | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750596000105589 | L2 berkeley_rpt_ep000006 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750628400105613 | L2 berkeley_rpt_ep000014 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750660400105637 | L2 berkeley_rpt_ep000022 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750688800105661 | L2 berkeley_rpt_ep000030 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750718900105685 | L2 berkeley_rpt_ep000038 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750751000105709 | L2 berkeley_rpt_ep000046 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750781800105733 | L2 berkeley_rpt_ep000054 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750812000105757 | L2 berkeley_rpt_ep000062 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750843100105781 | L2 berkeley_rpt_ep000070 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750873900105805 | L2 berkeley_rpt_ep000078 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750904300105829 | L2 berkeley_rpt_ep000086 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750934900105853 | L2 berkeley_rpt_ep000094 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750966700105877 | L2 berkeley_rpt_ep000102 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750997500105901 | L2 berkeley_rpt_ep000110 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751028400105925 | L2 berkeley_rpt_ep000118 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751168700105949 | L2 berkeley_rpt_ep000126 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751201900105973 | L2 berkeley_rpt_ep000134 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751238100105997 | L2 berkeley_rpt_ep000142 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751271100106021 | L2 berkeley_rpt_ep000150 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751301800106045 | L2 berkeley_rpt_ep000158 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751334100106069 | L2 berkeley_rpt_ep000166 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751364900106093 | L2 berkeley_rpt_ep000174 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751396800106117 | L2 berkeley_rpt_ep000182 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751429000106141 | L2 berkeley_rpt_ep000190 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751460500106165 | L2 berkeley_rpt_ep000198 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751491000106189 | L2 berkeley_rpt_ep000206 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751520400106213 | L2 berkeley_rpt_ep000214 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751551400106237 | L2 berkeley_rpt_ep000222 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751581600106261 | L2 berkeley_rpt_ep000230 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751611500106285 | L2 berkeley_rpt_ep000238 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751642000106309 | L2 berkeley_rpt_ep000246 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751672000106333 | L2 berkeley_rpt_ep000254 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751682500106341 | L1 berkeley_rpt_ep000257 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751692800106349 | L3 berkeley_rpt_ep000259 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751703500106357 | L2 berkeley_rpt_ep000262 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751713700106365 | L1 berkeley_rpt_ep000265 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751724500106373 | L3 berkeley_rpt_ep000267 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751734600106381 | L2 berkeley_rpt_ep000270 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751765800106405 | L2 berkeley_rpt_ep000278 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751775800106413 | L1 berkeley_rpt_ep000281 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751786300106421 | L3 berkeley_rpt_ep000283 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751796600106429 | L2 berkeley_rpt_ep000286 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751807000106437 | L1 berkeley_rpt_ep000289 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751816800106445 | L3 berkeley_rpt_ep000291 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751826900106453 | L2 berkeley_rpt_ep000294 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751837000106461 | L1 berkeley_rpt_ep000297 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751846900106469 | L3 berkeley_rpt_ep000299 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751857600106477 | L2 berkeley_rpt_ep000302 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751868000106485 | L1 berkeley_rpt_ep000305 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751877600106493 | L3 berkeley_rpt_ep000307 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751887600106501 | L2 berkeley_rpt_ep000310 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751897500106509 | L1 berkeley_rpt_ep000313 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751907600106517 | L3 berkeley_rpt_ep000315 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751917700106525 | L2 berkeley_rpt_ep000318 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751927800106533 | L1 berkeley_rpt_ep000321 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751937600106541 | L3 berkeley_rpt_ep000323 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751947700106549 | L2 berkeley_rpt_ep000326 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751958300106557 | L1 berkeley_rpt_ep000329 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751967900106565 | L3 berkeley_rpt_ep000331 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751978000106573 | L2 berkeley_rpt_ep000334 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751987900106581 | L1 berkeley_rpt_ep000337 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751997300106589 | L3 berkeley_rpt_ep000339 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752006900106597 | L2 berkeley_rpt_ep000342 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752016500106605 | L1 berkeley_rpt_ep000345 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752025900106613 | L3 berkeley_rpt_ep000347 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752035300106621 | L2 berkeley_rpt_ep000350 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752044700106629 | L1 berkeley_rpt_ep000353 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752054400106637 | L3 berkeley_rpt_ep000355 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752064200106645 | L2 berkeley_rpt_ep000358 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752073600106653 | L1 berkeley_rpt_ep000361 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752083500106661 | L3 berkeley_rpt_ep000363 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752093400106669 | L2 berkeley_rpt_ep000366 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752103900106677 | L1 berkeley_rpt_ep000369 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752114500106685 | L3 berkeley_rpt_ep000371 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752125100106693 | L2 berkeley_rpt_ep000374 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752135000106701 | L1 berkeley_rpt_ep000377 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752144600106709 | L3 berkeley_rpt_ep000379 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752154800106717 | L2 berkeley_rpt_ep000382 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752164600106725 | L1 berkeley_rpt_ep000385 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752175100106733 | L3 berkeley_rpt_ep000387 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752185300106741 | L2 berkeley_rpt_ep000390 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752195700106749 | L1 berkeley_rpt_ep000393 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752205000106757 | L3 berkeley_rpt_ep000395 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752215500106765 | L2 berkeley_rpt_ep000398 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752225500106773 | L1 berkeley_rpt_ep000401 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752235300106781 | L3 berkeley_rpt_ep000403 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752245900106789 | L2 berkeley_rpt_ep000406 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752256100106797 | L1 berkeley_rpt_ep000409 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752266000106805 | L3 berkeley_rpt_ep000411 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752275700106813 | L2 berkeley_rpt_ep000414 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752285900106821 | L1 berkeley_rpt_ep000417 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752295200106829 | L3 berkeley_rpt_ep000419 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752304900106837 | L2 berkeley_rpt_ep000422 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752314200106845 | L1 berkeley_rpt_ep000425 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752324100106853 | L3 berkeley_rpt_ep000427 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752333800106861 | L2 berkeley_rpt_ep000430 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752343500106869 | L1 berkeley_rpt_ep000433 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752353100106877 | L3 berkeley_rpt_ep000435 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752363100106885 | L2 berkeley_rpt_ep000438 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752373700106893 | L1 berkeley_rpt_ep000441 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752383800106901 | L3 berkeley_rpt_ep000443 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752393300106909 | L2 berkeley_rpt_ep000446 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752403100106917 | L1 berkeley_rpt_ep000449 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752412900106925 | L3 berkeley_rpt_ep000451 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752423300106933 | L2 berkeley_rpt_ep000454 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752433300106941 | L1 berkeley_rpt_ep000457 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752443000106949 | L3 berkeley_rpt_ep000459 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752452600106957 | L2 berkeley_rpt_ep000462 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752463100106965 | L1 berkeley_rpt_ep000465 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752473100106973 | L3 berkeley_rpt_ep000467 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752482700106981 | L2 berkeley_rpt_ep000470 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752492300106989 | L1 berkeley_rpt_ep000473 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752503000106997 | L3 berkeley_rpt_ep000475 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752513400107005 | L2 berkeley_rpt_ep000478 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752523400107013 | L1 berkeley_rpt_ep000481 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752533100107021 | L3 berkeley_rpt_ep000483 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752542700107029 | L2 berkeley_rpt_ep000486 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752552500107037 | L1 berkeley_rpt_ep000489 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752562300107045 | L3 berkeley_rpt_ep000491 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752572500107053 | L2 berkeley_rpt_ep000494 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752581800107061 | L1 berkeley_rpt_ep000497 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752591900107069 | L3 berkeley_rpt_ep000499 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752601900107077 | L2 berkeley_rpt_ep000502 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752611500107085 | L1 berkeley_rpt_ep000505 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752621300107093 | L3 berkeley_rpt_ep000507 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752630900107101 | L2 berkeley_rpt_ep000510 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752641300107109 | L1 berkeley_rpt_ep000513 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752651000107117 | L3 berkeley_rpt_ep000515 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752661800107125 | L2 berkeley_rpt_ep000518 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752671900107133 | L1 berkeley_rpt_ep000521 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752681500107141 | L3 berkeley_rpt_ep000523 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752691500107149 | L2 berkeley_rpt_ep000526 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752701200107157 | L1 berkeley_rpt_ep000529 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752710700107165 | L3 berkeley_rpt_ep000531 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752720400107173 | L2 berkeley_rpt_ep000534 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752731800107181 | L1 berkeley_rpt_ep000537 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752743600107189 | L3 berkeley_rpt_ep000539 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752753800107197 | L2 berkeley_rpt_ep000542 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752763600107205 | L1 berkeley_rpt_ep000545 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752773400107213 | L3 berkeley_rpt_ep000547 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752783500107221 | L2 berkeley_rpt_ep000550 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752793400107229 | L1 berkeley_rpt_ep000553 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752803600107237 | L3 berkeley_rpt_ep000555 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752813600107245 | L2 berkeley_rpt_ep000558 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752823600107253 | L1 berkeley_rpt_ep000561 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752833100107261 | L3 berkeley_rpt_ep000563 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752842700107269 | L2 berkeley_rpt_ep000566 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752853200107277 | L1 berkeley_rpt_ep000569 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752863600107285 | L3 berkeley_rpt_ep000571 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752873800107293 | L2 berkeley_rpt_ep000574 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752883900107301 | L1 berkeley_rpt_ep000577 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752894200107309 | L3 berkeley_rpt_ep000579 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752903900107317 | L2 berkeley_rpt_ep000582 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752913600107325 | L1 berkeley_rpt_ep000585 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752923700107333 | L3 berkeley_rpt_ep000587 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752933700107341 | L2 berkeley_rpt_ep000590 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752943400107349 | L1 berkeley_rpt_ep000593 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752953200107357 | L3 berkeley_rpt_ep000595 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752963300107365 | L2 berkeley_rpt_ep000598 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752973400107373 | L1 berkeley_rpt_ep000601 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752984100107381 | L3 berkeley_rpt_ep000603 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752995000107389 | L2 berkeley_rpt_ep000606 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753005400107397 | L1 berkeley_rpt_ep000609 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753015200107405 | L3 berkeley_rpt_ep000611 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753025900107413 | L2 berkeley_rpt_ep000614 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753036200107421 | L1 berkeley_rpt_ep000617 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753046000107429 | L3 berkeley_rpt_ep000619 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753057100107437 | L2 berkeley_rpt_ep000622 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753068300107445 | L1 berkeley_rpt_ep000625 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753079200107453 | L3 berkeley_rpt_ep000627 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753090000107461 | L2 berkeley_rpt_ep000630 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753100100107469 | L1 berkeley_rpt_ep000633 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754854500108709 | L2 cmu_franka_exploration_dataset_ep000138 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754884200108733 | L2 cmu_franka_exploration_dataset_ep000146 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754914900108757 | L2 cmu_franka_exploration_dataset_ep000154 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754945100108781 | L2 cmu_franka_exploration_dataset_ep000162 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754975300108805 | L2 cmu_franka_exploration_dataset_ep000170 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755005700108829 | L2 cmu_franka_exploration_dataset_ep000178 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755036700108853 | L2 cmu_franka_exploration_dataset_ep000186 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755101500108877 | L2 cmu_franka_exploration_dataset_ep000194 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755133900108901 | L2 dlr_edan_shared_control_ep000003 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755165000108925 | L2 dlr_edan_shared_control_ep000011 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755197000108949 | L2 dlr_edan_shared_control_ep000019 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755229700108973 | L2 dlr_edan_shared_control_ep000027 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755259800108997 | L2 dlr_edan_shared_control_ep000035 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755290200109021 | L2 dlr_edan_shared_control_ep000043 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755320200109045 | L2 dlr_edan_shared_control_ep000051 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755350900109069 | L2 dlr_edan_shared_control_ep000059 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755382200109093 | L2 dlr_edan_shared_control_ep000067 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755412400109117 | L2 dlr_edan_shared_control_ep000075 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755441100109141 | L2 dlr_edan_shared_control_ep000083 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755470700109165 | L2 dlr_edan_shared_control_ep000091 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755498900109189 | L2 dlr_edan_shared_control_ep000099 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755527100109213 | L2 dlr_sara_grid_clamp_ep000003 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755555800109237 | L2 dlr_sara_grid_clamp_ep000011 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755584700109261 | L2 dlr_sara_grid_clamp_ep000019 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755613400109285 | L2 dlr_sara_grid_clamp_ep000027 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755642000109309 | L2 dlr_sara_grid_clamp_ep000035 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755670700109333 | L2 dlr_sara_grid_clamp_ep000043 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755700500109357 | L2 dlr_sara_grid_clamp_ep000051 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755730000109381 | L2 dlr_sara_grid_clamp_ep000059 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755759000109405 | L2 dlr_sara_grid_clamp_ep000067 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755788200109429 | L2 dlr_sara_grid_clamp_ep000075 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755818500109453 | L2 dlr_sara_grid_clamp_ep000083 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755849100109477 | L2 dlr_sara_grid_clamp_ep000091 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755879300109501 | L2 dlr_sara_grid_clamp_ep000099 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755908500109525 | L2 dlr_sara_pour_ep000000 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755939000109549 | L2 dlr_sara_pour_ep000008 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755968100109573 | L2 dlr_sara_pour_ep000016 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755996700109597 | L2 dlr_sara_pour_ep000024 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756026300109621 | L2 dlr_sara_pour_ep000032 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756057300109645 | L2 dlr_sara_pour_ep000040 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753281600107613 | L1 berkeley_rpt_ep000681 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753291500107621 | L3 berkeley_rpt_ep000683 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753301600107629 | L2 berkeley_rpt_ep000686 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753311900107637 | L1 berkeley_rpt_ep000689 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753322500107645 | L3 berkeley_rpt_ep000691 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753332700107653 | L2 berkeley_rpt_ep000694 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753342200107661 | L1 berkeley_rpt_ep000697 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753352500107669 | L3 berkeley_rpt_ep000699 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753362500107677 | L2 berkeley_rpt_ep000702 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753372800107685 | L1 berkeley_rpt_ep000705 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753382700107693 | L3 berkeley_rpt_ep000707 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753393000107701 | L2 berkeley_rpt_ep000710 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753403600107709 | L1 berkeley_rpt_ep000713 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753414400107717 | L3 berkeley_rpt_ep000715 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753425200107725 | L2 berkeley_rpt_ep000718 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753435800107733 | L1 berkeley_rpt_ep000721 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753446100107741 | L3 berkeley_rpt_ep000723 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753456600107749 | L2 berkeley_rpt_ep000726 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753467800107757 | L1 berkeley_rpt_ep000729 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753580800107765 | L3 berkeley_rpt_ep000731 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753592100107773 | L2 berkeley_rpt_ep000734 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753603600107781 | L1 berkeley_rpt_ep000737 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753614200107789 | L3 berkeley_rpt_ep000739 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753624300107797 | L2 berkeley_rpt_ep000742 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753634500107805 | L1 berkeley_rpt_ep000745 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753644800107813 | L3 berkeley_rpt_ep000747 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753654900107821 | L2 berkeley_rpt_ep000750 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753665000107829 | L1 berkeley_rpt_ep000753 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753675700107837 | L3 berkeley_rpt_ep000755 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753686500107845 | L2 berkeley_rpt_ep000758 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753696900107853 | L1 berkeley_rpt_ep000761 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753706800107861 | L3 berkeley_rpt_ep000763 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753717100107869 | L2 berkeley_rpt_ep000766 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753726800107877 | L1 berkeley_rpt_ep000769 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753736800107885 | L3 berkeley_rpt_ep000771 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753746700107893 | L2 berkeley_rpt_ep000774 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753756900107901 | L1 berkeley_rpt_ep000777 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753767200107909 | L3 berkeley_rpt_ep000779 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753778000107917 | L2 berkeley_rpt_ep000782 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753789300107925 | L1 berkeley_rpt_ep000785 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753802100107933 | L3 berkeley_rpt_ep000787 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753816000107941 | L2 berkeley_rpt_ep000790 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753832000107949 | L1 berkeley_rpt_ep000793 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753853100107957 | L3 berkeley_rpt_ep000795 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753883500107965 | L2 berkeley_rpt_ep000798 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753894800107973 | L1 berkeley_rpt_ep000801 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753904700107981 | L3 berkeley_rpt_ep000803 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753915600107989 | L2 berkeley_rpt_ep000806 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753926300107997 | L1 berkeley_rpt_ep000809 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753936400108005 | L3 berkeley_rpt_ep000811 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753945800108013 | L2 berkeley_rpt_ep000814 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753955700108021 | L1 berkeley_rpt_ep000817 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753965500108029 | L3 berkeley_rpt_ep000819 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753976400108037 | L2 berkeley_rpt_ep000822 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753986600108045 | L1 berkeley_rpt_ep000825 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753998000108053 | L3 berkeley_rpt_ep000827 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754026900108061 | L2 berkeley_rpt_ep000830 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754049800108069 | L1 berkeley_rpt_ep000833 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754063700108077 | L3 berkeley_rpt_ep000835 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754074100108085 | L2 berkeley_rpt_ep000838 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754084400108093 | L1 berkeley_rpt_ep000841 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754094500108101 | L3 berkeley_rpt_ep000843 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754104400108109 | L2 berkeley_rpt_ep000846 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754114300108117 | L1 berkeley_rpt_ep000849 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754124500108125 | L3 berkeley_rpt_ep000851 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754134400108133 | L2 berkeley_rpt_ep000854 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754144400108141 | L1 berkeley_rpt_ep000857 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754154100108149 | L3 berkeley_rpt_ep000859 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754163700108157 | L2 berkeley_rpt_ep000862 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754173200108165 | L1 berkeley_rpt_ep000865 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754183400108173 | L3 berkeley_rpt_ep000867 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754193900108181 | L2 berkeley_rpt_ep000870 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754204200108189 | L1 berkeley_rpt_ep000873 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754214700108197 | L3 berkeley_rpt_ep000875 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754224400108205 | L2 berkeley_rpt_ep000878 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754234800108213 | L1 berkeley_rpt_ep000881 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754245000108221 | L3 berkeley_rpt_ep000883 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754255600108229 | L2 berkeley_rpt_ep000886 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754266000108237 | L1 berkeley_rpt_ep000889 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754276800108245 | L3 berkeley_rpt_ep000891 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754287000108253 | L2 berkeley_rpt_ep000894 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754297600108261 | L1 berkeley_rpt_ep000897 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754307500108269 | L3 berkeley_rpt_ep000899 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754317500108277 | L2 berkeley_rpt_ep000902 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754327500108285 | L1 berkeley_rpt_ep000905 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754337200108293 | L3 berkeley_rpt_ep000907 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754347700108301 | L2 cmu_franka_exploration_dataset_ep000002 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754357500108309 | L1 cmu_franka_exploration_dataset_ep000005 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754367900108317 | L3 cmu_franka_exploration_dataset_ep000007 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754378400108325 | L2 cmu_franka_exploration_dataset_ep000010 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754389000108333 | L1 cmu_franka_exploration_dataset_ep000013 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754399300108341 | L3 cmu_franka_exploration_dataset_ep000015 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754409100108349 | L2 cmu_franka_exploration_dataset_ep000018 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754419100108357 | L1 cmu_franka_exploration_dataset_ep000021 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754429100108365 | L3 cmu_franka_exploration_dataset_ep000023 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754438500108373 | L2 cmu_franka_exploration_dataset_ep000026 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754448100108381 | L1 cmu_franka_exploration_dataset_ep000029 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754458400108389 | L3 cmu_franka_exploration_dataset_ep000031 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754468100108397 | L2 cmu_franka_exploration_dataset_ep000034 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754478900108405 | L1 cmu_franka_exploration_dataset_ep000037 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754489100108413 | L3 cmu_franka_exploration_dataset_ep000039 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754499400108421 | L2 cmu_franka_exploration_dataset_ep000042 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754509300108429 | L1 cmu_franka_exploration_dataset_ep000045 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754518600108437 | L3 cmu_franka_exploration_dataset_ep000047 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754527900108445 | L2 cmu_franka_exploration_dataset_ep000050 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754537100108453 | L1 cmu_franka_exploration_dataset_ep000053 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754546400108461 | L3 cmu_franka_exploration_dataset_ep000055 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754556700108469 | L2 cmu_franka_exploration_dataset_ep000058 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754566500108477 | L1 cmu_franka_exploration_dataset_ep000061 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754575800108485 | L3 cmu_franka_exploration_dataset_ep000063 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754585300108493 | L2 cmu_franka_exploration_dataset_ep000066 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754595200108501 | L1 cmu_franka_exploration_dataset_ep000069 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754605200108509 | L3 cmu_franka_exploration_dataset_ep000071 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754615300108517 | L2 cmu_franka_exploration_dataset_ep000074 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754625500108525 | L1 cmu_franka_exploration_dataset_ep000077 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754636200108533 | L3 cmu_franka_exploration_dataset_ep000079 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754645700108541 | L2 cmu_franka_exploration_dataset_ep000082 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754655400108549 | L1 cmu_franka_exploration_dataset_ep000085 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754664900108557 | L3 cmu_franka_exploration_dataset_ep000087 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754675500108565 | L2 cmu_franka_exploration_dataset_ep000090 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754706100108589 | L2 cmu_franka_exploration_dataset_ep000098 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754737300108613 | L2 cmu_franka_exploration_dataset_ep000106 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754766300108637 | L2 cmu_franka_exploration_dataset_ep000114 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754795500108661 | L2 cmu_franka_exploration_dataset_ep000122 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754825400108685 | L2 cmu_franka_exploration_dataset_ep000130 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756258200109804 | L2 dlr_sara_pour_ep000093 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756285600109828 | L2 kaist_nonprehensile_ep000001 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756315600109852 | L2 kaist_nonprehensile_ep000009 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756344100109876 | L2 kaist_nonprehensile_ep000017 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756374900109900 | L2 kaist_nonprehensile_ep000025 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756406000109924 | L2 kaist_nonprehensile_ep000033 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756436000109948 | L2 kaist_nonprehensile_ep000041 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756464100109972 | L2 kaist_nonprehensile_ep000049 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756492200109996 | L2 kaist_nonprehensile_ep000057 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756520300100020 | L2 kaist_nonprehensile_ep000065 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756548700100044 | L2 kaist_nonprehensile_ep000073 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756577800100068 | L2 kaist_nonprehensile_ep000081 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756606100100092 | L2 kaist_nonprehensile_ep000089 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756635900100116 | L2 kaist_nonprehensile_ep000097 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756665600100140 | L2 kaist_nonprehensile_ep000105 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756695400100164 | L2 kaist_nonprehensile_ep000113 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756724800100188 | L2 kaist_nonprehensile_ep000121 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756754900100212 | L2 kaist_nonprehensile_ep000129 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756785300100236 | L2 kaist_nonprehensile_ep000137 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756817000100260 | L2 kaist_nonprehensile_ep000145 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756846900100284 | L2 kaist_nonprehensile_ep000153 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756875200100308 | L2 kaist_nonprehensile_ep000161 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756903600100332 | L2 kaist_nonprehensile_ep000169 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756931200100356 | L2 kaist_nonprehensile_ep000177 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756959400100380 | L2 kaist_nonprehensile_ep000185 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756988100100404 | L2 kaist_nonprehensile_ep000193 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757019600100428 | L2 ucsd_kitchen_dataset_ep000000 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757055100100452 | L2 ucsd_kitchen_dataset_ep000008 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757084500100476 | L2 ucsd_kitchen_dataset_ep000016 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757113800100500 | L2 ucsd_kitchen_dataset_ep000024 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757144000100524 | L2 ucsd_kitchen_dataset_ep000032 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757172500100548 | L2 ucsd_kitchen_dataset_ep000040 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757202200100572 | L2 ucsd_kitchen_dataset_ep000048 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757231500100596 | L2 ucsd_kitchen_dataset_ep000056 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757261000100620 | L2 ucsd_kitchen_dataset_ep000064 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757288700100644 | L2 ucsd_kitchen_dataset_ep000072 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757317500100668 | L2 ucsd_kitchen_dataset_ep000080 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757346200100692 | L2 ucsd_kitchen_dataset_ep000088 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757374600100716 | L2 ucsd_kitchen_dataset_ep000096 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757403900100740 | L2 ucsd_kitchen_dataset_ep000104 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757431800100764 | L2 ucsd_kitchen_dataset_ep000112 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757460700100788 | L2 ucsd_kitchen_dataset_ep000120 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757488400100812 | L2 ucsd_kitchen_dataset_ep000128 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757516700100836 | L2 ucsd_kitchen_dataset_ep000136 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757545300100860 | L2 ucsd_kitchen_dataset_ep000144 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372270200101789 | L2 task-pick_U_driver_20_4_7th_PCL-11 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372309900101813 | L2 task-pick_U_driver_20_4_7th_PCL-19 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372348000101837 | L2 task-pick_U_driver_20_4_7th_PCL-8 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382949500101861 | L2 task-pick_water_50_4_7th-15 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382987600101885 | L2 task-pick_water_50_4_7th-22 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383024400101909 | L2 task-pick_water_50_4_7th-3 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383058600101933 | L2 task-pick_water_50_4_7th-37 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383090400101957 | L2 task-pick_water_50_4_7th-44 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383121300101981 | L2 task-pick_water_50_4_7th-6 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8384479702500100474 | Submit images of kitchen appliance knobs and  | Kitchen Appliances | PREPARING | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8453816668400102131 | Download the Gensmo app, explore its AI fashi | Gensmo | ONLINE | DELETE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8496549477300105612 | Check if the on-chain data matches your submi | Data Fingerprint | PREPARING | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9573985863000104988 | Label Withdrawals: Binance, IndoEx, Tokocrypt | CEX Hot Wallet | ONLINE | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9574067779700106544 | Label Deposits: Coinone, FameEX, Biconomy, Al | CEX Hot Wallet | ONLINE | PAUSE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756077100109660 | L2 dlr_sara_pour_ep000045 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756108000109684 | L2 dlr_sara_pour_ep000053 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756138500109708 | L2 dlr_sara_pour_ep000061 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756167900109732 | L2 dlr_sara_pour_ep000069 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756198700109756 | L2 dlr_sara_pour_ep000077 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756229000109780 | L2 dlr_sara_pour_ep000085 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753110900107478 | L1 berkeley_rpt_ep000636 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753120700107486 | L3 berkeley_rpt_ep000638 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753131000107494 | L2 berkeley_rpt_ep000641 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753142300107502 | L1 berkeley_rpt_ep000644 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753152600107510 | L3 berkeley_rpt_ep000646 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753162600107518 | L2 berkeley_rpt_ep000649 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753172600107526 | L1 berkeley_rpt_ep000652 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753183000107534 | L3 berkeley_rpt_ep000654 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753193700107542 | L2 berkeley_rpt_ep000657 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753203600107550 | L1 berkeley_rpt_ep000660 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753213000107558 | L3 berkeley_rpt_ep000662 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753222300107566 | L2 berkeley_rpt_ep000665 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753232500107574 | L1 berkeley_rpt_ep000668 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753243300107582 | L3 berkeley_rpt_ep000670 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753252800107590 | L2 berkeley_rpt_ep000673 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753263300107598 | L1 berkeley_rpt_ep000676 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753273100107606 | L3 berkeley_rpt_ep000678 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10127555674000105825 | 111222222 | lihaoSB | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750574100105574 | L2 berkeley_rpt_ep000001 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750608700105598 | L2 berkeley_rpt_ep000009 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750640400105622 | L2 berkeley_rpt_ep000017 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750671200105646 | L2 berkeley_rpt_ep000025 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750700700105670 | L2 berkeley_rpt_ep000033 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750731100105694 | L2 berkeley_rpt_ep000041 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750762900105718 | L2 berkeley_rpt_ep000049 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750793500105742 | L2 berkeley_rpt_ep000057 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750824200105766 | L2 berkeley_rpt_ep000065 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750854600105790 | L2 berkeley_rpt_ep000073 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750886000105814 | L2 berkeley_rpt_ep000081 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750915800105838 | L2 berkeley_rpt_ep000089 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750947000105862 | L2 berkeley_rpt_ep000097 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750978300105886 | L2 berkeley_rpt_ep000105 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751008700105910 | L2 berkeley_rpt_ep000113 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751146000105934 | L2 berkeley_rpt_ep000121 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751181300105958 | L2 berkeley_rpt_ep000129 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751214800105982 | L2 berkeley_rpt_ep000137 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751252300106006 | L2 berkeley_rpt_ep000145 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751282600106030 | L2 berkeley_rpt_ep000153 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751314000106054 | L2 berkeley_rpt_ep000161 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751344900106078 | L2 berkeley_rpt_ep000169 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751376800106102 | L2 berkeley_rpt_ep000177 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751409200106126 | L2 berkeley_rpt_ep000185 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751440300106150 | L2 berkeley_rpt_ep000193 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751471900106174 | L2 berkeley_rpt_ep000201 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751501700106198 | L2 berkeley_rpt_ep000209 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751532200106222 | L2 berkeley_rpt_ep000217 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751562900106246 | L2 berkeley_rpt_ep000225 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751592600106270 | L2 berkeley_rpt_ep000233 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751622600106294 | L2 berkeley_rpt_ep000241 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751653000106318 | L2 berkeley_rpt_ep000249 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751673300106334 | L3 berkeley_rpt_ep000254 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751683800106342 | L2 berkeley_rpt_ep000257 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751694100106350 | L1 berkeley_rpt_ep000260 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751704900106358 | L3 berkeley_rpt_ep000262 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751714900106366 | L2 berkeley_rpt_ep000265 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751726000106374 | L1 berkeley_rpt_ep000268 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751746600106390 | L2 berkeley_rpt_ep000273 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751767000106406 | L3 berkeley_rpt_ep000278 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751777100106414 | L2 berkeley_rpt_ep000281 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751787500106422 | L1 berkeley_rpt_ep000284 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751797900106430 | L3 berkeley_rpt_ep000286 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751808300106438 | L2 berkeley_rpt_ep000289 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751818100106446 | L1 berkeley_rpt_ep000292 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751828200106454 | L3 berkeley_rpt_ep000294 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751838200106462 | L2 berkeley_rpt_ep000297 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751848200106470 | L1 berkeley_rpt_ep000300 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751858900106478 | L3 berkeley_rpt_ep000302 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751869200106486 | L2 berkeley_rpt_ep000305 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751879000106494 | L1 berkeley_rpt_ep000308 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751888800106502 | L3 berkeley_rpt_ep000310 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751898600106510 | L2 berkeley_rpt_ep000313 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751908900106518 | L1 berkeley_rpt_ep000316 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751919000106526 | L3 berkeley_rpt_ep000318 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751929200106534 | L2 berkeley_rpt_ep000321 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751938700106542 | L1 berkeley_rpt_ep000324 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751949000106550 | L3 berkeley_rpt_ep000326 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751959400106558 | L2 berkeley_rpt_ep000329 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751969200106566 | L1 berkeley_rpt_ep000332 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751979400106574 | L3 berkeley_rpt_ep000334 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751989200106582 | L2 berkeley_rpt_ep000337 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751998400106590 | L1 berkeley_rpt_ep000340 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752008100106598 | L3 berkeley_rpt_ep000342 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752017600106606 | L2 berkeley_rpt_ep000345 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752027000106614 | L1 berkeley_rpt_ep000348 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752036400106622 | L3 berkeley_rpt_ep000350 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752045900106630 | L2 berkeley_rpt_ep000353 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752055500106638 | L1 berkeley_rpt_ep000356 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752065300106646 | L3 berkeley_rpt_ep000358 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752074800106654 | L2 berkeley_rpt_ep000361 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752084500106662 | L1 berkeley_rpt_ep000364 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752094700106670 | L3 berkeley_rpt_ep000366 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752105100106678 | L2 berkeley_rpt_ep000369 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752115800106686 | L1 berkeley_rpt_ep000372 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752126400106694 | L3 berkeley_rpt_ep000374 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752136200106702 | L2 berkeley_rpt_ep000377 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752145900106710 | L1 berkeley_rpt_ep000380 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752156100106718 | L3 berkeley_rpt_ep000382 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752166000106726 | L2 berkeley_rpt_ep000385 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752176300106734 | L1 berkeley_rpt_ep000388 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752186600106742 | L3 berkeley_rpt_ep000390 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752196900106750 | L2 berkeley_rpt_ep000393 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752206300106758 | L1 berkeley_rpt_ep000396 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752216800106766 | L3 berkeley_rpt_ep000398 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752226700106774 | L2 berkeley_rpt_ep000401 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752236600106782 | L1 berkeley_rpt_ep000404 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752247100106790 | L3 berkeley_rpt_ep000406 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752257300106798 | L2 berkeley_rpt_ep000409 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752267200106806 | L1 berkeley_rpt_ep000412 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752276900106814 | L3 berkeley_rpt_ep000414 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752287000106822 | L2 berkeley_rpt_ep000417 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752296400106830 | L1 berkeley_rpt_ep000420 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752306100106838 | L3 berkeley_rpt_ep000422 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752315500106846 | L2 berkeley_rpt_ep000425 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752325400106854 | L1 berkeley_rpt_ep000428 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752335000106862 | L3 berkeley_rpt_ep000430 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752344800106870 | L2 berkeley_rpt_ep000433 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752354300106878 | L1 berkeley_rpt_ep000436 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752364500106886 | L3 berkeley_rpt_ep000438 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752374900106894 | L2 berkeley_rpt_ep000441 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752385000106902 | L1 berkeley_rpt_ep000444 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752394600106910 | L3 berkeley_rpt_ep000446 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752404200106918 | L2 berkeley_rpt_ep000449 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752414200106926 | L1 berkeley_rpt_ep000452 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752424700106934 | L3 berkeley_rpt_ep000454 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752434500106942 | L2 berkeley_rpt_ep000457 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752444200106950 | L1 berkeley_rpt_ep000460 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752454100106958 | L3 berkeley_rpt_ep000462 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752464400106966 | L2 berkeley_rpt_ep000465 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752474300106974 | L1 berkeley_rpt_ep000468 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752484100106982 | L3 berkeley_rpt_ep000470 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752493600106990 | L2 berkeley_rpt_ep000473 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752504400106998 | L1 berkeley_rpt_ep000476 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752514700107006 | L3 berkeley_rpt_ep000478 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752524500107014 | L2 berkeley_rpt_ep000481 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752534400107022 | L1 berkeley_rpt_ep000484 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752543900107030 | L3 berkeley_rpt_ep000486 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752553800107038 | L2 berkeley_rpt_ep000489 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752563500107046 | L1 berkeley_rpt_ep000492 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752573500107054 | L3 berkeley_rpt_ep000494 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752583100107062 | L2 berkeley_rpt_ep000497 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752593200107070 | L1 berkeley_rpt_ep000500 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752603500107078 | L3 berkeley_rpt_ep000502 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752612700107086 | L2 berkeley_rpt_ep000505 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752622500107094 | L1 berkeley_rpt_ep000508 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752632200107102 | L3 berkeley_rpt_ep000510 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752642400107110 | L2 berkeley_rpt_ep000513 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752652300107118 | L1 berkeley_rpt_ep000516 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752663100107126 | L3 berkeley_rpt_ep000518 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752673000107134 | L2 berkeley_rpt_ep000521 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752682700107142 | L1 berkeley_rpt_ep000524 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752692700107150 | L3 berkeley_rpt_ep000526 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752702300107158 | L2 berkeley_rpt_ep000529 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752711900107166 | L1 berkeley_rpt_ep000532 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752721900107174 | L3 berkeley_rpt_ep000534 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752733300107182 | L2 berkeley_rpt_ep000537 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752744900107190 | L1 berkeley_rpt_ep000540 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752755000107198 | L3 berkeley_rpt_ep000542 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752764900107206 | L2 berkeley_rpt_ep000545 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752774600107214 | L1 berkeley_rpt_ep000548 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752784600107222 | L3 berkeley_rpt_ep000550 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752794700107230 | L2 berkeley_rpt_ep000553 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752804800107238 | L1 berkeley_rpt_ep000556 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752814900107246 | L3 berkeley_rpt_ep000558 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752824900107254 | L2 berkeley_rpt_ep000561 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752834400107262 | L1 berkeley_rpt_ep000564 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752844100107270 | L3 berkeley_rpt_ep000566 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752854600107278 | L2 berkeley_rpt_ep000569 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752864900107286 | L1 berkeley_rpt_ep000572 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752875100107294 | L3 berkeley_rpt_ep000574 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752885200107302 | L2 berkeley_rpt_ep000577 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752895400107310 | L1 berkeley_rpt_ep000580 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752905100107318 | L3 berkeley_rpt_ep000582 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752914900107326 | L2 berkeley_rpt_ep000585 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752924900107334 | L1 berkeley_rpt_ep000588 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752935000107342 | L3 berkeley_rpt_ep000590 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752944600107350 | L2 berkeley_rpt_ep000593 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752954500107358 | L1 berkeley_rpt_ep000596 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752964700107366 | L3 berkeley_rpt_ep000598 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752974700107374 | L2 berkeley_rpt_ep000601 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752985400107382 | L1 berkeley_rpt_ep000604 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752996300107390 | L3 berkeley_rpt_ep000606 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753006700107398 | L2 berkeley_rpt_ep000609 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753016500107406 | L1 berkeley_rpt_ep000612 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753027200107414 | L3 berkeley_rpt_ep000614 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753037400107422 | L2 berkeley_rpt_ep000617 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753047400107430 | L1 berkeley_rpt_ep000620 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753058600107438 | L3 berkeley_rpt_ep000622 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753069600107446 | L2 berkeley_rpt_ep000625 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753080400107454 | L1 berkeley_rpt_ep000628 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753091400107462 | L3 berkeley_rpt_ep000630 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753101400107470 | L2 berkeley_rpt_ep000633 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754865400108718 | L2 cmu_franka_exploration_dataset_ep000141 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754895500108742 | L2 cmu_franka_exploration_dataset_ep000149 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754926800108766 | L2 cmu_franka_exploration_dataset_ep000157 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754956200108790 | L2 cmu_franka_exploration_dataset_ep000165 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754986500108814 | L2 cmu_franka_exploration_dataset_ep000173 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755017300108838 | L2 cmu_franka_exploration_dataset_ep000181 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755081100108862 | L2 cmu_franka_exploration_dataset_ep000189 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755113400108886 | L2 cmu_franka_exploration_dataset_ep000197 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755145200108910 | L2 dlr_edan_shared_control_ep000006 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755176500108934 | L2 dlr_edan_shared_control_ep000014 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755209200108958 | L2 dlr_edan_shared_control_ep000022 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755241100108982 | L2 dlr_edan_shared_control_ep000030 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755270900109006 | L2 dlr_edan_shared_control_ep000038 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755301700109030 | L2 dlr_edan_shared_control_ep000046 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755331500109054 | L2 dlr_edan_shared_control_ep000054 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755362100109078 | L2 dlr_edan_shared_control_ep000062 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755394400109102 | L2 dlr_edan_shared_control_ep000070 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755423000109126 | L2 dlr_edan_shared_control_ep000078 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755452200109150 | L2 dlr_edan_shared_control_ep000086 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755481200109174 | L2 dlr_edan_shared_control_ep000094 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755509400109198 | L2 dlr_edan_shared_control_ep000102 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755537700109222 | L2 dlr_sara_grid_clamp_ep000006 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755566700109246 | L2 dlr_sara_grid_clamp_ep000014 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755595800109270 | L2 dlr_sara_grid_clamp_ep000022 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755624000109294 | L2 dlr_sara_grid_clamp_ep000030 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755652400109318 | L2 dlr_sara_grid_clamp_ep000038 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755681500109342 | L2 dlr_sara_grid_clamp_ep000046 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755711500109366 | L2 dlr_sara_grid_clamp_ep000054 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755741100109390 | L2 dlr_sara_grid_clamp_ep000062 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755770200109414 | L2 dlr_sara_grid_clamp_ep000070 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755800200109438 | L2 dlr_sara_grid_clamp_ep000078 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755830100109462 | L2 dlr_sara_grid_clamp_ep000086 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755860000109486 | L2 dlr_sara_grid_clamp_ep000094 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755890100109510 | L2 dlr_sara_grid_clamp_ep000102 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755920000109534 | L2 dlr_sara_pour_ep000003 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755949800109558 | L2 dlr_sara_pour_ep000011 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755978900109582 | L2 dlr_sara_pour_ep000019 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756007300109606 | L2 dlr_sara_pour_ep000027 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756037900109630 | L2 dlr_sara_pour_ep000035 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756069000109654 | L2 dlr_sara_pour_ep000043 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753282800107614 | L2 berkeley_rpt_ep000681 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753292600107622 | L1 berkeley_rpt_ep000684 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753302900107630 | L3 berkeley_rpt_ep000686 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753313200107638 | L2 berkeley_rpt_ep000689 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753323900107646 | L1 berkeley_rpt_ep000692 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753333800107654 | L3 berkeley_rpt_ep000694 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753343600107662 | L2 berkeley_rpt_ep000697 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753353800107670 | L1 berkeley_rpt_ep000700 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753363700107678 | L3 berkeley_rpt_ep000702 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753374000107686 | L2 berkeley_rpt_ep000705 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753384000107694 | L1 berkeley_rpt_ep000708 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753394400107702 | L3 berkeley_rpt_ep000710 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753405100107710 | L2 berkeley_rpt_ep000713 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753415700107718 | L1 berkeley_rpt_ep000716 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753426500107726 | L3 berkeley_rpt_ep000718 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753437100107734 | L2 berkeley_rpt_ep000721 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753447500107742 | L1 berkeley_rpt_ep000724 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753458000107750 | L3 berkeley_rpt_ep000726 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753469100107758 | L2 berkeley_rpt_ep000729 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753582100107766 | L1 berkeley_rpt_ep000732 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753593700107774 | L3 berkeley_rpt_ep000734 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753605000107782 | L2 berkeley_rpt_ep000737 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753615600107790 | L1 berkeley_rpt_ep000740 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753625600107798 | L3 berkeley_rpt_ep000742 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753635700107806 | L2 berkeley_rpt_ep000745 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753646100107814 | L1 berkeley_rpt_ep000748 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753656100107822 | L3 berkeley_rpt_ep000750 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753666400107830 | L2 berkeley_rpt_ep000753 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753677100107838 | L1 berkeley_rpt_ep000756 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753687900107846 | L3 berkeley_rpt_ep000758 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753698100107854 | L2 berkeley_rpt_ep000761 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753708000107862 | L1 berkeley_rpt_ep000764 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753718400107870 | L3 berkeley_rpt_ep000766 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753728000107878 | L2 berkeley_rpt_ep000769 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753737900107886 | L1 berkeley_rpt_ep000772 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753747900107894 | L3 berkeley_rpt_ep000774 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753758100107902 | L2 berkeley_rpt_ep000777 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753768600107910 | L1 berkeley_rpt_ep000780 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753779300107918 | L3 berkeley_rpt_ep000782 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753791000107926 | L2 berkeley_rpt_ep000785 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753803600107934 | L1 berkeley_rpt_ep000788 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753818000107942 | L3 berkeley_rpt_ep000790 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753834000107950 | L2 berkeley_rpt_ep000793 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753856100107958 | L1 berkeley_rpt_ep000796 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753885000107966 | L3 berkeley_rpt_ep000798 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753896000107974 | L2 berkeley_rpt_ep000801 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753906000107982 | L1 berkeley_rpt_ep000804 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753917000107990 | L3 berkeley_rpt_ep000806 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753927700107998 | L2 berkeley_rpt_ep000809 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753937600108006 | L1 berkeley_rpt_ep000812 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753947000108014 | L3 berkeley_rpt_ep000814 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753957100108022 | L2 berkeley_rpt_ep000817 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753966800108030 | L1 berkeley_rpt_ep000820 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753977700108038 | L3 berkeley_rpt_ep000822 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753988000108046 | L2 berkeley_rpt_ep000825 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753999600108054 | L1 berkeley_rpt_ep000828 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754030300108062 | L3 berkeley_rpt_ep000830 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754053500108070 | L2 berkeley_rpt_ep000833 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754065300108078 | L1 berkeley_rpt_ep000836 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754075200108086 | L3 berkeley_rpt_ep000838 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754085600108094 | L2 berkeley_rpt_ep000841 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754095700108102 | L1 berkeley_rpt_ep000844 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754105700108110 | L3 berkeley_rpt_ep000846 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754115400108118 | L2 berkeley_rpt_ep000849 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754125600108126 | L1 berkeley_rpt_ep000852 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754135500108134 | L3 berkeley_rpt_ep000854 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754145800108142 | L2 berkeley_rpt_ep000857 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754155400108150 | L1 berkeley_rpt_ep000860 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754164900108158 | L3 berkeley_rpt_ep000862 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754174300108166 | L2 berkeley_rpt_ep000865 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754184600108174 | L1 berkeley_rpt_ep000868 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754195100108182 | L3 berkeley_rpt_ep000870 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754205400108190 | L2 berkeley_rpt_ep000873 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754215900108198 | L1 berkeley_rpt_ep000876 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754225600108206 | L3 berkeley_rpt_ep000878 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754236100108214 | L2 berkeley_rpt_ep000881 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754246200108222 | L1 berkeley_rpt_ep000884 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754256900108230 | L3 berkeley_rpt_ep000886 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754267400108238 | L2 berkeley_rpt_ep000889 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754278000108246 | L1 berkeley_rpt_ep000892 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754288300108254 | L3 berkeley_rpt_ep000894 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754298900108262 | L2 berkeley_rpt_ep000897 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754308800108270 | L1 berkeley_rpt_ep000900 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754318700108278 | L3 berkeley_rpt_ep000902 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754328700108286 | L2 berkeley_rpt_ep000905 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754338600108294 | L1 cmu_franka_exploration_dataset_ep000000 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754349000108302 | L3 cmu_franka_exploration_dataset_ep000002 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754358800108310 | L2 cmu_franka_exploration_dataset_ep000005 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754369200108318 | L1 cmu_franka_exploration_dataset_ep000008 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754379600108326 | L3 cmu_franka_exploration_dataset_ep000010 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754390300108334 | L2 cmu_franka_exploration_dataset_ep000013 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754400500108342 | L1 cmu_franka_exploration_dataset_ep000016 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754410400108350 | L3 cmu_franka_exploration_dataset_ep000018 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754420400108358 | L2 cmu_franka_exploration_dataset_ep000021 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754430300108366 | L1 cmu_franka_exploration_dataset_ep000024 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754439700108374 | L3 cmu_franka_exploration_dataset_ep000026 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754449300108382 | L2 cmu_franka_exploration_dataset_ep000029 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754459400108390 | L1 cmu_franka_exploration_dataset_ep000032 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754469500108398 | L3 cmu_franka_exploration_dataset_ep000034 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754480200108406 | L2 cmu_franka_exploration_dataset_ep000037 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754490300108414 | L1 cmu_franka_exploration_dataset_ep000040 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754500700108422 | L3 cmu_franka_exploration_dataset_ep000042 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754510500108430 | L2 cmu_franka_exploration_dataset_ep000045 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754519800108438 | L1 cmu_franka_exploration_dataset_ep000048 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754528900108446 | L3 cmu_franka_exploration_dataset_ep000050 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754538300108454 | L2 cmu_franka_exploration_dataset_ep000053 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754547500108462 | L1 cmu_franka_exploration_dataset_ep000056 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754558000108470 | L3 cmu_franka_exploration_dataset_ep000058 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754567600108478 | L2 cmu_franka_exploration_dataset_ep000061 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754576900108486 | L1 cmu_franka_exploration_dataset_ep000064 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754586600108494 | L3 cmu_franka_exploration_dataset_ep000066 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754596400108502 | L2 cmu_franka_exploration_dataset_ep000069 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754606400108510 | L1 cmu_franka_exploration_dataset_ep000072 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754616500108518 | L3 cmu_franka_exploration_dataset_ep000074 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754626900108526 | L2 cmu_franka_exploration_dataset_ep000077 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754637500108534 | L1 cmu_franka_exploration_dataset_ep000080 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754646800108542 | L3 cmu_franka_exploration_dataset_ep000082 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754656500108550 | L2 cmu_franka_exploration_dataset_ep000085 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754666200108558 | L1 cmu_franka_exploration_dataset_ep000088 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754687000108574 | L2 cmu_franka_exploration_dataset_ep000093 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754717900108598 | L2 cmu_franka_exploration_dataset_ep000101 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754748500108622 | L2 cmu_franka_exploration_dataset_ep000109 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754776900108646 | L2 cmu_franka_exploration_dataset_ep000117 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754806600108670 | L2 cmu_franka_exploration_dataset_ep000125 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754836200108694 | L2 cmu_franka_exploration_dataset_ep000133 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756268400109813 | L2 dlr_sara_pour_ep000096 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756296400109837 | L2 kaist_nonprehensile_ep000004 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756326100109861 | L2 kaist_nonprehensile_ep000012 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756355000109885 | L2 kaist_nonprehensile_ep000020 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756386600109909 | L2 kaist_nonprehensile_ep000028 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756417200109933 | L2 kaist_nonprehensile_ep000036 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756446600109957 | L2 kaist_nonprehensile_ep000044 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756474100109981 | L2 kaist_nonprehensile_ep000052 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756502900100005 | L2 kaist_nonprehensile_ep000060 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756530700100029 | L2 kaist_nonprehensile_ep000068 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756559700100053 | L2 kaist_nonprehensile_ep000076 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756588200100077 | L2 kaist_nonprehensile_ep000084 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756616700100101 | L2 kaist_nonprehensile_ep000092 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756647600100125 | L2 kaist_nonprehensile_ep000100 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756677200100149 | L2 kaist_nonprehensile_ep000108 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756706500100173 | L2 kaist_nonprehensile_ep000116 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756736000100197 | L2 kaist_nonprehensile_ep000124 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756766400100221 | L2 kaist_nonprehensile_ep000132 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756797000100245 | L2 kaist_nonprehensile_ep000140 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756828300100269 | L2 kaist_nonprehensile_ep000148 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756857900100293 | L2 kaist_nonprehensile_ep000156 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756886100100317 | L2 kaist_nonprehensile_ep000164 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756913700100341 | L2 kaist_nonprehensile_ep000172 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756941700100365 | L2 kaist_nonprehensile_ep000180 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756970100100389 | L2 kaist_nonprehensile_ep000188 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756999300100413 | L2 kaist_nonprehensile_ep000196 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757035700100437 | L2 ucsd_kitchen_dataset_ep000003 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757066200100461 | L2 ucsd_kitchen_dataset_ep000011 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757095300100485 | L2 ucsd_kitchen_dataset_ep000019 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757125200100509 | L2 ucsd_kitchen_dataset_ep000027 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757154700100533 | L2 ucsd_kitchen_dataset_ep000035 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757184000100557 | L2 ucsd_kitchen_dataset_ep000043 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757213500100581 | L2 ucsd_kitchen_dataset_ep000051 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757242700100605 | L2 ucsd_kitchen_dataset_ep000059 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757271300100629 | L2 ucsd_kitchen_dataset_ep000067 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757299200100653 | L2 ucsd_kitchen_dataset_ep000075 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757328200100677 | L2 ucsd_kitchen_dataset_ep000083 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757356500100701 | L2 ucsd_kitchen_dataset_ep000091 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757385700100725 | L2 ucsd_kitchen_dataset_ep000099 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757414500100749 | L2 ucsd_kitchen_dataset_ep000107 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757442900100773 | L2 ucsd_kitchen_dataset_ep000115 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757471100100797 | L2 ucsd_kitchen_dataset_ep000123 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757499000100821 | L2 ucsd_kitchen_dataset_ep000131 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757527700100845 | L2 ucsd_kitchen_dataset_ep000139 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757555700100869 | L2 ucsd_kitchen_dataset_ep000147 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372285900101798 | L2 task-pick_U_driver_20_4_7th_PCL-14 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372324100101822 | L2 task-pick_U_driver_20_4_7th_PCL-3 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382926700101846 | L2 task-pick_water_50_4_7th-10 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382963800101870 | L2 task-pick_water_50_4_7th-18 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383001100101894 | L2 task-pick_water_50_4_7th-25 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383037300101918 | L2 task-pick_water_50_4_7th-32 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383070600101942 | L2 task-pick_water_50_4_7th-4 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383101900101966 | L2 task-pick_water_50_4_7th-47 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383132600101990 | L2 task-pick_water_50_4_7th-9 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7994750454200100721 | Robotics image label for week8 | Food Science - depreted | PREPARING | PAUSE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8565013157900104226 | Check if the on-chain data matches your submi | Data Fingerprint | PREPARING | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9574080215300106548 | Label Withdraws: Zoomex, Phemex, Tapbit, Bitf | CEX Hot Wallet | ONLINE | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756088700109669 | L2 dlr_sara_pour_ep000048 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756119500109693 | L2 dlr_sara_pour_ep000056 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756149400109717 | L2 dlr_sara_pour_ep000064 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756179700109741 | L2 dlr_sara_pour_ep000072 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756210300109765 | L2 dlr_sara_pour_ep000080 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756240000109789 | L2 dlr_sara_pour_ep000088 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753112100107479 | L2 berkeley_rpt_ep000636 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753122300107487 | L1 berkeley_rpt_ep000639 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753132300107495 | L3 berkeley_rpt_ep000641 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753143700107503 | L2 berkeley_rpt_ep000644 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753153800107511 | L1 berkeley_rpt_ep000647 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753164000107519 | L3 berkeley_rpt_ep000649 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753173900107527 | L2 berkeley_rpt_ep000652 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753184400107535 | L1 berkeley_rpt_ep000655 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753195000107543 | L3 berkeley_rpt_ep000657 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753204800107551 | L2 berkeley_rpt_ep000660 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753214200107559 | L1 berkeley_rpt_ep000663 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753223600107567 | L3 berkeley_rpt_ep000665 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753233800107575 | L2 berkeley_rpt_ep000668 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753244500107583 | L1 berkeley_rpt_ep000671 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753254200107591 | L3 berkeley_rpt_ep000673 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753264500107599 | L2 berkeley_rpt_ep000676 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753274400107607 | L1 berkeley_rpt_ep000679 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750566400105560 | Crypto | On-chain Address | PREPARING | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750587500105583 | L2 berkeley_rpt_ep000004 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750620500105607 | L2 berkeley_rpt_ep000012 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750652500105631 | L2 berkeley_rpt_ep000020 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750681900105655 | L2 berkeley_rpt_ep000028 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750711700105679 | L2 berkeley_rpt_ep000036 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750743100105703 | L2 berkeley_rpt_ep000044 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750774300105727 | L2 berkeley_rpt_ep000052 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750804400105751 | L2 berkeley_rpt_ep000060 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750835600105775 | L2 berkeley_rpt_ep000068 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750866100105799 | L2 berkeley_rpt_ep000076 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750897200105823 | L2 berkeley_rpt_ep000084 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750927200105847 | L2 berkeley_rpt_ep000092 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750959200105871 | L2 berkeley_rpt_ep000100 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750989600105895 | L2 berkeley_rpt_ep000108 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751020800105919 | L2 berkeley_rpt_ep000116 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751159900105943 | L2 berkeley_rpt_ep000124 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751193500105967 | L2 berkeley_rpt_ep000132 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751228800105991 | L2 berkeley_rpt_ep000140 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751263800106015 | L2 berkeley_rpt_ep000148 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751293700106039 | L2 berkeley_rpt_ep000156 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751326300106063 | L2 berkeley_rpt_ep000164 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751356600106087 | L2 berkeley_rpt_ep000172 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751389000106111 | L2 berkeley_rpt_ep000180 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751420700106135 | L2 berkeley_rpt_ep000188 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751452500106159 | L2 berkeley_rpt_ep000196 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751483400106183 | L2 berkeley_rpt_ep000204 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751513200106207 | L2 berkeley_rpt_ep000212 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751543500106231 | L2 berkeley_rpt_ep000220 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751574200106255 | L2 berkeley_rpt_ep000228 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751603900106279 | L2 berkeley_rpt_ep000236 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751634300106303 | L2 berkeley_rpt_ep000244 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751664200106327 | L2 berkeley_rpt_ep000252 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751674600106335 | L1 berkeley_rpt_ep000255 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751685100106343 | L3 berkeley_rpt_ep000257 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751695400106351 | L2 berkeley_rpt_ep000260 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751706200106359 | L1 berkeley_rpt_ep000263 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751716200106367 | L3 berkeley_rpt_ep000265 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751727300106375 | L2 berkeley_rpt_ep000268 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751758400106399 | L2 berkeley_rpt_ep000276 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751768300106407 | L1 berkeley_rpt_ep000279 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751778300106415 | L3 berkeley_rpt_ep000281 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751788900106423 | L2 berkeley_rpt_ep000284 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751799200106431 | L1 berkeley_rpt_ep000287 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751809500106439 | L3 berkeley_rpt_ep000289 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751819300106447 | L2 berkeley_rpt_ep000292 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751829500106455 | L1 berkeley_rpt_ep000295 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751839500106463 | L3 berkeley_rpt_ep000297 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751849600106471 | L2 berkeley_rpt_ep000300 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751860200106479 | L1 berkeley_rpt_ep000303 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751870300106487 | L3 berkeley_rpt_ep000305 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751880200106495 | L2 berkeley_rpt_ep000308 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751890100106503 | L1 berkeley_rpt_ep000311 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751900000106511 | L3 berkeley_rpt_ep000313 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751910300106519 | L2 berkeley_rpt_ep000316 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751920100106527 | L1 berkeley_rpt_ep000319 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751930600106535 | L3 berkeley_rpt_ep000321 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751940000106543 | L2 berkeley_rpt_ep000324 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751950400106551 | L1 berkeley_rpt_ep000327 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751960600106559 | L3 berkeley_rpt_ep000329 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751970400106567 | L2 berkeley_rpt_ep000332 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751980500106575 | L1 berkeley_rpt_ep000335 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751990300106583 | L3 berkeley_rpt_ep000337 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751999600106591 | L2 berkeley_rpt_ep000340 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752009300106599 | L1 berkeley_rpt_ep000343 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752018700106607 | L3 berkeley_rpt_ep000345 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752028200106615 | L2 berkeley_rpt_ep000348 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752037600106623 | L1 berkeley_rpt_ep000351 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752047000106631 | L3 berkeley_rpt_ep000353 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752056700106639 | L2 berkeley_rpt_ep000356 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752066500106647 | L1 berkeley_rpt_ep000359 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752076000106655 | L3 berkeley_rpt_ep000361 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752085800106663 | L2 berkeley_rpt_ep000364 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752096000106671 | L1 berkeley_rpt_ep000367 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752106500106679 | L3 berkeley_rpt_ep000369 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752117100106687 | L2 berkeley_rpt_ep000372 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752127700106695 | L1 berkeley_rpt_ep000375 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752137400106703 | L3 berkeley_rpt_ep000377 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752147100106711 | L2 berkeley_rpt_ep000380 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752157200106719 | L1 berkeley_rpt_ep000383 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752167400106727 | L3 berkeley_rpt_ep000385 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752177400106735 | L2 berkeley_rpt_ep000388 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752187900106743 | L1 berkeley_rpt_ep000391 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752198000106751 | L3 berkeley_rpt_ep000393 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752207600106759 | L2 berkeley_rpt_ep000396 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752218100106767 | L1 berkeley_rpt_ep000399 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752228000106775 | L3 berkeley_rpt_ep000401 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752237900106783 | L2 berkeley_rpt_ep000404 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752248300106791 | L1 berkeley_rpt_ep000407 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752258500106799 | L3 berkeley_rpt_ep000409 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752268400106807 | L2 berkeley_rpt_ep000412 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752278300106815 | L1 berkeley_rpt_ep000415 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752288200106823 | L3 berkeley_rpt_ep000417 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752297600106831 | L2 berkeley_rpt_ep000420 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752307300106839 | L1 berkeley_rpt_ep000423 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752316700106847 | L3 berkeley_rpt_ep000425 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752326600106855 | L2 berkeley_rpt_ep000428 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752336200106863 | L1 berkeley_rpt_ep000431 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752346100106871 | L3 berkeley_rpt_ep000433 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752355600106879 | L2 berkeley_rpt_ep000436 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752365900106887 | L1 berkeley_rpt_ep000439 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752376200106895 | L3 berkeley_rpt_ep000441 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752386100106903 | L2 berkeley_rpt_ep000444 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752395900106911 | L1 berkeley_rpt_ep000447 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752405400106919 | L3 berkeley_rpt_ep000449 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752415600106927 | L2 berkeley_rpt_ep000452 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752426000106935 | L1 berkeley_rpt_ep000455 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752435700106943 | L3 berkeley_rpt_ep000457 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752445300106951 | L2 berkeley_rpt_ep000460 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752455600106959 | L1 berkeley_rpt_ep000463 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752465500106967 | L3 berkeley_rpt_ep000465 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752475400106975 | L2 berkeley_rpt_ep000468 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752485300106983 | L1 berkeley_rpt_ep000471 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752494800106991 | L3 berkeley_rpt_ep000473 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752505700106999 | L2 berkeley_rpt_ep000476 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752516000107007 | L1 berkeley_rpt_ep000479 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752525800107015 | L3 berkeley_rpt_ep000481 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752535600107023 | L2 berkeley_rpt_ep000484 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752545100107031 | L1 berkeley_rpt_ep000487 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752555000107039 | L3 berkeley_rpt_ep000489 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752564800107047 | L2 berkeley_rpt_ep000492 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752574700107055 | L1 berkeley_rpt_ep000495 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752584300107063 | L3 berkeley_rpt_ep000497 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752594600107071 | L2 berkeley_rpt_ep000500 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752604700107079 | L1 berkeley_rpt_ep000503 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752613900107087 | L3 berkeley_rpt_ep000505 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752623700107095 | L2 berkeley_rpt_ep000508 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752633500107103 | L1 berkeley_rpt_ep000511 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752643600107111 | L3 berkeley_rpt_ep000513 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752653600107119 | L2 berkeley_rpt_ep000516 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752664400107127 | L1 berkeley_rpt_ep000519 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752674300107135 | L3 berkeley_rpt_ep000521 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752684000107143 | L2 berkeley_rpt_ep000524 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752694000107151 | L1 berkeley_rpt_ep000527 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752703400107159 | L3 berkeley_rpt_ep000529 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752713100107167 | L2 berkeley_rpt_ep000532 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752723400107175 | L1 berkeley_rpt_ep000535 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752734600107183 | L3 berkeley_rpt_ep000537 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752746100107191 | L2 berkeley_rpt_ep000540 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752756100107199 | L1 berkeley_rpt_ep000543 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752766000107207 | L3 berkeley_rpt_ep000545 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752776200107215 | L2 berkeley_rpt_ep000548 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752785900107223 | L1 berkeley_rpt_ep000551 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752796000107231 | L3 berkeley_rpt_ep000553 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752806100107239 | L2 berkeley_rpt_ep000556 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752816200107247 | L1 berkeley_rpt_ep000559 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752826100107255 | L3 berkeley_rpt_ep000561 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752835500107263 | L2 berkeley_rpt_ep000564 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752845300107271 | L1 berkeley_rpt_ep000567 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752855700107279 | L3 berkeley_rpt_ep000569 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752866200107287 | L2 berkeley_rpt_ep000572 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752876400107295 | L1 berkeley_rpt_ep000575 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752886500107303 | L3 berkeley_rpt_ep000577 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752896700107311 | L2 berkeley_rpt_ep000580 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752906200107319 | L1 berkeley_rpt_ep000583 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752916200107327 | L3 berkeley_rpt_ep000585 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752926100107335 | L2 berkeley_rpt_ep000588 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752936200107343 | L1 berkeley_rpt_ep000591 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752945800107351 | L3 berkeley_rpt_ep000593 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752955800107359 | L2 berkeley_rpt_ep000596 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752966000107367 | L1 berkeley_rpt_ep000599 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752976100107375 | L3 berkeley_rpt_ep000601 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752986700107383 | L2 berkeley_rpt_ep000604 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752997500107391 | L1 berkeley_rpt_ep000607 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753007900107399 | L3 berkeley_rpt_ep000609 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753017900107407 | L2 berkeley_rpt_ep000612 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753028600107415 | L1 berkeley_rpt_ep000615 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753038700107423 | L3 berkeley_rpt_ep000617 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753048700107431 | L2 berkeley_rpt_ep000620 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753059900107439 | L1 berkeley_rpt_ep000623 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753070900107447 | L3 berkeley_rpt_ep000625 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753081900107455 | L2 berkeley_rpt_ep000628 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753092700107463 | L1 berkeley_rpt_ep000631 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753102600107471 | L3 berkeley_rpt_ep000633 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754876300108727 | L2 cmu_franka_exploration_dataset_ep000144 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754907500108751 | L2 cmu_franka_exploration_dataset_ep000152 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754937600108775 | L2 cmu_franka_exploration_dataset_ep000160 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754968000108799 | L2 cmu_franka_exploration_dataset_ep000168 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754998200108823 | L2 cmu_franka_exploration_dataset_ep000176 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755028700108847 | L2 cmu_franka_exploration_dataset_ep000184 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755093600108871 | L2 cmu_franka_exploration_dataset_ep000192 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755126000108895 | L2 dlr_edan_shared_control_ep000001 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755156900108919 | L2 dlr_edan_shared_control_ep000009 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755189100108943 | L2 dlr_edan_shared_control_ep000017 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755221500108967 | L2 dlr_edan_shared_control_ep000025 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755252300108991 | L2 dlr_edan_shared_control_ep000033 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755282300109015 | L2 dlr_edan_shared_control_ep000041 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755312500109039 | L2 dlr_edan_shared_control_ep000049 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755342700109063 | L2 dlr_edan_shared_control_ep000057 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755374300109087 | L2 dlr_edan_shared_control_ep000065 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755405300109111 | L2 dlr_edan_shared_control_ep000073 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755433900109135 | L2 dlr_edan_shared_control_ep000081 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755463600109159 | L2 dlr_edan_shared_control_ep000089 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755491700109183 | L2 dlr_edan_shared_control_ep000097 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755519800109207 | L2 dlr_sara_grid_clamp_ep000001 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755548300109231 | L2 dlr_sara_grid_clamp_ep000009 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755577300109255 | L2 dlr_sara_grid_clamp_ep000017 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755606700109279 | L2 dlr_sara_grid_clamp_ep000025 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755634800109303 | L2 dlr_sara_grid_clamp_ep000033 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755663400109327 | L2 dlr_sara_grid_clamp_ep000041 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755692900109351 | L2 dlr_sara_grid_clamp_ep000049 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755722700109375 | L2 dlr_sara_grid_clamp_ep000057 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755752000109399 | L2 dlr_sara_grid_clamp_ep000065 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755781000109423 | L2 dlr_sara_grid_clamp_ep000073 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755811100109447 | L2 dlr_sara_grid_clamp_ep000081 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755841400109471 | L2 dlr_sara_grid_clamp_ep000089 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755871600109495 | L2 dlr_sara_grid_clamp_ep000097 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755901200109519 | L2 dlr_sara_grid_clamp_ep000105 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755931700109543 | L2 dlr_sara_pour_ep000006 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755960900109567 | L2 dlr_sara_pour_ep000014 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755989600109591 | L2 dlr_sara_pour_ep000022 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756018200109615 | L2 dlr_sara_pour_ep000030 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756049900109639 | L2 dlr_sara_pour_ep000038 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753284000107615 | L3 berkeley_rpt_ep000681 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753293900107623 | L2 berkeley_rpt_ep000684 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753304200107631 | L1 berkeley_rpt_ep000687 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753314600107639 | L3 berkeley_rpt_ep000689 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753325300107647 | L2 berkeley_rpt_ep000692 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753335000107655 | L1 berkeley_rpt_ep000695 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753344900107663 | L3 berkeley_rpt_ep000697 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753355100107671 | L2 berkeley_rpt_ep000700 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753364800107679 | L1 berkeley_rpt_ep000703 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753375300107687 | L3 berkeley_rpt_ep000705 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753385200107695 | L2 berkeley_rpt_ep000708 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753395700107703 | L1 berkeley_rpt_ep000711 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753406400107711 | L3 berkeley_rpt_ep000713 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753416900107719 | L2 berkeley_rpt_ep000716 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753427800107727 | L1 berkeley_rpt_ep000719 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753438300107735 | L3 berkeley_rpt_ep000721 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753448800107743 | L2 berkeley_rpt_ep000724 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753459300107751 | L1 berkeley_rpt_ep000727 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753470600107759 | L3 berkeley_rpt_ep000729 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753583500107767 | L2 berkeley_rpt_ep000732 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753595200107775 | L1 berkeley_rpt_ep000735 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753606400107783 | L3 berkeley_rpt_ep000737 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753616800107791 | L2 berkeley_rpt_ep000740 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753627000107799 | L1 berkeley_rpt_ep000743 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753637000107807 | L3 berkeley_rpt_ep000745 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753647400107815 | L2 berkeley_rpt_ep000748 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753657500107823 | L1 berkeley_rpt_ep000751 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753667600107831 | L3 berkeley_rpt_ep000753 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753678500107839 | L2 berkeley_rpt_ep000756 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753689300107847 | L1 berkeley_rpt_ep000759 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753699400107855 | L3 berkeley_rpt_ep000761 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753709400107863 | L2 berkeley_rpt_ep000764 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753719600107871 | L1 berkeley_rpt_ep000767 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753729100107879 | L3 berkeley_rpt_ep000769 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753739300107887 | L2 berkeley_rpt_ep000772 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753749300107895 | L1 berkeley_rpt_ep000775 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753759400107903 | L3 berkeley_rpt_ep000777 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753770100107911 | L2 berkeley_rpt_ep000780 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753780700107919 | L1 berkeley_rpt_ep000783 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753792500107927 | L3 berkeley_rpt_ep000785 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753805200107935 | L2 berkeley_rpt_ep000788 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753820200107943 | L1 berkeley_rpt_ep000791 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753836400107951 | L3 berkeley_rpt_ep000793 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753859600107959 | L2 berkeley_rpt_ep000796 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753886400107967 | L1 berkeley_rpt_ep000799 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753897300107975 | L3 berkeley_rpt_ep000801 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753907500107983 | L2 berkeley_rpt_ep000804 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753918200107991 | L1 berkeley_rpt_ep000807 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753928900107999 | L3 berkeley_rpt_ep000809 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753938700108007 | L2 berkeley_rpt_ep000812 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753948300108015 | L1 berkeley_rpt_ep000815 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753958200108023 | L3 berkeley_rpt_ep000817 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753968100108031 | L2 berkeley_rpt_ep000820 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753979000108039 | L1 berkeley_rpt_ep000823 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753989300108047 | L3 berkeley_rpt_ep000825 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754004700108055 | L2 berkeley_rpt_ep000828 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754033600108063 | L1 berkeley_rpt_ep000831 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754055000108071 | L3 berkeley_rpt_ep000833 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754066600108079 | L2 berkeley_rpt_ep000836 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754076600108087 | L1 berkeley_rpt_ep000839 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754086800108095 | L3 berkeley_rpt_ep000841 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754097100108103 | L2 berkeley_rpt_ep000844 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754106900108111 | L1 berkeley_rpt_ep000847 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754116900108119 | L3 berkeley_rpt_ep000849 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754126900108127 | L2 berkeley_rpt_ep000852 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754136900108135 | L1 berkeley_rpt_ep000855 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754147000108143 | L3 berkeley_rpt_ep000857 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754156600108151 | L2 berkeley_rpt_ep000860 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754166200108159 | L1 berkeley_rpt_ep000863 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754175800108167 | L3 berkeley_rpt_ep000865 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754185800108175 | L2 berkeley_rpt_ep000868 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754196500108183 | L1 berkeley_rpt_ep000871 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754206800108191 | L3 berkeley_rpt_ep000873 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754217100108199 | L2 berkeley_rpt_ep000876 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754226900108207 | L1 berkeley_rpt_ep000879 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754237300108215 | L3 berkeley_rpt_ep000881 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754247600108223 | L2 berkeley_rpt_ep000884 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754258200108231 | L1 berkeley_rpt_ep000887 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754268800108239 | L3 berkeley_rpt_ep000889 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754279200108247 | L2 berkeley_rpt_ep000892 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754289500108255 | L1 berkeley_rpt_ep000895 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754300100108263 | L3 berkeley_rpt_ep000897 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754310000108271 | L2 berkeley_rpt_ep000900 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754319900108279 | L1 berkeley_rpt_ep000903 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754329800108287 | L3 berkeley_rpt_ep000905 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754339900108295 | L2 cmu_franka_exploration_dataset_ep000000 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754350200108303 | L1 cmu_franka_exploration_dataset_ep000003 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754359900108311 | L3 cmu_franka_exploration_dataset_ep000005 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754370600108319 | L2 cmu_franka_exploration_dataset_ep000008 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754381000108327 | L1 cmu_franka_exploration_dataset_ep000011 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754391700108335 | L3 cmu_franka_exploration_dataset_ep000013 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754401700108343 | L2 cmu_franka_exploration_dataset_ep000016 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754411500108351 | L1 cmu_franka_exploration_dataset_ep000019 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754421700108359 | L3 cmu_franka_exploration_dataset_ep000021 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754431400108367 | L2 cmu_franka_exploration_dataset_ep000024 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754441100108375 | L1 cmu_franka_exploration_dataset_ep000027 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754450500108383 | L3 cmu_franka_exploration_dataset_ep000029 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754460700108391 | L2 cmu_franka_exploration_dataset_ep000032 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754470900108399 | L1 cmu_franka_exploration_dataset_ep000035 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754481500108407 | L3 cmu_franka_exploration_dataset_ep000037 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754491500108415 | L2 cmu_franka_exploration_dataset_ep000040 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754501900108423 | L1 cmu_franka_exploration_dataset_ep000043 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754511600108431 | L3 cmu_franka_exploration_dataset_ep000045 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754521000108439 | L2 cmu_franka_exploration_dataset_ep000048 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754530100108447 | L1 cmu_franka_exploration_dataset_ep000051 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754539400108455 | L3 cmu_franka_exploration_dataset_ep000053 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754548900108463 | L2 cmu_franka_exploration_dataset_ep000056 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754559400108471 | L1 cmu_franka_exploration_dataset_ep000059 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754568800108479 | L3 cmu_franka_exploration_dataset_ep000061 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754578100108487 | L2 cmu_franka_exploration_dataset_ep000064 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754587900108495 | L1 cmu_franka_exploration_dataset_ep000067 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754597600108503 | L3 cmu_franka_exploration_dataset_ep000069 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754607600108511 | L2 cmu_franka_exploration_dataset_ep000072 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754617800108519 | L1 cmu_franka_exploration_dataset_ep000075 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754628400108527 | L3 cmu_franka_exploration_dataset_ep000077 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754638600108535 | L2 cmu_franka_exploration_dataset_ep000080 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754648100108543 | L1 cmu_franka_exploration_dataset_ep000083 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754657700108551 | L3 cmu_franka_exploration_dataset_ep000085 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754667600108559 | L2 cmu_franka_exploration_dataset_ep000088 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754698700108583 | L2 cmu_franka_exploration_dataset_ep000096 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754729800108607 | L2 cmu_franka_exploration_dataset_ep000104 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754759300108631 | L2 cmu_franka_exploration_dataset_ep000112 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754788100108655 | L2 cmu_franka_exploration_dataset_ep000120 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754818000108679 | L2 cmu_franka_exploration_dataset_ep000128 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754846900108703 | L2 cmu_franka_exploration_dataset_ep000136 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756278500109822 | L2 dlr_sara_pour_ep000099 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756308000109846 | L2 kaist_nonprehensile_ep000007 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756336900109870 | L2 kaist_nonprehensile_ep000015 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756366900109894 | L2 kaist_nonprehensile_ep000023 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756398200109918 | L2 kaist_nonprehensile_ep000031 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756428900109942 | L2 kaist_nonprehensile_ep000039 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756457300109966 | L2 kaist_nonprehensile_ep000047 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756484800109990 | L2 kaist_nonprehensile_ep000055 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756513300100014 | L2 kaist_nonprehensile_ep000063 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756541900100038 | L2 kaist_nonprehensile_ep000071 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756570800100062 | L2 kaist_nonprehensile_ep000079 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756598900100086 | L2 kaist_nonprehensile_ep000087 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756628200100110 | L2 kaist_nonprehensile_ep000095 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756658700100134 | L2 kaist_nonprehensile_ep000103 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756688300100158 | L2 kaist_nonprehensile_ep000111 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756717500100182 | L2 kaist_nonprehensile_ep000119 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756747200100206 | L2 kaist_nonprehensile_ep000127 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756777800100230 | L2 kaist_nonprehensile_ep000135 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756809200100254 | L2 kaist_nonprehensile_ep000143 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756839700100278 | L2 kaist_nonprehensile_ep000151 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756868200100302 | L2 kaist_nonprehensile_ep000159 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756896700100326 | L2 kaist_nonprehensile_ep000167 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756924600100350 | L2 kaist_nonprehensile_ep000175 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756952200100374 | L2 kaist_nonprehensile_ep000183 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756980900100398 | L2 kaist_nonprehensile_ep000191 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757011500100422 | L2 kaist_nonprehensile_ep000199 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757047100100446 | L2 ucsd_kitchen_dataset_ep000006 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757077200100470 | L2 ucsd_kitchen_dataset_ep000014 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757106500100494 | L2 ucsd_kitchen_dataset_ep000022 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757136400100518 | L2 ucsd_kitchen_dataset_ep000030 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757165200100542 | L2 ucsd_kitchen_dataset_ep000038 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757195200100566 | L2 ucsd_kitchen_dataset_ep000046 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757224300100590 | L2 ucsd_kitchen_dataset_ep000054 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757253900100614 | L2 ucsd_kitchen_dataset_ep000062 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757281700100638 | L2 ucsd_kitchen_dataset_ep000070 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757310000100662 | L2 ucsd_kitchen_dataset_ep000078 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757339000100686 | L2 ucsd_kitchen_dataset_ep000086 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757367000100710 | L2 ucsd_kitchen_dataset_ep000094 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757396600100734 | L2 ucsd_kitchen_dataset_ep000102 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757424800100758 | L2 ucsd_kitchen_dataset_ep000110 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757453500100782 | L2 ucsd_kitchen_dataset_ep000118 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757481300100806 | L2 ucsd_kitchen_dataset_ep000126 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757509700100830 | L2 ucsd_kitchen_dataset_ep000134 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757538400100854 | L2 ucsd_kitchen_dataset_ep000142 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372258700101783 | L2 task-pick_U_driver_20_4_7th_PCL-1 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372300600101807 | L2 task-pick_U_driver_20_4_7th_PCL-17 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372338500101831 | L2 task-pick_U_driver_20_4_7th_PCL-6 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382940300101855 | L2 task-pick_water_50_4_7th-13 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382978000101879 | L2 task-pick_water_50_4_7th-20 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383016000101903 | L2 task-pick_water_50_4_7th-28 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383050700101927 | L2 task-pick_water_50_4_7th-35 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383082500101951 | L2 task-pick_water_50_4_7th-42 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383113800101975 | L2 task-pick_water_50_4_7th-5 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8114278445800107788 | Collect withdraw address images from exchange | CEX Hot Wallet | ONLINE | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9142473217800103919 | Collect Advanced Physics Problems: Limited to | Advanced Physics Question | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9464522612500101716 | Real World Photo Collection | Real_World_Photo_Test | PREPARING | PREPARING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9574082386800106555 | Label Deposits: Zoomex, Phemex, Tapbit, Bitfi | CEX Hot Wallet | ONLINE | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756100300109678 | L2 dlr_sara_pour_ep000051 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756130600109702 | L2 dlr_sara_pour_ep000059 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756160400109726 | L2 dlr_sara_pour_ep000067 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756191300109750 | L2 dlr_sara_pour_ep000075 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756221700109774 | L2 dlr_sara_pour_ep000083 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756251100109798 | L2 dlr_sara_pour_ep000091 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753113300107480 | L3 berkeley_rpt_ep000636 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753123600107488 | L2 berkeley_rpt_ep000639 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753133600107496 | L1 berkeley_rpt_ep000642 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753145100107504 | L3 berkeley_rpt_ep000644 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753155200107512 | L2 berkeley_rpt_ep000647 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753165100107520 | L1 berkeley_rpt_ep000650 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753175100107528 | L3 berkeley_rpt_ep000652 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753185800107536 | L2 berkeley_rpt_ep000655 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753196300107544 | L1 berkeley_rpt_ep000658 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753206000107552 | L3 berkeley_rpt_ep000660 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753215400107560 | L2 berkeley_rpt_ep000663 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753224800107568 | L1 berkeley_rpt_ep000666 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753235300107576 | L3 berkeley_rpt_ep000668 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753245700107584 | L2 berkeley_rpt_ep000671 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753255400107592 | L1 berkeley_rpt_ep000674 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753266100107600 | L3 berkeley_rpt_ep000676 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753275600107608 | L2 berkeley_rpt_ep000679 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750566400105561 | Fashion | Fashion Old  | PREPARING | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750600200105592 | L2 berkeley_rpt_ep000007 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750632000105616 | L2 berkeley_rpt_ep000015 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750664100105640 | L2 berkeley_rpt_ep000023 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750692800105664 | L2 berkeley_rpt_ep000031 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750722500105688 | L2 berkeley_rpt_ep000039 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750755000105712 | L2 berkeley_rpt_ep000047 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750785600105736 | L2 berkeley_rpt_ep000055 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750816100105760 | L2 berkeley_rpt_ep000063 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750846800105784 | L2 berkeley_rpt_ep000071 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750877900105808 | L2 berkeley_rpt_ep000079 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750908200105832 | L2 berkeley_rpt_ep000087 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750939000105856 | L2 berkeley_rpt_ep000095 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750970500105880 | L2 berkeley_rpt_ep000103 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751001500105904 | L2 berkeley_rpt_ep000111 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751136600105928 | L2 berkeley_rpt_ep000119 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751173100105952 | L2 berkeley_rpt_ep000127 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751206200105976 | L2 berkeley_rpt_ep000135 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751243100106000 | L2 berkeley_rpt_ep000143 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751275100106024 | L2 berkeley_rpt_ep000151 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751305800106048 | L2 berkeley_rpt_ep000159 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751337700106072 | L2 berkeley_rpt_ep000167 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751368800106096 | L2 berkeley_rpt_ep000175 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751401000106120 | L2 berkeley_rpt_ep000183 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751432900106144 | L2 berkeley_rpt_ep000191 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751464300106168 | L2 berkeley_rpt_ep000199 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751494500106192 | L2 berkeley_rpt_ep000207 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751524300106216 | L2 berkeley_rpt_ep000215 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751555300106240 | L2 berkeley_rpt_ep000223 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751585200106264 | L2 berkeley_rpt_ep000231 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751615300106288 | L2 berkeley_rpt_ep000239 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751645600106312 | L2 berkeley_rpt_ep000247 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751675900106336 | L2 berkeley_rpt_ep000255 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751686300106344 | L1 berkeley_rpt_ep000258 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751696600106352 | L3 berkeley_rpt_ep000260 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751707400106360 | L2 berkeley_rpt_ep000263 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751717500106368 | L1 berkeley_rpt_ep000266 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751728600106376 | L3 berkeley_rpt_ep000268 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751738600106384 | L2 berkeley_rpt_ep000271 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751769500106408 | L2 berkeley_rpt_ep000279 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751779700106416 | L1 berkeley_rpt_ep000282 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751790200106424 | L3 berkeley_rpt_ep000284 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751800600106432 | L2 berkeley_rpt_ep000287 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751810700106440 | L1 berkeley_rpt_ep000290 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751820600106448 | L3 berkeley_rpt_ep000292 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751830700106456 | L2 berkeley_rpt_ep000295 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751840800106464 | L1 berkeley_rpt_ep000298 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751850900106472 | L3 berkeley_rpt_ep000300 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751861600106480 | L2 berkeley_rpt_ep000303 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751871600106488 | L1 berkeley_rpt_ep000306 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751881500106496 | L3 berkeley_rpt_ep000308 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751891300106504 | L2 berkeley_rpt_ep000311 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751901400106512 | L1 berkeley_rpt_ep000314 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751911600106520 | L3 berkeley_rpt_ep000316 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751921500106528 | L2 berkeley_rpt_ep000319 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751931700106536 | L1 berkeley_rpt_ep000322 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751941200106544 | L3 berkeley_rpt_ep000324 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751951700106552 | L2 berkeley_rpt_ep000327 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751961900106560 | L1 berkeley_rpt_ep000330 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751971600106568 | L3 berkeley_rpt_ep000332 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751981700106576 | L2 berkeley_rpt_ep000335 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751991500106584 | L1 berkeley_rpt_ep000338 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752000700106592 | L3 berkeley_rpt_ep000340 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752010600106600 | L2 berkeley_rpt_ep000343 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752019900106608 | L1 berkeley_rpt_ep000346 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752029400106616 | L3 berkeley_rpt_ep000348 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752038800106624 | L2 berkeley_rpt_ep000351 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752048200106632 | L1 berkeley_rpt_ep000354 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752058000106640 | L3 berkeley_rpt_ep000356 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752067700106648 | L2 berkeley_rpt_ep000359 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752077300106656 | L1 berkeley_rpt_ep000362 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752087100106664 | L3 berkeley_rpt_ep000364 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752097300106672 | L2 berkeley_rpt_ep000367 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752107900106680 | L1 berkeley_rpt_ep000370 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752118500106688 | L3 berkeley_rpt_ep000372 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752129000106696 | L2 berkeley_rpt_ep000375 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752138600106704 | L1 berkeley_rpt_ep000378 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752148600106712 | L3 berkeley_rpt_ep000380 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752158400106720 | L2 berkeley_rpt_ep000383 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752168800106728 | L1 berkeley_rpt_ep000386 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752178800106736 | L3 berkeley_rpt_ep000388 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752189200106744 | L2 berkeley_rpt_ep000391 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752199200106752 | L1 berkeley_rpt_ep000394 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752209100106760 | L3 berkeley_rpt_ep000396 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752219400106768 | L2 berkeley_rpt_ep000399 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752229200106776 | L1 berkeley_rpt_ep000402 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752239200106784 | L3 berkeley_rpt_ep000404 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752249600106792 | L2 berkeley_rpt_ep000407 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752259700106800 | L1 berkeley_rpt_ep000410 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752269700106808 | L3 berkeley_rpt_ep000412 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752279700106816 | L2 berkeley_rpt_ep000415 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752289400106824 | L1 berkeley_rpt_ep000418 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752298900106832 | L3 berkeley_rpt_ep000420 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752308400106840 | L2 berkeley_rpt_ep000423 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752317900106848 | L1 berkeley_rpt_ep000426 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752327900106856 | L3 berkeley_rpt_ep000428 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752337400106864 | L2 berkeley_rpt_ep000431 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752347500106872 | L1 berkeley_rpt_ep000434 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752356800106880 | L3 berkeley_rpt_ep000436 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752367100106888 | L2 berkeley_rpt_ep000439 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752377500106896 | L1 berkeley_rpt_ep000442 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752387300106904 | L3 berkeley_rpt_ep000444 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752397200106912 | L2 berkeley_rpt_ep000447 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752406500106920 | L1 berkeley_rpt_ep000450 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752416900106928 | L3 berkeley_rpt_ep000452 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752427200106936 | L2 berkeley_rpt_ep000455 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752436900106944 | L1 berkeley_rpt_ep000458 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752446500106952 | L3 berkeley_rpt_ep000460 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752456900106960 | L2 berkeley_rpt_ep000463 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752466700106968 | L1 berkeley_rpt_ep000466 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752476600106976 | L3 berkeley_rpt_ep000468 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752486500106984 | L2 berkeley_rpt_ep000471 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752496200106992 | L1 berkeley_rpt_ep000474 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752507000107000 | L3 berkeley_rpt_ep000476 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752517400107008 | L2 berkeley_rpt_ep000479 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752526900107016 | L1 berkeley_rpt_ep000482 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752536800107024 | L3 berkeley_rpt_ep000484 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752546400107032 | L2 berkeley_rpt_ep000487 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752556300107040 | L1 berkeley_rpt_ep000490 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752566200107048 | L3 berkeley_rpt_ep000492 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752575900107056 | L2 berkeley_rpt_ep000495 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752585500107064 | L1 berkeley_rpt_ep000498 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752595900107072 | L3 berkeley_rpt_ep000500 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752605900107080 | L2 berkeley_rpt_ep000503 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752615100107088 | L1 berkeley_rpt_ep000506 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752624900107096 | L3 berkeley_rpt_ep000508 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752634900107104 | L2 berkeley_rpt_ep000511 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752644800107112 | L1 berkeley_rpt_ep000514 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752654800107120 | L3 berkeley_rpt_ep000516 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752665700107128 | L2 berkeley_rpt_ep000519 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752675500107136 | L1 berkeley_rpt_ep000522 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752685100107144 | L3 berkeley_rpt_ep000524 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752695200107152 | L2 berkeley_rpt_ep000527 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752704500107160 | L1 berkeley_rpt_ep000530 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752714400107168 | L3 berkeley_rpt_ep000532 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752724800107176 | L2 berkeley_rpt_ep000535 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752736100107184 | L1 berkeley_rpt_ep000538 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752747400107192 | L3 berkeley_rpt_ep000540 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752757400107200 | L2 berkeley_rpt_ep000543 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752767200107208 | L1 berkeley_rpt_ep000546 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752777600107216 | L3 berkeley_rpt_ep000548 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752787000107224 | L2 berkeley_rpt_ep000551 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752797400107232 | L1 berkeley_rpt_ep000554 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752807300107240 | L3 berkeley_rpt_ep000556 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752817500107248 | L2 berkeley_rpt_ep000559 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752827300107256 | L1 berkeley_rpt_ep000562 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752836700107264 | L3 berkeley_rpt_ep000564 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752846600107272 | L2 berkeley_rpt_ep000567 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752857100107280 | L1 berkeley_rpt_ep000570 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752867300107288 | L3 berkeley_rpt_ep000572 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752877600107296 | L2 berkeley_rpt_ep000575 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752887800107304 | L1 berkeley_rpt_ep000578 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752897900107312 | L3 berkeley_rpt_ep000580 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752907500107320 | L2 berkeley_rpt_ep000583 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752917400107328 | L1 berkeley_rpt_ep000586 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752927300107336 | L3 berkeley_rpt_ep000588 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752937300107344 | L2 berkeley_rpt_ep000591 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752947200107352 | L1 berkeley_rpt_ep000594 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752957000107360 | L3 berkeley_rpt_ep000596 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752967200107368 | L2 berkeley_rpt_ep000599 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752977400107376 | L1 berkeley_rpt_ep000602 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752988000107384 | L3 berkeley_rpt_ep000604 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752998900107392 | L2 berkeley_rpt_ep000607 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753009000107400 | L1 berkeley_rpt_ep000610 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753019300107408 | L3 berkeley_rpt_ep000612 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753030000107416 | L2 berkeley_rpt_ep000615 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753039900107424 | L1 berkeley_rpt_ep000618 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753050000107432 | L3 berkeley_rpt_ep000620 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753061200107440 | L2 berkeley_rpt_ep000623 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753072200107448 | L1 berkeley_rpt_ep000626 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753083300107456 | L3 berkeley_rpt_ep000628 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753093900107464 | L2 berkeley_rpt_ep000631 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753103700107472 | L1 berkeley_rpt_ep000634 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754858000108712 | L2 cmu_franka_exploration_dataset_ep000139 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754887700108736 | L2 cmu_franka_exploration_dataset_ep000147 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754918800108760 | L2 cmu_franka_exploration_dataset_ep000155 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754949000108784 | L2 cmu_franka_exploration_dataset_ep000163 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754979100108808 | L2 cmu_franka_exploration_dataset_ep000171 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755009700108832 | L2 cmu_franka_exploration_dataset_ep000179 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755040600108856 | L2 cmu_franka_exploration_dataset_ep000187 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755105600108880 | L2 cmu_franka_exploration_dataset_ep000195 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755137500108904 | L2 dlr_edan_shared_control_ep000004 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755168800108928 | L2 dlr_edan_shared_control_ep000012 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755201200108952 | L2 dlr_edan_shared_control_ep000020 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755233500108976 | L2 dlr_edan_shared_control_ep000028 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755263500109000 | L2 dlr_edan_shared_control_ep000036 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755294300109024 | L2 dlr_edan_shared_control_ep000044 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755324300109048 | L2 dlr_edan_shared_control_ep000052 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755354800109072 | L2 dlr_edan_shared_control_ep000060 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755386300109096 | L2 dlr_edan_shared_control_ep000068 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755416000109120 | L2 dlr_edan_shared_control_ep000076 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755444600109144 | L2 dlr_edan_shared_control_ep000084 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755474100109168 | L2 dlr_edan_shared_control_ep000092 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755502500109192 | L2 dlr_edan_shared_control_ep000100 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755530600109216 | L2 dlr_sara_grid_clamp_ep000004 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755559300109240 | L2 dlr_sara_grid_clamp_ep000012 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755588400109264 | L2 dlr_sara_grid_clamp_ep000020 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755616800109288 | L2 dlr_sara_grid_clamp_ep000028 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755645500109312 | L2 dlr_sara_grid_clamp_ep000036 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755674500109336 | L2 dlr_sara_grid_clamp_ep000044 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755704100109360 | L2 dlr_sara_grid_clamp_ep000052 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755733800109384 | L2 dlr_sara_grid_clamp_ep000060 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755762700109408 | L2 dlr_sara_grid_clamp_ep000068 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755792200109432 | L2 dlr_sara_grid_clamp_ep000076 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755822400109456 | L2 dlr_sara_grid_clamp_ep000084 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755852500109480 | L2 dlr_sara_grid_clamp_ep000092 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755882900109504 | L2 dlr_sara_grid_clamp_ep000100 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755912100109528 | L2 dlr_sara_pour_ep000001 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755942700109552 | L2 dlr_sara_pour_ep000009 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755971700109576 | L2 dlr_sara_pour_ep000017 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756000200109600 | L2 dlr_sara_pour_ep000025 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756030100109624 | L2 dlr_sara_pour_ep000033 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756061100109648 | L2 dlr_sara_pour_ep000041 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753285300107616 | L1 berkeley_rpt_ep000682 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753295000107624 | L3 berkeley_rpt_ep000684 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753305500107632 | L2 berkeley_rpt_ep000687 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753315900107640 | L1 berkeley_rpt_ep000690 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753326700107648 | L3 berkeley_rpt_ep000692 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753336300107656 | L2 berkeley_rpt_ep000695 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753346200107664 | L1 berkeley_rpt_ep000698 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753356200107672 | L3 berkeley_rpt_ep000700 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753366100107680 | L2 berkeley_rpt_ep000703 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753376500107688 | L1 berkeley_rpt_ep000706 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753386400107696 | L3 berkeley_rpt_ep000708 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753397000107704 | L2 berkeley_rpt_ep000711 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753407700107712 | L1 berkeley_rpt_ep000714 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753418400107720 | L3 berkeley_rpt_ep000716 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753429200107728 | L2 berkeley_rpt_ep000719 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753439600107736 | L1 berkeley_rpt_ep000722 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753450200107744 | L3 berkeley_rpt_ep000724 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753460700107752 | L2 berkeley_rpt_ep000727 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753472100107760 | L1 berkeley_rpt_ep000730 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753584700107768 | L3 berkeley_rpt_ep000732 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753596700107776 | L2 berkeley_rpt_ep000735 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753607600107784 | L1 berkeley_rpt_ep000738 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753618100107792 | L3 berkeley_rpt_ep000740 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753628200107800 | L2 berkeley_rpt_ep000743 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753638100107808 | L1 berkeley_rpt_ep000746 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753648600107816 | L3 berkeley_rpt_ep000748 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753658800107824 | L2 berkeley_rpt_ep000751 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753669000107832 | L1 berkeley_rpt_ep000754 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753679900107840 | L3 berkeley_rpt_ep000756 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753690700107848 | L2 berkeley_rpt_ep000759 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753700600107856 | L1 berkeley_rpt_ep000762 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753710500107864 | L3 berkeley_rpt_ep000764 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753720700107872 | L2 berkeley_rpt_ep000767 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753730400107880 | L1 berkeley_rpt_ep000770 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753740500107888 | L3 berkeley_rpt_ep000772 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753750500107896 | L2 berkeley_rpt_ep000775 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753760600107904 | L1 berkeley_rpt_ep000778 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753771200107912 | L3 berkeley_rpt_ep000780 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753782000107920 | L2 berkeley_rpt_ep000783 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753794100107928 | L1 berkeley_rpt_ep000786 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753807000107936 | L3 berkeley_rpt_ep000788 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753822200107944 | L2 berkeley_rpt_ep000791 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753838600107952 | L1 berkeley_rpt_ep000794 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753862500107960 | L3 berkeley_rpt_ep000796 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753887700107968 | L2 berkeley_rpt_ep000799 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753898400107976 | L1 berkeley_rpt_ep000802 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753908800107984 | L3 berkeley_rpt_ep000804 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753919600107992 | L2 berkeley_rpt_ep000807 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753930200108000 | L1 berkeley_rpt_ep000810 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753939900108008 | L3 berkeley_rpt_ep000812 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753949400108016 | L2 berkeley_rpt_ep000815 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753959400108024 | L1 berkeley_rpt_ep000818 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753969400108032 | L3 berkeley_rpt_ep000820 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753980400108040 | L2 berkeley_rpt_ep000823 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753990900108048 | L1 berkeley_rpt_ep000826 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754010200108056 | L3 berkeley_rpt_ep000828 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754035500108064 | L2 berkeley_rpt_ep000831 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754056500108072 | L1 berkeley_rpt_ep000834 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754068000108080 | L3 berkeley_rpt_ep000836 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754077900108088 | L2 berkeley_rpt_ep000839 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754088100108096 | L1 berkeley_rpt_ep000842 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754098300108104 | L3 berkeley_rpt_ep000844 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754108100108112 | L2 berkeley_rpt_ep000847 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754118200108120 | L1 berkeley_rpt_ep000850 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754128200108128 | L3 berkeley_rpt_ep000852 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754138000108136 | L2 berkeley_rpt_ep000855 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754148300108144 | L1 berkeley_rpt_ep000858 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754157700108152 | L3 berkeley_rpt_ep000860 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754167300108160 | L2 berkeley_rpt_ep000863 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754177000108168 | L1 berkeley_rpt_ep000866 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754187200108176 | L3 berkeley_rpt_ep000868 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754197800108184 | L2 berkeley_rpt_ep000871 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754208200108192 | L1 berkeley_rpt_ep000874 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754218300108200 | L3 berkeley_rpt_ep000876 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754228300108208 | L2 berkeley_rpt_ep000879 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754238600108216 | L1 berkeley_rpt_ep000882 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754249100108224 | L3 berkeley_rpt_ep000884 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754259500108232 | L2 berkeley_rpt_ep000887 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754270100108240 | L1 berkeley_rpt_ep000890 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754280500108248 | L3 berkeley_rpt_ep000892 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754290900108256 | L2 berkeley_rpt_ep000895 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754301400108264 | L1 berkeley_rpt_ep000898 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754311200108272 | L3 berkeley_rpt_ep000900 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754321200108280 | L2 berkeley_rpt_ep000903 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754331100108288 | L1 berkeley_rpt_ep000906 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754341100108296 | L3 cmu_franka_exploration_dataset_ep000000 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754351300108304 | L2 cmu_franka_exploration_dataset_ep000003 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754361100108312 | L1 cmu_franka_exploration_dataset_ep000006 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754371700108320 | L3 cmu_franka_exploration_dataset_ep000008 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754382200108328 | L2 cmu_franka_exploration_dataset_ep000011 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754392900108336 | L1 cmu_franka_exploration_dataset_ep000014 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754403000108344 | L3 cmu_franka_exploration_dataset_ep000016 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754412700108352 | L2 cmu_franka_exploration_dataset_ep000019 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754422800108360 | L1 cmu_franka_exploration_dataset_ep000022 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754432600108368 | L3 cmu_franka_exploration_dataset_ep000024 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754442400108376 | L2 cmu_franka_exploration_dataset_ep000027 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754451800108384 | L1 cmu_franka_exploration_dataset_ep000030 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754461900108392 | L3 cmu_franka_exploration_dataset_ep000032 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754472300108400 | L2 cmu_franka_exploration_dataset_ep000035 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754482700108408 | L1 cmu_franka_exploration_dataset_ep000038 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754492700108416 | L3 cmu_franka_exploration_dataset_ep000040 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754503200108424 | L2 cmu_franka_exploration_dataset_ep000043 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754512900108432 | L1 cmu_franka_exploration_dataset_ep000046 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754522200108440 | L3 cmu_franka_exploration_dataset_ep000048 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754531200108448 | L2 cmu_franka_exploration_dataset_ep000051 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754540600108456 | L1 cmu_franka_exploration_dataset_ep000054 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754550200108464 | L3 cmu_franka_exploration_dataset_ep000056 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754560600108472 | L2 cmu_franka_exploration_dataset_ep000059 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754569900108480 | L1 cmu_franka_exploration_dataset_ep000062 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754579400108488 | L3 cmu_franka_exploration_dataset_ep000064 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754589200108496 | L2 cmu_franka_exploration_dataset_ep000067 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754598900108504 | L1 cmu_franka_exploration_dataset_ep000070 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754608800108512 | L3 cmu_franka_exploration_dataset_ep000072 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754619100108520 | L2 cmu_franka_exploration_dataset_ep000075 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754629700108528 | L1 cmu_franka_exploration_dataset_ep000078 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754639900108536 | L3 cmu_franka_exploration_dataset_ep000080 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754649300108544 | L2 cmu_franka_exploration_dataset_ep000083 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754658900108552 | L1 cmu_franka_exploration_dataset_ep000086 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754679400108568 | L2 cmu_franka_exploration_dataset_ep000091 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754710100108592 | L2 cmu_franka_exploration_dataset_ep000099 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754740700108616 | L2 cmu_franka_exploration_dataset_ep000107 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754769700108640 | L2 cmu_franka_exploration_dataset_ep000115 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754799400108664 | L2 cmu_franka_exploration_dataset_ep000123 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754828900108688 | L2 cmu_franka_exploration_dataset_ep000131 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756261600109807 | L2 dlr_sara_pour_ep000094 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756289000109831 | L2 kaist_nonprehensile_ep000002 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756319100109855 | L2 kaist_nonprehensile_ep000010 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756347600109879 | L2 kaist_nonprehensile_ep000018 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756378500109903 | L2 kaist_nonprehensile_ep000026 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756409900109927 | L2 kaist_nonprehensile_ep000034 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756439500109951 | L2 kaist_nonprehensile_ep000042 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756467500109975 | L2 kaist_nonprehensile_ep000050 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756495700109999 | L2 kaist_nonprehensile_ep000058 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756523800100023 | L2 kaist_nonprehensile_ep000066 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756552400100047 | L2 kaist_nonprehensile_ep000074 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756581200100071 | L2 kaist_nonprehensile_ep000082 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756609700100095 | L2 kaist_nonprehensile_ep000090 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756639600100119 | L2 kaist_nonprehensile_ep000098 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756669500100143 | L2 kaist_nonprehensile_ep000106 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756698900100167 | L2 kaist_nonprehensile_ep000114 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756728700100191 | L2 kaist_nonprehensile_ep000122 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756758800100215 | L2 kaist_nonprehensile_ep000130 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756789200100239 | L2 kaist_nonprehensile_ep000138 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756820900100263 | L2 kaist_nonprehensile_ep000146 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756850800100287 | L2 kaist_nonprehensile_ep000154 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756878800100311 | L2 kaist_nonprehensile_ep000162 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756907000100335 | L2 kaist_nonprehensile_ep000170 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756934600100359 | L2 kaist_nonprehensile_ep000178 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756963000100383 | L2 kaist_nonprehensile_ep000186 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756991700100407 | L2 kaist_nonprehensile_ep000194 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757023600100431 | L2 ucsd_kitchen_dataset_ep000001 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757059100100455 | L2 ucsd_kitchen_dataset_ep000009 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757088000100479 | L2 ucsd_kitchen_dataset_ep000017 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757117700100503 | L2 ucsd_kitchen_dataset_ep000025 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757147600100527 | L2 ucsd_kitchen_dataset_ep000033 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757176300100551 | L2 ucsd_kitchen_dataset_ep000041 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757206300100575 | L2 ucsd_kitchen_dataset_ep000049 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757235100100599 | L2 ucsd_kitchen_dataset_ep000057 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757264400100623 | L2 ucsd_kitchen_dataset_ep000065 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757292200100647 | L2 ucsd_kitchen_dataset_ep000073 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757321000100671 | L2 ucsd_kitchen_dataset_ep000081 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757349800100695 | L2 ucsd_kitchen_dataset_ep000089 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757378200100719 | L2 ucsd_kitchen_dataset_ep000097 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757407500100743 | L2 ucsd_kitchen_dataset_ep000105 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757435600100767 | L2 ucsd_kitchen_dataset_ep000113 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757464200100791 | L2 ucsd_kitchen_dataset_ep000121 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757491900100815 | L2 ucsd_kitchen_dataset_ep000129 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757520300100839 | L2 ucsd_kitchen_dataset_ep000137 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757548700100863 | L2 ucsd_kitchen_dataset_ep000145 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372275700101792 | L2 task-pick_U_driver_20_4_7th_PCL-12 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372314600101816 | L2 task-pick_U_driver_20_4_7th_PCL-2 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372352300101840 | L2 task-pick_U_driver_20_4_7th_PCL-9 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382954000101864 | L2 task-pick_water_50_4_7th-16 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382992000101888 | L2 task-pick_water_50_4_7th-23 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383028800101912 | L2 task-pick_water_50_4_7th-30 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383062800101936 | L2 task-pick_water_50_4_7th-38 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383094200101960 | L2 task-pick_water_50_4_7th-45 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383124900101984 | L2 task-pick_water_50_4_7th-7 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7994732439600100309 | Robotics image label for week5 | Food Science - depreted | PREPARING | PAUSE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8565026736600104384 | Bind email for binance users. | User Skill Profiling | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9464529571600101723 | Real World Photo Collection | Real_World_Photo_Test | PREPARING | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756081100109663 | L2 dlr_sara_pour_ep000046 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756112000109687 | L2 dlr_sara_pour_ep000054 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756142100109711 | L2 dlr_sara_pour_ep000062 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756171600109735 | L2 dlr_sara_pour_ep000070 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756202700109759 | L2 dlr_sara_pour_ep000078 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756232700109783 | L2 dlr_sara_pour_ep000086 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753114500107481 | L1 berkeley_rpt_ep000637 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753124900107489 | L3 berkeley_rpt_ep000639 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753134900107497 | L2 berkeley_rpt_ep000642 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753146400107505 | L1 berkeley_rpt_ep000645 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753156600107513 | L3 berkeley_rpt_ep000647 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753166300107521 | L2 berkeley_rpt_ep000650 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753176400107529 | L1 berkeley_rpt_ep000653 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753187100107537 | L3 berkeley_rpt_ep000655 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753197500107545 | L2 berkeley_rpt_ep000658 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753207200107553 | L1 berkeley_rpt_ep000661 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753216500107561 | L3 berkeley_rpt_ep000663 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753226100107569 | L2 berkeley_rpt_ep000666 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753236600107577 | L1 berkeley_rpt_ep000669 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753246800107585 | L3 berkeley_rpt_ep000671 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753256600107593 | L2 berkeley_rpt_ep000674 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753267300107601 | L1 berkeley_rpt_ep000677 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753276800107609 | L3 berkeley_rpt_ep000679 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750566400105562 | Healthcare | Healthcare | PREPARING | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750578500105577 | L2 berkeley_rpt_ep000002 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750612800105601 | L2 berkeley_rpt_ep000010 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750644400105625 | L2 berkeley_rpt_ep000018 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750674700105649 | L2 berkeley_rpt_ep000026 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750704700105673 | L2 berkeley_rpt_ep000034 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750735100105697 | L2 berkeley_rpt_ep000042 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750766600105721 | L2 berkeley_rpt_ep000050 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750797100105745 | L2 berkeley_rpt_ep000058 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750828200105769 | L2 berkeley_rpt_ep000066 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750858200105793 | L2 berkeley_rpt_ep000074 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750889700105817 | L2 berkeley_rpt_ep000082 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750919600105841 | L2 berkeley_rpt_ep000090 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750951000105865 | L2 berkeley_rpt_ep000098 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750982000105889 | L2 berkeley_rpt_ep000106 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751012500105913 | L2 berkeley_rpt_ep000114 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751150800105937 | L2 berkeley_rpt_ep000122 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751185300105961 | L2 berkeley_rpt_ep000130 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751219600105985 | L2 berkeley_rpt_ep000138 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751256100106009 | L2 berkeley_rpt_ep000146 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751286300106033 | L2 berkeley_rpt_ep000154 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751317900106057 | L2 berkeley_rpt_ep000162 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751348400106081 | L2 berkeley_rpt_ep000170 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751380900106105 | L2 berkeley_rpt_ep000178 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751413100106129 | L2 berkeley_rpt_ep000186 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751444300106153 | L2 berkeley_rpt_ep000194 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751475600106177 | L2 berkeley_rpt_ep000202 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751505700106201 | L2 berkeley_rpt_ep000210 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751535800106225 | L2 berkeley_rpt_ep000218 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751566900106249 | L2 berkeley_rpt_ep000226 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751596500106273 | L2 berkeley_rpt_ep000234 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751626400106297 | L2 berkeley_rpt_ep000242 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751656600106321 | L2 berkeley_rpt_ep000250 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751677200106337 | L3 berkeley_rpt_ep000255 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751687400106345 | L2 berkeley_rpt_ep000258 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751698000106353 | L1 berkeley_rpt_ep000261 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751708700106361 | L3 berkeley_rpt_ep000263 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751719000106369 | L2 berkeley_rpt_ep000266 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751750600106393 | L2 berkeley_rpt_ep000274 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751770700106409 | L3 berkeley_rpt_ep000279 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751780900106417 | L2 berkeley_rpt_ep000282 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751791500106425 | L1 berkeley_rpt_ep000285 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751801800106433 | L3 berkeley_rpt_ep000287 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751812000106441 | L2 berkeley_rpt_ep000290 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751821900106449 | L1 berkeley_rpt_ep000293 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751832000106457 | L3 berkeley_rpt_ep000295 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751842000106465 | L2 berkeley_rpt_ep000298 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751852200106473 | L1 berkeley_rpt_ep000301 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751862800106481 | L3 berkeley_rpt_ep000303 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751872700106489 | L2 berkeley_rpt_ep000306 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751882700106497 | L1 berkeley_rpt_ep000309 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751892500106505 | L3 berkeley_rpt_ep000311 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751902600106513 | L2 berkeley_rpt_ep000314 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751912800106521 | L1 berkeley_rpt_ep000317 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751922700106529 | L3 berkeley_rpt_ep000319 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751932800106537 | L2 berkeley_rpt_ep000322 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751942300106545 | L1 berkeley_rpt_ep000325 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751953000106553 | L3 berkeley_rpt_ep000327 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751963100106561 | L2 berkeley_rpt_ep000330 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751972800106569 | L1 berkeley_rpt_ep000333 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751983000106577 | L3 berkeley_rpt_ep000335 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751992700106585 | L2 berkeley_rpt_ep000338 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752001900106593 | L1 berkeley_rpt_ep000341 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752011700106601 | L3 berkeley_rpt_ep000343 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752021100106609 | L2 berkeley_rpt_ep000346 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752030600106617 | L1 berkeley_rpt_ep000349 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752040000106625 | L3 berkeley_rpt_ep000351 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752049400106633 | L2 berkeley_rpt_ep000354 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752059100106641 | L1 berkeley_rpt_ep000357 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752068900106649 | L3 berkeley_rpt_ep000359 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752078600106657 | L2 berkeley_rpt_ep000362 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752088300106665 | L1 berkeley_rpt_ep000365 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752098600106673 | L3 berkeley_rpt_ep000367 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752109200106681 | L2 berkeley_rpt_ep000370 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752119800106689 | L1 berkeley_rpt_ep000373 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752130200106697 | L3 berkeley_rpt_ep000375 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752139700106705 | L2 berkeley_rpt_ep000378 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752149700106713 | L1 berkeley_rpt_ep000381 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752159600106721 | L3 berkeley_rpt_ep000383 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752170100106729 | L2 berkeley_rpt_ep000386 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752179900106737 | L1 berkeley_rpt_ep000389 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752190500106745 | L3 berkeley_rpt_ep000391 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752200500106753 | L2 berkeley_rpt_ep000394 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752210300106761 | L1 berkeley_rpt_ep000397 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752220600106769 | L3 berkeley_rpt_ep000399 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752230400106777 | L2 berkeley_rpt_ep000402 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752240500106785 | L1 berkeley_rpt_ep000405 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752250800106793 | L3 berkeley_rpt_ep000407 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752260900106801 | L2 berkeley_rpt_ep000410 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752270900106809 | L1 berkeley_rpt_ep000413 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752281000106817 | L3 berkeley_rpt_ep000415 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752290600106825 | L2 berkeley_rpt_ep000418 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752300200106833 | L1 berkeley_rpt_ep000421 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752309600106841 | L3 berkeley_rpt_ep000423 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752319100106849 | L2 berkeley_rpt_ep000426 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752329100106857 | L1 berkeley_rpt_ep000429 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752338600106865 | L3 berkeley_rpt_ep000431 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752348700106873 | L2 berkeley_rpt_ep000434 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752358000106881 | L1 berkeley_rpt_ep000437 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752368500106889 | L3 berkeley_rpt_ep000439 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752378700106897 | L2 berkeley_rpt_ep000442 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752388600106905 | L1 berkeley_rpt_ep000445 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752398400106913 | L3 berkeley_rpt_ep000447 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752407800106921 | L2 berkeley_rpt_ep000450 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752418200106929 | L1 berkeley_rpt_ep000453 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752428600106937 | L3 berkeley_rpt_ep000455 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752438200106945 | L2 berkeley_rpt_ep000458 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752447700106953 | L1 berkeley_rpt_ep000461 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752458100106961 | L3 berkeley_rpt_ep000463 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752468000106969 | L2 berkeley_rpt_ep000466 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752477800106977 | L1 berkeley_rpt_ep000469 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752487600106985 | L3 berkeley_rpt_ep000471 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752497600106993 | L2 berkeley_rpt_ep000474 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752508400107001 | L1 berkeley_rpt_ep000477 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752518600107009 | L3 berkeley_rpt_ep000479 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752528100107017 | L2 berkeley_rpt_ep000482 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752538000107025 | L1 berkeley_rpt_ep000485 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752547600107033 | L3 berkeley_rpt_ep000487 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752557500107041 | L2 berkeley_rpt_ep000490 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752567500107049 | L1 berkeley_rpt_ep000493 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752577200107057 | L3 berkeley_rpt_ep000495 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752586700107065 | L2 berkeley_rpt_ep000498 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752597200107073 | L1 berkeley_rpt_ep000501 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752607000107081 | L3 berkeley_rpt_ep000503 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752616300107089 | L2 berkeley_rpt_ep000506 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752626000107097 | L1 berkeley_rpt_ep000509 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752636200107105 | L3 berkeley_rpt_ep000511 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752646100107113 | L2 berkeley_rpt_ep000514 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752656100107121 | L1 berkeley_rpt_ep000517 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752666900107129 | L3 berkeley_rpt_ep000519 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752676500107137 | L2 berkeley_rpt_ep000522 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752686400107145 | L1 berkeley_rpt_ep000525 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752696400107153 | L3 berkeley_rpt_ep000527 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752705800107161 | L2 berkeley_rpt_ep000530 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752715500107169 | L1 berkeley_rpt_ep000533 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752726300107177 | L3 berkeley_rpt_ep000535 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752737500107185 | L2 berkeley_rpt_ep000538 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752748700107193 | L1 berkeley_rpt_ep000541 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752758900107201 | L3 berkeley_rpt_ep000543 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752768400107209 | L2 berkeley_rpt_ep000546 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752778700107217 | L1 berkeley_rpt_ep000549 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752788200107225 | L3 berkeley_rpt_ep000551 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752798700107233 | L2 berkeley_rpt_ep000554 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752808500107241 | L1 berkeley_rpt_ep000557 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752818700107249 | L3 berkeley_rpt_ep000559 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752828500107257 | L2 berkeley_rpt_ep000562 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752837800107265 | L1 berkeley_rpt_ep000565 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752847900107273 | L3 berkeley_rpt_ep000567 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752858400107281 | L2 berkeley_rpt_ep000570 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752868700107289 | L1 berkeley_rpt_ep000573 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752878900107297 | L3 berkeley_rpt_ep000575 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752889200107305 | L2 berkeley_rpt_ep000578 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752899100107313 | L1 berkeley_rpt_ep000581 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752908800107321 | L3 berkeley_rpt_ep000583 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752918700107329 | L2 berkeley_rpt_ep000586 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752928500107337 | L1 berkeley_rpt_ep000589 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752938700107345 | L3 berkeley_rpt_ep000591 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752948400107353 | L2 berkeley_rpt_ep000594 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752958300107361 | L1 berkeley_rpt_ep000597 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752968300107369 | L3 berkeley_rpt_ep000599 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752978800107377 | L2 berkeley_rpt_ep000602 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752989400107385 | L1 berkeley_rpt_ep000605 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753000300107393 | L3 berkeley_rpt_ep000607 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753010300107401 | L2 berkeley_rpt_ep000610 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753020700107409 | L1 berkeley_rpt_ep000613 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753031300107417 | L3 berkeley_rpt_ep000615 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753041200107425 | L2 berkeley_rpt_ep000618 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753051400107433 | L1 berkeley_rpt_ep000621 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753063000107441 | L3 berkeley_rpt_ep000623 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753073600107449 | L2 berkeley_rpt_ep000626 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753084500107457 | L1 berkeley_rpt_ep000629 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753095100107465 | L3 berkeley_rpt_ep000631 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753105000107473 | L2 berkeley_rpt_ep000634 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754869000108721 | L2 cmu_franka_exploration_dataset_ep000142 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754899500108745 | L2 cmu_franka_exploration_dataset_ep000150 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754930400108769 | L2 cmu_franka_exploration_dataset_ep000158 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754960100108793 | L2 cmu_franka_exploration_dataset_ep000166 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754990600108817 | L2 cmu_franka_exploration_dataset_ep000174 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755020900108841 | L2 cmu_franka_exploration_dataset_ep000182 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755085200108865 | L2 cmu_franka_exploration_dataset_ep000190 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755117500108889 | L2 cmu_franka_exploration_dataset_ep000198 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755149300108913 | L2 dlr_edan_shared_control_ep000007 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755180600108937 | L2 dlr_edan_shared_control_ep000015 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755213400108961 | L2 dlr_edan_shared_control_ep000023 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755244600108985 | L2 dlr_edan_shared_control_ep000031 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755274500109009 | L2 dlr_edan_shared_control_ep000039 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755305300109033 | L2 dlr_edan_shared_control_ep000047 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755335300109057 | L2 dlr_edan_shared_control_ep000055 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755365800109081 | L2 dlr_edan_shared_control_ep000063 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755398000109105 | L2 dlr_edan_shared_control_ep000071 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755426600109129 | L2 dlr_edan_shared_control_ep000079 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755455900109153 | L2 dlr_edan_shared_control_ep000087 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755484600109177 | L2 dlr_edan_shared_control_ep000095 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755512800109201 | L2 dlr_edan_shared_control_ep000103 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755541300109225 | L2 dlr_sara_grid_clamp_ep000007 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755570000109249 | L2 dlr_sara_grid_clamp_ep000015 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755599500109273 | L2 dlr_sara_grid_clamp_ep000023 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755627400109297 | L2 dlr_sara_grid_clamp_ep000031 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755655900109321 | L2 dlr_sara_grid_clamp_ep000039 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755685100109345 | L2 dlr_sara_grid_clamp_ep000047 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755715200109369 | L2 dlr_sara_grid_clamp_ep000055 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755744600109393 | L2 dlr_sara_grid_clamp_ep000063 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755773800109417 | L2 dlr_sara_grid_clamp_ep000071 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755803900109441 | L2 dlr_sara_grid_clamp_ep000079 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755834000109465 | L2 dlr_sara_grid_clamp_ep000087 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755863800109489 | L2 dlr_sara_grid_clamp_ep000095 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755893900109513 | L2 dlr_sara_grid_clamp_ep000103 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755923800109537 | L2 dlr_sara_pour_ep000004 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755953700109561 | L2 dlr_sara_pour_ep000012 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755982500109585 | L2 dlr_sara_pour_ep000020 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756010900109609 | L2 dlr_sara_pour_ep000028 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756041900109633 | L2 dlr_sara_pour_ep000036 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756073200109657 | L2 dlr_sara_pour_ep000044 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753286500107617 | L2 berkeley_rpt_ep000682 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753296200107625 | L1 berkeley_rpt_ep000685 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753306800107633 | L3 berkeley_rpt_ep000687 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753317300107641 | L2 berkeley_rpt_ep000690 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753327900107649 | L1 berkeley_rpt_ep000693 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753337400107657 | L3 berkeley_rpt_ep000695 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753347600107665 | L2 berkeley_rpt_ep000698 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753357500107673 | L1 berkeley_rpt_ep000701 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753367300107681 | L3 berkeley_rpt_ep000703 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753377800107689 | L2 berkeley_rpt_ep000706 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753387500107697 | L1 berkeley_rpt_ep000709 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753398300107705 | L3 berkeley_rpt_ep000711 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753408900107713 | L2 berkeley_rpt_ep000714 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753419800107721 | L1 berkeley_rpt_ep000717 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753430500107729 | L3 berkeley_rpt_ep000719 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753440800107737 | L2 berkeley_rpt_ep000722 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753451500107745 | L1 berkeley_rpt_ep000725 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753462100107753 | L3 berkeley_rpt_ep000727 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753473400107761 | L2 berkeley_rpt_ep000730 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753586500107769 | L1 berkeley_rpt_ep000733 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753598100107777 | L3 berkeley_rpt_ep000735 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753609000107785 | L2 berkeley_rpt_ep000738 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753619400107793 | L1 berkeley_rpt_ep000741 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753629600107801 | L3 berkeley_rpt_ep000743 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753639500107809 | L2 berkeley_rpt_ep000746 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753649800107817 | L1 berkeley_rpt_ep000749 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753660000107825 | L3 berkeley_rpt_ep000751 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753670300107833 | L2 berkeley_rpt_ep000754 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753681200107841 | L1 berkeley_rpt_ep000757 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753692000107849 | L3 berkeley_rpt_ep000759 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753701800107857 | L2 berkeley_rpt_ep000762 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753711700107865 | L1 berkeley_rpt_ep000765 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753722000107873 | L3 berkeley_rpt_ep000767 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753731700107881 | L2 berkeley_rpt_ep000770 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753741800107889 | L1 berkeley_rpt_ep000773 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753751800107897 | L3 berkeley_rpt_ep000775 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753761800107905 | L2 berkeley_rpt_ep000778 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753772600107913 | L1 berkeley_rpt_ep000781 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753783400107921 | L3 berkeley_rpt_ep000783 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753795600107929 | L2 berkeley_rpt_ep000786 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753808600107937 | L1 berkeley_rpt_ep000789 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753824400107945 | L3 berkeley_rpt_ep000791 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753842000107953 | L2 berkeley_rpt_ep000794 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753865500107961 | L1 berkeley_rpt_ep000797 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753889100107969 | L3 berkeley_rpt_ep000799 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753899600107977 | L2 berkeley_rpt_ep000802 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753910100107985 | L1 berkeley_rpt_ep000805 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753921000107993 | L3 berkeley_rpt_ep000807 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753931400108001 | L2 berkeley_rpt_ep000810 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753941100108009 | L1 berkeley_rpt_ep000813 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753950700108017 | L3 berkeley_rpt_ep000815 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753960600108025 | L2 berkeley_rpt_ep000818 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753970700108033 | L1 berkeley_rpt_ep000821 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753981600108041 | L3 berkeley_rpt_ep000823 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753992300108049 | L2 berkeley_rpt_ep000826 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754013100108057 | L1 berkeley_rpt_ep000829 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754038200108065 | L3 berkeley_rpt_ep000831 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754057900108073 | L2 berkeley_rpt_ep000834 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754069200108081 | L1 berkeley_rpt_ep000837 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754079200108089 | L3 berkeley_rpt_ep000839 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754089400108097 | L2 berkeley_rpt_ep000842 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754099400108105 | L1 berkeley_rpt_ep000845 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754109300108113 | L3 berkeley_rpt_ep000847 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754119500108121 | L2 berkeley_rpt_ep000850 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754129400108129 | L1 berkeley_rpt_ep000853 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754139300108137 | L3 berkeley_rpt_ep000855 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754149500108145 | L2 berkeley_rpt_ep000858 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754159000108153 | L1 berkeley_rpt_ep000861 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754168500108161 | L3 berkeley_rpt_ep000863 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754178400108169 | L2 berkeley_rpt_ep000866 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754188400108177 | L1 berkeley_rpt_ep000869 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754199000108185 | L3 berkeley_rpt_ep000871 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754209500108193 | L2 berkeley_rpt_ep000874 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754219400108201 | L1 berkeley_rpt_ep000877 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754229600108209 | L3 berkeley_rpt_ep000879 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754239800108217 | L2 berkeley_rpt_ep000882 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754250400108225 | L1 berkeley_rpt_ep000885 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754260800108233 | L3 berkeley_rpt_ep000887 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754271400108241 | L2 berkeley_rpt_ep000890 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754281800108249 | L1 berkeley_rpt_ep000893 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754292100108257 | L3 berkeley_rpt_ep000895 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754302600108265 | L2 berkeley_rpt_ep000898 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754312600108273 | L1 berkeley_rpt_ep000901 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754322300108281 | L3 berkeley_rpt_ep000903 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754332400108289 | L2 berkeley_rpt_ep000906 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754342200108297 | L1 cmu_franka_exploration_dataset_ep000001 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754352500108305 | L3 cmu_franka_exploration_dataset_ep000003 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754362300108313 | L2 cmu_franka_exploration_dataset_ep000006 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754373000108321 | L1 cmu_franka_exploration_dataset_ep000009 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754383600108329 | L3 cmu_franka_exploration_dataset_ep000011 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754394300108337 | L2 cmu_franka_exploration_dataset_ep000014 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754404200108345 | L1 cmu_franka_exploration_dataset_ep000017 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754413900108353 | L3 cmu_franka_exploration_dataset_ep000019 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754424100108361 | L2 cmu_franka_exploration_dataset_ep000022 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754433700108369 | L1 cmu_franka_exploration_dataset_ep000025 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754443500108377 | L3 cmu_franka_exploration_dataset_ep000027 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754453100108385 | L2 cmu_franka_exploration_dataset_ep000030 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754463200108393 | L1 cmu_franka_exploration_dataset_ep000033 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754473600108401 | L3 cmu_franka_exploration_dataset_ep000035 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754484100108409 | L2 cmu_franka_exploration_dataset_ep000038 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754494100108417 | L1 cmu_franka_exploration_dataset_ep000041 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754504500108425 | L3 cmu_franka_exploration_dataset_ep000043 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754514000108433 | L2 cmu_franka_exploration_dataset_ep000046 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754523200108441 | L1 cmu_franka_exploration_dataset_ep000049 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754532300108449 | L3 cmu_franka_exploration_dataset_ep000051 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754541700108457 | L2 cmu_franka_exploration_dataset_ep000054 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754551500108465 | L1 cmu_franka_exploration_dataset_ep000057 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754561800108473 | L3 cmu_franka_exploration_dataset_ep000059 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754571100108481 | L2 cmu_franka_exploration_dataset_ep000062 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754580500108489 | L1 cmu_franka_exploration_dataset_ep000065 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754590400108497 | L3 cmu_franka_exploration_dataset_ep000067 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754600200108505 | L2 cmu_franka_exploration_dataset_ep000070 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754610000108513 | L1 cmu_franka_exploration_dataset_ep000073 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754620500108521 | L3 cmu_franka_exploration_dataset_ep000075 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754630900108529 | L2 cmu_franka_exploration_dataset_ep000078 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754641100108537 | L1 cmu_franka_exploration_dataset_ep000081 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754650500108545 | L3 cmu_franka_exploration_dataset_ep000083 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754660100108553 | L2 cmu_franka_exploration_dataset_ep000086 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754690800108577 | L2 cmu_franka_exploration_dataset_ep000094 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754722000108601 | L2 cmu_franka_exploration_dataset_ep000102 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754752100108625 | L2 cmu_franka_exploration_dataset_ep000110 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754780600108649 | L2 cmu_franka_exploration_dataset_ep000118 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754810400108673 | L2 cmu_franka_exploration_dataset_ep000126 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754839600108697 | L2 cmu_franka_exploration_dataset_ep000134 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756271700109816 | L2 dlr_sara_pour_ep000097 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756300300109840 | L2 kaist_nonprehensile_ep000005 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756329600109864 | L2 kaist_nonprehensile_ep000013 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756359000109888 | L2 kaist_nonprehensile_ep000021 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756390500109912 | L2 kaist_nonprehensile_ep000029 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756420900109936 | L2 kaist_nonprehensile_ep000037 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756450200109960 | L2 kaist_nonprehensile_ep000045 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756477900109984 | L2 kaist_nonprehensile_ep000053 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756506500100008 | L2 kaist_nonprehensile_ep000061 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756534600100032 | L2 kaist_nonprehensile_ep000069 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756563500100056 | L2 kaist_nonprehensile_ep000077 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756591700100080 | L2 kaist_nonprehensile_ep000085 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756620500100104 | L2 kaist_nonprehensile_ep000093 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756651500100128 | L2 kaist_nonprehensile_ep000101 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756680900100152 | L2 kaist_nonprehensile_ep000109 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756710300100176 | L2 kaist_nonprehensile_ep000117 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756739900100200 | L2 kaist_nonprehensile_ep000125 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756770300100224 | L2 kaist_nonprehensile_ep000133 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756801100100248 | L2 kaist_nonprehensile_ep000141 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756832200100272 | L2 kaist_nonprehensile_ep000149 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756861400100296 | L2 kaist_nonprehensile_ep000157 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756889600100320 | L2 kaist_nonprehensile_ep000165 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756917500100344 | L2 kaist_nonprehensile_ep000173 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756945200100368 | L2 kaist_nonprehensile_ep000181 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756973500100392 | L2 kaist_nonprehensile_ep000189 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757003200100416 | L2 kaist_nonprehensile_ep000197 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757039500100440 | L2 ucsd_kitchen_dataset_ep000004 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757069900100464 | L2 ucsd_kitchen_dataset_ep000012 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757099200100488 | L2 ucsd_kitchen_dataset_ep000020 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757129000100512 | L2 ucsd_kitchen_dataset_ep000028 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757158200100536 | L2 ucsd_kitchen_dataset_ep000036 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757187700100560 | L2 ucsd_kitchen_dataset_ep000044 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757217100100584 | L2 ucsd_kitchen_dataset_ep000052 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757246500100608 | L2 ucsd_kitchen_dataset_ep000060 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757274700100632 | L2 ucsd_kitchen_dataset_ep000068 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757302600100656 | L2 ucsd_kitchen_dataset_ep000076 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757331600100680 | L2 ucsd_kitchen_dataset_ep000084 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757359800100704 | L2 ucsd_kitchen_dataset_ep000092 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757389300100728 | L2 ucsd_kitchen_dataset_ep000100 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757417900100752 | L2 ucsd_kitchen_dataset_ep000108 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757446300100776 | L2 ucsd_kitchen_dataset_ep000116 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757474400100800 | L2 ucsd_kitchen_dataset_ep000124 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757502600100824 | L2 ucsd_kitchen_dataset_ep000132 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757531200100848 | L2 ucsd_kitchen_dataset_ep000140 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757559400100872 | L2 ucsd_kitchen_dataset_ep000148 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372290700101801 | L2 task-pick_U_driver_20_4_7th_PCL-15 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372329000101825 | L2 task-pick_U_driver_20_4_7th_PCL-4 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382931100101849 | L2 task-pick_water_50_4_7th-11 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382968900101873 | L2 task-pick_water_50_4_7th-19 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383005600101897 | L2 task-pick_water_50_4_7th-26 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383041800101921 | L2 task-pick_water_50_4_7th-33 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383074800101945 | L2 task-pick_water_50_4_7th-40 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383105800101969 | L2 task-pick_water_50_4_7th-48 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7468779662200109108 | Evaluate videos, shape AI's future | Video Evaluation | PREPARING | DELETE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7789580609600103171 | Food Image and Description Collection | Food Science - depreted | PREPARING | DELETE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7994735089200100353 | Robotics image label for week6 | Food Science - depreted | PREPARING | PAUSE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7995434338400109333 | Robotics image label for week7 | Robotics for binance | PREPARING | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8144497073200105045 | 121 | lihao test frontier | PREPARING | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8565030642500104414 | Codatta TG Group. | User Skill Profiling | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9464534385300101730 | Real World Photo Collection | Real_World_Photo_Test | PREPARING | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756092500109672 | L2 dlr_sara_pour_ep000049 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756123200109696 | L2 dlr_sara_pour_ep000057 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756153000109720 | L2 dlr_sara_pour_ep000065 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756183400109744 | L2 dlr_sara_pour_ep000073 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756214100109768 | L2 dlr_sara_pour_ep000081 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756243600109792 | L2 dlr_sara_pour_ep000089 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753115700107482 | L2 berkeley_rpt_ep000637 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753126100107490 | L1 berkeley_rpt_ep000640 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753136400107498 | L3 berkeley_rpt_ep000642 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753147700107506 | L2 berkeley_rpt_ep000645 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753157900107514 | L1 berkeley_rpt_ep000648 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753167500107522 | L3 berkeley_rpt_ep000650 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753177800107530 | L2 berkeley_rpt_ep000653 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753188400107538 | L1 berkeley_rpt_ep000656 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753198900107546 | L3 berkeley_rpt_ep000658 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753208300107554 | L2 berkeley_rpt_ep000661 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753217700107562 | L1 berkeley_rpt_ep000664 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753227400107570 | L3 berkeley_rpt_ep000666 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753238000107578 | L2 berkeley_rpt_ep000669 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753248000107586 | L1 berkeley_rpt_ep000672 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753257800107594 | L3 berkeley_rpt_ep000674 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753268400107602 | L2 berkeley_rpt_ep000677 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753278100107610 | L1 berkeley_rpt_ep000680 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750591900105586 | L2 berkeley_rpt_ep000005 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750624400105610 | L2 berkeley_rpt_ep000013 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750656600105634 | L2 berkeley_rpt_ep000021 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750685300105658 | L2 berkeley_rpt_ep000029 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750715200105682 | L2 berkeley_rpt_ep000037 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750747000105706 | L2 berkeley_rpt_ep000045 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750778200105730 | L2 berkeley_rpt_ep000053 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750808100105754 | L2 berkeley_rpt_ep000061 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750839400105778 | L2 berkeley_rpt_ep000069 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750869900105802 | L2 berkeley_rpt_ep000077 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750900600105826 | L2 berkeley_rpt_ep000085 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750931200105850 | L2 berkeley_rpt_ep000093 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750963000105874 | L2 berkeley_rpt_ep000101 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750993600105898 | L2 berkeley_rpt_ep000109 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751025000105922 | L2 berkeley_rpt_ep000117 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751164400105946 | L2 berkeley_rpt_ep000125 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751197700105970 | L2 berkeley_rpt_ep000133 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751233400105994 | L2 berkeley_rpt_ep000141 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751267400106018 | L2 berkeley_rpt_ep000149 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751297600106042 | L2 berkeley_rpt_ep000157 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751330300106066 | L2 berkeley_rpt_ep000165 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751360700106090 | L2 berkeley_rpt_ep000173 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751392800106114 | L2 berkeley_rpt_ep000181 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751424700106138 | L2 berkeley_rpt_ep000189 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751456400106162 | L2 berkeley_rpt_ep000197 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751487100106186 | L2 berkeley_rpt_ep000205 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751516900106210 | L2 berkeley_rpt_ep000213 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751547900106234 | L2 berkeley_rpt_ep000221 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751577900106258 | L2 berkeley_rpt_ep000229 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751607500106282 | L2 berkeley_rpt_ep000237 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751638300106306 | L2 berkeley_rpt_ep000245 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751668100106330 | L2 berkeley_rpt_ep000253 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751678600106338 | L1 berkeley_rpt_ep000256 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751688700106346 | L3 berkeley_rpt_ep000258 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751699400106354 | L2 berkeley_rpt_ep000261 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751709900106362 | L1 berkeley_rpt_ep000264 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751720300106370 | L3 berkeley_rpt_ep000266 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751731000106378 | L2 berkeley_rpt_ep000269 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751762200106402 | L2 berkeley_rpt_ep000277 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751772100106410 | L1 berkeley_rpt_ep000280 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751782200106418 | L3 berkeley_rpt_ep000282 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751792800106426 | L2 berkeley_rpt_ep000285 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751803100106434 | L1 berkeley_rpt_ep000288 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751813000106442 | L3 berkeley_rpt_ep000290 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751823000106450 | L2 berkeley_rpt_ep000293 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751833300106458 | L1 berkeley_rpt_ep000296 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751843200106466 | L3 berkeley_rpt_ep000298 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751853500106474 | L2 berkeley_rpt_ep000301 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751864200106482 | L1 berkeley_rpt_ep000304 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751874000106490 | L3 berkeley_rpt_ep000306 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751884000106498 | L2 berkeley_rpt_ep000309 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751893800106506 | L1 berkeley_rpt_ep000312 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751903800106514 | L3 berkeley_rpt_ep000314 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751914000106522 | L2 berkeley_rpt_ep000317 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751924000106530 | L1 berkeley_rpt_ep000320 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751934000106538 | L3 berkeley_rpt_ep000322 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751943500106546 | L2 berkeley_rpt_ep000325 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751954400106554 | L1 berkeley_rpt_ep000328 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751964200106562 | L3 berkeley_rpt_ep000330 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751974100106570 | L2 berkeley_rpt_ep000333 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751984200106578 | L1 berkeley_rpt_ep000336 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751993800106586 | L3 berkeley_rpt_ep000338 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752003200106594 | L2 berkeley_rpt_ep000341 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752012800106602 | L1 berkeley_rpt_ep000344 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752022200106610 | L3 berkeley_rpt_ep000346 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752031700106618 | L2 berkeley_rpt_ep000349 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752041200106626 | L1 berkeley_rpt_ep000352 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752050700106634 | L3 berkeley_rpt_ep000354 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752060500106642 | L2 berkeley_rpt_ep000357 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752070000106650 | L1 berkeley_rpt_ep000360 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752079900106658 | L3 berkeley_rpt_ep000362 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752089600106666 | L2 berkeley_rpt_ep000365 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752099900106674 | L1 berkeley_rpt_ep000368 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752110500106682 | L3 berkeley_rpt_ep000370 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752121100106690 | L2 berkeley_rpt_ep000373 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752131300106698 | L1 berkeley_rpt_ep000376 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752140900106706 | L3 berkeley_rpt_ep000378 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752150900106714 | L2 berkeley_rpt_ep000381 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752160800106722 | L1 berkeley_rpt_ep000384 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752171400106730 | L3 berkeley_rpt_ep000386 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752181200106738 | L2 berkeley_rpt_ep000389 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752191900106746 | L1 berkeley_rpt_ep000392 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752201600106754 | L3 berkeley_rpt_ep000394 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752211500106762 | L2 berkeley_rpt_ep000397 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752221900106770 | L1 berkeley_rpt_ep000400 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752231600106778 | L3 berkeley_rpt_ep000402 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752241900106786 | L2 berkeley_rpt_ep000405 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752252100106794 | L1 berkeley_rpt_ep000408 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752262100106802 | L3 berkeley_rpt_ep000410 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752272100106810 | L2 berkeley_rpt_ep000413 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752282300106818 | L1 berkeley_rpt_ep000416 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752291700106826 | L3 berkeley_rpt_ep000418 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752301400106834 | L2 berkeley_rpt_ep000421 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752310800106842 | L1 berkeley_rpt_ep000424 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752320400106850 | L3 berkeley_rpt_ep000426 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752330200106858 | L2 berkeley_rpt_ep000429 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752339700106866 | L1 berkeley_rpt_ep000432 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752349700106874 | L3 berkeley_rpt_ep000434 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752359200106882 | L2 berkeley_rpt_ep000437 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752369800106890 | L1 berkeley_rpt_ep000440 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752380000106898 | L3 berkeley_rpt_ep000442 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752389700106906 | L2 berkeley_rpt_ep000445 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752399500106914 | L1 berkeley_rpt_ep000448 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752409000106922 | L3 berkeley_rpt_ep000450 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752419400106930 | L2 berkeley_rpt_ep000453 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752429800106938 | L1 berkeley_rpt_ep000456 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752439500106946 | L3 berkeley_rpt_ep000458 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752449000106954 | L2 berkeley_rpt_ep000461 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752459400106962 | L1 berkeley_rpt_ep000464 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752469300106970 | L3 berkeley_rpt_ep000466 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752479100106978 | L2 berkeley_rpt_ep000469 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752488700106986 | L1 berkeley_rpt_ep000472 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752499000106994 | L3 berkeley_rpt_ep000474 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752509700107002 | L2 berkeley_rpt_ep000477 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752519800107010 | L1 berkeley_rpt_ep000480 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752529500107018 | L3 berkeley_rpt_ep000482 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752539200107026 | L2 berkeley_rpt_ep000485 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752548800107034 | L1 berkeley_rpt_ep000488 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752558800107042 | L3 berkeley_rpt_ep000490 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752568800107050 | L2 berkeley_rpt_ep000493 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752578300107058 | L1 berkeley_rpt_ep000496 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752587900107066 | L3 berkeley_rpt_ep000498 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752598300107074 | L2 berkeley_rpt_ep000501 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752608200107082 | L1 berkeley_rpt_ep000504 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752617500107090 | L3 berkeley_rpt_ep000506 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752627200107098 | L2 berkeley_rpt_ep000509 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752637400107106 | L1 berkeley_rpt_ep000512 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752647200107114 | L3 berkeley_rpt_ep000514 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752657800107122 | L2 berkeley_rpt_ep000517 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752668100107130 | L1 berkeley_rpt_ep000520 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752677900107138 | L3 berkeley_rpt_ep000522 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752687700107146 | L2 berkeley_rpt_ep000525 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752697500107154 | L1 berkeley_rpt_ep000528 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752707200107162 | L3 berkeley_rpt_ep000530 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752716700107170 | L2 berkeley_rpt_ep000533 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752727700107178 | L1 berkeley_rpt_ep000536 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752738900107186 | L3 berkeley_rpt_ep000538 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752750000107194 | L2 berkeley_rpt_ep000541 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752760000107202 | L1 berkeley_rpt_ep000544 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752769600107210 | L3 berkeley_rpt_ep000546 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752779800107218 | L2 berkeley_rpt_ep000549 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752789400107226 | L1 berkeley_rpt_ep000552 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752799900107234 | L3 berkeley_rpt_ep000554 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752809800107242 | L2 berkeley_rpt_ep000557 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752819900107250 | L1 berkeley_rpt_ep000560 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752829600107258 | L3 berkeley_rpt_ep000562 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752838900107266 | L2 berkeley_rpt_ep000565 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752849200107274 | L1 berkeley_rpt_ep000568 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752859700107282 | L3 berkeley_rpt_ep000570 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752870000107290 | L2 berkeley_rpt_ep000573 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752880200107298 | L1 berkeley_rpt_ep000576 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752890500107306 | L3 berkeley_rpt_ep000578 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752900200107314 | L2 berkeley_rpt_ep000581 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752910000107322 | L1 berkeley_rpt_ep000584 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752919800107330 | L3 berkeley_rpt_ep000586 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752929700107338 | L2 berkeley_rpt_ep000589 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752939800107346 | L1 berkeley_rpt_ep000592 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752949700107354 | L3 berkeley_rpt_ep000594 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752959500107362 | L2 berkeley_rpt_ep000597 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752969500107370 | L1 berkeley_rpt_ep000600 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752980100107378 | L3 berkeley_rpt_ep000602 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752990900107386 | L2 berkeley_rpt_ep000605 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753001600107394 | L1 berkeley_rpt_ep000608 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753011400107402 | L3 berkeley_rpt_ep000610 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753022100107410 | L2 berkeley_rpt_ep000613 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753032500107418 | L1 berkeley_rpt_ep000616 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753042400107426 | L3 berkeley_rpt_ep000618 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753052800107434 | L2 berkeley_rpt_ep000621 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753064500107442 | L1 berkeley_rpt_ep000624 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753075100107450 | L3 berkeley_rpt_ep000626 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753085900107458 | L2 berkeley_rpt_ep000629 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753096300107466 | L1 berkeley_rpt_ep000632 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753106200107474 | L3 berkeley_rpt_ep000634 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754880100108730 | L2 cmu_franka_exploration_dataset_ep000145 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754911200108754 | L2 cmu_franka_exploration_dataset_ep000153 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754941400108778 | L2 cmu_franka_exploration_dataset_ep000161 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754971600108802 | L2 cmu_franka_exploration_dataset_ep000169 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755001800108826 | L2 cmu_franka_exploration_dataset_ep000177 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755032700108850 | L2 cmu_franka_exploration_dataset_ep000185 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755097600108874 | L2 cmu_franka_exploration_dataset_ep000193 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755129900108898 | L2 dlr_edan_shared_control_ep000002 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755161000108922 | L2 dlr_edan_shared_control_ep000010 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755193000108946 | L2 dlr_edan_shared_control_ep000018 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755225400108970 | L2 dlr_edan_shared_control_ep000026 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755256100108994 | L2 dlr_edan_shared_control_ep000034 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755286200109018 | L2 dlr_edan_shared_control_ep000042 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755316200109042 | L2 dlr_edan_shared_control_ep000050 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755347500109066 | L2 dlr_edan_shared_control_ep000058 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755378000109090 | L2 dlr_edan_shared_control_ep000066 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755408800109114 | L2 dlr_edan_shared_control_ep000074 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755437600109138 | L2 dlr_edan_shared_control_ep000082 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755467100109162 | L2 dlr_edan_shared_control_ep000090 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755495200109186 | L2 dlr_edan_shared_control_ep000098 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755523600109210 | L2 dlr_sara_grid_clamp_ep000002 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755552000109234 | L2 dlr_sara_grid_clamp_ep000010 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755581000109258 | L2 dlr_sara_grid_clamp_ep000018 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755610200109282 | L2 dlr_sara_grid_clamp_ep000026 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755638300109306 | L2 dlr_sara_grid_clamp_ep000034 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755667100109330 | L2 dlr_sara_grid_clamp_ep000042 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755696800109354 | L2 dlr_sara_grid_clamp_ep000050 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755726300109378 | L2 dlr_sara_grid_clamp_ep000058 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755755500109402 | L2 dlr_sara_grid_clamp_ep000066 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755784600109426 | L2 dlr_sara_grid_clamp_ep000074 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755814700109450 | L2 dlr_sara_grid_clamp_ep000082 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755845100109474 | L2 dlr_sara_grid_clamp_ep000090 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755875500109498 | L2 dlr_sara_grid_clamp_ep000098 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755904800109522 | L2 dlr_sara_grid_clamp_ep000106 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755935300109546 | L2 dlr_sara_pour_ep000007 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755964600109570 | L2 dlr_sara_pour_ep000015 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755993100109594 | L2 dlr_sara_pour_ep000023 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756022100109618 | L2 dlr_sara_pour_ep000031 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756053700109642 | L2 dlr_sara_pour_ep000039 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753287700107618 | L3 berkeley_rpt_ep000682 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753297500107626 | L2 berkeley_rpt_ep000685 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753308100107634 | L1 berkeley_rpt_ep000688 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753318700107642 | L3 berkeley_rpt_ep000690 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753329100107650 | L2 berkeley_rpt_ep000693 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753338600107658 | L1 berkeley_rpt_ep000696 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753348900107666 | L3 berkeley_rpt_ep000698 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753358800107674 | L2 berkeley_rpt_ep000701 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753368600107682 | L1 berkeley_rpt_ep000704 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753379000107690 | L3 berkeley_rpt_ep000706 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753388800107698 | L2 berkeley_rpt_ep000709 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753399700107706 | L1 berkeley_rpt_ep000712 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753410300107714 | L3 berkeley_rpt_ep000714 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753421100107722 | L2 berkeley_rpt_ep000717 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753431800107730 | L1 berkeley_rpt_ep000720 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753442100107738 | L3 berkeley_rpt_ep000722 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753452700107746 | L2 berkeley_rpt_ep000725 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753463500107754 | L1 berkeley_rpt_ep000728 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753576300107762 | L3 berkeley_rpt_ep000730 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753587900107770 | L2 berkeley_rpt_ep000733 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753599500107778 | L1 berkeley_rpt_ep000736 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753610300107786 | L3 berkeley_rpt_ep000738 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753620500107794 | L2 berkeley_rpt_ep000741 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753630900107802 | L1 berkeley_rpt_ep000744 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753640900107810 | L3 berkeley_rpt_ep000746 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753651200107818 | L2 berkeley_rpt_ep000749 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753661300107826 | L1 berkeley_rpt_ep000752 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753671600107834 | L3 berkeley_rpt_ep000754 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753682500107842 | L2 berkeley_rpt_ep000757 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753693200107850 | L1 berkeley_rpt_ep000760 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753703000107858 | L3 berkeley_rpt_ep000762 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753713100107866 | L2 berkeley_rpt_ep000765 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753723200107874 | L1 berkeley_rpt_ep000768 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753732900107882 | L3 berkeley_rpt_ep000770 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753743000107890 | L2 berkeley_rpt_ep000773 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753753000107898 | L1 berkeley_rpt_ep000776 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753763300107906 | L3 berkeley_rpt_ep000778 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753774000107914 | L2 berkeley_rpt_ep000781 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753784700107922 | L1 berkeley_rpt_ep000784 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753797300107930 | L3 berkeley_rpt_ep000786 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753810600107938 | L2 berkeley_rpt_ep000789 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753826400107946 | L1 berkeley_rpt_ep000792 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753844100107954 | L3 berkeley_rpt_ep000794 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753867200107962 | L2 berkeley_rpt_ep000797 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753890500107970 | L1 berkeley_rpt_ep000800 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753900800107978 | L3 berkeley_rpt_ep000802 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753911400107986 | L2 berkeley_rpt_ep000805 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753922400107994 | L1 berkeley_rpt_ep000808 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753932700108002 | L3 berkeley_rpt_ep000810 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753942300108010 | L2 berkeley_rpt_ep000813 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753952000108018 | L1 berkeley_rpt_ep000816 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753961900108026 | L3 berkeley_rpt_ep000818 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753972200108034 | L2 berkeley_rpt_ep000821 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753982800108042 | L1 berkeley_rpt_ep000824 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753993600108050 | L3 berkeley_rpt_ep000826 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754014800108058 | L2 berkeley_rpt_ep000829 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754042000108066 | L1 berkeley_rpt_ep000832 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754059400108074 | L3 berkeley_rpt_ep000834 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754070400108082 | L2 berkeley_rpt_ep000837 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754080600108090 | L1 berkeley_rpt_ep000840 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754090600108098 | L3 berkeley_rpt_ep000842 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754100600108106 | L2 berkeley_rpt_ep000845 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754110600108114 | L1 berkeley_rpt_ep000848 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754120900108122 | L3 berkeley_rpt_ep000850 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754130700108130 | L2 berkeley_rpt_ep000853 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754140600108138 | L1 berkeley_rpt_ep000856 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754150600108146 | L3 berkeley_rpt_ep000858 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754160200108154 | L2 berkeley_rpt_ep000861 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754169600108162 | L1 berkeley_rpt_ep000864 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754179700108170 | L3 berkeley_rpt_ep000866 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754189800108178 | L2 berkeley_rpt_ep000869 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754200200108186 | L1 berkeley_rpt_ep000872 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754210900108194 | L3 berkeley_rpt_ep000874 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754220700108202 | L2 berkeley_rpt_ep000877 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754230900108210 | L1 berkeley_rpt_ep000880 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754241200108218 | L3 berkeley_rpt_ep000882 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754251600108226 | L2 berkeley_rpt_ep000885 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754262100108234 | L1 berkeley_rpt_ep000888 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754272600108242 | L3 berkeley_rpt_ep000890 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754283100108250 | L2 berkeley_rpt_ep000893 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754293500108258 | L1 berkeley_rpt_ep000896 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754303700108266 | L3 berkeley_rpt_ep000898 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754313900108274 | L2 berkeley_rpt_ep000901 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754323600108282 | L1 berkeley_rpt_ep000904 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754333500108290 | L3 berkeley_rpt_ep000906 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754343600108298 | L2 cmu_franka_exploration_dataset_ep000001 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754353800108306 | L1 cmu_franka_exploration_dataset_ep000004 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754363900108314 | L3 cmu_franka_exploration_dataset_ep000006 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754374300108322 | L2 cmu_franka_exploration_dataset_ep000009 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754385100108330 | L1 cmu_franka_exploration_dataset_ep000012 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754395500108338 | L3 cmu_franka_exploration_dataset_ep000014 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754405300108346 | L2 cmu_franka_exploration_dataset_ep000017 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754415300108354 | L1 cmu_franka_exploration_dataset_ep000020 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754425400108362 | L3 cmu_franka_exploration_dataset_ep000022 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754434900108370 | L2 cmu_franka_exploration_dataset_ep000025 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754444600108378 | L1 cmu_franka_exploration_dataset_ep000028 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754454400108386 | L3 cmu_franka_exploration_dataset_ep000030 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754464300108394 | L2 cmu_franka_exploration_dataset_ep000033 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754474900108402 | L1 cmu_franka_exploration_dataset_ep000036 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754485400108410 | L3 cmu_franka_exploration_dataset_ep000038 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754495400108418 | L2 cmu_franka_exploration_dataset_ep000041 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754505700108426 | L1 cmu_franka_exploration_dataset_ep000044 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754515200108434 | L3 cmu_franka_exploration_dataset_ep000046 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754524400108442 | L2 cmu_franka_exploration_dataset_ep000049 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754533500108450 | L1 cmu_franka_exploration_dataset_ep000052 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754542900108458 | L3 cmu_franka_exploration_dataset_ep000054 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754552800108466 | L2 cmu_franka_exploration_dataset_ep000057 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754563000108474 | L1 cmu_franka_exploration_dataset_ep000060 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754572200108482 | L3 cmu_franka_exploration_dataset_ep000062 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754581700108490 | L2 cmu_franka_exploration_dataset_ep000065 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754591700108498 | L1 cmu_franka_exploration_dataset_ep000068 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754601400108506 | L3 cmu_franka_exploration_dataset_ep000070 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754611400108514 | L2 cmu_franka_exploration_dataset_ep000073 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754621800108522 | L1 cmu_franka_exploration_dataset_ep000076 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754632300108530 | L3 cmu_franka_exploration_dataset_ep000078 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754642200108538 | L2 cmu_franka_exploration_dataset_ep000081 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754651700108546 | L1 cmu_franka_exploration_dataset_ep000084 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754661200108554 | L3 cmu_franka_exploration_dataset_ep000086 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754671600108562 | L2 cmu_franka_exploration_dataset_ep000089 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754702300108586 | L2 cmu_franka_exploration_dataset_ep000097 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754733500108610 | L2 cmu_franka_exploration_dataset_ep000105 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754762700108634 | L2 cmu_franka_exploration_dataset_ep000113 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754791900108658 | L2 cmu_franka_exploration_dataset_ep000121 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754821700108682 | L2 cmu_franka_exploration_dataset_ep000129 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754850700108706 | L2 cmu_franka_exploration_dataset_ep000137 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756282100109825 | L2 kaist_nonprehensile_ep000000 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756311900109849 | L2 kaist_nonprehensile_ep000008 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756340600109873 | L2 kaist_nonprehensile_ep000016 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756370700109897 | L2 kaist_nonprehensile_ep000024 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756402200109921 | L2 kaist_nonprehensile_ep000032 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756432400109945 | L2 kaist_nonprehensile_ep000040 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756460800109969 | L2 kaist_nonprehensile_ep000048 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756488400109993 | L2 kaist_nonprehensile_ep000056 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756516800100017 | L2 kaist_nonprehensile_ep000064 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756545200100041 | L2 kaist_nonprehensile_ep000072 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756574200100065 | L2 kaist_nonprehensile_ep000080 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756602500100089 | L2 kaist_nonprehensile_ep000088 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756632100100113 | L2 kaist_nonprehensile_ep000096 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756662100100137 | L2 kaist_nonprehensile_ep000104 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756691700100161 | L2 kaist_nonprehensile_ep000112 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756721100100185 | L2 kaist_nonprehensile_ep000120 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756751100100209 | L2 kaist_nonprehensile_ep000128 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756781600100233 | L2 kaist_nonprehensile_ep000136 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756813200100257 | L2 kaist_nonprehensile_ep000144 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756843400100281 | L2 kaist_nonprehensile_ep000152 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756871800100305 | L2 kaist_nonprehensile_ep000160 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756900100100329 | L2 kaist_nonprehensile_ep000168 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756928000100353 | L2 kaist_nonprehensile_ep000176 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756956000100377 | L2 kaist_nonprehensile_ep000184 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756984500100401 | L2 kaist_nonprehensile_ep000192 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757015300100425 | L2 kaist_nonprehensile_ep000200 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757051000100449 | L2 ucsd_kitchen_dataset_ep000007 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757081000100473 | L2 ucsd_kitchen_dataset_ep000015 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757110200100497 | L2 ucsd_kitchen_dataset_ep000023 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757140300100521 | L2 ucsd_kitchen_dataset_ep000031 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757168800100545 | L2 ucsd_kitchen_dataset_ep000039 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757198600100569 | L2 ucsd_kitchen_dataset_ep000047 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757227900100593 | L2 ucsd_kitchen_dataset_ep000055 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757257400100617 | L2 ucsd_kitchen_dataset_ep000063 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757285200100641 | L2 ucsd_kitchen_dataset_ep000071 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757313700100665 | L2 ucsd_kitchen_dataset_ep000079 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757342400100689 | L2 ucsd_kitchen_dataset_ep000087 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757370700100713 | L2 ucsd_kitchen_dataset_ep000095 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757400300100737 | L2 ucsd_kitchen_dataset_ep000103 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757428300100761 | L2 ucsd_kitchen_dataset_ep000111 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757457200100785 | L2 ucsd_kitchen_dataset_ep000119 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757484800100809 | L2 ucsd_kitchen_dataset_ep000127 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757513300100833 | L2 ucsd_kitchen_dataset_ep000135 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757541900100857 | L2 ucsd_kitchen_dataset_ep000143 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372264900101786 | L2 task-pick_U_driver_20_4_7th_PCL-10 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372305100101810 | L2 task-pick_U_driver_20_4_7th_PCL-18 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372343100101834 | L2 task-pick_U_driver_20_4_7th_PCL-7 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382945000101858 | L2 task-pick_water_50_4_7th-14 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382982500101882 | L2 task-pick_water_50_4_7th-21 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383020200101906 | L2 task-pick_water_50_4_7th-29 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383054500101930 | L2 task-pick_water_50_4_7th-36 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383086300101954 | L2 task-pick_water_50_4_7th-43 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383117400101978 | L2 task-pick_water_50_4_7th-50 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7468780954400109109 | Evaluate videos, shape AI's future | Video Evaluation | PREPARING | PREPARING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7789581789500103172 | Food Image and Description Collection | Food Science - depreted | PREPARING | DELETE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9142400071700103842 | Collect Advanced Physics Problems: Limited to | Advanced Physics Question | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9343755734300109050 | Share your important life events with us! | Lifelog Cnavas | ONLINE | DELETE | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9574052721300106526 | Label Withdraws: Backpack, DigiFinex, YUBIT,  | CEX Hot Wallet | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9766438388100100007 | Collect fashion data | Fashion | ONLINE | PREPARING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756104200109681 | L2 dlr_sara_pour_ep000052 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756134600109705 | L2 dlr_sara_pour_ep000060 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756164000109729 | L2 dlr_sara_pour_ep000068 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756194900109753 | L2 dlr_sara_pour_ep000076 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756225300109777 | L2 dlr_sara_pour_ep000084 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756254800109801 | L2 dlr_sara_pour_ep000092 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753117100107483 | L3 berkeley_rpt_ep000637 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753127400107491 | L2 berkeley_rpt_ep000640 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753137900107499 | L1 berkeley_rpt_ep000643 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753148900107507 | L3 berkeley_rpt_ep000645 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753159100107515 | L2 berkeley_rpt_ep000648 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753168700107523 | L1 berkeley_rpt_ep000651 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753179200107531 | L3 berkeley_rpt_ep000653 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753189600107539 | L2 berkeley_rpt_ep000656 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753200000107547 | L1 berkeley_rpt_ep000659 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753209500107555 | L3 berkeley_rpt_ep000661 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753218800107563 | L2 berkeley_rpt_ep000664 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753228700107571 | L1 berkeley_rpt_ep000667 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753239400107579 | L3 berkeley_rpt_ep000669 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753249400107587 | L2 berkeley_rpt_ep000672 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753259300107595 | L1 berkeley_rpt_ep000675 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753269600107603 | L3 berkeley_rpt_ep000677 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750569400105571 | L2 berkeley_rpt_ep000000 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750604300105595 | L2 berkeley_rpt_ep000008 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750636600105619 | L2 berkeley_rpt_ep000016 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750667700105643 | L2 berkeley_rpt_ep000024 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750696600105667 | L2 berkeley_rpt_ep000032 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750726800105691 | L2 berkeley_rpt_ep000040 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750759100105715 | L2 berkeley_rpt_ep000048 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750789600105739 | L2 berkeley_rpt_ep000056 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750820100105763 | L2 berkeley_rpt_ep000064 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750850600105787 | L2 berkeley_rpt_ep000072 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750882000105811 | L2 berkeley_rpt_ep000080 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750912000105835 | L2 berkeley_rpt_ep000088 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750943100105859 | L2 berkeley_rpt_ep000096 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750974500105883 | L2 berkeley_rpt_ep000104 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751005200105907 | L2 berkeley_rpt_ep000112 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751141500105931 | L2 berkeley_rpt_ep000120 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751177300105955 | L2 berkeley_rpt_ep000128 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751210500105979 | L2 berkeley_rpt_ep000136 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751247700106003 | L2 berkeley_rpt_ep000144 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751278900106027 | L2 berkeley_rpt_ep000152 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751310000106051 | L2 berkeley_rpt_ep000160 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751341200106075 | L2 berkeley_rpt_ep000168 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751372900106099 | L2 berkeley_rpt_ep000176 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751405200106123 | L2 berkeley_rpt_ep000184 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751436500106147 | L2 berkeley_rpt_ep000192 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751468100106171 | L2 berkeley_rpt_ep000200 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751498000106195 | L2 berkeley_rpt_ep000208 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751528300106219 | L2 berkeley_rpt_ep000216 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751559000106243 | L2 berkeley_rpt_ep000224 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751588700106267 | L2 berkeley_rpt_ep000232 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751618900106291 | L2 berkeley_rpt_ep000240 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751649300106315 | L2 berkeley_rpt_ep000248 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751669400106331 | L3 berkeley_rpt_ep000253 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751680000106339 | L2 berkeley_rpt_ep000256 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751690000106347 | L1 berkeley_rpt_ep000259 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751700700106355 | L3 berkeley_rpt_ep000261 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751711200106363 | L2 berkeley_rpt_ep000264 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751721700106371 | L1 berkeley_rpt_ep000267 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751742500106387 | L2 berkeley_rpt_ep000272 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751773400106411 | L2 berkeley_rpt_ep000280 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751783600106419 | L1 berkeley_rpt_ep000283 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751794100106427 | L3 berkeley_rpt_ep000285 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751804500106435 | L2 berkeley_rpt_ep000288 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751814300106443 | L1 berkeley_rpt_ep000291 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751824300106451 | L3 berkeley_rpt_ep000293 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751834500106459 | L2 berkeley_rpt_ep000296 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751844500106467 | L1 berkeley_rpt_ep000299 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751854800106475 | L3 berkeley_rpt_ep000301 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751865600106483 | L2 berkeley_rpt_ep000304 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751875200106491 | L1 berkeley_rpt_ep000307 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751885300106499 | L3 berkeley_rpt_ep000309 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751895000106507 | L2 berkeley_rpt_ep000312 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751905000106515 | L1 berkeley_rpt_ep000315 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751915300106523 | L3 berkeley_rpt_ep000317 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751925200106531 | L2 berkeley_rpt_ep000320 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751935300106539 | L1 berkeley_rpt_ep000323 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751944800106547 | L3 berkeley_rpt_ep000325 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751955700106555 | L2 berkeley_rpt_ep000328 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751965500106563 | L1 berkeley_rpt_ep000331 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751975400106571 | L3 berkeley_rpt_ep000333 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751985500106579 | L2 berkeley_rpt_ep000336 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751994900106587 | L1 berkeley_rpt_ep000339 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752004400106595 | L3 berkeley_rpt_ep000341 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752014100106603 | L2 berkeley_rpt_ep000344 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752023600106611 | L1 berkeley_rpt_ep000347 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752032900106619 | L3 berkeley_rpt_ep000349 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752042400106627 | L2 berkeley_rpt_ep000352 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752051900106635 | L1 berkeley_rpt_ep000355 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752061700106643 | L3 berkeley_rpt_ep000357 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752071100106651 | L2 berkeley_rpt_ep000360 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752081100106659 | L1 berkeley_rpt_ep000363 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752090900106667 | L3 berkeley_rpt_ep000365 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752101200106675 | L2 berkeley_rpt_ep000368 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752111800106683 | L1 berkeley_rpt_ep000371 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752122300106691 | L3 berkeley_rpt_ep000373 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752132500106699 | L2 berkeley_rpt_ep000376 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752142100106707 | L1 berkeley_rpt_ep000379 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752152200106715 | L3 berkeley_rpt_ep000381 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752162000106723 | L2 berkeley_rpt_ep000384 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752172700106731 | L1 berkeley_rpt_ep000387 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752182500106739 | L3 berkeley_rpt_ep000389 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752193100106747 | L2 berkeley_rpt_ep000392 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752202700106755 | L1 berkeley_rpt_ep000395 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752212800106763 | L3 berkeley_rpt_ep000397 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752223000106771 | L2 berkeley_rpt_ep000400 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752232900106779 | L1 berkeley_rpt_ep000403 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752243200106787 | L3 berkeley_rpt_ep000405 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752253500106795 | L2 berkeley_rpt_ep000408 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752263300106803 | L1 berkeley_rpt_ep000411 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752273200106811 | L3 berkeley_rpt_ep000413 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752283400106819 | L2 berkeley_rpt_ep000416 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752292800106827 | L1 berkeley_rpt_ep000419 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752302400106835 | L3 berkeley_rpt_ep000421 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752311900106843 | L2 berkeley_rpt_ep000424 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752321500106851 | L1 berkeley_rpt_ep000427 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752331400106859 | L3 berkeley_rpt_ep000429 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752340900106867 | L2 berkeley_rpt_ep000432 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752350900106875 | L1 berkeley_rpt_ep000435 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752360500106883 | L3 berkeley_rpt_ep000437 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752371100106891 | L2 berkeley_rpt_ep000440 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752381200106899 | L1 berkeley_rpt_ep000443 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752391000106907 | L3 berkeley_rpt_ep000445 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752400800106915 | L2 berkeley_rpt_ep000448 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752410300106923 | L1 berkeley_rpt_ep000451 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752420700106931 | L3 berkeley_rpt_ep000453 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752431000106939 | L2 berkeley_rpt_ep000456 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752440700106947 | L1 berkeley_rpt_ep000459 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752450200106955 | L3 berkeley_rpt_ep000461 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752460600106963 | L2 berkeley_rpt_ep000464 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752470500106971 | L1 berkeley_rpt_ep000467 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752480400106979 | L3 berkeley_rpt_ep000469 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752489900106987 | L2 berkeley_rpt_ep000472 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752500300106995 | L1 berkeley_rpt_ep000475 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752511000107003 | L3 berkeley_rpt_ep000477 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752520900107011 | L2 berkeley_rpt_ep000480 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752530700107019 | L1 berkeley_rpt_ep000483 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752540300107027 | L3 berkeley_rpt_ep000485 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752549900107035 | L2 berkeley_rpt_ep000488 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752559900107043 | L1 berkeley_rpt_ep000491 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752570000107051 | L3 berkeley_rpt_ep000493 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752579500107059 | L2 berkeley_rpt_ep000496 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752589200107067 | L1 berkeley_rpt_ep000499 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752599600107075 | L3 berkeley_rpt_ep000501 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752609300107083 | L2 berkeley_rpt_ep000504 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752618800107091 | L1 berkeley_rpt_ep000507 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752628400107099 | L3 berkeley_rpt_ep000509 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752638700107107 | L2 berkeley_rpt_ep000512 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752648500107115 | L1 berkeley_rpt_ep000515 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752659100107123 | L3 berkeley_rpt_ep000517 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752669400107131 | L2 berkeley_rpt_ep000520 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752679100107139 | L1 berkeley_rpt_ep000523 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752688900107147 | L3 berkeley_rpt_ep000525 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752698800107155 | L2 berkeley_rpt_ep000528 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752708400107163 | L1 berkeley_rpt_ep000531 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752717900107171 | L3 berkeley_rpt_ep000533 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752729000107179 | L2 berkeley_rpt_ep000536 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752740800107187 | L1 berkeley_rpt_ep000539 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752751200107195 | L3 berkeley_rpt_ep000541 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752761200107203 | L2 berkeley_rpt_ep000544 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752770700107211 | L1 berkeley_rpt_ep000547 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752781000107219 | L3 berkeley_rpt_ep000549 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752790800107227 | L2 berkeley_rpt_ep000552 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752801100107235 | L1 berkeley_rpt_ep000555 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752811100107243 | L3 berkeley_rpt_ep000557 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752821100107251 | L2 berkeley_rpt_ep000560 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752830800107259 | L1 berkeley_rpt_ep000563 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752840200107267 | L3 berkeley_rpt_ep000565 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752850500107275 | L2 berkeley_rpt_ep000568 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752861000107283 | L1 berkeley_rpt_ep000571 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752871200107291 | L3 berkeley_rpt_ep000573 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752881500107299 | L2 berkeley_rpt_ep000576 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752891700107307 | L1 berkeley_rpt_ep000579 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752901400107315 | L3 berkeley_rpt_ep000581 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752911100107323 | L2 berkeley_rpt_ep000584 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752921100107331 | L1 berkeley_rpt_ep000587 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752931000107339 | L3 berkeley_rpt_ep000589 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752941000107347 | L2 berkeley_rpt_ep000592 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752950700107355 | L1 berkeley_rpt_ep000595 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752960700107363 | L3 berkeley_rpt_ep000597 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752970800107371 | L2 berkeley_rpt_ep000600 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752981300107379 | L1 berkeley_rpt_ep000603 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752992200107387 | L3 berkeley_rpt_ep000605 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753002900107395 | L2 berkeley_rpt_ep000608 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753012600107403 | L1 berkeley_rpt_ep000611 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753023400107411 | L3 berkeley_rpt_ep000613 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753033800107419 | L2 berkeley_rpt_ep000616 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753043500107427 | L1 berkeley_rpt_ep000619 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753054100107435 | L3 berkeley_rpt_ep000621 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753065800107443 | L2 berkeley_rpt_ep000624 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753076400107451 | L1 berkeley_rpt_ep000627 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753087400107459 | L3 berkeley_rpt_ep000629 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753097600107467 | L2 berkeley_rpt_ep000632 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753107400107475 | L1 berkeley_rpt_ep000635 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754861600108715 | L2 cmu_franka_exploration_dataset_ep000140 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754891600108739 | L2 cmu_franka_exploration_dataset_ep000148 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754923000108763 | L2 cmu_franka_exploration_dataset_ep000156 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754952500108787 | L2 cmu_franka_exploration_dataset_ep000164 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754982800108811 | L2 cmu_franka_exploration_dataset_ep000172 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755013500108835 | L2 cmu_franka_exploration_dataset_ep000180 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755076200108859 | L2 cmu_franka_exploration_dataset_ep000188 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755109400108883 | L2 cmu_franka_exploration_dataset_ep000196 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755141200108907 | L2 dlr_edan_shared_control_ep000005 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755172500108931 | L2 dlr_edan_shared_control_ep000013 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755205100108955 | L2 dlr_edan_shared_control_ep000021 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755237200108979 | L2 dlr_edan_shared_control_ep000029 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755267300109003 | L2 dlr_edan_shared_control_ep000037 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755298200109027 | L2 dlr_edan_shared_control_ep000045 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755327900109051 | L2 dlr_edan_shared_control_ep000053 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755358500109075 | L2 dlr_edan_shared_control_ep000061 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755390400109099 | L2 dlr_edan_shared_control_ep000069 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755419500109123 | L2 dlr_edan_shared_control_ep000077 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755448400109147 | L2 dlr_edan_shared_control_ep000085 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755477600109171 | L2 dlr_edan_shared_control_ep000093 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755506100109195 | L2 dlr_edan_shared_control_ep000101 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755534300109219 | L2 dlr_sara_grid_clamp_ep000005 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755563100109243 | L2 dlr_sara_grid_clamp_ep000013 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755592100109267 | L2 dlr_sara_grid_clamp_ep000021 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755620400109291 | L2 dlr_sara_grid_clamp_ep000029 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755648900109315 | L2 dlr_sara_grid_clamp_ep000037 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755678100109339 | L2 dlr_sara_grid_clamp_ep000045 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755707900109363 | L2 dlr_sara_grid_clamp_ep000053 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755737500109387 | L2 dlr_sara_grid_clamp_ep000061 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755766400109411 | L2 dlr_sara_grid_clamp_ep000069 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755796200109435 | L2 dlr_sara_grid_clamp_ep000077 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755826300109459 | L2 dlr_sara_grid_clamp_ep000085 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755856000109483 | L2 dlr_sara_grid_clamp_ep000093 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755886500109507 | L2 dlr_sara_grid_clamp_ep000101 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755916000109531 | L2 dlr_sara_pour_ep000002 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755946300109555 | L2 dlr_sara_pour_ep000010 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155755975100109579 | L2 dlr_sara_pour_ep000018 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756003700109603 | L2 dlr_sara_pour_ep000026 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756034000109627 | L2 dlr_sara_pour_ep000034 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756065100109651 | L2 dlr_sara_pour_ep000042 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753279300107611 | L2 berkeley_rpt_ep000680 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753289000107619 | L1 berkeley_rpt_ep000683 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753298900107627 | L3 berkeley_rpt_ep000685 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753309300107635 | L2 berkeley_rpt_ep000688 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753320000107643 | L1 berkeley_rpt_ep000691 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753330300107651 | L3 berkeley_rpt_ep000693 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753339800107659 | L2 berkeley_rpt_ep000696 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753350200107667 | L1 berkeley_rpt_ep000699 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753360000107675 | L3 berkeley_rpt_ep000701 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753370100107683 | L2 berkeley_rpt_ep000704 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753380200107691 | L1 berkeley_rpt_ep000707 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753390200107699 | L3 berkeley_rpt_ep000709 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753401000107707 | L2 berkeley_rpt_ep000712 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753411700107715 | L1 berkeley_rpt_ep000715 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753422500107723 | L3 berkeley_rpt_ep000717 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753433200107731 | L2 berkeley_rpt_ep000720 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753443500107739 | L1 berkeley_rpt_ep000723 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753454000107747 | L3 berkeley_rpt_ep000725 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753464900107755 | L2 berkeley_rpt_ep000728 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753577900107763 | L1 berkeley_rpt_ep000731 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753589300107771 | L3 berkeley_rpt_ep000733 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753600800107779 | L2 berkeley_rpt_ep000736 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753611600107787 | L1 berkeley_rpt_ep000739 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753621800107795 | L3 berkeley_rpt_ep000741 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753632100107803 | L2 berkeley_rpt_ep000744 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753642100107811 | L1 berkeley_rpt_ep000747 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753652500107819 | L3 berkeley_rpt_ep000749 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753662600107827 | L2 berkeley_rpt_ep000752 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753673000107835 | L1 berkeley_rpt_ep000755 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753683800107843 | L3 berkeley_rpt_ep000757 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753694400107851 | L2 berkeley_rpt_ep000760 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753704200107859 | L1 berkeley_rpt_ep000763 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753714500107867 | L3 berkeley_rpt_ep000765 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753724400107875 | L2 berkeley_rpt_ep000768 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753734200107883 | L1 berkeley_rpt_ep000771 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753744200107891 | L3 berkeley_rpt_ep000773 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753754400107899 | L2 berkeley_rpt_ep000776 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753764600107907 | L1 berkeley_rpt_ep000779 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753775200107915 | L3 berkeley_rpt_ep000781 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753786100107923 | L2 berkeley_rpt_ep000784 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753798800107931 | L1 berkeley_rpt_ep000787 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753812700107939 | L3 berkeley_rpt_ep000789 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753828400107947 | L2 berkeley_rpt_ep000792 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753846700107955 | L1 berkeley_rpt_ep000795 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753871600107963 | L3 berkeley_rpt_ep000797 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753891800107971 | L2 berkeley_rpt_ep000800 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753902100107979 | L1 berkeley_rpt_ep000803 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753912700107987 | L3 berkeley_rpt_ep000805 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753923800107995 | L2 berkeley_rpt_ep000808 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753933900108003 | L1 berkeley_rpt_ep000811 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753943500108011 | L3 berkeley_rpt_ep000813 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753953300108019 | L2 berkeley_rpt_ep000816 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753963000108027 | L1 berkeley_rpt_ep000819 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753973600108035 | L3 berkeley_rpt_ep000821 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753984000108043 | L2 berkeley_rpt_ep000824 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753995000108051 | L1 berkeley_rpt_ep000827 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754019000108059 | L3 berkeley_rpt_ep000829 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754045200108067 | L2 berkeley_rpt_ep000832 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754060800108075 | L1 berkeley_rpt_ep000835 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754071600108083 | L3 berkeley_rpt_ep000837 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754081900108091 | L2 berkeley_rpt_ep000840 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754092000108099 | L1 berkeley_rpt_ep000843 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754101800108107 | L3 berkeley_rpt_ep000845 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754111900108115 | L2 berkeley_rpt_ep000848 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754122100108123 | L1 berkeley_rpt_ep000851 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754131900108131 | L3 berkeley_rpt_ep000853 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754141800108139 | L2 berkeley_rpt_ep000856 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754151700108147 | L1 berkeley_rpt_ep000859 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754161300108155 | L3 berkeley_rpt_ep000861 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754170800108163 | L2 berkeley_rpt_ep000864 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754180900108171 | L1 berkeley_rpt_ep000867 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754191300108179 | L3 berkeley_rpt_ep000869 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754201600108187 | L2 berkeley_rpt_ep000872 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754212200108195 | L1 berkeley_rpt_ep000875 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754221700108203 | L3 berkeley_rpt_ep000877 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754232100108211 | L2 berkeley_rpt_ep000880 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754242400108219 | L1 berkeley_rpt_ep000883 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754252900108227 | L3 berkeley_rpt_ep000885 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754263300108235 | L2 berkeley_rpt_ep000888 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754274200108243 | L1 berkeley_rpt_ep000891 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754284400108251 | L3 berkeley_rpt_ep000893 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754294900108259 | L2 berkeley_rpt_ep000896 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754305000108267 | L1 berkeley_rpt_ep000899 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754315100108275 | L3 berkeley_rpt_ep000901 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754324900108283 | L2 berkeley_rpt_ep000904 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754334700108291 | L1 berkeley_rpt_ep000907 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754345000108299 | L3 cmu_franka_exploration_dataset_ep000001 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754355100108307 | L2 cmu_franka_exploration_dataset_ep000004 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754365300108315 | L1 cmu_franka_exploration_dataset_ep000007 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754375700108323 | L3 cmu_franka_exploration_dataset_ep000009 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754386500108331 | L2 cmu_franka_exploration_dataset_ep000012 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754396800108339 | L1 cmu_franka_exploration_dataset_ep000015 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754406600108347 | L3 cmu_franka_exploration_dataset_ep000017 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754416600108355 | L2 cmu_franka_exploration_dataset_ep000020 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754426700108363 | L1 cmu_franka_exploration_dataset_ep000023 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754435900108371 | L3 cmu_franka_exploration_dataset_ep000025 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754445700108379 | L2 cmu_franka_exploration_dataset_ep000028 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754455800108387 | L1 cmu_franka_exploration_dataset_ep000031 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754465500108395 | L3 cmu_franka_exploration_dataset_ep000033 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754476200108403 | L2 cmu_franka_exploration_dataset_ep000036 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754486600108411 | L1 cmu_franka_exploration_dataset_ep000039 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754496700108419 | L3 cmu_franka_exploration_dataset_ep000041 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754506900108427 | L2 cmu_franka_exploration_dataset_ep000044 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754516400108435 | L1 cmu_franka_exploration_dataset_ep000047 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754525500108443 | L3 cmu_franka_exploration_dataset_ep000049 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754534600108451 | L2 cmu_franka_exploration_dataset_ep000052 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754544100108459 | L1 cmu_franka_exploration_dataset_ep000055 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754554100108467 | L3 cmu_franka_exploration_dataset_ep000057 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754564200108475 | L2 cmu_franka_exploration_dataset_ep000060 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754573400108483 | L1 cmu_franka_exploration_dataset_ep000063 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754582900108491 | L3 cmu_franka_exploration_dataset_ep000065 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754592900108499 | L2 cmu_franka_exploration_dataset_ep000068 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754602600108507 | L1 cmu_franka_exploration_dataset_ep000071 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754612700108515 | L3 cmu_franka_exploration_dataset_ep000073 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754623000108523 | L2 cmu_franka_exploration_dataset_ep000076 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754633600108531 | L1 cmu_franka_exploration_dataset_ep000079 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754643400108539 | L3 cmu_franka_exploration_dataset_ep000081 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754653100108547 | L2 cmu_franka_exploration_dataset_ep000084 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754662500108555 | L1 cmu_franka_exploration_dataset_ep000087 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754683200108571 | L2 cmu_franka_exploration_dataset_ep000092 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754714000108595 | L2 cmu_franka_exploration_dataset_ep000100 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754744600108619 | L2 cmu_franka_exploration_dataset_ep000108 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754773200108643 | L2 cmu_franka_exploration_dataset_ep000116 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754803000108667 | L2 cmu_franka_exploration_dataset_ep000124 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155754832500108691 | L2 cmu_franka_exploration_dataset_ep000132 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756264900109810 | L2 dlr_sara_pour_ep000095 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756292600109834 | L2 kaist_nonprehensile_ep000003 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756322500109858 | L2 kaist_nonprehensile_ep000011 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756351200109882 | L2 kaist_nonprehensile_ep000019 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756382700109906 | L2 kaist_nonprehensile_ep000027 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756413500109930 | L2 kaist_nonprehensile_ep000035 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756443000109954 | L2 kaist_nonprehensile_ep000043 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756470800109978 | L2 kaist_nonprehensile_ep000051 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756499600100002 | L2 kaist_nonprehensile_ep000059 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756527200100026 | L2 kaist_nonprehensile_ep000067 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756556000100050 | L2 kaist_nonprehensile_ep000075 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756584700100074 | L2 kaist_nonprehensile_ep000083 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756613200100098 | L2 kaist_nonprehensile_ep000091 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756643700100122 | L2 kaist_nonprehensile_ep000099 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756673400100146 | L2 kaist_nonprehensile_ep000107 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756702800100170 | L2 kaist_nonprehensile_ep000115 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756732300100194 | L2 kaist_nonprehensile_ep000123 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756762500100218 | L2 kaist_nonprehensile_ep000131 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756793200100242 | L2 kaist_nonprehensile_ep000139 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756824700100266 | L2 kaist_nonprehensile_ep000147 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756854300100290 | L2 kaist_nonprehensile_ep000155 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756882300100314 | L2 kaist_nonprehensile_ep000163 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756910500100338 | L2 kaist_nonprehensile_ep000171 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756938000100362 | L2 kaist_nonprehensile_ep000179 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756966600100386 | L2 kaist_nonprehensile_ep000187 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756995500100410 | L2 kaist_nonprehensile_ep000195 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757031700100434 | L2 ucsd_kitchen_dataset_ep000002 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757062700100458 | L2 ucsd_kitchen_dataset_ep000010 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757091600100482 | L2 ucsd_kitchen_dataset_ep000018 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757121300100506 | L2 ucsd_kitchen_dataset_ep000026 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757151200100530 | L2 ucsd_kitchen_dataset_ep000034 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757180200100554 | L2 ucsd_kitchen_dataset_ep000042 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757209900100578 | L2 ucsd_kitchen_dataset_ep000050 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757238800100602 | L2 ucsd_kitchen_dataset_ep000058 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757268000100626 | L2 ucsd_kitchen_dataset_ep000066 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757295800100650 | L2 ucsd_kitchen_dataset_ep000074 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757324700100674 | L2 ucsd_kitchen_dataset_ep000082 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757353300100698 | L2 ucsd_kitchen_dataset_ep000090 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757381800100722 | L2 ucsd_kitchen_dataset_ep000098 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757411100100746 | L2 ucsd_kitchen_dataset_ep000106 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757439400100770 | L2 ucsd_kitchen_dataset_ep000114 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757467700100794 | L2 ucsd_kitchen_dataset_ep000122 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757495500100818 | L2 ucsd_kitchen_dataset_ep000130 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757524000100842 | L2 ucsd_kitchen_dataset_ep000138 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155757552100100866 | L2 ucsd_kitchen_dataset_ep000146 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372281100101795 | L2 task-pick_U_driver_20_4_7th_PCL-13 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459372319200101819 | L2 task-pick_U_driver_20_4_7th_PCL-20 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382921400101843 | L2 task-pick_water_50_4_7th-1 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382959000101867 | L2 task-pick_water_50_4_7th-17 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459382996400101891 | L2 task-pick_water_50_4_7th-24 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383033100101915 | L2 task-pick_water_50_4_7th-31 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383066900101939 | L2 task-pick_water_50_4_7th-39 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383098100101963 | L2 task-pick_water_50_4_7th-46 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6459383128500101987 | L2 task-pick_water_50_4_7th-8 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9142464679800103906 | Collect Advanced Physics Problems: Limited to | Advanced Physics Question | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9567213667800109251 | Label Withdrawals: Binance, IndoEx, Tokocrypt | CEX Hot Wallet | ONLINE | STOP | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9574054704600106533 | Label Deposits: Backpack, DigiFinex, YUBIT, B | CEX Hot Wallet | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756084800109666 | L2 dlr_sara_pour_ep000047 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756115700109690 | L2 dlr_sara_pour_ep000055 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756145700109714 | L2 dlr_sara_pour_ep000063 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756175800109738 | L2 dlr_sara_pour_ep000071 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756206500109762 | L2 dlr_sara_pour_ep000079 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155756236300109786 | L2 dlr_sara_pour_ep000087 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753118300107484 | L1 berkeley_rpt_ep000638 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753128500107492 | L3 berkeley_rpt_ep000640 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753139500107500 | L2 berkeley_rpt_ep000643 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753150000107508 | L1 berkeley_rpt_ep000646 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753160400107516 | L3 berkeley_rpt_ep000648 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753169900107524 | L2 berkeley_rpt_ep000651 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753180400107532 | L1 berkeley_rpt_ep000654 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753191000107540 | L3 berkeley_rpt_ep000656 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753201200107548 | L2 berkeley_rpt_ep000659 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753210700107556 | L1 berkeley_rpt_ep000662 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753220000107564 | L3 berkeley_rpt_ep000664 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753229900107572 | L2 berkeley_rpt_ep000667 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753240800107580 | L1 berkeley_rpt_ep000670 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753250500107588 | L3 berkeley_rpt_ep000672 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753260600107596 | L2 berkeley_rpt_ep000675 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753270800107604 | L1 berkeley_rpt_ep000678 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10127331099900105586 | 1212 | lihaoSB | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750583100105580 | L2 berkeley_rpt_ep000003 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750616800105604 | L2 berkeley_rpt_ep000011 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750648500105628 | L2 berkeley_rpt_ep000019 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750678300105652 | L2 berkeley_rpt_ep000027 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750708100105676 | L2 berkeley_rpt_ep000035 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750739200105700 | L2 berkeley_rpt_ep000043 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750770500105724 | L2 berkeley_rpt_ep000051 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750800800105748 | L2 berkeley_rpt_ep000059 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750831800105772 | L2 berkeley_rpt_ep000067 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750862200105796 | L2 berkeley_rpt_ep000075 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750893400105820 | L2 berkeley_rpt_ep000083 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750923400105844 | L2 berkeley_rpt_ep000091 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750955000105868 | L2 berkeley_rpt_ep000099 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155750985800105892 | L2 berkeley_rpt_ep000107 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751016500105916 | L2 berkeley_rpt_ep000115 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751155300105940 | L2 berkeley_rpt_ep000123 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751189300105964 | L2 berkeley_rpt_ep000131 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751224200105988 | L2 berkeley_rpt_ep000139 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751260000106012 | L2 berkeley_rpt_ep000147 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751290100106036 | L2 berkeley_rpt_ep000155 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751322100106060 | L2 berkeley_rpt_ep000163 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751352500106084 | L2 berkeley_rpt_ep000171 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751384800106108 | L2 berkeley_rpt_ep000179 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751416700106132 | L2 berkeley_rpt_ep000187 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751448300106156 | L2 berkeley_rpt_ep000195 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751479600106180 | L2 berkeley_rpt_ep000203 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751509400106204 | L2 berkeley_rpt_ep000211 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751539700106228 | L2 berkeley_rpt_ep000219 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751570600106252 | L2 berkeley_rpt_ep000227 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751600300106276 | L2 berkeley_rpt_ep000235 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751630300106300 | L2 berkeley_rpt_ep000243 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751660400106324 | L2 berkeley_rpt_ep000251 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751670700106332 | L1 berkeley_rpt_ep000254 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751681200106340 | L3 berkeley_rpt_ep000256 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751691300106348 | L2 berkeley_rpt_ep000259 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751702100106356 | L1 berkeley_rpt_ep000262 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751712400106364 | L3 berkeley_rpt_ep000264 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751722900106372 | L2 berkeley_rpt_ep000267 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751754700106396 | L2 berkeley_rpt_ep000275 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751774600106412 | L3 berkeley_rpt_ep000280 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751785000106420 | L2 berkeley_rpt_ep000283 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751795300106428 | L1 berkeley_rpt_ep000286 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751805700106436 | L3 berkeley_rpt_ep000288 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751815500106444 | L2 berkeley_rpt_ep000291 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751825600106452 | L1 berkeley_rpt_ep000294 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751835800106460 | L3 berkeley_rpt_ep000296 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751845800106468 | L2 berkeley_rpt_ep000299 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751856300106476 | L1 berkeley_rpt_ep000302 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751866800106484 | L3 berkeley_rpt_ep000304 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751876300106492 | L2 berkeley_rpt_ep000307 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751886500106500 | L1 berkeley_rpt_ep000310 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751896300106508 | L3 berkeley_rpt_ep000312 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751906300106516 | L2 berkeley_rpt_ep000315 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751916600106524 | L1 berkeley_rpt_ep000318 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751926400106532 | L3 berkeley_rpt_ep000320 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751936400106540 | L2 berkeley_rpt_ep000323 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751946200106548 | L1 berkeley_rpt_ep000326 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751957000106556 | L3 berkeley_rpt_ep000328 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751966700106564 | L2 berkeley_rpt_ep000331 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751976700106572 | L1 berkeley_rpt_ep000334 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751986700106580 | L3 berkeley_rpt_ep000336 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155751996100106588 | L2 berkeley_rpt_ep000339 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752005700106596 | L1 berkeley_rpt_ep000342 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752015300106604 | L3 berkeley_rpt_ep000344 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752024800106612 | L2 berkeley_rpt_ep000347 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752034100106620 | L1 berkeley_rpt_ep000350 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752043500106628 | L3 berkeley_rpt_ep000352 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752053100106636 | L2 berkeley_rpt_ep000355 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752063000106644 | L1 berkeley_rpt_ep000358 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752072400106652 | L3 berkeley_rpt_ep000360 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752082200106660 | L2 berkeley_rpt_ep000363 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752092100106668 | L1 berkeley_rpt_ep000366 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752102500106676 | L3 berkeley_rpt_ep000368 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752113100106684 | L2 berkeley_rpt_ep000371 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752123800106692 | L1 berkeley_rpt_ep000374 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752133800106700 | L3 berkeley_rpt_ep000376 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752143400106708 | L2 berkeley_rpt_ep000379 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752153400106716 | L1 berkeley_rpt_ep000382 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752163300106724 | L3 berkeley_rpt_ep000384 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752173900106732 | L2 berkeley_rpt_ep000387 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752184000106740 | L1 berkeley_rpt_ep000390 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752194400106748 | L3 berkeley_rpt_ep000392 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752203800106756 | L2 berkeley_rpt_ep000395 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752214200106764 | L1 berkeley_rpt_ep000398 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752224400106772 | L3 berkeley_rpt_ep000400 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752234100106780 | L2 berkeley_rpt_ep000403 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752244400106788 | L1 berkeley_rpt_ep000406 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752254900106796 | L3 berkeley_rpt_ep000408 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752264600106804 | L2 berkeley_rpt_ep000411 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752274500106812 | L1 berkeley_rpt_ep000414 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752284600106820 | L3 berkeley_rpt_ep000416 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752294000106828 | L2 berkeley_rpt_ep000419 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752303700106836 | L1 berkeley_rpt_ep000422 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752313000106844 | L3 berkeley_rpt_ep000424 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752322700106852 | L2 berkeley_rpt_ep000427 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752332600106860 | L1 berkeley_rpt_ep000430 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752342100106868 | L3 berkeley_rpt_ep000432 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752352000106876 | L2 berkeley_rpt_ep000435 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752361800106884 | L1 berkeley_rpt_ep000438 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752372400106892 | L3 berkeley_rpt_ep000440 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752382600106900 | L2 berkeley_rpt_ep000443 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752392200106908 | L1 berkeley_rpt_ep000446 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752401900106916 | L3 berkeley_rpt_ep000448 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752411600106924 | L2 berkeley_rpt_ep000451 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752422000106932 | L1 berkeley_rpt_ep000454 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752432100106940 | L3 berkeley_rpt_ep000456 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752441900106948 | L2 berkeley_rpt_ep000459 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752451500106956 | L1 berkeley_rpt_ep000462 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752461800106964 | L3 berkeley_rpt_ep000464 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752471800106972 | L2 berkeley_rpt_ep000467 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752481600106980 | L1 berkeley_rpt_ep000470 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752491100106988 | L3 berkeley_rpt_ep000472 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752501600106996 | L2 berkeley_rpt_ep000475 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752512200107004 | L1 berkeley_rpt_ep000478 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752522200107012 | L3 berkeley_rpt_ep000480 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752532000107020 | L2 berkeley_rpt_ep000483 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752541600107028 | L1 berkeley_rpt_ep000486 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752551100107036 | L3 berkeley_rpt_ep000488 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752561100107044 | L2 berkeley_rpt_ep000491 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752571200107052 | L1 berkeley_rpt_ep000494 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752580600107060 | L3 berkeley_rpt_ep000496 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752590600107068 | L2 berkeley_rpt_ep000499 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752600800107076 | L1 berkeley_rpt_ep000502 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752610400107084 | L3 berkeley_rpt_ep000504 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752620000107092 | L2 berkeley_rpt_ep000507 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752629600107100 | L1 berkeley_rpt_ep000510 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752640100107108 | L3 berkeley_rpt_ep000512 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752649700107116 | L2 berkeley_rpt_ep000515 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752660400107124 | L1 berkeley_rpt_ep000518 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752670600107132 | L3 berkeley_rpt_ep000520 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752680400107140 | L2 berkeley_rpt_ep000523 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752690300107148 | L1 berkeley_rpt_ep000526 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752700000107156 | L3 berkeley_rpt_ep000528 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752709500107164 | L2 berkeley_rpt_ep000531 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752719200107172 | L1 berkeley_rpt_ep000534 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752730300107180 | L3 berkeley_rpt_ep000536 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752742300107188 | L2 berkeley_rpt_ep000539 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752752400107196 | L1 berkeley_rpt_ep000542 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752762300107204 | L3 berkeley_rpt_ep000544 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752772100107212 | L2 berkeley_rpt_ep000547 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752782200107220 | L1 berkeley_rpt_ep000550 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752792200107228 | L3 berkeley_rpt_ep000552 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752802300107236 | L2 berkeley_rpt_ep000555 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752812500107244 | L1 berkeley_rpt_ep000558 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752822300107252 | L3 berkeley_rpt_ep000560 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752831900107260 | L2 berkeley_rpt_ep000563 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752841500107268 | L1 berkeley_rpt_ep000566 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752851800107276 | L3 berkeley_rpt_ep000568 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752862300107284 | L2 berkeley_rpt_ep000571 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752872500107292 | L1 berkeley_rpt_ep000574 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752882700107300 | L3 berkeley_rpt_ep000576 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752892900107308 | L2 berkeley_rpt_ep000579 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752902600107316 | L1 berkeley_rpt_ep000582 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752912400107324 | L3 berkeley_rpt_ep000584 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752922400107332 | L2 berkeley_rpt_ep000587 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752932400107340 | L1 berkeley_rpt_ep000590 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752942200107348 | L3 berkeley_rpt_ep000592 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752952000107356 | L2 berkeley_rpt_ep000595 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752962000107364 | L1 berkeley_rpt_ep000598 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752972100107372 | L3 berkeley_rpt_ep000600 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752982700107380 | L2 berkeley_rpt_ep000603 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155752993500107388 | L1 berkeley_rpt_ep000606 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753004200107396 | L3 berkeley_rpt_ep000608 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753013900107404 | L2 berkeley_rpt_ep000611 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753024600107412 | L1 berkeley_rpt_ep000614 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753035000107420 | L3 berkeley_rpt_ep000616 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753044900107428 | L2 berkeley_rpt_ep000619 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753055600107436 | L1 berkeley_rpt_ep000622 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753067100107444 | L3 berkeley_rpt_ep000624 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753077800107452 | L2 berkeley_rpt_ep000627 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753088700107460 | L1 berkeley_rpt_ep000630 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753098800107468 | L3 berkeley_rpt_ep000632 | Robotics | ONLINE | COLLECTING | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 6155753108500107476 | L2 berkeley_rpt_ep000635 | Robotics | ONLINE | FINISHED | - | - | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+## Summary by Frontier
+
+| Frontier | Status | Tasks | Total Samples |
+|---|---|---:|---:|
+| Food Science - depreted | PREPARING | 18 | 1,608,987 |
+| CEX Hot Wallet | ONLINE | 30 | 877,001 |
+| Robotics for binance | PREPARING | 9 | 717,734 |
+| User Skill Profiling | ONLINE | 6 | 274,670 |
+| Kitchen Appliances | PREPARING | 5 | 208,218 |
+| Robotics | ONLINE | 5517 | 120,732 |
+| Food Science | ONLINE | 3 | 98,995 |
+| Correct LLM's Mistakes | ONLINE | 1 | 39,781 |
+| Spot LLM's Mistakes | ONLINE | 1 | 17,471 |
+| Model Comparison | ONLINE | 1 | 13,792 |
+| Crypto & Stock Information | ONLINE | 1 | 13,028 |
+| NFT | ONLINE | 1 | 12,886 |
+| Outfit of the Day | ONLINE | 1 | 9,878 |
+| Speech | ONLINE | 1 | 7,716 |
+| Fashion | ONLINE | 3 | 5,406 |
+| Real‑world Photo | ONLINE | 1 | 4,430 |
+| Appliance Knob | ONLINE | 1 | 3,886 |
+| X | PREPARING | 3 | 1,312 |
+| Discord | PREPARING | 2 | 1,241 |
+| Telegram | PREPARING | 2 | 926 |
+| Lifelog Canvas | ONLINE | 2 | 753 |
+| Video Evaluation | PREPARING | 3 | 418 |
+| Gensmo | ONLINE | 2 | 146 |
+| Lifelog Cnavas | ONLINE | 2 | 31 |
+| Food Annotation | ONLINE | 1 | 9 |
+| Vivolight | ONLINE | 2 | 7 |
+| Advanced Physics Questions | ONLINE | 7 | 6 |
+| R6D9 | PREPARING | 1 | 1 |
+| lihao test frontier | PREPARING | 2 | 1 |
+| lihaoSB | ONLINE | 3 | 0 |
+| Data Fingerprint | PREPARING | 2 | 0 |
+| On-chain Address | PREPARING | 1 | 0 |
+| Real_World_Photo_Test | PREPARING | 3 | 0 |
+| Fashion Old  | PREPARING | 1 | 0 |
+| Healthcare | PREPARING | 1 | 0 |

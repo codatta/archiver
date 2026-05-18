@@ -1,0 +1,8 @@
+{
+  "name": "contributor-portal",
+  "private": true,
+  "workspaces": [
+    "packages/webapp",
+    "packages/shared"
+  ]
+}

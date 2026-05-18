@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="600" viewBox="0 0 720 600">
+  <defs>
+    <style>text { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }</style>
+  </defs>
+
+  <!-- White base -->
+  <rect width="720" height="600" fill="#ffffff"/>
+
+  <!-- ── HEADER BAND (0..116) ── -->
+  <rect x="0" y="0" width="720" height="116" fill="#f5f5f5"/>
+
+  <!-- Org avatar -->
+  <circle cx="60"  cy="60" r="36" fill="#e07b00"/>
+  <text x="60" y="60" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">L</text>
+
+  <!-- Org name + meta -->
+  <text x="114" y="44"  font-size="22" font-weight="700" fill="#000000">LeRobot</text>
+  <text x="114" y="66"  font-size="12" fill="#555555">Open-source robotics &#38; embodied AI research</text>
+  <text x="114" y="84"  font-size="11" fill="#999999">San Francisco, CA &#183; Founded 2023 &#183; 12 members</text>
+
+  <!-- Follow button -->
+  <rect x="608" y="38" width="88" height="30" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="652" y="57" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">Follow</text>
+
+  <!-- Section divider: header → social -->
+  <line x1="0" y1="116" x2="720" y2="116" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- ── SOCIAL LINKS (116..160) ── -->
+  <!-- Link pills row at y=130..154 -->
+  <!-- Website pill -->
+  <rect x="24"  y="128" width="118" height="24" rx="12" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <text x="83"  y="144" font-size="10" fill="#555555" text-anchor="middle">&#127760; lerobot.ai</text>
+
+  <!-- GitHub pill -->
+  <rect x="150" y="128" width="78"  height="24" rx="12" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <text x="189" y="144" font-size="10" fill="#555555" text-anchor="middle">GitHub</text>
+
+  <!-- Twitter pill -->
+  <rect x="236" y="128" width="76"  height="24" rx="12" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <text x="274" y="144" font-size="10" fill="#555555" text-anchor="middle">Twitter</text>
+
+  <!-- LinkedIn pill -->
+  <rect x="320" y="128" width="80"  height="24" rx="12" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <text x="360" y="144" font-size="10" fill="#555555" text-anchor="middle">LinkedIn</text>
+
+  <!-- HuggingFace pill -->
+  <rect x="408" y="128" width="100" height="24" rx="12" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <text x="458" y="144" font-size="10" fill="#555555" text-anchor="middle">HuggingFace</text>
+
+  <!-- Section divider -->
+  <line x1="0" y1="162" x2="720" y2="162" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- ── ABOUT (162..218) ── -->
+  <text x="24" y="186" font-size="12" fill="#555555">LeRobot creates open-source hardware and software for robotics research and embodied AI.</text>
+  <text x="24" y="204" font-size="12" fill="#555555">Specializing in imitation learning, generalist manipulation policies, and sim-to-real transfer.</text>
+
+  <!-- Section divider -->
+  <line x1="0" y1="220" x2="720" y2="220" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- ── ACTIVE CAMPAIGNS (220..390) ── -->
+  <text x="24" y="248" font-size="14" font-weight="700" fill="#000000">Active Campaigns</text>
+  <!-- Count badge -->
+  <rect x="170" y="234" width="22" height="18" rx="9" fill="#000000"/>
+  <text x="181" y="247" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">3</text>
+
+  <!-- Table header -->
+  <text x="24"  y="272" font-size="11" font-weight="600" fill="#999999">NAME</text>
+  <text x="280" y="272" font-size="11" font-weight="600" fill="#999999">DATES</text>
+  <text x="420" y="272" font-size="11" font-weight="600" fill="#999999">ENROLLED</text>
+  <text x="560" y="272" font-size="11" font-weight="600" fill="#999999">STATUS</text>
+  <line x1="24" y1="278" x2="696" y2="278" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <text x="24"  y="299" font-size="12" fill="#000000">Embodiment-X Data Collection</text>
+  <text x="280" y="299" font-size="11" fill="#555555">03/01 &#8594; 06/01</text>
+  <text x="420" y="299" font-size="11" fill="#555555">12,000</text>
+  <rect x="556" y="287" width="38" height="18" rx="9" fill="#dcfce7"/>
+  <text x="575" y="300" font-size="10" font-weight="600" fill="#166534" text-anchor="middle">Live</text>
+  <line x1="24" y1="308" x2="696" y2="308" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Row 2 -->
+  <text x="24"  y="329" font-size="12" fill="#000000">Kitchen Task Recording</text>
+  <text x="280" y="329" font-size="11" fill="#555555">04/01 &#8594; 07/01</text>
+  <text x="420" y="329" font-size="11" fill="#555555">3,400</text>
+  <rect x="556" y="317" width="38" height="18" rx="9" fill="#dcfce7"/>
+  <text x="575" y="330" font-size="10" font-weight="600" fill="#166534" text-anchor="middle">Live</text>
+  <line x1="24" y1="338" x2="696" y2="338" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Row 3 -->
+  <text x="24"  y="359" font-size="12" fill="#000000">Office Environment Scan</text>
+  <text x="280" y="359" font-size="11" fill="#555555">05/01 &#8594; 08/01</text>
+  <text x="420" y="359" font-size="11" fill="#999999">&#8212;</text>
+  <rect x="544" y="347" width="62" height="18" rx="9" fill="#fef9c3"/>
+  <text x="575" y="360" font-size="10" font-weight="600" fill="#854d0e" text-anchor="middle">Upcoming</text>
+
+  <!-- Section divider -->
+  <line x1="0" y1="380" x2="720" y2="380" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- ── TEAM MEMBERS (380..510) ── -->
+  <text x="24" y="406" font-size="14" font-weight="700" fill="#000000">Team Members</text>
+  <rect x="168" y="392" width="26" height="18" rx="9" fill="#000000"/>
+  <text x="181" y="405" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">12</text>
+
+  <!-- Avatar row: 8 members, cx = 52, 100, 148, 196, 244, 292, 340, 388 -->
+  <circle cx="52"  cy="440" r="20" fill="#6366f1"/><text x="52"  y="440" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">A</text>
+  <circle cx="100" cy="440" r="20" fill="#0891b2"/><text x="100" y="440" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">B</text>
+  <circle cx="148" cy="440" r="20" fill="#16a34a"/><text x="148" y="440" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">C</text>
+  <circle cx="196" cy="440" r="20" fill="#dc2626"/><text x="196" y="440" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">D</text>
+  <circle cx="244" cy="440" r="20" fill="#d97706"/><text x="244" y="440" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">E</text>
+  <circle cx="292" cy="440" r="20" fill="#7c3aed"/><text x="292" y="440" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">F</text>
+  <circle cx="340" cy="440" r="20" fill="#0f766e"/><text x="340" y="440" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">G</text>
+  <circle cx="388" cy="440" r="20" fill="#be185d"/><text x="388" y="440" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">H</text>
+
+  <!-- Member names (abbreviated) -->
+  <text x="52"  y="469" font-size="9" fill="#555555" text-anchor="middle">Alex</text>
+  <text x="100" y="469" font-size="9" fill="#555555" text-anchor="middle">Blake</text>
+  <text x="148" y="469" font-size="9" fill="#555555" text-anchor="middle">Casey</text>
+  <text x="196" y="469" font-size="9" fill="#555555" text-anchor="middle">Drew</text>
+  <text x="244" y="469" font-size="9" fill="#555555" text-anchor="middle">Eve</text>
+  <text x="292" y="469" font-size="9" fill="#555555" text-anchor="middle">Finn</text>
+  <text x="340" y="469" font-size="9" fill="#555555" text-anchor="middle">Grace</text>
+  <text x="388" y="469" font-size="9" fill="#555555" text-anchor="middle">Hunter</text>
+  <text x="436" y="440" font-size="10" fill="#999999">+4 more...</text>
+
+  <!-- Section divider -->
+  <line x1="0" y1="490" x2="720" y2="490" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- ── STATS BAR (490..560) ── -->
+  <rect x="0" y="490" width="720" height="70" fill="#f5f5f5"/>
+  <text x="360" y="519" font-size="11" fill="#555555" text-anchor="middle">12,000 enrolled</text>
+  <text x="360" y="537" font-size="11" fill="#555555" text-anchor="middle">15,723 submissions &#183; 7,800 completions &#183; 3 active campaigns</text>
+
+  <!-- Padding area (560..600) remains white -->
+
+  <!-- Card outer border -->
+  <rect x="0.75" y="0.75" width="718.5" height="598.5" fill="none" stroke="#000000" stroke-width="1.5"/>
+</svg>

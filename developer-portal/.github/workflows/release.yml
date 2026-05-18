@@ -1,0 +1,173 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: "Version bump type"
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Calculate new version
+        id: version
+        run: |
+          CURRENT=$(cat VERSION | tr -d '[:space:]')
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
+
+          case "${{ inputs.bump }}" in
+            major) MAJOR=$((MAJOR + 1)); MINOR=0; PATCH=0 ;;
+            minor) MINOR=$((MINOR + 1)); PATCH=0 ;;
+            patch) PATCH=$((PATCH + 1)) ;;
+          esac
+
+          NEW="${MAJOR}.${MINOR}.${PATCH}"
+          echo "current=$CURRENT" >> "$GITHUB_OUTPUT"
+          echo "new=$NEW" >> "$GITHUB_OUTPUT"
+          echo "tag=v${NEW}" >> "$GITHUB_OUTPUT"
+          echo "Bumping $CURRENT → $NEW (${{ inputs.bump }})"
+
+      - name: Update VERSION file
+        run: echo "${{ steps.version.outputs.new }}" > VERSION
+
+      - name: Sync version to packages
+        run: |
+          VERSION="${{ steps.version.outputs.new }}"
+
+          # API — pyproject.toml
+          sed -i "s/^version = \".*\"/version = \"$VERSION\"/" packages/api/pyproject.toml
+
+          # CLI — package.json
+          cd packages/cli && npm version "$VERSION" --no-git-tag-version && cd ../..
+
+          # Docs — package.json
+          cd packages/docs && npm version "$VERSION" --no-git-tag-version && cd ../..
+
+          # Webapp — package.json (add version if missing)
+          if grep -q '"version"' packages/webapp/package.json; then
+            cd packages/webapp && npm version "$VERSION" --no-git-tag-version && cd ../..
+          else
+            sed -i '/"private": true,/a\  "version": "'"$VERSION"'",' packages/webapp/package.json
+          fi
+
+      - name: Generate changelog entry
+        id: changelog
+        run: |
+          TAG="${{ steps.version.outputs.tag }}"
+          PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          DATE=$(date +%Y-%m-%d)
+
+          if [ -z "$PREV_TAG" ]; then
+            RANGE="HEAD"
+          else
+            RANGE="${PREV_TAG}..HEAD"
+          fi
+
+          # Collect commits by type
+          FEATURES=$(git log "$RANGE" --pretty=format:"- %s (%h)" --grep="^feat:" 2>/dev/null || true)
+          FIXES=$(git log "$RANGE" --pretty=format:"- %s (%h)" --grep="^fix:" 2>/dev/null || true)
+          OTHER=$(git log "$RANGE" --pretty=format:"- %s (%h)" --grep="^docs:\|^chore:\|^refactor:" 2>/dev/null || true)
+          BREAKING=$(git log "$RANGE" --pretty=format:"- %s (%h)" --grep="BREAKING CHANGE" 2>/dev/null || true)
+
+          # Build changelog entry
+          ENTRY="## [${{ steps.version.outputs.new }}] — ${DATE}"
+          ENTRY_BODY=""
+
+          if [ -n "$BREAKING" ]; then
+            ENTRY_BODY="${ENTRY_BODY}
+
+          ### Breaking Changes
+          ${BREAKING}"
+          fi
+
+          if [ -n "$FEATURES" ]; then
+            ENTRY_BODY="${ENTRY_BODY}
+
+          ### Features
+          ${FEATURES}"
+          fi
+
+          if [ -n "$FIXES" ]; then
+            ENTRY_BODY="${ENTRY_BODY}
+
+          ### Fixes
+          ${FIXES}"
+          fi
+
+          if [ -n "$OTHER" ]; then
+            ENTRY_BODY="${ENTRY_BODY}
+
+          ### Other
+          ${OTHER}"
+          fi
+
+          if [ -z "$ENTRY_BODY" ]; then
+            ENTRY_BODY="
+
+          ### Other
+          - Release ${TAG}"
+          fi
+
+          FULL_ENTRY="${ENTRY}${ENTRY_BODY}"
+
+          # Prepend to CHANGELOG.md (after the header lines)
+          {
+            head -5 CHANGELOG.md
+            echo ""
+            echo "$FULL_ENTRY"
+            echo ""
+            echo "---"
+            echo ""
+            tail -n +6 CHANGELOG.md
+          } > CHANGELOG.tmp && mv CHANGELOG.tmp CHANGELOG.md
+
+          # Save for GitHub Release body
+          echo "$FULL_ENTRY" > /tmp/release-notes.md
+
+      - name: Commit version bump
+        run: |
+          git add VERSION CHANGELOG.md packages/*/package.json packages/api/pyproject.toml
+          git commit -m "$(cat <<'EOF'
+          release: v${{ steps.version.outputs.new }}
+
+          Bump version ${{ steps.version.outputs.current }} → ${{ steps.version.outputs.new }} (${{ inputs.bump }})
+          EOF
+          )"
+
+      - name: Create tag
+        run: |
+          git tag -a "${{ steps.version.outputs.tag }}" -m "Release ${{ steps.version.outputs.tag }}"
+
+      - name: Push commit and tag
+        run: |
+          git push origin HEAD
+          git push origin "${{ steps.version.outputs.tag }}"
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ steps.version.outputs.tag }}" \
+            --title "${{ steps.version.outputs.tag }}" \
+            --notes-file /tmp/release-notes.md \
+            --target "${{ github.ref_name }}"

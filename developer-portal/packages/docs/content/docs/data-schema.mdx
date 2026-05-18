@@ -1,0 +1,100 @@
+---
+title: Data Schema
+description: Schema reference for live submissions, delivery items, frontiers, and verticals.
+---
+
+## Live Submission (Production)
+
+Returned by `GET /v1/live/pull` and frontier-based endpoints.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `submission_id` | string | Unique submission identifier |
+| `task_id` | string | Task this submission belongs to |
+| `frontier_id` | string | Parent frontier ID |
+| `data` | object | Annotation payload — schema varies by frontier/task |
+| `quality_score` | number | 0.30–0.97 quality score mapped from audit grade |
+| `quality_grade` | string | Letter grade: S (0.97), A (0.85), B (0.70), C (0.50), D (0.30) |
+| `source` | string | Where the submission originated |
+| `created_at` | string | ISO timestamp |
+| `consumer_feedback` | string \| null | Your org's feedback: `"adopt"`, `"dispute"`, or `null` |
+
+## Frontier Summary
+
+Returned by `GET /v1/frontiers`.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `frontier_id` | string | Unique frontier identifier |
+| `title` | string | Display name (e.g. "CEX Hot Wallet") |
+| `status` | string | `ONLINE`, `COLLECTING`, `FINISHED`, `PAUSED`, `STOP` |
+| `task_count` | int | Number of tasks in this frontier |
+| `total_submissions` | int | Total adopted submissions across all tasks |
+
+## Task Summary
+
+Returned by `GET /v1/frontiers/<id>/tasks`.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `task_id` | string | Unique task identifier |
+| `frontier_id` | string | Parent frontier ID |
+| `name` | string | Task display name |
+| `task_type` | string | Task type (e.g. `IMAGE_ANNOTATION`, `TEXT_COLLECTION`) |
+| `status` | string | Task status |
+| `submission_count` | int | Number of adopted submissions |
+
+## Quality Grades
+
+Submissions are graded by the audit system on a 1–5 scale, mapped to scores and letters:
+
+| Audit Result | Grade | Score | Meaning |
+|-------------|-------|-------|---------|
+| 5 | S | 0.97 | Exceptional quality |
+| 4 | A | 0.85 | High quality |
+| 3 | B | 0.70 | Standard quality |
+| 2 | C | 0.50 | Below average |
+| 1 | D | 0.30 | Low quality |
+
+---
+
+## Delivery Item (Simulated)
+
+Returned by `GET /v1/data/pull` for vertical-based subscriptions.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | uuid | Unique item identifier |
+| `vertical_id` | uuid | FK to verticals table |
+| `topic_id` | uuid | FK to topics table (nullable) |
+| `payload` | jsonb | Annotation data — schema varies by vertical |
+| `quality_score` | numeric | 0.0–1.0 consensus quality score |
+| `quality_method` | text | How quality was computed (e.g. `"consensus"`) |
+| `validator_count` | int | Number of validators who reviewed |
+| `consensus_ratio` | numeric | Agreement ratio among validators |
+| `unit_price_usd` | numeric | Cost to adopt this item |
+| `created_at` | timestamp | When the item was created |
+
+## Verticals (Simulated)
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | uuid | Unique identifier |
+| `slug` | text | URL-friendly name (e.g. `crypto_account_annotation`) |
+| `name` | text | Display name |
+| `description` | text | What this vertical provides |
+| `base_price_usd` | numeric | Starting price per item |
+
+## Payload Schemas by Vertical
+
+### crypto_account_annotation
+
+```json
+{
+  "address": "0x1234...abcd",
+  "chain": "ethereum",
+  "label": "Uniswap V3",
+  "category": "dex",
+  "subcategory": "amm"
+}
+```

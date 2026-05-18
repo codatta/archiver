@@ -1,0 +1,15 @@
+{
+  "slug": "physical-intelligence",
+  "name": "Physical Intelligence",
+  "tagline": "Bringing general-purpose AI into the physical world",
+  "description": "Physical Intelligence (PI) develops foundation models for general-purpose robot control. Its flagship model, pi-zero (π0), is a Vision-Language-Action model trained on data from 7 robotic platforms and 68 unique tasks — enabling robots to fold laundry, bus tables, bag groceries, and assemble boxes from natural language instructions.",
+  "tier": "emerging",
+  "frontier": "Robotics",
+  "website": "https://www.pi.website/",
+  "github_url": "https://github.com/Physical-Intelligence",
+  "hf_url": "https://huggingface.co/lerobot",
+  "hf_org": null,
+  "hf_stats": null,
+  "industry": "Robotics Foundation Models",
+  "verified": true
+}

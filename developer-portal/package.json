@@ -1,0 +1,13 @@
+{
+  "name": "developer-humanbased",
+  "private": true,
+  "workspaces": ["packages/webapp", "shared"],
+  "scripts": {
+    "dev:webapp": "bun run --cwd packages/webapp dev",
+    "dev:api": "cd packages/api && uv run uvicorn app.main:app --reload --port 8000",
+    "dev": "bun run dev:webapp & bun run dev:api"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.40.0"
+  }
+}
