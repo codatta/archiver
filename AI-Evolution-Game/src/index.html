@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Transformation Game</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1e1e1e;
+            flex-direction: column;
+        }
+        #gameCanvas {
+            background-color: #1e1e1e;
+            border: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="1200" height="800"></canvas>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let iterations = 0;
+        const unitSize = 20;
+        const columns = 40; // Width of the rectangle in units
+        const rows = 30; // Height of the rectangle in units
+        const totalUnits = columns * rows; // Total number of units in the original rectangle
+        const mainRect = { x: 200, y: 100, width: columns * unitSize, height: rows * unitSize };
+        const groundLevel = mainRect.y + mainRect.height;
+        let grid = []; // Array representing the main rectangle as a grid
+        const fallingPieces = []; // Array of falling pieces
+        let gameEnded = false;
+
+        // Define trapezoid parameters for "fix units" with smooth boundaries
+        const topWidth = Math.floor(columns * 0.6); // Top width of the trapezoid
+        const bottomWidth = columns; // Bottom width is the full width of the rectangle
+        const trapezoidHeight = rows; // Trapezoid spans the entire height
+
+        // Initialize the grid with units (unit rectangles), marking fix and fallible units
+        function initializeGrid() {
+            grid = Array.from({ length: rows }, (_, row) =>
+                Array.from({ length: columns }, (_, col) => {
+                    const isFixUnit = isInTrapezoid(row, col);
+                    return {
+                        x: mainRect.x + col * unitSize,
+                        y: mainRect.y + row * unitSize,
+                        falling: false,
+                        removed: false, // Track if the unit has been removed from the main shape
+                        isFixUnit // True if this unit is part of the fixed trapezoid
+                    };
+                })
+            );
+        }
+
+        // Function to determine if a unit is within the trapezoid (fix unit) with smooth boundaries
+        function isInTrapezoid(row, col) {
+            const rowProgress = row / (rows - 1); // Progress from top to bottom (0 to 1)
+            const widthAtRow = Math.floor(topWidth + (bottomWidth - topWidth) * rowProgress);
+            const offset = Math.floor((columns - widthAtRow) / 2);
+            return col >= offset && col < offset + widthAtRow;
+        }
+
+        // Draw the grid of unit rectangles
+        function drawGrid() {
+            for (let row = 0; row < rows; row++) {
+                for (let col = 0; col < columns; col++) {
+                    const cell = grid[row][col];
+                    if (!cell.removed) { // Only draw if the piece hasn't been removed
+                        ctx.fillStyle = cell.isFixUnit ? '#888' : 'white'; // Fixed units in gray, fallible units in white
+                        ctx.fillRect(cell.x, cell.y, unitSize, unitSize);
+                    }
+                }
+            }
+        }
+
+        // Create a subset of falling pieces, avoiding fix units
+        function createFallingSubset() {
+            const fallibleCells = [];
+
+            // Gather all remaining fallible cells (not fix units, not removed, and not currently falling)
+            for (let row = 0; row < rows; row++) {
+                for (let col = 0; col < columns; col++) {
+                    const cell = grid[row][col];
+                    if (!cell.isFixUnit && !cell.removed && !cell.falling) {
+                        fallibleCells.push(cell);
+                    }
+                }
+            }
+
+            // If no fallible cells are left, exit early
+            if (fallibleCells.length === 0) return;
+
+            // Determine subset size (2% to 5% of total units)
+            const minFallingPieces = Math.ceil(totalUnits * 0.02);
+            const maxFallingPieces = Math.ceil(totalUnits * 0.05);
+            const subsetSize = Math.floor(Math.random() * (maxFallingPieces - minFallingPieces + 1)) + minFallingPieces;
+
+            // If remaining fallible units are close to the subset size, select all remaining units
+            const actualSubsetSize = (fallibleCells.length <= subsetSize) ? fallibleCells.length : subsetSize;
+
+            // Select random cells as falling pieces
+            for (let i = 0; i < actualSubsetSize && fallibleCells.length > 0; i++) {
+                const randomIndex = Math.floor(Math.random() * fallibleCells.length);
+                const cell = fallibleCells.splice(randomIndex, 1)[0]; // Remove selected cell from fallible cells
+
+                cell.falling = true;
+                cell.removed = true; // Mark the cell as removed from the main shape
+
+                // Add horizontal speed to simulate hammer hit
+                const horizontalSpeed = (Math.random() * 2 - 1) * 2; // Random direction and speed (-2 to 2)
+
+                fallingPieces.push({
+                    x: cell.x,
+                    y: cell.y,
+                    targetY: groundLevel - unitSize,
+                    settled: false,
+                    disappearTime: Date.now() + 1000, // Disappear 1 second after reaching ground
+                    horizontalSpeed: horizontalSpeed, // Horizontal movement
+                    verticalSpeed: Math.random() * 2 + 2, // Random vertical fall speed
+                    color: 'orange' // Set initial color to orange
+                });
+            }
+        }
+
+        // Animate falling pieces with horizontal and vertical movement
+        function animateFallingPieces() {
+            for (const piece of fallingPieces) {
+                if (!piece.settled) {
+                    // Update horizontal position based on horizontal speed
+                    piece.x += piece.horizontalSpeed;
+
+                    // Update vertical position based on vertical speed
+                    piece.y += piece.verticalSpeed;
+
+                    // Stop at ground level
+                    if (piece.y >= piece.targetY) {
+                        piece.y = piece.targetY;
+                        piece.settled = true; // Piece has settled on ground level
+                        piece.color = 'white'; // Change color to white after settling
+                    }
+                } else if (Date.now() > piece.disappearTime) {
+                    // Remove pieces that have disappeared
+                    const index = fallingPieces.indexOf(piece);
+                    if (index > -1) {
+                        fallingPieces.splice(index, 1);
+                    }
+                }
+            }
+        }
+
+        // Check if there are any remaining fallible units
+        function checkGameEnd() {
+            for (let row = 0; row < rows; row++) {
+                for (let col = 0; col < columns; col++) {
+                    const cell = grid[row][col];
+                    if (!cell.isFixUnit && !cell.removed) {
+                        return false; // A fallible unit is still present
+                    }
+                }
+            }
+            return true; // Only fix units remain
+        }
+
+        // Function to display end message
+        function displayEndMessage() {
+            ctx.fillStyle = 'white';
+            ctx.font = '30px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText("Congratulations!", canvas.width / 2, canvas.height / 2 - 20);
+            ctx.fillText("Patterns learned through differentiating signals and noise", canvas.width / 2, canvas.height / 2 + 20);
+        }
+
+        // Function to draw game components
+        function drawGame() {
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw grid of main rectangle
+            drawGrid();
+
+            // Draw 'Iterations' label in the top right
+            ctx.fillStyle = 'white';
+            ctx.font = '20px Arial';
+            ctx.fillText(`Iterations: ${iterations}`, canvas.width - 150, 30);
+
+            // Draw falling pieces
+            for (const piece of fallingPieces) {
+                ctx.fillStyle = piece.color; // Use the piece's color (orange initially)
+                ctx.fillRect(piece.x, piece.y, unitSize, unitSize);
+            }
+        }
+
+        // Handle SPACE key or tap action
+        function handleAction() {
+            if (gameEnded) return; // Do nothing if the game has already ended
+
+            iterations++;
+            createFallingSubset();
+
+            // End game when only fix units remain
+            if (checkGameEnd()) {
+                gameEnded = true;
+                displayEndMessage();
+                return; // Stop further actions
+            }
+
+            drawGame();
+        }
+
+        // Listen for SPACE key press
+        document.addEventListener('keydown', (event) => {
+            if (event.code === 'Space') {
+                handleAction();
+            }
+        });
+
+        // Listen for tap on canvas (for mobile support)
+        canvas.addEventListener('click', () => {
+            handleAction();
+        });
+
+        // Game loop to animate the falling pieces
+        function gameLoop() {
+            if (!gameEnded) {
+                animateFallingPieces();
+                drawGame();
+            }
+            requestAnimationFrame(gameLoop);
+        }
+
+        // Start the game
+        initializeGrid(); // Initialize on load
+        gameLoop();
+    </script>
+</body>
+</html>
