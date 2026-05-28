@@ -1,0 +1,2619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RootData × Codatta 合作方案</title>
+
+<!-- Fonts: Bold Signal preset = Archivo Black (display) + Space Grotesk (body).
+     Noto Sans SC added for Chinese rendering — Archivo Black has no CJK glyphs. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Nunito:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ===========================================
+   THEME — Bold Signal (modified for CJK)
+   Confident, bold, modern, high-impact.
+   Edit these :root variables to retheme.
+   =========================================== */
+:root {
+    --bg-primary: #ffffff;
+    --bg-gradient: #ffffff;
+    --bg-deep: #f5f5f5;
+    --card-bg: #ff3300;            /* Swiss red */
+    --card-bg-alt: #000000;        /* solid black secondary */
+    --card-bg-dim: #f8f7f4;
+    --text-primary: #000000;
+    --text-muted: rgba(0,0,0,0.62);
+    --text-faint: rgba(0,0,0,0.32);
+    --text-on-card: #ffffff;
+    --rule: rgba(0,0,0,0.15);
+
+    --font-display: "Archivo", "Noto Sans SC", sans-serif;
+    --font-body: "Nunito", "Noto Sans SC", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    /* Typography (clamp scales) */
+    --title-size: clamp(1.6rem, 5vw, 4rem);
+    --h2-size: clamp(1.2rem, 3.2vw, 2.4rem);
+    --h3-size: clamp(0.95rem, 2vw, 1.4rem);
+    --body-size: clamp(0.72rem, 1.2vw, 1rem);
+    --small-size: clamp(0.62rem, 0.9vw, 0.82rem);
+    --section-num-size: clamp(4rem, 18vw, 16rem);
+
+    --slide-padding: clamp(1.2rem, 4vw, 3.5rem);
+    --content-gap: clamp(0.6rem, 1.6vw, 1.6rem);
+    --element-gap: clamp(0.3rem, 0.8vw, 0.8rem);
+
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-normal: 0.6s;
+}
+
+/* ===========================================
+   BASE STYLES
+   =========================================== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ============ BEGIN viewport-base.css ============ */
+html, body { height: 100%; overflow-x: hidden; }
+html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.slide-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100%;
+    overflow: hidden;
+    padding: var(--slide-padding);
+}
+
+.card, .container, .content-box {
+    max-width: min(94vw, 1200px);
+    max-height: min(82vh, 720px);
+}
+
+.feature-list, .bullet-list { gap: clamp(0.4rem, 1vh, 1rem); }
+.feature-list li, .bullet-list li { font-size: var(--body-size); line-height: 1.45; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+img, .image-container {
+    max-width: 100%;
+    max-height: min(50vh, 400px);
+    object-fit: contain;
+}
+
+@media (max-height: 700px) {
+    :root {
+        --slide-padding: clamp(0.8rem, 3vw, 2rem);
+        --content-gap: clamp(0.4rem, 1.2vw, 1rem);
+        --title-size: clamp(1.3rem, 4.4vw, 2.5rem);
+        --h2-size: clamp(1rem, 3vw, 1.7rem);
+    }
+}
+@media (max-height: 600px) {
+    :root {
+        --slide-padding: clamp(0.5rem, 2.5vw, 1.5rem);
+        --content-gap: clamp(0.3rem, 1vw, 0.75rem);
+        --title-size: clamp(1.1rem, 4vw, 2rem);
+        --body-size: clamp(0.7rem, 1.2vw, 0.95rem);
+    }
+    .nav-dots, .keyboard-hint, .decorative { display: none; }
+}
+@media (max-height: 500px) {
+    :root {
+        --slide-padding: clamp(0.4rem, 2vw, 1rem);
+        --title-size: clamp(1rem, 3.5vw, 1.5rem);
+        --h2-size: clamp(0.9rem, 2.5vw, 1.25rem);
+        --body-size: clamp(0.65rem, 1vw, 0.85rem);
+    }
+}
+@media (max-width: 600px) {
+    :root { --title-size: clamp(1.25rem, 7vw, 2.5rem); }
+    .grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.2s !important;
+    }
+    html { scroll-behavior: auto; }
+}
+/* ============ END viewport-base.css ============ */
+
+body {
+    background: var(--bg-gradient);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: var(--body-size);
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+/* ===========================================
+   REVEAL ANIMATIONS — staggered on slide entry
+   =========================================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+        opacity var(--duration-normal) var(--ease-out-expo),
+        transform var(--duration-normal) var(--ease-out-expo);
+}
+.slide.visible .reveal { opacity: 1; transform: translateY(0); }
+.slide.visible .reveal:nth-child(1) { transition-delay: 0.05s; }
+.slide.visible .reveal:nth-child(2) { transition-delay: 0.15s; }
+.slide.visible .reveal:nth-child(3) { transition-delay: 0.25s; }
+.slide.visible .reveal:nth-child(4) { transition-delay: 0.35s; }
+.slide.visible .reveal:nth-child(5) { transition-delay: 0.45s; }
+.slide.visible .reveal:nth-child(6) { transition-delay: 0.55s; }
+.slide.visible .reveal:nth-child(7) { transition-delay: 0.65s; }
+.slide.visible .reveal:nth-child(8) { transition-delay: 0.75s; }
+
+/* Cards within a grid stagger */
+.slide.visible .card-stagger { animation: cardIn 0.6s var(--ease-out-expo) both; }
+.slide.visible .card-stagger:nth-child(1) { animation-delay: 0.20s; }
+.slide.visible .card-stagger:nth-child(2) { animation-delay: 0.30s; }
+.slide.visible .card-stagger:nth-child(3) { animation-delay: 0.40s; }
+.slide.visible .card-stagger:nth-child(4) { animation-delay: 0.50s; }
+.slide.visible .card-stagger:nth-child(5) { animation-delay: 0.60s; }
+.slide.visible .card-stagger:nth-child(6) { animation-delay: 0.70s; }
+.slide.visible .card-stagger:nth-child(7) { animation-delay: 0.80s; }
+
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(24px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ===========================================
+   SLIDE CHROME — number, breadcrumbs, footer
+   Shared across most content slides.
+   =========================================== */
+.slide-num {
+    position: absolute;
+    top: clamp(1rem, 3vh, 2rem);
+    left: var(--slide-padding);
+    font-family: var(--font-display);
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+}
+.slide-num strong {
+    color: var(--card-bg);
+    margin-right: 0.4em;
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: clamp(1rem, 3vh, 2rem);
+    right: var(--slide-padding);
+    display: flex;
+    gap: clamp(0.4rem, 1vw, 1rem);
+    font-family: var(--font-body);
+    font-size: var(--small-size);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    max-width: 65%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: right;
+}
+.breadcrumbs span.active { color: var(--text-primary); }
+.breadcrumbs span.active::before {
+    content: "●";
+    margin-right: 0.4em;
+    color: var(--card-bg);
+}
+
+.slide-footer {
+    position: absolute;
+    bottom: clamp(0.8rem, 2.5vh, 1.6rem);
+    left: var(--slide-padding);
+    right: var(--slide-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--small-size);
+    color: var(--text-faint);
+    letter-spacing: 0.08em;
+}
+.slide-footer .lockup {
+    font-family: var(--font-display);
+    color: var(--text-muted);
+    letter-spacing: 0.12em;
+}
+.slide-footer .lockup b { color: var(--card-bg); font-weight: normal; }
+
+/* ===========================================
+   TITLE SLIDE — orange hero card on dark gradient
+   =========================================== */
+.title-slide { justify-content: center; align-items: center; padding: var(--slide-padding); }
+.title-card {
+    background: var(--card-bg);
+    color: var(--text-on-card);
+    padding: clamp(1.6rem, 5vw, 3.5rem) clamp(1.8rem, 5vw, 4rem);
+    width: min(85vw, 920px);
+    position: relative;
+    box-shadow: 0 30px 80px rgba(255, 51, 0, 0.18);
+}
+.title-card::before {
+    content: "";
+    position: absolute;
+    inset: clamp(0.4rem, 1vw, 0.8rem);
+    border: 2px solid rgba(0,0,0,0.15);
+    pointer-events: none;
+}
+.title-card .eyebrow {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: var(--small-size);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: clamp(0.8rem, 2vh, 1.4rem);
+}
+.title-card h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: clamp(0.8rem, 2vh, 1.5rem);
+}
+.title-card h1 .x {
+    display: inline-block;
+    transform: rotate(8deg);
+    margin: 0 0.15em;
+    color: rgba(0,0,0,0.6);
+}
+.title-card .tagline {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: clamp(0.9rem, 1.6vw, 1.25rem);
+    line-height: 1.4;
+    max-width: 32em;
+    margin-bottom: clamp(1rem, 3vh, 2rem);
+}
+.title-card .meta {
+    display: flex;
+    gap: clamp(1.2rem, 3vw, 2.4rem);
+    font-family: var(--font-mono);
+    font-size: var(--small-size);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(0,0,0,0.18);
+    padding-top: clamp(0.8rem, 2vh, 1.2rem);
+}
+.title-card .meta div b { font-weight: 700; display: block; opacity: 0.55; margin-bottom: 0.2em; }
+
+.title-corner-num {
+    position: absolute;
+    top: clamp(1.2rem, 3vh, 2rem);
+    left: var(--slide-padding);
+    font-family: var(--font-display);
+    font-size: clamp(0.75rem, 1.1vw, 0.95rem);
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+}
+.title-corner-num strong { color: var(--card-bg); }
+
+.title-corner-meta {
+    position: absolute;
+    top: clamp(1.2rem, 3vh, 2rem);
+    right: var(--slide-padding);
+    font-family: var(--font-body);
+    font-size: var(--small-size);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    text-align: right;
+}
+
+/* ===========================================
+   SECTION DIVIDER — giant orange numeral
+   =========================================== */
+.section-divider .slide-content {
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(1rem, 4vw, 4rem);
+}
+.section-divider .big-num {
+    font-family: var(--font-display);
+    font-size: var(--section-num-size);
+    line-height: 0.85;
+    color: var(--card-bg);
+    letter-spacing: -0.05em;
+}
+.section-divider .meta {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.6rem, 1.5vh, 1.2rem);
+    flex: 1;
+    max-width: 50%;
+}
+.section-divider .label {
+    font-family: var(--font-body);
+    font-size: var(--small-size);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+.section-divider h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 4vw, 3rem);
+    line-height: 1.1;
+}
+.section-divider .desc {
+    font-size: clamp(0.9rem, 1.4vw, 1.15rem);
+    color: var(--text-muted);
+    max-width: 28em;
+    line-height: 1.5;
+}
+.section-divider .rule {
+    width: clamp(40px, 6vw, 80px);
+    height: 3px;
+    background: var(--card-bg);
+}
+
+/* ===========================================
+   CONTENT TYPOGRAPHY
+   =========================================== */
+.content-eyebrow {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: var(--small-size);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--card-bg);
+    margin-bottom: var(--element-gap);
+}
+.content-title {
+    font-family: var(--font-display);
+    font-size: var(--title-size);
+    line-height: 1.1;
+    margin-bottom: clamp(0.8rem, 2vh, 1.5rem);
+    max-width: 18em;
+}
+.content-lead {
+    font-size: clamp(0.95rem, 1.5vw, 1.3rem);
+    line-height: 1.5;
+    color: var(--text-primary);
+    max-width: 38em;
+    margin-bottom: clamp(0.6rem, 1.5vh, 1.2rem);
+}
+.content-body {
+    font-size: var(--body-size);
+    line-height: 1.55;
+    color: var(--text-muted);
+    max-width: 50em;
+}
+
+/* ===========================================
+   CARDS (data objects, problems, etc.)
+   =========================================== */
+.card-grid {
+    display: grid;
+    gap: clamp(0.5rem, 1vw, 0.9rem);
+    width: 100%;
+    margin-top: clamp(0.6rem, 1.5vh, 1rem);
+}
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 720px) {
+    .card-grid.cols-3, .card-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .card-grid { grid-template-columns: 1fr !important; }
+}
+
+.tile {
+    background: var(--card-bg-dim);
+    border: 1px solid var(--rule);
+    padding: clamp(0.8rem, 1.6vw, 1.2rem) clamp(0.8rem, 1.8vw, 1.4rem);
+    position: relative;
+    transition: transform 0.3s var(--ease-out-expo), border-color 0.3s ease;
+    /* Thin orange top stripe — uniform across every tile, gives the deck rhythm
+       without singling any one card out. */
+}
+.tile::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: clamp(28px, 4vw, 48px);
+    height: 2px;
+    background: var(--card-bg);
+}
+.tile:hover { transform: translateY(-2px); border-color: var(--card-bg); }
+.tile:hover::before { width: 100%; transition: width 0.4s var(--ease-out-expo); }
+.tile .tile-tag {
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.85vw, 0.75rem);
+    letter-spacing: 0.15em;
+    color: var(--card-bg);
+    margin-bottom: 0.35em;
+}
+.tile h3 {
+    font-family: var(--font-display);
+    font-size: clamp(0.85rem, 1.4vw, 1.1rem);
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+}
+.tile p {
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+/* Subtle de-emphasis variant — used for "what we are NOT doing" contrast,
+   so the negation doesn't visually compete with the affirmative card. */
+.tile.muted {
+    background: rgba(0,0,0,0.025);
+    border-color: rgba(0,0,0,0.08);
+}
+.tile.muted::before { background: rgba(0,0,0,0.18); }
+.tile.muted .tile-tag { color: var(--text-faint); }
+.tile.muted h3 { color: var(--text-faint); text-decoration: line-through; }
+.tile.muted p { color: rgba(0,0,0,0.32); }
+
+/* Affirmative variant for the same kind of contrast — adds a clean ✓ marker,
+   no colour fill, so it pairs equally with .muted. */
+.tile.affirm h3::before {
+    content: "✓ ";
+    color: var(--card-bg);
+    font-family: var(--font-display);
+}
+
+/* ===========================================
+   COMPARISON TABLE (used for "现有模式")
+   =========================================== */
+.compare-table {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 2fr;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    width: 100%;
+    margin-top: clamp(0.5rem, 1vh, 1rem);
+}
+.compare-table > * {
+    background: var(--bg-deep);
+    padding: clamp(0.6rem, 1.3vw, 1rem);
+}
+.compare-table .ch {
+    font-family: var(--font-display);
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--card-bg);
+}
+.compare-table .row-name {
+    font-family: var(--font-display);
+    font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+    line-height: 1.25;
+}
+.compare-table .pro, .compare-table .con {
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+.compare-table .pro::before { content: "✓ "; color: #4ade80; font-weight: 700; }
+.compare-table .con::before { content: "✗ "; color: var(--card-bg); font-weight: 700; }
+
+/* ===========================================
+   PROCESS FLOW (七步演进 / 契合点)
+   =========================================== */
+.flow {
+    display: flex;
+    align-items: stretch;
+    gap: clamp(0.4rem, 1vw, 0.8rem);
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: clamp(0.6rem, 1.5vh, 1rem);
+}
+.flow-step {
+    flex: 1;
+    min-width: 120px;
+    background: var(--card-bg-dim);
+    border-left: 3px solid var(--card-bg);
+    padding: clamp(0.6rem, 1.3vw, 1rem);
+    position: relative;
+}
+.flow-step .step-num {
+    font-family: var(--font-mono);
+    font-size: clamp(0.6rem, 0.9vw, 0.8rem);
+    color: var(--card-bg);
+    letter-spacing: 0.15em;
+}
+.flow-step h4 {
+    font-family: var(--font-display);
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    line-height: 1.2;
+    margin: 0.3em 0 0.4em;
+}
+.flow-step p {
+    font-size: clamp(0.65rem, 0.95vw, 0.8rem);
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+/* Inline arrow flow */
+.arrow-flow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0.3rem, 1vw, 0.8rem);
+    margin: clamp(0.8rem, 2vh, 1.6rem) 0;
+    font-family: var(--font-display);
+    font-size: clamp(0.75rem, 1.2vw, 1.1rem);
+}
+.arrow-flow .node {
+    background: var(--card-bg-dim);
+    border: 1px solid var(--rule);
+    padding: 0.5em 0.9em;
+    letter-spacing: 0.05em;
+}
+.arrow-flow .node.bright { background: var(--card-bg); color: var(--text-on-card); border-color: var(--card-bg); }
+.arrow-flow .arrow { color: var(--card-bg); font-family: var(--font-mono); }
+
+/* ===========================================
+   QUOTE / CALLOUT slide
+   =========================================== */
+.callout-card {
+    background: var(--card-bg);
+    color: var(--text-on-card);
+    padding: clamp(1.4rem, 4vw, 3rem);
+    width: min(90vw, 1000px);
+    margin: 0 auto;
+    position: relative;
+}
+.callout-card .quote-mark {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 0.8;
+    color: rgba(0,0,0,0.18);
+    position: absolute;
+    top: clamp(0.4rem, 1vw, 1rem);
+    left: clamp(0.8rem, 2vw, 2rem);
+}
+.callout-card .quote-en {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 3vw, 2.2rem);
+    line-height: 1.15;
+    margin-bottom: 0.6em;
+    position: relative;
+}
+.callout-card .quote-cn {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: clamp(0.95rem, 1.6vw, 1.3rem);
+    line-height: 1.4;
+    color: rgba(0,0,0,0.78);
+    position: relative;
+}
+
+/* ===========================================
+   TWO-COLUMN layout (双方资产)
+   =========================================== */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(0.8rem, 2vw, 2rem);
+    width: 100%;
+}
+@media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+.col-card {
+    background: var(--card-bg-dim);
+    border: 1px solid var(--rule);
+    border-top: 4px solid var(--card-bg);
+    padding: clamp(0.9rem, 2vw, 1.6rem);
+}
+.col-card.alt { border-top-color: var(--card-bg-alt); }
+.col-card .col-tag {
+    font-family: var(--font-mono);
+    font-size: clamp(0.6rem, 0.9vw, 0.78rem);
+    letter-spacing: 0.2em;
+    color: var(--card-bg);
+    margin-bottom: 0.35em;
+}
+.col-card.alt .col-tag { color: var(--card-bg-alt); }
+.col-card h3 {
+    font-family: var(--font-display);
+    font-size: clamp(0.95rem, 1.6vw, 1.3rem);
+    line-height: 1.2;
+    margin-bottom: 0.6em;
+}
+.col-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.25rem, 0.6vh, 0.5rem);
+}
+.col-card li {
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+    color: var(--text-muted);
+    padding-left: 0.9em;
+    position: relative;
+    line-height: 1.45;
+}
+.col-card li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--card-bg);
+}
+.col-card.alt li::before { color: var(--card-bg-alt); }
+.col-card li b {
+    color: var(--text-primary);
+    font-family: var(--font-display);
+    font-weight: normal;
+}
+
+/* ===========================================
+   EXCLUSION LIST (Phase 1 不做什么)
+   =========================================== */
+.exclusion-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(0.4rem, 0.9vw, 0.7rem);
+    width: 100%;
+    margin-top: clamp(0.5rem, 1.2vh, 0.9rem);
+}
+@media (max-width: 600px) { .exclusion-list { grid-template-columns: 1fr; } }
+
+.exclusion-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    padding: clamp(0.5rem, 1vw, 0.7rem) clamp(0.6rem, 1.2vw, 0.9rem);
+    background: rgba(0,0,0,0.025);
+    border-left: 2px solid var(--card-bg);
+    font-size: clamp(0.7rem, 1vw, 0.88rem);
+    color: var(--text-muted);
+    line-height: 1.35;
+}
+.exclusion-item .x {
+    color: var(--card-bg);
+    font-family: var(--font-display);
+    font-size: 1.1em;
+    flex-shrink: 0;
+}
+.exclusion-item b { color: var(--text-primary); font-family: var(--font-display); font-weight: normal; }
+
+/* ===========================================
+   TIMELINE (附录 - 后续 Phase)
+   =========================================== */
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(0.5rem, 1vw, 0.9rem);
+    width: 100%;
+    margin-top: clamp(0.6rem, 1.5vh, 1.1rem);
+}
+@media (max-width: 800px) { .timeline { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .timeline { grid-template-columns: 1fr; } }
+
+.phase-card {
+    background: var(--card-bg-dim);
+    border: 1px solid var(--rule);
+    padding: clamp(0.7rem, 1.5vw, 1.1rem);
+    position: relative;
+}
+.phase-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--card-bg);
+}
+.phase-card.p1::before { background: var(--card-bg); }
+.phase-card.p2::before { background: var(--card-bg-alt); }
+.phase-card.p3::before { background: #4ade80; }
+.phase-card.p4::before { background: #a78bfa; }
+.phase-card .phase-num {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    line-height: 1;
+    margin-bottom: 0.2em;
+    letter-spacing: -0.02em;
+}
+.phase-card.p1 .phase-num { color: var(--card-bg); }
+.phase-card.p2 .phase-num { color: var(--card-bg-alt); }
+.phase-card.p3 .phase-num { color: #4ade80; }
+.phase-card.p4 .phase-num { color: #a78bfa; }
+.phase-card h4 {
+    font-family: var(--font-display);
+    font-size: clamp(0.78rem, 1.1vw, 0.95rem);
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+.phase-card ul {
+    list-style: none;
+    font-size: clamp(0.62rem, 0.85vw, 0.75rem);
+    color: var(--text-muted);
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15em;
+}
+.phase-card li::before { content: "· "; color: var(--card-bg); }
+
+/* ===========================================
+   PROGRESS BAR & NAV DOTS
+   =========================================== */
+.progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    width: 0%;
+    background: var(--card-bg);
+    z-index: 100;
+    transition: width 0.2s ease;
+}
+
+.nav-dots {
+    position: fixed;
+    right: clamp(0.6rem, 1.5vw, 1.4rem);
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    z-index: 50;
+}
+.nav-dots button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--text-faint);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+.nav-dots button:hover { border-color: var(--card-bg); }
+.nav-dots button.active {
+    background: var(--card-bg);
+    border-color: var(--card-bg);
+    transform: scale(1.4);
+}
+@media (max-width: 700px) { .nav-dots { display: none; } }
+
+.keyboard-hint {
+    position: fixed;
+    bottom: clamp(0.5rem, 1.5vh, 1rem);
+    right: clamp(0.6rem, 1.5vw, 1.4rem);
+    font-family: var(--font-mono);
+    font-size: var(--small-size);
+    color: var(--text-faint);
+    letter-spacing: 0.1em;
+    z-index: 40;
+    pointer-events: none;
+}
+@media (max-width: 700px) { .keyboard-hint { display: none; } }
+
+/* ===========================================
+   GENERIC HELPERS
+   =========================================== */
+.kw {
+    font-family: var(--font-display);
+    color: var(--card-bg);
+    font-weight: normal;
+}
+.mono { font-family: var(--font-mono); }
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar { width: 0; background: transparent; }
+
+/* === Swiss Modern: heavy weight + geometric grid === */
+.title-card h1, .section-divider h2, .content-title { font-weight: 900; letter-spacing: -0.02em; }
+.title-card { box-shadow: 12px 12px 0 #000; }
+.title-card::before { border-color: rgba(0,0,0,0.25); }
+.callout-card { box-shadow: 12px 12px 0 #000; }
+.tile { background: #fff; border: 1px solid var(--rule); }
+.tile::before { background: var(--card-bg); height: 3px; }
+.compare-table > * { background: #fff; }
+.compare-table { background: #000; border-color: #000; }
+.flow-step { background: var(--card-bg-dim); border-left-width: 4px; }
+.col-card { background: #fff; }
+.exclusion-item { background: var(--card-bg-dim); border-left-width: 3px; }
+.phase-card { background: #fff; }
+.phase-card::before { height: 6px; }
+.arrow-flow .node { background: #fff; border-color: #000; border-width: 2px; }
+.keyboard-hint { color: rgba(0,0,0,0.4); }
+.title-card h1 .x { color: #000; opacity: 0.7; }
+
+/* Swiss style emphasizes a visible underlying grid — add a subtle baseline */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 96px 96px;
+    pointer-events: none;
+    z-index: 0;
+}
+.slide { position: relative; z-index: 1; }
+
+
+/* === V2 ADDITIONS — entity map, scenario compare, TL;DR badge === */
+.entity-map {
+    display: grid;
+    grid-template-columns: 1fr clamp(40px, 5vw, 70px) 1.4fr;
+    gap: clamp(0.6rem, 2vw, 1.5rem);
+    align-items: center;
+    margin-top: clamp(0.4rem, 1vh, 0.8rem);
+}
+.entity {
+    background: #fff;
+    border: 1px solid var(--rule);
+    padding: clamp(0.8rem, 1.6vw, 1.3rem);
+    position: relative;
+}
+.entity::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: clamp(32px, 4vw, 56px);
+    height: 3px;
+    background: var(--card-bg);
+}
+.entity .ent-tag {
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.85vw, 0.75rem);
+    letter-spacing: 0.15em;
+    color: var(--card-bg);
+    margin-bottom: 0.4em;
+}
+.entity .ent-name {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(1.05rem, 1.9vw, 1.5rem);
+    line-height: 1.05;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.01em;
+}
+.entity p {
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+    color: var(--text-muted);
+    line-height: 1.45;
+}
+.entity-arrow {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    color: var(--card-bg);
+    text-align: center;
+    line-height: 1;
+}
+.entity-group {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: clamp(0.4rem, 1vw, 0.8rem);
+}
+.entity-group .entity { padding: clamp(0.6rem, 1.2vw, 1rem); }
+.entity-group .entity .ent-name { font-size: clamp(0.92rem, 1.6vw, 1.2rem); margin-bottom: 0.3em; }
+@media (max-width: 700px) {
+    .entity-map { grid-template-columns: 1fr; }
+    .entity-arrow { transform: rotate(90deg); }
+}
+
+/* TL;DR badge */
+.tldr-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.8vw, 0.7rem);
+    letter-spacing: 0.2em;
+    background: var(--card-bg);
+    color: #fff;
+    padding: 0.25em 0.7em;
+    margin-bottom: 0.6em;
+    text-transform: uppercase;
+}
+
+/* Scenario compare layout */
+.scenario-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(0.5rem, 1.2vw, 1rem);
+    margin-top: clamp(0.4rem, 1vh, 0.8rem);
+}
+.state-card {
+    background: #fff;
+    border: 1px solid var(--rule);
+    padding: clamp(0.8rem, 1.5vw, 1.2rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.3rem, 0.7vh, 0.6rem);
+}
+.state-card.now { background: var(--card-bg-dim); }
+.state-card.future { border-top: 4px solid var(--card-bg); }
+.state-label {
+    font-family: var(--font-display);
+    font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+.state-card.now .state-label { color: var(--text-muted); }
+.state-card.future .state-label { color: var(--card-bg); }
+.state-flow {
+    font-size: clamp(0.65rem, 0.95vw, 0.78rem);
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    padding-bottom: 0.3em;
+    border-bottom: 1px dashed var(--rule);
+    margin-bottom: 0.3em;
+}
+.state-card.now .state-flow { color: rgba(0,0,0,0.5); }
+.state-points {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.2rem, 0.5vh, 0.4rem);
+}
+.state-points li {
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+    color: var(--text-primary);
+    line-height: 1.4;
+    padding-left: 1.2em;
+    position: relative;
+}
+.state-card.now .state-points li::before {
+    content: "✗";
+    position: absolute;
+    left: 0;
+    color: rgba(0,0,0,0.4);
+    font-family: var(--font-display);
+}
+.state-card.future .state-points li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--card-bg);
+    font-family: var(--font-display);
+    font-weight: 900;
+}
+.fraud-callout {
+    background: #000;
+    color: #fff;
+    padding: clamp(0.5rem, 1.2vw, 0.9rem) clamp(0.7rem, 1.5vw, 1.2rem);
+    margin-top: clamp(0.5rem, 1.2vh, 0.9rem);
+    font-size: clamp(0.7rem, 1vw, 0.88rem);
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: clamp(0.6rem, 1.5vw, 1.2rem);
+    flex-wrap: wrap;
+}
+.fraud-callout .fraud-tag {
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.85vw, 0.72rem);
+    letter-spacing: 0.2em;
+    background: var(--card-bg);
+    padding: 0.2em 0.6em;
+    flex-shrink: 0;
+}
+
+/* Three-way collaboration model layout */
+.three-way {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: clamp(0.5rem, 1.2vw, 1rem);
+    margin-top: clamp(0.4rem, 1vh, 0.8rem);
+}
+@media (max-width: 800px) { .three-way { grid-template-columns: 1fr; } }
+.way-card {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-top: 4px solid var(--card-bg);
+    padding: clamp(0.8rem, 1.5vw, 1.2rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.3rem, 0.7vh, 0.5rem);
+}
+.way-card .role {
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.85vw, 0.72rem);
+    letter-spacing: 0.2em;
+    color: var(--card-bg);
+}
+.way-card .name {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(1rem, 1.7vw, 1.35rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+}
+.way-card .role-desc {
+    font-size: clamp(0.75rem, 1.1vw, 0.95rem);
+    line-height: 1.4;
+    color: var(--text-primary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.5em;
+    margin-bottom: 0.2em;
+}
+.way-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.2rem, 0.4vh, 0.35rem);
+}
+.way-card li {
+    font-size: clamp(0.68rem, 0.95vw, 0.82rem);
+    color: var(--text-muted);
+    line-height: 1.4;
+    padding-left: 0.9em;
+    position: relative;
+}
+.way-card li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--card-bg);
+}
+
+/* Mini Phase 1 grid for TL;DR-4 */
+.phase1-mini {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(0.4rem, 0.9vw, 0.7rem);
+    margin-top: clamp(0.4rem, 1vh, 0.7rem);
+}
+@media (max-width: 700px) { .phase1-mini { grid-template-columns: repeat(2, 1fr); } }
+.mini-mod {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--card-bg);
+    padding: clamp(0.5rem, 1vw, 0.8rem);
+}
+.mini-mod .mini-num {
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.8vw, 0.7rem);
+    color: var(--card-bg);
+    letter-spacing: 0.15em;
+}
+.mini-mod h4 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(0.78rem, 1.1vw, 0.95rem);
+    line-height: 1.15;
+    margin: 0.2em 0;
+    letter-spacing: -0.005em;
+}
+.mini-mod p {
+    font-size: clamp(0.62rem, 0.85vw, 0.74rem);
+    color: var(--text-muted);
+    line-height: 1.35;
+}
+
+/* Detailed-section divider */
+.deep-dive-divider .slide-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: clamp(0.8rem, 2vh, 1.6rem);
+}
+.deep-dive-divider .ddd-eyebrow {
+    font-family: var(--font-mono);
+    font-size: clamp(0.7rem, 1.1vw, 0.95rem);
+    letter-spacing: 0.4em;
+    color: var(--card-bg);
+}
+.deep-dive-divider .ddd-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+.deep-dive-divider .ddd-rule {
+    width: clamp(80px, 12vw, 160px);
+    height: 4px;
+    background: var(--card-bg);
+}
+.deep-dive-divider .ddd-desc {
+    font-size: clamp(0.9rem, 1.4vw, 1.15rem);
+    color: var(--text-muted);
+    max-width: 32em;
+    line-height: 1.5;
+}
+
+
+/* === V3 ADDITIONS — layered architecture diagram (glossary + cooperation model) === */
+.arch-stack {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.4rem, 0.8vh, 0.7rem);
+    margin-top: clamp(0.4rem, 1vh, 0.7rem);
+}
+.arch-layer {
+    background: #fff;
+    border: 1px solid var(--rule);
+    padding: clamp(0.6rem, 1.2vw, 0.95rem) clamp(0.7rem, 1.4vw, 1.1rem);
+    position: relative;
+    display: grid;
+    grid-template-columns: clamp(90px, 13vw, 150px) 1fr;
+    gap: clamp(0.5rem, 1.2vw, 1rem);
+    align-items: center;
+}
+.arch-layer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--card-bg);
+}
+.arch-layer .layer-tag {
+    font-family: var(--font-mono);
+    font-size: clamp(0.58rem, 0.9vw, 0.75rem);
+    letter-spacing: 0.2em;
+    color: var(--card-bg);
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+.arch-layer .layer-content {
+    display: flex;
+    align-items: stretch;
+    gap: clamp(0.4rem, 1vw, 0.8rem);
+    flex-wrap: wrap;
+}
+.arch-block {
+    background: var(--card-bg-dim);
+    padding: clamp(0.4rem, 0.9vw, 0.7rem) clamp(0.6rem, 1.2vw, 0.9rem);
+    border: 1px solid var(--rule);
+    flex: 1;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15em;
+}
+.arch-block.primary {
+    background: var(--card-bg);
+    color: var(--text-on-card);
+    border-color: var(--card-bg);
+    flex: 1.4;
+}
+.arch-block.future {
+    background: transparent;
+    border-style: dashed;
+    color: var(--text-faint);
+    flex: 0.8;
+}
+.arch-block .name {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(0.78rem, 1.2vw, 0.98rem);
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+}
+.arch-block .desc {
+    font-size: clamp(0.6rem, 0.85vw, 0.75rem);
+    line-height: 1.35;
+    color: var(--text-muted);
+}
+.arch-block.primary .desc { color: rgba(0,0,0,0.7); }
+.arch-block.future .desc { color: var(--text-faint); }
+.arch-arrow {
+    text-align: center;
+    color: var(--card-bg);
+    font-family: var(--font-display);
+    font-size: clamp(0.85rem, 1.5vw, 1.2rem);
+    line-height: 0.6;
+    margin: clamp(-0.05rem, -0.2vh, -0.02rem) 0;
+}
+.arch-arrow span {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.85vw, 0.72rem);
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    margin-left: 0.6em;
+    vertical-align: middle;
+}
+@media (max-width: 600px) {
+    .arch-layer { grid-template-columns: 1fr; }
+    .arch-block { min-width: 100%; }
+}
+
+/* === Scenarios-at-a-glance summary page === */
+.scenarios-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(0.6rem, 1.4vw, 1.1rem);
+    margin-top: clamp(0.4rem, 1vh, 0.7rem);
+}
+@media (max-width: 800px) { .scenarios-summary { grid-template-columns: 1fr; } }
+.scenario-card {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-top: 4px solid var(--card-bg);
+    padding: clamp(0.7rem, 1.4vw, 1.1rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.3rem, 0.6vh, 0.45rem);
+}
+.scenario-card .sc-num {
+    font-family: var(--font-mono);
+    font-size: clamp(0.58rem, 0.85vw, 0.72rem);
+    letter-spacing: 0.2em;
+    color: var(--card-bg);
+}
+.scenario-card h4 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(0.92rem, 1.5vw, 1.15rem);
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+    margin-bottom: 0.2em;
+}
+.sc-row {
+    display: grid;
+    grid-template-columns: clamp(48px, 6vw, 64px) 1fr;
+    gap: 0.5em;
+    align-items: flex-start;
+    padding-top: 0.35em;
+    border-top: 1px dashed var(--rule);
+}
+.sc-row .sc-label {
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.85vw, 0.72rem);
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.sc-row .sc-text {
+    font-size: clamp(0.68rem, 0.95vw, 0.82rem);
+    color: var(--text-primary);
+    line-height: 1.35;
+}
+.sc-fraud {
+    font-size: clamp(0.62rem, 0.9vw, 0.76rem);
+    color: var(--card-bg);
+    margin-top: 0.3em;
+    padding-top: 0.4em;
+    border-top: 1px solid var(--card-bg);
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: var(--font-mono);
+    letter-spacing: 0.02em;
+}
+
+/* === Impact row (efforts + fraud side-by-side) on scenario detail pages === */
+.impact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #000;
+    margin-top: clamp(0.5rem, 1.2vh, 0.9rem);
+}
+@media (max-width: 700px) { .impact-row { grid-template-columns: 1fr; } }
+.impact-cell {
+    background: #000;
+    color: #fff;
+    padding: clamp(0.5rem, 1.1vw, 0.85rem) clamp(0.7rem, 1.4vw, 1.1rem);
+    font-size: clamp(0.68rem, 0.98vw, 0.85rem);
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(0.5rem, 1.1vw, 0.9rem);
+    flex-wrap: wrap;
+}
+.impact-cell .impact-tag {
+    font-family: var(--font-mono);
+    font-size: clamp(0.55rem, 0.82vw, 0.7rem);
+    letter-spacing: 0.18em;
+    padding: 0.25em 0.6em;
+    flex-shrink: 0;
+}
+.impact-cell.efforts .impact-tag {
+    background: #fff;
+    color: #000;
+}
+.impact-cell.fraud .impact-tag {
+    background: var(--card-bg);
+    color: #fff;
+}
+
+/* === Illustrative tag === */
+.illustrative-mark {
+    font-family: var(--font-mono);
+    font-size: clamp(0.52rem, 0.78vw, 0.68rem);
+    letter-spacing: 0.15em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+}
+
+
+/* === V10: P02 architecture bottom — simple 2-line plain text === */
+.arch-notes {
+    margin-top: clamp(0.5rem, 1.1vh, 0.8rem);
+    text-align: center;
+    max-width: min(94vw, 1100px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.arch-notes p {
+    font-size: clamp(0.7rem, 1vw, 0.82rem);
+    line-height: 1.5;
+    color: var(--text-primary);
+    margin-bottom: clamp(0.18rem, 0.4vh, 0.3rem);
+}
+.arch-notes p b {
+    font-weight: 700;
+    /* keep default text color — no accent */
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="progress-bar"></div>
+<nav class="nav-dots" aria-label="Slide navigation"></nav>
+<div class="keyboard-hint">← → ↑ ↓ · SPACE</div>
+
+<!-- ===================================================================
+     SLIDE 01 — TITLE
+     =================================================================== -->
+<section class="slide title-slide">
+    <div class="title-corner-num"><strong>●</strong> 01 / 29</div>
+    <div class="title-corner-meta">PROPOSAL · 2026<br/>CONFIDENTIAL</div>
+
+    <div class="title-card reveal">
+        <div class="eyebrow">Strategic Partnership Proposal</div>
+        <h1>RootData<span class="x">×</span>Codatta</h1>
+        <p class="tagline">
+            把 RootData 从 Web3 项目资料库,升级为
+            <b>Web3 项目可信事实层</b>
+            (Source of Truth Protocol for Web3)。
+        </p>
+        <div class="meta">
+            <div><b>SCOPE</b>Phase 1 · Lightweight</div>
+            <div><b>FOCUS</b>Claim · Verification · Lineage · API v1</div>
+            <div><b>OWNER</b>Inductive Network</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================================================================
+     SLIDE 02 — 三层协作架构(arch-stack 现在打头)
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">02 · 协作架构</div>
+    <div class="breadcrumbs">
+        <span class="active">架构</span><span>分工</span><span>方案</span><span>场景</span><span>Phase 1</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Architecture · 三层协作架构</div>
+        <h2 class="content-title reveal">三层协作架构<br/><span style="color: var(--text-muted); font-size: 0.65em;">应用 ↑ 协议 ↑ 数据 — 一图看懂层级关系</span></h2>
+
+        <div class="arch-stack reveal">
+            <!-- App layer -->
+            <div class="arch-layer card-stagger">
+                <div class="layer-tag">应用层<br/>APP LAYER</div>
+                <div class="layer-content">
+                    <div class="arch-block primary">
+                        <div class="name">Humanbased</div>
+                        <div class="desc">原 Codatta(品牌过渡中)<br/>用户入口 + 产品交互</div>
+                    </div>
+                    <div class="arch-block future">
+                        <div class="name">Future Apps</div>
+                        <div class="desc">其他应用场景<br/>(开放架构 · 可扩展)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="arch-arrow card-stagger">↓<span>build on / 调用</span></div>
+
+            <!-- Protocol layer -->
+            <div class="arch-layer card-stagger">
+                <div class="layer-tag">协议层<br/>PROTOCOL</div>
+                <div class="layer-content">
+                    <div class="arch-block primary">
+                        <div class="name">XnY Protocol</div>
+                        <div class="desc"><b>链上协议层 · 数据溯源</b><br/>由 Humanbased 团队建设,开放可对接</div>
+                    </div>
+                </div>
+            </div>
+            <div class="arch-arrow card-stagger">↓<span>data source / 数据来源</span></div>
+
+            <!-- Data layer -->
+            <div class="arch-layer card-stagger">
+                <div class="layer-tag">数据层<br/>合作方 · PARTNER</div>
+                <div class="layer-content">
+                    <div class="arch-block">
+                        <div class="name">RootData</div>
+                        <div class="desc">Web3 项目数据平台 — Project / Funding / Token / Audit / Event</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arch-notes reveal">
+            <p><b>Humanbased 团队同时建设 XnY 协议层 + 应用层产品</b>,三层各自独立演进。</p>
+            <p>Phase 1 三方共建;Phase 3 起由 Humanbased 应用层 + XnY 协议层承载 <b>API 分润 / 数据授权 / Royalty</b>,RootData 作为数据贡献方参与收益回流。</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>架构 = App ↔ Protocol ↔ Data,三层各自独立演进</span>
+        <span class="lockup">ARCH <b>·</b></span>
+    </div>
+</section>
+
+
+<!-- ===================================================================
+     SLIDE 03 — 三方分工 SIDE A/B/C(去掉了底部商业模式预告)
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">03 · 三方分工</div>
+    <div class="breadcrumbs">
+        <span>架构</span><span class="active">分工</span><span>方案</span><span>场景</span><span>Phase 1</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Cooperation Roles · 这次合作各方做什么</div>
+        <h2 class="content-title reveal">三方分工<br/>谁出数据 / 谁出产品 / 谁出协议</h2>
+
+        <div class="three-way reveal">
+            <div class="way-card card-stagger">
+                <div class="role">SIDE A · DATA</div>
+                <div class="name">RootData</div>
+                <div class="role-desc">出<b>结构化数据</b></div>
+                <ul>
+                    <li>Project / Funding / Token</li>
+                    <li>团队 / 合作 / 审计 / 事件</li>
+                    <li>已有数据维护与编辑流程</li>
+                    <li>Web3 行业用户认知</li>
+                    <li>编辑团队作为人工复核终审</li>
+                </ul>
+            </div>
+            <div class="way-card card-stagger">
+                <div class="role">SIDE B · APP</div>
+                <div class="name">Humanbased</div>
+                <div class="role-desc">出<b>用户入口 + 场景落地</b></div>
+                <ul>
+                    <li>用户产品 / 应用层场景</li>
+                    <li>Submit Claim 流程</li>
+                    <li>Trust Level / Lineage 产品化呈现</li>
+                    <li>API / MCP / Agent 消费场景</li>
+                    <li>(原名 Codatta · 品牌过渡中)</li>
+                </ul>
+            </div>
+            <div class="way-card card-stagger">
+                <div class="role">SIDE C · PROTOCOL</div>
+                <div class="name">XnY Protocol</div>
+                <div class="role-desc">出<b>链上协议层(数据溯源)</b></div>
+                <ul>
+                    <li>Claim · Verification · Lineage</li>
+                    <li>ContributionRecord</li>
+                    <li>DID · AccessCapability(后续)</li>
+                    <li>Royalty Engine(Phase 3+)</li>
+                    <li>由 Humanbased 团队建设</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="content-body reveal" style="text-align: center; max-width: none; margin-top: clamp(0.5rem, 1.2vh, 0.9rem); font-size: clamp(0.66rem, 0.95vw, 0.78rem); color: var(--text-muted);">
+            注:Phase 1 不涉及收费 / 分润,商业模式见后续<b>路线图</b>(末页)。
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>三方各出资产,缺一不可</span>
+        <span class="lockup">ROLES <b>·</b></span>
+    </div>
+</section>
+
+
+<!-- ===================================================================
+     SLIDE 02 — 摘要总结
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">SECTION <strong>00</strong> · 摘要</div>
+    <div class="breadcrumbs">
+        <span class="active">摘要</span><span>价值</span><span>问题</span><span>方案</span><span>Phase 1</span>
+    </div>
+
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Executive Summary · 摘要总结</div>
+        <h2 class="content-title reveal">提案核心<br/>一页看清</h2>
+
+        <div class="card-grid cols-2 reveal" style="margin-top: clamp(0.4rem, 1vh, 0.8rem);">
+            <div class="tile card-stagger">
+                <div class="tile-tag">01 · 做什么 · WHAT</div>
+                <h3>把 RootData 升级为<br/>Web3 项目可信事实层</h3>
+                <p>每条数据带 <b>source / verification / lineage / trust level</b>,可被人类、机构、开发者和 AI Agent 信任消费 —— 不再是"数据库",而是"事实层"。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">02 · 怎么做 · HOW</div>
+                <h3>三方分工<br/>数据 × 协议 × 应用</h3>
+                <p><b>RootData 出数据</b> + <b>XnY Protocol 出协议层</b>(Claim · Verification · Lineage)+ <b>Humanbased 出应用产品</b>。数据走完 "Claim → Verification → Lineage → API" 完整闭环。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">03 · Phase 1 交付 · DELIVER</div>
+                <h3>6 个模块,跑通可信<br/>数据闭环</h3>
+                <p><b>Project Profile · Submit Claim/Update · Validation · Lineage · REST API v1 · MCP 字段预留</b>。RootData 编辑团队作为人工复核终审,数据从提交到公开全程留痕。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">04 · 后续 · NEXT</div>
+                <h3>Phase 3+ 起<br/>API 分润 + Royalty 回流</h3>
+                <p>Phase 2 加 DID / MCP / 基础授权;<b>Phase 3+ 起由 Humanbased 应用层 + XnY 协议层承载 API 分润 / 数据授权 / Royalty</b>,RootData 作为数据贡献方参与收益回流。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-footer">
+        <span>RootData × Codatta · Strategic Partnership</span>
+        <span class="lockup">PHASE <b>01</b></span>
+    </div>
+</section>
+
+
+<!-- ===================================================================
+     SLIDE 03 — SECTION DIVIDER · RootData 的数据资产价值
+     =================================================================== -->
+<section class="slide section-divider">
+    <div class="slide-num"><strong>●</strong> SECTION 01</div>
+    <div class="slide-content">
+        <div class="big-num reveal">01</div>
+        <div class="meta">
+            <div class="rule reveal"></div>
+            <div class="label reveal">PART ONE</div>
+            <h2 class="reveal">RootData 的<br/>数据资产价值</h2>
+            <p class="desc reveal">RootData 不是普通 Web3 信息站。它沉淀了一批高频使用、强结构化、可持续维护与调用的项目数据对象。</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>第一部分</span><span class="lockup">PART <b>01</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 04 — 七类结构化数据对象
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">01.1 · 数据对象</div>
+    <div class="breadcrumbs">
+        <span class="active">价值</span><span>问题</span><span>缺陷</span><span>基础</span><span>方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Structured Data Objects</div>
+        <h2 class="content-title reveal">七类结构化对象,<br/>覆盖 Web3 项目全生命周期</h2>
+
+        <div class="card-grid cols-4 reveal" style="margin-top: clamp(0.4rem, 1vh, 0.7rem);">
+            <div class="tile card-stagger"><div class="tile-tag">01 · PROJECT</div><h3>项目</h3><p>Web3 项目基础资料</p></div>
+            <div class="tile card-stagger"><div class="tile-tag">02 · ORGANIZATION</div><h3>机构</h3><p>投资机构、项目方、生态组织</p></div>
+            <div class="tile card-stagger"><div class="tile-tag">03 · PERSON</div><h3>人物</h3><p>创始人、团队、投资人、顾问</p></div>
+            <div class="tile card-stagger"><div class="tile-tag">04 · FUNDING</div><h3>融资事件</h3><p>轮次、金额、投资方、时间</p></div>
+            <div class="tile card-stagger"><div class="tile-tag">05 · TOKEN</div><h3>Token</h3><p>合约、发行、流通、经济模型</p></div>
+            <div class="tile card-stagger"><div class="tile-tag">06 · PARTNERSHIP</div><h3>合作关系</h3><p>项目、生态、战略合作</p></div>
+            <div class="tile card-stagger"><div class="tile-tag">07 · AUDIT / INCIDENT</div><h3>审计 / 事件</h3><p>审计报告、安全事件、风险记录</p></div>
+            <div class="tile card-stagger"><div class="tile-tag">→ TARGET</div><h3>升级目标</h3><p>每条数据 → 可验证的 <b>Claim</b></p></div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>每条事实 → 可成为带来源、状态、版本的 Claim</span><span class="lockup">PART <b>01</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 05 — 三大价值
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">01.2 · 三大价值</div>
+    <div class="breadcrumbs">
+        <span class="active">价值</span><span>问题</span><span>缺陷</span><span>基础</span><span>方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Three Pillars of Value</div>
+        <h2 class="content-title reveal">RootData 数据资产的<br/>三个独特价值点</h2>
+
+        <div class="card-grid cols-3 reveal" style="margin-top: clamp(0.4rem, 1vh, 0.7rem);">
+            <div class="tile card-stagger">
+                <div class="tile-tag">第一</div>
+                <h3>Web3 场景明确</h3>
+                <p>用户查询不止看简介——是在判断项目是否真实、什么阶段、谁投资、Token 与链上地址是否可信、有无审计或安全风险。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">第二</div>
+                <h3>结构化基础扎实</h3>
+                <p>不是普通文章,而是可拆解为一条条 <b>Claim</b>:某项目某时间完成某轮融资 / Token 合约地址 / 与某生态合作 / 发生过某安全事件。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">第三</div>
+                <h3>AI Agent 数据底座</h3>
+                <p>未来从"人查网页"变为"<b>Agent 自动查询、比较、引用</b>"。Agent 需要的不是页面文本,是带来源、可信度、验证状态的数据上下文。</p>
+            </div>
+        </div>
+
+        <p class="content-body reveal" style="margin-top: clamp(0.8rem, 2vh, 1.4rem); text-align: center; max-width: none;">
+            因此,RootData 的长期价值不只是"Web3 项目资料库",
+            <span class="kw">而是有机会升级为 Web3 项目可信事实层</span>
+            —— 服务人类用户、机构客户、开发者和 AI Agent。
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>三个价值层叠,共同支撑"事实层"定位</span><span class="lockup">PART <b>01</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 06 — SECTION DIVIDER · 当前问题
+     =================================================================== -->
+<section class="slide section-divider">
+    <div class="slide-num"><strong>●</strong> SECTION 02</div>
+    <div class="slide-content">
+        <div class="big-num reveal">02</div>
+        <div class="meta">
+            <div class="rule reveal"></div>
+            <div class="label reveal">PART TWO</div>
+            <h2 class="reveal">当前 Web3 项目数据<br/>要解决的问题</h2>
+            <p class="desc reveal">核心难题不是没有数据,而是数据是否可信、如何维护、如何追溯、如何被 Agent 使用。</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>第二部分</span><span class="lockup">PART <b>02</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 07 — 五大问题之 1-3
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">02.1 · 问题 1–3</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span class="active">问题</span><span>缺陷</span><span>基础</span><span>方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">5 Structural Problems · 1 / 2</div>
+        <h2 class="content-title reveal">五个绕不开的结构性问题</h2>
+
+        <div class="card-grid cols-3 reveal" style="margin-top: clamp(0.4rem, 1vh, 0.7rem);">
+            <div class="tile card-stagger">
+                <div class="tile-tag">问题 01</div>
+                <h3>信息来源分散,<br/>真实性难判断</h3>
+                <p>官网、白皮书、Twitter、Mirror、Discord、GitHub、链上交易、机构披露、审计报告、媒体报道——口径不一、过期信息仍被引用、链上链下需要交叉验证。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">问题 02</div>
+                <h3>数据更新和<br/>维护成本高</h3>
+                <p>Web3 项目变化快,完全依赖中心化编辑团队会面临覆盖范围、更新速度、审核成本和争议处理的压力。需要从"内部维护为主"升级为"<b>内部把关 + 外部贡献 + 机制化验证</b>"。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">问题 03</div>
+                <h3>贡献者身份和<br/>贡献价值难沉淀</h3>
+                <p>普通表单提交,贡献者没有长期身份,贡献也无法积累为信誉或资产。一次有效贡献应被记录:<b>谁提交 / 内容是什么 / evidence / 是否通过验证 / 是否进入 lineage</b>。</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>问题 1 — 3 / 5</span><span class="lockup">PART <b>02</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 08 — 五大问题之 4-5
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">02.2 · 问题 4–5</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span class="active">问题</span><span>缺陷</span><span>基础</span><span>方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">5 Structural Problems · 2 / 2</div>
+        <h2 class="content-title reveal">缺乏结构化追溯与<br/>Agent 可信上下文</h2>
+
+        <div class="card-grid cols-2 reveal" style="margin-top: clamp(0.4rem, 1vh, 0.7rem);">
+            <div class="tile card-stagger">
+                <div class="tile-tag">问题 04 · LINEAGE</div>
+                <h3>数据来源、版本和争议<br/>缺少结构化追溯</h3>
+                <p>项目资料持续变化,不适合简单覆盖。更合理的方式:</p>
+                <p style="margin-top: 0.6em;">
+                    新提交进入候选版本 →
+                    通过验证后成为公开版本 →
+                    历史版本保留 →
+                    冲突 claim 标记争议而非删除 →
+                    重要信息保留 evidence →
+                    accepted claim 生成 <span class="kw">lineage</span>。
+                </p>
+                <p style="margin-top: 0.5em;">这样 RootData 不只展示"当前结果",而是能展示"<b>这个结果如何形成</b>"。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">问题 05 · AGENT CONTEXT</div>
+                <h3>AI / Agent 消费<br/>需要可信上下文</h3>
+                <p>普通 API 能告诉 Agent 一个字段值,但<b>不能告诉 Agent 这个值为什么可信</b>。</p>
+                <p style="margin-top: 0.6em;">Agent 需要的不只是 <span class="mono">project_name / funding_amount / token_address / investors</span>,而是同时知道:</p>
+                <p style="margin-top: 0.5em; font-family: var(--font-mono); font-size: 0.92em; line-height: 1.6;">
+                    source · evidence_type · verification_status · trust_level · version · lineage_status · updated_at · dispute_status
+                </p>
+                <p style="margin-top: 0.6em;"><b>从"字段返回"升级为"带可信上下文的数据返回"。</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>问题 4 — 5 / 5</span><span class="lockup">PART <b>02</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 09 — SECTION DIVIDER · 现有模式缺陷
+     =================================================================== -->
+<section class="slide section-divider">
+    <div class="slide-num"><strong>●</strong> SECTION 03</div>
+    <div class="slide-content">
+        <div class="big-num reveal">03</div>
+        <div class="meta">
+            <div class="rule reveal"></div>
+            <div class="label reveal">PART THREE</div>
+            <h2 class="reveal">现有模式的<br/>结构性缺陷</h2>
+            <p class="desc reveal">回头看市面上几种常见做法,没有一种能完整解决上述问题。</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>第三部分</span><span class="lockup">PART <b>03</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 10 — 四种现有模式对比
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">03.1 · 四种模式对比</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span class="active">缺陷</span><span>基础</span><span>方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Existing Approaches · 现有做法</div>
+        <h2 class="content-title reveal">四种模式,<br/>没有一种能闭环</h2>
+
+        <div class="compare-table reveal" style="margin-top: clamp(0.4rem, 1vh, 0.7rem);">
+            <div class="ch">模式 / Mode</div>
+            <div class="ch">优点 / Pros</div>
+            <div class="ch">缺陷 / Gaps</div>
+
+            <div class="row-name">中心化编辑维护<br/><span style="font-family: var(--font-body); font-size: 0.7em; color: var(--text-faint); letter-spacing: 0;">Centralized Editing</span></div>
+            <div class="pro">质量可控、体验统一、早期推进快</div>
+            <div class="con">数据规模大后审核压力高;用户看不到来源和判断过程;无版本/lineage,后续难解释修改原因</div>
+
+            <div class="row-name">Wiki / 社区编辑<br/><span style="font-family: var(--font-body); font-size: 0.7em; color: var(--text-faint); letter-spacing: 0;">Wiki / Community</span></div>
+            <div class="pro">解决开放协作,版本和修订能力强</div>
+            <div class="con">依赖大量治理与人工仲裁;PR 修改、竞争对手污染、新用户质量不稳定</div>
+
+            <div class="row-name">普通 API 数据服务<br/><span style="font-family: var(--font-body); font-size: 0.7em; color: var(--text-faint); letter-spacing: 0;">Plain Data API</span></div>
+            <div class="pro">数据可被程序化调用</div>
+            <div class="con">返回快照结果,<b>不附带</b>来源、验证状态、历史版本、争议状态、lineage 等可信上下文</div>
+
+            <div class="row-name">链上 Oracle 模式<br/><span style="font-family: var(--font-body); font-size: 0.7em; color: var(--text-faint); letter-spacing: 0;">On-chain Oracle</span></div>
+            <div class="pro">价格、行情等标准化数据已成熟</div>
+            <div class="con">RootData 数据是项目级事实(融资、团队、合作、审计),<b>半结构化、需要证据判断</b>,不适合价格 Oracle 模型</div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>需要的是"事实声明 + 来源 + 验证 + 追溯"机制,而非更多数据</span><span class="lockup">PART <b>03</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 11 — 一句话总结(callout)
+     =================================================================== -->
+<section class="slide" style="justify-content: center; align-items: center;">
+    <div class="slide-num">03.2 · 一句话总结</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span class="active">缺陷</span><span>基础</span><span>方案</span>
+    </div>
+
+    <div class="callout-card reveal">
+        <div class="quote-mark">"</div>
+        <div class="quote-en">Web3 doesn't lack data —<br/>it lacks a mechanism to verify it.</div>
+        <div class="quote-cn">缺的不是更多数据。<br/>缺的是一套让 Web3 项目事实可以<b>被提交、验证、追溯、可信消费</b>的机制。</div>
+    </div>
+
+    <div class="slide-footer">
+        <span>这正是 RootData × Codatta 要补上的拼图</span><span class="lockup">PART <b>03</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 12 — SECTION DIVIDER · 双方产品基础
+     =================================================================== -->
+<section class="slide section-divider">
+    <div class="slide-num"><strong>●</strong> SECTION 04</div>
+    <div class="slide-content">
+        <div class="big-num reveal">04</div>
+        <div class="meta">
+            <div class="rule reveal"></div>
+            <div class="label reveal">PART FOUR</div>
+            <h2 class="reveal">双方现有的<br/>产品基础与起点</h2>
+            <p class="desc reveal">这次合作不是从零开始——双方各自已有可以拼接的资产。</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>第四部分</span><span class="lockup">PART <b>04</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 13 — 双方资产对比
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">04.1 · 双方现有资产</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span class="active">基础</span><span>方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Existing Assets on Both Sides</div>
+        <h2 class="content-title reveal">RootData 提供数据资产,<br/>XnY 提供协议能力</h2>
+
+        <div class="two-col reveal" style="margin-top: clamp(0.4rem, 1vh, 0.7rem);">
+            <div class="col-card card-stagger">
+                <div class="col-tag">SIDE A · ROOTDATA</div>
+                <h3>Web3 项目数据资产 + 用户入口</h3>
+                <ul>
+                    <li><b>Web3 项目资料库</b> · 行业用户认知和使用基础</li>
+                    <li>项目 / 机构 / 人物 / 融资 / Token / 合作 / 审计 / 事件等结构化对象</li>
+                    <li>面向用户查询和研究的产品入口</li>
+                    <li>已有数据维护流程</li>
+                    <li>潜在 API / 数据服务消费场景</li>
+                </ul>
+            </div>
+            <div class="col-card alt card-stagger">
+                <div class="col-tag">SIDE B · XnY PROTOCOL</div>
+                <h3>把展示型数据升级为可信事实层的协议能力</h3>
+                <ul>
+                    <li><b>Claim</b> · 事实声明的最小单元</li>
+                    <li><b>ContributionRecord</b> · 谁贡献了什么</li>
+                    <li><b>Verification</b> · 机器校验 + 链上检查 + 人工复核</li>
+                    <li><b>Lineage</b> · 提交→验证→发布的完整路径</li>
+                    <li>DID · AccessCapability · Royalty Engine · XNY staking <span style="color: var(--text-faint);">(Phase 1 不强制)</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="content-body reveal" style="text-align: center; max-width: none; margin-top: clamp(0.8rem, 2vh, 1.2rem);">
+            <b style="color: var(--text-primary);">Phase 1 重点:</b>
+            Claim · Verification · Lineage · REST API v1。
+            DID / AccessCapability / Royalty Engine / XNY staking <span class="kw">作为后续扩展能力预留。</span>
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>合作的天然契合点 — 拼图式互补</span><span class="lockup">PART <b>04</b></span>
+    </div>
+</section>
+
+
+<!-- ===================================================================
+     SLIDE 14 — 契合点流程图
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">04.3 · 合作路径</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span class="active">基础</span><span>方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">The Natural Fit · 合作路径</div>
+        <h2 class="content-title reveal">从 RootData 数据对象到<br/>可信事实层的清晰路径</h2>
+
+        <div class="arrow-flow reveal">
+            <span class="node">RootData 数据对象</span>
+            <span class="arrow">→</span>
+            <span class="node">Claim 提交 / 修订</span>
+            <span class="arrow">→</span>
+            <span class="node">Verification 验证</span>
+            <span class="arrow">→</span>
+            <span class="node">Lineage 追溯</span>
+            <span class="arrow">→</span>
+            <span class="node">API / MCP / Agent 消费</span>
+            <span class="arrow">→</span>
+            <span class="node">授权与数据经济</span>
+        </div>
+
+        <div class="card-grid cols-2 reveal" style="margin-top: clamp(0.8rem, 2vh, 1.4rem);">
+            <div class="tile muted card-stagger">
+                <div class="tile-tag">不是这样</div>
+                <h3>做一个新页面 / 普通 frontier</h3>
+                <p>简单做一个数据展示页 / 把 RootData 包装成又一个 Web3 信息站。</p>
+            </div>
+            <div class="tile affirm card-stagger">
+                <div class="tile-tag">是这样</div>
+                <h3>把 RootData 作为 XnY Protocol 的外部数据资产落地场景</h3>
+                <p>用 RootData 已有数据对象,验证 XnY Protocol 在真实业务中的能力闭环。</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>合作不是堆叠功能,而是拼接两边的核心资产</span><span class="lockup">PART <b>04</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 15 — SECTION DIVIDER · 整合方案
+     =================================================================== -->
+<section class="slide section-divider">
+    <div class="slide-num"><strong>●</strong> SECTION 05</div>
+    <div class="slide-content">
+        <div class="big-num reveal">05</div>
+        <div class="meta">
+            <div class="rule reveal"></div>
+            <div class="label reveal">PART FIVE</div>
+            <h2 class="reveal">整合方案<br/>七步演进路径</h2>
+            <p class="desc reveal">让 RootData 上的关键事实,从静态资料升级为可提交、可验证、可追溯、可消费的 Claim。</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>第五部分</span><span class="lockup">PART <b>05</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 16 — 七步演进 1-3
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">05.1 · 七步演进 · Step 1–3</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span class="active">方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">7-Step Evolution · Phase 1</div>
+        <h2 class="content-title reveal">从 Claim 化到验证机制化<br/><span style="color: var(--text-muted); font-size: 0.7em;">Step 1 — 3</span></h2>
+
+        <div class="flow reveal" style="margin-top: clamp(0.4rem, 1vh, 0.6rem);">
+            <div class="flow-step card-stagger" style="border-left-color: var(--card-bg);">
+                <div class="step-num">STEP 01</div>
+                <h4>Claim 化</h4>
+                <p>项目融资 / Token 地址 / 团队成员 / 合作关系 / 审计 / 安全事件,统一建模为 Claim:<br/><span style="color: var(--text-faint);">主体 + 类型 + 内容 + evidence + contributor + timestamp + status + version</span></p>
+            </div>
+            <div class="flow-step card-stagger" style="border-left-color: var(--card-bg);">
+                <div class="step-num">STEP 02</div>
+                <h4>贡献结构化</h4>
+                <p>项目方 / 社区 / 研究员 / 编辑团队均可提交。Phase 1 <b>不</b>强制全部上链、<b>不</b>强制 DID。先跑通"用户提交→候选→验证→公开"业务闭环。</p>
+            </div>
+            <div class="flow-step card-stagger" style="border-left-color: var(--card-bg);">
+                <div class="step-num">STEP 03</div>
+                <h4>验证机制化</h4>
+                <p>每条 claim 进入 Verification 流程:AI gate · 必填 / 格式 / 重复 / 风险检查 · 合约地址 / 交易哈希可查 · 少量人工复核。结果 = Accepted / Rejected / Needs Review。</p>
+            </div>
+        </div>
+
+        <p class="content-body reveal" style="text-align: center; margin-top: clamp(0.8rem, 2vh, 1.4rem); max-width: none;">
+            RootData 编辑团队仍是<b>最终把关方</b>,但"审核通过"从一次后台修改,
+            <span class="kw">变成一条可追溯的 verification 记录。</span>
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>Step 1 — 3 / 7</span><span class="lockup">PART <b>05</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 17 — 七步演进 4-7
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">05.2 · 七步演进 · Step 4–7</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span class="active">方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">7-Step Evolution · Phase 1</div>
+        <h2 class="content-title reveal">从 Lineage 到后续数据经济<br/><span style="color: var(--text-muted); font-size: 0.7em;">Step 4 — 7</span></h2>
+
+        <div class="card-grid cols-2 reveal" style="margin-top: clamp(0.4rem, 1vh, 0.7rem);">
+            <div class="tile card-stagger">
+                <div class="tile-tag">STEP 04 · LINEAGE</div>
+                <h3>血缘可追溯</h3>
+                <p>每条数据回答:原始来源 / 谁提交 / 谁验证 / 何时验证 / 是否修订 / 是否冲突 / 当前公开版本为何成立。<br/><b>Phase 1:</b> 新增数据严格执行;accepted claim 异步生成简版 lineage。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">STEP 05 · API v1</div>
+                <h3>REST API v1</h3>
+                <p>API 不只返回项目字段,也返回 <span class="mono">verification_status / sources / trust_level / lineage_status / lineage_id / updated_at</span>。<b>从"数据 API"升级为"可信数据 API"。</b></p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">STEP 06 · MCP READY</div>
+                <h3>MCP / Agent 消费预留</h3>
+                <p>Phase 1 不上线 MCP,但字段模型预留:<br/><span class="mono">claim_id · evidence · evidence_type · verification_status · trust_level · lineage_status · dispute_status · access_scope</span></p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">STEP 07 · FUTURE</div>
+                <h3>后续授权与数据经济</h3>
+                <p>AccessCapability / Royalty Engine / XNY 结算<b>不在 Phase 1</b>。<br/>Phase 2: DID + Reputation + MCP + 基础授权<br/>Phase 3: 数据授权 + Agent 计量 + Royalty</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>Step 4 — 7 / 7 · 既保留战略想象力,也不让第一期失控</span><span class="lockup">PART <b>05</b></span>
+    </div>
+</section>
+
+
+<!-- ===================================================================
+     SECTION 06 — USER SCENARIOS (扉页 + 3 场景)
+     =================================================================== -->
+
+<!-- SECTION 06 DIVIDER -->
+<section class="slide section-divider">
+    <div class="slide-num"><strong>●</strong> SECTION 06</div>
+    <div class="slide-content">
+        <div class="big-num reveal">06</div>
+        <div class="meta">
+            <div class="rule reveal"></div>
+            <div class="label reveal">PART SIX</div>
+            <h2 class="reveal">三个用户场景<br/>现状 vs. 升级后</h2>
+            <p class="desc reveal">具体看 Phase 1 上线后,三类典型用户的实际体验差异和欺诈识别能力。</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>第六部分</span><span class="lockup">PART <b>06</b></span>
+    </div>
+</section>
+
+
+
+<!-- ===================================================================
+     SLIDE — Scenarios at a Glance · 三场景一图概览(精简版)
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">06.0 · 三场景概览</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span>方案</span><span class="active">场景</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Scenarios at a Glance · 三场景一图概览(精简版)</div>
+        <h2 class="content-title reveal">三个用户场景<br/>一页对照</h2>
+
+        <div class="scenarios-summary reveal">
+            <div class="scenario-card card-stagger">
+                <div class="sc-num">SCENARIO 01</div>
+                <h4>投资人尽调</h4>
+                <div class="sc-row"><div class="sc-label">现状</div><div class="sc-text"><b>Transparency Score 是平台级综合分</b>,看不到每条字段的可信度</div></div>
+                <div class="sc-row"><div class="sc-label">升级后</div><div class="sc-text">Trust Level <b>升级为 claim 级</b>,每条事实带 source + lineage</div></div>
+                <div class="sc-fraud">⊗ 假融资金额 / 假合约 / "已审计"无报告</div>
+            </div>
+            <div class="scenario-card card-stagger">
+                <div class="sc-num">SCENARIO 02</div>
+                <h4>项目方更新核心团队</h4>
+                <div class="sc-row"><div class="sc-label">现状</div><div class="sc-text"><b>Project Claim + Update Information</b> 流程,无用户可见版本</div></div>
+                <div class="sc-row"><div class="sc-label">升级后</div><div class="sc-text">Project Claim 升级为 <b>DID 贡献者身份</b>,自带版本 + lineage</div></div>
+                <div class="sc-fraud">⊗ 假 KOL 顾问 / 夸大履历</div>
+            </div>
+            <div class="scenario-card card-stagger">
+                <div class="sc-num">SCENARIO 03</div>
+                <h4>社区添加 News / Event</h4>
+                <div class="sc-row"><div class="sc-label">现状</div><div class="sc-text"><b>News 编辑全包</b>,12,500+ 项目难以覆盖完整</div></div>
+                <div class="sc-row"><div class="sc-label">升级后</div><div class="sc-text">社区提交 + AI gate 拦截恶意 + 编辑只处理 Needs Review</div></div>
+                <div class="sc-fraud">⊗ 竞争对手匿名抹黑 / 重复提交</div>
+            </div>
+        </div>
+
+        <p class="content-body reveal" style="text-align: center; max-width: none; margin-top: clamp(0.6rem, 1.5vh, 1rem); font-size: clamp(0.72rem, 1vw, 0.85rem);">
+            <b>基于 RootData 真实产品功能</b> · Transparency Score / Project Claim / Update Information / News 编辑聚合<br/>
+            <span style="color: var(--text-faint);">完整对比(efforts + fraud handling)见后 3 页,每场景一整页详版。</span>
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>0 / 3 · 一页看懂三个场景的"前后对比"</span>
+        <span class="lockup">PART <b>06</b></span>
+    </div>
+</section>
+
+
+<!-- SCENARIO 1 — 投资人尽调 -->
+<section class="slide">
+    <div class="slide-num">06.1 · 场景 01</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span>方案</span><span class="active">场景</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Scenario 01 — Investment Due Diligence</div>
+        <h2 class="content-title reveal">场景 01:投资人尽调<br/><span style="color: var(--text-muted); font-size: 0.65em;">机构 / 个人投资者 · 决策前的项目核查</span></h2>
+
+        <div class="scenario-compare reveal">
+            <div class="state-card now card-stagger">
+                <div class="state-label">现状 / NOW</div>
+                <div class="state-flow">RootData 搜项目 → 看 Transparency Score (A–F) → 翻融资 / 团队 / Token / 审计 → 切官网 / X 核对 → 自己交叉验证</div>
+                <ul class="state-points">
+                    <li>Transparency Score 是<b>平台级综合分</b>,看不到每条字段的可信度</li>
+                    <li>融资数据各家口径不一,用户无法判断哪条是项目方自填、哪条是编辑核实</li>
+                    <li>团队页是<b>当前快照</b>,看不到改了几次 / 改过什么</li>
+                    <li>"已审计"标签找不到具体报告链接 / 链上锚定</li>
+                    <li>跨数据源交叉验证全靠人工,耗时 30 min – 2 hr</li>
+                </ul>
+            </div>
+            <div class="state-card future card-stagger">
+                <div class="state-label">升级后 / FUTURE</div>
+                <div class="state-flow">RootData 搜项目 → Trust Level 从平台级 ↓ 字段级 → 每条事实点开看 source / version / lineage → 决策</div>
+                <ul class="state-points">
+                    <li><b>Trust Level 从平台级综合分 → claim 级字段分</b>:每条融资 / 团队 / 审计单独可信度</li>
+                    <li>融资轮显示 evidence + 提交人 + verification 记录</li>
+                    <li>团队变更保留<b>完整版本历史</b>(谁加入 / 何时 / 谁验证)</li>
+                    <li>审计报告附原始链接 + lineage 锚定哈希</li>
+                    <li>尽调耗时缩短至 5–10 min</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="impact-row reveal">
+            <div class="impact-cell efforts">
+                <span class="impact-tag">EFFORTS</span>
+                <span><b>30 min – 2 hr → 5–10 min</b><br/>Transparency Score 从平台级综合分,升级到 claim 级 trust_level — 节省 80%+ 交叉验证时间</span>
+            </div>
+            <div class="impact-cell fraud">
+                <span class="impact-tag">FRAUD CAUGHT</span>
+                <span>项目方夸大融资 → Verification 阶段 AI 识别<b>金额异常 + 投资方未公开</b> → Needs Review → Rejected,不进入公开版本</span>
+            </div>
+        </div>
+        <p class="content-body reveal" style="text-align: right; max-width: none; margin-top: clamp(0.3rem, 0.8vh, 0.5rem); font-size: clamp(0.6rem, 0.85vw, 0.7rem); color: var(--text-faint);">
+            基于 RootData 真实产品功能(Transparency Score · Project Claim · News)
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>1 / 3 · 投资人尽调</span><span class="lockup">PART <b>06</b></span>
+    </div>
+</section>
+
+
+<!-- SCENARIO 2 — 项目方更新核心团队 -->
+<section class="slide">
+    <div class="slide-num">06.2 · 场景 02</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span>方案</span><span class="active">场景</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Scenario 02 — Project Updates Key Members</div>
+        <h2 class="content-title reveal">场景 02:项目方更新核心团队<br/><span style="color: var(--text-muted); font-size: 0.65em;">项目方 · 团队成员变动 / 顾问加入 / Co-Founder 离职</span></h2>
+
+        <div class="scenario-compare reveal">
+            <div class="state-card now card-stagger">
+                <div class="state-label">现状 / NOW</div>
+                <div class="state-flow">项目方走 RootData "Project Claim" 领取主页 → "Update Information" 提交修改 → 编辑后台审核 → 上线</div>
+                <ul class="state-points">
+                    <li><b>Project Claim 是平台级权限</b>,无跨平台 contributor identity</li>
+                    <li>更新无<b>用户可见</b>的版本历史</li>
+                    <li>"为什么改"没有 audit trail</li>
+                    <li>第三方质疑(KOL 实际未加入)无标准争议流程</li>
+                    <li>从提交到上线 1–3 天</li>
+                </ul>
+            </div>
+            <div class="state-card future card-stagger">
+                <div class="state-label">升级后 / FUTURE</div>
+                <div class="state-flow">Project Claim 绑定 DID → Update 提交 Claim 带 evidence → AI gate + 编辑复核 → 生成 lineage → 公开</div>
+                <ul class="state-points">
+                    <li>Project Claim 升级为 <b>DID 绑定的 contributor identity</b>(可跨项目)</li>
+                    <li>每次 Update = 独立 Claim,自带版本 + lineage</li>
+                    <li>第三方异议可提交 <b>dispute Claim</b>,标记争议而非删除</li>
+                    <li>历史版本保留,用户可浏览旧团队页</li>
+                    <li>从数小时内完成</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="impact-row reveal">
+            <div class="impact-cell efforts">
+                <span class="impact-tag">EFFORTS</span>
+                <span><b>1–3 天 → 数小时内</b><br/>Project Claim 用户从一次性"领取"变成持续"贡献者身份";每次 Update 自带版本 + lineage</span>
+            </div>
+            <div class="impact-cell fraud">
+                <span class="impact-tag">FRAUD CAUGHT</span>
+                <span>项目方提交"知名 KOL 加入顾问" → 系统检查发现<b>该 KOL 无任何公开渠道确认</b> → Needs Review → 编辑联系核实未应允 → Rejected</span>
+            </div>
+        </div>
+        <p class="content-body reveal" style="text-align: right; max-width: none; margin-top: clamp(0.3rem, 0.8vh, 0.5rem); font-size: clamp(0.6rem, 0.85vw, 0.7rem); color: var(--text-faint);">
+            基于 RootData 真实产品功能(Project Claim · Update Information)
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>2 / 3 · 项目方更新核心团队</span><span class="lockup">PART <b>06</b></span>
+    </div>
+</section>
+
+
+<!-- SCENARIO 3 — 社区添加 News / Event -->
+<section class="slide">
+    <div class="slide-num">06.3 · 场景 03</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span>方案</span><span class="active">场景</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Scenario 03 — Community Adds News / Event</div>
+        <h2 class="content-title reveal">场景 03:社区添加 News / Event<br/><span style="color: var(--text-muted); font-size: 0.65em;">研究员 / KOL / 项目跟踪者 · 添加项目动态、安全事件、新合作</span></h2>
+
+        <div class="scenario-compare reveal">
+            <div class="state-card now card-stagger">
+                <div class="state-label">现状 / NOW</div>
+                <div class="state-flow">RootData News 章节由<b>编辑团队聚合</b> → 社区无提交入口 → 小项目 / 新事件覆盖滞后</div>
+                <ul class="state-points">
+                    <li>News 由编辑团队全包,<b>12,500+ 项目</b>难以全覆盖</li>
+                    <li>社区有信息无法贡献(无 contributor 入口)</li>
+                    <li>没有 contributor identity,贡献无法沉淀为信誉</li>
+                    <li>恶意提交 / 竞争对手抹黑无防御机制</li>
+                    <li>新事件上线滞后数天</li>
+                </ul>
+            </div>
+            <div class="state-card future card-stagger">
+                <div class="state-label">升级后 / FUTURE</div>
+                <div class="state-flow">社区研究员 / KOL 提交 News Claim → AI gate + 编辑复核 → 通过 → 公开 + lineage + contributor 留痕</div>
+                <ul class="state-points">
+                    <li>社区贡献者可直接提交 News Claim,带 evidence 链接</li>
+                    <li>AI gate 拦截低质 / 重复 / 异常来源</li>
+                    <li>编辑只处理 Needs Review,效率提升数倍</li>
+                    <li>contributor 历史累积 → 后续支持 reputation</li>
+                    <li>新事件数小时内可见</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="impact-row reveal">
+            <div class="impact-cell efforts">
+                <span class="impact-tag">EFFORTS</span>
+                <span><b>编辑全包 / 滞后数天 → 社区 + AI gate / 数小时</b><br/>编辑产能从"100% 撰写"释放到"只处理 Needs Review",News 覆盖率随贡献者数量提升</span>
+            </div>
+            <div class="impact-cell fraud">
+                <span class="impact-tag">FRAUD CAUGHT</span>
+                <span>匿名提交"某项目重大资金被盗" → AI gate 识别<b>来源无可信链接 + 链上无交易</b> → Rejected · contributor 留痕,多次恶意可入风控名单</span>
+            </div>
+        </div>
+        <p class="content-body reveal" style="text-align: right; max-width: none; margin-top: clamp(0.3rem, 0.8vh, 0.5rem); font-size: clamp(0.6rem, 0.85vw, 0.7rem); color: var(--text-faint);">
+            基于 RootData 真实产品功能(News 编辑聚合模式)
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>3 / 3 · 社区添加 News / Event</span><span class="lockup">PART <b>06</b></span>
+    </div>
+</section>
+
+
+<!-- ===================================================================
+     SLIDE 18 — 六个层面 (为什么更好)
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">07.1 · 为什么更好</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span class="active">方案</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Why This Beats the Alternatives</div>
+        <h2 class="content-title reveal">六个层面,<br/>每一层都比现有方式更好</h2>
+
+        <div class="card-grid cols-3 reveal" style="margin-top: clamp(0.4rem, 1vh, 0.6rem);">
+            <div class="tile card-stagger">
+                <div class="tile-tag">PRODUCT · 产品</div>
+                <h3>从"看资料"到"<br/>查可信数据"</h3>
+                <p>用户不仅看到资料,还能看到来源、验证状态、历史版本、是否争议、lineage 状态、可信等级。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">OPERATIONS · 运维</div>
+                <h3>中心化维护不被替代</h3>
+                <p>从"全部自己写、自己查、自己兜底"变成"<b>机制先过滤,人工处理关键判断</b>"。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">COST · 成本</div>
+                <h3>长期降低<br/>总维护成本</h3>
+                <p>降低数据更新成本 / 审核成本 / 追溯成本。短期增加系统建设成本,长期收回。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">BRAND · 品牌</div>
+                <h3>从"数据网站"到<br/>"可信事实层"</h3>
+                <p>定位比"数据 API"更高,更适合对机构、开发者、AI Agent 讲清楚合作价值。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">COMMUNITY · 社区</div>
+                <h3>高质量贡献<br/>可被沉淀</h3>
+                <p>contributor identity / 历史贡献 / 质量记录 / reputation / 高权限分层 / 后续收益回流。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">AGENT · AI 消费</div>
+                <h3>Agent 拿到的是<br/>可信上下文</h3>
+                <p>不只是字段,而是 evidence + verification_status + trust_level + lineage + dispute_status。</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>六个维度同时升级 — 这是协议级而非功能级的差距</span><span class="lockup">PART <b>07</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 19 — 品牌定位 callout
+     =================================================================== -->
+<section class="slide" style="justify-content: center; align-items: center;">
+    <div class="slide-num">07.2 · 品牌定位</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span class="active">方案</span>
+    </div>
+
+    <div class="callout-card reveal">
+        <div class="quote-mark">"</div>
+        <div class="quote-en">RootData is building a verifiable<br/>Source of Truth layer for Web3 project data.</div>
+        <div class="quote-cn">RootData 正在从 <b>Web3 项目资料库</b>,<br/>升级为 <b>Web3 项目可信事实层</b>。</div>
+    </div>
+
+    <p class="content-body reveal" style="text-align: center; margin-top: clamp(0.8rem, 2vh, 1.4rem); max-width: none; padding: 0 var(--slide-padding);">
+        这是给机构、开发者、AI Agent 讲清楚合作价值的<span class="kw">一句话定位</span>。
+    </p>
+
+    <div class="slide-footer">
+        <span>这句话比"数据 API"高一个维度</span><span class="lockup">PART <b>07</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 20 — SECTION DIVIDER · Phase 1 落地范围
+     =================================================================== -->
+<section class="slide section-divider">
+    <div class="slide-num"><strong>●</strong> SECTION 08</div>
+    <div class="slide-content">
+        <div class="big-num reveal">08</div>
+        <div class="meta">
+            <div class="rule reveal"></div>
+            <div class="label reveal">PART EIGHT</div>
+            <h2 class="reveal">Phase 1<br/>落地范围</h2>
+            <p class="desc reveal">为了快速验证合作价值、避免范围过重,Phase 1 收敛在以下六个模块。</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>第八部分</span><span class="lockup">PART <b>08</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 21 — Phase 1 六大模块
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">08.1 · Phase 1 范围</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span class="active">Phase 1</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Phase 1 Scope · 六大模块</div>
+        <h2 class="content-title reveal">六个模块,<br/>跑通可信数据闭环</h2>
+
+        <div class="card-grid cols-3 reveal" style="margin-top: clamp(0.4rem, 1vh, 0.6rem);">
+            <div class="tile card-stagger">
+                <div class="tile-tag">MODULE 01</div>
+                <h3>Project Profile<br/>首个 Claim 主体</h3>
+                <p>选 Project 作为 Phase 1 核心对象类型。Person / Organization / Funding / Token 等先作为 Project 相关 claim 类型承接。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">MODULE 02</div>
+                <h3>Submit Claim<br/>/ Update 流程</h3>
+                <p>提交必须带来源 → 形成候选版本 → 不直接改写线上 → 未通过保留记录但不公开。DID / wallet 绑定为后续增强。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">MODULE 03</div>
+                <h3>Validation 机制</h3>
+                <p>系统校验 + 人工复核。前台展示状态:Draft / In Review / Published / Rejected / Disputed / Anchored。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">MODULE 04</div>
+                <h3>Lineage 基础能力</h3>
+                <p>展示 Lineage Status (Pending / Anchored)、Lineage ID、链上证明入口、来源分类、版本记录。<b>不</b>要求历史数据补齐 lineage。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">MODULE 05</div>
+                <h3>REST API v1</h3>
+                <p>GET /entries · /entries/:slug · /versions · /lineage · POST /submissions。返回 verification_status / trust_level / sources / lineage_status。</p>
+            </div>
+            <div class="tile card-stagger">
+                <div class="tile-tag">MODULE 06</div>
+                <h3>MCP 接口预留</h3>
+                <p>不正式上线 MCP,但接口规范、字段语义、数据模型为 MCP / Agent 消费预留。<b>Phase 2 上线时不需要推翻架构。</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span>六大模块 = 第一阶段可以对外讲清楚的 deliverable</span><span class="lockup">PHASE <b>01</b></span>
+    </div>
+</section>
+
+<!-- ===================================================================
+     SLIDE 24 — 附录 · 后续 Phase 时间轴
+     =================================================================== -->
+<section class="slide">
+    <div class="slide-num">附录 · APPENDIX</div>
+    <div class="breadcrumbs">
+        <span>价值</span><span>问题</span><span>缺陷</span><span>基础</span><span class="active">Roadmap</span>
+    </div>
+    <div class="slide-content">
+        <div class="content-eyebrow reveal">Roadmap Preview · 后续 Phase 预览</div>
+        <h2 class="content-title reveal">从可信事实层到<br/>数据资产经济网络</h2>
+
+        <div class="timeline reveal" style="margin-top: clamp(0.4rem, 1vh, 0.6rem);">
+            <div class="phase-card p1 card-stagger">
+                <div class="phase-num">P1</div>
+                <h4>可信数据闭环</h4>
+                <ul>
+                    <li>Claim</li>
+                    <li>Verification</li>
+                    <li>Lineage</li>
+                    <li>REST API v1</li>
+                    <li>MCP 字段预留</li>
+                </ul>
+            </div>
+            <div class="phase-card p2 card-stagger">
+                <div class="phase-num">P2</div>
+                <h4>可信贡献网络</h4>
+                <ul>
+                    <li>DID 绑定</li>
+                    <li>Contributor profile</li>
+                    <li>Reputation</li>
+                    <li>高质量贡献者分层</li>
+                    <li>基础 AccessCapability</li>
+                    <li>MCP 接口上线</li>
+                </ul>
+            </div>
+            <div class="phase-card p3 card-stagger">
+                <div class="phase-num">P3</div>
+                <h4>Agent 消费 + API 分润起步</h4>
+                <ul>
+                    <li>MCP server</li>
+                    <li>Agent 查询接口 + access scope</li>
+                    <li>usage log + 调用计量</li>
+                    <li>开发者控制台</li>
+                    <li><b>API 分润起步(开发者计费)</b></li>
+                    <li>RootData 作数据贡献方参与回流</li>
+                </ul>
+            </div>
+            <div class="phase-card p4 card-stagger">
+                <div class="phase-num">P4</div>
+                <h4>数据资产经济</h4>
+                <ul>
+                    <li>DatasetManifest · OwnershipWallet</li>
+                    <li>Royalty Engine</li>
+                    <li><b>XNY 结算 · 数据授权</b></li>
+                    <li>Contributor revenue share</li>
+                    <li>二级授权 / relicense</li>
+                    <li>完整 API 分润 + 数据资产二级流通</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="content-body reveal" style="text-align: center; max-width: none; margin-top: clamp(0.8rem, 2vh, 1.2rem);">
+            <b style="color: var(--text-primary);">从可信事实层 → 可信贡献网络 → Agent 数据源 + API 分润 → 数据资产经济网络。</b>
+            <br/><span style="color: var(--text-faint);">商业模式从 Phase 3 起明确(API 分润 + 调用计量),Phase 4 完整数据授权与 Royalty。每一阶段都建立在前一阶段的基础上,不需要推翻重来。</span>
+        </p>
+    </div>
+    <div class="slide-footer">
+        <span>RootData × Codatta · 让 Web3 数据成为可被 Agent 信任消费的资产</span><span class="lockup">END <b>·</b></span>
+    </div>
+</section>
+
+
+<script>
+/* ===========================================
+   SlidePresentation — keyboard, scroll, dots
+   =========================================== */
+class SlidePresentation {
+    constructor() {
+        this.slides = Array.from(document.querySelectorAll('.slide'));
+        this.currentIndex = 0;
+        this.progressBar = document.querySelector('.progress-bar');
+        this.navContainer = document.querySelector('.nav-dots');
+
+        this.setupIntersectionObserver();
+        this.setupKeyboardNav();
+        this.setupNavDots();
+        this.setupProgressBar();
+        this.setupTouchNav();
+    }
+
+    setupIntersectionObserver() {
+        // Add .visible class when slides enter the viewport so CSS animations trigger.
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0.5) {
+                    entry.target.classList.add('visible');
+                    this.currentIndex = this.slides.indexOf(entry.target);
+                    this.updateNavDots();
+                    this.updateProgress();
+                }
+            });
+        }, { threshold: [0, 0.5, 1] });
+
+        this.slides.forEach(slide => observer.observe(slide));
+        // Reveal first slide immediately
+        this.slides[0].classList.add('visible');
+    }
+
+    goTo(index) {
+        index = Math.max(0, Math.min(this.slides.length - 1, index));
+        this.slides[index].scrollIntoView({ behavior: 'smooth' });
+    }
+
+    setupKeyboardNav() {
+        document.addEventListener('keydown', (e) => {
+            switch(e.key) {
+                case 'ArrowRight':
+                case 'ArrowDown':
+                case 'PageDown':
+                case ' ':
+                    e.preventDefault();
+                    this.goTo(this.currentIndex + 1);
+                    break;
+                case 'ArrowLeft':
+                case 'ArrowUp':
+                case 'PageUp':
+                    e.preventDefault();
+                    this.goTo(this.currentIndex - 1);
+                    break;
+                case 'Home':
+                    e.preventDefault();
+                    this.goTo(0);
+                    break;
+                case 'End':
+                    e.preventDefault();
+                    this.goTo(this.slides.length - 1);
+                    break;
+            }
+        });
+    }
+
+    setupNavDots() {
+        // Always rebuild from scratch so re-opening a saved file doesn't double the dots.
+        this.navContainer.innerHTML = '';
+        this.slides.forEach((slide, i) => {
+            const btn = document.createElement('button');
+            btn.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            btn.addEventListener('click', () => this.goTo(i));
+            this.navContainer.appendChild(btn);
+        });
+        this.updateNavDots();
+    }
+
+    updateNavDots() {
+        const buttons = this.navContainer.querySelectorAll('button');
+        buttons.forEach((btn, i) => {
+            btn.classList.toggle('active', i === this.currentIndex);
+        });
+    }
+
+    setupProgressBar() { this.updateProgress(); }
+    updateProgress() {
+        const pct = (this.currentIndex / Math.max(1, this.slides.length - 1)) * 100;
+        this.progressBar.style.width = pct + '%';
+    }
+
+    setupTouchNav() {
+        let startY = 0;
+        document.addEventListener('touchstart', (e) => {
+            startY = e.touches[0].clientY;
+        }, { passive: true });
+        document.addEventListener('touchend', (e) => {
+            const endY = e.changedTouches[0].clientY;
+            const delta = startY - endY;
+            if (Math.abs(delta) < 60) return;
+            if (delta > 0) this.goTo(this.currentIndex + 1);
+            else this.goTo(this.currentIndex - 1);
+        }, { passive: true });
+    }
+}
+
+new SlidePresentation();
+</script>
+</body>
+</html>
