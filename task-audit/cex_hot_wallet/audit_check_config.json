@@ -1,0 +1,189 @@
+{
+  "version": "1.0",
+  "description": "CEX Hot Wallet 审核流程中所有子项 check_name 的配置与说明",
+  "modules": [
+    {
+      "module": "audit_exchange_ui",
+      "name_cn": "交易所界面审核",
+      "description": "基于交易所 UI 截图的审核，使用 LLM 判断截图是否为交易所记录、交易所身份及交易明细是否与提交数据一致",
+      "checks": [
+        {
+          "check_name": "is_exchange_record",
+          "name_cn": "交易所记录验证",
+          "description": "判断截图是否为交易所的交易记录页面（入金/提现记录列表或详情）",
+          "trace_type": "both",
+          "result_values": ["pass", "fail", "unknown"],
+          "related_fields": ["exchange_ui_screenshot_url", "type"],
+          "implemented_in": "audit_exchange_ui/base_qwen_auditor.py"
+        },
+        {
+          "check_name": "exchange_verification",
+          "name_cn": "交易所身份验证",
+          "description": "验证截图来自用户声称的交易所（如 Binance），依据 URL、Logo、界面等证据",
+          "trace_type": "both",
+          "result_values": ["pass", "fail", "unknown"],
+          "related_fields": ["exchange_ui_screenshot_url", "exchange_name"],
+          "implemented_in": "audit_exchange_ui/base_qwen_auditor.py"
+        },
+        {
+          "check_name": "transaction_date_match",
+          "name_cn": "交易日期匹配",
+          "description": "验证截图中展示的交易日期与提交数据中的日期一致（允许格式差异和微小时区差异）",
+          "trace_type": "both",
+          "result_values": ["pass", "fail", "unknown"],
+          "related_fields": ["exchange_ui_screenshot_url", "date", "transaction_date"],
+          "implemented_in": "audit_exchange_ui/base_qwen_auditor.py"
+        },
+        {
+          "check_name": "transaction_info_match",
+          "name_cn": "其他交易信息匹配",
+          "description": "验证截图中展示的其他交易信息（币种、金额、网络、地址、tx_hash等，不包括日期）与提交数据一致",
+          "trace_type": "both",
+          "result_values": ["pass", "fail", "unknown"],
+          "related_fields": ["exchange_ui_screenshot_url", "token", "amount", "network", "tx_hash", "to_address", "from_address", "address", "network_fee"],
+          "implemented_in": "audit_exchange_ui/base_qwen_auditor.py"
+        }
+      ]
+    },
+    {
+      "module": "audit_txhash_withdrawal",
+      "name_cn": "交易哈希审核（提现）",
+      "description": "基于链上数据的提现审核，验证 tx_hash 的 from/to/日期 与提交数据一致；校验 receiver_address 与 address 一致",
+      "checks": [
+        {
+          "check_name": "receiver_address_equals_address",
+          "name_cn": "提现接收地址与填写地址一致",
+          "description": "提现场景下，receiver_address 与 address 必须一致（链下填写与链上一致）",
+          "trace_type": "withdrawal",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["receiver_address", "address"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "from_address_match",
+          "name_cn": "链上 From 与发送地址一致",
+          "description": "链上交易 from 与提交的 sender_address 一致；BTC 等多地址链为「任一出入口地址匹配即通过」",
+          "trace_type": "withdrawal",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["tx_hash", "network", "sender_address"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "to_address_match",
+          "name_cn": "链上 To 与接收地址一致",
+          "description": "链上交易 to 与提交的 receiver_address 一致；BTC 等多地址链为「任一出入口地址匹配即通过」",
+          "trace_type": "withdrawal",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["tx_hash", "network", "receiver_address"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "transaction_date_match",
+          "name_cn": "交易日期一致",
+          "description": "链上交易日期与提交的 transaction_date 一致，允许 ±1 天误差（时区等）",
+          "trace_type": "withdrawal",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["tx_hash", "network", "transaction_date"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        }
+      ]
+    },
+    {
+      "module": "audit_txhash_deposit",
+      "name_cn": "交易哈希审核（入金）",
+      "description": "基于链上数据的入金审核，验证主交易 tx_hash 的 from/to/日期 与提交数据一致；在有 outgoing 交易时校验 to_address 与 outgoing_tx_from_address 一致及 outgoing 交易信息",
+      "checks": [
+        {
+          "check_name": "has_outgoing_transaction_field",
+          "name_cn": "has_outgoing_transaction 字段校验",
+          "description": "验证 has_outgoing_transaction 字段存在且为布尔值类型",
+          "trace_type": "deposit",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["has_outgoing_transaction"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "main_tx_from_address_match",
+          "name_cn": "主交易 From 与提交 from_address 一致",
+          "description": "入金主交易 tx_hash 的 from 与提交的 from_address 一致；BTC 为任一出入口匹配即可",
+          "trace_type": "deposit",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["tx_hash", "network", "from_address"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "main_tx_to_address_match",
+          "name_cn": "主交易 To 与提交 to_address 一致",
+          "description": "入金主交易 tx_hash 的 to 与提交的 to_address 一致；BTC 为任一出入口匹配即可",
+          "trace_type": "deposit",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["tx_hash", "network", "to_address"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "main_tx_date_match",
+          "name_cn": "主交易日期一致",
+          "description": "入金主交易链上日期与提交的 date/transaction_date 一致，允许 ±1 天",
+          "trace_type": "deposit",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["tx_hash", "network", "date", "transaction_date"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "to_address_equals_outgoing_from_address",
+          "name_cn": "入金 to_address 与转出 from 一致",
+          "description": "当 has_outgoing_transaction 为 true 时，主交易的 to_address 必须与 outgoing_tx_from_address 一致（入金到所址即转出方）",
+          "trace_type": "deposit",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["to_address", "outgoing_tx_from_address", "has_outgoing_transaction"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "outgoing_tx_validation",
+          "name_cn": "转出交易校验",
+          "description": "当 has_outgoing_transaction 为 true 时，校验 outgoing_transaction_hash、outgoing_tx_from_address、outgoing_tx_to_address 存在且可获取链上信息；若缺失 hash 或地址则直接记为该 check 失败",
+          "trace_type": "deposit",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["has_outgoing_transaction", "outgoing_transaction_hash", "outgoing_tx_from_address", "outgoing_tx_to_address"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "outgoing_tx_from_address_match",
+          "name_cn": "转出交易 From 一致",
+          "description": "转出交易链上 from 与提交的 outgoing_tx_from_address 一致；BTC 为任一出入口匹配即可",
+          "trace_type": "deposit",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["outgoing_transaction_hash", "network", "outgoing_tx_from_address"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        },
+        {
+          "check_name": "outgoing_tx_to_address_match",
+          "name_cn": "转出交易 To 一致",
+          "description": "转出交易链上 to 与提交的 outgoing_tx_to_address 一致；BTC 为任一出入口匹配即可",
+          "trace_type": "deposit",
+          "result_values": ["pass", "fail"],
+          "related_fields": ["outgoing_transaction_hash", "network", "outgoing_tx_to_address"],
+          "implemented_in": "audit_txhash/txhash_auditor.py"
+        }
+      ]
+    }
+  ],
+  "check_name_index": {
+    "is_exchange_record": { "module": "audit_exchange_ui", "trace_type": "both" },
+    "exchange_verification": { "module": "audit_exchange_ui", "trace_type": "both" },
+    "transaction_date_match": { "module": "audit_exchange_ui", "trace_type": "both" },
+    "transaction_info_match": { "module": "audit_exchange_ui", "trace_type": "both" },
+    "receiver_address_equals_address": { "module": "audit_txhash_withdrawal", "trace_type": "withdrawal" },
+    "from_address_match": { "module": "audit_txhash_withdrawal", "trace_type": "withdrawal" },
+    "to_address_match": { "module": "audit_txhash_withdrawal", "trace_type": "withdrawal" },
+    "transaction_date_match": { "module": "audit_txhash_withdrawal", "trace_type": "withdrawal" },
+    "has_outgoing_transaction_field": { "module": "audit_txhash_deposit", "trace_type": "deposit" },
+    "main_tx_from_address_match": { "module": "audit_txhash_deposit", "trace_type": "deposit" },
+    "main_tx_to_address_match": { "module": "audit_txhash_deposit", "trace_type": "deposit" },
+    "main_tx_date_match": { "module": "audit_txhash_deposit", "trace_type": "deposit" },
+    "to_address_equals_outgoing_from_address": { "module": "audit_txhash_deposit", "trace_type": "deposit" },
+    "outgoing_tx_validation": { "module": "audit_txhash_deposit", "trace_type": "deposit" },
+    "outgoing_tx_from_address_match": { "module": "audit_txhash_deposit", "trace_type": "deposit" },
+    "outgoing_tx_to_address_match": { "module": "audit_txhash_deposit", "trace_type": "deposit" }
+  }
+}

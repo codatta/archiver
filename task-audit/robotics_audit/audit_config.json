@@ -1,0 +1,121 @@
+{
+  "version": "1.1",
+  "description": "ROBSTIC001 视频分段描述 — 纯规则审核配置（含英文词表与 LLM 分流）",
+  "thresholds": {
+    "min_description_length": 6,
+    "soft_min_description_length": 4,
+    "min_segment_duration": 0.5,
+    "max_segment_duration": 120,
+    "max_segment_count": 50,
+    "min_element_count_for_s": 2,
+    "reference_min_overlap": 0.12
+  },
+  "phase_gate": {
+    "hard_reject_codes": [
+      "parse_error",
+      "no_segments",
+      "missing_time",
+      "negative_time",
+      "end_lte_start",
+      "time_exceeds_duration",
+      "time_overlap",
+      "placeholder_time",
+      "empty_description",
+      "garbage_description",
+      "nonsense_description",
+      "duplicate_segment",
+      "identical_descriptions",
+      "too_many_segments"
+    ],
+    "llm_defer_codes": [
+      "insufficient_elements_0",
+      "insufficient_elements_1",
+      "description_too_short",
+      "segment_too_short",
+      "segment_too_long",
+      "segment_unsorted"
+    ]
+  },
+  "segment_list_keys": [
+    "paragraphs",
+    "segments",
+    "items",
+    "annotations",
+    "timeline",
+    "timeSegments"
+  ],
+  "word_lists": {
+    "subject": [
+      "人", "手", "左手", "右手", "双手", "机器人", "机械臂", "操作者", "用户",
+      "他", "她", "其", "主体", "臂", "指", "手指",
+      "robot", "robots", "robotic", "arm", "arms", "manipulator", "gripper",
+      "hand", "hands", "finger", "fingers", "agent", "operator", "human",
+      "end effector", "endeffector", "worker", "user", "it", "he", "she", "they"
+    ],
+    "action": [
+      "拿", "取", "放", "置", "按", "压", "推", "拉", "打开", "关闭", "关", "开",
+      "倒", "接", "移", "移动", "转", "旋转", "抓", "握", "抬", "举", "降", "低",
+      "碰", "触摸", "点", "戳", "插", "拔", "拧", "转开", "盖上", "揭开", "擦拭",
+      "清理", "擦", "洗", "接水", "出水", "停止", "启动", "观察", "看", "靠近", "离开",
+      "pick", "picks", "picked", "picking", "place", "places", "placed", "placing",
+      "move", "moves", "moved", "moving", "grab", "grabs", "grabbed", "grabbing",
+      "grasp", "grasps", "grasped", "grasping", "lift", "lifts", "lifted", "lifting",
+      "lower", "lowers", "lowered", "lowering", "reach", "reaches", "reached", "reaching",
+      "push", "pushes", "pushed", "pushing", "pull", "pulls", "pulled", "pulling",
+      "open", "opens", "opened", "opening", "close", "closes", "closed", "closing",
+      "pour", "pours", "poured", "pouring", "fill", "fills", "filled", "filling",
+      "hold", "holds", "held", "holding", "release", "releases", "released", "releasing",
+      "rotate", "rotates", "rotated", "rotating", "insert", "inserts", "inserted", "inserting",
+      "remove", "removes", "removed", "removing", "press", "presses", "pressed", "pressing",
+      "touch", "touches", "touched", "touching", "take", "takes", "took", "taken", "taking",
+      "put", "puts", "putting", "drop", "drops", "dropped", "dropping", "slide", "slides",
+      "align", "aligns", "aligned", "aligning", "adjust", "adjusts", "adjusted", "adjusting",
+      "dispense", "dispenses", "dispensed", "dispensing", "approach", "approaches", "approached"
+    ],
+    "object": [
+      "杯", "水杯", "瓶", "水壶", "容器", "盖", "按钮", "开关", "桌", "台面",
+      "水", "液体", "机", "饮水机", "dispenser", "壶", "罐", "玻璃罐", "工具",
+      "物体", "物品", "东西", "龙头", "喷嘴", "托盘", "抹布", "海绵",
+      "cup", "cups", "glass", "bottle", "bottles", "jar", "mug", "bowl", "plate",
+      "table", "desk", "counter", "cabinet", "cupboard", "drawer", "shelf", "box",
+      "button", "switch", "knob", "handle", "lid", "cap", "cover", "tray",
+      "water", "liquid", "object", "item", "tool", "cube", "block", "magnet",
+      "dispenser", "nozzle", "valve", "cable", "wire", "usb", "driver", "sponge",
+      "robot", "arm", "gripper", "hand", "container", "pan", "pot", "food"
+    ],
+    "result": [
+      "成功", "失败", "完成", "溢出", "洒", "洒出", "漏", "满", "空", "湿",
+      "干净", "脏", "开", "关", "关闭", "打开", "倒满", "接满", "未", "没有",
+      "已", "变成", "变为", "留下", "出现", "消失", "破损", "倾斜", "稳定",
+      "success", "successful", "successfully", "fail", "failed", "failure", "complete",
+      "completed", "done", "finish", "finished", "spill", "spilled", "overflow",
+      "full", "empty", "open", "opened", "close", "closed", "stable", "unstable",
+      "in place", "into", "onto", "away", "off", "on", "correctly", "properly"
+    ]
+  },
+  "violation_grades": {
+    "no_segments": "D",
+    "parse_error": "D",
+    "invalid_time_format": "D",
+    "missing_time": "D",
+    "negative_time": "D",
+    "end_lte_start": "D",
+    "time_exceeds_duration": "D",
+    "time_overlap": "D",
+    "placeholder_time": "D",
+    "empty_description": "C",
+    "garbage_description": "D",
+    "nonsense_description": "C",
+    "description_too_short": "B",
+    "duplicate_segment": "C",
+    "too_many_segments": "C",
+    "segment_unsorted": "B",
+    "segment_too_short": "B",
+    "segment_too_long": "B",
+    "insufficient_elements_0": "B",
+    "insufficient_elements_1": "B",
+    "identical_descriptions": "C",
+    "reference_mismatch_description": "B",
+    "reference_missing": "A"
+  }
+}

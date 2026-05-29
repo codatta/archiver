@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "description": "ROBOTICS_TPL_000003 结构化标注 — 纯规则审核配置",
+  "thresholds": {
+    "min_text_length": 2,
+    "min_objects_count": 1,
+    "max_objects_count": 20,
+    "min_task_items": 1,
+    "min_view_items": 1,
+    "min_relations_items": 1,
+    "reference_min_overlap": 0.12
+  },
+  "phase_gate": {
+    "hard_reject_codes": [
+      "parse_error",
+      "garbage_object_item",
+      "garbage_task_item",
+      "garbage_relation_item",
+      "missing_objects",
+      "missing_environment",
+      "missing_agent_type",
+      "empty_object_item"
+    ],
+    "llm_defer_codes": [
+      "invalid_environment",
+      "invalid_view_item",
+      "invalid_agent_type",
+      "missing_view",
+      "missing_task",
+      "missing_relations"
+    ]
+  },
+  "allowed_environments": [
+    "Indoor", "Outdoor", "Office", "Kitchen", "Bedroom", "Factory", "Other"
+  ],
+  "allowed_views": [
+    "first_person_view", "first_persion_view", "third_person_view",
+    "bird_eye_view", "static", "dynamic"
+  ],
+  "allowed_agent_status": ["static", "mobile"],
+  "allowed_arm_counts": ["1", "2"],
+  "violation_grades": {
+    "parse_error": "D",
+    "missing_objects": "D",
+    "empty_object_item": "C",
+    "garbage_object_item": "D",
+    "missing_environment": "D",
+    "invalid_environment": "C",
+    "missing_agent_type": "D",
+    "invalid_agent_type": "C",
+    "missing_view": "B",
+    "invalid_view_item": "B",
+    "missing_task": "C",
+    "garbage_task_item": "D",
+    "missing_relations": "B",
+    "garbage_relation_item": "C",
+    "reference_mismatch_objects": "B",
+    "reference_mismatch_task": "B",
+    "reference_mismatch_environment": "B",
+    "reference_mismatch_view": "A",
+    "reference_missing": "A"
+  }
+}

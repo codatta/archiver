@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片审核系统 - Annotated Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-item .label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .stat-item .value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .image-wrapper {
+            display: inline-block;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .review-image {
+            max-width: 100%;
+            max-height: 600px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .review-image:hover {
+            transform: scale(1.02);
+        }
+
+        .image-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .image-info strong {
+            color: #333;
+            margin-right: 10px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-approve {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+        }
+
+        .btn-approve:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(17, 153, 142, 0.4);
+        }
+
+        .btn-reject {
+            background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+            color: white;
+        }
+
+        .btn-reject:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(235, 51, 73, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: #eb3349;
+            font-size: 18px;
+        }
+
+        .success {
+            text-align: center;
+            padding: 40px;
+            color: #11998e;
+            font-size: 18px;
+        }
+
+        .keyboard-hint {
+            text-align: center;
+            margin-top: 20px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .keyboard-hint kbd {
+            background: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>图片审核系统</h1>
+            <p style="opacity: 0.9; margin-top: 10px;">审核 Annotated Image</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="label">总数</div>
+                    <div class="value" id="stat-total">-</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">已审核</div>
+                    <div class="value" id="stat-reviewed">-</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">剩余</div>
+                    <div class="value" id="stat-remaining">-</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">通过</div>
+                    <div class="value" id="stat-approved">-</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">拒绝</div>
+                    <div class="value" id="stat-rejected">-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="image-container" class="image-container">
+                <div class="loading">加载中...</div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-approve" id="btn-approve" onclick="submitReview(1)">
+                    通过 (1 / Enter)
+                </button>
+                <button class="btn btn-reject" id="btn-reject" onclick="submitReview(0)">
+                    拒绝 (0 / Space)
+                </button>
+            </div>
+
+            <div class="keyboard-hint">
+                快捷键：<kbd>1</kbd> 或 <kbd>Enter</kbd> 通过 | <kbd>0</kbd> 或 <kbd>Space</kbd> 拒绝
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSubmissionId = null;
+        let currentImageUrl = null;
+
+        // 加载图片
+        function loadImage() {
+            fetch('/api/get_image')
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.success) {
+                        document.getElementById('image-container').innerHTML = 
+                            `<div class="success">${data.message}</div>`;
+                        document.getElementById('btn-approve').disabled = true;
+                        document.getElementById('btn-reject').disabled = true;
+                        return;
+                    }
+
+                    currentSubmissionId = data.submission_id;
+                    currentImageUrl = data.annotated_image;
+
+                    const container = document.getElementById('image-container');
+                    container.innerHTML = `
+                        <div class="image-wrapper">
+                            <img src="${data.annotated_image}" 
+                                 alt="Review Image" 
+                                 class="review-image"
+                                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\'%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\'%3E图片加载失败%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="image-info">
+                            <strong>Submission ID:</strong> ${data.submission_id}<br>
+                            <strong>Scale Value:</strong> ${data.scale_value || 'N/A'}
+                        </div>
+                    `;
+
+                    updateStats(data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('image-container').innerHTML = 
+                        `<div class="error">加载失败: ${error.message}</div>`;
+                });
+        }
+
+        // 提交审核
+        function submitReview(result) {
+            if (!currentSubmissionId) {
+                return;
+            }
+
+            const btnApprove = document.getElementById('btn-approve');
+            const btnReject = document.getElementById('btn-reject');
+            btnApprove.disabled = true;
+            btnReject.disabled = true;
+
+            fetch('/api/review', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    submission_id: currentSubmissionId,
+                    review_result: result
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // 加载下一张图片
+                    loadImage();
+                    updateAllStats();
+                } else {
+                    alert('提交失败: ' + data.message);
+                    btnApprove.disabled = false;
+                    btnReject.disabled = false;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('提交失败: ' + error.message);
+                btnApprove.disabled = false;
+                btnReject.disabled = false;
+            });
+        }
+
+        // 更新统计信息
+        function updateStats(data) {
+            if (data.total !== undefined) {
+                document.getElementById('stat-total').textContent = data.total;
+            }
+            if (data.reviewed !== undefined) {
+                document.getElementById('stat-reviewed').textContent = data.reviewed;
+            }
+            if (data.remaining !== undefined) {
+                document.getElementById('stat-remaining').textContent = data.remaining;
+            }
+        }
+
+        // 更新所有统计信息
+        function updateAllStats() {
+            fetch('/api/stats')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('stat-total').textContent = data.total;
+                    document.getElementById('stat-reviewed').textContent = data.reviewed;
+                    document.getElementById('stat-remaining').textContent = data.remaining;
+                    document.getElementById('stat-approved').textContent = data.approved;
+                    document.getElementById('stat-rejected').textContent = data.rejected;
+                })
+                .catch(error => {
+                    console.error('Error updating stats:', error);
+                });
+        }
+
+        // 键盘快捷键
+        document.addEventListener('keydown', function(event) {
+            // 如果焦点在输入框或文本区域，不处理快捷键
+            if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
+                return;
+            }
+
+            const btnApprove = document.getElementById('btn-approve');
+            const btnReject = document.getElementById('btn-reject');
+
+            // 按1或Enter键：通过
+            if (event.key === '1' || event.key === 'Enter') {
+                event.preventDefault();
+                // 只有在按钮未禁用且有当前图片时才执行
+                if (!btnApprove.disabled && currentSubmissionId) {
+                    submitReview(1);
+                }
+            } 
+            // 按0或空格键：拒绝
+            else if (event.key === '0' || event.key === ' ') {
+                event.preventDefault();
+                // 只有在按钮未禁用且有当前图片时才执行
+                if (!btnReject.disabled && currentSubmissionId) {
+                    submitReview(0);
+                }
+            }
+        });
+
+        // 初始化
+        window.onload = function() {
+            loadImage();
+            updateAllStats();
+            // 每5秒更新一次统计信息
+            setInterval(updateAllStats, 5000);
+        };
+    </script>
+</body>
+</html>
