@@ -16,6 +16,7 @@ Graveyard for deprecated Codatta GitHub repositories. Every directory here is a 
 | 4 | [`codatta/codatta-frontier-standards`](https://github.com/codatta/codatta-frontier-standards) | Public JSON schema for multi-frontier data annotation. | Markdown | 2024-11-02 | 2024-11-02 | 2026-05-18 | Yi Zhang | Yi Zhang — 2 (sole) | Dormant 18+ months; schema never adopted downstream. |
 | 5 | [`codatta/AI-Evolution-Game`](https://github.com/codatta/AI-Evolution-Game) | Browser-based game prototype built as an AI-assisted development experiment. | JavaScript | 2024-10-26 | 2024-10-27 | 2026-05-18 | Yi Zhang | Yi Zhang — 9 (sole) | Abandoned after 2 days; no downstream use. |
 | 6 | [`codatta/rootdata-codatta-deck`](https://github.com/codatta/rootdata-codatta-deck) | RootData × Codatta 合作方案 · 29-page strategic partnership proposal deck. | HTML | 2026-04-28 | 2026-04-28 | 2026-05-28 | Max | Max — 1 (sole) | RootData partnership de-prioritized after CipherOwl Frontier pivot (2026-05-14); deck no longer in active use. |
+| 7 | [`codatta/task-audit`](https://github.com/codatta/task-audit) | 任务的审核逻辑 — audit pipelines for Knob, OTC, cex_hot_wallet, home_activity_video, robotics_audit submissions. | Python | 2026-01-22 | 2026-05-29 | 2026-05-29 | Rain | KetteyMan — 26 · rain2004-rr — 6 | 审核代码迁移 |
 
 ---
 

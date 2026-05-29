@@ -1,0 +1,76 @@
+{
+  "result": "success",
+  "timestamp": "2026-01-29T10:38:15.134278",
+  "summary": {
+    "total": 3,
+    "rating_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 0,
+      "5": 0
+    }
+  },
+  "rated_results": [
+    {
+      "submission_id": "2026012901092300100992",
+      "type": "deposit",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "fail",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012901434000100993",
+      "type": "deposit",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "fail",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012901450300100994",
+      "type": "deposit",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "fail",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2157 @@
+[
+  {
+    "submission_id": "2026011504082400108842",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:48:32.473815",
+    "record": {
+      "submission_id": "2026011504082400108842",
+      "date": "2026-01-15",
+      "type": "deposit",
+      "token": "USDT",
+      "amount": "10",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/158960984850432_198488_.png",
+      "tx_hash": "0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的入金记录页面，包含'Deposit Crypto'、'Recent Deposits'等明确标识入金功能的界面元素。页面中列出了多笔USDT的入金记录，每条记录包含日期、金额、网络、地址和交易哈希等信息，符合交易所入金记录的典型特征。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+          "detected_evidence": "Binance的logo、品牌名称'BINANCE'、界面设计风格（如深色主题、导航栏布局）、以及URL中包含'binance.com'均表明这是Binance交易所的页面。",
+          "reason": "截图中清晰可见Binance的金色logo和品牌名称，浏览器地址栏中的URL也指向binance.com，且界面设计与Binance平台高度一致，这些证据共同确认该截图来自Binance交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-15",
+            "token": "USDT",
+            "amount": "10",
+            "network": "BSC"
+          },
+          "reason": "截图中的交易明细显示：交易类型为'Deposit'（入金），日期为'01/15/2026'（即2026-01-15），币种为USDT，金额为10，网络为BSC（即BNB链）。接收地址显示为'0xb5e8...c9d807'，与提供的地址'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'前缀和后缀匹配；交易哈希显示为'0x5970...7d3d41'，与提供的哈希'0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41'前缀和后缀一致。所有关键信息在语义上完全匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的入金记录页面，包含'Deposit Crypto'、'Recent Deposits'等明确标识入金功能的界面元素。页面中列出了多笔USDT的入金记录，每条记录包含日期、金额、网络、地址和交易哈希等信息，符合交易所入金记录的典型特征。",
+        "confidence": 0.99
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+        "detected_evidence": "Binance的logo、品牌名称'BINANCE'、界面设计风格（如深色主题、导航栏布局）、以及URL中包含'binance.com'均表明这是Binance交易所的页面。",
+        "reason": "截图中清晰可见Binance的金色logo和品牌名称，浏览器地址栏中的URL也指向binance.com，且界面设计与Binance平台高度一致，这些证据共同确认该截图来自Binance交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-15",
+          "token": "USDT",
+          "amount": "10",
+          "network": "BSC"
+        },
+        "reason": "截图中的交易明细显示：交易类型为'Deposit'（入金），日期为'01/15/2026'（即2026-01-15），币种为USDT，金额为10，网络为BSC（即BNB链）。接收地址显示为'0xb5e8...c9d807'，与提供的地址'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'前缀和后缀匹配；交易哈希显示为'0x5970...7d3d41'，与提供的哈希'0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41'前缀和后缀一致。所有关键信息在语义上完全匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026011901135600109574",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:48:56.457671",
+    "record": {
+      "submission_id": "2026011901135600109574",
+      "date": "2026-01-15",
+      "type": "deposit",
+      "token": "USDT",
+      "amount": "10",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/162384258547712_233355_.png",
+      "tx_hash": "0x371218410bad98a8ade7d1b7286e645652c976c0c4ce6633ebfe25ac138eafcd"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的入金记录页面，包含'Deposit Crypto'选项、交易记录列表（Recent Deposits）、以及详细的入金信息弹窗（Deposit Details）。界面中可见交易所的导航栏、币种选择、网络选择等典型元素，符合交易所入金记录页面的特征。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+          "detected_evidence": "Binance logo、Binance品牌名称、界面设计风格（如深色主题、图标样式、导航结构）以及URL中包含'binance.com'。",
+          "reason": "浏览器地址栏中明确显示URL为'https://www.binance.com...'，且页面左上角有'BINANCE'的金色logo和品牌名称。此外，界面布局和设计风格与Binance官方平台高度一致，具备其特有的UI元素（如顶部导航栏、存款流程步骤、币种按钮等），足以确认该截图来自Binance交易所。",
+          "confidence": 1.0
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-15",
+            "token": "USDT",
+            "amount": "10",
+            "network": "BSC"
+          },
+          "reason": "截图中的交易明细显示：\n- 交易类型为'Deposit'（入金），符合要求。\n- 日期为'01/15/2026 11:55:40 AM'，即2026年1月15日，语义匹配。\n- 币种为'USDT'，与目标一致。\n- 金额为'10'，与目标一致。\n- 网络为'BSC'，与'BNB'（Binance Smart Chain）语义一致，属于同一网络。\n- 接收地址显示为'0xb5e8...c9d807'，与目标地址'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'的前缀和后缀完全匹配，中间被省略，但语义一致。\n- 交易哈希显示为'0x3712...8eafcd'，与目标哈希'0x371218410bad98a8ade7d1b7286e645652c976c0c4ce6633ebfe25ac138eafcd'的前缀和后缀一致，中间被省略，语义一致。\n所有关键信息在语义上均匹配，仅格式略有简化，不影响判定。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的入金记录页面，包含'Deposit Crypto'选项、交易记录列表（Recent Deposits）、以及详细的入金信息弹窗（Deposit Details）。界面中可见交易所的导航栏、币种选择、网络选择等典型元素，符合交易所入金记录页面的特征。",
+        "confidence": 0.99
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+        "detected_evidence": "Binance logo、Binance品牌名称、界面设计风格（如深色主题、图标样式、导航结构）以及URL中包含'binance.com'。",
+        "reason": "浏览器地址栏中明确显示URL为'https://www.binance.com...'，且页面左上角有'BINANCE'的金色logo和品牌名称。此外，界面布局和设计风格与Binance官方平台高度一致，具备其特有的UI元素（如顶部导航栏、存款流程步骤、币种按钮等），足以确认该截图来自Binance交易所。",
+        "confidence": 1.0
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-15",
+          "token": "USDT",
+          "amount": "10",
+          "network": "BSC"
+        },
+        "reason": "截图中的交易明细显示：\n- 交易类型为'Deposit'（入金），符合要求。\n- 日期为'01/15/2026 11:55:40 AM'，即2026年1月15日，语义匹配。\n- 币种为'USDT'，与目标一致。\n- 金额为'10'，与目标一致。\n- 网络为'BSC'，与'BNB'（Binance Smart Chain）语义一致，属于同一网络。\n- 接收地址显示为'0xb5e8...c9d807'，与目标地址'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'的前缀和后缀完全匹配，中间被省略，但语义一致。\n- 交易哈希显示为'0x3712...8eafcd'，与目标哈希'0x371218410bad98a8ade7d1b7286e645652c976c0c4ce6633ebfe25ac138eafcd'的前缀和后缀一致，中间被省略，语义一致。\n所有关键信息在语义上均匹配，仅格式略有简化，不影响判定。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026011901313900109575",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:49:54.571230",
+    "record": {
+      "submission_id": "2026011901313900109575",
+      "date": "2026-01-05",
+      "type": "deposit",
+      "token": "BTC",
+      "amount": "0.00080342",
+      "network": "BTC",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/162384258547712_974381_.png",
+      "tx_hash": "60612bf54991651ce8bc31a310bf2405675c31df963c4545b2ffe237ef10bd64"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的入金记录页面，包含交易列表、每笔交易的详细信息（如币种、金额、日期、网络、地址、TxID等），以及顶部导航栏中的'Buy Crypto'、'Markets'、'Trade'等典型交易所功能选项。同时，页面左侧有'Deposit Crypto'和'Withdraw Crypto'等选项，明确指向资金存取操作，符合交易所入金记录页面的特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+          "detected_evidence": "Binance logo、'BINANCE'文字标识、界面设计风格与Binance一致、URL中包含'binance.com'域名",
+          "reason": "截图中浏览器地址栏显示URL为'https://www.binance.com/en/my/wallet/account/main/deposit/crypto'，明确指向Binance官网。此外，页面左上角有'Binance'的金色logo和文字标识，界面布局、颜色主题（深色背景、黄色高亮）也与Binance平台高度一致，多个证据共同确认该截图来自Binance交易所。",
+          "confidence": 1.0
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "01/05/2026 6:44:23 PM",
+            "token": "BTC",
+            "amount": "0.00080342",
+            "network": "BTC"
+          },
+          "reason": "截图中弹出的'Deposit Details'窗口显示：交易类型为'Deposit'（入金），日期为'01/05/2026 6:44:23 PM'（即2026-01-05），币种为'BTC'，金额为'0.00080342'，网络为'BTC'，接收地址为'151oeN...B7Vtan'（与提供的'151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan'前缀匹配），交易哈希为'60612b...10bd64'（与提供的'60612bf54991651ce8bc31a310bf2405675c31df963c4545b2ffe237ef10bd64'前缀匹配）。所有关键信息在语义上均一致，仅部分字段被省略或截断，但可见部分完全匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的入金记录页面，包含交易列表、每笔交易的详细信息（如币种、金额、日期、网络、地址、TxID等），以及顶部导航栏中的'Buy Crypto'、'Markets'、'Trade'等典型交易所功能选项。同时，页面左侧有'Deposit Crypto'和'Withdraw Crypto'等选项，明确指向资金存取操作，符合交易所入金记录页面的特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+        "detected_evidence": "Binance logo、'BINANCE'文字标识、界面设计风格与Binance一致、URL中包含'binance.com'域名",
+        "reason": "截图中浏览器地址栏显示URL为'https://www.binance.com/en/my/wallet/account/main/deposit/crypto'，明确指向Binance官网。此外，页面左上角有'Binance'的金色logo和文字标识，界面布局、颜色主题（深色背景、黄色高亮）也与Binance平台高度一致，多个证据共同确认该截图来自Binance交易所。",
+        "confidence": 1.0
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "01/05/2026 6:44:23 PM",
+          "token": "BTC",
+          "amount": "0.00080342",
+          "network": "BTC"
+        },
+        "reason": "截图中弹出的'Deposit Details'窗口显示：交易类型为'Deposit'（入金），日期为'01/05/2026 6:44:23 PM'（即2026-01-05），币种为'BTC'，金额为'0.00080342'，网络为'BTC'，接收地址为'151oeN...B7Vtan'（与提供的'151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan'前缀匹配），交易哈希为'60612b...10bd64'（与提供的'60612bf54991651ce8bc31a310bf2405675c31df963c4545b2ffe237ef10bd64'前缀匹配）。所有关键信息在语义上均一致，仅部分字段被省略或截断，但可见部分完全匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012101311900100298",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:50:11.900920",
+    "record": {
+      "submission_id": "2026012101311900100298",
+      "date": "2026-01-04",
+      "type": "withdrawal",
+      "token": "USDT",
+      "amount": "299.99",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/162384258547712_775974_.png",
+      "address": "0xe6688d6609bc37642208ab28d198c6aa30ed41e0",
+      "tx_hash": "0xe698fb3ff8ec46b1ee0b10cbf4795c8267e7f8fb38ea1b63012c5448852b215a"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含提现订单详情弹窗、交易列表、导航栏中的'Withdraw Crypto'选项以及详细的提现信息（如币种、金额、地址、TxID等），符合交易所提现记录页面的典型特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/",
+          "detected_evidence": "Binance logo、Binance文字标识、界面设计风格与Binance一致、导航栏中'Binance use'字样、URL中包含'binance.com'域名",
+          "reason": "截图中浏览器地址栏显示URL为'https://www.binance.com...'，且页面左上角有Binance的金色logo和名称，同时界面元素（如'Deposit'、'Withdraw'按钮布局）与Binance平台高度一致，足以证明该截图来自Binance交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-04",
+            "token": "USDT",
+            "amount": "299.99",
+            "network": "BSC"
+          },
+          "reason": "截图中提现订单详情显示：交易类型为'Withdrawal'（提现），日期为'2026-01-04'，币种为'USDT'，金额为'299.99'，网络为'BSC'（即BNB链/Binance Smart Chain），接收地址为'0xe668...ed41e0'（与提供的地址前缀和后缀匹配），交易哈希为'0xe698...2b215a'（与提供的哈希前缀和后缀匹配），手续费为'0.01'。所有关键信息在语义上均与提供数据一致，仅部分字段被省略或简化显示，但核心内容完全匹配。",
+          "confidence": 0.97
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含提现订单详情弹窗、交易列表、导航栏中的'Withdraw Crypto'选项以及详细的提现信息（如币种、金额、地址、TxID等），符合交易所提现记录页面的典型特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/",
+        "detected_evidence": "Binance logo、Binance文字标识、界面设计风格与Binance一致、导航栏中'Binance use'字样、URL中包含'binance.com'域名",
+        "reason": "截图中浏览器地址栏显示URL为'https://www.binance.com...'，且页面左上角有Binance的金色logo和名称，同时界面元素（如'Deposit'、'Withdraw'按钮布局）与Binance平台高度一致，足以证明该截图来自Binance交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-04",
+          "token": "USDT",
+          "amount": "299.99",
+          "network": "BSC"
+        },
+        "reason": "截图中提现订单详情显示：交易类型为'Withdrawal'（提现），日期为'2026-01-04'，币种为'USDT'，金额为'299.99'，网络为'BSC'（即BNB链/Binance Smart Chain），接收地址为'0xe668...ed41e0'（与提供的地址前缀和后缀匹配），交易哈希为'0xe698...2b215a'（与提供的哈希前缀和后缀匹配），手续费为'0.01'。所有关键信息在语义上均与提供数据一致，仅部分字段被省略或简化显示，但核心内容完全匹配。",
+        "confidence": 0.97
+      }
+    }
+  },
+  {
+    "submission_id": "2026012110191900100415",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:50:37.895095",
+    "record": {
+      "submission_id": "2026012110191900100415",
+      "date": "2026-01-15",
+      "type": "withdrawal",
+      "token": "USDT",
+      "amount": "100",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/162384258547712_186553_.png",
+      "address": "0x3f6ce9351b849f0aaac8279a37b4349859b43b9d",
+      "tx_hash": "0xf6d1a22ce906dfc67710000ee83341c349345fce89b380bc3955292948a572b9"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、交易状态流程（已提交、系统处理中、已完成）、交易时间、币种、金额、网络、地址和交易哈希等信息。左侧有‘Withdraw Crypto’按钮，下方有‘Recent Withdrawals’列表，这些都表明这是交易所的提现记录页面。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/",
+          "detected_evidence": "Binance logo、导航栏中的'Binance'文字、界面设计风格（深色主题、图标样式）以及URL中包含'binance.com'。",
+          "reason": "浏览器地址栏中显示的URL为'https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/'，明确指向Binance官网。同时，左上角有Binance的金色logo，顶部导航栏中有'Binance'品牌标识，整体界面风格与Binance一致。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-15",
+            "token": "USDT",
+            "amount": "100.00",
+            "network": "BSC"
+          },
+          "reason": "交易类型为提现（Withdrawal），日期为2026-01-15，币种为USDT，金额为100.00，网络为BSC（即BNB链），接收地址为0x3f6c...b43b9d（与提供的地址0x3f6ce9351b849f0aaac8279a37b4349859b43b9d前缀和后缀匹配），交易哈希为0xf6d1...a572b9（与提供的tx_hash 0xf6d1a22ce906dfc67710000ee83341c349345fce89b380bc3955292948a572b9前缀和后缀匹配），网络手续费为0.01。所有信息在语义上完全一致，符合宽松匹配标准。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、交易状态流程（已提交、系统处理中、已完成）、交易时间、币种、金额、网络、地址和交易哈希等信息。左侧有‘Withdraw Crypto’按钮，下方有‘Recent Withdrawals’列表，这些都表明这是交易所的提现记录页面。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/",
+        "detected_evidence": "Binance logo、导航栏中的'Binance'文字、界面设计风格（深色主题、图标样式）以及URL中包含'binance.com'。",
+        "reason": "浏览器地址栏中显示的URL为'https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/'，明确指向Binance官网。同时，左上角有Binance的金色logo，顶部导航栏中有'Binance'品牌标识，整体界面风格与Binance一致。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-15",
+          "token": "USDT",
+          "amount": "100.00",
+          "network": "BSC"
+        },
+        "reason": "交易类型为提现（Withdrawal），日期为2026-01-15，币种为USDT，金额为100.00，网络为BSC（即BNB链），接收地址为0x3f6c...b43b9d（与提供的地址0x3f6ce9351b849f0aaac8279a37b4349859b43b9d前缀和后缀匹配），交易哈希为0xf6d1...a572b9（与提供的tx_hash 0xf6d1a22ce906dfc67710000ee83341c349345fce89b380bc3955292948a572b9前缀和后缀匹配），网络手续费为0.01。所有信息在语义上完全一致，符合宽松匹配标准。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012114552700100417",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:50:56.431249",
+    "record": {
+      "submission_id": "2026012114552700100417",
+      "date": "2026-01-21",
+      "type": "withdrawal",
+      "token": "ETH",
+      "amount": "0.01004",
+      "network": "BASE",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8196110969300103673_423505_.jpg",
+      "address": "0x0a8765a327f43433F84b2C737BE0F2F6F1F2713E",
+      "tx_hash": "0xe6872d032f0ad82e4e10e33fca395fe7074331d2941bfd12997015be704bc001"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了提现详情页面，包含交易类型（Withdrawal Details）、交易金额、网络、地址、交易哈希（Txid）、手续费、钱包类型和时间等典型交易所提现记录的字段。界面顶部有返回按钮和标题，底部有'Withdraw Again'按钮，符合交易所交易详情页的常见布局。",
+          "confidence": 0.95
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": null,
+          "detected_evidence": "截图中明确显示了'Binance'字样，位于提示文字'Crypto transferred out of Binance.'中，这是直接的文字证据。此外，界面设计风格（如绿色完成状态标识、黄色按钮、简洁排版）与Binance移动端应用高度一致。",
+          "reason": "虽然没有显示URL或logo，但文本中明确提到'Crypto transferred out of Binance'，这直接表明该交易来自Binance交易所。结合其界面元素和语言风格，可以确认截图来自Binance。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-21",
+            "token": "ETH",
+            "amount": "0.01004",
+            "network": "BASE"
+          },
+          "reason": "交易类型为提现（Withdrawal Details），符合要求；日期为2026-01-21，匹配；币种为ETH，匹配；金额为0.01004 ETH，与给定值一致；网络为BASE，匹配；接收地址为0x0a8765a327f43433F84b2C737BE0F2F6F1F2713E，与提供的地址完全一致；交易哈希为0xe6872d032f0ad82e4e10e33fca395fe7074331d2941bfd12997015be704bc001，与提供的哈希语义一致（仅存在大小写差异，实际相同）；网络手续费为0.00005 ETH，与给定值一致。所有信息在语义上均匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了提现详情页面，包含交易类型（Withdrawal Details）、交易金额、网络、地址、交易哈希（Txid）、手续费、钱包类型和时间等典型交易所提现记录的字段。界面顶部有返回按钮和标题，底部有'Withdraw Again'按钮，符合交易所交易详情页的常见布局。",
+        "confidence": 0.95
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": null,
+        "detected_evidence": "截图中明确显示了'Binance'字样，位于提示文字'Crypto transferred out of Binance.'中，这是直接的文字证据。此外，界面设计风格（如绿色完成状态标识、黄色按钮、简洁排版）与Binance移动端应用高度一致。",
+        "reason": "虽然没有显示URL或logo，但文本中明确提到'Crypto transferred out of Binance'，这直接表明该交易来自Binance交易所。结合其界面元素和语言风格，可以确认截图来自Binance。",
+        "confidence": 0.98
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-21",
+          "token": "ETH",
+          "amount": "0.01004",
+          "network": "BASE"
+        },
+        "reason": "交易类型为提现（Withdrawal Details），符合要求；日期为2026-01-21，匹配；币种为ETH，匹配；金额为0.01004 ETH，与给定值一致；网络为BASE，匹配；接收地址为0x0a8765a327f43433F84b2C737BE0F2F6F1F2713E，与提供的地址完全一致；交易哈希为0xe6872d032f0ad82e4e10e33fca395fe7074331d2941bfd12997015be704bc001，与提供的哈希语义一致（仅存在大小写差异，实际相同）；网络手续费为0.00005 ETH，与给定值一致。所有信息在语义上均匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012116350100100418",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:51:24.868702",
+    "record": {
+      "submission_id": "2026012116350100100418",
+      "date": "2026-01-21",
+      "type": "deposit",
+      "token": "BNB",
+      "amount": "00542",
+      "network": "BNB",
+      "exchange_name": "OKX",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8066185134400105570_845559_.png",
+      "tx_hash": "0xfef6dc496892e9f3aa57036307952c00ff2f04f7ae34810db5a01cf047398c36"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含‘Setor’（入金）标题、步骤指引（Pilih Kripto, Pilih Jaringan, Detail setoran）、交易历史列表以及FAQ部分。页面顶部有交易所导航栏和品牌标识，底部有详细的交易记录，包括时间、地址、交易哈希、币种、金额、网络和状态等信息，符合交易所入金记录页面的典型特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "okx.com/id/balance/recharge",
+          "detected_evidence": "浏览器地址栏中显示的URL为 'okx.com'，且页面左上角有OKX的黑白方块Logo，导航栏中包含‘Beli Kripto’、‘Pasar’、‘Trading’等典型OKX界面元素，页面语言为印尼语，与OKX国际站多语言支持一致。",
+          "reason": "截图中的URL明确指向okx.com，且页面左上角有OKX的标志性logo，同时界面布局和功能模块（如Pendanaan、Deposit按钮、交易记录样式）均与OKX平台高度一致，足以确认该截图来自OKX交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "21 Jan 2026, 07:10 PM",
+            "token": "BNB",
+            "amount": "0,0542",
+            "network": "BNB Smart Chain"
+          },
+          "reason": "交易类型为‘Setor’（入金），语义匹配；日期为‘21 Jan 2026, 07:10 PM’，与要求的‘2026-01-21’语义一致；币种为‘BNB’，匹配；金额为‘0,0542’（印尼语格式，等价于0.0542），与‘00542’存在数值差异，但考虑到可能是输入错误或格式问题，结合上下文仍可视为语义接近（实际应为0.0542）；网络为‘BNB Smart Chain’，即BSC，与‘BNB’网络语义一致；接收地址为‘0x8205988700cc8bf8cb1147bcfca4830320d46136’，完全匹配；交易哈希显示为‘0xfe....8c36’，虽未完整展示，但可见部分‘0xfe...8c36’与提供的‘0xfef6dc...8c36’前缀和后缀一致，符合隐藏中间字符的常见显示方式，因此语义匹配。综合判断，所有关键字段在语义上一致。",
+          "confidence": 0.95
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含‘Setor’（入金）标题、步骤指引（Pilih Kripto, Pilih Jaringan, Detail setoran）、交易历史列表以及FAQ部分。页面顶部有交易所导航栏和品牌标识，底部有详细的交易记录，包括时间、地址、交易哈希、币种、金额、网络和状态等信息，符合交易所入金记录页面的典型特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "okx.com/id/balance/recharge",
+        "detected_evidence": "浏览器地址栏中显示的URL为 'okx.com'，且页面左上角有OKX的黑白方块Logo，导航栏中包含‘Beli Kripto’、‘Pasar’、‘Trading’等典型OKX界面元素，页面语言为印尼语，与OKX国际站多语言支持一致。",
+        "reason": "截图中的URL明确指向okx.com，且页面左上角有OKX的标志性logo，同时界面布局和功能模块（如Pendanaan、Deposit按钮、交易记录样式）均与OKX平台高度一致，足以确认该截图来自OKX交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "21 Jan 2026, 07:10 PM",
+          "token": "BNB",
+          "amount": "0,0542",
+          "network": "BNB Smart Chain"
+        },
+        "reason": "交易类型为‘Setor’（入金），语义匹配；日期为‘21 Jan 2026, 07:10 PM’，与要求的‘2026-01-21’语义一致；币种为‘BNB’，匹配；金额为‘0,0542’（印尼语格式，等价于0.0542），与‘00542’存在数值差异，但考虑到可能是输入错误或格式问题，结合上下文仍可视为语义接近（实际应为0.0542）；网络为‘BNB Smart Chain’，即BSC，与‘BNB’网络语义一致；接收地址为‘0x8205988700cc8bf8cb1147bcfca4830320d46136’，完全匹配；交易哈希显示为‘0xfe....8c36’，虽未完整展示，但可见部分‘0xfe...8c36’与提供的‘0xfef6dc...8c36’前缀和后缀一致，符合隐藏中间字符的常见显示方式，因此语义匹配。综合判断，所有关键字段在语义上一致。",
+        "confidence": 0.95
+      }
+    }
+  },
+  {
+    "submission_id": "2026012116474800100419",
+    "overall_result": "fail",
+    "timestamp": "2026-01-22T17:51:42.270590",
+    "record": {
+      "submission_id": "2026012116474800100419",
+      "date": "2025-12-25",
+      "type": "withdrawal",
+      "token": "SOL",
+      "amount": "0.027",
+      "network": "SOL",
+      "exchange_name": "OKX",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8066185134400105570_620316_.png",
+      "address": "4iFRTusuGcMwAmVY9apBiUoKiJkZqYYG15LDmXp6nsHK",
+      "tx_hash": "5ZrBq1FzWiDywFfM17WXFF9xe7UrTNHSRr9H7w2y7ZJqdyqrtgXJQHQj9N1UBcfXTb6ezhSkZnQZBF6e42dMmnne"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含'Withdrawal'标题、提现步骤（Select crypto, Set destination, Set withdrawal amount）、交易历史列表以及FAQ部分。界面元素如导航栏、交易记录表格（包含时间、地址、交易ID、币种、金额、手续费、状态等）均符合交易所提现记录页面的特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "",
+          "detected_evidence": "左上角有OKX的logo（黑白方块图案），顶部导航栏中显示'OKX'品牌标识，且页面设计风格与OKX官网一致。此外，页面右下角有一个绿色圆形按钮，带有'T'图标，是OKX特有的用户交互元素。",
+          "reason": "截图左上角清晰可见OKX的标志性logo，且页面整体布局和UI设计与OKX平台高度一致。虽然没有显示浏览器地址栏，但通过品牌标识和界面特征可以确认该截图来自OKX交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "fail",
+        "llm_response": {
+          "result": false,
+          "detected_info": {
+            "date": "Oct 2, 2025, 02:05 PM",
+            "token": "SOL",
+            "amount": "0.027",
+            "network": "Solana"
+          },
+          "reason": "截图中的交易记录显示一笔SOL币种的提现，金额为0.027，网络为Solana，接收地址为4iFRTusuGcMwAmVY9apBiUoKiJkZqYYG15LDmXp6nsHK，这些信息与提供的数据在语义上基本一致。然而，交易日期为2025年10月2日，而非要求的2025年12月25日，存在明显不匹配。此外，交易哈希仅显示为'5ZrB....mnne'，未完整展示，无法验证是否与提供的完整哈希一致。因此，尽管大部分信息匹配，但日期不一致导致整体判定为不匹配。",
+          "confidence": 0.75
+        }
+      }
+    ],
+    "reason": "以下检查项失败: 交易明细匹配",
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含'Withdrawal'标题、提现步骤（Select crypto, Set destination, Set withdrawal amount）、交易历史列表以及FAQ部分。界面元素如导航栏、交易记录表格（包含时间、地址、交易ID、币种、金额、手续费、状态等）均符合交易所提现记录页面的特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "",
+        "detected_evidence": "左上角有OKX的logo（黑白方块图案），顶部导航栏中显示'OKX'品牌标识，且页面设计风格与OKX官网一致。此外，页面右下角有一个绿色圆形按钮，带有'T'图标，是OKX特有的用户交互元素。",
+        "reason": "截图左上角清晰可见OKX的标志性logo，且页面整体布局和UI设计与OKX平台高度一致。虽然没有显示浏览器地址栏，但通过品牌标识和界面特征可以确认该截图来自OKX交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": false,
+        "detected_info": {
+          "date": "Oct 2, 2025, 02:05 PM",
+          "token": "SOL",
+          "amount": "0.027",
+          "network": "Solana"
+        },
+        "reason": "截图中的交易记录显示一笔SOL币种的提现，金额为0.027，网络为Solana，接收地址为4iFRTusuGcMwAmVY9apBiUoKiJkZqYYG15LDmXp6nsHK，这些信息与提供的数据在语义上基本一致。然而，交易日期为2025年10月2日，而非要求的2025年12月25日，存在明显不匹配。此外，交易哈希仅显示为'5ZrB....mnne'，未完整展示，无法验证是否与提供的完整哈希一致。因此，尽管大部分信息匹配，但日期不一致导致整体判定为不匹配。",
+        "confidence": 0.75
+      }
+    }
+  },
+  {
+    "submission_id": "2026012117271800100424",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:52:02.175809",
+    "record": {
+      "submission_id": "2026012117271800100424",
+      "date": "2026-01-21",
+      "type": "withdrawal",
+      "token": "USDC",
+      "amount": "137.97",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/158438401552384_723464_.jpg",
+      "address": "0x5abB55632bdD18E0f42999E2eCd69D42dE51Cfd0",
+      "tx_hash": "0x3ac9c5e0ace6f92f46e3f865cbea9f4f5e87653b957a83a09e08f140edf71a97"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了提现详情页面，包含交易金额、网络、地址、交易哈希（Txid）、手续费、钱包类型和日期等典型的交易所提现记录信息。页面顶部有'Withdrawal Details'标题，且有'Withdraw Again'按钮，符合交易所提现记录的界面特征。",
+          "confidence": 0.95
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_evidence": "页面中明确显示了'Binance'字样：在提示文字中提到'Crypto transferred out of Binance'，这是直接的文字证据。此外，界面设计风格（如绿色完成状态标记、黄色按钮、简洁布局）与Binance移动端应用高度一致。",
+          "reason": "虽然没有显示URL或logo，但文本中明确提到'Crypto transferred out of Binance'，这直接证明该截图来自Binance交易所。结合其特有的界面元素和语言风格，可以高置信度确认来源。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-21",
+            "token": "USDC",
+            "amount": "137.97212067 USDC",
+            "network": "BSC"
+          },
+          "reason": "交易类型为提现（Withdrawal Details），金额为137.97212067 USDC（语义上与137.97一致），币种为USDC，网络为BSC（即BNB链，语义一致），接收地址为0x5abB55632bdD18E0f42999E2eCd69D42dE51Cfd0（完全匹配），交易哈希为0x3ac9c5e0ace6f92f46e3f865cbea9f4f5e87653b957a83a09e08f140edf71a97（完全匹配），网络手续费为0 USDC（与要求一致）。所有信息均在语义上与提供的数据匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了提现详情页面，包含交易金额、网络、地址、交易哈希（Txid）、手续费、钱包类型和日期等典型的交易所提现记录信息。页面顶部有'Withdrawal Details'标题，且有'Withdraw Again'按钮，符合交易所提现记录的界面特征。",
+        "confidence": 0.95
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_evidence": "页面中明确显示了'Binance'字样：在提示文字中提到'Crypto transferred out of Binance'，这是直接的文字证据。此外，界面设计风格（如绿色完成状态标记、黄色按钮、简洁布局）与Binance移动端应用高度一致。",
+        "reason": "虽然没有显示URL或logo，但文本中明确提到'Crypto transferred out of Binance'，这直接证明该截图来自Binance交易所。结合其特有的界面元素和语言风格，可以高置信度确认来源。",
+        "confidence": 0.98
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-21",
+          "token": "USDC",
+          "amount": "137.97212067 USDC",
+          "network": "BSC"
+        },
+        "reason": "交易类型为提现（Withdrawal Details），金额为137.97212067 USDC（语义上与137.97一致），币种为USDC，网络为BSC（即BNB链，语义一致），接收地址为0x5abB55632bdD18E0f42999E2eCd69D42dE51Cfd0（完全匹配），交易哈希为0x3ac9c5e0ace6f92f46e3f865cbea9f4f5e87653b957a83a09e08f140edf71a97（完全匹配），网络手续费为0 USDC（与要求一致）。所有信息均在语义上与提供的数据匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012117324800100425",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:52:23.388488",
+    "record": {
+      "submission_id": "2026012117324800100425",
+      "date": "2026-01-21",
+      "type": "deposit",
+      "token": "USDT",
+      "amount": "126.5",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/158438401552384_643083_.jpg",
+      "tx_hash": "0xadd3057934e80ced269880d965fa28b3511d981fd4caf17cb3137239feab4adf"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了'Deposit Details'（入金详情）页面，包含交易金额、网络、地址、交易哈希、钱包类型和日期等典型交易所入金记录信息。界面顶部有返回按钮和标题，下方有交易对的实时价格和'Trade Now'按钮，符合交易所交易详情页的布局特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": null,
+          "detected_evidence": "截图中明确显示了'Binance account'字样，并且在交易记录部分提到了'Spot Wallet'，这是Binance交易所特有的术语。此外，页面设计风格（如黄色按钮、绿色完成状态标记、简洁的卡片式布局）与Binance官方App高度一致。",
+          "reason": "虽然没有显示URL或logo，但文本中出现了'Binance account'这一明确标识，结合其特有的界面元素和术语（如'Spot Wallet'），可以高度确定该截图来自Binance交易所。",
+          "confidence": 0.95
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-21",
+            "token": "USDT",
+            "amount": "126.5",
+            "network": "BSC"
+          },
+          "reason": "截图中显示的交易类型为入金（+126.5 USDT，Completed），币种为USDT，金额为126.5，网络为BSC（即BNB链），接收地址为0xe8d08a5e2f176d3934391e5fa36e1ae9d3a5fe8d，交易哈希为0xadd3057934e80ced269880d965fa28b3511d981fd4caf17cb3137239feab4adf。所有信息均与提供的数据在语义上完全一致：日期匹配（2026-01-21）、币种匹配（USDT）、金额匹配（126.5）、网络匹配（BSC即BNB）、地址和哈希也完全一致（大小写和格式无差异）。因此判定为匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了'Deposit Details'（入金详情）页面，包含交易金额、网络、地址、交易哈希、钱包类型和日期等典型交易所入金记录信息。界面顶部有返回按钮和标题，下方有交易对的实时价格和'Trade Now'按钮，符合交易所交易详情页的布局特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": null,
+        "detected_evidence": "截图中明确显示了'Binance account'字样，并且在交易记录部分提到了'Spot Wallet'，这是Binance交易所特有的术语。此外，页面设计风格（如黄色按钮、绿色完成状态标记、简洁的卡片式布局）与Binance官方App高度一致。",
+        "reason": "虽然没有显示URL或logo，但文本中出现了'Binance account'这一明确标识，结合其特有的界面元素和术语（如'Spot Wallet'），可以高度确定该截图来自Binance交易所。",
+        "confidence": 0.95
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-21",
+          "token": "USDT",
+          "amount": "126.5",
+          "network": "BSC"
+        },
+        "reason": "截图中显示的交易类型为入金（+126.5 USDT，Completed），币种为USDT，金额为126.5，网络为BSC（即BNB链），接收地址为0xe8d08a5e2f176d3934391e5fa36e1ae9d3a5fe8d，交易哈希为0xadd3057934e80ced269880d965fa28b3511d981fd4caf17cb3137239feab4adf。所有信息均与提供的数据在语义上完全一致：日期匹配（2026-01-21）、币种匹配（USDT）、金额匹配（126.5）、网络匹配（BSC即BNB）、地址和哈希也完全一致（大小写和格式无差异）。因此判定为匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012117382800100426",
+    "overall_result": "fail",
+    "timestamp": "2026-01-22T17:52:43.458860",
+    "record": {
+      "submission_id": "2026012117382800100426",
+      "date": "2026-01-08",
+      "type": "deposit",
+      "token": "USDT",
+      "amount": "50",
+      "network": "BNB",
+      "exchange_name": "KuCoin",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/158438401552384_567058_.jpg",
+      "tx_hash": "0x582d02943dd2885bfe6d6ff184395d8436ae2447cdda53bf0de6744b57c2a663"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了典型的交易所入金记录页面，包含'Amount Received'、'Completed'状态、交易时间、网络类型（BEP20）、地址、交易哈希等信息。这些是交易所常见的入金详情字段，且有'Deposit Stats'按钮和订单号等元素，符合交易所界面特征。",
+          "confidence": 0.95
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "fail",
+        "llm_response": {
+          "result": false,
+          "detected_url": null,
+          "detected_evidence": "",
+          "reason": "截图中未显示任何与KuCoin相关的标识，如logo、品牌名称、界面设计风格或URL。页面顶部没有可见的网站标题或导航栏，无法确认具体交易所身份。虽然界面简洁现代，但这种设计在多个交易所中常见，不足以作为KuCoin的独有证据。",
+          "confidence": 0.3
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "01/08/2026",
+            "token": "USDT",
+            "amount": "50",
+            "network": "BEP20"
+          },
+          "reason": "截图中的交易信息与提供的数据语义一致：交易类型为'Deposit'（备注中明确标注）；日期为01/08/2026，对应2026-01-08；币种为USDT；金额为50；网络为BEP20（即BNB链上的BSC网络）；接收地址完整显示为0xf4a7546fcc2bba1881d0c0b598088658a6d3d1ea，与提供的一致；交易哈希也完全匹配（0x582d02943dd2885bfe6d6ff184395d8436ae2447cdda53bf0de6744b57c2a663）。所有关键字段均语义一致，无冲突。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "reason": "以下检查项失败: 交易所身份验证",
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了典型的交易所入金记录页面，包含'Amount Received'、'Completed'状态、交易时间、网络类型（BEP20）、地址、交易哈希等信息。这些是交易所常见的入金详情字段，且有'Deposit Stats'按钮和订单号等元素，符合交易所界面特征。",
+        "confidence": 0.95
+      },
+      "exchange_verification": {
+        "result": false,
+        "detected_url": null,
+        "detected_evidence": "",
+        "reason": "截图中未显示任何与KuCoin相关的标识，如logo、品牌名称、界面设计风格或URL。页面顶部没有可见的网站标题或导航栏，无法确认具体交易所身份。虽然界面简洁现代，但这种设计在多个交易所中常见，不足以作为KuCoin的独有证据。",
+        "confidence": 0.3
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "01/08/2026",
+          "token": "USDT",
+          "amount": "50",
+          "network": "BEP20"
+        },
+        "reason": "截图中的交易信息与提供的数据语义一致：交易类型为'Deposit'（备注中明确标注）；日期为01/08/2026，对应2026-01-08；币种为USDT；金额为50；网络为BEP20（即BNB链上的BSC网络）；接收地址完整显示为0xf4a7546fcc2bba1881d0c0b598088658a6d3d1ea，与提供的一致；交易哈希也完全匹配（0x582d02943dd2885bfe6d6ff184395d8436ae2447cdda53bf0de6744b57c2a663）。所有关键字段均语义一致，无冲突。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012200531000100427",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:52:59.571282",
+    "record": {
+      "submission_id": "2026012200531000100427",
+      "date": "2026-01-19",
+      "type": "deposit",
+      "token": "BNB",
+      "amount": "3",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8746923356800109082_309639_.png",
+      "tx_hash": "0xa2848ab0d43183539033c1c51a7068b36ec594632419e15811e1ed3ec84e60b7"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含'Deposit Crypto'、'Recent Deposits'等与入金相关的功能选项和交易列表。界面中展示了具体的交易详情，如币种、金额、网络、地址和交易哈希，符合交易所入金记录页面的典型特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+          "detected_evidence": "页面左上角有'BINANCE'的Logo和品牌名称，导航栏中包含'Binance'特有的菜单项（如Buy Crypto、Markets、Trade等），且URL明确指向binance.com域名。",
+          "reason": "截图中不仅在浏览器地址栏中显示了包含'binance.com'的URL，而且页面左上角清晰可见'BINANCE'的品牌标识和Logo，同时界面设计风格与Binance官方平台一致，具备其特有的深色主题和布局结构，这些都足以证明该截图来自Binance交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-19",
+            "token": "BNB",
+            "amount": "3",
+            "network": "BSC"
+          },
+          "reason": "截图中的交易明细显示：交易类型为'Deposit'（入金），日期为'01/19/2026 10:19:21 PM'，对应公历2026年1月19日；币种为BNB；金额为3；网络为BSC（即BNB Chain/Binance Smart Chain）；接收地址为'0x8e5a...59749a'，与提供的完整地址前缀和后缀匹配；交易哈希为'0xa284...4e60b7'，与提供的完整哈希前缀和后缀匹配。所有信息在语义上均一致，仅部分字段被省略显示，但可见部分完全匹配。",
+          "confidence": 0.98
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含'Deposit Crypto'、'Recent Deposits'等与入金相关的功能选项和交易列表。界面中展示了具体的交易详情，如币种、金额、网络、地址和交易哈希，符合交易所入金记录页面的典型特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+        "detected_evidence": "页面左上角有'BINANCE'的Logo和品牌名称，导航栏中包含'Binance'特有的菜单项（如Buy Crypto、Markets、Trade等），且URL明确指向binance.com域名。",
+        "reason": "截图中不仅在浏览器地址栏中显示了包含'binance.com'的URL，而且页面左上角清晰可见'BINANCE'的品牌标识和Logo，同时界面设计风格与Binance官方平台一致，具备其特有的深色主题和布局结构，这些都足以证明该截图来自Binance交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-19",
+          "token": "BNB",
+          "amount": "3",
+          "network": "BSC"
+        },
+        "reason": "截图中的交易明细显示：交易类型为'Deposit'（入金），日期为'01/19/2026 10:19:21 PM'，对应公历2026年1月19日；币种为BNB；金额为3；网络为BSC（即BNB Chain/Binance Smart Chain）；接收地址为'0x8e5a...59749a'，与提供的完整地址前缀和后缀匹配；交易哈希为'0xa284...4e60b7'，与提供的完整哈希前缀和后缀匹配。所有信息在语义上均一致，仅部分字段被省略显示，但可见部分完全匹配。",
+        "confidence": 0.98
+      }
+    }
+  },
+  {
+    "submission_id": "2026012201004300100428",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:53:14.088510",
+    "record": {
+      "submission_id": "2026012201004300100428",
+      "date": "2026-01-12",
+      "type": "withdrawal",
+      "token": "USDT",
+      "amount": "38489.57706649",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8746923356800109082_177223_.png",
+      "address": "0x79626bC28036E75589EEb730B8F05c5FC4976b3C",
+      "tx_hash": "0x6870cdd18a1c1126af6e97312bfb7e1e72e80f4e27e0353cbecf7b090c68130b"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含提现订单详情弹窗、交易状态流程（已提交、系统处理中、已完成）、交易列表以及相关的地址、金额、网络等信息。界面元素如导航栏、交易记录列表、'Withdraw Crypto'按钮等均符合交易所提现记录页面的特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/",
+          "detected_evidence": "Binance的logo（金色菱形标志）、网站名称'BINANCE'、界面设计风格（深色主题、特定按钮样式）、以及URL中包含'binance.com'。",
+          "reason": "截图中浏览器地址栏显示URL为'https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/'，明确指向Binance官网；同时页面左上角有Binance的标志性logo和名称，界面风格与Binance一致，多个证据共同确认该截图来自Binance交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-12",
+            "token": "USDT",
+            "amount": "38,489.57706649",
+            "network": "BSC"
+          },
+          "reason": "交易类型为提现（Withdrawal），日期为2026-01-12，币种为USDT，金额为38,489.57706649，网络为BSC（即BNB链），接收地址为0x7962...976b3C（与给定地址前缀和后缀匹配），交易哈希为0x6870...68130b（与给定哈希前缀和后缀匹配），手续费为0.01。所有关键字段在语义上均与提供数据一致，仅地址和哈希被部分隐藏，但可见部分完全匹配。",
+          "confidence": 0.98
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含提现订单详情弹窗、交易状态流程（已提交、系统处理中、已完成）、交易列表以及相关的地址、金额、网络等信息。界面元素如导航栏、交易记录列表、'Withdraw Crypto'按钮等均符合交易所提现记录页面的特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/",
+        "detected_evidence": "Binance的logo（金色菱形标志）、网站名称'BINANCE'、界面设计风格（深色主题、特定按钮样式）、以及URL中包含'binance.com'。",
+        "reason": "截图中浏览器地址栏显示URL为'https://www.binance.com/en/my/wallet/account/main/withdrawal/crypto/'，明确指向Binance官网；同时页面左上角有Binance的标志性logo和名称，界面风格与Binance一致，多个证据共同确认该截图来自Binance交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-12",
+          "token": "USDT",
+          "amount": "38,489.57706649",
+          "network": "BSC"
+        },
+        "reason": "交易类型为提现（Withdrawal），日期为2026-01-12，币种为USDT，金额为38,489.57706649，网络为BSC（即BNB链），接收地址为0x7962...976b3C（与给定地址前缀和后缀匹配），交易哈希为0x6870...68130b（与给定哈希前缀和后缀匹配），手续费为0.01。所有关键字段在语义上均与提供数据一致，仅地址和哈希被部分隐藏，但可见部分完全匹配。",
+        "confidence": 0.98
+      }
+    }
+  },
+  {
+    "submission_id": "2026012205251600100432",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:53:31.209093",
+    "record": {
+      "submission_id": "2026012205251600100432",
+      "date": "2026-01-19",
+      "type": "deposit",
+      "token": "USDC",
+      "amount": "4500.08192291",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8918568936900106135_467080_.png",
+      "tx_hash": "0x0ff4321f6b86774fac4650b2733c29ebf7684ce060117fe8ace80394248d2c86"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的入金记录页面，包含交易列表、每笔交易的状态、日期、币种、金额、网络、地址和交易哈希等信息。界面顶部有导航栏，左侧有‘Deposit Crypto’、‘Withdraw Crypto’等选项，右侧弹出窗口标题为‘Deposit Details’，明确指向入金操作。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": null,
+          "detected_evidence": "左上角有‘BINANCE’的logo和文字标识，导航栏包含‘Buy Crypto’、‘Markets’、‘Trade’、‘Futures’等Binance特有的菜单项，整体界面设计风格与Binance一致。",
+          "reason": "截图左上角清晰可见‘BINANCE’品牌标识，且界面布局、颜色主题、功能模块（如‘Deposit Crypto’、‘Spot Wallet’）均符合Binance交易所的典型特征，足以确认该截图来自Binance平台。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "01/19/2026 11:33:12 PM",
+            "token": "USDC",
+            "amount": "4500.08192291",
+            "network": "BSC"
+          },
+          "reason": "截图中弹窗显示的交易详情与给定数据语义一致：\n- 交易类型为‘Deposit’，属于入金；\n- 日期为‘01/19/2026 11:33:12 PM’，对应2026年1月19日，与要求一致；\n- 币种为‘USDC’，完全匹配；\n- 金额为‘4500.08192291’，与给定数值一致；\n- 网络为‘BSC’，即Binance Smart Chain，与‘BNB’网络语义相同；\n- 接收地址显示为‘0xf4ec...92319f’，前缀‘0xf4ec’和后缀‘92319f’与给定地址‘0xf4ec02aa14d5cf5fbe89322fd2249cb5d992319f’匹配；\n- 交易哈希显示为‘0x0ff4...2c86’，前缀‘0x0ff4’和后缀‘2c86’与给定哈希‘0x0ff4321f6b86774fac4650b2733c29ebf7684ce060117fe8ace80394248d2c86’匹配。\n所有关键字段在语义上均一致，仅部分信息被截断，但可见部分完全匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的入金记录页面，包含交易列表、每笔交易的状态、日期、币种、金额、网络、地址和交易哈希等信息。界面顶部有导航栏，左侧有‘Deposit Crypto’、‘Withdraw Crypto’等选项，右侧弹出窗口标题为‘Deposit Details’，明确指向入金操作。",
+        "confidence": 0.99
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": null,
+        "detected_evidence": "左上角有‘BINANCE’的logo和文字标识，导航栏包含‘Buy Crypto’、‘Markets’、‘Trade’、‘Futures’等Binance特有的菜单项，整体界面设计风格与Binance一致。",
+        "reason": "截图左上角清晰可见‘BINANCE’品牌标识，且界面布局、颜色主题、功能模块（如‘Deposit Crypto’、‘Spot Wallet’）均符合Binance交易所的典型特征，足以确认该截图来自Binance平台。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "01/19/2026 11:33:12 PM",
+          "token": "USDC",
+          "amount": "4500.08192291",
+          "network": "BSC"
+        },
+        "reason": "截图中弹窗显示的交易详情与给定数据语义一致：\n- 交易类型为‘Deposit’，属于入金；\n- 日期为‘01/19/2026 11:33:12 PM’，对应2026年1月19日，与要求一致；\n- 币种为‘USDC’，完全匹配；\n- 金额为‘4500.08192291’，与给定数值一致；\n- 网络为‘BSC’，即Binance Smart Chain，与‘BNB’网络语义相同；\n- 接收地址显示为‘0xf4ec...92319f’，前缀‘0xf4ec’和后缀‘92319f’与给定地址‘0xf4ec02aa14d5cf5fbe89322fd2249cb5d992319f’匹配；\n- 交易哈希显示为‘0x0ff4...2c86’，前缀‘0x0ff4’和后缀‘2c86’与给定哈希‘0x0ff4321f6b86774fac4650b2733c29ebf7684ce060117fe8ace80394248d2c86’匹配。\n所有关键字段在语义上均一致，仅部分信息被截断，但可见部分完全匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012205350300100433",
+    "overall_result": "pass",
+    "timestamp": "2026-01-22T17:53:50.422495",
+    "record": {
+      "submission_id": "2026012205350300100433",
+      "date": "2026-01-19",
+      "type": "withdrawal",
+      "token": "USDC",
+      "amount": "4500.01",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8918568936900106135_837462_.png",
+      "address": "0x80b67260A16AB8e5E893ade6Fb68D241Da00D1F4",
+      "tx_hash": "0xdd58fceb2c31a042b5ea18a7ee9027cac5020eaf7e1fbc32d3e5378eb2c1f439"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含‘Withdrawal Details’弹窗、交易状态流程（已提交、系统处理中、已完成）、交易详情（币种、金额、网络、地址、TxID等），以及左侧导航栏中的‘Withdraw Crypto’选项。这些元素均表明这是交易所的提现记录页面。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": null,
+          "detected_evidence": "左上角有‘BINANCE’的logo和文字标识，界面风格与Binance平台一致，包括顶部导航栏的‘Buy Crypto’、‘Markets’、‘Trade’、‘Futures’等标签，以及右上角的用户头像、消息图标和语言切换按钮。此外，‘Withdrawal Details’弹窗中的‘Spot Wallet’术语也是Binance特有的表述方式。",
+          "reason": "截图左上角明确显示了‘BINANCE’的品牌名称和标志，且整体界面设计、功能布局、术语使用（如‘Spot Wallet’）均与Binance平台高度一致，足以确认该截图来自Binance交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-19",
+            "token": "USDC",
+            "amount": "4,500.00826232",
+            "network": "BSC"
+          },
+          "reason": "交易类型为‘Withdrawal’，符合提现语义；日期为2026-01-19，与要求一致；币种为USDC，与要求一致；金额为4,500.00826232，与要求的4500.01在语义上一致（四舍五入差异可接受）；网络为BSC，与BNB/Binance Smart Chain语义一致；接收地址为0x80b6...00D1F4，与提供的地址0x80b67260A16AB8e5E893ade6Fb68D241Da00D1F4前缀和后缀匹配；交易哈希为0xdd58...c1f439，与提供的tx_hash 0xdd58fceb2c31a042b5ea18a7ee9027cac5020eaf7e1fbc32d3e5378eb2c1f439前缀和后缀匹配；网络手续费为0.00，与要求一致。所有信息在语义上均匹配。",
+          "confidence": 0.97
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含‘Withdrawal Details’弹窗、交易状态流程（已提交、系统处理中、已完成）、交易详情（币种、金额、网络、地址、TxID等），以及左侧导航栏中的‘Withdraw Crypto’选项。这些元素均表明这是交易所的提现记录页面。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": null,
+        "detected_evidence": "左上角有‘BINANCE’的logo和文字标识，界面风格与Binance平台一致，包括顶部导航栏的‘Buy Crypto’、‘Markets’、‘Trade’、‘Futures’等标签，以及右上角的用户头像、消息图标和语言切换按钮。此外，‘Withdrawal Details’弹窗中的‘Spot Wallet’术语也是Binance特有的表述方式。",
+        "reason": "截图左上角明确显示了‘BINANCE’的品牌名称和标志，且整体界面设计、功能布局、术语使用（如‘Spot Wallet’）均与Binance平台高度一致，足以确认该截图来自Binance交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-19",
+          "token": "USDC",
+          "amount": "4,500.00826232",
+          "network": "BSC"
+        },
+        "reason": "交易类型为‘Withdrawal’，符合提现语义；日期为2026-01-19，与要求一致；币种为USDC，与要求一致；金额为4,500.00826232，与要求的4500.01在语义上一致（四舍五入差异可接受）；网络为BSC，与BNB/Binance Smart Chain语义一致；接收地址为0x80b6...00D1F4，与提供的地址0x80b67260A16AB8e5E893ade6Fb68D241Da00D1F4前缀和后缀匹配；交易哈希为0xdd58...c1f439，与提供的tx_hash 0xdd58fceb2c31a042b5ea18a7ee9027cac5020eaf7e1fbc32d3e5378eb2c1f439前缀和后缀匹配；网络手续费为0.00，与要求一致。所有信息在语义上均匹配。",
+        "confidence": 0.97
+      }
+    }
+  },
+  {
+    "submission_id": "2026012206205400100436",
+    "overall_result": "fail",
+    "timestamp": "2026-01-22T17:53:50.426262",
+    "record": {
+      "submission_id": "2026012206205400100436",
+      "date": "2026-01-22",
+      "type": "deposit",
+      "token": "ETH",
+      "amount": "11",
+      "network": "ARB",
+      "exchange_name": "未知",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8632103138900100464_186075_.png",
+      "tx_hash": "bc1pk9hvzz4lp7hgkp7489ya2gfdpgt4hyyw0meh936zjfjpezu54nkqyafq7r"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "fail",
+        "llm_response": null
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "fail",
+        "llm_response": null
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "fail",
+        "llm_response": null
+      }
+    ],
+    "reason": "记录缺少必要字段: exchange_name"
+  },
+  {
+    "submission_id": "2026012211122700100442",
+    "overall_result": "fail",
+    "timestamp": "2026-01-23T16:40:18.513102",
+    "record": {
+      "submission_id": "2026012211122700100442",
+      "date": "2025-12-25",
+      "type": "deposit",
+      "token": "BNB",
+      "amount": "0.00343999",
+      "network": "BNB",
+      "exchange_name": "Gate.io",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/159041695535104_922248_.jpg",
+      "tx_hash": "0xc1808f2213d9fbbd6711a1e5cac25c2535ef63d7f7cc707a043c42df666dfdd3"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了'Detail Setoran'（入金详情）页面，包含入金金额、时间、交易ID（TXID）、网络、地址等典型交易所入金记录的元素。界面中还展示了交易状态为'Dikreditkan'（已入账），以及币种BNB的交易信息和实时价格行情，符合交易所入金记录页面的特征。",
+          "confidence": 0.95
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "fail",
+        "llm_response": {
+          "result": false,
+          "detected_url": null,
+          "detected_evidence": "截图中未显示Gate.io的logo、品牌名称或任何可识别的界面元素（如特定颜色、图标、导航结构等）。界面语言为印尼语，但无法从现有信息确认具体交易所名称。界面设计风格与Gate.io不完全匹配，也无明确标识。",
+          "reason": "截图中没有发现任何能直接证明该页面来自Gate.io交易所的证据，如URL、logo、品牌文字或独特UI设计。虽然界面是典型的加密货币交易所风格，但无法确定其归属。因此，不能确认该截图来自Gate.io。",
+          "confidence": 0.3
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2025-12-25",
+            "token": "BNB",
+            "amount": "0.00343999",
+            "network": "BSC"
+          },
+          "reason": "截图中的交易类型为'Setoran Onchain'（链上入金），属于入金（Deposit）语义；交易日期为2025-12-25 16:51:45，与要求一致；币种为BNB；金额为+0,00343999 BNB，与0.00343999语义一致；网络为BSC，即BNB链，与BNB网络语义一致；接收地址为0xC462413d0C2F01C82Cd071f4a9D0eB992A02c0B0，与提供的地址完全匹配；交易哈希为0xc1808f2213d9fbbd6711a1e5cac25c2535ef63d7f7cc707a043c42df666dfdd3，与提供的tx_hash完全一致。所有关键字段在语义和数值上均匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "reason": "以下检查项失败: 交易所身份验证",
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了'Detail Setoran'（入金详情）页面，包含入金金额、时间、交易ID（TXID）、网络、地址等典型交易所入金记录的元素。界面中还展示了交易状态为'Dikreditkan'（已入账），以及币种BNB的交易信息和实时价格行情，符合交易所入金记录页面的特征。",
+        "confidence": 0.95
+      },
+      "exchange_verification": {
+        "result": false,
+        "detected_url": null,
+        "detected_evidence": "截图中未显示Gate.io的logo、品牌名称或任何可识别的界面元素（如特定颜色、图标、导航结构等）。界面语言为印尼语，但无法从现有信息确认具体交易所名称。界面设计风格与Gate.io不完全匹配，也无明确标识。",
+        "reason": "截图中没有发现任何能直接证明该页面来自Gate.io交易所的证据，如URL、logo、品牌文字或独特UI设计。虽然界面是典型的加密货币交易所风格，但无法确定其归属。因此，不能确认该截图来自Gate.io。",
+        "confidence": 0.3
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2025-12-25",
+          "token": "BNB",
+          "amount": "0.00343999",
+          "network": "BSC"
+        },
+        "reason": "截图中的交易类型为'Setoran Onchain'（链上入金），属于入金（Deposit）语义；交易日期为2025-12-25 16:51:45，与要求一致；币种为BNB；金额为+0,00343999 BNB，与0.00343999语义一致；网络为BSC，即BNB链，与BNB网络语义一致；接收地址为0xC462413d0C2F01C82Cd071f4a9D0eB992A02c0B0，与提供的地址完全匹配；交易哈希为0xc1808f2213d9fbbd6711a1e5cac25c2535ef63d7f7cc707a043c42df666dfdd3，与提供的tx_hash完全一致。所有关键字段在语义和数值上均匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012221030800100444",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:40:58.904065",
+    "record": {
+      "submission_id": "2026012221030800100444",
+      "date": "2026-01-16",
+      "type": "withdrawal",
+      "token": "POL",
+      "amount": "3.26896814",
+      "network": "Polygon",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8884556403100106589_321495_.jpg",
+      "address": "0x62225d8e8e656154f009694601cca6c5873baf71",
+      "tx_hash": "0x1ef3467cfd019bd15fc1061e0974128a0e5578b8c33442ff390b151f113de44d"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含'Withdrawal Details'弹窗，详细列出了提现订单的状态、时间、币种、金额、地址和交易哈希等信息。页面上方有'Binance'的logo和导航栏，左侧有'Deposit Crypto'、'Withdraw Crypto'等选项，表明这是交易所的交易操作界面。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "binance.com/en/my/wa",
+          "detected_evidence": "Binance logo、'BINANCE'文字标识、界面设计风格（深色主题、图标布局）、以及URL中包含'binance.com'。",
+          "reason": "截图中浏览器地址栏显示的URL为'binance.com/en/my/wa'，明确指向Binance官网。同时，页面顶部有金色的'BINANCE'品牌标识和Logo，且整体界面风格与Binance官方一致，具备其特有的UI设计元素。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-16",
+            "token": "POL",
+            "amount": "3.26896814",
+            "network": "POL"
+          },
+          "reason": "截图中的提现详情显示：交易类型为'Withdrawal'；日期为'2026-01-16'；币种为'POL'；金额为'3.26896814'；网络为'POL'（即Polygon）；接收地址为'0x6222...3ba71'（与提供的地址前缀和后缀匹配）；交易哈希为'0x1ef3...3de44d'（与提供的哈希值前缀和后缀匹配）；手续费为'0.13'，与要求一致。所有关键字段在语义上均匹配，尽管部分信息被省略显示，但可见部分完全一致。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含'Withdrawal Details'弹窗，详细列出了提现订单的状态、时间、币种、金额、地址和交易哈希等信息。页面上方有'Binance'的logo和导航栏，左侧有'Deposit Crypto'、'Withdraw Crypto'等选项，表明这是交易所的交易操作界面。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "binance.com/en/my/wa",
+        "detected_evidence": "Binance logo、'BINANCE'文字标识、界面设计风格（深色主题、图标布局）、以及URL中包含'binance.com'。",
+        "reason": "截图中浏览器地址栏显示的URL为'binance.com/en/my/wa'，明确指向Binance官网。同时，页面顶部有金色的'BINANCE'品牌标识和Logo，且整体界面风格与Binance官方一致，具备其特有的UI设计元素。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-16",
+          "token": "POL",
+          "amount": "3.26896814",
+          "network": "POL"
+        },
+        "reason": "截图中的提现详情显示：交易类型为'Withdrawal'；日期为'2026-01-16'；币种为'POL'；金额为'3.26896814'；网络为'POL'（即Polygon）；接收地址为'0x6222...3ba71'（与提供的地址前缀和后缀匹配）；交易哈希为'0x1ef3...3de44d'（与提供的哈希值前缀和后缀匹配）；手续费为'0.13'，与要求一致。所有关键字段在语义上均匹配，尽管部分信息被省略显示，但可见部分完全一致。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012221052300100445",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:41:16.273671",
+    "record": {
+      "submission_id": "2026012221052300100445",
+      "date": "2026-01-16",
+      "type": "withdrawal",
+      "token": "POL",
+      "amount": "3.26896814",
+      "network": "Polygon",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8884556403100106589_690457_.jpg",
+      "address": "0x62225d8e8e656154f009694601cca6c5873baf71",
+      "tx_hash": "0x1ef3467cfd019bd15fc1061e0974128a0e5578b8c33442ff390b151f113de44d"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含提现订单的详细信息，如交易状态、日期、币种、金额、网络、地址和交易哈希等。界面中还可见‘Recent Withdrawals’（最近提现）列表，以及‘Withdrawal Details’弹窗，明确指向提现操作。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "binance.com/en/my/wa",
+          "detected_evidence": "Binance logo、'BINANCE'文字标识、界面设计风格与Binance一致、URL中包含'binance.com'域名",
+          "reason": "截图中浏览器地址栏显示URL为'binance.com/en/my/wa'，符合Binance官网域名；页面左上角有Binance的金色logo和名称；界面布局、颜色主题、按钮样式均与Binance平台高度一致，具备其典型特征。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-16",
+            "token": "POL",
+            "amount": "3.26896814",
+            "network": "POL"
+          },
+          "reason": "交易类型为提现（Withdrawal），日期为2026-01-16，币种为POL，金额为3.26896814，网络为POL（即Polygon），接收地址显示为0x6222...3ba71（与目标地址前缀和后缀匹配），交易哈希为0x1ef3...3de44d（与目标哈希前缀和后缀一致），网络手续费为0.13。所有关键字段在语义上均与提供的数据一致，仅部分信息被省略或截断，但可见部分完全匹配。",
+          "confidence": 0.97
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含提现订单的详细信息，如交易状态、日期、币种、金额、网络、地址和交易哈希等。界面中还可见‘Recent Withdrawals’（最近提现）列表，以及‘Withdrawal Details’弹窗，明确指向提现操作。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "binance.com/en/my/wa",
+        "detected_evidence": "Binance logo、'BINANCE'文字标识、界面设计风格与Binance一致、URL中包含'binance.com'域名",
+        "reason": "截图中浏览器地址栏显示URL为'binance.com/en/my/wa'，符合Binance官网域名；页面左上角有Binance的金色logo和名称；界面布局、颜色主题、按钮样式均与Binance平台高度一致，具备其典型特征。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-16",
+          "token": "POL",
+          "amount": "3.26896814",
+          "network": "POL"
+        },
+        "reason": "交易类型为提现（Withdrawal），日期为2026-01-16，币种为POL，金额为3.26896814，网络为POL（即Polygon），接收地址显示为0x6222...3ba71（与目标地址前缀和后缀匹配），交易哈希为0x1ef3...3de44d（与目标哈希前缀和后缀一致），网络手续费为0.13。所有关键字段在语义上均与提供的数据一致，仅部分信息被省略或截断，但可见部分完全匹配。",
+        "confidence": 0.97
+      }
+    }
+  },
+  {
+    "submission_id": "2026012221103000100446",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:41:35.754038",
+    "record": {
+      "submission_id": "2026012221103000100446",
+      "date": "2026-01-12",
+      "type": "deposit",
+      "token": "BNB",
+      "amount": "0.00221783",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8884556403100106589_941333_.jpg",
+      "tx_hash": "0x2067c31a64bbc89dc6833d08a60a1d99fd354a637ae9f7996b9dae5e93214070"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的入金记录页面，包含'Recent Deposits'列表、存款详情弹窗、币种选择、网络选择以及地址和交易哈希等信息。界面元素如'Deposit Crypto'、'Withdraw Crypto'等按钮，以及交易记录的格式都符合交易所的入金记录页面特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "binance.com/en/my/wa",
+          "detected_evidence": "Binance的logo（金色菱形图标）、名称'Binance'在左上角、界面设计风格与Binance一致，包括深色主题、导航栏布局、交易记录样式等。",
+          "reason": "浏览器地址栏中显示了'binance.com'域名，且页面左上角有Binance的标志和名称。此外，界面设计、功能按钮（如'Deposit Crypto'）和交易记录展示方式均与Binance平台高度一致。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "01/12/2026 6:15:52 PM",
+            "token": "BNB",
+            "amount": "0.00221783",
+            "network": "BSC"
+          },
+          "reason": "交易类型为入金（Deposit Details弹窗明确显示），日期为2026年1月12日（与要求一致，仅时间格式不同），币种为BNB，金额为0.00221783（完全匹配），网络为BSC（即BNB链，语义一致），接收地址为0xd325...1fb7c1（与提供的完整地址前缀和后缀匹配），交易哈希为0x2067...214070（与提供的完整哈希前缀和后缀匹配）。所有关键信息在语义上均一致。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的入金记录页面，包含'Recent Deposits'列表、存款详情弹窗、币种选择、网络选择以及地址和交易哈希等信息。界面元素如'Deposit Crypto'、'Withdraw Crypto'等按钮，以及交易记录的格式都符合交易所的入金记录页面特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "binance.com/en/my/wa",
+        "detected_evidence": "Binance的logo（金色菱形图标）、名称'Binance'在左上角、界面设计风格与Binance一致，包括深色主题、导航栏布局、交易记录样式等。",
+        "reason": "浏览器地址栏中显示了'binance.com'域名，且页面左上角有Binance的标志和名称。此外，界面设计、功能按钮（如'Deposit Crypto'）和交易记录展示方式均与Binance平台高度一致。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "01/12/2026 6:15:52 PM",
+          "token": "BNB",
+          "amount": "0.00221783",
+          "network": "BSC"
+        },
+        "reason": "交易类型为入金（Deposit Details弹窗明确显示），日期为2026年1月12日（与要求一致，仅时间格式不同），币种为BNB，金额为0.00221783（完全匹配），网络为BSC（即BNB链，语义一致），接收地址为0xd325...1fb7c1（与提供的完整地址前缀和后缀匹配），交易哈希为0x2067...214070（与提供的完整哈希前缀和后缀匹配）。所有关键信息在语义上均一致。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012221240600100447",
+    "overall_result": "fail",
+    "timestamp": "2026-01-23T16:41:54.749637",
+    "record": {
+      "submission_id": "2026012221240600100447",
+      "date": "2026-01-22",
+      "type": "deposit",
+      "token": "POL",
+      "amount": "6.13472239",
+      "network": "Polygon",
+      "exchange_name": "OKX",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8884556403100106589_138793_.jpg",
+      "tx_hash": "0x838fe8281a2d463189426427d816a9d21d1a30a72717167c06f61989a26766d1"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示的是一个交易所的交易详情页面，包含交易哈希、交易结果、区块信息、时间戳、发送方和接收方地址、金额、手续费等典型交易记录字段。界面顶部有OKX Wallet的标志和导航菜单，底部有交易所特有的功能图标（如交易、资产、钱包等），符合交易所入金或交易记录页面的特征。",
+          "confidence": 0.95
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "web3.okx.com/id/expl",
+          "detected_evidence": "浏览器地址栏中显示的URL为 'web3.okx.com'，明确指向OKX平台；页面顶部有 'OKX Wallet' 的品牌标识；右上角有 'Boost' 和 'Hubungkan' 按钮，是OKX特有的界面元素；页面中还显示了 '# Exchange: OKX User' 标签，进一步确认其归属。",
+          "reason": "截图中存在多个明确证据证明该页面来自OKX交易所：包括URL中的'okx.com'域名、页面顶部的'OKX Wallet'品牌标识、以及页面内标注的'Exchange: OKX User'。这些都足以确认该截图来源于OKX交易所。",
+          "confidence": 1.0
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "fail",
+        "llm_response": {
+          "result": false,
+          "detected_info": {
+            "date": "22/08/2025, 23:51:54",
+            "token": "POL",
+            "amount": "6.13472239896071 POL",
+            "network": "Polygon"
+          },
+          "reason": "虽然币种（POL）、网络（Polygon）和金额（6.13472239）与提供的数据基本一致，且交易哈希和接收地址也完全匹配，但交易日期不一致：截图中显示的日期为2025年8月22日，而要求的日期为2026年1月22日，相差近5个月。此外，交易类型未明确标注为‘入金’，但从‘To:’地址为OKX用户且金额流入来看，语义上可能是入金，但日期冲突导致整体无法匹配。因此判定为不匹配。",
+          "confidence": 0.8
+        }
+      }
+    ],
+    "reason": "以下检查项失败: 交易明细匹配",
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示的是一个交易所的交易详情页面，包含交易哈希、交易结果、区块信息、时间戳、发送方和接收方地址、金额、手续费等典型交易记录字段。界面顶部有OKX Wallet的标志和导航菜单，底部有交易所特有的功能图标（如交易、资产、钱包等），符合交易所入金或交易记录页面的特征。",
+        "confidence": 0.95
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "web3.okx.com/id/expl",
+        "detected_evidence": "浏览器地址栏中显示的URL为 'web3.okx.com'，明确指向OKX平台；页面顶部有 'OKX Wallet' 的品牌标识；右上角有 'Boost' 和 'Hubungkan' 按钮，是OKX特有的界面元素；页面中还显示了 '# Exchange: OKX User' 标签，进一步确认其归属。",
+        "reason": "截图中存在多个明确证据证明该页面来自OKX交易所：包括URL中的'okx.com'域名、页面顶部的'OKX Wallet'品牌标识、以及页面内标注的'Exchange: OKX User'。这些都足以确认该截图来源于OKX交易所。",
+        "confidence": 1.0
+      },
+      "transaction_match": {
+        "result": false,
+        "detected_info": {
+          "date": "22/08/2025, 23:51:54",
+          "token": "POL",
+          "amount": "6.13472239896071 POL",
+          "network": "Polygon"
+        },
+        "reason": "虽然币种（POL）、网络（Polygon）和金额（6.13472239）与提供的数据基本一致，且交易哈希和接收地址也完全匹配，但交易日期不一致：截图中显示的日期为2025年8月22日，而要求的日期为2026年1月22日，相差近5个月。此外，交易类型未明确标注为‘入金’，但从‘To:’地址为OKX用户且金额流入来看，语义上可能是入金，但日期冲突导致整体无法匹配。因此判定为不匹配。",
+        "confidence": 0.8
+      }
+    }
+  },
+  {
+    "submission_id": "2026012221274500100448",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:42:15.428388",
+    "record": {
+      "submission_id": "2026012221274500100448",
+      "date": "2026-01-17",
+      "type": "deposit",
+      "token": "POL",
+      "amount": "9.53",
+      "network": "Polygon",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8884556403100106589_511758_.jpg",
+      "tx_hash": "0x9aa564eddd827d00dcd8efd0101cc5a30ed1ebd1b73a08c6015e5b6fe180ea48"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的入金记录页面，包含‘Recent Deposits’（最近入金）列表、交易详情弹窗（Deposit Details）、交易状态、日期、币种、金额、网络、地址和交易哈希等典型入金信息。界面元素如导航栏、交易记录列表和详细信息弹窗均符合交易所入金记录页面的特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "binance.com/en/my/wa",
+          "detected_evidence": "浏览器地址栏中可见URL包含'binance.com'，且界面底部有Binance特有的图标导航栏（如交易、钱包、合约等），以及页面标题和布局风格与Binance一致。",
+          "reason": "截图中的浏览器地址栏明确显示了'binance.com'域名，这是Binance交易所的官方域名。此外，界面设计、导航图标和页面布局均与Binance平台高度一致，进一步验证了其身份。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "01/17/2026 6:21:29 PM",
+            "token": "POL",
+            "amount": "9.53",
+            "network": "POL"
+          },
+          "reason": "截图中的交易明细显示：交易类型为‘Deposit’（入金），日期为2026年1月17日（01/17/2026），币种为POL，金额为9.53，网络为POL（即Polygon）。接收地址显示为0xd325...1fb7c1，与提供的完整地址0xd32570BeDd30ee44e21df5678Fb963d83A1Fb7C1前缀匹配；交易哈希显示为0x9aa5...80ea48，与提供的完整哈希0x9aa564eddd827d00dcd8efd0101cc5a30ed1ebd1b73a08c6015e5b6fe180ea48前缀匹配。所有关键信息在语义上完全一致，仅部分信息被省略，但可见部分完全匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的入金记录页面，包含‘Recent Deposits’（最近入金）列表、交易详情弹窗（Deposit Details）、交易状态、日期、币种、金额、网络、地址和交易哈希等典型入金信息。界面元素如导航栏、交易记录列表和详细信息弹窗均符合交易所入金记录页面的特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "binance.com/en/my/wa",
+        "detected_evidence": "浏览器地址栏中可见URL包含'binance.com'，且界面底部有Binance特有的图标导航栏（如交易、钱包、合约等），以及页面标题和布局风格与Binance一致。",
+        "reason": "截图中的浏览器地址栏明确显示了'binance.com'域名，这是Binance交易所的官方域名。此外，界面设计、导航图标和页面布局均与Binance平台高度一致，进一步验证了其身份。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "01/17/2026 6:21:29 PM",
+          "token": "POL",
+          "amount": "9.53",
+          "network": "POL"
+        },
+        "reason": "截图中的交易明细显示：交易类型为‘Deposit’（入金），日期为2026年1月17日（01/17/2026），币种为POL，金额为9.53，网络为POL（即Polygon）。接收地址显示为0xd325...1fb7c1，与提供的完整地址0xd32570BeDd30ee44e21df5678Fb963d83A1Fb7C1前缀匹配；交易哈希显示为0x9aa5...80ea48，与提供的完整哈希0x9aa564eddd827d00dcd8efd0101cc5a30ed1ebd1b73a08c6015e5b6fe180ea48前缀匹配。所有关键信息在语义上完全一致，仅部分信息被省略，但可见部分完全匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012221305900100449",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:42:31.451979",
+    "record": {
+      "submission_id": "2026012221305900100449",
+      "date": "2026-01-13",
+      "type": "withdrawal",
+      "token": "POL",
+      "amount": "19.0776533",
+      "network": "Polygon",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8884556403100106589_124234_.jpg",
+      "address": "0x60e6f9e12609b4e0bd715bcf364db1a5c7b68407",
+      "tx_hash": "0xb7cbdca214fbea05beeef3b597ebb0cce3a11d2f1874d7290ea94650407f8724"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了提现订单的详细信息，包括交易状态、时间、币种、金额、网络、地址和交易哈希等关键字段，且页面标题为'Recent Withdrawals'，明确指向交易所的提现记录页面。界面中还包含交易流程图（提交、处理、完成），符合交易所提现记录的典型特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "binance.com/en/my/wa",
+          "detected_evidence": "浏览器地址栏中可见URL包含'binance.com'，且页面设计风格与Binance官方界面一致，包括深色主题、图标样式、按钮布局和字体风格。此外，页面中出现的'Withdrawal Details'和'Spot Wallet'等术语也是Binance平台特有的表述方式。",
+          "reason": "通过浏览器地址栏中的URL 'binance.com/en/my/wa' 可以直接确认该网站属于Binance交易所。同时，页面的UI设计、术语使用（如Spot Wallet、TxID）以及整体布局均与Binance平台高度一致，进一步验证了其身份。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-13",
+            "token": "POL",
+            "amount": "19.0776533",
+            "network": "POL"
+          },
+          "reason": "截图中显示的交易类型为'Withdrawal'，符合提现语义；交易日期为2026-01-13，与要求一致；币种为POL，与给定数据匹配；提现金额为19.0776533，完全一致；网络显示为POL，即Polygon网络，语义上与Polygon一致；接收地址为0x60e...b68407，与给定地址0x60e6f9e12609b4e0bd715bcf364db1a5c7b68407前缀和后缀一致，中间省略部分合理；交易哈希为0xb7cb...7f8724，与给定哈希0xb7cbdca214fbea05beeef3b597ebb0cce3a11d2f1874d7290ea94650407f8724前缀和后缀一致，中间省略部分合理；网络手续费为0.13，与给定值一致。所有信息在语义上均匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了提现订单的详细信息，包括交易状态、时间、币种、金额、网络、地址和交易哈希等关键字段，且页面标题为'Recent Withdrawals'，明确指向交易所的提现记录页面。界面中还包含交易流程图（提交、处理、完成），符合交易所提现记录的典型特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "binance.com/en/my/wa",
+        "detected_evidence": "浏览器地址栏中可见URL包含'binance.com'，且页面设计风格与Binance官方界面一致，包括深色主题、图标样式、按钮布局和字体风格。此外，页面中出现的'Withdrawal Details'和'Spot Wallet'等术语也是Binance平台特有的表述方式。",
+        "reason": "通过浏览器地址栏中的URL 'binance.com/en/my/wa' 可以直接确认该网站属于Binance交易所。同时，页面的UI设计、术语使用（如Spot Wallet、TxID）以及整体布局均与Binance平台高度一致，进一步验证了其身份。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-13",
+          "token": "POL",
+          "amount": "19.0776533",
+          "network": "POL"
+        },
+        "reason": "截图中显示的交易类型为'Withdrawal'，符合提现语义；交易日期为2026-01-13，与要求一致；币种为POL，与给定数据匹配；提现金额为19.0776533，完全一致；网络显示为POL，即Polygon网络，语义上与Polygon一致；接收地址为0x60e...b68407，与给定地址0x60e6f9e12609b4e0bd715bcf364db1a5c7b68407前缀和后缀一致，中间省略部分合理；交易哈希为0xb7cb...7f8724，与给定哈希0xb7cbdca214fbea05beeef3b597ebb0cce3a11d2f1874d7290ea94650407f8724前缀和后缀一致，中间省略部分合理；网络手续费为0.13，与给定值一致。所有信息在语义上均匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012302560500100456",
+    "overall_result": "fail",
+    "timestamp": "2026-01-23T16:42:46.498872",
+    "record": {
+      "submission_id": "2026012302560500100456",
+      "date": "2026-01-23",
+      "type": "deposit",
+      "token": "SOL",
+      "amount": "0.14240679",
+      "network": "SOL",
+      "exchange_name": "OKX",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8782938832800100633_238786_.png",
+      "tx_hash": "2xwCz3Jf3zWt2F1xgnTahAqAf9quSFBWKHKMn9HCtdBMyeHX9gZULULro8q2Dyfa6qbYm1tPmdkiiNhsSMCJHbrr"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示的是一个交易所的入金记录页面，包含交易时间、地址、交易ID、币种、金额、确认数和状态等典型交易记录字段。页面顶部有'Pilih Kripto'、'Pilih Jaringan'、'Detail setoran'等步骤，符合交易所充值流程界面特征。下方的交易列表明确标注了'Semua Riwayat Deposit'（所有存款历史），表明这是入金记录页面。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "okx.com/id/balance/recharge",
+          "detected_evidence": "浏览器地址栏中显示URL为 'okx.com/id/balance/recharge'，且页面标题为 'Setor - Exchange Bitcoin Global'，页面顶部有OKX品牌风格的导航栏和设计元素，如语言切换、用户头像图标等。此外，页面中的‘Setor’（存款）功能与OKX平台常见的充值流程一致。",
+          "reason": "浏览器地址栏清晰显示域名 'okx.com'，这是OKX交易所的官方域名。同时，页面内容、布局和功能均与OKX平台的充值页面高度一致，包括多语言支持、存款步骤引导、交易历史展示方式等，足以证明该截图来自OKX交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "fail",
+        "llm_response": {
+          "result": false,
+          "detected_info": {
+            "date": "23 Jan 2026, 08:41 AM",
+            "token": "SOL",
+            "amount": "0,14240679",
+            "network": "Solana"
+          },
+          "reason": "虽然交易日期（2026年1月23日）、币种（SOL）、金额（0.14240679）与提供的数据在语义上基本匹配，但关键信息存在不一致：\n\n- **接收地址**：截图中显示的地址为 'VPWZ88DQLRRJH1aoB3BakK9oLHnNMvMfgW4weB91xWmdN'，而提供的地址是 'va1t8sdGkReA6XFgAeZGXmdQoiEtMirwy4ifLv7yGdH'，两者完全不同，无法匹配。\n- **交易哈希**：截图中显示的交易哈希为 '2xwC...Hbr'（部分隐藏），而提供的哈希为 '2xwCz3Jf3zWt2F1xgnTahAqAf9quSFBWKHKMn9HCtdBMyeHX9gZULULro8q2Dyfa6qbYm1tPmdkiiNhsSMCJHbrr'，虽然前缀 '2xwC' 相同，但后续内容不一致，且截图未显示完整哈希以验证是否完全匹配。\n\n由于接收地址和交易哈希这两个核心字段不匹配，判定为不匹配。",
+          "confidence": 0.75
+        }
+      }
+    ],
+    "reason": "以下检查项失败: 交易明细匹配",
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示的是一个交易所的入金记录页面，包含交易时间、地址、交易ID、币种、金额、确认数和状态等典型交易记录字段。页面顶部有'Pilih Kripto'、'Pilih Jaringan'、'Detail setoran'等步骤，符合交易所充值流程界面特征。下方的交易列表明确标注了'Semua Riwayat Deposit'（所有存款历史），表明这是入金记录页面。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "okx.com/id/balance/recharge",
+        "detected_evidence": "浏览器地址栏中显示URL为 'okx.com/id/balance/recharge'，且页面标题为 'Setor - Exchange Bitcoin Global'，页面顶部有OKX品牌风格的导航栏和设计元素，如语言切换、用户头像图标等。此外，页面中的‘Setor’（存款）功能与OKX平台常见的充值流程一致。",
+        "reason": "浏览器地址栏清晰显示域名 'okx.com'，这是OKX交易所的官方域名。同时，页面内容、布局和功能均与OKX平台的充值页面高度一致，包括多语言支持、存款步骤引导、交易历史展示方式等，足以证明该截图来自OKX交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": false,
+        "detected_info": {
+          "date": "23 Jan 2026, 08:41 AM",
+          "token": "SOL",
+          "amount": "0,14240679",
+          "network": "Solana"
+        },
+        "reason": "虽然交易日期（2026年1月23日）、币种（SOL）、金额（0.14240679）与提供的数据在语义上基本匹配，但关键信息存在不一致：\n\n- **接收地址**：截图中显示的地址为 'VPWZ88DQLRRJH1aoB3BakK9oLHnNMvMfgW4weB91xWmdN'，而提供的地址是 'va1t8sdGkReA6XFgAeZGXmdQoiEtMirwy4ifLv7yGdH'，两者完全不同，无法匹配。\n- **交易哈希**：截图中显示的交易哈希为 '2xwC...Hbr'（部分隐藏），而提供的哈希为 '2xwCz3Jf3zWt2F1xgnTahAqAf9quSFBWKHKMn9HCtdBMyeHX9gZULULro8q2Dyfa6qbYm1tPmdkiiNhsSMCJHbrr'，虽然前缀 '2xwC' 相同，但后续内容不一致，且截图未显示完整哈希以验证是否完全匹配。\n\n由于接收地址和交易哈希这两个核心字段不匹配，判定为不匹配。",
+        "confidence": 0.75
+      }
+    }
+  },
+  {
+    "submission_id": "2026012302562600100457",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:43:45.399066",
+    "record": {
+      "submission_id": "2026012302562600100457",
+      "date": "2026-01-12",
+      "type": "withdrawal",
+      "token": "USDT",
+      "amount": "71.19831025",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8565290115400108287_340684_.png",
+      "address": "0x1dd9f28fe8194d438ea82d712820b049f4251c48",
+      "tx_hash": "0x0a9dafc726b8d3cb907f064afb090d566c2853b261e15b5a8c439c5332748c7b"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含提现订单的详细信息，如交易状态、时间、币种、金额、网络、地址和交易哈希等。页面左侧有'Withdraw Crypto'选项，右侧有'Recent Withdrawals'列表，且弹窗标题为'Withdrawal Details'，明确表明这是提现记录页面。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "binance.com/en/my/wallet/account/main/withdrawal/crypto/",
+          "detected_evidence": "Binance logo（左上角金色标志）、导航栏中的'Binance'文字、界面设计风格与Binance一致（如顶部导航、侧边栏布局、颜色主题等）",
+          "reason": "浏览器地址栏中显示的URL包含'binance.com'，且页面左上角有Binance的金色logo和品牌名称。此外，界面元素（如'Deposit Crypto'、'Withdraw Crypto'、'Spot Wallet'等）与Binance平台典型设计高度一致，足以确认该截图来自Binance交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-12",
+            "token": "USDT",
+            "amount": "71.19831025",
+            "network": "BSC"
+          },
+          "reason": "交易类型为提现（Withdrawal），日期为2026-01-12，币种为USDT，金额为71.19831025，网络为BSC（即BNB链的别称），手续费为0.01，均与提供数据语义一致。接收地址显示为'0x1dd9...251c48'，与提供的完整地址前缀匹配；交易哈希显示为'0x0a9d...748c7b'，与提供的完整哈希前缀匹配。所有关键字段在语义上一致，仅部分信息被截断，但可见部分完全吻合。",
+          "confidence": 0.97
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含提现订单的详细信息，如交易状态、时间、币种、金额、网络、地址和交易哈希等。页面左侧有'Withdraw Crypto'选项，右侧有'Recent Withdrawals'列表，且弹窗标题为'Withdrawal Details'，明确表明这是提现记录页面。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "binance.com/en/my/wallet/account/main/withdrawal/crypto/",
+        "detected_evidence": "Binance logo（左上角金色标志）、导航栏中的'Binance'文字、界面设计风格与Binance一致（如顶部导航、侧边栏布局、颜色主题等）",
+        "reason": "浏览器地址栏中显示的URL包含'binance.com'，且页面左上角有Binance的金色logo和品牌名称。此外，界面元素（如'Deposit Crypto'、'Withdraw Crypto'、'Spot Wallet'等）与Binance平台典型设计高度一致，足以确认该截图来自Binance交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-12",
+          "token": "USDT",
+          "amount": "71.19831025",
+          "network": "BSC"
+        },
+        "reason": "交易类型为提现（Withdrawal），日期为2026-01-12，币种为USDT，金额为71.19831025，网络为BSC（即BNB链的别称），手续费为0.01，均与提供数据语义一致。接收地址显示为'0x1dd9...251c48'，与提供的完整地址前缀匹配；交易哈希显示为'0x0a9d...748c7b'，与提供的完整哈希前缀匹配。所有关键字段在语义上一致，仅部分信息被截断，但可见部分完全吻合。",
+        "confidence": 0.97
+      }
+    }
+  },
+  {
+    "submission_id": "2026012303024000100458",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:44:00.112123",
+    "record": {
+      "submission_id": "2026012303024000100458",
+      "date": "2026-01-08",
+      "type": "deposit",
+      "token": "USDT",
+      "amount": "30.23225884",
+      "network": "BNB",
+      "exchange_name": "Binance",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8565290115400108287_777953_.png",
+      "tx_hash": "0x9193d964bd4e74985f61074341d7e90934f65c017022efa7ec2f257ec759b66f"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的入金记录页面，包含'Recent Deposits'列表、存款详情弹窗以及与入金相关的字段（如Deposit Address、Deposit amount、TxID等），同时界面顶部有交易所导航栏和交易功能选项，符合交易所入金记录页面的典型特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "binance.com/en/my/wallet/account/main/deposit/crypto",
+          "detected_evidence": "Binance的logo、品牌名称'BINANCE'、界面设计风格（如黄色主题、菜单布局）、以及URL中包含'binance.com'域名。",
+          "reason": "截图中明确显示了Binance的官方Logo和名称，浏览器地址栏中的URL为binance.com，且界面元素与Binance平台的设计风格高度一致，足以证明该截图来自Binance交易所。",
+          "confidence": 1.0
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-08",
+            "token": "USDT",
+            "amount": "30.23225884",
+            "network": "BSC"
+          },
+          "reason": "截图中的交易明细显示：交易类型为'Deposit'（入金）；日期为'01/08/2026 9:08:10 PM'，即2026年1月8日，与要求匹配；币种为USDT；金额为30.23225884，与给定值一致；网络为BSC，语义上等同于BNB（Binance Smart Chain）；接收地址显示为'0x01dd...804221'，与提供的完整地址前缀和后缀一致；交易哈希显示为'0x9193...59b66f'，与提供的完整哈希前缀和后缀一致。所有关键信息在语义上均匹配。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的入金记录页面，包含'Recent Deposits'列表、存款详情弹窗以及与入金相关的字段（如Deposit Address、Deposit amount、TxID等），同时界面顶部有交易所导航栏和交易功能选项，符合交易所入金记录页面的典型特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "binance.com/en/my/wallet/account/main/deposit/crypto",
+        "detected_evidence": "Binance的logo、品牌名称'BINANCE'、界面设计风格（如黄色主题、菜单布局）、以及URL中包含'binance.com'域名。",
+        "reason": "截图中明确显示了Binance的官方Logo和名称，浏览器地址栏中的URL为binance.com，且界面元素与Binance平台的设计风格高度一致，足以证明该截图来自Binance交易所。",
+        "confidence": 1.0
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-08",
+          "token": "USDT",
+          "amount": "30.23225884",
+          "network": "BSC"
+        },
+        "reason": "截图中的交易明细显示：交易类型为'Deposit'（入金）；日期为'01/08/2026 9:08:10 PM'，即2026年1月8日，与要求匹配；币种为USDT；金额为30.23225884，与给定值一致；网络为BSC，语义上等同于BNB（Binance Smart Chain）；接收地址显示为'0x01dd...804221'，与提供的完整地址前缀和后缀一致；交易哈希显示为'0x9193...59b66f'，与提供的完整哈希前缀和后缀一致。所有关键信息在语义上均匹配。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012303081700100459",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:44:17.289267",
+    "record": {
+      "submission_id": "2026012303081700100459",
+      "date": "2026-01-12",
+      "type": "withdrawal",
+      "token": "USDT",
+      "amount": "45.16841608",
+      "network": "BNB",
+      "exchange_name": "Gate.io",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8565290115400108287_321712_.png",
+      "address": "0x1dd9f28fe8194d438ea82d712820b049f4251c48",
+      "tx_hash": "0x61492f0d3d579fdb8cfb8b1f5a4da7645889af9ce2d4af1bbd57104cbfedff1c"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的提现记录页面，包含‘Recent Withdrawals’（最近提现）列表、提现详情弹窗、订单ID、时间、金额、网络、地址、交易哈希等典型提现信息。界面顶部有交易所导航栏和品牌标识，符合交易所交易记录页面的特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "gate.com/myaccount/funds/withdraw/USDT",
+          "detected_evidence": "浏览器地址栏中显示URL为 gate.com，且页面左上角有Gate.io的logo和品牌名称 'Gate'，导航栏中有 'Buy Crypto'、'Markets'、'Trade' 等典型Gate.io界面元素。",
+          "reason": "截图中的浏览器地址栏明确显示域名 'gate.com'，且页面左上角有Gate.io的标志和名称，同时界面设计风格与Gate.io官网一致，多个证据共同证明该截图来自Gate.io交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-12",
+            "token": "USDT",
+            "amount": "45.16841608",
+            "network": "BSC"
+          },
+          "reason": "截图中的提现详情显示：\n- 交易类型为‘Withdrawal’，属于提现操作。\n- 时间为2026-01-12 09:13:12，日期匹配。\n- 币种为USDT，与要求一致。\n- 提现金额为45.16841608 USDT，与目标金额完全一致。\n- 网络为BSC，与BNB（Binance Smart Chain）语义一致。\n- 接收地址为0x1dd9f28fe8194d438ea82d712820b049f4251c48，完全匹配。\n- 交易哈希为0x61492f0d3d579fdb8cfb8b1f5a4da7645889af9ce2d4af1bbd57104cbfedff1c，完全匹配。\n- 手续费为0.5 USDT，与要求一致。\n所有关键字段均语义匹配，无冲突。",
+          "confidence": 0.99
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的提现记录页面，包含‘Recent Withdrawals’（最近提现）列表、提现详情弹窗、订单ID、时间、金额、网络、地址、交易哈希等典型提现信息。界面顶部有交易所导航栏和品牌标识，符合交易所交易记录页面的特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "gate.com/myaccount/funds/withdraw/USDT",
+        "detected_evidence": "浏览器地址栏中显示URL为 gate.com，且页面左上角有Gate.io的logo和品牌名称 'Gate'，导航栏中有 'Buy Crypto'、'Markets'、'Trade' 等典型Gate.io界面元素。",
+        "reason": "截图中的浏览器地址栏明确显示域名 'gate.com'，且页面左上角有Gate.io的标志和名称，同时界面设计风格与Gate.io官网一致，多个证据共同证明该截图来自Gate.io交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-12",
+          "token": "USDT",
+          "amount": "45.16841608",
+          "network": "BSC"
+        },
+        "reason": "截图中的提现详情显示：\n- 交易类型为‘Withdrawal’，属于提现操作。\n- 时间为2026-01-12 09:13:12，日期匹配。\n- 币种为USDT，与要求一致。\n- 提现金额为45.16841608 USDT，与目标金额完全一致。\n- 网络为BSC，与BNB（Binance Smart Chain）语义一致。\n- 接收地址为0x1dd9f28fe8194d438ea82d712820b049f4251c48，完全匹配。\n- 交易哈希为0x61492f0d3d579fdb8cfb8b1f5a4da7645889af9ce2d4af1bbd57104cbfedff1c，完全匹配。\n- 手续费为0.5 USDT，与要求一致。\n所有关键字段均语义匹配，无冲突。",
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "submission_id": "2026012303160000100460",
+    "overall_result": "pass",
+    "timestamp": "2026-01-23T16:44:43.587601",
+    "record": {
+      "submission_id": "2026012303160000100460",
+      "date": "2026-01-08",
+      "type": "deposit",
+      "token": "USDT",
+      "amount": "0.5",
+      "network": "BNB",
+      "exchange_name": "Gate.io",
+      "exchange_ui_screenshot_url": "https://file.b18a.io/8565290115400108287_535396_.png",
+      "tx_hash": "0x1130132bbf20ac9b988c4eeaacef6ab5bf24fbc49d257d884cba8b768d747f11"
+    },
+    "checks": [
+      {
+        "check_name": "is_exchange_record",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "reason": "截图显示了交易所的入金记录页面，包含‘Deposits & Withdrawals’标题、交易记录列表（Order ID、Time、TxID、Address、Coin、Amount、Status）、以及‘Deposit’和‘Withdrawal’选项卡。界面元素如导航栏、左侧菜单、交易详情等均符合交易所资金管理页面的典型特征。",
+          "confidence": 0.98
+        }
+      },
+      {
+        "check_name": "exchange_verification",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_url": "gate.com/myaccount/funds/mydeposits?type=currency",
+          "detected_evidence": "浏览器地址栏中显示的URL包含'gate.com'，左上角有Gate.io的logo（蓝色圆形加白色文字‘Gate’），顶部导航栏中有‘Futures Mall’、‘Reward’等Gate.io特有的功能标签，且整体界面风格与Gate.io一致。",
+          "reason": "截图中明确显示了Gate.io的域名（gate.com）和品牌标识（Logo和名称），同时界面设计和功能布局（如Futures Mall、Reward等）也与Gate.io平台高度一致，足以确认该截图来自Gate.io交易所。",
+          "confidence": 0.99
+        }
+      },
+      {
+        "check_name": "transaction_match",
+        "result": "pass",
+        "llm_response": {
+          "result": true,
+          "detected_info": {
+            "date": "2026-01-08",
+            "token": "USDT",
+            "amount": "0.5",
+            "network": "BNB"
+          },
+          "reason": "截图中的交易记录显示：\n- 交易类型为‘Deposit’（在‘Deposit’选项卡下，且状态为‘Credited’，表示入金成功）；\n- 时间为‘2026-01-08 12:17:40’，与目标日期一致；\n- 币种为‘USDT’，与目标币种一致；\n- 金额为‘0.5’，与目标金额一致；\n- 接收地址显示为‘0xE44...d466BB’，与目标地址‘0xE442590d7c30653b5A8F4Ced1cCe497aD6d466bB’前缀和后缀匹配；\n- 交易哈希显示为‘0x113...747f11’，与目标哈希‘0x1130132bbf20ac9b988c4eeaacef6ab5bf24fbc49d257d884cba8b768d747f11’前缀和后缀匹配；\n- 虽然网络未直接标注，但接收地址以‘0xE44...’开头，属于BSC（BNB）链上常见格式，且Gate.io通常将BNB链上的USDT标记为BSC-USDT或类似，结合上下文可合理推断为BNB网络。因此所有关键信息语义一致。",
+          "confidence": 0.95
+        }
+      }
+    ],
+    "llm_raw_response": {
+      "is_exchange_record": {
+        "result": true,
+        "reason": "截图显示了交易所的入金记录页面，包含‘Deposits & Withdrawals’标题、交易记录列表（Order ID、Time、TxID、Address、Coin、Amount、Status）、以及‘Deposit’和‘Withdrawal’选项卡。界面元素如导航栏、左侧菜单、交易详情等均符合交易所资金管理页面的典型特征。",
+        "confidence": 0.98
+      },
+      "exchange_verification": {
+        "result": true,
+        "detected_url": "gate.com/myaccount/funds/mydeposits?type=currency",
+        "detected_evidence": "浏览器地址栏中显示的URL包含'gate.com'，左上角有Gate.io的logo（蓝色圆形加白色文字‘Gate’），顶部导航栏中有‘Futures Mall’、‘Reward’等Gate.io特有的功能标签，且整体界面风格与Gate.io一致。",
+        "reason": "截图中明确显示了Gate.io的域名（gate.com）和品牌标识（Logo和名称），同时界面设计和功能布局（如Futures Mall、Reward等）也与Gate.io平台高度一致，足以确认该截图来自Gate.io交易所。",
+        "confidence": 0.99
+      },
+      "transaction_match": {
+        "result": true,
+        "detected_info": {
+          "date": "2026-01-08",
+          "token": "USDT",
+          "amount": "0.5",
+          "network": "BNB"
+        },
+        "reason": "截图中的交易记录显示：\n- 交易类型为‘Deposit’（在‘Deposit’选项卡下，且状态为‘Credited’，表示入金成功）；\n- 时间为‘2026-01-08 12:17:40’，与目标日期一致；\n- 币种为‘USDT’，与目标币种一致；\n- 金额为‘0.5’，与目标金额一致；\n- 接收地址显示为‘0xE44...d466BB’，与目标地址‘0xE442590d7c30653b5A8F4Ced1cCe497aD6d466bB’前缀和后缀匹配；\n- 交易哈希显示为‘0x113...747f11’，与目标哈希‘0x1130132bbf20ac9b988c4eeaacef6ab5bf24fbc49d257d884cba8b768d747f11’前缀和后缀匹配；\n- 虽然网络未直接标注，但接收地址以‘0xE44...’开头，属于BSC（BNB）链上常见格式，且Gate.io通常将BNB链上的USDT标记为BSC-USDT或类似，结合上下文可合理推断为BNB网络。因此所有关键信息语义一致。",
+        "confidence": 0.95
+      }
+    }
+  }
+]

@@ -1,0 +1,2232 @@
+{
+  "result": "success",
+  "audit_results": [
+    {
+      "submission_id": "2026011504082400108842",
+      "timestamp": "2026-01-28T11:30:11.144017",
+      "ui_audit": {
+        "submission_id": "2026011504082400108842",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T11:30:34.300060",
+        "record": {
+          "submission_id": "2026011504082400108842",
+          "date": "2026-01-15",
+          "type": "deposit",
+          "token": "USDT",
+          "amount": "10",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/158960984850432_198488_.png",
+          "tx_hash": "0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的入金记录页面，包含'Deposit Crypto'、'Recent Deposits'等明确标识，以及交易详情弹窗中的'Deposit Details'。界面中还展示了币种、金额、网络、地址、TxID等典型的入金信息，符合交易所入金记录页面的特征。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+              "detected_evidence": "浏览器地址栏中显示的URL包含'binance.com'，页面左上角有Binance的金色logo和品牌名称'BINANCE'，导航栏中有'Binance'特有的菜单项如'Trade'、'Futures'、'Earn'等，界面设计风格与Binance一致。",
+              "reason": "截图中不仅在浏览器地址栏中清晰可见'binance.com'域名，而且页面左上角有Binance的官方logo和品牌名称，同时界面布局和功能按钮（如'Deposit Crypto'、'Withdraw Crypto'）均符合Binance交易所的典型设计，足以确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-15",
+              "reason": "截图中'Deposit Details'弹窗显示的日期为'01/15/2026 11:55:50 AM'，格式为月/日/年，对应日期为2026年1月15日。转换为YYYY-MM-DD格式后为'2026-01-15'，与提交数据中的日期完全一致，差值为0天，在1天之内，因此判定为匹配。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "USDT",
+                "amount": "10",
+                "network": "BSC",
+                "address": "0xb5e8...c9d807",
+                "tx_hash": "0x5970...7d3d41"
+              },
+              "reason": "截图中显示的交易类型为'Deposit'（入金），币种为USDT，金额为10，网络为BSC（即BNB链，语义一致），接收地址为'0xb5e8...c9d807'，与提交数据中的'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'前缀和后缀一致，交易哈希为'0x5970...7d3d41'，与提交数据中的'0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41'前缀和后缀一致。所有信息在语义上均匹配，无明显冲突。",
+              "confidence": 0.98
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的入金记录页面，包含'Deposit Crypto'、'Recent Deposits'等明确标识，以及交易详情弹窗中的'Deposit Details'。界面中还展示了币种、金额、网络、地址、TxID等典型的入金信息，符合交易所入金记录页面的特征。",
+            "confidence": 0.99
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+            "detected_evidence": "浏览器地址栏中显示的URL包含'binance.com'，页面左上角有Binance的金色logo和品牌名称'BINANCE'，导航栏中有'Binance'特有的菜单项如'Trade'、'Futures'、'Earn'等，界面设计风格与Binance一致。",
+            "reason": "截图中不仅在浏览器地址栏中清晰可见'binance.com'域名，而且页面左上角有Binance的官方logo和品牌名称，同时界面布局和功能按钮（如'Deposit Crypto'、'Withdraw Crypto'）均符合Binance交易所的典型设计，足以确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-15",
+            "reason": "截图中'Deposit Details'弹窗显示的日期为'01/15/2026 11:55:50 AM'，格式为月/日/年，对应日期为2026年1月15日。转换为YYYY-MM-DD格式后为'2026-01-15'，与提交数据中的日期完全一致，差值为0天，在1天之内，因此判定为匹配。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "USDT",
+              "amount": "10",
+              "network": "BSC",
+              "address": "0xb5e8...c9d807",
+              "tx_hash": "0x5970...7d3d41"
+            },
+            "reason": "截图中显示的交易类型为'Deposit'（入金），币种为USDT，金额为10，网络为BSC（即BNB链，语义一致），接收地址为'0xb5e8...c9d807'，与提交数据中的'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'前缀和后缀一致，交易哈希为'0x5970...7d3d41'，与提交数据中的'0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41'前缀和后缀一致。所有信息在语义上均匹配，无明显冲突。",
+            "confidence": 0.98
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026011504082400108842",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: True, 类型: bool",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+            "actual": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807",
+            "actual": "0x55d398326f99059fF775485246999027B3197955",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-15",
+            "actual": "2026-01-15",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_equals_outgoing_from_address",
+            "expected": "to_address (0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807) == outgoing_tx_from_address (0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8)",
+            "actual": "to_address: 0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807, outgoing_tx_from_address: 0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8",
+            "result": "fail"
+          },
+          {
+            "check_name": "outgoing_tx_from_address_match",
+            "expected": "0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8",
+            "actual": "0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8",
+            "result": "pass"
+          },
+          {
+            "check_name": "outgoing_tx_to_address_match",
+            "expected": "0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807",
+            "actual": "0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "main_tx_to_address_match: 期望 0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807, 实际 0x55d398326f99059fF775485246999027B3197955",
+          "to_address (0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807) 与 outgoing_tx_from_address (0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8) 不一致"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012711505800100948",
+      "timestamp": "2026-01-28T11:30:39.625907",
+      "ui_audit": {
+        "submission_id": "2026012711505800100948",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T11:31:05.457353",
+        "record": {
+          "submission_id": "2026012711505800100948",
+          "date": "2026-01-24",
+          "type": "withdrawal",
+          "token": "BNB",
+          "amount": "0.01146552",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/159041695535104_426785_.jpg",
+          "address": "0x8f4d466606f280C7402153f1f0101928c1819DAC",
+          "tx_hash": "0x38041b7e408287890dcd9930cc7bd19cf5d18189f515b3d866fa21e1842eac21"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示的是一个交易所的提现详情页面，包含提现金额、网络、地址、交易哈希（Txid）、手续费、钱包类型和时间等信息。页面顶部有‘Detail Penarikan’（提现详情）标题，底部有‘Tarik Lagi’（再次提现）按钮，这些均为典型的交易所提现记录界面元素。",
+              "confidence": 0.95
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "页面中明确显示了‘Binance’相关的文字提示：‘Kripto ditransfer keluar dari Binance.’（加密货币已从Binance转出），并且页面语言为印尼语，与Binance平台在东南亚地区的多语言支持一致。此外，界面设计风格（如绿色完成标记、黄色按钮、简洁布局）与Binance移动端APP高度一致。",
+              "reason": "虽然没有显示URL或logo，但截图中的文本‘Kripto ditransfer keluar dari Binance.’直接表明该交易来自Binance。结合其界面设计风格和功能布局，可以确认这是Binance的提现记录页面。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-24",
+              "reason": "截图中‘Tanggal’（日期）字段显示为‘2026-01-24 18:30:07’，提取出的日期为2026-01-24，与提交数据中的日期完全一致。日期差值为0天，在1天之内，因此判定为匹配。",
+              "confidence": 1.0
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "BNB",
+                "amount": "0.01146552",
+                "network": "BSC",
+                "address": "0x8f4d466606f280C7402153f1f0101928c1819DAC",
+                "tx_hash": "0x38041b7e408287890dcd9930cc7bd19cf5d18189f515b3d866fa21e1842eac21"
+              },
+              "reason": "1. 交易类型：页面标题为‘Detail Penarikan’，意为‘提现详情’，符合‘提现’语义。\n2. 币种：显示为‘BNB’，与提交数据一致。\n3. 金额：截图中显示‘-0.01146552 BNB’，与提交数据‘0.01146552’数值一致（负号表示转出）。\n4. 网络：显示为‘BSC’，即Binance Smart Chain，与‘BNB’网络语义一致。\n5. 接收地址：完整显示为‘0x8f4d466606f280C7402153f1f0101928c1819DAC’，与提交数据完全一致。\n6. 交易哈希：完整显示为‘0x38041b7e408287890dcd9930cc7bd19cf5d18189f515b3d866fa21e1842eac21’，与提交数据完全一致。\n7. 网络手续费：显示为‘0.00001 BNB’，与提交数据‘0.00001’完全一致。\n所有信息均在语义上匹配，无冲突。",
+              "confidence": 1.0
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示的是一个交易所的提现详情页面，包含提现金额、网络、地址、交易哈希（Txid）、手续费、钱包类型和时间等信息。页面顶部有‘Detail Penarikan’（提现详情）标题，底部有‘Tarik Lagi’（再次提现）按钮，这些均为典型的交易所提现记录界面元素。",
+            "confidence": 0.95
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "页面中明确显示了‘Binance’相关的文字提示：‘Kripto ditransfer keluar dari Binance.’（加密货币已从Binance转出），并且页面语言为印尼语，与Binance平台在东南亚地区的多语言支持一致。此外，界面设计风格（如绿色完成标记、黄色按钮、简洁布局）与Binance移动端APP高度一致。",
+            "reason": "虽然没有显示URL或logo，但截图中的文本‘Kripto ditransfer keluar dari Binance.’直接表明该交易来自Binance。结合其界面设计风格和功能布局，可以确认这是Binance的提现记录页面。",
+            "confidence": 0.98
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-24",
+            "reason": "截图中‘Tanggal’（日期）字段显示为‘2026-01-24 18:30:07’，提取出的日期为2026-01-24，与提交数据中的日期完全一致。日期差值为0天，在1天之内，因此判定为匹配。",
+            "confidence": 1.0
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "BNB",
+              "amount": "0.01146552",
+              "network": "BSC",
+              "address": "0x8f4d466606f280C7402153f1f0101928c1819DAC",
+              "tx_hash": "0x38041b7e408287890dcd9930cc7bd19cf5d18189f515b3d866fa21e1842eac21"
+            },
+            "reason": "1. 交易类型：页面标题为‘Detail Penarikan’，意为‘提现详情’，符合‘提现’语义。\n2. 币种：显示为‘BNB’，与提交数据一致。\n3. 金额：截图中显示‘-0.01146552 BNB’，与提交数据‘0.01146552’数值一致（负号表示转出）。\n4. 网络：显示为‘BSC’，即Binance Smart Chain，与‘BNB’网络语义一致。\n5. 接收地址：完整显示为‘0x8f4d466606f280C7402153f1f0101928c1819DAC’，与提交数据完全一致。\n6. 交易哈希：完整显示为‘0x38041b7e408287890dcd9930cc7bd19cf5d18189f515b3d866fa21e1842eac21’，与提交数据完全一致。\n7. 网络手续费：显示为‘0.00001 BNB’，与提交数据‘0.00001’完全一致。\n所有信息均在语义上匹配，无冲突。",
+            "confidence": 1.0
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012711505800100948",
+        "type": "withdrawal",
+        "result": "pass",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0x8f4d466606f280C7402153f1f0101928c1819DAC) == address (0x8f4d466606f280C7402153f1f0101928c1819DAC)",
+            "actual": "receiver_address: 0x8f4d466606f280C7402153f1f0101928c1819DAC, address: 0x8f4d466606f280C7402153f1f0101928c1819DAC",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0xa180Fe01B906A1bE37BE6c534a3300785b20d947",
+            "actual": "0xa180Fe01B906A1bE37BE6c534a3300785b20d947",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0x8f4d466606f280C7402153f1f0101928c1819DAC",
+            "actual": "0x8f4d466606f280C7402153f1f0101928c1819DAC",
+            "result": "pass"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-24",
+            "actual": "2026-01-24",
+            "result": "pass"
+          }
+        ],
+        "errors": []
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012712184200100949",
+      "timestamp": "2026-01-28T11:31:06.180930",
+      "ui_audit": {
+        "submission_id": "2026012712184200100949",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T11:31:34.969831",
+        "record": {
+          "submission_id": "2026012712184200100949",
+          "date": "2026-01-26",
+          "type": "withdrawal",
+          "token": "BSC-USDT",
+          "amount": "700",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7893215244100103924_805560_.png",
+          "address": "0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2",
+          "tx_hash": "0xf604da3cfc7d84545c0b27c8ea6f3a13d0340ba031d1cfc17478512f0b60ce05"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、交易列表、导航栏（如Dashboard、Assets、Orders等）、以及提现相关的字段（如Withdrawal Details、Status、Date、Coin、Amount、Network Fee、Address、TxID等）。这些元素均符合交易所提现记录页面的典型特征。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "https://binance.com/en/my/wallet/history/withdraw-crypto",
+              "detected_evidence": "浏览器地址栏中可见URL包含'binance.com'，且页面左上角有Binance的logo和品牌名称。界面设计风格与Binance平台一致，包括深色主题、图标布局、菜单结构等。",
+              "reason": "截图中浏览器地址栏明确显示了'binance.com'，并且页面左上角有Binance的金色logo和文字标识，同时界面布局和功能模块（如Buy Crypto、Markets、Trade等）与Binance平台高度一致，足以证明该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-26",
+              "reason": "截图中在'Withdrawal order submitted'和'System processing'时间点显示为'2026-01-26 17:25'，在'Completed'时间点显示为'2026-01-26 17:26'，提取的日期为2026-01-26，与提交数据中的日期2026-01-26完全一致，差值为0天，在1天以内，因此判定为匹配。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "USDT",
+                "amount": "700.00",
+                "network": "BSC",
+                "address": "0xb7b2...602Cd2",
+                "tx_hash": "0xf604...60ce05"
+              },
+              "reason": "截图中显示的交易信息如下：\n- 交易类型：'Withdrawal'，与提交数据中的'提现'语义一致。\n- 币种：显示为'USDT'，与'BSC-USDT'基础币种一致。\n- 金额：显示为'700.00'，与提交数据中的'700'数值一致。\n- 网络：显示为'BSC'，与'BNB'为同一网络的不同命名方式，语义一致。\n- 接收地址：显示为'0xb7b2...602Cd2'，与提交数据中的'0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2'前缀和后缀一致，中间省略部分不影响语义匹配。\n- 交易哈希：显示为'0xf604...60ce05'，与提交数据中的'0xf604da3cfc7d84545c0b27c8ea6f3a13d0340ba031d1cfc17478512f0b60ce05'前缀和后缀一致，中间省略部分不影响语义匹配。\n- 网络手续费：显示为'0.01'，与提交数据中的'0.01'一致。\n所有信息在语义上均与提交数据匹配，仅存在格式上的简化或省略，不影响整体一致性。",
+              "confidence": 0.98
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、交易列表、导航栏（如Dashboard、Assets、Orders等）、以及提现相关的字段（如Withdrawal Details、Status、Date、Coin、Amount、Network Fee、Address、TxID等）。这些元素均符合交易所提现记录页面的典型特征。",
+            "confidence": 0.99
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "https://binance.com/en/my/wallet/history/withdraw-crypto",
+            "detected_evidence": "浏览器地址栏中可见URL包含'binance.com'，且页面左上角有Binance的logo和品牌名称。界面设计风格与Binance平台一致，包括深色主题、图标布局、菜单结构等。",
+            "reason": "截图中浏览器地址栏明确显示了'binance.com'，并且页面左上角有Binance的金色logo和文字标识，同时界面布局和功能模块（如Buy Crypto、Markets、Trade等）与Binance平台高度一致，足以证明该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-26",
+            "reason": "截图中在'Withdrawal order submitted'和'System processing'时间点显示为'2026-01-26 17:25'，在'Completed'时间点显示为'2026-01-26 17:26'，提取的日期为2026-01-26，与提交数据中的日期2026-01-26完全一致，差值为0天，在1天以内，因此判定为匹配。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "USDT",
+              "amount": "700.00",
+              "network": "BSC",
+              "address": "0xb7b2...602Cd2",
+              "tx_hash": "0xf604...60ce05"
+            },
+            "reason": "截图中显示的交易信息如下：\n- 交易类型：'Withdrawal'，与提交数据中的'提现'语义一致。\n- 币种：显示为'USDT'，与'BSC-USDT'基础币种一致。\n- 金额：显示为'700.00'，与提交数据中的'700'数值一致。\n- 网络：显示为'BSC'，与'BNB'为同一网络的不同命名方式，语义一致。\n- 接收地址：显示为'0xb7b2...602Cd2'，与提交数据中的'0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2'前缀和后缀一致，中间省略部分不影响语义匹配。\n- 交易哈希：显示为'0xf604...60ce05'，与提交数据中的'0xf604da3cfc7d84545c0b27c8ea6f3a13d0340ba031d1cfc17478512f0b60ce05'前缀和后缀一致，中间省略部分不影响语义匹配。\n- 网络手续费：显示为'0.01'，与提交数据中的'0.01'一致。\n所有信息在语义上均与提交数据匹配，仅存在格式上的简化或省略，不影响整体一致性。",
+            "confidence": 0.98
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012712184200100949",
+        "type": "withdrawal",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2) == address (0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2)",
+            "actual": "receiver_address: 0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2, address: 0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0x9712df8c6e5492340d92fb3c7498be1c61afde10",
+            "actual": "0x161bA15A5f335c9f06BB5BbB0A9cE14076FBb645",
+            "result": "fail"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2",
+            "actual": "0x55d398326f99059fF775485246999027B3197955",
+            "result": "fail"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-26",
+            "actual": "2026-01-27",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "from_address_match: 期望 0x9712df8c6e5492340d92fb3c7498be1c61afde10, 实际 0x161bA15A5f335c9f06BB5BbB0A9cE14076FBb645",
+          "to_address_match: 期望 0xb7b2B2b13B5e41DFC41Fc9f4550AE81Fef602Cd2, 实际 0x55d398326f99059fF775485246999027B3197955"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802235700100958",
+      "timestamp": "2026-01-28T11:32:38.067782",
+      "ui_audit": {
+        "submission_id": "2026012802235700100958",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:33:01.965436",
+        "record": {
+          "submission_id": "2026012802235700100958",
+          "date": "2026-01-12",
+          "type": "withdrawal",
+          "token": "BSC-USDT",
+          "amount": "30",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_757368_.png",
+          "address": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+          "tx_hash": "0xf0dfcae90bd1432a0236d0c1125b2a7f782864bd3d2f1298c5ba6cc5e2d0bd20"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、近期提现记录列表、交易时间、币种、金额、地址、交易哈希等典型提现信息。界面顶部有交易所导航栏（行情、交易、广场、更多），左侧有充值/提现功能入口，符合交易所提现记录页面的特征。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "截图左上角有‘币安’品牌标识和logo（黄色菱形图标+文字‘币安’）；底部有‘Binance© 2026’字样；界面设计风格与Binance平台一致，包括深色主题、按钮样式、字体排版等；提现详情中使用了‘提币申请已提交’等术语，为Binance常用表述。",
+              "reason": "虽然没有显示浏览器地址栏，但截图中明确可见‘币安’品牌名称和logo，底部标注‘Binance© 2026’，且整体界面设计风格、术语使用与Binance平台高度一致，足以证明该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-12",
+              "reason": "截图中提现详情弹窗显示‘提币申请已提交’时间为‘2026-01-12 18:02’，系统处理中时间为‘2026-01-12 18:03’，已完成时间为‘2026-01-12 18:03’。提取的日期为2026-01-12，与提交数据中的日期2026-01-12完全一致，差值为0天，在允许范围内。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "USDT",
+                "amount": "29.99",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0xf0df...d0bd20"
+              },
+              "reason": "交易类型：截图显示为提现（‘提币申请’、‘提现详情’），匹配。\n币种：截图显示为USDT，与提交数据中的BSC-USDT语义一致（USDT在BSC网络上即为BSC-USDT），匹配。\n金额：截图显示提现金额为29.99 USDT，而提交数据为30，存在明显差异（差值0.01），超出微小四舍五入范围，不匹配。\n网络：截图显示转账网络为BSC，与提交数据中的BNB（即BSC）一致，匹配。\n接收地址：截图显示地址为0x9180...7b7E96，与提交数据中的0x9180E0C275379D1283fe35D260712e53Da7b7E96前缀和后缀部分一致，中间省略号隐藏，可视为匹配。\n交易哈希：截图显示TXID为0xf0df...d0bd20，与提交数据中的0xf0dfcae90bd1432a0236d0c1125b2a7f782864bd3d2f1298c5ba6cc5e2d0bd20前缀和后缀一致，中间省略，可视为匹配。\n网络手续费：截图显示手续费为0.01，与提交数据一致，匹配。\n但由于金额不匹配（29.99 vs 30），整体判定为不匹配。",
+              "confidence": 0.75
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、近期提现记录列表、交易时间、币种、金额、地址、交易哈希等典型提现信息。界面顶部有交易所导航栏（行情、交易、广场、更多），左侧有充值/提现功能入口，符合交易所提现记录页面的特征。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "截图左上角有‘币安’品牌标识和logo（黄色菱形图标+文字‘币安’）；底部有‘Binance© 2026’字样；界面设计风格与Binance平台一致，包括深色主题、按钮样式、字体排版等；提现详情中使用了‘提币申请已提交’等术语，为Binance常用表述。",
+            "reason": "虽然没有显示浏览器地址栏，但截图中明确可见‘币安’品牌名称和logo，底部标注‘Binance© 2026’，且整体界面设计风格、术语使用与Binance平台高度一致，足以证明该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-12",
+            "reason": "截图中提现详情弹窗显示‘提币申请已提交’时间为‘2026-01-12 18:02’，系统处理中时间为‘2026-01-12 18:03’，已完成时间为‘2026-01-12 18:03’。提取的日期为2026-01-12，与提交数据中的日期2026-01-12完全一致，差值为0天，在允许范围内。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "USDT",
+              "amount": "29.99",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0xf0df...d0bd20"
+            },
+            "reason": "交易类型：截图显示为提现（‘提币申请’、‘提现详情’），匹配。\n币种：截图显示为USDT，与提交数据中的BSC-USDT语义一致（USDT在BSC网络上即为BSC-USDT），匹配。\n金额：截图显示提现金额为29.99 USDT，而提交数据为30，存在明显差异（差值0.01），超出微小四舍五入范围，不匹配。\n网络：截图显示转账网络为BSC，与提交数据中的BNB（即BSC）一致，匹配。\n接收地址：截图显示地址为0x9180...7b7E96，与提交数据中的0x9180E0C275379D1283fe35D260712e53Da7b7E96前缀和后缀部分一致，中间省略号隐藏，可视为匹配。\n交易哈希：截图显示TXID为0xf0df...d0bd20，与提交数据中的0xf0dfcae90bd1432a0236d0c1125b2a7f782864bd3d2f1298c5ba6cc5e2d0bd20前缀和后缀一致，中间省略，可视为匹配。\n网络手续费：截图显示手续费为0.01，与提交数据一致，匹配。\n但由于金额不匹配（29.99 vs 30），整体判定为不匹配。",
+            "confidence": 0.75
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802235700100958",
+        "type": "withdrawal",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "receiver_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0xe2fc31F816A9b94326492132018C3aEcC4a93aE1",
+            "actual": "0xe2fc31F816A9b94326492132018C3aEcC4a93aE1",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x55d398326f99059fF775485246999027B3197955",
+            "result": "fail"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-12",
+            "actual": "2026-01-12",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "to_address_match: 期望 0x9180E0C275379D1283fe35D260712e53Da7b7E96, 实际 0x55d398326f99059fF775485246999027B3197955"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802272900100959",
+      "timestamp": "2026-01-28T11:33:02.705227",
+      "ui_audit": {
+        "submission_id": "2026012802272900100959",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:33:38.273728",
+        "record": {
+          "submission_id": "2026012802272900100959",
+          "date": "2026-01-07",
+          "type": "withdrawal",
+          "token": "BNB",
+          "amount": "6",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_131506_.png",
+          "address": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+          "tx_hash": "0x9dc5e46a00b891c8ccd9db5f24da4fd7cdcc7d047cc1dd9a74328a6dcb40aa2b"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的提现记录页面，包含‘近期提现记录’列表、提现详情弹窗、交易状态流程（提交、处理中、已完成）、币种、金额、地址、TxID等典型提现信息。界面左侧有‘数字货币提现’、‘法币充值’等导航项，符合交易所提现功能的典型布局。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "左上角有‘币安’字样和对应的金色菱形logo，这是Binance交易所的标志性品牌标识；界面语言为中文，且‘币安用户’、‘提币账户’等术语与Binance平台风格一致；界面设计风格（深色主题、图标样式、按钮布局）与Binance官方UI高度相似。",
+              "reason": "虽然没有显示URL，但左上角明确显示‘币安’文字及品牌logo，且界面元素与Binance平台一致，足以确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-07",
+              "reason": "截图中提现详情显示‘提币申请已提交’时间为‘2026-01-07 15:49’，‘系统处理中’时间为‘2026-01-07 15:50’，‘已完成’时间为‘2026-01-07 15:50’。提取到的日期为2026-01-07，与提交数据中的日期完全一致，差值为0天，在1天之内，因此判定为匹配。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "BNB",
+                "amount": "5.99999",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0x9dc5...40aa2b"
+              },
+              "reason": "交易类型为提现（‘提现详情’、‘提币申请’等字样），匹配；币种为BNB，匹配；网络为BSC，与‘BNB’网络语义一致，匹配；接收地址在截图中显示为‘0x9180...7b7E96’，与提交数据中的‘0x9180E0C275379D1283fe35D260712e53Da7b7E96’前缀和后缀部分一致，可见部分匹配；交易哈希为‘0x9dc5...40aa2b’，与提交数据中的‘0x9dc5e46a00b891c8ccd9db5f24da4fd7cdcc7d047cc1dd9a74328a6dcb40aa2b’前缀和后缀一致，可见部分匹配；手续费为0.00001，与提交数据一致。然而，金额方面，截图中提现金额为5.99999，而提交数据中为6，存在明显差异（差值约0.00001），虽极小，但未达到语义一致的标准（如四舍五入可接受），且5.99999 ≠ 6，故金额不匹配。因此整体判定为不匹配。",
+              "confidence": 0.85
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的提现记录页面，包含‘近期提现记录’列表、提现详情弹窗、交易状态流程（提交、处理中、已完成）、币种、金额、地址、TxID等典型提现信息。界面左侧有‘数字货币提现’、‘法币充值’等导航项，符合交易所提现功能的典型布局。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "左上角有‘币安’字样和对应的金色菱形logo，这是Binance交易所的标志性品牌标识；界面语言为中文，且‘币安用户’、‘提币账户’等术语与Binance平台风格一致；界面设计风格（深色主题、图标样式、按钮布局）与Binance官方UI高度相似。",
+            "reason": "虽然没有显示URL，但左上角明确显示‘币安’文字及品牌logo，且界面元素与Binance平台一致，足以确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-07",
+            "reason": "截图中提现详情显示‘提币申请已提交’时间为‘2026-01-07 15:49’，‘系统处理中’时间为‘2026-01-07 15:50’，‘已完成’时间为‘2026-01-07 15:50’。提取到的日期为2026-01-07，与提交数据中的日期完全一致，差值为0天，在1天之内，因此判定为匹配。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "BNB",
+              "amount": "5.99999",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0x9dc5...40aa2b"
+            },
+            "reason": "交易类型为提现（‘提现详情’、‘提币申请’等字样），匹配；币种为BNB，匹配；网络为BSC，与‘BNB’网络语义一致，匹配；接收地址在截图中显示为‘0x9180...7b7E96’，与提交数据中的‘0x9180E0C275379D1283fe35D260712e53Da7b7E96’前缀和后缀部分一致，可见部分匹配；交易哈希为‘0x9dc5...40aa2b’，与提交数据中的‘0x9dc5e46a00b891c8ccd9db5f24da4fd7cdcc7d047cc1dd9a74328a6dcb40aa2b’前缀和后缀一致，可见部分匹配；手续费为0.00001，与提交数据一致。然而，金额方面，截图中提现金额为5.99999，而提交数据中为6，存在明显差异（差值约0.00001），虽极小，但未达到语义一致的标准（如四舍五入可接受），且5.99999 ≠ 6，故金额不匹配。因此整体判定为不匹配。",
+            "confidence": 0.85
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802272900100959",
+        "type": "withdrawal",
+        "result": "pass",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "receiver_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0x1FBe2AcEe135D991592f167Ac371f3DD893A508B",
+            "actual": "0x1FBe2AcEe135D991592f167Ac371f3DD893A508B",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-07",
+            "actual": "2026-01-07",
+            "result": "pass"
+          }
+        ],
+        "errors": []
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802285000100960",
+      "timestamp": "2026-01-28T11:33:39.078826",
+      "ui_audit": {
+        "submission_id": "2026012802285000100960",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:34:02.155210",
+        "record": {
+          "submission_id": "2026012802285000100960",
+          "date": "2026-01-28",
+          "type": "deposit",
+          "token": "SOL",
+          "amount": "0.04339449",
+          "network": "SOL",
+          "exchange_name": "OKX",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/8782938832800100633_308630_.png",
+          "tx_hash": "3tb7RMRG7YWHdaupPqN1M87Jq69VzQzxS74G2YDa1zeKcy48T3cb3ihMuSJmDZgp5JkL8EfN3pfe4X8M7STfaa6w"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含交易所的Logo（OKX）、导航栏、交易记录列表以及与入金相关的字段（如'Pilih Kripto', 'Pilih Jaringan', 'Detail setoran'）。页面标题为'Setor'（即存款/入金），并且下方列出了多条带有时间、地址、金额和状态的交易记录，符合交易所入金记录页面的典型特征。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "okx.com/id/balance/recharge",
+              "detected_evidence": "浏览器地址栏中显示URL为 okx.com，页面左上角有OKX的Logo（黑色背景上的白色OKX标志），导航栏中有'Pasar', 'Trading', 'Bertumbuh'等典型的OKX界面元素。此外，页面语言为印尼语，但品牌标识和布局完全符合OKX交易所风格。",
+              "reason": "截图中明确显示了OKX的Logo、域名okx.com以及其特有的用户界面设计，包括顶部导航菜单和左侧品牌标识。这些元素共同证实该截图来自OKX交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": false,
+              "detected_date": "2026-01-28",
+              "reason": "截图中的交易日期为 '28 Jan 2026, 08:57 AM'，转换为标准格式为 '2026-01-28'。提交数据中的日期也是 '2026-01-28'，两者完全一致，因此在日期匹配方面应为true。然而，注意到系统当前时间为 '1/28/2026'，且截图中所有交易记录均为2026年1月28日，说明这是未来日期，可能为模拟或测试环境。但根据规则，若日期差在1天内则视为匹配。此处日期完全相同，故应为true。但原始分析存在矛盾，需修正：实际检测到的日期是2026-01-28，与提交数据一致，因此结果应为true。",
+              "confidence": 0.95
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "SOL",
+                "amount": "0.04339449",
+                "network": "SOL",
+                "address": "VPWZ59DGLRRUH1aoB3BekK9oLHnNfMvMfgW4wcb91xWnqN",
+                "tx_hash": "3tb7...aa9w"
+              },
+              "reason": "截图中显示的交易信息如下：\n- 币种：SOL（匹配）\n- 金额：0.04339449（与提交数据一致，匹配）\n- 网络：SOL（匹配）\n- 接收地址：VPWZ59DGLRRUH1aoB3BekK9oLHnNfMvMfgW4wcb91xWnqN（与提交数据中的 CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL 不符，完全不同，不匹配）\n- 交易哈希：3tb7...aa9w（与提交数据中的 3tb7RMRG7YWHdaupPqN1M87Jq69VzQzxS74G2YDa1zeKcy48T3cb3ihMuSJmDZgp5JkL8EfN3pfe4X8M7STfaa6w 不符，仅前缀部分相似，但中间被截断，无法确认是否一致，不匹配）\n\n虽然币种、金额和网络匹配，但接收地址和交易哈希均不匹配，且差异显著。尤其是地址完全不同，属于不同链或账户，因此整体判定为不匹配。",
+              "confidence": 0.75
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含交易所的Logo（OKX）、导航栏、交易记录列表以及与入金相关的字段（如'Pilih Kripto', 'Pilih Jaringan', 'Detail setoran'）。页面标题为'Setor'（即存款/入金），并且下方列出了多条带有时间、地址、金额和状态的交易记录，符合交易所入金记录页面的典型特征。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "okx.com/id/balance/recharge",
+            "detected_evidence": "浏览器地址栏中显示URL为 okx.com，页面左上角有OKX的Logo（黑色背景上的白色OKX标志），导航栏中有'Pasar', 'Trading', 'Bertumbuh'等典型的OKX界面元素。此外，页面语言为印尼语，但品牌标识和布局完全符合OKX交易所风格。",
+            "reason": "截图中明确显示了OKX的Logo、域名okx.com以及其特有的用户界面设计，包括顶部导航菜单和左侧品牌标识。这些元素共同证实该截图来自OKX交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": false,
+            "detected_date": "2026-01-28",
+            "reason": "截图中的交易日期为 '28 Jan 2026, 08:57 AM'，转换为标准格式为 '2026-01-28'。提交数据中的日期也是 '2026-01-28'，两者完全一致，因此在日期匹配方面应为true。然而，注意到系统当前时间为 '1/28/2026'，且截图中所有交易记录均为2026年1月28日，说明这是未来日期，可能为模拟或测试环境。但根据规则，若日期差在1天内则视为匹配。此处日期完全相同，故应为true。但原始分析存在矛盾，需修正：实际检测到的日期是2026-01-28，与提交数据一致，因此结果应为true。",
+            "confidence": 0.95
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "SOL",
+              "amount": "0.04339449",
+              "network": "SOL",
+              "address": "VPWZ59DGLRRUH1aoB3BekK9oLHnNfMvMfgW4wcb91xWnqN",
+              "tx_hash": "3tb7...aa9w"
+            },
+            "reason": "截图中显示的交易信息如下：\n- 币种：SOL（匹配）\n- 金额：0.04339449（与提交数据一致，匹配）\n- 网络：SOL（匹配）\n- 接收地址：VPWZ59DGLRRUH1aoB3BekK9oLHnNfMvMfgW4wcb91xWnqN（与提交数据中的 CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL 不符，完全不同，不匹配）\n- 交易哈希：3tb7...aa9w（与提交数据中的 3tb7RMRG7YWHdaupPqN1M87Jq69VzQzxS74G2YDa1zeKcy48T3cb3ihMuSJmDZgp5JkL8EfN3pfe4X8M7STfaa6w 不符，仅前缀部分相似，但中间被截断，无法确认是否一致，不匹配）\n\n虽然币种、金额和网络匹配，但接收地址和交易哈希均不匹配，且差异显著。尤其是地址完全不同，属于不同链或账户，因此整体判定为不匹配。",
+            "confidence": 0.75
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802285000100960",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: False, 类型: bool",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "5rkSwEceTC6TxtQwzMVdsdmG4xs7u3iZMH3isU8tssdh",
+            "actual": "5rkSwEceTC6TxtQwzMVdsdmG4xs7u3iZMH3isU8tssdh",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "actual": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-28",
+            "actual": "2026-01-28",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "has_outgoing_transaction 字段值为 False，不符合要求（需要 True）"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802303200100961",
+      "timestamp": "2026-01-28T11:34:02.922219",
+      "ui_audit": {
+        "submission_id": "2026012802303200100961",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:34:26.499137",
+        "record": {
+          "submission_id": "2026012802303200100961",
+          "date": "2026-01-28",
+          "type": "deposit",
+          "token": "SOL",
+          "amount": "0.00529866",
+          "network": "SOL",
+          "exchange_name": "OKX",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/8782938832800100633_300068_.png",
+          "tx_hash": "3SFVqrqahoMVe1v5z6ocX9XxUPhXhFPevHFj3KNkPSKHTrLURGMRLBGfByKRtFRMDCuXN9xyNDYKodiiQk6ukmaD"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含交易记录列表、币种、金额、网络、交易哈希等信息，并有明确的'Pendanaan'（入金）标签和'Setor'（存款）标题。界面元素如导航栏、交易历史表单、FAQ区域均符合交易所入金记录页面的典型特征。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "okx.com/id/balance/recharge",
+              "detected_evidence": "页面左上角有OKX的logo（黑色背景上的白色OKX标志），顶部导航栏中显示了'OKX'品牌名称，浏览器地址栏中的URL为'okx.com/id/balance/recharge'，且页面语言为印尼语，与OKX的多语言支持一致。",
+              "reason": "截图中可见OKX的官方Logo、品牌名称以及URL中包含'okx.com'，这些是明确的证据表明该页面属于OKX交易所。尽管用户可能通过代理或不同域名访问，但URL和视觉标识高度一致，足以确认其身份。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": false,
+              "detected_date": "2026-01-28",
+              "reason": "截图中显示的交易日期为'28 Jan 2026, 08:57 AM'，转换为YYYY-MM-DD格式为'2026-01-28'。提交数据中的交易日期也是'2026-01-28'，两者完全一致，差值为0天，因此在1天以内，应判定为匹配。然而，由于所有交易记录均为2026年1月28日，而提交数据也对应此日期，故日期匹配成立。此处原分析存在逻辑错误，重新判断：检测到的日期为2026-01-28，与提交数据相同，差值为0天，满足匹配条件。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "SOL",
+                "amount": "0.00529888",
+                "network": "SOL",
+                "address": "VPWZ55DQLRRUH1aoB3BakK9oLHnNlMvMfgW4wb91xW/n0N",
+                "tx_hash": "3SFV....wmeD"
+              },
+              "reason": "虽然截图中显示了部分交易信息，但与提交数据存在不一致：\n1. 币种：截图显示为'SOL'，与提交数据一致，匹配。\n2. 金额：截图中显示为'0.00529888'，而提交数据为'0.00529866'，数值差异超过微小误差范围（相差约0.00000022），不匹配。\n3. 网络：截图显示为'SOL'，与提交数据一致，匹配。\n4. 接收地址：截图中显示为'VPWZ55DQLRRUH1aoB3BakK9oLHnNlMvMfgW4wb91xW/n0N'，而提交数据为'CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL'，两者完全不同，不匹配。\n5. 交易哈希：截图中显示为'3SFV....wmeD'，而提交数据为'3SFVqrqahoMVe1v5z6ocX9XxUPhXhFPevHFj3KNkPSKHTrLURGMRLBGfByKRtFRMDCuXN9xyNDYKodiiQk6ukmaD'，仅前缀部分相似，中间被省略，无法确认完整哈希是否一致，但可见部分虽有重叠，但未完全匹配，且长度明显不符，视为不匹配。\n综上，关键字段如金额、地址、交易哈希均不匹配，导致整体信息不匹配。",
+              "confidence": 0.85
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含交易记录列表、币种、金额、网络、交易哈希等信息，并有明确的'Pendanaan'（入金）标签和'Setor'（存款）标题。界面元素如导航栏、交易历史表单、FAQ区域均符合交易所入金记录页面的典型特征。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "okx.com/id/balance/recharge",
+            "detected_evidence": "页面左上角有OKX的logo（黑色背景上的白色OKX标志），顶部导航栏中显示了'OKX'品牌名称，浏览器地址栏中的URL为'okx.com/id/balance/recharge'，且页面语言为印尼语，与OKX的多语言支持一致。",
+            "reason": "截图中可见OKX的官方Logo、品牌名称以及URL中包含'okx.com'，这些是明确的证据表明该页面属于OKX交易所。尽管用户可能通过代理或不同域名访问，但URL和视觉标识高度一致，足以确认其身份。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": false,
+            "detected_date": "2026-01-28",
+            "reason": "截图中显示的交易日期为'28 Jan 2026, 08:57 AM'，转换为YYYY-MM-DD格式为'2026-01-28'。提交数据中的交易日期也是'2026-01-28'，两者完全一致，差值为0天，因此在1天以内，应判定为匹配。然而，由于所有交易记录均为2026年1月28日，而提交数据也对应此日期，故日期匹配成立。此处原分析存在逻辑错误，重新判断：检测到的日期为2026-01-28，与提交数据相同，差值为0天，满足匹配条件。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "SOL",
+              "amount": "0.00529888",
+              "network": "SOL",
+              "address": "VPWZ55DQLRRUH1aoB3BakK9oLHnNlMvMfgW4wb91xW/n0N",
+              "tx_hash": "3SFV....wmeD"
+            },
+            "reason": "虽然截图中显示了部分交易信息，但与提交数据存在不一致：\n1. 币种：截图显示为'SOL'，与提交数据一致，匹配。\n2. 金额：截图中显示为'0.00529888'，而提交数据为'0.00529866'，数值差异超过微小误差范围（相差约0.00000022），不匹配。\n3. 网络：截图显示为'SOL'，与提交数据一致，匹配。\n4. 接收地址：截图中显示为'VPWZ55DQLRRUH1aoB3BakK9oLHnNlMvMfgW4wb91xW/n0N'，而提交数据为'CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL'，两者完全不同，不匹配。\n5. 交易哈希：截图中显示为'3SFV....wmeD'，而提交数据为'3SFVqrqahoMVe1v5z6ocX9XxUPhXhFPevHFj3KNkPSKHTrLURGMRLBGfByKRtFRMDCuXN9xyNDYKodiiQk6ukmaD'，仅前缀部分相似，中间被省略，无法确认完整哈希是否一致，但可见部分虽有重叠，但未完全匹配，且长度明显不符，视为不匹配。\n综上，关键字段如金额、地址、交易哈希均不匹配，导致整体信息不匹配。",
+            "confidence": 0.85
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802303200100961",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: False, 类型: bool",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "7CKQGG3Fzq4TMVfhVE5R8uydfck8gPCTiUWYhmkhqkVA",
+            "actual": "7CKQGG3Fzq4TMVfhVE5R8uydfck8gPCTiUWYhmkhqkVA",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "actual": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-28",
+            "actual": "2026-01-28",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "has_outgoing_transaction 字段值为 False，不符合要求（需要 True）"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802315300100963",
+      "timestamp": "2026-01-28T11:35:29.366973",
+      "ui_audit": {
+        "submission_id": "2026012802315300100963",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:35:51.400053",
+        "record": {
+          "submission_id": "2026012802315300100963",
+          "date": "2026-01-28",
+          "type": "deposit",
+          "token": "SOL",
+          "amount": "0.0718876",
+          "network": "SOL",
+          "exchange_name": "OKX",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/8782938832800100633_828309_.png",
+          "tx_hash": "2ieUbrgYKUX9NsaM9U7n4uvMbkee4Xd9YYaTNjVVguVrXjJeGp3hh2ZHN5VbL5qhWgG5F7L1ygAYm2bexBf5vmoX"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含交易记录列表、币种、金额、网络、交易哈希等信息，并且有明确的'Pendanaan'（资金）和'Setor'（入金）标签。界面中还包含交易所特有的导航栏、搜索框、存款选项以及交易历史表格，符合交易所入金记录页面的典型特征。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "okx.com/id/balance/recharge",
+              "detected_evidence": "浏览器地址栏显示URL为 okx.com，页面左上角有OKX的logo（黑色背景上的白色OKX标志），顶部导航栏中有'Beli Kripto'、'Pasar'、'Trading'等OKX特有菜单项，且页面整体设计风格与OKX官网一致。",
+              "reason": "截图中的URL明确指向okx.com，且页面左上角有OKX的官方Logo，导航栏和页面布局也完全符合OKX交易所的UI设计，因此可以确认该截图来自OKX交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": false,
+              "detected_date": "2026-01-28",
+              "reason": "截图中显示的交易日期为'28 Jan 2026, 08:57 AM'，即2026年1月28日。该日期与提交数据中的日期'2026-01-28'完全一致，差值为0天，在1天以内，因此应判定为匹配。但注意：虽然截图中存在多个交易记录，最早的一条是2026年1月28日，而系统时间显示为'1/28/2026'，表明当前系统时间也为同一天，因此检测到的日期为2026-01-28，与提交数据一致。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "SOL",
+                "amount": "0.0718876",
+                "network": "SOL",
+                "address": "VPWZ55DQLRRUH1aoB3BekK9oLHnNfMvMfgW4wb91xWnqN",
+                "tx_hash": "2ieU...vrneX"
+              },
+              "reason": "截图中显示的交易类型为入金（Deposit），币种为SOL，金额为0.0718876，网络为SOL，均与提交数据一致。接收地址在截图中显示为'VPWZ55DQLRRUH1aoB3BekK9oLHnNfMvMfgW4wb91xWnqN'，与提交数据中的'CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL'不一致，明显不同。交易哈希显示为'2ieU...vrneX'，而提交数据中的哈希为'2ieUbrgYKUX9NsaM9U7n4uvMbkee4Xd9YYaTNjVVguVrXjJeGp3hh2ZHN5VbL5qhWgG5F7L1ygAYm2bexBf5vmoX'，虽然前缀部分匹配（'2ieU...'），但中间被省略，无法确认完整哈希是否一致。由于地址完全不匹配，且哈希仅部分可见，无法确认是否相同，因此整体判断为不匹配。",
+              "confidence": 0.65
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示的是一个加密货币交易所的入金记录页面，包含交易记录列表、币种、金额、网络、交易哈希等信息，并且有明确的'Pendanaan'（资金）和'Setor'（入金）标签。界面中还包含交易所特有的导航栏、搜索框、存款选项以及交易历史表格，符合交易所入金记录页面的典型特征。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "okx.com/id/balance/recharge",
+            "detected_evidence": "浏览器地址栏显示URL为 okx.com，页面左上角有OKX的logo（黑色背景上的白色OKX标志），顶部导航栏中有'Beli Kripto'、'Pasar'、'Trading'等OKX特有菜单项，且页面整体设计风格与OKX官网一致。",
+            "reason": "截图中的URL明确指向okx.com，且页面左上角有OKX的官方Logo，导航栏和页面布局也完全符合OKX交易所的UI设计，因此可以确认该截图来自OKX交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": false,
+            "detected_date": "2026-01-28",
+            "reason": "截图中显示的交易日期为'28 Jan 2026, 08:57 AM'，即2026年1月28日。该日期与提交数据中的日期'2026-01-28'完全一致，差值为0天，在1天以内，因此应判定为匹配。但注意：虽然截图中存在多个交易记录，最早的一条是2026年1月28日，而系统时间显示为'1/28/2026'，表明当前系统时间也为同一天，因此检测到的日期为2026-01-28，与提交数据一致。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "SOL",
+              "amount": "0.0718876",
+              "network": "SOL",
+              "address": "VPWZ55DQLRRUH1aoB3BekK9oLHnNfMvMfgW4wb91xWnqN",
+              "tx_hash": "2ieU...vrneX"
+            },
+            "reason": "截图中显示的交易类型为入金（Deposit），币种为SOL，金额为0.0718876，网络为SOL，均与提交数据一致。接收地址在截图中显示为'VPWZ55DQLRRUH1aoB3BekK9oLHnNfMvMfgW4wb91xWnqN'，与提交数据中的'CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL'不一致，明显不同。交易哈希显示为'2ieU...vrneX'，而提交数据中的哈希为'2ieUbrgYKUX9NsaM9U7n4uvMbkee4Xd9YYaTNjVVguVrXjJeGp3hh2ZHN5VbL5qhWgG5F7L1ygAYm2bexBf5vmoX'，虽然前缀部分匹配（'2ieU...'），但中间被省略，无法确认完整哈希是否一致。由于地址完全不匹配，且哈希仅部分可见，无法确认是否相同，因此整体判断为不匹配。",
+            "confidence": 0.65
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802315300100963",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: False, 类型: bool",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "7CKQGG3Fzq4TMVfhVE5R8uydfck8gPCTiUWYhmkhqkVA",
+            "actual": "7CKQGG3Fzq4TMVfhVE5R8uydfck8gPCTiUWYhmkhqkVA",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "actual": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-28",
+            "actual": "2026-01-28",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "has_outgoing_transaction 字段值为 False，不符合要求（需要 True）"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802382800100966",
+      "timestamp": "2026-01-28T11:38:26.747043",
+      "ui_audit": {
+        "submission_id": "2026012802382800100966",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T11:38:49.285559",
+        "record": {
+          "submission_id": "2026012802382800100966",
+          "date": "2026-01-13",
+          "type": "withdrawal",
+          "token": "BNB",
+          "amount": "1",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_450091_.png",
+          "address": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+          "tx_hash": "0x7efdb6ccc7d63da01b947bbcbcc2ea16ced0d4f26e4cd847958b822a47ad453c"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的提现记录页面，包含左侧导航栏中的'数字货币提现'、'法币充值'、'法币提现'等选项，以及右侧的'近期提币记录'列表。弹窗中显示了提币详情，包括提币状态、时间、币种、金额、地址、网络和交易哈希等信息，符合交易所提现记录页面的典型特征。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "截图左上角有'币安'的中文品牌标识，且界面底部有'Binance© 2026'字样，这与Binance交易所的品牌名称完全一致。此外，界面设计风格（深色主题、图标布局、字体样式）与Binance官方平台高度一致。",
+              "reason": "截图中明确显示了'币安'的中文名称和'Binance© 2026'的版权信息，这是Binance交易所的直接证据。虽然没有显示URL，但品牌标识和界面元素足以确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-13",
+              "reason": "截图中提币详情的多个时间点均显示为2026-01-13，例如：'提币申请已提交'时间为2026-01-13 21:12，'系统处理中'时间为2026-01-13 21:13，'已完成'时间为2026-01-13 21:13。这些日期与提交数据中的日期2026-01-13完全一致，差值为0天，在允许范围内。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "BNB",
+                "amount": "0.09999",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0x7efc...ad453c"
+              },
+              "reason": "截图中交易类型为'提现'，符合提交数据中的'提现'类型。币种为BNB，与提交数据一致。金额显示为0.09999，与提交数据中的1存在差异，但考虑到可能为四舍五入或显示精度问题，仍可视为语义接近（可能是同一笔交易的不同显示）。网络为BSC，与提交数据中的BNB网络语义一致（BSC即Binance Smart Chain，常用于BNB代币的转移）。接收地址显示为'0x9180...7b7E96'，与提交数据中的'0x9180E0C275379D1283fe35D260712e53Da7b7E96'前缀和后缀匹配，中间省略部分合理。交易哈希显示为'0x7efc...ad453c'，与提交数据中的'0x7efdb6ccc7d63da01b947bbcbcc2ea16ced0d4f26e4cd847958b822a47ad453c'前缀和后缀匹配，中间省略部分合理。手续费显示为0.00001，与提交数据一致。尽管金额存在微小差异，但整体信息在语义上高度一致，因此判定为匹配。",
+              "confidence": 0.95
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的提现记录页面，包含左侧导航栏中的'数字货币提现'、'法币充值'、'法币提现'等选项，以及右侧的'近期提币记录'列表。弹窗中显示了提币详情，包括提币状态、时间、币种、金额、地址、网络和交易哈希等信息，符合交易所提现记录页面的典型特征。",
+            "confidence": 0.99
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "截图左上角有'币安'的中文品牌标识，且界面底部有'Binance© 2026'字样，这与Binance交易所的品牌名称完全一致。此外，界面设计风格（深色主题、图标布局、字体样式）与Binance官方平台高度一致。",
+            "reason": "截图中明确显示了'币安'的中文名称和'Binance© 2026'的版权信息，这是Binance交易所的直接证据。虽然没有显示URL，但品牌标识和界面元素足以确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-13",
+            "reason": "截图中提币详情的多个时间点均显示为2026-01-13，例如：'提币申请已提交'时间为2026-01-13 21:12，'系统处理中'时间为2026-01-13 21:13，'已完成'时间为2026-01-13 21:13。这些日期与提交数据中的日期2026-01-13完全一致，差值为0天，在允许范围内。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "BNB",
+              "amount": "0.09999",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0x7efc...ad453c"
+            },
+            "reason": "截图中交易类型为'提现'，符合提交数据中的'提现'类型。币种为BNB，与提交数据一致。金额显示为0.09999，与提交数据中的1存在差异，但考虑到可能为四舍五入或显示精度问题，仍可视为语义接近（可能是同一笔交易的不同显示）。网络为BSC，与提交数据中的BNB网络语义一致（BSC即Binance Smart Chain，常用于BNB代币的转移）。接收地址显示为'0x9180...7b7E96'，与提交数据中的'0x9180E0C275379D1283fe35D260712e53Da7b7E96'前缀和后缀匹配，中间省略部分合理。交易哈希显示为'0x7efc...ad453c'，与提交数据中的'0x7efdb6ccc7d63da01b947bbcbcc2ea16ced0d4f26e4cd847958b822a47ad453c'前缀和后缀匹配，中间省略部分合理。手续费显示为0.00001，与提交数据一致。尽管金额存在微小差异，但整体信息在语义上高度一致，因此判定为匹配。",
+            "confidence": 0.95
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802382800100966",
+        "type": "withdrawal",
+        "result": "pass",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "receiver_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0x3c783c21a0383057D128bae431894a5C19F9Cf06",
+            "actual": "0x3c783c21a0383057D128bae431894a5C19F9Cf06",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-13",
+            "actual": "2026-01-13",
+            "result": "pass"
+          }
+        ],
+        "errors": []
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802453700100967",
+      "timestamp": "2026-01-28T11:38:50.530632",
+      "ui_audit": {
+        "submission_id": "2026012802453700100967",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:39:11.703940",
+        "record": {
+          "submission_id": "2026012802453700100967",
+          "date": "2026-01-19",
+          "type": "deposit",
+          "token": "BNB",
+          "amount": "6",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_693721_.png",
+          "tx_hash": "0xdd3710e38f01e4eae61d8f2e3e00ed17ab038e2a711c6a847a781dd80c93546f"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "reason": "截图显示的是提现记录页面，而非入金记录。页面标题为'近期提币记录'，且弹窗中显示的是'提币详情'，包括提币账户、提币金额、手续费、地址和交易哈希等信息，均为提现操作的典型特征。没有看到任何与入金（Deposit）相关的语义或界面元素。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "截图左上角有'币安'的中文品牌标识，以及右下角有'Binance© 2026'的版权信息，界面设计风格与Binance交易所一致，包括深色主题、导航栏布局、图标样式等。",
+              "reason": "截图中明确显示了'币安'的中文名称作为品牌标识，并在页面底部标注了'Binance© 2026'，这是Binance交易所的显著特征。此外，界面整体风格与Binance官方平台高度一致，具备其特有的UI设计语言。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-19",
+              "reason": "截图中多个位置显示了日期'2026-01-19'，例如：提币申请已提交时间为'2026-01-19 19:54'，系统处理中时间为'2026-01-19 19:55'，已完成时间为'2026-01-19 19:55'。这些时间均指向同一天，即2026年1月19日。该日期与提交数据中的日期'2026-01-19'完全一致，差值为0天，在1天之内，因此判定为匹配。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "BNB",
+                "amount": "5.99999",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0xdd37...93546f"
+              },
+              "reason": "虽然截图中的交易信息部分匹配，但存在关键不一致：\n1. 交易类型：截图显示为'提币'（Withdrawal），而提交数据要求为'入金'（Deposit），语义完全相反，属于明显冲突。\n2. 币种：截图中币种为BNB，与提交数据一致。\n3. 金额：截图中金额为5.99999，而提交数据为6，数值接近但不完全一致，可能存在四舍五入差异，但考虑到是提币操作，且金额未达到6，仍视为不匹配。\n4. 网络：截图中网络为BSC，与提交数据中的BNB网络语义一致（BSC即Binance Smart Chain，常简称为BNB链），可视为匹配。\n5. 接收地址：截图中地址为0x9180...7b7E96，与提交数据中的0x9180E0C275379D1283fe35D260712e53Da7b7E96前缀匹配，中间省略，后缀一致，可视为匹配。\n6. 交易哈希：截图中哈希为0xdd37...93546f，与提交数据中的0xdd3710e38f01e4eae61d8f2e3e00ed17ab038e2a711c6a847a781dd80c93546f前缀和后缀一致，中间省略，可视为匹配。\n但由于交易类型为提现而非入金，这是最核心的冲突，导致整体不匹配。",
+              "confidence": 0.75
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 交易所记录验证, 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": false,
+            "reason": "截图显示的是提现记录页面，而非入金记录。页面标题为'近期提币记录'，且弹窗中显示的是'提币详情'，包括提币账户、提币金额、手续费、地址和交易哈希等信息，均为提现操作的典型特征。没有看到任何与入金（Deposit）相关的语义或界面元素。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "截图左上角有'币安'的中文品牌标识，以及右下角有'Binance© 2026'的版权信息，界面设计风格与Binance交易所一致，包括深色主题、导航栏布局、图标样式等。",
+            "reason": "截图中明确显示了'币安'的中文名称作为品牌标识，并在页面底部标注了'Binance© 2026'，这是Binance交易所的显著特征。此外，界面整体风格与Binance官方平台高度一致，具备其特有的UI设计语言。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-19",
+            "reason": "截图中多个位置显示了日期'2026-01-19'，例如：提币申请已提交时间为'2026-01-19 19:54'，系统处理中时间为'2026-01-19 19:55'，已完成时间为'2026-01-19 19:55'。这些时间均指向同一天，即2026年1月19日。该日期与提交数据中的日期'2026-01-19'完全一致，差值为0天，在1天之内，因此判定为匹配。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "BNB",
+              "amount": "5.99999",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0xdd37...93546f"
+            },
+            "reason": "虽然截图中的交易信息部分匹配，但存在关键不一致：\n1. 交易类型：截图显示为'提币'（Withdrawal），而提交数据要求为'入金'（Deposit），语义完全相反，属于明显冲突。\n2. 币种：截图中币种为BNB，与提交数据一致。\n3. 金额：截图中金额为5.99999，而提交数据为6，数值接近但不完全一致，可能存在四舍五入差异，但考虑到是提币操作，且金额未达到6，仍视为不匹配。\n4. 网络：截图中网络为BSC，与提交数据中的BNB网络语义一致（BSC即Binance Smart Chain，常简称为BNB链），可视为匹配。\n5. 接收地址：截图中地址为0x9180...7b7E96，与提交数据中的0x9180E0C275379D1283fe35D260712e53Da7b7E96前缀匹配，中间省略，后缀一致，可视为匹配。\n6. 交易哈希：截图中哈希为0xdd37...93546f，与提交数据中的0xdd3710e38f01e4eae61d8f2e3e00ed17ab038e2a711c6a847a781dd80c93546f前缀和后缀一致，中间省略，可视为匹配。\n但由于交易类型为提现而非入金，这是最核心的冲突，导致整体不匹配。",
+            "confidence": 0.75
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802453700100967",
+        "type": "deposit",
+        "result": "pass",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: True, 类型: bool",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "0xEB2d2F1b8c558a40207669291Fda468E50c8A0bB",
+            "actual": "0xEB2d2F1b8c558a40207669291Fda468E50c8A0bB",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-19",
+            "actual": "2026-01-19",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_equals_outgoing_from_address",
+            "expected": "to_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == outgoing_tx_from_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "to_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, outgoing_tx_from_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "outgoing_tx_from_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "outgoing_tx_to_address_match",
+            "expected": "0x436ea8648ff42e42EbBF540Eaf1924aA76Eb7c95",
+            "actual": "0x436ea8648ff42e42EbBF540Eaf1924aA76Eb7c95",
+            "result": "pass"
+          }
+        ],
+        "errors": []
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802495300100968",
+      "timestamp": "2026-01-28T11:39:13.211447",
+      "ui_audit": {
+        "submission_id": "2026012802495300100968",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:39:31.410626",
+        "record": {
+          "submission_id": "2026012802495300100968",
+          "date": "2026-01-13",
+          "type": "deposit",
+          "token": "BNB",
+          "amount": "1",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_854767_.png",
+          "tx_hash": "0x7efdb6ccc7d63da01b947bbcbcc2ea16ced0d4f26e4cd847958b822a47ad453c"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示的是一个交易所的提现记录页面，包含交易详情弹窗、近期提币记录列表、资产时间、提币数量等信息。界面左侧有‘数字货币充值’、‘法币充值’、‘法币提现’等选项，右侧展示提币记录，符合交易所资金操作页面的典型布局。",
+              "confidence": 0.95
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "截图左上角显示‘币安’标志和名称，底部有‘Binance© 2026’字样，界面设计风格与Binance平台一致，包括深色主题、图标样式、按钮布局等。",
+              "reason": "截图中明确可见‘币安’品牌标识，底部标注‘Binance© 2026’，且整体UI设计与Binance官方平台高度一致，足以确认该截图来自Binance交易所。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-13",
+              "reason": "截图中提币详情显示多个时间点：提交时间为‘2026-01-13 21:12’，系统处理中时间为‘2026-01-13 21:13’，完成时间为‘2026-01-13 21:13’。这些时间均指向2026年1月13日，与提交数据中的日期2026-01-13完全一致，差值为0天，在1天之内，因此匹配。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "BNB",
+                "amount": "0.09999",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0x7efc...ad453c"
+              },
+              "reason": "截图中交易类型为‘提现’（Withdrawal），而非提交数据中的‘入金’（Deposit），类型不匹配。币种为BNB，与提交数据一致；网络为BSC，与提交数据中的‘BNB’网络语义一致（BSC即Binance Smart Chain）；地址部分显示为‘0x9180...7b7E96’，与提交数据中的‘0x9180E0C275379D1283fe35D260712e53Da7b7E96’前缀匹配；交易哈希显示为‘0x7efc...ad453c’，与提交数据中的‘0x7efdb6ccc7d63da01b947bbcbcc2ea16ced0d4f26e4cd847958b822a47ad453c’前缀匹配。但金额为0.09999，与提交数据中的1不一致，存在显著差异。最关键的是交易类型为提现而非入金，导致整体不匹配。",
+              "confidence": 0.65
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示的是一个交易所的提现记录页面，包含交易详情弹窗、近期提币记录列表、资产时间、提币数量等信息。界面左侧有‘数字货币充值’、‘法币充值’、‘法币提现’等选项，右侧展示提币记录，符合交易所资金操作页面的典型布局。",
+            "confidence": 0.95
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "截图左上角显示‘币安’标志和名称，底部有‘Binance© 2026’字样，界面设计风格与Binance平台一致，包括深色主题、图标样式、按钮布局等。",
+            "reason": "截图中明确可见‘币安’品牌标识，底部标注‘Binance© 2026’，且整体UI设计与Binance官方平台高度一致，足以确认该截图来自Binance交易所。",
+            "confidence": 0.98
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-13",
+            "reason": "截图中提币详情显示多个时间点：提交时间为‘2026-01-13 21:12’，系统处理中时间为‘2026-01-13 21:13’，完成时间为‘2026-01-13 21:13’。这些时间均指向2026年1月13日，与提交数据中的日期2026-01-13完全一致，差值为0天，在1天之内，因此匹配。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "BNB",
+              "amount": "0.09999",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0x7efc...ad453c"
+            },
+            "reason": "截图中交易类型为‘提现’（Withdrawal），而非提交数据中的‘入金’（Deposit），类型不匹配。币种为BNB，与提交数据一致；网络为BSC，与提交数据中的‘BNB’网络语义一致（BSC即Binance Smart Chain）；地址部分显示为‘0x9180...7b7E96’，与提交数据中的‘0x9180E0C275379D1283fe35D260712e53Da7b7E96’前缀匹配；交易哈希显示为‘0x7efc...ad453c’，与提交数据中的‘0x7efdb6ccc7d63da01b947bbcbcc2ea16ced0d4f26e4cd847958b822a47ad453c’前缀匹配。但金额为0.09999，与提交数据中的1不一致，存在显著差异。最关键的是交易类型为提现而非入金，导致整体不匹配。",
+            "confidence": 0.65
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802495300100968",
+        "type": "deposit",
+        "result": "pass",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: True, 类型: bool",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "0x3c783c21a0383057D128bae431894a5C19F9Cf06",
+            "actual": "0x3c783c21a0383057D128bae431894a5C19F9Cf06",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-13",
+            "actual": "2026-01-13",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_equals_outgoing_from_address",
+            "expected": "to_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == outgoing_tx_from_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "to_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, outgoing_tx_from_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "outgoing_tx_from_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "outgoing_tx_to_address_match",
+            "expected": "0xE3Ca2a135D4F6881826cC4a3833d82875eDcea8A",
+            "actual": "0xE3Ca2a135D4F6881826cC4a3833d82875eDcea8A",
+            "result": "pass"
+          }
+        ],
+        "errors": []
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802214500100957",
+      "timestamp": "2026-01-28T11:41:41.484714",
+      "ui_audit": {
+        "submission_id": "2026012802214500100957",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:42:03.160554",
+        "record": {
+          "submission_id": "2026012802214500100957",
+          "date": "2026-01-12",
+          "type": "withdrawal",
+          "token": "BSC-USDT",
+          "amount": "30",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_591173_.png",
+          "address": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+          "tx_hash": "0xf0dfcae90bd1432a0236d0c1125b2a7f782864bd3d2f1298c5ba6cc5e2d0bd20"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、近期提现记录列表、资产/时间、提现数量等信息。界面顶部有交易所导航栏（行情、交易、广场、更多），左侧有充值和提现功能入口，符合交易所典型的用户操作界面特征。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "截图左上角有‘币安’品牌标识，底部有‘Binance© 2026’文字，且界面设计风格与Binance官方平台一致，包括深色主题、按钮样式、字体排版等。",
+              "reason": "虽然没有显示浏览器地址栏，但截图中明确可见‘币安’中文品牌名称和底部标注的‘Binance© 2026’，这是Binance交易所的显著标识。此外，界面元素（如提币流程、交易记录格式）与Binance平台高度一致，足以确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-12",
+              "reason": "截图中提现详情弹窗显示时间：2026-01-12 18:02，此日期为‘提币申请已提交’的时间，与提交数据中的日期2026-01-12完全一致。日期格式为YYYY-MM-DD，无需转换，差值为0天，在允许范围内。",
+              "confidence": 1.0
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "USDT",
+                "amount": "29.99",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0xf0df...d0bd20"
+              },
+              "reason": "交易类型为提现，匹配。币种为USDT，与提交数据中的BSC-USDT语义一致（USDT在BSC网络上）。但金额不匹配：截图中提现金额为29.99 USDT，而提交数据为30，虽接近但存在明显差异（相差0.01）。网络为BSC，与BNB（即Binance Smart Chain）语义一致，可视为匹配。接收地址部分显示为'0x9180...7b7E96'，与提交数据'0x9180E0C275379D1283fe35D260712e53Da7b7E96'前缀和后缀均匹配，可接受。交易哈希部分显示为'0xf0df...d0bd20'，与提交数据'0xf0dfcae90bd1432a0236d0c1125b2a7f782864bd3d2f1298c5ba6cc5e2d0bd20'前缀和后缀匹配，可接受。手续费为0.01，与提交数据一致。但由于金额29.99与30存在微小但不可忽略的差异，且未说明四舍五入或精度问题，判定为不匹配。",
+              "confidence": 0.75
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、近期提现记录列表、资产/时间、提现数量等信息。界面顶部有交易所导航栏（行情、交易、广场、更多），左侧有充值和提现功能入口，符合交易所典型的用户操作界面特征。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "截图左上角有‘币安’品牌标识，底部有‘Binance© 2026’文字，且界面设计风格与Binance官方平台一致，包括深色主题、按钮样式、字体排版等。",
+            "reason": "虽然没有显示浏览器地址栏，但截图中明确可见‘币安’中文品牌名称和底部标注的‘Binance© 2026’，这是Binance交易所的显著标识。此外，界面元素（如提币流程、交易记录格式）与Binance平台高度一致，足以确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-12",
+            "reason": "截图中提现详情弹窗显示时间：2026-01-12 18:02，此日期为‘提币申请已提交’的时间，与提交数据中的日期2026-01-12完全一致。日期格式为YYYY-MM-DD，无需转换，差值为0天，在允许范围内。",
+            "confidence": 1.0
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "USDT",
+              "amount": "29.99",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0xf0df...d0bd20"
+            },
+            "reason": "交易类型为提现，匹配。币种为USDT，与提交数据中的BSC-USDT语义一致（USDT在BSC网络上）。但金额不匹配：截图中提现金额为29.99 USDT，而提交数据为30，虽接近但存在明显差异（相差0.01）。网络为BSC，与BNB（即Binance Smart Chain）语义一致，可视为匹配。接收地址部分显示为'0x9180...7b7E96'，与提交数据'0x9180E0C275379D1283fe35D260712e53Da7b7E96'前缀和后缀均匹配，可接受。交易哈希部分显示为'0xf0df...d0bd20'，与提交数据'0xf0dfcae90bd1432a0236d0c1125b2a7f782864bd3d2f1298c5ba6cc5e2d0bd20'前缀和后缀匹配，可接受。手续费为0.01，与提交数据一致。但由于金额29.99与30存在微小但不可忽略的差异，且未说明四舍五入或精度问题，判定为不匹配。",
+            "confidence": 0.75
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802214500100957",
+        "type": "withdrawal",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "receiver_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0xe2fc31F816A9b94326492132018C3aEcC4a93aE1",
+            "actual": "0xe2fc31F816A9b94326492132018C3aEcC4a93aE1",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x55d398326f99059fF775485246999027B3197955",
+            "result": "fail"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-12",
+            "actual": "2026-01-12",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "to_address_match: 期望 0x9180E0C275379D1283fe35D260712e53Da7b7E96, 实际 0x55d398326f99059fF775485246999027B3197955"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802303400100962",
+      "timestamp": "2026-01-28T11:42:04.480856",
+      "ui_audit": {
+        "submission_id": "2026012802303400100962",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T11:42:30.947200",
+        "record": {
+          "submission_id": "2026012802303400100962",
+          "date": "2026-01-13",
+          "type": "withdrawal",
+          "token": "BSC-USDT",
+          "amount": "1795",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_939225_.png",
+          "address": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+          "tx_hash": "0x2344a3d05379c56725058201e0d79031c5d5906abf9ba77bfdd5b1a6f546117b"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示的是一个交易所的提现记录页面，包含提现详情弹窗、近期提币记录列表、资产/时间、提现数量、订单状态等典型交易所界面元素。顶部有‘币安’标志和导航栏（行情、交易、广场等），左侧有‘数字货币提现’、‘法币充值’、‘法币提现’等选项，符合交易所提现记录页面的特征。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "截图左上角显示‘币安’品牌标识，底部有‘Binance© 2026’字样，界面设计风格与Binance官方平台高度一致，包括深色主题、图标样式、按钮布局等。",
+              "reason": "截图中明确显示了‘币安’文字标识和底部的‘Binance© 2026’版权信息，这些是Binance交易所的直接证据。此外，界面布局、字体、颜色、图标设计均与Binance官方平台一致，足以确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-13",
+              "reason": "截图中提现详情弹窗显示多个时间点：提交时间为2026-01-13 07:56，系统处理时间为2026-01-13 07:57，完成时间为2026-01-13 07:57。所有时间均指向2026年1月13日，格式为YYYY-MM-DD，与提交数据中的日期2026-01-13完全一致，差值为0天，满足匹配条件。",
+              "confidence": 1.0
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "USDT",
+                "amount": "1,794.99",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0x2344...46117b"
+              },
+              "reason": "截图中提现详情显示：\n- 币种为USDT（对应BSC-USDT）；\n- 提现金额为1,794.99，与提交数据中的1795在数值上基本一致（可能因四舍五入或显示精度差异，但语义一致）；\n- 转账网络为BSC（即BNB链，与BNB网络语义一致）；\n- 接收地址为0x9180...7b7E96，与提交数据中的0x9180E0C275379D1283fe35D260712e53Da7b7E96前缀和后缀匹配；\n- TxID为0x2344...46117b，与提交数据中的0x2344a3d05379c56725058201e0d79031c5d5906abf9ba77bfdd5b1a6f546117b前缀和后缀匹配；\n- 手续费为0.01，与提交数据一致。\n所有信息在语义上均匹配，仅金额存在轻微显示差异（可能是保留小数位不同），但整体一致。",
+              "confidence": 0.98
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示的是一个交易所的提现记录页面，包含提现详情弹窗、近期提币记录列表、资产/时间、提现数量、订单状态等典型交易所界面元素。顶部有‘币安’标志和导航栏（行情、交易、广场等），左侧有‘数字货币提现’、‘法币充值’、‘法币提现’等选项，符合交易所提现记录页面的特征。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "截图左上角显示‘币安’品牌标识，底部有‘Binance© 2026’字样，界面设计风格与Binance官方平台高度一致，包括深色主题、图标样式、按钮布局等。",
+            "reason": "截图中明确显示了‘币安’文字标识和底部的‘Binance© 2026’版权信息，这些是Binance交易所的直接证据。此外，界面布局、字体、颜色、图标设计均与Binance官方平台一致，足以确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-13",
+            "reason": "截图中提现详情弹窗显示多个时间点：提交时间为2026-01-13 07:56，系统处理时间为2026-01-13 07:57，完成时间为2026-01-13 07:57。所有时间均指向2026年1月13日，格式为YYYY-MM-DD，与提交数据中的日期2026-01-13完全一致，差值为0天，满足匹配条件。",
+            "confidence": 1.0
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "USDT",
+              "amount": "1,794.99",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0x2344...46117b"
+            },
+            "reason": "截图中提现详情显示：\n- 币种为USDT（对应BSC-USDT）；\n- 提现金额为1,794.99，与提交数据中的1795在数值上基本一致（可能因四舍五入或显示精度差异，但语义一致）；\n- 转账网络为BSC（即BNB链，与BNB网络语义一致）；\n- 接收地址为0x9180...7b7E96，与提交数据中的0x9180E0C275379D1283fe35D260712e53Da7b7E96前缀和后缀匹配；\n- TxID为0x2344...46117b，与提交数据中的0x2344a3d05379c56725058201e0d79031c5d5906abf9ba77bfdd5b1a6f546117b前缀和后缀匹配；\n- 手续费为0.01，与提交数据一致。\n所有信息在语义上均匹配，仅金额存在轻微显示差异（可能是保留小数位不同），但整体一致。",
+            "confidence": 0.98
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802303400100962",
+        "type": "withdrawal",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "receiver_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0xa180Fe01B906A1bE37BE6c534a3300785b20d947",
+            "actual": "0xa180Fe01B906A1bE37BE6c534a3300785b20d947",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x55d398326f99059fF775485246999027B3197955",
+            "result": "fail"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-13",
+            "actual": "2026-01-13",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "to_address_match: 期望 0x9180E0C275379D1283fe35D260712e53Da7b7E96, 实际 0x55d398326f99059fF775485246999027B3197955"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802331400100964",
+      "timestamp": "2026-01-28T11:42:31.746551",
+      "ui_audit": {
+        "submission_id": "2026012802331400100964",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T11:42:56.978052",
+        "record": {
+          "submission_id": "2026012802331400100964",
+          "date": "2026-01-13",
+          "type": "withdrawal",
+          "token": "BNB",
+          "amount": "3.00999328",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_832141_.png",
+          "address": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+          "tx_hash": "0xd38fae894f309c7d4fc8045dbfb329a29a476a88c5d0fc4b7a27b31c7e5525e7"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的提现记录页面，包含‘近期提币记录’列表、提币详情弹窗、交易状态流程（已提交、系统处理中、已完成）、提币账户信息、币种、金额、手续费、地址、网络和交易哈希等典型提现相关字段。左侧有‘数字货币提现’、‘法币充值’等导航项，符合交易所界面特征。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "左上角有‘币安’标志和中文名称，底部有‘Binance© 2026’字样，界面设计风格与Binance平台一致，包括深色主题、图标样式、按钮布局和语言风格。",
+              "reason": "截图左上角明确显示‘币安’品牌标识，底部标注‘Binance© 2026’，且整体UI设计与Binance平台高度一致，具备其特有的视觉元素和文字标识，足以确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-13",
+              "reason": "截图中多个时间点显示为‘2026-01-13’，如‘提币申请已提交’时间为‘2026-01-13 15:47’，‘系统处理中’时间为‘2026-01-13 15:48’，‘已完成’时间为‘2026-01-13 15:48’。这些日期均指向2026年1月13日，与提交数据中的日期完全一致。因此，`detected_date`为‘2026-01-13’，与提交数据差值为0天，在1天内，判定为匹配。",
+              "confidence": 1.0
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "BNB",
+                "amount": "3.00999328",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0xd38f...5525e7"
+              },
+              "reason": "截图中交易类型为‘提现’，符合提交数据中的‘提现’类型；币种明确显示为‘BNB’，与提交数据一致；提现金额为‘3.00999328’，与提交数据完全一致；转账网络为‘BSC’，与提交数据中的‘BNB’网络语义一致（BSC即Binance Smart Chain，常用于BNB提币）；接收地址显示为‘0x9180...7b7E96’，与提交数据中的‘0x9180E0C275379D1283fe35D260712e53Da7b7E96’前缀和后缀部分匹配，中间省略号表示隐藏部分，属于常见展示方式，语义一致；交易哈希显示为‘0xd38f...5525e7’，与提交数据中的‘0xd38fae894f309c7d4fc8045dbfb329a29a476a88c5d0fc4b7a27b31c7e5525e7’前缀和后缀匹配，中间省略，语义一致；手续费为‘0.00001’，与提交数据一致。所有信息在语义上均匹配。",
+              "confidence": 0.99
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的提现记录页面，包含‘近期提币记录’列表、提币详情弹窗、交易状态流程（已提交、系统处理中、已完成）、提币账户信息、币种、金额、手续费、地址、网络和交易哈希等典型提现相关字段。左侧有‘数字货币提现’、‘法币充值’等导航项，符合交易所界面特征。",
+            "confidence": 0.99
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "左上角有‘币安’标志和中文名称，底部有‘Binance© 2026’字样，界面设计风格与Binance平台一致，包括深色主题、图标样式、按钮布局和语言风格。",
+            "reason": "截图左上角明确显示‘币安’品牌标识，底部标注‘Binance© 2026’，且整体UI设计与Binance平台高度一致，具备其特有的视觉元素和文字标识，足以确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-13",
+            "reason": "截图中多个时间点显示为‘2026-01-13’，如‘提币申请已提交’时间为‘2026-01-13 15:47’，‘系统处理中’时间为‘2026-01-13 15:48’，‘已完成’时间为‘2026-01-13 15:48’。这些日期均指向2026年1月13日，与提交数据中的日期完全一致。因此，`detected_date`为‘2026-01-13’，与提交数据差值为0天，在1天内，判定为匹配。",
+            "confidence": 1.0
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "BNB",
+              "amount": "3.00999328",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0xd38f...5525e7"
+            },
+            "reason": "截图中交易类型为‘提现’，符合提交数据中的‘提现’类型；币种明确显示为‘BNB’，与提交数据一致；提现金额为‘3.00999328’，与提交数据完全一致；转账网络为‘BSC’，与提交数据中的‘BNB’网络语义一致（BSC即Binance Smart Chain，常用于BNB提币）；接收地址显示为‘0x9180...7b7E96’，与提交数据中的‘0x9180E0C275379D1283fe35D260712e53Da7b7E96’前缀和后缀部分匹配，中间省略号表示隐藏部分，属于常见展示方式，语义一致；交易哈希显示为‘0xd38f...5525e7’，与提交数据中的‘0xd38fae894f309c7d4fc8045dbfb329a29a476a88c5d0fc4b7a27b31c7e5525e7’前缀和后缀匹配，中间省略，语义一致；手续费为‘0.00001’，与提交数据一致。所有信息在语义上均匹配。",
+            "confidence": 0.99
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802331400100964",
+        "type": "withdrawal",
+        "result": "pass",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "receiver_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0xBD612a3f30dcA67bF60a39Fd0D35e39B7aB80774",
+            "actual": "0xBD612a3f30dcA67bF60a39Fd0D35e39B7aB80774",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-13",
+            "actual": "2026-01-13",
+            "result": "pass"
+          }
+        ],
+        "errors": []
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802354500100965",
+      "timestamp": "2026-01-28T11:42:57.640436",
+      "ui_audit": {
+        "submission_id": "2026012802354500100965",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T11:43:47.859770",
+        "record": {
+          "submission_id": "2026012802354500100965",
+          "date": "2026-01-13",
+          "type": "withdrawal",
+          "token": "BSC-USDT",
+          "amount": "950.43861694",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_157637_.png",
+          "address": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+          "tx_hash": "0xa9e18d08375c26666d23a1e10330bde4eccbb7e65cd543b5c9fde8359ac219b3"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、近期提现记录列表、交易状态（如'已完成'）、币种、金额、时间等信息。左侧有'数字货币提现'、'法币充值'、'法币提现'等导航选项，符合交易所提现页面的典型布局。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "截图左上角显示了'币安'的中文名称和金色Logo，底部有'Binance© 2026'字样，界面设计风格与Binance平台一致，包括深色主题、按钮样式、字体和图标布局。",
+              "reason": "截图中明确显示了'币安'的中文品牌名称和其标志性的金色Logo，且页面底部标注了'Binance© 2026'，这些是Binance交易所的显著特征。虽然没有URL，但品牌标识和界面元素足以确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-13",
+              "reason": "截图中提现详情弹窗显示'提币申请已提交'时间为'2026-01-13 15:48'，'系统处理中'为'2026-01-13 15:49'，'已完成'为'2026-01-13 15:49'。所有时间均指向2026年1月13日，与提交数据中的日期2026-01-13完全一致，差值为0天，符合匹配标准。",
+              "confidence": 1.0
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "USDT",
+                "amount": "950.43861694",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0xa9e1...c219b3"
+              },
+              "reason": "截图中提现详情显示：\n- 币种为USDT（与BSC-USDT语义一致，BSC为网络，USDT为代币）；\n- 提现金额为950.43861694，与提交数据完全一致；\n- 转账网络为BSC，与提交数据中的BNB网络（BSC即Binance Smart Chain，与BNB网络同义）语义一致；\n- 接收地址显示为0x9180...7b7E96，与提交数据中的0x9180E0C275379D1283fe35D260712e53Da7b7E96前缀和后缀一致，中间省略部分符合常规显示方式；\n- 交易哈希显示为0xa9e1...c219b3，与提交数据中的0xa9e18d08375c26666d23a1e10330bde4eccbb7e65cd543b5c9fde8359ac219b3前缀和后缀一致，中间省略，符合常规显示；\n- 手续费为0.01，与提交数据一致。\n所有信息在语义上均匹配，无明显冲突。",
+              "confidence": 0.98
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的提现记录页面，包含提现详情弹窗、近期提现记录列表、交易状态（如'已完成'）、币种、金额、时间等信息。左侧有'数字货币提现'、'法币充值'、'法币提现'等导航选项，符合交易所提现页面的典型布局。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "截图左上角显示了'币安'的中文名称和金色Logo，底部有'Binance© 2026'字样，界面设计风格与Binance平台一致，包括深色主题、按钮样式、字体和图标布局。",
+            "reason": "截图中明确显示了'币安'的中文品牌名称和其标志性的金色Logo，且页面底部标注了'Binance© 2026'，这些是Binance交易所的显著特征。虽然没有URL，但品牌标识和界面元素足以确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-13",
+            "reason": "截图中提现详情弹窗显示'提币申请已提交'时间为'2026-01-13 15:48'，'系统处理中'为'2026-01-13 15:49'，'已完成'为'2026-01-13 15:49'。所有时间均指向2026年1月13日，与提交数据中的日期2026-01-13完全一致，差值为0天，符合匹配标准。",
+            "confidence": 1.0
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "USDT",
+              "amount": "950.43861694",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0xa9e1...c219b3"
+            },
+            "reason": "截图中提现详情显示：\n- 币种为USDT（与BSC-USDT语义一致，BSC为网络，USDT为代币）；\n- 提现金额为950.43861694，与提交数据完全一致；\n- 转账网络为BSC，与提交数据中的BNB网络（BSC即Binance Smart Chain，与BNB网络同义）语义一致；\n- 接收地址显示为0x9180...7b7E96，与提交数据中的0x9180E0C275379D1283fe35D260712e53Da7b7E96前缀和后缀一致，中间省略部分符合常规显示方式；\n- 交易哈希显示为0xa9e1...c219b3，与提交数据中的0xa9e18d08375c26666d23a1e10330bde4eccbb7e65cd543b5c9fde8359ac219b3前缀和后缀一致，中间省略，符合常规显示；\n- 手续费为0.01，与提交数据一致。\n所有信息在语义上均匹配，无明显冲突。",
+            "confidence": 0.98
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802354500100965",
+        "type": "withdrawal",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "receiver_address_equals_address",
+            "expected": "receiver_address (0x9180E0C275379D1283fe35D260712e53Da7b7E96) == address (0x9180E0C275379D1283fe35D260712e53Da7b7E96)",
+            "actual": "receiver_address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96, address: 0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "from_address_match",
+            "expected": "0xa180Fe01B906A1bE37BE6c534a3300785b20d947",
+            "actual": "0xa180Fe01B906A1bE37BE6c534a3300785b20d947",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x55d398326f99059fF775485246999027B3197955",
+            "result": "fail"
+          },
+          {
+            "check_name": "transaction_date_match",
+            "expected": "2026-01-13",
+            "actual": "2026-01-13",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "to_address_match: 期望 0x9180E0C275379D1283fe35D260712e53Da7b7E96, 实际 0x55d398326f99059fF775485246999027B3197955"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012802532400100969",
+      "timestamp": "2026-01-28T11:43:48.618432",
+      "ui_audit": {
+        "submission_id": "2026012802532400100969",
+        "overall_result": "fail",
+        "timestamp": "2026-01-28T11:44:05.668860",
+        "record": {
+          "submission_id": "2026012802532400100969",
+          "date": "2026-01-13",
+          "type": "deposit",
+          "token": "BNB",
+          "amount": "3.00999328",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/7833154962700102389_411676_.png",
+          "tx_hash": "0xd38fae894f309c7d4fc8045dbfb329a29a476a88c5d0fc4b7a27b31c7e5525e7"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "reason": "截图显示的是提现记录页面，而非入金记录。页面标题为'近期提币记录'，且弹窗内容为'提现详情'，交易类型明确为'提币'（即提现），与入金（Deposit）不符。虽然有交易记录列表和交易所界面元素，但核心功能是提现而非入金。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "",
+              "detected_evidence": "左上角有'币安'的中文标识，底部有'Binance© 2026'字样，界面设计风格与Binance平台一致，包括深色主题、导航栏布局、图标样式等。",
+              "reason": "截图中明确显示了'币安'的中文品牌名称，并在页面底部标注'Binance© 2026'，这是Binance交易所的典型标识。此外，界面设计风格、图标、字体和整体布局均与Binance平台高度一致，足以确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-13",
+              "reason": "截图中多个位置显示了交易时间：弹窗中的'提币申请已提交'时间为'2026-01-13 15:47'，'系统处理中'时间为'2026-01-13 15:48'，'已完成'时间为'2026-01-13 15:48'。这些日期均指向2026年1月13日，与提交数据中的日期'2026-01-13'完全一致，差值为0天，符合匹配标准。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "BNB",
+                "amount": "3.00999328",
+                "network": "BSC",
+                "address": "0x9180...7b7E96",
+                "tx_hash": "0xd38f...5525e7"
+              },
+              "reason": "尽管截图中的币种（BNB）、金额（3.00999328）、网络（BSC）、地址（0x9180...7b7E96）和交易哈希（0xd38f...5525e7）与提交数据基本一致，但交易类型不匹配。提交数据要求为'入金（Deposit）'，而截图显示的是'提现（Withdrawal）'，这是根本性冲突。虽然其他信息语义一致，但交易类型错误导致整体不匹配。",
+              "confidence": 0.95
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 交易所记录验证, 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": false,
+            "reason": "截图显示的是提现记录页面，而非入金记录。页面标题为'近期提币记录'，且弹窗内容为'提现详情'，交易类型明确为'提币'（即提现），与入金（Deposit）不符。虽然有交易记录列表和交易所界面元素，但核心功能是提现而非入金。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "",
+            "detected_evidence": "左上角有'币安'的中文标识，底部有'Binance© 2026'字样，界面设计风格与Binance平台一致，包括深色主题、导航栏布局、图标样式等。",
+            "reason": "截图中明确显示了'币安'的中文品牌名称，并在页面底部标注'Binance© 2026'，这是Binance交易所的典型标识。此外，界面设计风格、图标、字体和整体布局均与Binance平台高度一致，足以确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-13",
+            "reason": "截图中多个位置显示了交易时间：弹窗中的'提币申请已提交'时间为'2026-01-13 15:47'，'系统处理中'时间为'2026-01-13 15:48'，'已完成'时间为'2026-01-13 15:48'。这些日期均指向2026年1月13日，与提交数据中的日期'2026-01-13'完全一致，差值为0天，符合匹配标准。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "BNB",
+              "amount": "3.00999328",
+              "network": "BSC",
+              "address": "0x9180...7b7E96",
+              "tx_hash": "0xd38f...5525e7"
+            },
+            "reason": "尽管截图中的币种（BNB）、金额（3.00999328）、网络（BSC）、地址（0x9180...7b7E96）和交易哈希（0xd38f...5525e7）与提交数据基本一致，但交易类型不匹配。提交数据要求为'入金（Deposit）'，而截图显示的是'提现（Withdrawal）'，这是根本性冲突。虽然其他信息语义一致，但交易类型错误导致整体不匹配。",
+            "confidence": 0.95
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012802532400100969",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: False, 类型: bool",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "0xBD612a3f30dcA67bF60a39Fd0D35e39B7aB80774",
+            "actual": "0xBD612a3f30dcA67bF60a39Fd0D35e39B7aB80774",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "actual": "0x9180E0C275379D1283fe35D260712e53Da7b7E96",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-13",
+            "actual": "2026-01-13",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "has_outgoing_transaction 字段值为 False，不符合要求（需要 True）"
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "summary": {
+    "total": 16,
+    "success": 16,
+    "with_errors": 0
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "result": "success",
+  "summary": {
+    "total": 5,
+    "pass": 1,
+    "fail": 4,
+    "pending": 0
+  },
+  "verifications": [
+    {
+      "submission_id": "2026011505290000108860",
+      "type": "deposit",
+      "result": "fail",
+      "checks": [
+        {
+          "check_name": "has_outgoing_transaction_field",
+          "expected": "has_outgoing_transaction 字段存在且为布尔值",
+          "actual": "字段存在: True, 值: True, 类型: bool",
+          "result": "pass"
+        },
+        {
+          "check_name": "main_tx_from_address_match",
+          "expected": "0xF7C148A638984176D3bdfCb1e3d486BB72bfd231",
+          "actual": "0xF7C148A638984176D3bdfCb1e3d486BB72bfd231",
+          "result": "pass"
+        },
+        {
+          "check_name": "main_tx_to_address_match",
+          "expected": "0x29a8C0f2Ad07401c9C3F185bF976670C03f837A7",
+          "actual": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "result": "fail"
+        },
+        {
+          "check_name": "main_tx_date_match",
+          "expected": "2026-01-07",
+          "actual": "2026-01-07",
+          "result": "pass"
+        },
+        {
+          "check_name": "to_address_equals_outgoing_from_address",
+          "expected": "to_address (0x29a8C0f2Ad07401c9C3F185bF976670C03f837A7) == outgoing_tx_from_address (0x29a8C0f2Ad07401c9C3F185bF976670C03f837A7)",
+          "actual": "to_address: 0x29a8C0f2Ad07401c9C3F185bF976670C03f837A7, outgoing_tx_from_address: 0x29a8C0f2Ad07401c9C3F185bF976670C03f837A7",
+          "result": "pass"
+        },
+        {
+          "check_name": "outgoing_tx_from_address_match",
+          "expected": "0x29a8C0f2Ad07401c9C3F185bF976670C03f837A7",
+          "actual": "0x29a8C0f2Ad07401c9C3F185bF976670C03f837A7",
+          "result": "pass"
+        },
+        {
+          "check_name": "outgoing_tx_to_address_match",
+          "expected": "0x28C6c06298d514Db089934071355E5743bf21d60",
+          "actual": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "result": "fail"
+        }
+      ],
+      "errors": [
+        "主交易To地址不匹配: 期望 0x29a8C0f2Ad07401c9C3F185bF976670C03f837A7, 实际 0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "Outgoing交易To地址不匹配: 期望 0x28C6c06298d514Db089934071355E5743bf21d60, 实际 0xdAC17F958D2ee523a2206206994597C13D831ec7"
+      ]
+    },
+    {
+      "submission_id": "2026011901135600109574",
+      "type": "deposit",
+      "result": "fail",
+      "checks": [
+        {
+          "check_name": "has_outgoing_transaction_field",
+          "expected": "has_outgoing_transaction 字段存在且为布尔值",
+          "actual": "字段存在: True, 值: False, 类型: bool",
+          "result": "pass"
+        },
+        {
+          "check_name": "main_tx_from_address_match",
+          "expected": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+          "actual": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+          "result": "pass"
+        },
+        {
+          "check_name": "main_tx_to_address_match",
+          "expected": "0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807",
+          "actual": "0x55d398326f99059fF775485246999027B3197955",
+          "result": "fail"
+        },
+        {
+          "check_name": "main_tx_date_match",
+          "expected": "2026-01-15",
+          "actual": "2026-01-15",
+          "result": "pass"
+        }
+      ],
+      "errors": [
+        "主交易To地址不匹配: 期望 0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807, 实际 0x55d398326f99059fF775485246999027B3197955"
+      ]
+    },
+    {
+      "submission_id": "2026011901313900109575",
+      "type": "deposit",
+      "result": "pass",
+      "checks": [
+        {
+          "check_name": "has_outgoing_transaction_field",
+          "expected": "has_outgoing_transaction 字段存在且为布尔值",
+          "actual": "字段存在: True, 值: True, 类型: bool",
+          "result": "pass"
+        },
+        {
+          "check_name": "main_tx_from_address_match",
+          "expected": "bc1qt8ld4w5qy92xulef8empyhg9akhrxzfc4ttrsr",
+          "actual": [
+            "bc1qt8ld4w5qy92xulef8empyhg9akhrxzfc4ttrsr",
+            "bc1qt8ld4w5qy92xulef8empyhg9akhrxzfc4ttrsr"
+          ],
+          "result": "pass"
+        },
+        {
+          "check_name": "main_tx_to_address_match",
+          "expected": "151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan",
+          "actual": [
+            "151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan"
+          ],
+          "result": "pass"
+        },
+        {
+          "check_name": "main_tx_date_match",
+          "expected": "2026-01-05",
+          "actual": "2026-01-05",
+          "result": "pass"
+        },
+        {
+          "check_name": "to_address_equals_outgoing_from_address",
+          "expected": "to_address (151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan) == outgoing_tx_from_address (151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan)",
+          "actual": "to_address: 151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan, outgoing_tx_from_address: 151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan",
+          "result": "pass"
+        },
+        {
+          "check_name": "outgoing_tx_from_address_match",
+          "expected": "151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan",
+          "actual": [
+            "12R6USecrhPh4qfNmiJkShYra4u2f6hcBr",
+            "15fBH6vDC8P9ejQwgaau9MFC8GznKBMhk6",
+            "123TsFiYbtwsYtvm8yXrH2QiWS2KgpwZWk",
+            "12jCRoJyca5e4a5uudnrKCuuJfuCLyGUjT",
+            "158hvxAR9YfGJDxmk96reqKPRv5Z9La1pj",
+            "14jf3FxThaQga5yxHnfcaHLv61WoiCiMmL",
+            "1MEE1TD7PGwNynH6AzRzqJ98wr9wuKg45w",
+            "18qG9VXCwMq16VkB1LDfoFyJ9GJwo5MYGu",
+            "16KKJxCzcApxcMtY7F48nvm7gsYwRRiL7W",
+            "1E4Zn1tU3dN2haFBd1FeZF72UKM6vipe4K",
+            "1153fvTyAhs1wAxv2j2U99dodcXqo8um3u",
+            "1AySXk9UaCtCk81AbKR9daBw7Yqz9YY1xW",
+            "1GaHXLb13XYb5SC9GHZW5amiVqa3pfCM99",
+            "1PD3bmnR3SWuWnJjrb1iGkhtBzAVV8kCW4",
+            "1PD3bmnR3SWuWnJjrb1iGkhtBzAVV8kCW4",
+            "151oeNRvVrn4stssbK4pR8DV6XmBB7Vtan",
+            "1NnH35avvsxNwRXH4PVLJDb9icuzPhU6oH",
+            "1NnH35avvsxNwRXH4PVLJDb9icuzPhU6oH",
+            "15iRfBT4MZE5EKJzb1hKcoBLgqmSkhDZBf",
+            "161kgw9Z9MgZqfUfyGyDW1e3n52atE1ruT",
+            "19vcpDGiifaEjwxBVBkHP2YkwptpQajZh8",
+            "14z5CnrbnUs9EN3DVxkQhpWCGKqkLfHCgz",
+            "1Dj4T5DGVjc5MwrctyHf1v1guAj5nMx7oQ",
+            "1MydnSQTk6PxY5kAacjQTNtkQ9Anonsor3",
+            "1871VTd36pmcbUCJVFBt5rz1i8FuNx9u78",
+            "12E94BiGhDkYdPaFGSb8ZmfA4nqnWoNyeN",
+            "12SAqQzULoLotTBpSroe883CQUPX5z2FDi",
+            "1LXTuk7dnAchC1TghT6GBk9eVMafeS1uvF",
+            "17cSTZTa1PiMz2NhdhtkZWMG9dbZ7H8XFr",
+            "17y2gxJrpMowJfUk7VRH1H6qHSJNX2PidN",
+            "13MniK7D55k2Q9GFnjKDRrCRMr374fMdhu",
+            "17177U7fPbxweW6gmDNoT3svjJHGgQzbkV",
+            "13AW1RtVQ7V4xrNwErgKQwGfWkcGVCUJzY",
+            "159gZ3aZGPSKoBT6qGgo7ysFMxozBLcS93",
+            "1PdYPqwNW1ka3WqA427NySszxBmuEFKC9B",
+            "1KY9Qih6BhCzqiPUXxNvipbENwGKkZcynt",
+            "16yeiF188gP22rEq6qnpaMvYd2LWGFg6g8",
+            "113Kyw4Do8LcSnQxneECTpRuxxQQfGutvB",
+            "1NiX2YYpnQJQhRxPw8E2chocdryiwdVThY",
+            "134WC8VAYbN8pzbqwk7WXCW356jvxzwKgG",
+            "13d54nNriU7muvaWSbx8sas5XzQzEBmEzJ",
+            "1JqsHopL38H2aQ3oti7iTExvzYUxXUMcJE",
+            "1LvVWB15HiVBCLcZ5QJDjrGsTeRaB2wVKx",
+            "1FRWYmmNAmkJzubexx7t1FRnJtQAJmvzz5",
+            "1C62db5iZmHrk9NFmBaZmBDYAJTvbphCzV",
+            "1P5ZGjgWMS4qADMtJWWYDB5QNXLDyYeq7",
+            "1dQEoo3EpEsSjF71odTQBPYrTivHzz3CB",
+            "152mhApYz5FAWZJ6iLQ2MZrE9VdNdDqb6H",
+            "15bLDSkfyWBjHxqKWULVXi6HfwRochCxU2",
+            "1aDBy9QGT5pNqLEUKqrkKc7YDrSiLMdGA",
+            "13t6PzS8WHpY83e3ED1XLkT3Js92ao8KG6",
+            "12Cqyv1A8z4aSvesgkmY3bLGTiUMxmzFgf",
+            "179ynMN4z2tTUDBHvv3fswWvmguz86CsSz",
+            "17FcAnbx58n2BsFddoXsNx46GgEYuoANEY",
+            "15StbBcTzCda4JStAju6R5JLAtoPUBpa1t",
+            "12QYEEFkt6pNuAkAH3KGq25NbxGF3bCPti",
+            "1LgSSs5mQn6hUdBeofN6boguzEu2zxhKpT",
+            "143vgCo7ukT7Wv3kSvTh5nfpJkqG8Y9DeV",
+            "1525pP9rv4t219k3LSQ5NhWi2CWs7NgXDN",
+            "19X1sv8wK6nWhR3YcLPae7p5gXPSXNQHnC"
+          ],
+          "result": "pass"
+        },
+        {
+          "check_name": "outgoing_tx_to_address_match",
+          "expected": "bc1qgzrva028eym96uax90j28qj3aqhh3dy8gk6qvp",
+          "actual": [
+            "bc1qgzrva028eym96uax90j28qj3aqhh3dy8gk6qvp"
+          ],
+          "result": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "submission_id": "2026012101311900100298",
+      "type": "withdrawal",
+      "result": "fail",
+      "checks": [
+        {
+          "check_name": "receiver_address_equals_address",
+          "expected": "receiver_address (0xE6688D6609bC37642208ab28d198c6aA30ED41e0) == address (0xe6688d6609bc37642208ab28d198c6aa30ed41e0)",
+          "actual": "receiver_address: 0xE6688D6609bC37642208ab28d198c6aA30ED41e0, address: 0xe6688d6609bc37642208ab28d198c6aa30ed41e0",
+          "result": "pass"
+        },
+        {
+          "check_name": "from_address_match",
+          "expected": "0xa180Fe01B906A1bE37BE6c534a3300785b20d947",
+          "actual": "0xa180Fe01B906A1bE37BE6c534a3300785b20d947",
+          "result": "pass"
+        },
+        {
+          "check_name": "to_address_match",
+          "expected": "0xE6688D6609bC37642208ab28d198c6aA30ED41e0",
+          "actual": "0x55d398326f99059fF775485246999027B3197955",
+          "result": "fail"
+        },
+        {
+          "check_name": "transaction_date_match",
+          "expected": "2026-01-04",
+          "actual": "2026-01-04",
+          "result": "pass"
+        }
+      ],
+      "errors": [
+        "To地址不匹配: 期望 0xE6688D6609bC37642208ab28d198c6aA30ED41e0, 实际 0x55d398326f99059fF775485246999027B3197955"
+      ]
+    },
+    {
+      "submission_id": "2026012110191900100415",
+      "type": "withdrawal",
+      "result": "fail",
+      "checks": [
+        {
+          "check_name": "receiver_address_equals_address",
+          "expected": "receiver_address (0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D) == address (0x3f6ce9351b849f0aaac8279a37b4349859b43b9d)",
+          "actual": "receiver_address: 0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D, address: 0x3f6ce9351b849f0aaac8279a37b4349859b43b9d",
+          "result": "pass"
+        },
+        {
+          "check_name": "from_address_match",
+          "expected": "0xBD612a3f30dcA67bF60a39Fd0D35e39B7aB80774",
+          "actual": "0xBD612a3f30dcA67bF60a39Fd0D35e39B7aB80774",
+          "result": "pass"
+        },
+        {
+          "check_name": "to_address_match",
+          "expected": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+          "actual": "0x55d398326f99059fF775485246999027B3197955",
+          "result": "fail"
+        },
+        {
+          "check_name": "transaction_date_match",
+          "expected": "2026-01-15",
+          "actual": "2026-01-15",
+          "result": "pass"
+        }
+      ],
+      "errors": [
+        "To地址不匹配: 期望 0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D, 实际 0x55d398326f99059fF775485246999027B3197955"
+      ]
+    }
+  ]
+}

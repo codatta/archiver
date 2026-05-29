@@ -1,0 +1,41 @@
+{
+  "risk_score": 0.6,
+  "hit_labels": [
+    "both_hands_present",
+    "first_person_view_present"
+  ],
+  "both_hands_confidence": 0.875,
+  "object_interaction_confidence": 0.4,
+  "first_person_confidence": 0.8257485497150607,
+  "video_type": "Kitchen Cooking",
+  "video_type_confidence": 0.9027943306282359,
+  "video_type_scores": {
+    "Kitchen Cooking": 3.7619941234588623,
+    "Home Cleaning": 0.0,
+    "Household Tidying": 0.40506142377853394
+  },
+  "both_hands_pass": true,
+  "object_interaction_pass": false,
+  "first_person_pass": true,
+  "metrics": {
+    "total_frames": 24,
+    "both_hands_frames": 21,
+    "interacting_frames": 7,
+    "coexist_frames": 12,
+    "near_interaction_confidence": 0.2916666666666667,
+    "coexist_confidence": 0.5,
+    "max_object_count": 3,
+    "first_person_hit_frames": 20,
+    "first_person_lower_hit_frames": 16,
+    "first_person_vertical_hit_frames": 1,
+    "first_person_area_hit_frames": 16,
+    "first_person_area_score": 0.5884341113243813,
+    "first_person_longest_run": 13,
+    "first_person_temporal_window": 5,
+    "first_person_temporal_bonus": 0.1
+  },
+  "source": "phase3.inline_yolo_hands_objects",
+  "source_tag": "runtime_video_sampling",
+  "api_url": "http://127.0.0.1:8001/tasks/detect-persons",
+  "frames_dir": "C:\\Users\\a\\AppData\\Local\\Temp\\phase3_runtime_frames\\2026042909583100102148\\1197d4df-ec92-4b3b-b3b8-0de01ff3e164"
+}

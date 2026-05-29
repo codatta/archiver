@@ -1,0 +1,299 @@
+{
+  "result": "success",
+  "audit_results": [
+    {
+      "submission_id": "2026011504082400108842",
+      "timestamp": "2026-01-28T23:26:22.166858",
+      "ui_audit": {
+        "submission_id": "2026011504082400108842",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T23:26:49.294892",
+        "record": {
+          "submission_id": "2026011504082400108842",
+          "date": "2026-01-15",
+          "type": "deposit",
+          "token": "USDT",
+          "amount": "10",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/158960984850432_198488_.png",
+          "tx_hash": "0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的入金记录页面，包含'Deposit Crypto'、'Recent Deposits'等与入金相关的功能模块。界面中展示了多笔USDT的入金记录，每条记录包含币种、金额、日期、网络、地址和交易哈希（TxID）等信息，符合典型的交易所入金记录页面特征。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+              "detected_evidence": "截图左上角有Binance的金色logo和文字标识，导航栏包含'Binance'特有的菜单项如'Buy Crypto'、'Markets'、'Trade'等，且页面整体设计风格与Binance一致。此外，浏览器地址栏显示URL包含'binance.com'，进一步确认为Binance交易所。",
+              "reason": "截图中存在多个明确证据表明其来自Binance交易所：1）左上角有Binance的官方logo和名称；2）浏览器地址栏中的URL包含'binance.com'；3）界面布局和功能模块（如'Deposit Crypto'、'Spot Wallet'）均为Binance典型设计。这些元素共同确认该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-15",
+              "reason": "截图中显示的交易日期为'01/15/2026'，格式为月/日/年。结合提交数据中的日期'2026-01-15'，可判断该日期为2026年1月15日。转换为标准格式后为'2026-01-15'，与提交数据完全一致，差值为0天，满足匹配条件。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "USDT",
+                "amount": "10",
+                "network": "BSC",
+                "address": "0xb5e8...c9d807",
+                "tx_hash": "0x5970...7d3d41"
+              },
+              "reason": "截图中的交易信息与提交数据在语义上完全一致：1）交易类型为'Deposit'（入金），符合要求；2）币种为USDT，与提交数据一致；3）金额为10，与提交数据一致；4）网络为BSC，与BNB（即Binance Smart Chain）语义一致；5）接收地址在截图中显示为'0xb5e8...c9d807'，与提交数据中的'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'前缀和后缀匹配；6）交易哈希在截图中显示为'0x5970...7d3d41'，与提交数据中的'0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41'前缀和后缀匹配。所有信息均在宽松匹配标准下一致。",
+              "confidence": 0.99
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的入金记录页面，包含'Deposit Crypto'、'Recent Deposits'等与入金相关的功能模块。界面中展示了多笔USDT的入金记录，每条记录包含币种、金额、日期、网络、地址和交易哈希（TxID）等信息，符合典型的交易所入金记录页面特征。",
+            "confidence": 0.99
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+            "detected_evidence": "截图左上角有Binance的金色logo和文字标识，导航栏包含'Binance'特有的菜单项如'Buy Crypto'、'Markets'、'Trade'等，且页面整体设计风格与Binance一致。此外，浏览器地址栏显示URL包含'binance.com'，进一步确认为Binance交易所。",
+            "reason": "截图中存在多个明确证据表明其来自Binance交易所：1）左上角有Binance的官方logo和名称；2）浏览器地址栏中的URL包含'binance.com'；3）界面布局和功能模块（如'Deposit Crypto'、'Spot Wallet'）均为Binance典型设计。这些元素共同确认该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-15",
+            "reason": "截图中显示的交易日期为'01/15/2026'，格式为月/日/年。结合提交数据中的日期'2026-01-15'，可判断该日期为2026年1月15日。转换为标准格式后为'2026-01-15'，与提交数据完全一致，差值为0天，满足匹配条件。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "USDT",
+              "amount": "10",
+              "network": "BSC",
+              "address": "0xb5e8...c9d807",
+              "tx_hash": "0x5970...7d3d41"
+            },
+            "reason": "截图中的交易信息与提交数据在语义上完全一致：1）交易类型为'Deposit'（入金），符合要求；2）币种为USDT，与提交数据一致；3）金额为10，与提交数据一致；4）网络为BSC，与BNB（即Binance Smart Chain）语义一致；5）接收地址在截图中显示为'0xb5e8...c9d807'，与提交数据中的'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'前缀和后缀匹配；6）交易哈希在截图中显示为'0x5970...7d3d41'，与提交数据中的'0x5970656aa2baef112e89d047d1edb7a2312cbfa029374729f7968081797d3d41'前缀和后缀匹配。所有信息均在宽松匹配标准下一致。",
+            "confidence": 0.99
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026011504082400108842",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: True, 类型: bool",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+            "actual": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807",
+            "actual": "0xb5e82f6bbe4dd6d2e884d681458c7ccd53c9d807",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-15",
+            "actual": "2026-01-15",
+            "result": "pass"
+          },
+          {
+            "check_name": "to_address_equals_outgoing_from_address",
+            "expected": "to_address (0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807) == outgoing_tx_from_address (0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8)",
+            "actual": "to_address: 0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807, outgoing_tx_from_address: 0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8",
+            "result": "fail"
+          },
+          {
+            "check_name": "outgoing_tx_from_address_match",
+            "expected": "0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8",
+            "actual": "0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8",
+            "result": "pass"
+          },
+          {
+            "check_name": "outgoing_tx_to_address_match",
+            "expected": "0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807",
+            "actual": "0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "to_address (0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807) 与 outgoing_tx_from_address (0x9430801EBAf509Ad49202aaBC5F5Bc6fd8A3dAf8) 不一致"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026011901135600109574",
+      "timestamp": "2026-01-28T23:26:52.787977",
+      "ui_audit": {
+        "submission_id": "2026011901135600109574",
+        "overall_result": "pass",
+        "timestamp": "2026-01-28T23:28:27.670061",
+        "record": {
+          "submission_id": "2026011901135600109574",
+          "date": "2026-01-15",
+          "type": "deposit",
+          "token": "USDT",
+          "amount": "10",
+          "network": "BNB",
+          "exchange_name": "Binance",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/162384258547712_233355_.png",
+          "tx_hash": "0x371218410bad98a8ade7d1b7286e645652c976c0c4ce6633ebfe25ac138eafcd"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的入金记录页面，包含交易所的logo（Binance）、导航栏、交易记录列表以及入金相关的详细信息（如币种、金额、网络、地址、交易哈希等）。页面标题为'Deposit Crypto'，且有'Recent Deposits'部分列出了多笔USDT入金记录，符合交易所入金记录页面的特征。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+              "detected_evidence": "浏览器地址栏中显示URL包含'binance.com'，页面左上角有'BINANCE'的logo和品牌名称，界面设计风格与Binance一致，包括深色主题、顶部导航栏布局、按钮样式等。",
+              "reason": "截图中的URL明确指向Binance官网的入金页面，同时页面左上角有Binance的标志和名称，且整体界面设计与Binance平台高度一致，足以证明该截图来自Binance交易所。",
+              "confidence": 0.99
+            }
+            
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_date": "2026-01-15",
+              "reason": "截图中'Deposit Details'弹窗显示的日期为'01/15/2026 11:55:40 AM'，按照美国日期格式解释为2026年1月15日。该日期与提交数据中的日期'2026-01-15'完全一致，差值为0天，因此匹配。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_info": {
+                "token": "USDT",
+                "amount": "10",
+                "network": "BSC",
+                "address": "0xb5e8...c9d807",
+                "tx_hash": "0x3712...8eafcd"
+              },
+              "reason": "截图中的交易信息与提交数据在语义上一致：\n- 交易类型：弹窗标题为'Deposit Details'，且位于'Deposit Crypto'页面，表明是入金操作。\n- 币种：显示为'USDT'，与提交数据一致。\n- 金额：显示为'10'，与提交数据中的'10'一致。\n- 网络：显示为'BSC'，与提交数据中的'BNB'语义一致（BNB即Binance Smart Chain，简称BSC）。\n- 接收地址：显示为'0xb5e8...c9d807'，与提交数据中的'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'前缀和后缀一致，中间省略部分合理。\n- 交易哈希：显示为'0x3712...8eafcd'，与提交数据中的'0x371218410bad98a8ade7d1b7286e645652c976c0c4ce6633ebfe25ac138eafcd'前缀和后缀一致，中间省略部分合理。\n所有信息均在语义上匹配，无明显冲突。",
+              "confidence": 0.98
+            }
+          }
+        ],
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的入金记录页面，包含交易所的logo（Binance）、导航栏、交易记录列表以及入金相关的详细信息（如币种、金额、网络、地址、交易哈希等）。页面标题为'Deposit Crypto'，且有'Recent Deposits'部分列出了多笔USDT入金记录，符合交易所入金记录页面的特征。",
+            "confidence": 0.99
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "https://www.binance.com/en/my/wallet/account/main/deposit/crypto",
+            "detected_evidence": "浏览器地址栏中显示URL包含'binance.com'，页面左上角有'BINANCE'的logo和品牌名称，界面设计风格与Binance一致，包括深色主题、顶部导航栏布局、按钮样式等。",
+            "reason": "截图中的URL明确指向Binance官网的入金页面，同时页面左上角有Binance的标志和名称，且整体界面设计与Binance平台高度一致，足以证明该截图来自Binance交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": true,
+            "detected_date": "2026-01-15",
+            "reason": "截图中'Deposit Details'弹窗显示的日期为'01/15/2026 11:55:40 AM'，按照美国日期格式解释为2026年1月15日。该日期与提交数据中的日期'2026-01-15'完全一致，差值为0天，因此匹配。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": true,
+            "detected_info": {
+              "token": "USDT",
+              "amount": "10",
+              "network": "BSC",
+              "address": "0xb5e8...c9d807",
+              "tx_hash": "0x3712...8eafcd"
+            },
+            "reason": "截图中的交易信息与提交数据在语义上一致：\n- 交易类型：弹窗标题为'Deposit Details'，且位于'Deposit Crypto'页面，表明是入金操作。\n- 币种：显示为'USDT'，与提交数据一致。\n- 金额：显示为'10'，与提交数据中的'10'一致。\n- 网络：显示为'BSC'，与提交数据中的'BNB'语义一致（BNB即Binance Smart Chain，简称BSC）。\n- 接收地址：显示为'0xb5e8...c9d807'，与提交数据中的'0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807'前缀和后缀一致，中间省略部分合理。\n- 交易哈希：显示为'0x3712...8eafcd'，与提交数据中的'0x371218410bad98a8ade7d1b7286e645652c976c0c4ce6633ebfe25ac138eafcd'前缀和后缀一致，中间省略部分合理。\n所有信息均在语义上匹配，无明显冲突。",
+            "confidence": 0.98
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026011901135600109574",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: False, 类型: bool",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+            "actual": "0x3f6Ce9351B849F0aaAC8279a37B4349859b43B9D",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "0xB5E82F6BbE4dd6D2e884D681458C7Ccd53c9D807",
+            "actual": "0xb5e82f6bbe4dd6d2e884d681458c7ccd53c9d807",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-15",
+            "actual": "2026-01-15",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "has_outgoing_transaction 字段值为 False，不符合要求（需要 True）"
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "success": 2,
+    "with_errors": 0
+  }
+}

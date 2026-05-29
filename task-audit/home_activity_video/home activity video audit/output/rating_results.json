@@ -1,0 +1,32 @@
+{
+  "result": "success",
+  "timestamp": "2026-04-30T15:04:02.841695",
+  "summary": {
+    "total": 1,
+    "audit_grade_distribution": {
+      "D": 1
+    }
+  },
+  "rated_results": [
+    {
+      "submission_id": "2026042909583100102148",
+      "audit_grade": "D",
+      "result": 1,
+      "status": "REFUSED",
+      "reason": "阶段结果 duplicate=fail, metadata=skipped, scene_cut=skipped, yolo=skipped；video.hash 在历史数据中重复（4229fac949b07bb31a944b66e14fc1f43c67a88a3433c440665cc7a2252cbcf4）",
+      "checks": {
+        "duplicate_audit": "fail",
+        "metadata_audit": "skipped",
+        "scene_cut_audit": "skipped",
+        "yolo_audit": "skipped"
+      },
+      "ai_confidence": {
+        "both_hands_confidence": null,
+        "object_interaction_confidence": null,
+        "first_person_confidence": null,
+        "video_type": null,
+        "video_type_confidence": null
+      }
+    }
+  ]
+}

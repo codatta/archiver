@@ -1,0 +1,345 @@
+{
+  "result": "success",
+  "timestamp": "2026-01-28T11:44:14.069463",
+  "summary": {
+    "total": 16,
+    "rating_distribution": {
+      "1": 2,
+      "2": 0,
+      "3": 11,
+      "4": 0,
+      "5": 3
+    }
+  },
+  "rated_results": [
+    {
+      "submission_id": "2026011504082400108842",
+      "type": "deposit",
+      "rating": 3,
+      "reason": "其他情况",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "pass"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "pass",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "fail",
+          "main_tx_date_match": "pass",
+          "to_address_equals_outgoing_from_address": "fail",
+          "outgoing_tx_from_address_match": "pass",
+          "outgoing_tx_to_address_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012711505800100948",
+      "type": "withdrawal",
+      "rating": 5,
+      "reason": "所有审核子项均通过",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "pass"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "pass",
+          "to_address_match": "pass",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012712184200100949",
+      "type": "withdrawal",
+      "rating": 3,
+      "reason": "其他情况",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "pass"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "fail",
+          "to_address_match": "fail",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802235700100958",
+      "type": "withdrawal",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "pass",
+          "to_address_match": "fail",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802272900100959",
+      "type": "withdrawal",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "pass",
+          "to_address_match": "pass",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802285000100960",
+      "type": "deposit",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "fail",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802303200100961",
+      "type": "deposit",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "fail",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802315300100963",
+      "type": "deposit",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "fail",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802382800100966",
+      "type": "withdrawal",
+      "rating": 5,
+      "reason": "所有审核子项均通过",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "pass"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "pass",
+          "to_address_match": "pass",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802453700100967",
+      "type": "deposit",
+      "rating": 1,
+      "reason": "交易所记录验证不通过",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "fail",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "pass",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass",
+          "to_address_equals_outgoing_from_address": "pass",
+          "outgoing_tx_from_address_match": "pass",
+          "outgoing_tx_to_address_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802495300100968",
+      "type": "deposit",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "pass",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass",
+          "to_address_equals_outgoing_from_address": "pass",
+          "outgoing_tx_from_address_match": "pass",
+          "outgoing_tx_to_address_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802214500100957",
+      "type": "withdrawal",
+      "rating": 3,
+      "reason": "UI审核部分不通过: transaction_info_match",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "pass",
+          "to_address_match": "fail",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802303400100962",
+      "type": "withdrawal",
+      "rating": 3,
+      "reason": "其他情况",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "pass"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "pass",
+          "to_address_match": "fail",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802331400100964",
+      "type": "withdrawal",
+      "rating": 5,
+      "reason": "所有审核子项均通过",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "pass"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "pass",
+          "to_address_match": "pass",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802354500100965",
+      "type": "withdrawal",
+      "rating": 3,
+      "reason": "其他情况",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "pass",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "pass"
+        },
+        "txhash_audit": {
+          "receiver_address_equals_address": "pass",
+          "from_address_match": "pass",
+          "to_address_match": "fail",
+          "transaction_date_match": "pass"
+        }
+      }
+    },
+    {
+      "submission_id": "2026012802532400100969",
+      "type": "deposit",
+      "rating": 1,
+      "reason": "交易所记录验证不通过",
+      "checks": {
+        "ui_audit": {
+          "is_exchange_record": "fail",
+          "exchange_verification": "pass",
+          "transaction_date_match": "pass",
+          "transaction_info_match": "fail"
+        },
+        "txhash_audit": {
+          "has_outgoing_transaction_field": "fail",
+          "main_tx_from_address_match": "pass",
+          "main_tx_to_address_match": "pass",
+          "main_tx_date_match": "pass"
+        }
+      }
+    }
+  ]
+}

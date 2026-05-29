@@ -1,0 +1,88 @@
+[
+  {
+    "submission_id": "sample_pass_001",
+    "user_id": "u001",
+    "frontier_id": "ROBSTIC001",
+    "template_id": "ROBOTICS_TPL_000001",
+    "task_id": "6155750566400105570",
+    "data_submission": {
+      "data": [
+        { "start": 0, "end": 8, "des": "机器人手靠近方块，准备抓取物体" },
+        { "start": 8, "end": 18, "des": "机械臂调整位置后从柜子上拿起方块" }
+      ]
+    }
+  },
+  {
+    "submission_id": "sample_placeholder_002",
+    "user_id": "u002",
+    "frontier_id": "ROBSTIC001",
+    "template_id": "ROBOTICS_TPL_000001",
+    "task_id": "6155750566400105570",
+    "data_submission": {
+      "data": [
+        { "start": 1, "end": 1, "des": "" },
+        { "start": 2, "end": 2, "des": "" },
+        { "start": 3, "end": 3, "des": "" }
+      ]
+    }
+  },
+  {
+    "submission_id": "sample_overlap_003",
+    "user_id": "u003",
+    "frontier_id": "ROBSTIC001",
+    "template_id": "ROBOTICS_TPL_000001",
+    "task_id": "6155750566400105570",
+    "data_submission": {
+      "data": [
+        { "start": 0, "end": 10, "des": "Lowering its arm to reach cube" },
+        { "start": 5, "end": 15, "des": "Picking up cube from the cupboard" }
+      ]
+    }
+  },
+  {
+    "submission_id": "sample_metadata_garbage_004",
+    "user_id": "u004",
+    "frontier_id": "ROBSTIC001",
+    "template_id": "ROBOTICS_TPL_000003",
+    "task_id": "6459383134000101991",
+    "task_reference_data": {
+      "task": ["move magnet into table"],
+      "view": ["first_persion_view"],
+      "objects": ["table", "tv", "lift"],
+      "relations": ["object", "place", "table"],
+      "agent_type": [{ "status": "mobile", "armCount": "1", "handCount": "1" }],
+      "environment": "Office"
+    },
+    "data_submission": {
+      "task": ["gfhgf"],
+      "view": ["first_persion_view", "dynamic"],
+      "objects": ["gfdg"],
+      "relations": ["fghg", "dgfdg"],
+      "agent_type": [{ "status": "static", "armCount": "1", "handCount": "1" }],
+      "environment": "Indoor"
+    }
+  },
+  {
+    "submission_id": "sample_metadata_ok_005",
+    "user_id": "u005",
+    "frontier_id": "ROBSTIC001",
+    "template_id": "ROBOTICS_TPL_000003",
+    "task_id": "6459383134000101991",
+    "task_reference_data": {
+      "task": ["move magnet into table"],
+      "view": ["first_persion_view"],
+      "objects": ["table", "tv", "lift"],
+      "relations": ["object", "place", "table"],
+      "agent_type": [{ "status": "mobile", "armCount": "1", "handCount": "1" }],
+      "environment": "Office"
+    },
+    "data_submission": {
+      "task": ["move magnet into table"],
+      "view": ["first_persion_view"],
+      "objects": ["table", "tv", "lift"],
+      "relations": ["object", "place", "table"],
+      "agent_type": [{ "status": "mobile", "armCount": "1", "handCount": "1" }],
+      "environment": "Office"
+    }
+  }
+]

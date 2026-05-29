@@ -1,0 +1,41 @@
+[
+  {
+    "submission_id": "2026032002430900103174",
+    "image_quality": {
+      "clear": true,
+      "tampered": false,
+      "text_readable": true,
+      "notes": "截图清晰，二维码和文字内容可辨，无明显PS或篡改痕迹。"
+    },
+    "extracted": {
+      "chain": "ethereum_mainnet",
+      "address": "0x5166398D1307Cadc8B2b5E79A967d7A86B354313",
+      "entities": "Exchange Desk",
+      "labels": "P2P OTC",
+      "website_link": null,
+      "txid": null,
+      "screenshot_link": "https://file.b18a.io/temp202603200241591220_412870_.png",
+      "trace_type": null
+    },
+    "extensions": {
+      "token": "ETH"
+    },
+    "raw_llm_response": {
+      "image_quality_clear": true,
+      "image_quality_tampered": false,
+      "image_quality_text_readable": true,
+      "image_quality_notes": "截图清晰，二维码和文字内容可辨，无明显PS或篡改痕迹。",
+      "chain": "ethereum_mainnet",
+      "address": "0x5166398D1307Cadc8B2b5E79A967d7A86B354313",
+      "entities": "Exchange Desk",
+      "labels": "P2P OTC",
+      "website_link": null,
+      "txid": null,
+      "trace_type": null,
+      "extensions": {
+        "token": "ETH"
+      }
+    },
+    "error": null
+  }
+]

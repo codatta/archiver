@@ -1,0 +1,418 @@
+{
+  "result": "success",
+  "audit_results": [
+    {
+      "submission_id": "2026012901092300100992",
+      "timestamp": "2026-01-29T10:34:49.141733",
+      "ui_audit": {
+        "submission_id": "2026012901092300100992",
+        "overall_result": "fail",
+        "timestamp": "2026-01-29T10:35:19.372322",
+        "record": {
+          "submission_id": "2026012901092300100992",
+          "date": "2026-01-29",
+          "type": "deposit",
+          "token": "SOL",
+          "amount": "0.02307766",
+          "network": "SOL",
+          "exchange_name": "OKX",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/8782938832800100633_873860_.png",
+          "tx_hash": "3u8doFvKQYg8vjW2YkWbQ6wngvm3JuX3PJbpQRVXz3saYeEdj24n81y6oX8ozeTjLGCFmgsJJFDyhFiCkLZDs9hC"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示的是一个交易所的入金（Deposit）记录页面，包含交易记录列表、币种、金额、交易哈希、地址等典型入金信息。页面顶部有交易所的导航栏和品牌标识，左侧有‘Setor’（存款）标题，下方列出了多条交易记录，每条记录包含时间、地址、交易ID、币种、数量、确认数和状态，符合交易所入金记录页面的特征。",
+              "confidence": 0.98
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "okx.com/da/balance/recharge",
+              "detected_evidence": "页面左上角有OKX的logo（黑色方块内白色OKX字样），导航栏中显示‘OKX’品牌名称，浏览器地址栏显示URL为okx.com，且页面设计风格与OKX官方界面一致。",
+              "reason": "截图中明确可见OKX的logo和品牌名称，浏览器地址栏中的URL也指向okx.com，且页面整体布局和功能模块（如Pendanaan、Trading、Aset等）与OKX平台一致，足以证明该截图来自OKX交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": false,
+              "detected_date": "2026-01-29",
+              "reason": "截图中显示的交易日期为2026年1月29日，但实际交易记录中的最早日期为2026年1月25日，最晚为2026年1月29日。根据截图中表格第一行的时间'29 Jan 2026, 12:05 AM'，识别出原始日期为'2026-01-29'，格式化为YYYY-MM-DD后为'2026-01-29'。提交数据中的日期也为'2026-01-29'，因此两个日期完全一致，差值为0天，在1天之内，应判定为匹配。然而，由于提交数据中的交易日期是'2026-01-29'，而截图中存在多个交易记录，其中一条确实发生在该日期，但其他交易在更早时间。但由于问题要求的是‘是否匹配’，且检测到的日期与提交数据一致，因此应判定为匹配。此处修正：虽然截图中有多笔交易，但至少有一笔发生在2026-01-29，与提交数据匹配，故结果应为true。重新判断：截图中存在一条交易时间为'29 Jan 2026, 12:05 AM'，即'2026-01-29'，与提交数据中的日期完全一致，差值为0天，满足匹配条件。",
+              "confidence": 0.95
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "SOL",
+                "amount": "0.02307766",
+                "network": "SOL",
+                "address": "VPWZ55DGLRRUH1aoB3BakK9oLHnNfMvMFgW4wb91xW/nqN",
+                "tx_hash": "3u8d....s9hC"
+              },
+              "reason": "截图中显示的交易信息如下：币种为SOL，金额为0.02307766，网络为SOL，接收地址为'VPWZ55DGLRRUH1aoB3BakK9oLHnNfMvMFgW4wb91xW/nqN'，交易哈希为'3u8d....s9hC'。与提交数据对比：\n- 交易类型：截图显示为入金（Deposit），与提交数据一致。\n- 币种：均为SOL，匹配。\n- 金额：截图中金额为0.02307766，与提交数据中的0.02307766完全一致，匹配。\n- 网络：截图中网络为SOL，与提交数据中的SOL一致，匹配。\n- 接收地址：截图中地址为'VPWZ55DGLRRUH1aoB3BakK9oLHnNfMvMFgW4wb91xW/nqN'，而提交数据中的地址为'CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL'，两者不一致，且无部分重合，无法匹配。\n- 交易哈希：截图中交易哈希为'3u8d....s9hC'，而提交数据中的哈希为'3u8doFvKQYg8vjW2YkWbQ6wngvm3JuX3PJbpQRVXz3saYeEdj24n81y6oX8ozeTjLGCFmgsJJFDyhFiCkLZDs9hC'，前缀'3u8d'部分匹配，但中间被省略，无法确认完整哈希是否一致，且长度明显不同，因此不匹配。\n综上，虽然币种、金额、网络和交易类型匹配，但接收地址和交易哈希不匹配，导致整体不匹配。",
+              "confidence": 0.7
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示的是一个交易所的入金（Deposit）记录页面，包含交易记录列表、币种、金额、交易哈希、地址等典型入金信息。页面顶部有交易所的导航栏和品牌标识，左侧有‘Setor’（存款）标题，下方列出了多条交易记录，每条记录包含时间、地址、交易ID、币种、数量、确认数和状态，符合交易所入金记录页面的特征。",
+            "confidence": 0.98
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "okx.com/da/balance/recharge",
+            "detected_evidence": "页面左上角有OKX的logo（黑色方块内白色OKX字样），导航栏中显示‘OKX’品牌名称，浏览器地址栏显示URL为okx.com，且页面设计风格与OKX官方界面一致。",
+            "reason": "截图中明确可见OKX的logo和品牌名称，浏览器地址栏中的URL也指向okx.com，且页面整体布局和功能模块（如Pendanaan、Trading、Aset等）与OKX平台一致，足以证明该截图来自OKX交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": false,
+            "detected_date": "2026-01-29",
+            "reason": "截图中显示的交易日期为2026年1月29日，但实际交易记录中的最早日期为2026年1月25日，最晚为2026年1月29日。根据截图中表格第一行的时间'29 Jan 2026, 12:05 AM'，识别出原始日期为'2026-01-29'，格式化为YYYY-MM-DD后为'2026-01-29'。提交数据中的日期也为'2026-01-29'，因此两个日期完全一致，差值为0天，在1天之内，应判定为匹配。然而，由于提交数据中的交易日期是'2026-01-29'，而截图中存在多个交易记录，其中一条确实发生在该日期，但其他交易在更早时间。但由于问题要求的是‘是否匹配’，且检测到的日期与提交数据一致，因此应判定为匹配。此处修正：虽然截图中有多笔交易，但至少有一笔发生在2026-01-29，与提交数据匹配，故结果应为true。重新判断：截图中存在一条交易时间为'29 Jan 2026, 12:05 AM'，即'2026-01-29'，与提交数据中的日期完全一致，差值为0天，满足匹配条件。",
+            "confidence": 0.95
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "SOL",
+              "amount": "0.02307766",
+              "network": "SOL",
+              "address": "VPWZ55DGLRRUH1aoB3BakK9oLHnNfMvMFgW4wb91xW/nqN",
+              "tx_hash": "3u8d....s9hC"
+            },
+            "reason": "截图中显示的交易信息如下：币种为SOL，金额为0.02307766，网络为SOL，接收地址为'VPWZ55DGLRRUH1aoB3BakK9oLHnNfMvMFgW4wb91xW/nqN'，交易哈希为'3u8d....s9hC'。与提交数据对比：\n- 交易类型：截图显示为入金（Deposit），与提交数据一致。\n- 币种：均为SOL，匹配。\n- 金额：截图中金额为0.02307766，与提交数据中的0.02307766完全一致，匹配。\n- 网络：截图中网络为SOL，与提交数据中的SOL一致，匹配。\n- 接收地址：截图中地址为'VPWZ55DGLRRUH1aoB3BakK9oLHnNfMvMFgW4wb91xW/nqN'，而提交数据中的地址为'CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL'，两者不一致，且无部分重合，无法匹配。\n- 交易哈希：截图中交易哈希为'3u8d....s9hC'，而提交数据中的哈希为'3u8doFvKQYg8vjW2YkWbQ6wngvm3JuX3PJbpQRVXz3saYeEdj24n81y6oX8ozeTjLGCFmgsJJFDyhFiCkLZDs9hC'，前缀'3u8d'部分匹配，但中间被省略，无法确认完整哈希是否一致，且长度明显不同，因此不匹配。\n综上，虽然币种、金额、网络和交易类型匹配，但接收地址和交易哈希不匹配，导致整体不匹配。",
+            "confidence": 0.7
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012901092300100992",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: False, 类型: bool",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "5tra33amvzXwnnzgwtaYEofWJifwyRc5WcVGxKqtNkiy",
+            "actual": "5tra33amvzXwnnzgwtaYEofWJifwyRc5WcVGxKqtNkiy",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "actual": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-29",
+            "actual": "2026-01-29",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "has_outgoing_transaction 字段值为 False，不符合要求（需要 True）"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012901434000100993",
+      "timestamp": "2026-01-29T10:35:20.566689",
+      "ui_audit": {
+        "submission_id": "2026012901434000100993",
+        "overall_result": "fail",
+        "timestamp": "2026-01-29T10:36:04.844181",
+        "record": {
+          "submission_id": "2026012901434000100993",
+          "date": "2026-01-29",
+          "type": "deposit",
+          "token": "SOL",
+          "amount": "0.00535092",
+          "network": "SOL",
+          "exchange_name": "OKX",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/8782938832800100633_609668_.png",
+          "tx_hash": "3DUDNRwgqmh721AFhrknQgPtoHAAvUVjUn6s8HKf4MfvNYG7AhaMdEm6oT1dKGesuXP5bxHKUSYebc9TftAom153"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示了交易所的入金记录页面，包含交易所的Logo（OKX）、导航栏、交易记录列表以及与入金相关的字段（如'Pilih Kripto'、'Pilih Jaringan'、'Detail setoran'），并且有明确的'Semua Riwayat Deposit'表格，列出了交易时间、地址、ID Transaksi、Token、Jumlah、Kemajuan和Status等信息，符合交易所入金记录页面的典型特征。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "okx.com/id/balance/recharge",
+              "detected_evidence": "页面左上角有OKX的Logo，浏览器标签页标题为'OKX - Pilih Kripto'，URL中包含'okx.com'，页面顶部导航栏显示'OKX'品牌标识，且界面语言和设计风格与OKX平台一致。",
+              "reason": "截图中的多个证据表明该页面来自OKX交易所：1）浏览器地址栏显示URL为'okx.com/id/balance/recharge'，这是OKX的官方域名；2）页面左上角有OKX的标志性Logo；3）页面顶部导航栏中有'OKX'品牌名称；4）整体界面设计和功能布局与OKX平台一致。这些证据充分证明截图来自OKX交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": false,
+              "detected_date": "2026-01-28",
+              "reason": "截图中最新的交易日期为'28 Jan 2026, 09:00 PM'，即2026年1月28日。提交数据中的交易日期为2026-01-29。两者相差1天，虽然在允许的误差范围内（±1天），但根据判定规则，仅当差值在1天之内（包括同一天或相差1天）时才视为匹配。然而，此处的交易日期是2026-01-28，而提交数据为2026-01-29，属于相邻日期，因此应判断为不匹配。尽管差值为1天，但严格按规则执行，若要求精确匹配，则不满足。但注意：若允许±1天，则应为true。然而题目中明确指出‘如果日期差在1天之内（包括同一天、相差1天），则 result: true’，所以这里应为true。但重新审题发现：检测到的是28日，提交的是29日，差值为1天，应在允许范围内。因此应为true。但原逻辑存在矛盾，需纠正。\n\n修正：\n检测到的日期为2026-01-28，提交日期为2026-01-29，差值为1天，在允许范围内，因此应为true。\n\n**更正后的结果：**\nresult: true\n\n理由：截图中最新交易时间为'28 Jan 2026, 09:00 PM'，即2026年1月28日，与提交数据中的2026-01-29相差1天，符合判定规则中‘日期差在1天之内’的条件，因此判定为匹配。",
+              "confidence": 0.95
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "SOL",
+                "amount": "0.00535092",
+                "network": "SOL",
+                "address": "VPWZ55DQLRRUH1aoB3BakK9oLHnNfMvMfgW4wb91xWnoN",
+                "tx_hash": "3DUD...m154"
+              },
+              "reason": "截图中交易信息部分与提交数据存在以下不匹配：\n1. **交易类型**：截图显示为入金（Deposit），与提交数据一致，此项匹配。\n2. **币种**：截图中Token为'SOL'，与提交数据中的'SOL'一致，此项匹配。\n3. **金额**：截图中金额为'0.00535092'，与提交数据中的'0.00535092'完全一致，此项匹配。\n4. **网络**：截图中网络为'SOL'，与提交数据中的'SOL'一致，此项匹配。\n5. **接收地址**：截图中地址为'VPWZ55DQLRRUH1aoB3BakK9oLHnNfMvMfgW4wb91xWnoN'，而提交数据中的地址为'CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL'，两个地址完全不同，无任何重合部分，此项不匹配。\n6. **交易哈希**：截图中交易哈希为'3DUD...m154'，而提交数据中的哈希为'3DUDNRwgqmh721AFhrknQgPtoHAAvUVjUn6s8HKf4MfvNYG7AhaMdEm6oT1dKGesuXP5bxHKUSYebc9TftAom153'，可见部分'3DUD...'与提交数据前缀一致，但完整哈希不匹配，且中间省略号无法确认是否一致。由于提交数据中的哈希长度远超截图中显示的，且截图未显示完整，无法验证是否完全一致，但可见部分匹配，可视为宽松匹配。\n\n然而，最关键的问题是**接收地址**完全不匹配，且无任何重合。提交数据中的地址以'CgBD...'开头，而截图中的地址以'VPWZ...'开头，属于不同地址。因此，尽管其他信息基本匹配，但由于地址不一致，整体判定为不匹配。",
+              "confidence": 0.6
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示了交易所的入金记录页面，包含交易所的Logo（OKX）、导航栏、交易记录列表以及与入金相关的字段（如'Pilih Kripto'、'Pilih Jaringan'、'Detail setoran'），并且有明确的'Semua Riwayat Deposit'表格，列出了交易时间、地址、ID Transaksi、Token、Jumlah、Kemajuan和Status等信息，符合交易所入金记录页面的典型特征。",
+            "confidence": 0.99
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "okx.com/id/balance/recharge",
+            "detected_evidence": "页面左上角有OKX的Logo，浏览器标签页标题为'OKX - Pilih Kripto'，URL中包含'okx.com'，页面顶部导航栏显示'OKX'品牌标识，且界面语言和设计风格与OKX平台一致。",
+            "reason": "截图中的多个证据表明该页面来自OKX交易所：1）浏览器地址栏显示URL为'okx.com/id/balance/recharge'，这是OKX的官方域名；2）页面左上角有OKX的标志性Logo；3）页面顶部导航栏中有'OKX'品牌名称；4）整体界面设计和功能布局与OKX平台一致。这些证据充分证明截图来自OKX交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": false,
+            "detected_date": "2026-01-28",
+            "reason": "截图中最新的交易日期为'28 Jan 2026, 09:00 PM'，即2026年1月28日。提交数据中的交易日期为2026-01-29。两者相差1天，虽然在允许的误差范围内（±1天），但根据判定规则，仅当差值在1天之内（包括同一天或相差1天）时才视为匹配。然而，此处的交易日期是2026-01-28，而提交数据为2026-01-29，属于相邻日期，因此应判断为不匹配。尽管差值为1天，但严格按规则执行，若要求精确匹配，则不满足。但注意：若允许±1天，则应为true。然而题目中明确指出‘如果日期差在1天之内（包括同一天、相差1天），则 result: true’，所以这里应为true。但重新审题发现：检测到的是28日，提交的是29日，差值为1天，应在允许范围内。因此应为true。但原逻辑存在矛盾，需纠正。\n\n修正：\n检测到的日期为2026-01-28，提交日期为2026-01-29，差值为1天，在允许范围内，因此应为true。\n\n**更正后的结果：**\nresult: true\n\n理由：截图中最新交易时间为'28 Jan 2026, 09:00 PM'，即2026年1月28日，与提交数据中的2026-01-29相差1天，符合判定规则中‘日期差在1天之内’的条件，因此判定为匹配。",
+            "confidence": 0.95
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "SOL",
+              "amount": "0.00535092",
+              "network": "SOL",
+              "address": "VPWZ55DQLRRUH1aoB3BakK9oLHnNfMvMfgW4wb91xWnoN",
+              "tx_hash": "3DUD...m154"
+            },
+            "reason": "截图中交易信息部分与提交数据存在以下不匹配：\n1. **交易类型**：截图显示为入金（Deposit），与提交数据一致，此项匹配。\n2. **币种**：截图中Token为'SOL'，与提交数据中的'SOL'一致，此项匹配。\n3. **金额**：截图中金额为'0.00535092'，与提交数据中的'0.00535092'完全一致，此项匹配。\n4. **网络**：截图中网络为'SOL'，与提交数据中的'SOL'一致，此项匹配。\n5. **接收地址**：截图中地址为'VPWZ55DQLRRUH1aoB3BakK9oLHnNfMvMfgW4wb91xWnoN'，而提交数据中的地址为'CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL'，两个地址完全不同，无任何重合部分，此项不匹配。\n6. **交易哈希**：截图中交易哈希为'3DUD...m154'，而提交数据中的哈希为'3DUDNRwgqmh721AFhrknQgPtoHAAvUVjUn6s8HKf4MfvNYG7AhaMdEm6oT1dKGesuXP5bxHKUSYebc9TftAom153'，可见部分'3DUD...'与提交数据前缀一致，但完整哈希不匹配，且中间省略号无法确认是否一致。由于提交数据中的哈希长度远超截图中显示的，且截图未显示完整，无法验证是否完全一致，但可见部分匹配，可视为宽松匹配。\n\n然而，最关键的问题是**接收地址**完全不匹配，且无任何重合。提交数据中的地址以'CgBD...'开头，而截图中的地址以'VPWZ...'开头，属于不同地址。因此，尽管其他信息基本匹配，但由于地址不一致，整体判定为不匹配。",
+            "confidence": 0.6
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012901434000100993",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: False, 类型: bool",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "BVabVxQnsHCEWiapqMUFdatKmPQ6C2buvQ5xbbcBbokP",
+            "actual": "BVabVxQnsHCEWiapqMUFdatKmPQ6C2buvQ5xbbcBbokP",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "actual": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-29",
+            "actual": "2026-01-28",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "has_outgoing_transaction 字段值为 False，不符合要求（需要 True）"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "submission_id": "2026012901450300100994",
+      "timestamp": "2026-01-29T10:36:06.182813",
+      "ui_audit": {
+        "submission_id": "2026012901450300100994",
+        "overall_result": "fail",
+        "timestamp": "2026-01-29T10:37:55.462868",
+        "record": {
+          "submission_id": "2026012901450300100994",
+          "date": "2026-01-29",
+          "type": "deposit",
+          "token": "SOL",
+          "amount": "0.02919688",
+          "network": "SOL",
+          "exchange_name": "OKX",
+          "exchange_ui_screenshot_url": "https://file.b18a.io/8782938832800100633_748732_.png",
+          "tx_hash": "2KeJuoib8uP5mHT5gmfmUmrLzYRs9tGfDRAYW4uqcZSZW3y12ardM5fUMBKamH6zT57UmhgRHf9QZghufSCnb7c4"
+        },
+        "checks": [
+          {
+            "check_name": "is_exchange_record",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "reason": "截图显示的是一个加密货币交易所的入金（Deposit）页面，包含交易记录列表、币种选择、网络选择等典型交易所界面元素。页面顶部有‘Setor’（存款）标题，下方有‘Pilih Kripto’（选择加密货币）、‘Pilih Jaringan’（选择网络）等步骤，以及详细的交易历史记录，包括时间、地址、交易ID、币种、金额和状态。这些都符合交易所入金记录页面的特征。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "exchange_verification",
+            "result": "pass",
+            "llm_response": {
+              "result": true,
+              "detected_url": "okx.com/da/balance/recharge",
+              "detected_evidence": "页面左上角有OKX的标志（黑色方块内白色棋盘格图案），导航栏中显示‘OKX’品牌名称，浏览器地址栏中显示URL为‘okx.com/da/balance/recharge’，与OKX交易所域名一致。",
+              "reason": "截图中存在多个明确证据证明该页面来自OKX交易所：1）浏览器地址栏中的URL包含‘okx.com’；2）页面左上角有OKX的官方logo；3）页面顶部导航栏中有‘OKX’品牌标识；4）界面风格和布局与OKX平台一致。这些证据共同确认了该截图来自OKX交易所。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_date_match",
+            "result": "pass",
+            "llm_response": {
+              "result": false,
+              "detected_date": "2026-01-29",
+              "reason": "截图中显示的最新一笔交易日期为‘25 Jan 2026, 06:59 PM’，即2026年1月25日。提交数据中的交易日期为2026-01-29。两者相差4天，超出1天的匹配范围。因此，日期不匹配。识别到的原始日期格式为‘25 Jan 2026, 06:59 PM’，转换为YYYY-MM-DD格式为‘2026-01-25’。",
+              "confidence": 0.99
+            }
+          },
+          {
+            "check_name": "transaction_info_match",
+            "result": "fail",
+            "llm_response": {
+              "result": false,
+              "detected_info": {
+                "token": "SOL",
+                "amount": "0.02919688",
+                "network": "SOL",
+                "address": "VPWZ55DQLRUH1aoB3BakK9oLHnNlMvMfgW4wb91xWnqN",
+                "tx_hash": "2KeJ...b7c4"
+              },
+              "reason": "虽然截图中显示的交易信息在部分字段上与提交数据接近，但关键信息存在明显差异：\n1. **交易类型**：截图显示为‘Deposit’（入金），与提交数据一致，匹配。\n2. **币种**：截图中显示为‘SOL’，与提交数据一致，匹配。\n3. **金额**：截图中第三笔交易金额为‘0.02919688’，与提交数据中的‘0.02919688’完全一致，匹配。\n4. **网络**：截图中网络为‘SOL’，与提交数据中的‘SOL’一致，匹配。\n5. **接收地址**：截图中地址为‘VPWZ55DQLRUH1aoB3BakK9oLHnNlMvMfgW4wb91xWnqN’，而提交数据中的地址为‘CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL’，两个地址完全不同，且无任何重叠部分，不匹配。\n6. **交易哈希**：截图中交易哈希为‘2KeJ...b7c4’，与提交数据中的‘2KeJuoib8uP5mHT5gmfmUmrLzYRs9tGfDRAYW4uqcZSZW3y12ardM5fUMBKamH6zT57UmhgRHf9QZghufSCnb7c4’相比，虽然前缀‘2KeJ’和后缀‘b7c4’一致，但中间部分被省略，无法确认是否完全相同。然而，由于地址已不匹配，即使哈希可能部分匹配，整体仍判定为不匹配。\n综上，因接收地址完全不符，导致整体交易信息不匹配。",
+              "confidence": 0.85
+            }
+          }
+        ],
+        "reason": "以下检查项失败: 其他交易信息匹配",
+        "llm_raw_response": {
+          "is_exchange_record": {
+            "result": true,
+            "reason": "截图显示的是一个加密货币交易所的入金（Deposit）页面，包含交易记录列表、币种选择、网络选择等典型交易所界面元素。页面顶部有‘Setor’（存款）标题，下方有‘Pilih Kripto’（选择加密货币）、‘Pilih Jaringan’（选择网络）等步骤，以及详细的交易历史记录，包括时间、地址、交易ID、币种、金额和状态。这些都符合交易所入金记录页面的特征。",
+            "confidence": 0.99
+          },
+          "exchange_verification": {
+            "result": true,
+            "detected_url": "okx.com/da/balance/recharge",
+            "detected_evidence": "页面左上角有OKX的标志（黑色方块内白色棋盘格图案），导航栏中显示‘OKX’品牌名称，浏览器地址栏中显示URL为‘okx.com/da/balance/recharge’，与OKX交易所域名一致。",
+            "reason": "截图中存在多个明确证据证明该页面来自OKX交易所：1）浏览器地址栏中的URL包含‘okx.com’；2）页面左上角有OKX的官方logo；3）页面顶部导航栏中有‘OKX’品牌标识；4）界面风格和布局与OKX平台一致。这些证据共同确认了该截图来自OKX交易所。",
+            "confidence": 0.99
+          },
+          "transaction_date_match": {
+            "result": false,
+            "detected_date": "2026-01-29",
+            "reason": "截图中显示的最新一笔交易日期为‘25 Jan 2026, 06:59 PM’，即2026年1月25日。提交数据中的交易日期为2026-01-29。两者相差4天，超出1天的匹配范围。因此，日期不匹配。识别到的原始日期格式为‘25 Jan 2026, 06:59 PM’，转换为YYYY-MM-DD格式为‘2026-01-25’。",
+            "confidence": 0.99
+          },
+          "transaction_info_match": {
+            "result": false,
+            "detected_info": {
+              "token": "SOL",
+              "amount": "0.02919688",
+              "network": "SOL",
+              "address": "VPWZ55DQLRUH1aoB3BakK9oLHnNlMvMfgW4wb91xWnqN",
+              "tx_hash": "2KeJ...b7c4"
+            },
+            "reason": "虽然截图中显示的交易信息在部分字段上与提交数据接近，但关键信息存在明显差异：\n1. **交易类型**：截图显示为‘Deposit’（入金），与提交数据一致，匹配。\n2. **币种**：截图中显示为‘SOL’，与提交数据一致，匹配。\n3. **金额**：截图中第三笔交易金额为‘0.02919688’，与提交数据中的‘0.02919688’完全一致，匹配。\n4. **网络**：截图中网络为‘SOL’，与提交数据中的‘SOL’一致，匹配。\n5. **接收地址**：截图中地址为‘VPWZ55DQLRUH1aoB3BakK9oLHnNlMvMfgW4wb91xWnqN’，而提交数据中的地址为‘CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL’，两个地址完全不同，且无任何重叠部分，不匹配。\n6. **交易哈希**：截图中交易哈希为‘2KeJ...b7c4’，与提交数据中的‘2KeJuoib8uP5mHT5gmfmUmrLzYRs9tGfDRAYW4uqcZSZW3y12ardM5fUMBKamH6zT57UmhgRHf9QZghufSCnb7c4’相比，虽然前缀‘2KeJ’和后缀‘b7c4’一致，但中间部分被省略，无法确认是否完全相同。然而，由于地址已不匹配，即使哈希可能部分匹配，整体仍判定为不匹配。\n综上，因接收地址完全不符，导致整体交易信息不匹配。",
+            "confidence": 0.85
+          }
+        }
+      },
+      "txhash_audit": {
+        "submission_id": "2026012901450300100994",
+        "type": "deposit",
+        "result": "fail",
+        "checks": [
+          {
+            "check_name": "has_outgoing_transaction_field",
+            "expected": "has_outgoing_transaction 字段存在且为 True（布尔值）",
+            "actual": "字段存在: True, 值: False, 类型: bool",
+            "result": "fail"
+          },
+          {
+            "check_name": "main_tx_from_address_match",
+            "expected": "FHJnj9y8yPeRnYMq3QWcgyyptm1Yz1ct3g4we4i6zux6",
+            "actual": "FHJnj9y8yPeRnYMq3QWcgyyptm1Yz1ct3g4we4i6zux6",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_to_address_match",
+            "expected": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "actual": "CgBD3hGYJfaCXHDoi7rYiF9FV7D1sG97qywHNrpfDKbL",
+            "result": "pass"
+          },
+          {
+            "check_name": "main_tx_date_match",
+            "expected": "2026-01-29",
+            "actual": "2026-01-28",
+            "result": "pass"
+          }
+        ],
+        "errors": [
+          "has_outgoing_transaction 字段值为 False，不符合要求（需要 True）"
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "success": 3,
+    "with_errors": 0
+  }
+}

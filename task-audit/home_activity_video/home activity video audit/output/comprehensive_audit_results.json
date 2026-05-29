@@ -1,0 +1,43 @@
+{
+  "result": "success",
+  "audit_results": [
+    {
+      "submission_id": "2026042909583100102148",
+      "timestamp": "2026-04-30T15:01:42.863384",
+      "errors": [],
+      "yolo_audit": {
+        "overall_result": "skipped"
+      },
+      "duplicate_audit": {
+        "overall_result": "fail",
+        "history_hash_duplicate": true,
+        "reason": "video.hash 在历史数据中重复（4229fac949b07bb31a944b66e14fc1f43c67a88a3433c440665cc7a2252cbcf4）",
+        "checks": [
+          {
+            "check_name": "video_hash_batch_match",
+            "result": "pass",
+            "hash_value": "4229fac949b07bb31a944b66e14fc1f43c67a88a3433c440665cc7a2252cbcf4"
+          },
+          {
+            "check_name": "video_hash_history_match",
+            "result": "fail",
+            "hash_value": "4229fac949b07bb31a944b66e14fc1f43c67a88a3433c440665cc7a2252cbcf4"
+          }
+        ]
+      },
+      "metadata_audit": {
+        "overall_result": "skipped",
+        "checks": []
+      },
+      "scene_cut_audit": {
+        "overall_result": "skipped"
+      },
+      "audit_grade": "D"
+    }
+  ],
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "with_errors": 0
+  }
+}
