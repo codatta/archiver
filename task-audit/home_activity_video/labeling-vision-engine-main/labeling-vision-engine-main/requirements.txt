@@ -1,0 +1,16 @@
+# GPU version (default) — requires NVIDIA GPU + CUDA drivers
+# Install: pip install -r requirements.txt
+#
+# For CPU-only (local development), use:
+#   pip install -r requirements-cpu.txt
+
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.12
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+httpx>=0.27.0
+ultralytics>=8.2.0
+python-dotenv>=1.0.0
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch>=2.1.0
